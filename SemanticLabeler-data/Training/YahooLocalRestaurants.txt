@@ -1,0 +1,134 @@
+0:PR-RestaurantName	1:CT-Phone:PR-AreaCode	1:CT-Phone:PR-7DigitPhoneNumber	2:CT-Street:PR-StreetNumber	2:CT-Street:PR-StreetNumberDirection	2:CT-Street:PR-StreetName	2:CT-Street:PR-StreetType	2:CT-Street:PR-StreetDirection	3:PR-City	4:PR-State-Abbr	5:PR-Rating	6:PR-NumberOfReviews
+Giordanos Pizzeria	773	327-1200	1040	W	Belmont	Ave	NULL	Chicago	IL	4.5	652
+Lou Malnati's Pizzeria	312	828-9800	439	N	Wells	St	NULL	Chicago	IL	4.5	260
+Pizzeria Uno	312	321-1000	29	E	Ohio	St	NULL	Chicago	IL	4	216
+Home Run Inn	773	247-9696	4254	W	31st	St	NULL	Chicago	IL	4.5	160
+Giordano's Restaurant	312	951-0747	730	N	Rush	St	NULL	Chicago	IL	4.5	123
+Chi Tung Chinese & Thai Restaurant	708	636-8180	9560	S	Kedzie	Ave	NULL	Evergreen Park	IL	4.5	118
+Wildfire - Chicago	312	787-9000	159	W	Erie	St	NULL	Chicago	IL	4.5	108
+Billy Goat Tavern	312	222-1525	430	N	Michigan	Ave	NULL	Chicago	IL	4	100
+Grand Lux Cafe	312	276-2500	600	N	Michigan	Ave	NULL	Chicago	IL	4.5	95
+Gibsons Steakhouse & Bar	312	266-8999	1028	N	Rush	St	NULL	Chicago	IL	4.5	95
+The Restaurant at the Standard	213	892-8080	550	S	Flower	St	NULL	Los Angeles	CA	4	143
+Palermo	323	663-1430	1858	N	Vermont	Ave	NULL	Los Angeles	CA	4	123
+El Tepayac Cafa(C)	323	267-8668	812	N	Evergreen	Ave	NULL	Los Angeles	CA	4.5	119
+Four Seasons Los Angeles	310	273-2222	300	S	Doheny	Dr	NULL	Los Angeles	CA	4.5	117
+Shabu Shabu House Restaurant	213	680-3890	127	NULL	Japanese Village Plaza	Mall	NULL	Los Angeles	CA	4.5	102
+Porto's Bakery	818	956-5996	315	N	Brand	Blvd	NULL	Glendale	CA	4.5	82
+California Pizza Kitchen	310	275-1101	207	S	Beverly	Dr	NULL	Beverly Hills	CA	4	82
+Lawry's the Prime Rib - Beverly Hills	310	652-2827	100	N	La Cienega	Blvd	NULL	Beverly Hills	CA	4.5	81
+Crustacean	310	205-8990	9646	NULL	Santa Monica	Blvd	NULL	Beverly Hills	CA	4	77
+The Restaurant at the Standard	213	892-8080	550	S	Flower	St	NULL	Los Angeles	CA	4	143
+Palermo	323	663-1430	1858	N	Vermont	Ave	NULL	Los Angeles	CA	4	123
+El Tepayac Cafa(C)	323	267-8668	812	N	Evergreen	Ave	NULL	Los Angeles	CA	4.5	119
+Four Seasons Los Angeles	310	273-2222	300	S	Doheny	Dr	NULL	Los Angeles	CA	4.5	117
+Shabu Shabu House Restaurant	213	680-3890	127	NULL	Japanese Village Plaza	Mall	NULL	Los Angeles	CA	4.5	102
+California Pizza Kitchen	310	275-1101	207	S	Beverly	Dr	NULL	Beverly Hills	CA	4	82
+Lawry's the Prime Rib - Beverly Hills	310	652-2827	100	N	La Cienega	Blvd	NULL	Beverly Hills	CA	4.5	81
+Crustacean	310	205-8990	9646	NULL	Santa Monica	Blvd	NULL	Beverly Hills	CA	4	77
+Yang Chow	213	625-0811	819	N	Broadway	NULL	NULL	Los Angeles	CA	4	72
+The Restaurant at the Standard	213	892-8080	550	S	Flower	St	NULL	Los Angeles	CA	4	143
+Palermo	323	663-1430	1858	N	Vermont	Ave	NULL	Los Angeles	CA	4	123
+El Tepayac Cafa(C)	323	267-8668	812	N	Evergreen	Ave	NULL	Los Angeles	CA	4.5	119
+Four Seasons Los Angeles	310	273-2222	300	S	Doheny	Dr	NULL	Los Angeles	CA	4.5	117
+Shabu Shabu House Restaurant	213	680-3890	127	NULL	Japanese Village Plaza	Mall	NULL	Los Angeles	CA	4.5	102
+Petrillo's Pizza	626	280-7332	833	E	Valley	Blvd	NULL	San Gabriel	CA	4.5	100
+California Pizza Kitchen	310	275-1101	207	S	Beverly	Dr	NULL	Beverly Hills	CA	4	82
+Porto's Bakery	818	956-5996	315	N	Brand	Blvd	NULL	Glendale	CA	4.5	82
+Lawry's the Prime Rib - Beverly Hills	310	652-2827	100	N	La Cienega	Blvd	NULL	Beverly Hills	CA	4.5	81
+Grimaldi's	718	858-4300	19	NULL	Cadman	Plz	W	Brooklyn	NY	4	81
+Del Frisco's Double Eagle Steak House	212	575-5129	1221	NULL	Avenue Of The Americas	NULL	NULL	New York	NY	4.5	80
+Gray's Papaya	212	799-0243	2090	NULL	Broadway	NULL	NULL	New York	NY	4.5	77
+Tao	212	888-2288	42	E	58th	St	NULL	New York	NY	4	76
+The New York Palace	212	888-7000	NULL	NULL	NULL	NULL	NULL	New York	NY	4.5	75
+Katz's Deli	212	254-2246	205	E	Houston	St	NULL	New York	NY	4.5	73
+Di Fara Pizza	718	258-1367	1424	NULL	Avenue J	NULL	NULL	Brooklyn	NY	5	71
+Virgil's	212	921-9494	152	W	44th	St	NULL	New York	NY	4	70
+Angelo's of Mulberry St	212	966-1277	146	NULL	Mulberry	St	NULL	New York	NY	4.5	70
+Cafe Antique	212	213-5723	55	W	26th	St	NULL	New York	NY	5	68
+Wishbone	312	850-2663	1001	W	Washington	Blvd	NULL	Chicago	IL	4	83
+Fogo De Chao	312	932-9330	661	N	La Salle	Dr	NULL	Chicago	IL	4.5	73
+Harold's Chicken Shacks	773	725-9260	1208	E	53rd	St	NULL	Chicago	IL	4.5	71
+Embassy Suites Hotel Chicago-Downtown/Lakefront	312	836-5900	511	N	Columbus	Dr	NULL	Chicago	IL	4.5	66
+Rainforest Cafa(C)	312	787-1501	605	N	Clark	St	NULL	Chicago	IL	4	63
+Gino's East of Chicago	312	943-1124	633	N	Wells	St	NULL	Chicago	IL	4.5	62
+Pequods Pizzeria	773	327-1512	2207	N	Clybourn	Ave	NULL	Chicago	IL	4.5	62
+Buffalo Joe's	847	328-5525	812	NULL	Clark	St	NULL	Evanston	IL	4.5	57
+Nick's Fishmarket & Grill	312	621-0200	51	S	Clark	St	NULL	Chicago	IL	4.5	57
+Yang Chow	213	625-0811	819	N	Broadway	NULL	NULL	Los Angeles	CA	4	72
+Koi	310	659-9449	730	N	La Cienega	Blvd	NULL	West Hollywood	CA	4	71
+Philippe the Original	213	628-3781	1001	N	Alameda	St	NULL	Los Angeles	CA	4.5	70
+The Ivy	310	274-8303	113	N	Robertson	Blvd	NULL	Los Angeles	CA	4	67
+The Stinking Rose	310	652-7673	55	N	La Cienega	Blvd	NULL	Beverly Hills	CA	4	62
+Tito's Tacos	323	391-5780	11222	NULL	Washington	Pl	NULL	Culver City	CA	4.5	62
+Renaissance Montura Hotel Los Angeles	310	337-2800	9620	NULL	Airport	Blvd	NULL	Los Angeles	CA	4	60
+Hot Wings Cafe	323	930-1233	7011	NULL	Melrose	Ave	NULL	Los Angeles	CA	4.5	58
+Johnnie's Pastrami	310	397-6654	4017	NULL	Sepulveda	Blvd	NULL	Culver City	CA	4.5	56
+Radisson Hotel at Los Angeles Airport	310	670-9000	6225	W	Century	Blvd	NULL	Los Angeles	CA	4	55
+Koi	310	659-9449	730	N	La Cienega	Blvd	NULL	West Hollywood	CA	4	71
+Philippe the Original	213	628-3781	1001	N	Alameda	St	NULL	Los Angeles	CA	4.5	70
+The Ivy	310	274-8303	113	N	Robertson	Blvd	NULL	Los Angeles	CA	4	67
+The Stinking Rose	310	652-7673	55	N	La Cienega	Blvd	NULL	Beverly Hills	CA	4	62
+Tito's Tacos	323	391-5780	11222	NULL	Washington	Pl	NULL	Culver City	CA	4.5	62
+Renaissance Montura Hotel Los Angeles	310	337-2800	9620	NULL	Airport	Blvd	NULL	Los Angeles	CA	4	60
+Hot Wings Cafe	323	930-1233	7011	NULL	Melrose	Ave	NULL	Los Angeles	CA	4.5	58
+Johnnie's Pastrami	310	397-6654	4017	NULL	Sepulveda	Blvd	NULL	Culver City	CA	4.5	56
+Radisson Hotel at Los Angeles Airport	310	670-9000	6225	W	Century	Blvd	NULL	Los Angeles	CA	4	55
+The Cheesecake Factory	310	306-3344	4142	NULL	Via Marina	NULL	NULL	Marina del Rey	CA	4	53
+Crustacean	310	205-8990	9646	NULL	Santa Monica	Blvd	NULL	Beverly Hills	CA	4	77
+Yang Chow	213	625-0811	819	N	Broadway	NULL	NULL	Los Angeles	CA	4	72
+Koi	310	659-9449	730	N	La Cienega	Blvd	NULL	West Hollywood	CA	4	71
+Philippe the Original	213	628-3781	1001	N	Alameda	St	NULL	Los Angeles	CA	4.5	70
+The Ivy	310	274-8303	113	N	Robertson	Blvd	NULL	Los Angeles	CA	4	67
+The Stinking Rose	310	652-7673	55	N	La Cienega	Blvd	NULL	Beverly Hills	CA	4	62
+Tito's Tacos	323	391-5780	11222	NULL	Washington	Pl	NULL	Culver City	CA	4.5	62
+Renaissance Montura Hotel Los Angeles	310	337-2800	9620	NULL	Airport	Blvd	NULL	Los Angeles	CA	4	60
+Hot Wings Cafe	323	930-1233	7011	NULL	Melrose	Ave	NULL	Los Angeles	CA	4.5	58
+Johnnie's Pastrami	310	397-6654	4017	NULL	Sepulveda	Blvd	NULL	Culver City	CA	4.5	56
+The Jekyll & Hyde Club	212	541-9517	1409	NULL	Avenue Of The Americas	NULL	NULL	New York	NY	4	66
+Embassy Suites Hotel New York	212	945-0100	102	N	End	Ave	NULL	New York	NY	4.5	61
+Cafa(C) Habana	212	625-2001	17	NULL	Prince	St	NULL	New York	NY	4	59
+Churrascaria Plataforma	212	245-0505	316	W	49th	St	NULL	New York	NY	4.5	58
+Blue Water Grill	212	675-9500	31	NULL	Union	Sq	W	New York	NY	4.5	57
+Tom's Restaurant	212	864-6137	2880	NULL	Broadway	NULL	NULL	NULL	NY	4	53
+Warwick Hotel	212	247-2700	65	W	54th	St	NULL	New York	NY	4	52
+House of Blues Restaurant	312	923-2000	329	N	Dearborn	St	NULL	Chicago	IL	4	54
+Chgo Pizza & Oven Grinder Company	773	248-2570	2121	N	Clark	St	NULL	Chicago	IL	5	49
+Mike Ditka's - Chicago	312	587-8989	100	E	Chestnut	St	NULL	Chicago	IL	4.5	48
+Gene & Georgetti	312	527-3718	500	N	Franklin	St	NULL	Chicago	IL	4	44
+Weber Grill - Chicago	312	467-9696	539	N	State	St	NULL	Chicago	IL	4	44
+Nuevo Leon	312	421-1517	1515	W	18th	St	NULL	Chicago	IL	4.5	43
+Frontera Grill	312	661-1434	445	N	Clark	St	NULL	Chicago	IL	4.5	42
+Cheesecake Factory	312	254-0631	600	N	Michigan	Ave	NULL	Chicago	IL	4.5	42
+Ruth's Chris Steak House	312	321-2725	431	N	Dearborn	St	NULL	Chicago	IL	4.5	41
+Mama Luna Corporation	773	889-3020	5109	W	Fullerton	Ave	NULL	Chicago	IL	4	39
+The Cheesecake Factory	310	306-3344	4142	NULL	Via Marina	NULL	NULL	Marina del Rey	CA	4	53
+Ivy at the Shore	310	393-3113	1535	NULL	Ocean	Ave	NULL	Santa Monica	CA	4	53
+The Counter	310	399-8383	2901	NULL	Ocean Park	Blvd	NULL	Santa Monica	CA	4	51
+El Coyote	323	939-2255	7312	NULL	Beverly	Blvd	NULL	Los Angeles	CA	4.5	47
+Ruth's Chris Steak House - Beverly Hills	310	859-8744	224	S	Beverly	Dr	NULL	Beverly Hills	CA	4.5	47
+Original Pantry Cafe	213	972-9279	877	S	Figueroa	St	NULL	Los Angeles	CA	4.5	46
+Pink's Famous Chili Dogs	323	931-4223	709	N	La Brea	Ave	NULL	Los Angeles	CA	4.5	46
+Roscoe's House of Chicken 'n' Waffles	323	466-7453	1514	N	Gower	St	NULL	Hollywood	CA	4.5	43
+Killer Shrimp	818	508-1570	4000	NULL	Colfax	Ave	NULL	Studio City	CA	4.5	40
+Yamashiro	323	466-5125	1999	N	Sycamore	Ave	NULL	Hollywood	CA	4	39
+Ivy at the Shore	310	393-3113	1535	NULL	Ocean	Ave	NULL	Santa Monica	CA	4	53
+The Counter	310	399-8383	2901	NULL	Ocean Park	Blvd	NULL	Santa Monica	CA	4	51
+El Coyote	323	939-2255	7312	NULL	Beverly	Blvd	NULL	Los Angeles	CA	4.5	47
+Ruth's Chris Steak House - Beverly Hills	310	859-8744	224	S	Beverly	Dr	NULL	Beverly Hills	CA	4.5	47
+Pink's Famous Chili Dogs	323	931-4223	709	N	La Brea	Ave	NULL	Los Angeles	CA	4.5	46
+Original Pantry Cafe	213	972-9279	877	S	Figueroa	St	NULL	Los Angeles	CA	4.5	46
+Roscoe's House of Chicken 'n' Waffles	323	466-7453	1514	N	Gower	St	NULL	Hollywood	CA	4.5	43
+Killer Shrimp	818	508-1570	4000	NULL	Colfax	Ave	NULL	Studio City	CA	4.5	40
+Yamashiro	323	466-5125	1999	N	Sycamore	Ave	NULL	Hollywood	CA	4	39
+La Fonda De Los Camperos, Incorporated	213	380-5055	2501	NULL	Wilshire	Blvd	NULL	Los Angeles	CA	4.5	38
+Radisson Hotel at Los Angeles Airport	310	670-9000	6225	W	Century	Blvd	NULL	Los Angeles	CA	4	55
+Ivy at the Shore	310	393-3113	1535	NULL	Ocean	Ave	NULL	Santa Monica	CA	4	53
+The Cheesecake Factory	310	306-3344	4142	NULL	Via Marina	NULL	NULL	Marina del Rey	CA	4	53
+The Counter	310	399-8383	2901	NULL	Ocean Park	Blvd	NULL	Santa Monica	CA	4	51
+Mi Piace	626	795-3131	25	E	Colorado	Blvd	NULL	Pasadena	CA	4	49
+Ruth's Chris Steak House - Beverly Hills	310	859-8744	224	S	Beverly	Dr	NULL	Beverly Hills	CA	4.5	47
+El Coyote	323	939-2255	7312	NULL	Beverly	Blvd	NULL	Los Angeles	CA	4.5	47
+Casa Bianca Pizza Pie	323	256-9617	1650	NULL	Colorado	Blvd	NULL	Los Angeles	CA	4.5	47
+Pink's Famous Chili Dogs	323	931-4223	709	N	La Brea	Ave	NULL	Los Angeles	CA	4.5	46
+Original Pantry Cafe	213	972-9279	877	S	Figueroa	St	NULL	Los Angeles	CA	4.5	46

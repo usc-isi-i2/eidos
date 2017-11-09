@@ -1,0 +1,9 @@
+##############################################################
+## Sources Available Locally: 
+##
+
+import problems/types.txt
+import problems/relations.txt
+
+function Add($price1,$price2,price3)      :- sum(price1,price2,price3).      {invocation.Local; add}
+function Multiply($price1,$price2,price3) :- product(price1,price2,price3).  {invocation.Local; multiply}

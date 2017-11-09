@@ -1,0 +1,371 @@
+0:PR-Year	1:PR-CarMake	2:PR-CarModel	3:PR-CarBodyStyle	4:PR-Color	5:CT-CarEngine:PR-EngineCapacity	5:CT-CarEngine:PR-CarCylinders	6:PR-CarMileage	7:PR-Price	8:PR-VIN	9:PR-Price
+1998	mercedez benz	c230w	4 dr sedan	black	2.3l	i4	61k	NULL	wdbha23g3wa551271	NULL
+2000	mercedez benz	c230w	4 dr sedan	silver	2.3l	NULL	65k	$ 19 , 995	wdbha24g0ya803138	19 , 995
+1999	mercedez benz	c280w	4 dr sedan	smoke silver	2.8l	v6	55k	$ 22 , 990	wdbha29g9xa793670	22 , 990
+1999	mercedez benz	c280w	4 dr sedan	black	2.8l	v6	63k	$ 22 , 990	wdbha29g9xa722873	22 , 990
+2000	mercedez benz	c230w	4 dr sedan	black	2.3l	NULL	64k	$ 22 , 995	wdbha24g7ya837108	22 , 995
+2000	mercedez benz	c230w	4 dr sedan	black	2.3l	NULL	64k	$ 23 , 990	wdbha24g5ya845787	23 , 990
+2000	mercedez benz	c230w	4 dr sedan	glacier white	2.3l	NULL	59k	$ 24 , 900	wdbha24g7ya802729	24 , 900
+2000	mercedez benz	c230w	4 dr sedan	silver	2.3l	NULL	52k	$ 24 , 900	wdbha24g6ya849038	24 , 900
+2000	mercedez benz	c280w	4 dr sedan	silver	2.8l	v6	39k	$ 24 , 995	wdbha29gxya858933	24 , 995
+2000	mercedez benz	c230w	4 dr sedan	silver	2.3l	NULL	55k	$ 25 , 900	wdbha24g1ya861551	25 , 900
+2000	mercedez benz	c280w	4 dr sedan	desert silver	2.8l	v6	47k	$ 25 , 900	wdbha29g5ya802981	25 , 900
+2001	mercedez benz	slk230	2 dr coupe	silver	2.3l	NULL	52k	$ 27 , 995	wdbkk49f11f208922	27 , 995
+2002	mercedez benz	c240	4 dr sedan	capri blue	2.4l	NULL	31k	$ 27 , 995	wdbrf61j12f175095	27 , 995
+1999	mercedez benz	e320w	4 dr sedan	black	3.2l	6cyl	66k	$ 29 , 995	wdbjf65h0xa722009	29 , 995
+2002	mercedez benz	c320s	4 dr station wagon	desert silver	3.2l	v6	5k	$ 29 , 995	wdbrh64j42f248031	29 , 995
+2002	mercedez benz	c320s	4 dr station wagon	desert silver	3.2l	v6	5k	$ 29 , 995	wdbrh64j42f248031	29 , 995
+1999	mercedez benz	e320w	4 dr sedan	silver	3.2l	6cyl	41k	$ 30 , 990	wdbjf65hxxa874265	30 , 990
+1999	mercedez benz	e320w	4 dr sedan	aspen green	3.2l	6cyl	47k	$ 31 , 900	wdbjf65h8xa942515	31 , 900
+2002	mercedez benz	c320	4 dr sedan	desert silver	3.2l	6cyl	36k	$ 31 , 900	wdbrf64j92e004225	31 , 900
+1999	mercedez benz	e320w	4 dr sedan	smoke silver	3.2l	6cyl	47k	$ 31 , 990	wdbjf65h5xa839553	31 , 990
+1999	mercedez benz	e320w	4 dr sedan	smoke silver	3.2l	6cyl	57k	$ 31 , 990	wdbjf65h3xa936976	31 , 990
+2001	mercedez benz	c320	4 dr sedan	desert silver	3.2l	6cyl	47k	$ 32 , 900	wdbrf64j01f017504	32 , 900
+2001	mercedez benz	e320w	4 dr sedan	desert silver	3.2l	6cyl	52k	$ 32 , 995	wdbjf65j31b169229	32 , 995
+1999	mercedez benz	e430w	4 dr sedan	black	4.3l	v8	44k	$ 33 , 990	wdbjf70h6xa914869	33 , 990
+1999	mercedez benz	s320w	4 dr sedan	smoke silver	3.2l	6cyl	38k	$ 33 , 995	wdbga32gxxa427521	33 , 995
+2000	mercedez benz	e320w	4 dr sedan	black	3.2l	6cyl	50k	$ 34 , 900	wdbjf65jxyb130969	34 , 900
+2003	mercedez benz	c240	4 dr sedan	black	2.4l	NULL	15k	$ 34 , 900	wdbrf61j33a419893	34 , 900
+2001	mercedez benz	slk230	2 dr coupe	white	2.3l	NULL	47k	$ 34 , 990	wdbkk49fx1f196933	34 , 990
+2000	mercedez benz	e430w	4 dr sedan	smoke silver	4.3l	v8	47k	$ 34 , 995	wdbjf70j0yb103907	34 , 995
+2000	mercedez benz	e320w	4 dr sedan	black	3.2l	6cyl	52k	$ 35 , 900	wdbjf65jxyb164894	35 , 900
+2002	mercedez benz	e320w	4 dr sedan	silver	3.2l	6cyl	46k	$ 37 , 900	wdbjf65j72b453609	37 , 900
+2000	mercedez benz	e430w	4 dr sedan	black	4.3l	v8	51k	$ 37 , 990	wdbjf70j2yb132471	37 , 990
+2001	mercedez benz	e320w	4 dr sedan	silver	3.2l	6cyl	42k	$ 38 , 900	wdbjf65j31b355384	38 , 900
+2001	mercedez benz	e430w	4 dr sedan	silver	4.3l	v8	28k	$ 39 , 995	wdbjf70j71x055590	39 , 995
+2002	mercedez benz	e430w	4 dr sedan	desert silver	4.3l	v8	19k	$ 41 , 995	wdbjf70j02b409979	41 , 995
+2001	mercedez benz	e430w	4 dr sedan	black	4.3l	v8	25k	$ 43 , 990	wdbjf70j61b361886	43 , 990
+2003	mercedez benz	slk320	2 dr coupe	silver	3.2l	6cyl	4k	$ 43 , 995	wdbkk65f73f285508	43 , 995
+2001	mercedez benz	e430w	4 dr sedan	silver	4.3l	v8	24k	$ 44 , 990	wdbjf70jx1x054076	44 , 990
+2000	mercedez benz	s430	4 dr sedan	black	4.3l	v8	54k	$ 44 , 995	wdbng70j5ya127060	44 , 995
+2002	mercedez benz	e430w	4 dr sedan	black	4.3l	v8	17k	$ 46 , 995	wdbjf70j52b465741	46 , 995
+2000	mercedez benz	s430	4 dr sedan	midnight blue	4.3l	v8	57k	$ 48 , 995	wdbng70j0ya125491	48 , 995
+2001	mercedez benz	s430	4 dr sedan	desert silver	4.3l	v8	45k	$ 48 , 995	wdbng70j41a160184	48 , 995
+2003	mercedez benz	e320w	4 dr sedan	black	3.2l	v6	8k	$ 49 , 990	wdbuf65j63a124811	49 , 990
+2003	mercedez benz	e500w	4 dr sedan	white	5.0l	v8	10k	$ 51 , 995	wdbuf70j63a140956	51 , 995
+2001	mercedez benz	s430	4 dr sedan	obsidian black	4.3l	v8	53k	$ 54 , 900	wdbng70j11a148297	54 , 900
+2003	mercedez benz	e500w	4 dr sedan	black	5.0l	v8	7k	$ 54 , 900	wdbuf70jx3a133024	54 , 900
+2001	mercedez benz	s500v	4 dr sedan	horizon blue	5.0l	v8	30k	$ 54 , 995	wdbng75j31a162694	54 , 995
+2003	mercedez benz	e500w	4 dr sedan	silver	5.0l	v8	10k	$ 55 , 900	wdbuf70j53a109519	55 , 900
+2003	mercedez benz	e500w	4 dr sedan	silver	5.0l	v8	8k	$ 55 , 995	wdbuf70j03a121383	55 , 995
+2002	mercedez benz	e55 amg	4 dr sedan	silver	5.5l	v8	23k	$ 57 , 995	wdbjf74j52b467094	57 , 995
+2001	mercedez benz	s500v	4 dr sedan	silver	5.0l	v8	29k	$ 64 , 990	wdbng75j31a157298	64 , 990
+2001	mercedez benz	cl500	2 dr coupe	black	5.0l	v8	37k	$ 73 , 900	wdbpj75j01a014738	73 , 900
+2003	mercedez benz	e55 amg	4 dr sedan	black	NULL	NULL	362	$ 89 , 995	wdbuf76j73a332877	89 , 995
+2002	mercedez benz	cl500	2 dr coupe	black	5.0l	v8	11k	$ 98 , 590	wdbpj75jx2a030270	98 , 590
+2003	mercedez benz	cl55	2 dr coupe	tectite grey	NULL	NULL	257	$ 125 , 900	wdbpj74j93a034121	125 , 900
+1999	mercedez benz	c230w	4 dr sedan	black	2.3l	NULL	63k	$ 21 , 995	wdbha24g1xa764283	21 , 995
+1998	mercedez benz	e320w	4 dr sedan	glacier white	3.2l	6cyl	64k	$ 24 , 995	wdbjf65f9wa687032	24 , 995
+1998	mercedez benz	e320	4 dr station wagon	smoke silver	3.2l	6cyl	68k	$ 25 , 995	wdbjh65f1wa684846	25 , 995
+1998	mercedez benz	e320	4 dr station wagon	smoke silver	3.2l	6cyl	49k	$ 29 , 990	wdbjh65f8wa694015	29 , 990
+1999	mercedez benz	c280w	4 dr sedan	black	2.8l	v6	58k	NULL	wdbha29g7xa766757	NULL
+1999	mercedez benz	e320w	4 dr sedan	black	3.2l	6cyl	41k	NULL	wdbjf65h9xa933001	NULL
+1999	mercedez benz	e430w	4 dr sedan	smoke silver	4.3l	v8	48k	NULL	wdbjf70h5xa890161	NULL
+1999	mercedez benz	cl500	2 dr coupe	smoke silver	5.0l	v8	47k	NULL	wdbga70g3xa409887	NULL
+2000	mercedez benz	c230w	4 dr sedan	glacier white	2.3l	NULL	53k	NULL	wdbha24g3yf941646	NULL
+2000	mercedez benz	e320	4 dr station wagon	silver	3.2l	6cyl	53k	NULL	wdbjh65j2yb056733	NULL
+2000	mercedez benz	e320w	4 dr sedan	black	3.2l	6cyl	53k	NULL	wdbjf65j9yb009589	NULL
+2000	mercedez benz	e430w	4 dr sedan	glacier white	4.3l	v8	43k	NULL	wdbjf70j0yb153433	NULL
+2000	mercedez benz	e430w 4-matic awd	4 dr sedan	silver	4.3l	v8	48k	NULL	wdbjf83j6yx034533	NULL
+2000	mercedez benz	s430	4 dr sedan	black	4.3l	v8	21k	NULL	wdbng70j6ya045533	NULL
+2001	mercedez benz	c320	4 dr sedan	black	3.2l	6cyl	53k	NULL	wdbrf64j91f078902	NULL
+2001	mercedez benz	e320w	4 dr sedan	glacier white	3.2l	6cyl	27k	NULL	wdbjf65jx1b227059	NULL
+2001	mercedez benz	e320w	4 dr sedan	glacier white	3.2l	6cyl	38k	NULL	wdbjf65j11b189687	NULL
+2001	mercedez benz	e320w	4 dr sedan	silver	3.2l	6cyl	40k	NULL	wdbjf65j31b226416	NULL
+2001	mercedez benz	e55	4 dr sedan	black	NULL	NULL	45k	NULL	wdbjf74j11b289795	NULL
+2001	mercedez benz	s430	4 dr sedan	silver	4.3l	v8	36k	NULL	wdbng70j91a143946	NULL
+2002	mercedez benz	c230k	2 dr coupe	silver	2.3l	NULL	24k	NULL	wdbrn47j72a281398	NULL
+2002	mercedez benz	e320w	4 dr sedan	black	3.2l	6cyl	41k	NULL	wdbjf65j42b411737	NULL
+2003	mercedez benz	e500w	4 dr sedan	glacier white	5.0l	v8	14k	NULL	wdbuf70jx3a090725	NULL
+1987	honda	accord lx	NULL	blue	NULL	NULL	151 , 495	$ 2  , 200	NULL	2  , 200
+1987	honda	accord lx	NULL	blue	NULL	NULL	151 , 495	$ 2  , 200	NULL	2  , 200
+1994	ford	thunderbrd lx	NULL	brown	NULL	NULL	144 , 013	$ 3  , 200	NULL	3  , 200
+1999	mercury	mountainee awd	NULL	green	NULL	NULL	83 , 585	NULL	NULL	NULL
+1999	mercury	mountainee awd	NULL	green	NULL	NULL	83 , 585	NULL	NULL	NULL
+2000	ford	contour se	NULL	white	NULL	NULL	53 , 272	$ 1  , 0988	NULL	1  , 0988
+2000	ford	contour se	NULL	white	NULL	NULL	53 , 272	$ 1  , 0988	NULL	1  , 0988
+2000	saturn	ls2	NULL	white	NULL	NULL	26 , 513	$ 1  , 1988	NULL	1  , 1988
+2000	saturn	ls2	NULL	white	NULL	NULL	26 , 513	$ 1  , 1988	NULL	1  , 1988
+2000	ford	explorer xlt	NULL	null	NULL	NULL	41 , 819	$ 16  , 988	NULL	16  , 988
+2000	ford	explorer xlt	NULL	null	NULL	NULL	41 , 819	$ 16  , 988	NULL	16  , 988
+2000	lincoln	town car sig	NULL	silver	NULL	NULL	44 , 018	$ 19  , 988	NULL	19  , 988
+2000	lincoln	town car sig	NULL	silver	NULL	NULL	44 , 018	$ 19  , 988	NULL	19  , 988
+2000	lincoln	town car sig	NULL	silver	NULL	NULL	44 , 018	$ 19  , 988	NULL	19  , 988
+2000	ford	expedition eba	NULL	green	NULL	NULL	38 , 369	$ 21  , 988	NULL	21  , 988
+2000	lincoln	ls v8	NULL	ltblue	NULL	NULL	42 , 176	$ 21  , 988	NULL	21  , 988
+2000	lincoln	ls v8	NULL	ltblue	NULL	NULL	42 , 176	$ 21  , 988	NULL	21  , 988
+2000	lincoln	ls v8	NULL	ltblue	NULL	NULL	42 , 204	$ 21  , 988	NULL	21  , 988
+2000	lincoln	navigator 2wd	NULL	null	NULL	NULL	23 , 357	$ 29  , 988	NULL	29  , 988
+2000	lincoln	navigator 2wd	NULL	gold	NULL	NULL	43 , 562	$ 30  , 988	NULL	30  , 988
+2000	lincoln	navigator 2wd	NULL	gold	NULL	NULL	43 , 562	$ 30  , 988	NULL	30  , 988
+2000	ford	contour se	NULL	white	NULL	NULL	53 , 272	$ 10  , 988	NULL	10  , 988
+2000	jeep	g cherokee ltd	NULL	white	NULL	NULL	36 , 535	$ 19  , 988	NULL	19  , 988
+2000	lincoln	town car sig	NULL	silver	NULL	NULL	43 , 415	$ 19  , 988	NULL	19  , 988
+2000	lincoln	ls v8	NULL	ltblue	NULL	NULL	42 , 176	$ 21  , 988	NULL	21  , 988
+2000	lincoln	ls v8	NULL	dkblue	NULL	NULL	39 , 065	$ 21  , 988	NULL	21  , 988
+2000	lincoln	ls v8	NULL	ltblue	NULL	NULL	42 , 176	$ 21  , 988	NULL	21  , 988
+2000	lincoln	ls v8	NULL	dkblue	NULL	NULL	39 , 065	$ 21  , 988	NULL	21  , 988
+2000	lincoln	ls v8	NULL	ltblue	NULL	NULL	42 , 176	$ 21  , 988	NULL	21  , 988
+2000	lincoln	ls v8	NULL	black	NULL	NULL	34 , 821	$ 22  , 988	NULL	22  , 988
+2000	lincoln	ls v8	NULL	black	NULL	NULL	34 , 821	$ 22  , 988	NULL	22  , 988
+2000	lincoln	navigator 2wd	NULL	black	NULL	NULL	40 , 185	$ 26  , 988	NULL	26  , 988
+2000	lincoln	navigator 2wd	NULL	black	NULL	NULL	40 , 185	$ 26  , 988	NULL	26  , 988
+2000	lincoln	navigator 2wd	NULL	black	NULL	NULL	40 , 185	$ 26  , 988	NULL	26  , 988
+2000	lincoln	navigator 4wd	NULL	silver	NULL	NULL	42 , 020	$ 28  , 988	NULL	28  , 988
+2000	lincoln	navigator 2wd	NULL	gold	NULL	NULL	43 , 562	$ 30  , 988	NULL	30  , 988
+2000	lincoln	navigator 2wd	NULL	gold	NULL	NULL	43 , 562	$ 30  , 988	NULL	30  , 988
+2000	lincoln	navigator 2wd	NULL	gold	NULL	NULL	43 , 562	$ 30  , 988	NULL	30  , 988
+2000	lincoln	navigator 2wd	NULL	gold	NULL	NULL	43 , 562	$ 30  , 988	NULL	30  , 988
+2000	lincoln	ls v8	NULL	black	NULL	NULL	36 , 988	$ 36  ,  988	NULL	36  ,  988
+2000	lincoln	ls v8	NULL	black	NULL	NULL	36 , 988	$ 36  ,  988	NULL	36  ,  988
+2000	lincoln	ls v6	NULL	darkblue	NULL	NULL	35 , 549	NULL	NULL	NULL
+2000	lincoln	ls v6	NULL	darkblue	NULL	NULL	35 , 549	NULL	NULL	NULL
+2000	lincoln	ls v8	NULL	blue	NULL	NULL	65 , 490	NULL	NULL	NULL
+2000	lincoln	ls v8	NULL	blue	NULL	NULL	65 , 490	NULL	NULL	NULL
+2001	ford	explorer spo	NULL	silver	NULL	NULL	21 , 531	$ 15  , 988	NULL	15  , 988
+2001	ford	explorer spo	NULL	silver	NULL	NULL	21 , 531	$ 15  , 988	NULL	15  , 988
+2001	mercury	villager est	NULL	green	NULL	NULL	36 , 352	$ 20  , 988	NULL	20  , 988
+2001	mercury	villager est	NULL	green	NULL	NULL	36 , 352	$ 20  , 988	NULL	20  , 988
+2001	mercury	villager est	NULL	green	NULL	NULL	36 , 352	$ 20  , 988	NULL	20  , 988
+2001	lincoln	continentl	NULL	grey	NULL	NULL	23 , 899	$ 22  , 988	NULL	22  , 988
+2001	lincoln	continentl	NULL	grey	NULL	NULL	23 , 899	$ 22  , 988	NULL	22  , 988
+2001	lincoln	ls v8	NULL	null	NULL	NULL	14 , 914	$ 27  , 988	NULL	27  , 988
+2001	lincoln	navigator 2wd	NULL	null	NULL	NULL	38 , 590	$ 29  , 988	NULL	29  , 988
+2001	lincoln	navigator 2wd	NULL	null	NULL	NULL	38 , 590	$ 29  , 988	NULL	29  , 988
+2001	lincoln	navigator 2wd	NULL	null	NULL	NULL	38 , 590	$ 29  , 988	NULL	29  , 988
+2001	lincoln	navigator 4wd	NULL	blue	NULL	NULL	45 , 576	$ 32  , 988	NULL	32  , 988
+2001	ford	explorer spo	NULL	black	NULL	NULL	29 , 763	$ 15  , 988	NULL	15  , 988
+2001	volvo	s40	NULL	red	NULL	NULL	33 , 003	$ 16  , 988	NULL	16  , 988
+2001	mercury	villager est	NULL	green	NULL	NULL	35 , 897	$ 20  , 988	NULL	20  , 988
+2001	lincoln	continentl	NULL	grey	NULL	NULL	23 , 899	$ 22  , 988	NULL	22  , 988
+2001	lincoln	continentl	NULL	grey	NULL	NULL	23 , 899	$ 22  , 988	NULL	22  , 988
+2001	lincoln	continentl	NULL	grey	NULL	NULL	23 , 899	$ 22  , 988	NULL	22  , 988
+2001	lincoln	navigator 2wd	NULL	red	NULL	NULL	28 , 770	$ 28  , 988	NULL	28  , 988
+2001	lincoln	navigator 2wd	NULL	red	NULL	NULL	28 , 770	$ 28  , 988	NULL	28  , 988
+2001	lincoln	navigator 2wd	NULL	red	NULL	NULL	28 , 770	$ 28  , 988	NULL	28  , 988
+2001	lincoln	navigator 2wd	NULL	null	NULL	NULL	38 , 590	$ 29  , 988	NULL	29  , 988
+2001	lincoln	navigator 2wd	NULL	null	NULL	NULL	38 , 590	$ 29  , 988	NULL	29  , 988
+2001	lincoln	navigator 2wd	NULL	null	NULL	NULL	38 , 590	$ 29  , 988	NULL	29  , 988
+2001	lincoln	navigator 2wd	NULL	gold	NULL	NULL	33 , 858	$ 30  , 988	NULL	30  , 988
+2001	lincoln	navigator 4wd	NULL	blue	NULL	NULL	45 , 576	$ 32  , 988	NULL	32  , 988
+2001	lincoln	navigator 2wd	NULL	parch	NULL	NULL	25 , 727	$ 36  ,  988	NULL	36  ,  988
+2001	lincoln	navigator 2wd	NULL	parch	NULL	NULL	25 , 727	$ 36  ,  988	NULL	36  ,  988
+2001	lincoln	navigator 4wd	NULL	bq	NULL	NULL	45 , 000	NULL	NULL	NULL
+2001	ford	focus zx3	NULL	dkblue	NULL	NULL	20 , 476	NULL	NULL	NULL
+2001	lincoln	navigator 4wd	NULL	bq	NULL	NULL	45 , 000	NULL	NULL	NULL
+2001	ford	focus zx3	NULL	dkblue	NULL	NULL	20 , 476	NULL	NULL	NULL
+2002	ford	ranger 2wd	NULL	black	NULL	NULL	22 , 258	$ 14  , 988	NULL	14  , 988
+2002	ford	ranger 2wd	NULL	black	NULL	NULL	22 , 258	$ 14  , 988	NULL	14  , 988
+2002	ford	ranger 2wd	NULL	black	NULL	NULL	29 , 352	$ 16  , 988	NULL	16  , 988
+2002	ford	ranger 2wd	NULL	black	NULL	NULL	29 , 352	$ 16  , 988	NULL	16  , 988
+2002	mercury	gr marquis ls	NULL	blue	NULL	NULL	27 , 790	$ 20  , 988	NULL	20  , 988
+2002	mercury	gr marquis ls	NULL	blue	NULL	NULL	27 , 790	$ 20  , 988	NULL	20  , 988
+2002	mercury	mountainee 4x2	NULL	silver	NULL	NULL	31 , 607	$ 21  , 988	NULL	21  , 988
+2002	mercury	mountainee 4x2	NULL	silver	NULL	NULL	31 , 607	$ 21  , 988	NULL	21  , 988
+2002	lincoln	ls v6	NULL	black	NULL	NULL	28 , 461	$ 25  , 988	NULL	25  , 988
+2002	lincoln	ls v6	NULL	black	NULL	NULL	28 , 461	$ 25  , 988	NULL	25  , 988
+2002	lincoln	ls v6	NULL	black	NULL	NULL	28 , 461	$ 25  , 988	NULL	25  , 988
+2002	lincoln	town car exe	NULL	grey	NULL	NULL	23 , 411	$ 26  , 988	NULL	26  , 988
+2002	lincoln	town car exe	NULL	grey	NULL	NULL	23 , 411	$ 26  , 988	NULL	26  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	25 , 159	$ 27  , 988	NULL	27  , 988
+2002	lincoln	town car sig	NULL	gold	NULL	NULL	26 , 944	$ 27  , 988	NULL	27  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	25 , 159	$ 27  , 988	NULL	27  , 988
+2002	lincoln	town car sig	NULL	gold	NULL	NULL	26 , 944	$ 27  , 988	NULL	27  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	25 , 159	$ 27  , 988	NULL	27  , 988
+2002	lincoln	town car sig	NULL	gold	NULL	NULL	26 , 944	$ 27  , 988	NULL	27  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	27 , 084	$ 29  , 988	NULL	29  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	27 , 084	$ 29  , 988	NULL	29  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	27 , 084	$ 29  , 988	NULL	29  , 988
+2002	toyota	sequoia sr5	NULL	white	NULL	NULL	12 , 568	$ 30  , 988	NULL	30  , 988
+2002	volvo	c70	NULL	tan	NULL	NULL	10 , 780	$ 32  , 988	NULL	32  , 988
+2002	ford	ranger 2wd	NULL	black	NULL	NULL	29 , 352	$ 16  , 988	NULL	16  , 988
+2002	ford	ranger 2wd	NULL	gold	NULL	NULL	26 , 045	$ 16  , 988	NULL	16  , 988
+2002	mercury	gr marquis ls	NULL	blue	NULL	NULL	27 , 790	$ 20  , 988	NULL	20  , 988
+2002	mercury	gr marquis ls	NULL	blue	NULL	NULL	27 , 790	$ 20  , 988	NULL	20  , 988
+2002	mercury	gr marquis ls	NULL	blue	NULL	NULL	27 , 790	$ 20  , 988	NULL	20  , 988
+2002	mercury	mountainee 4x2	NULL	silver	NULL	NULL	31 , 607	$ 21  , 988	NULL	21  , 988
+2002	mercury	mountainee 4x2	NULL	silver	NULL	NULL	31 , 607	$ 21  , 988	NULL	21  , 988
+2002	mercury	mountainee 4x2	NULL	silver	NULL	NULL	31 , 607	$ 21  , 988	NULL	21  , 988
+2002	lincoln	ls v6	NULL	black	NULL	NULL	28 , 461	$ 25  , 988	NULL	25  , 988
+2002	lincoln	town car exe	NULL	grey	NULL	NULL	23 , 411	$ 26  , 988	NULL	26  , 988
+2002	lincoln	town car exe	NULL	grey	NULL	NULL	23 , 411	$ 26  , 988	NULL	26  , 988
+2002	lincoln	town car exe	NULL	grey	NULL	NULL	23 , 411	$ 26  , 988	NULL	26  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	25 , 125	$ 27  , 988	NULL	27  , 988
+2002	lincoln	town car sig	NULL	gold	NULL	NULL	26 , 944	$ 27  , 988	NULL	27  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	25 , 125	$ 27  , 988	NULL	27  , 988
+2002	lincoln	town car sig	NULL	gold	NULL	NULL	26 , 944	$ 27  , 988	NULL	27  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	25 , 125	$ 27  , 988	NULL	27  , 988
+2002	lincoln	town car sig	NULL	gold	NULL	NULL	26 , 944	$ 27  , 988	NULL	27  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	27 , 084	$ 29  , 988	NULL	29  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	27 , 084	$ 29  , 988	NULL	29  , 988
+2002	lincoln	ls v8	NULL	gold	NULL	NULL	27 , 084	$ 29  , 988	NULL	29  , 988
+2002	toyota	sequoia sr5	NULL	white	NULL	NULL	12 , 568	$ 30  , 988	NULL	30  , 988
+2002	lincoln	ls v8	NULL	white	NULL	NULL	26 , 268	NULL	NULL	NULL
+2002	lincoln	ls v8	NULL	white	NULL	NULL	26 , 268	NULL	NULL	NULL
+2002	lincoln	ls v8	NULL	white	NULL	NULL	26 , 268	NULL	NULL	NULL
+2002	lincoln	ls v8	NULL	white	NULL	NULL	26 , 268	NULL	NULL	NULL
+2002	ford	f-150 2wd	NULL	blue	NULL	NULL	18 , 877	NULL	NULL	NULL
+2002	chrysler	voyager lx	NULL	green	NULL	NULL	24 , 621	NULL	NULL	NULL
+2002	lincoln	ls v8	NULL	white	NULL	NULL	26 , 268	NULL	NULL	NULL
+2002	ford	f-150 2wd	NULL	blue	NULL	NULL	18 , 877	NULL	NULL	NULL
+2002	chrysler	voyager lx	NULL	green	NULL	NULL	24 , 621	NULL	NULL	NULL
+2002	lincoln	ls v8	NULL	white	NULL	NULL	26 , 268	NULL	NULL	NULL
+2003	ford	focus lx	NULL	white	NULL	NULL	7 , 980	$ 12  , 988	NULL	12  , 988
+2003	ford	focus lx	NULL	white	NULL	NULL	7 , 980	$ 12  , 988	NULL	12  , 988
+2003	mercury	sable gs	NULL	gold	NULL	NULL	17 , 482	$ 15  , 988	NULL	15  , 988
+2003	mercury	sable gs	NULL	silver	NULL	NULL	19 , 492	$ 15  , 988	NULL	15  , 988
+2003	mercury	sable gs	NULL	gold	NULL	NULL	17 , 482	$ 15  , 988	NULL	15  , 988
+2003	mercury	sable gs	NULL	silver	NULL	NULL	19 , 492	$ 15  , 988	NULL	15  , 988
+2003	mercury	gr marquis ls	NULL	blue	NULL	NULL	19 , 620	$ 21  , 988	NULL	21  , 988
+2003	mercury	gr marquis ls	NULL	spruce	NULL	NULL	22 , 069	$ 21  , 988	NULL	21  , 988
+2003	mercury	gr marquis ls	NULL	silver	NULL	NULL	20 , 481	$ 21  , 988	NULL	21  , 988
+2003	mercury	gr marquis ls	NULL	blue	NULL	NULL	19 , 620	$ 21  , 988	NULL	21  , 988
+2003	mercury	gr marquis ls	NULL	spruce	NULL	NULL	22 , 069	$ 21  , 988	NULL	21  , 988
+2003	mercury	gr marquis ls	NULL	silver	NULL	NULL	20 , 481	$ 21  , 988	NULL	21  , 988
+2003	mercury	gr marquis ls	NULL	blue	NULL	NULL	19 , 620	$ 21  , 988	NULL	21  , 988
+2003	mercury	gr marquis ls	NULL	spruce	NULL	NULL	22 , 069	$ 21  , 988	NULL	21  , 988
+2003	mercury	gr marquis ls	NULL	silver	NULL	NULL	20 , 997	$ 21  , 988	NULL	21  , 988
+2003	lincoln	town car exe	NULL	silver	NULL	NULL	20 , 005	$ 28  , 988	NULL	28  , 988
+2003	lincoln	town car exe	NULL	silver	NULL	NULL	20 , 005	$ 28  , 988	NULL	28  , 988
+2003	lincoln	town car exe	NULL	null	NULL	NULL	21 , 529	$ 29  , 988	NULL	29  , 988
+2003	lincoln	town car exe	NULL	null	NULL	NULL	21 , 529	$ 29  , 988	NULL	29  , 988
+2003	lincoln	town car sig	NULL	black	NULL	NULL	23 , 857	$ 32  , 988	NULL	32  , 988
+2003	lincoln	town car sig	NULL	black	NULL	NULL	23 , 857	$ 32  , 988	NULL	32  , 988
+2003	mercury	gr marquis ls	NULL	silver	NULL	NULL	17 , 588	$ 22  , 988	NULL	22  , 988
+2003	mercury	gr marquis ls	NULL	silver	NULL	NULL	17 , 588	$ 22  , 988	NULL	22  , 988
+2003	mercury	gr marquis ls	NULL	silver	NULL	NULL	17 , 588	$ 22  , 988	NULL	22  , 988
+2003	lincoln	town car exe	NULL	white	NULL	NULL	23 , 025	$ 29  , 988	NULL	29  , 988
+2003	lincoln	town car exe	NULL	white	NULL	NULL	23 , 025	$ 29  , 988	NULL	29  , 988
+2003	lincoln	town car sig	NULL	white	NULL	NULL	16 , 778	$ 31  ,  988	NULL	31  ,  988
+2003	lincoln	town car sig	NULL	white	NULL	NULL	16 , 778	$ 31  ,  988	NULL	31  ,  988
+2003	lincoln	town car sig	NULL	black	NULL	NULL	23 , 857	$ 32  , 988	NULL	32  , 988
+2003	lincoln	navigator 2wd	NULL	red	NULL	NULL	19 , 780	$ 42  , 988	NULL	42  , 988
+2003	lincoln	navigator 2wd	NULL	null	NULL	NULL	21 , 806	NULL	NULL	NULL
+2003	lincoln	town car sig	NULL	white	NULL	NULL	20 , 866	NULL	NULL	NULL
+NULL	lincoln	navigator 2wd	NULL	silver	NULL	NULL	59 , 394	NULL	NULL	NULL
+NULL	toyota	sequoia sr5	NULL	white	NULL	NULL	12 , 383	NULL	NULL	NULL
+NULL	lincoln	navigator 2wd	NULL	null	NULL	NULL	30 , 000	NULL	NULL	NULL
+NULL	lincoln	town car sig	NULL	white	NULL	NULL	20 , 866	NULL	NULL	NULL
+NULL	chevrole	suburban c15	NULL	charcoal	NULL	NULL	50 , 523	NULL	NULL	NULL
+NULL	lincoln	navigator 2wd	NULL	null	NULL	NULL	30 , 000	NULL	NULL	NULL
+NULL	lincoln	town car sig	NULL	white	NULL	NULL	20 , 866	NULL	NULL	NULL
+NULL	chevrole	suburban c15	NULL	charcoal	NULL	NULL	50 , 523	NULL	NULL	NULL
+NULL	lincoln	ls v8	NULL	null	NULL	NULL	21 , 734	NULL	NULL	NULL
+NULL	acura	2.2cl premium	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	acura	2.5tl	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	acura	3.2cl	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	acura	3.2tl	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	acura	integra gs	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	acura	integra ls	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	buick	century custom	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	astro	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	camaro	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	impala	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	ls	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	navigator	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	navigator	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	town car executive	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mazda	626	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mazda	millenia s	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mazda	protege	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mercury	cougar	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mercury	mountaineer	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mercury	mountaineer	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	impala	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	impala	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	malibu	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	prizm	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	s-10	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	venture	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chrysler	pt cruiser classic	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chrysler	voyager	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	dodge	dakota	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	dodge	durango slt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	dodge	intrepid	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	dodge	intrepid se	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	dodge	intrepid se	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	dodge	ram 1500	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	escape xls	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	escape xls	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	escape xls	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	escape xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	excursion limited	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	excursion limited	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	mustang	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	mustang	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	mustang	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	mustang	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	mustang	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	mustang	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	mustang gt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	mustang gt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	ranger	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	ranger	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	ranger	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	ranger	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	ranger	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	ranger	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	ranger	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	ranger xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	ranger xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	taurus se	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	taurus se	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	taurus se	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	expedition	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	expedition	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	expedition xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	expedition xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	expedition xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	expedition xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	expedition xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	expedition xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	expedition xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	expedition xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	ls	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	navigator	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	navigator	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	town car executive	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mazda	626	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mazda	millenia s	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mazda	protege	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mercury	cougar	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mercury	mountaineer	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mercury	mountaineer	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	honda	civic	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	honda	civic dx	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	honda	civic dx	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	honda	civic dx	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	honda	civic dx	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	honda	civic ex	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	honda	civic ex	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	honda	civic ex	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	honda	civic ex	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	ls	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	navigator	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	navigator	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	lincoln	town car executive	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mazda	626	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mazda	millenia s	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mazda	protege	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mercury	cougar	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	mercury	mountaineer	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	explorer xlt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	explorer xlt 4x4	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	f-150	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	f-150	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	f-150	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	f-150	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	f-150	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	null	f-150 supercrew	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	null	f-150 supercrew	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	ford	f-350	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	impala	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	impala	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	malibu	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	prizm	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	s-10	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chevrolet	venture	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chrysler	pt cruiser classic	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	chrysler	voyager	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	dodge	dakota	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	dodge	durango slt	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL

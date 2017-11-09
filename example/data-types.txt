@@ -1,0 +1,80 @@
+Geospatial domain:
+
+Gazeteer: sample data
+
+|Name | !LatDD | !LonDD | !LatDM | !LonDM |
+|Amsterdam|-26.6333|30.6667| 26 38 00 S| 030 40 00 E |
+|Amsterdam|37.4167|-120.5333 | 37 25 00 N |120 32 00 W |
+|Amsterdam|52.35|4.9 |52 21 00 N | 004 54 00 E |
+|Amsterdam|30.7167|-84.4333 | 30 43 00 N | 084 26 00 W |
+|Amsterdam|45.75|-111.3167| 45 45 00 N | 111 19 00 W |
+
+Terraworld:
+
+UFI | UNI | LatDD | LonDD | LatDMS | LonDMS | UTM | JOG | FC | DSG | SortName | FullName | FullNameND | Date
+
+-156090 -242829 -78 -169 -780000 -1690000 NU44 ST01-06 U FURU WHALESBAYDEEPS Whales Bay Deeps Whales Bay Deeps 7/23/1999
+
+-156090 -242830 -78 -169 -780000 -1690000 NU44 ST01-06 U FURU WHALESBAYFURROWS Whales Bay Furrows Whales Bay Furrows 7/23/1999
+
+-153537 -238266 -77.75 180 -774500 1800000 DP26 ST01-04 U BSNU GLOMARCHALLENGERBASIN Glomar Challenger Basin Glomar Challenger Basin 11/16/1993
+
+320406 398749 -77.6666667 -35 -774000 -350000 DP57 ST25-04 U TRGU RINNERTROUGH Rinner Trough Rinner Trough 8/1/1997
+
+-154185 -239453 -77.5 -162 -773000 -1620000 DU29 ST03-05 U BSNU LITTLEAMERICABASIN Little America Basin Little America Basin 11/16/1993
+
+Heavensabove:
+
+Place | Region | Lat | Lon | Elevation
+
+Alla ? 27.35 89.967 2523 m
+
+Ama ? 27.35 89.9 1626 m
+
+Bachap ? 26.983 89.817 2040 m
+
+Balfai ? 27.217 91.5 1735 m
+
+Bali ? 27.217 90.717 2173 m
+
+Barshong ? 27.7 89.55 3854 m
+
+Benkar Tashigang 27.317 91.567 1838 m
+
+Beteni ? 27.033 90.233 1998 m
+
+Bhangbarai ? 27.267 90.3 2908 m
+
+Bhangtar Samdrup 26.817 91.717 349 m
+
+Waypoints:
+
+Name | Lat | Lon
+
+WJF | N34.74111 | W118.21806
+
+TSP | N35.13528 | W118.43972
+
+MHV | N35.05831 | W118.15092
+
+L71 | N35.15192 | W118.01395
+
+L00 | N34.87080 | W118.20925
+
+IYK | N35.65883 | W117.82950
+
+PAO Palo Alto Airport | N372739.0 | W1220654.2
+
+Moffett Federal Airfield | N372420.5 | W1220305.1
+
+Chino Airport | N33,58.921 | W117,38.455
+
+LAX | N33,57.148 | W118,23.068
+
+Los | Angeles | International | Airport | -- | Parking | Lot | "B" | N3356.283 | W11822.733
+
+Control | Tower | - | Los | Angeles | World | Airport | (LAX) | N3356.644 | W11824.230
+
+Control | Tower | - | Long | Beach | Airport | N3348.645 | W11809.075
+
+Oceano | Airport, | California | N3506.241 | W12937.493 

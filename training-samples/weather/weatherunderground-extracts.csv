@@ -1,0 +1,12 @@
+date,time,location,temperature,tempInF,sky,windspeed,windspeedInMPH,winddir,visibility,visibilityInMi
+24-May-05,NULL,"Santa Barbara, California",63 °F,63,Overcast,5 mph,5,SW,4.0 miles,4
+31-May-05,7:01 PM,"Amateur Radio Station - AG2S, Hillsborough, New Jersey",74.8 °F,74.8,Clear,2.7 mph,2.7,SE,NULL,NULL
+31-May-05,6:30 PM EDT,"Crystal Shores, Cedar Point, North Carolina",72.1 °F,72.1,Mostly Cloudy,3 mph,3,ESE,NULL,NULL
+31-May-05,NULL,"Santa Barbara, California",68 °F,68,Clear,9 mph,9,West,10.0 miles,10
+31-May-05,NULL,"Santa Monica, California",66 °F,66,Clear,14 mph,14,WSW,9.0 miles,9
+1-Jun-05,6:51 PM EDT,"Central Park, New York",70 °F,70,Clear,8 mph,8,ESE,10.0 miles,10
+1-Jun-05,NULL,"Santa Barbara, California",64 °F,64,Overcast,5 mph,5,Variable,7.0 miles,7
+2-Jun-05,NULL,"Central Park, New York",66 °F,66,Clear,4 mph,4,Variable,10.0 miles,10
+2-Jun-05,NULL,"Bklyn, New York",61.7 °F,61.7,Clear,1 mph,1,Variable,NULL,NULL
+3-Jun-05,NULL,"Amateur Radio Station - AG2S, Hillsborough, New Jersey",71.1 °F,71.1,Clear,4 mph,4,ESE,NULL,NULL
+3-Jun-05,NULL,"Orlando, Florida",79 °F,79,Light Rain,5 mph,5,SSE,10.0 miles,10

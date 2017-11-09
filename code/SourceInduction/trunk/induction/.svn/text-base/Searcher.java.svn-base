@@ -1,0 +1,226 @@
+package induction;
+
+import java.util.ArrayList;
+
+import relational.DBConnection;
+import domain.Clause;
+import domain.Predicate;
+import evaluation.*;
+
+public class Searcher {
+	
+	public void search(DBConnection db,
+			   Enumerator en,
+			   Evaluator ev,
+			   boolean reloadTarget,
+			   boolean reloadSources,
+			   long timeout, 
+			   int maxIterations,
+			   boolean debug) {
+
+		long time = 0;
+		int  count = 0;
+		int  count1 = 0;
+		long accessCount1 = 0;
+
+		ArrayList<Clause> queue = new ArrayList<Clause>();
+		ArrayList<Double> scores = new ArrayList<Double>();
+		
+		Predicate target = en.domain.target;
+		ArrayList<Predicate> sources = en.domain.sources;
+		
+		if (reloadSources) {
+			System.out.println("\n****************************************************************");
+			System.out.println("INITIALIZING CACHE TABLES: ");
+			ev.dbCon.resetTables(ev.dbName,sources); 
+		}
+		if (reloadTarget) { 
+			System.out.println("\n****************************************************************");
+			System.out.println("INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: ");
+			(new Initializer(ev.dispatcher)).initialize(target, sources);
+		}	
+		
+		// check for any constants in the target table - don't need to search for them!!!!!
+		String[] constants = ev.checkForConstants(target,10);
+		for (int i=0; i<constants.length; i++) {
+			if (constants[i]!=null) {
+				String s=""; for (int j=0;j<30;j++) {s+="*";} System.out.println(s); 
+				System.out.println("Target attribute: "+target.types[i].name+i+" seems to be a constant value: '"+constants[i]+"'");
+			}
+		}
+	
+
+		Clause bestOverall = en.firstClause();
+		double bestOverallScore = 0.00;
+
+		queue.add(bestOverall);
+		scores.add(bestOverallScore);
+
+		ArrayList<Clause> tested = new ArrayList<Clause>();
+		Timer timer = new Timer(timeout);
+		
+		System.out.println("\n****************************************************************");
+		System.out.println("STARTING SEARCH: ");
+				
+		for (int i=0; i<maxIterations && queue.size()>0 && timer.timeLeft(); i++) {
+			sort(queue,scores);
+			if (!timer.timeLeft()) { break; }
+			Clause previousNode = queue.remove(0);
+			double previousScore = scores.remove(0);
+			if (debug) { System.out.printf("\nExpanding: %.10f: %s\n\n", previousScore, previousNode.toString());}
+			// System.out.printf("\nExpanding: %.10f: %s\n\n", previousScore, previousNode.toString()); //JLA
+			for (Clause c: en.expand(previousNode)) {
+				count++;
+				if (!timer.timeLeft()) { break; }
+				if (!tested.contains(c)) {
+					double score; 
+					if (c.lastPred().category == Predicate.FUNCTION) {
+						// no need to evaluate - score hasn't changed:
+						score = previousScore;
+					}
+					else {
+						score = ev.evaluate(c).score;
+					}
+					tested.add(c);
+					System.out.printf("%.3f: %s\n",Math.log10(score),c.toStringI());
+					queue.add(c);
+					scores.add(score);
+					boolean foundBetter = true;
+					while (foundBetter) {
+						if (!timer.timeLeft()) { break; }
+						foundBetter = false;
+						for (Clause c1: en.constrain(c)) {
+							count++;
+							if (!timer.timeLeft()) { break; }
+							if (!tested.contains(c1)) {
+								double score1 = ev.evaluate(c1).score;
+								tested.add(c1);
+								queue.add(c1);
+								scores.add(score1);
+								System.out.printf("%.3f: %s\n",Math.log10(score1),c1.toStringI());
+								if (score1 > score) {
+									c = c1;
+									score = score1;
+									foundBetter = true;
+								}
+							}
+						}
+					}
+					
+					if (score > bestOverallScore) { 
+						bestOverallScore = score; 
+						bestOverall = c; 
+						time = timer.timeInMillis(); 
+						count1 = count;
+						accessCount1 = ev.dispatcher.sourceAccesses;
+					}
+				}
+			}
+		}
+
+		String[] params = new String[] {"timestmp",
+										"target",
+										"definition",
+										"unfolding",
+										"score",
+										"normalisedScore",
+										"candidates",
+										"totalCandidates",
+										"accesses",
+										"totalAccesses",
+										"time",
+										"totalTime",
+										"timeout",
+										"maxClauseLength",
+										"maxPredRepitition",
+										"maxVarLevel",
+										"noVarRepetition",
+										"heuristic"};
+		int[] lengths   = new int[]    {15,2000,2000,5000,45,45,10,10,10,10,15,15,15,10,10,10,10,100};
+		String[] values = new String[] {""+timer.start,
+										target.toString(),
+										bestOverall.toStringI(),
+										bestOverall.unfold().toStringI(),
+										""+bestOverallScore,
+										""+Math.log(bestOverallScore * bestOverall.missingDomains(ev.dbCon)),
+										""+count1,
+										""+count,
+										""+accessCount1,
+										""+ev.dispatcher.sourceAccesses,
+										""+time / 1000,
+										""+timer.timeInMillis() / 1000,
+										""+timeout,
+										""+en.maxClauseLength,
+										""+en.maxPredRepetition,
+										""+en.maxVarLevel,
+										""+en.noVarRepetition,
+										""+en.heuristic};
+
+		System.out.println("\n************************************************************************");
+		for (int i=0; i<params.length; i++) { System.out.println(params[i]+" = "+values[i]); }
+		System.out.println("************************************************************************");
+
+		String dbTable = db.outputDbName + ".runs";
+		String filename = en.domain.filename;
+		if (filename!=null) {
+			dbTable = db.outputDbName + "." + filename.substring(filename.lastIndexOf("/")+1,filename.lastIndexOf("."));
+			String[] cols = new String[params.length]; for (int i=0; i<params.length; i++) { cols[i] = "`"+params[i]+"` varchar("+lengths[i]+")"; }
+			db.createTableIfNotExists(dbTable,cols,"`"+params[0]+"`");
+		}
+		db.insert(dbTable,values);
+	}
+	
+	public void searchAll(DBConnection db, 
+			  Enumerator en, 
+			  Evaluator ev, 
+			  boolean reload, 
+			  long timeout, 
+			  int maxIterations,
+			  boolean debug) {
+	
+		boolean reloadSources = true;
+		
+		for (Predicate p: en.domain.targets) {
+			en.domain.target = p;
+			search(db,en,ev,true,reloadSources,timeout,maxIterations,debug);
+			reloadSources = reload;
+		}
+	
+	}
+
+
+	//////////////////////////////////////////////////////////////////////////
+	// private classes and methods
+	
+	private class Timer {
+		long start;
+		long timeout;
+		Timer(long timeout) {
+			this.timeout = timeout;
+			start = System.currentTimeMillis();
+		}
+		public long timeInMillis() {
+			return (System.currentTimeMillis() - start);
+		}
+		public boolean timeLeft() {
+			return (System.currentTimeMillis() - start < timeout * 1000);
+		}
+	}
+	
+	private void sort(ArrayList<Clause> queue, ArrayList<Double> scores) {
+		for (int i=0; i<scores.size(); i++) {
+			Clause c = queue.get(i);
+			Double s = scores.get(i);
+			for (int j=0; j<i; j++) {
+				if (s > scores.get(j)) {
+					queue.remove(i);
+					scores.remove(i);
+					queue.add(j,c);
+					scores.add(j,s);
+					break;
+				}
+			}
+		}
+	}
+	
+}

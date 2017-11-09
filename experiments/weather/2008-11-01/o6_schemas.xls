@@ -1,0 +1,1186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Worksheet ss:Name="Table1">
+  <Table>
+   <Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>   <Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>   <Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="110"/>   <Row>
+    <Cell><Data ss:Type="String">tablename</Data></Cell>
+    <Cell><Data ss:Type="String">argumentno</Data></Cell>
+    <Cell><Data ss:Type="String">argumentname</Data></Cell>
+    <Cell><Data ss:Type="String">semantictype</Data></Cell>
+    <Cell><Data ss:Type="String">score</Data></Cell>
+    <Cell><Data ss:Type="String">direction</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_19</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_56</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.9</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_385</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_388</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_399</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_407</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_410</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_424</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_433</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.45</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_2535</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.814814814814815</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir_2585</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">searchText</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.142857142857143</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.142857142857143</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_13</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_17</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.142857142857143</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_64</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">0.6</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF_16</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.716666666666667</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempC_18</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempC</Data></Cell>
+    <Cell><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempC_19</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempC</Data></Cell>
+    <Cell><Data ss:Type="Number">0.333333333333333</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF_22</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.238888888888889</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_24</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir_25</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir</Data></Cell>
+    <Cell><Data ss:Type="Number">0.125</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_54</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.228571428571428</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_131</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.361111111111111</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_57</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.9</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_386</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_389</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_400</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_408</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_411</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_425</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_434</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.45</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir_2032</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_2609</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.814814814814815</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_21</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_58</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.9</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_387</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_390</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_401</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_409</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_412</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_426</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_435</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.45</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir_1629</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_2612</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.814814814814815</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">searchText</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_16</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_19</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_49</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.142857142857143</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_59</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.142857142857143</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_64</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.142857142857143</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_21</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_59</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.9</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_388</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_391</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_402</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_413</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.565384615384615</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_427</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.553846153846154</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_436</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.45</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_438</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.553846153846154</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_1372</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.777777777777778</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir_1592</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_21</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_58</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.9</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_386</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_389</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_400</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_411</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.565384615384615</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_425</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.553846153846154</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_434</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.45</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_436</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.553846153846154</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir_1590</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_1706</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.793650793650794</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">0.8</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF_16</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.716666666666667</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempC_18</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempC</Data></Cell>
+    <Cell><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempC_19</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempC</Data></Cell>
+    <Cell><Data ss:Type="Number">0.333333333333333</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF_22</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.238888888888889</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_24</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir_25</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir</Data></Cell>
+    <Cell><Data ss:Type="Number">0.125</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_54</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.228571428571428</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_131</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.361111111111111</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_57</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.9</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_373</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_376</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_387</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_398</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.565384615384615</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_412</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.553846153846154</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_421</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.45</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_423</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.553846153846154</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir_1935</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_2595</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.888888888888889</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_21</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_58</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.9</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_374</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_377</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg_388</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempCdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.636363636363636</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_399</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.565384615384615</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_413</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.553846153846154</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_422</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.45</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_424</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.553846153846154</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir_1530</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDir</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_1651</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.793650793650794</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">zip</Data></Cell>
+    <Cell><Data ss:Type="String">PR-ZIP</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">place</Data></Cell>
+    <Cell><Data ss:Type="String">PR-CityState</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">time</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TimeWZone</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">tempf</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">sky</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">humidity</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">windspeed</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindspeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">winddirection</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Winddir</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">pressurein</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Pressure</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">visibilitymi</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">lowtempf1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">hightempf1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">sky1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">lowtempf2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">hightempf2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">sky2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">lowtempf3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">hightempf3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">sky3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">lowtempf4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">hightempf4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="String">sky4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="String">lowtempf5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">hightempf5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="String">sky5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>

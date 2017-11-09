@@ -1,0 +1,29 @@
+PR-ZipCode5Digit, PR-Humidity, PR-Sky, CT-TemperatureF, CT-VisibilityFeet, CT-PressureInches, PR-WindDirection
+query,column58,column417,column530,column611,column2266,column2709
+20502,44%,Clear,NULL,231 ft,"My House in Bush Hill, Alexandria, VA",East
+33040,79%,Chance of a Thunderstorm,"<span class=""nobr""><span class=""b"">79</span>&nbsp;&#176;F</span>
+  /
+  <span",10 ft,NULL,NULL
+90292,100%,Partly Cloudy,NULL,36 ft,"Hawthorne & Silver Spur, Rancho Palos Verdes, CA",NULL
+36130,50%,Clear,"<span class=""nobr""><span class=""b"">79</span>&nbsp;&#176;F</span>
+  /
+  <span",0 ft,NULL,NULL
+85007,30%,Clear,NULL,1049 ft,"NW Phoenix, Phoenix, AZ",NULL
+6106,57%,Partly Cloudy,"<span class=""nobr""><span class=""b"">79</span>&nbsp;&#176;F</span>
+  /
+  <span",68 ft,"APRSWXNET Wolcott CT , Wolcott, CT",NULL
+32399,21%,Clear,"<span class=""nobr""><span class=""b"">79</span>&nbsp;&#176;F</span>
+  /
+  <span",144 ft,NULL,NULL
+46208,22%,Clear,"<span class=""nobr""><span class=""b"">79</span>&nbsp;&#176;F</span>
+  /
+  <span",723 ft,"Cartersburg, Plainfield, IN",NULL
+50319,67%,Partly Cloudy,"<span class=""nobr""><span class=""b"">79</span>&nbsp;&#176;F</span>
+  /
+  <span",822 ft,"IEM Adel / ADM MS , Adel, IA",NULL
+66612,63%,Partly Cloudy,"<span class=""nobr""><span class=""b"">79</span>&nbsp;&#176;F</span>
+  /
+  <span",920 ft,NULL,NULL
+
+
+http://www.wunderground.com/radar/map.asp,weather6,,,,,

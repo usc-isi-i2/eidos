@@ -1,0 +1,92 @@
+td.Messages_MessageTableRight{float:left;width:98%;}
+div.UserComments_Comment {overflow:auto;width:100%;}
+
+div .Comments_AddHeading {font-family:Arial,Helvetica,sans-serif;}
+
+td.ProfileEdit_TableField {width:405px}
+.ProfileEdit_TableField {width:405px}
+textarea.ProfileEdit_Textarea{width:405px;}
+
+.ProfileEdit_BigInput{width:405px;}
+textarea{font-family:Arial,Helvetica,sans-serif;font-size:11px;}
+
+#rpt_persona_abuse span a.SiteLife_ReportAbuse { padding:4px 20px 0px 0px; margin-left:5px; background:url(http://i.usatoday.net/community/_common/_images/reportabuse_home.gif) 78% 50% no-repeat; background-color:#DCE3E9; border: 1px solid #728FA1; height:18px; text-align:center; font-weight:bold; width:143px; }
+#rpt_persona_abuse span.SiteLife_Reported { padding:4px 20px 0px 0px; margin-left:5px; background:url(http://i.usatoday.net/community/_common/_images/reportabuse-after_home.gif) 70% 50% no-repeat; background-color:#DCE3E9; border: 1px solid #728FA1; height:18px; text-align:center; font-weight:bold; width:143px; }
+
+div.PersonaPhotoUpload_TOS { font-size:10px; font-family: Arial,Helvetica,sans-serif; }
+div.PersonaPhotoUpload_TOS a:hover { text-decoration:underline; }
+
+td.ViewEditList_TableLeft{ background-color:white; width:70px; padding:5px; }
+td.ViewEditList_TableMiddle{ background-color:white; width:100%; padding:5px; }
+td.ViewEditList_TableRight{ background-color:white; width:115px; padding:5px; text-align:right; }
+tr.ViewEditList_TableRowColor td{ border-style:solid;border-left:0px; border-right:0px; border-top-width:1px; border-bottom-width:1px; border-color:grey; background-color:#ffffff; }
+
+div.BlogNav{ text-align:left; }
+table.BloggerProfile_Table{ width:100%; table-layout:fixed; text-align:left; margin:0px; padding:0px; background-color:#BFD4E6; }
+td.BloggerProfile_TableImg{ width:80px; vertical-align:top; text-align:center; padding-top:5px;background-color:#BFD4E6; }
+td.BloggerProfile_TableText{ width:100%; vertical-align:top; background-color:#BFD4E6; }
+div.Blog_AddToWatchlist{ height:20px; font-size:11px; padding-left:10px; }
+div.Blog_AddToWatchlist a { border:2px solid #FC0511; background-color:#BFD4E6; border:#a1a4ae; border-style:solid; border-width:1px; border-style: outset; }
+
+div.GallerySubmissions_ActionLink a{ float:left; padding:5px; border:#a1a4ae; border-style:solid; border-width:1px; border-style: outset; }
+
+.Persona_NullContent p a{ border:#a1a4ae; border-style:solid; border-width:1px; border-style: outset; padding:5px; font-size:11px; }
+div.PersonaStyle_ItemContainer{ border: 0px solid #E4E3E3; }
+div.PersonaStyle_SectionHead { border: 1px solid #858794; border-bottom: 0px solid; font-size:12px; font-weight:bold; background: url(http://i.usatoday.net/_common/_images/header_bar.gif) repeat left top; padding:11px 0px 9px 30px; text-align:left; }
+td.Persona_2ColumnTableRight{ padding:0px 0px 0px 15px; }
+
+div.Messages_NewMessageHead{ display:none; }
+td.Messages_MessageTableRight{ padding:7px; border-style:solid; border-left:0px; border-right:0px; border-top:0px; border-bottom-width:1px; border-color:grey; background-color:white; }
+td.Messages_MessageTableLeft{ margin-left:35px; padding-left:10px; padding-right:10px; background-color: #fff; }
+td.Message_Remove{ width:20px; }
+td.MessagePreview_TableLeft{ vertical-align:left; padding-left:16px; background-color:#ffffff; } 
+td.MessagePreview_TableRight{ padding:7px; border-style:solid; border-left:0px; border-right:0px; border-top:0px; border-bottom-width:1px; border-color:grey; background-color:#ffffff; }
+
+td.PersonaBlog_TableRight{ border-left:1px solid; color:#666666; }
+
+div.Reactions_Link a:link{ color:#00529B; padding:0px 0px 0px 0px; }
+
+.UserComments_DateTime{ color:grey; font-size:10px; }
+
+div.BlogMain_EntryContainer{ padding:0px 0px 10px 0px; margin:0px 10px 10px 0px; border-bottom:1px solid #999999; overflow:hidden; }
+table.BlogMain_EntryPost { border-bottom: 1px solid #999; margin-bottom: 10px; width:95%; }
+div.BlogMain_EntryDate{ color:#999999; padding-top:3px; padding-left:6px; font-size:11px; }
+div.BlogMain_EntryTitle{ font-size:12px; font-weight:bold; }
+div.BlogMain_EntryContent{ padding-top:7px; padding-left:6px; font-size:12px; overflow:hidden;}
+div.BlogMain_EntryDetails{ padding-top:10px; padding-bottom:12px; font-size:10px; padding-left:2px; }
+
+div.BloggerProfile_TagLine{ margin:5px 0px 20px 6px; font-size:14px; }
+
+td.PersonaHeader_TableMiddle{ font-size:11px; }
+
+span.PersonaHeader_InfoHeading{ font-weight:bold; }
+
+/* Persona Tabs */
+#ProfileEdit_SectionDescription_Link a { display:none }
+div.PersonaTabs_Container a.PersonaTabs_Off:hover{ text-decoration:none; background-color:#BFD4E6; }
+div.PersonaTabs_Container{ height:25px; min-height:23px; border-bottom:0px solid #cccccc; background-color:#E4E3E3; }
+div.PersonaTabs_Container a.PersonaTabs_On{ float:left; padding:5px 10px 7px 10px; margin-left:5px; border:1px solid #cccccc; border-bottom:0px; background-color:#FFFFFF; color:#000000; text-decoration:none; font-family:verdana; font-size:10px; font-weight:bold; }
+div.PersonaTabs_Container a.PersonaTabs_On:hover{ text-decoration:none; }
+div.PersonaTabs_Container a.PersonaTabs_Off{ float:left; padding:5px 10px 5px 10px; margin-left:5px;  border-bottom:0px; color:#000000; text-decoration:none; font-family:verdana; font-size:10px; }
+div.PersonaTabs_Container a.PersonaTabs_Off:hover{ text-decoration:none; background-color:#BFD4E6; }
+
+a.SiteLife_AddToWatchList{ padding:1px 20px 1px 0px; background:url(http://sitelifestage.usatoday.com//ver1.0/Content/images/icons/icon_favourites.gif) right 50% no-repeat; }
+a.SiteLife_EmailThis{ padding:1px 20px 1px 0px; background:url(http://sitelifestage.usatoday.com/ver1.0/Content/images/icons/icon_email.gif) right 50% no-repeat; }
+a.SiteLife_ReportAbuse{ padding:1px 0 1px 20px; background:url(http://i.usatoday.net/community/_common/_images/reportabuse_home.gif) 10 50% no-repeat; width:200px; text-align:right; margin:25px; }
+a.SiteLife_ReportAbuse:link, a.SiteLife_ReportAbuse:visited, a.SiteLife_ReportAbuse:hover, a.SiteLife_ReportAbuse:active{ background:url(http://i.usatoday.net/community/_common/_images/reportabuse_home.gif) right 100% no-repeat; margin: 0; padding:0 20px 0 0; }
+
+div.Comments_CommentText{ padding-top:5px; padding-left:5px; }
+div.Comments_NestedDate{ color:#999999; padding-top:3px; font-size:10px; padding-left:4px; }
+
+/* GallerySubmissions */
+table.UserGalleryList_Table { margin-left:0px; }
+
+#GallerySubmissionDiv{ display:none; }
+div.GallerySumissions_Discription{ padding:5px 0px 0px 5px; }
+div.GallerySubmissions_ActionLink{ padding:3px; text-align:left; height:20px; text-align:right; padding:10px 0px 10px 0px; }
+div.GallerySubmissions_ActionLink a{ float:left; padding:5px; margin-right:10px; background-color:#ff8800; border:1px solid #ff3300; color:#ffffff; text-decoration:none; }
+div.GallerySubmissions_ActionLink a:hover{ text-decoration:underline; color:#ffffff; }
+table.GallerySubmissions_Table{ width:100%; text-align:left; margin:auto; margin-top:5px; }
+td.GallerySubmissions_TableDate{ padding-left:5px; }
+td.GallerySubmissions_TableName{ width:100%; padding:0px 10px 0px 7px; }
+div.GallerySubmissions_Page{ text-align:center; }

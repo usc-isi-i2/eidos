@@ -1,0 +1,31 @@
+(function(){
+	var rp=parseFloat("100"),r=Math.random()*10000,s_id="DL_342503_2_21965037",w=window,d=document;
+
+	function z(){
+		if (d.createElement&&d.getElementById){
+			if (!d.body){setTimeout(z,100);return;}
+			try{ var s=d.getElementById(s_id);
+			if (!s){
+				s=d.createElement('script');
+				s.src="http://amch.questionmarket.com/adsc/d342503/2/21965037/decide.php?lt="+Math.floor((new Date()).getTime()/1000);
+				s.id=s_id;
+				d.body.insertBefore(s,d.body.firstChild); }
+	                }catch(e){ }}
+	}
+
+	function t(){
+		if (1==4)z();
+		else setTimeout(z,Math.ceil(Math.random() * 4) * 500); 
+	}
+
+        if (!isNaN(rp)&&(r>=rp*100)) return;
+
+	if (false||d.readyState=="complete"||w.inDapIF){ 
+		t();
+	} else if (w.addEventListener){ // DOM
+		w.addEventListener("load", t, false);
+	} else if (w.attachEvent){ // IE 5+
+		w.attachEvent("onload", t);
+	}
+})();
+

@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Jose Luis Ambite</LastAuthor>
+  <LastSaved>2008-10-04T00:33:51Z</LastSaved>
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>1980</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Table1">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="14" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:Width="82.5"/>
+   <Column ss:Width="83.25"/>
+   <Column ss:Width="67.5"/>
+   <Column ss:Width="60"/>
+   <Column ss:Width="88.5"/>
+   <Column ss:Width="81" ss:Span="2"/>
+   <Row>
+    <Cell><Data ss:Type="String">PR-ZipCode5Digit</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDirection</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="String">CT-PressureInches</Data></Cell>
+    <Cell><Data ss:Type="String">CT-TemperatureF</Data></Cell>
+    <Cell><Data ss:Type="String">CT-TemperatureF</Data></Cell>
+    <Cell><Data ss:Type="String">CT-TemperatureF</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">pands</Data></Cell>
+    <Cell><Data ss:Type="String">column33</Data></Cell>
+    <Cell><Data ss:Type="String">column35</Data></Cell>
+    <Cell><Data ss:Type="String">column39</Data></Cell>
+    <Cell><Data ss:Type="String">column41</Data></Cell>
+    <Cell><Data ss:Type="String">column77</Data></Cell>
+    <Cell><Data ss:Type="String">column80</Data></Cell>
+    <Cell><Data ss:Type="String">column83</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">06106</Data></Cell>
+    <Cell><Data ss:Type="String">EDT</Data></Cell>
+    <Cell><Data ss:Type="String">Fair</Data></Cell>
+    <Cell><Data ss:Type="String">68%</Data></Cell>
+    <Cell><Data ss:Type="String">29.59 in.</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 51&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Hi: 65&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 45&amp;deg;F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">20502</Data></Cell>
+    <Cell><Data ss:Type="String">EDT</Data></Cell>
+    <Cell><Data ss:Type="String">Overcast</Data></Cell>
+    <Cell><Data ss:Type="String">58%</Data></Cell>
+    <Cell><Data ss:Type="String">29.69 in.</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 51&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Hi: 69&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 49&amp;deg;F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">32399</Data></Cell>
+    <Cell><Data ss:Type="String">EDT</Data></Cell>
+    <Cell><Data ss:Type="String">Fair</Data></Cell>
+    <Cell><Data ss:Type="String">33%</Data></Cell>
+    <Cell><Data ss:Type="String">29.80 in.</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 53&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Hi: 80&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 50&amp;deg;F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">33040</Data></Cell>
+    <Cell><Data ss:Type="String">EDT</Data></Cell>
+    <Cell><Data ss:Type="String">Mostly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">72%</Data></Cell>
+    <Cell><Data ss:Type="String">29.85 in.</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 75&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Hi: 85&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 75&amp;deg;F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">36130</Data></Cell>
+    <Cell><Data ss:Type="String">CDT</Data></Cell>
+    <Cell><Data ss:Type="String">Fair</Data></Cell>
+    <Cell><Data ss:Type="String">36%</Data></Cell>
+    <Cell><Data ss:Type="String">29.87 in.</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 48&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Hi: 78&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 48&amp;deg;F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">46208</Data></Cell>
+    <Cell><Data ss:Type="String">EDT</Data></Cell>
+    <Cell><Data ss:Type="String">Mostly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">56%</Data></Cell>
+    <Cell><Data ss:Type="String">29.91 in.</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 41&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Hi: 65&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 45&amp;deg;F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">50319</Data></Cell>
+    <Cell><Data ss:Type="String">CDT</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">44%</Data></Cell>
+    <Cell><Data ss:Type="String">30.10 in.</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 40&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Hi: 65&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 45&amp;deg;F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">66612</Data></Cell>
+    <Cell><Data ss:Type="String">CDT</Data></Cell>
+    <Cell><Data ss:Type="String">Fair</Data></Cell>
+    <Cell><Data ss:Type="String">37%</Data></Cell>
+    <Cell><Data ss:Type="String">30.09 in.</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 40&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Hi: 71&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 47&amp;deg;F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">85007</Data></Cell>
+    <Cell><Data ss:Type="String">MST</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">10%</Data></Cell>
+    <Cell><Data ss:Type="String">29.87 in.</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 72&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Hi: 99&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 72&amp;deg;F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">90292</Data></Cell>
+    <Cell><Data ss:Type="String">PDT</Data></Cell>
+    <Cell><Data ss:Type="String">Fair</Data></Cell>
+    <Cell><Data ss:Type="String">26%</Data></Cell>
+    <Cell><Data ss:Type="String">29.88 in.</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 68&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Hi: 87&amp;deg;F</Data></Cell>
+    <Cell><Data ss:Type="String">Lo: 58&amp;deg;F</Data></Cell>
+   </Row>
+   <Row ss:Index="14">
+    <Cell ss:Index="6"><Data ss:Type="String">lo;tonight</Data></Cell>
+    <Cell><Data ss:Type="String">hi:nexday</Data></Cell>
+    <Cell><Data ss:Type="String">low:next-day</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <Sorting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Sort>Column A</Sort>
+  </Sorting>
+ </Worksheet>
+</Workbook>

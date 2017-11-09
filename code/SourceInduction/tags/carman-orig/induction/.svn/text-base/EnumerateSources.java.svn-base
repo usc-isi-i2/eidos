@@ -1,0 +1,329 @@
+package induction;
+
+import java.util.ArrayList;
+
+import domain.*;
+
+
+/*
+ * FOIL like generation of candidates
+ * 
+ * searches over space of source predicates
+ * all candidates produced are:
+ *   => reduced (well, sort of!)
+ *   => executable
+ *   => varLevel < maxVarLevel 
+ *   => distinct (at least for each invocation)
+ *   
+ *   
+ *  NOTE: search does not produce any candidates in which
+ *  two output variables are equated (unless they are both
+ *  equated to an input)  
+ *   
+ *  Version 2:
+ *   - expandNode: generates definitions with 1 more 
+ *   	predicate with minimal variable bindings
+ *   - constrainLastLiteral: adds more variable bindings 
+ *   	to the current definition 
+ *   
+ */
+
+public class EnumerateSources extends Enumerator {
+
+	
+	public EnumerateSources(Domain domain,
+			  				 int maxClauseLength,
+			  				 int maxPredRepitition,
+			  				 int maxVarLevel,
+			  				 boolean noVarRepetition,
+			  				 String heuristic,
+			  				 boolean debug) {
+		super(domain, maxClauseLength, maxPredRepitition, maxVarLevel, noVarRepetition, heuristic, debug);
+	}
+
+	public ArrayList<Clause> expand(Clause node) {
+		
+		if (node.length() < maxClauseLength) {
+			// add a new predicate & filter the clauses 
+			ArrayList<Clause> distinctClauses = new ArrayList<Clause>();
+			for (Clause clause: addLiteral(node)) {
+				if (!distinctClauses.contains(clause)) {
+					distinctClauses.add(clause);
+				}
+			}
+			if (debug) {
+				System.out.println(" > Generated "+distinctClauses.size()+" distinct candidates:");
+				System.out.println(" ***********************************************************");
+				for (Clause c: distinctClauses) { System.out.println(c.toString()); } 
+				System.out.println();
+			}
+			return distinctClauses;
+		}	
+		
+		return new ArrayList<Clause>();
+	}
+	
+	public ArrayList<Clause> constrain(Clause node) {
+		
+		if (node.preds.isEmpty()) { return new ArrayList<Clause>(); }
+		
+		Predicate pred = node.preds.lastElement();
+		Term[] config = node.terms.lastElement();
+		
+		// make copy of clause and remove last literal
+		Clause clause = node.copy();
+		clause.preds.remove(clause.preds.size()-1);
+		clause.terms.remove(clause.terms.size()-1);
+		
+		// generate all (reasonable) configurations for variables:
+		ArrayList<Term[]> configurations = new ArrayList<Term[]>();
+		
+		// cycle over variables in the last literal:
+		for (int pos=0; pos<pred.arity; pos++) {
+			if (config[pos] == null) {
+				
+				//	 find all possible variables of this type to equate to:
+				// NOTE: implicit language bias here preventing definitions of the form:
+				//     head(A,B,C) :- pred(X,X,A).
+				// while still allowing definitions of form:
+				//     head(A,B,C) :- pred(B,B,A).
+				// but even this possibility can be ruled out by setting noVarRepetition=true
+				ArrayList<Term> possibleTerms = findVariables(clause,pred.types[pos]);
+				
+				// add new terms:
+				for (Term term: possibleTerms) {
+					// check for repeated term
+					if (!noVarRepetition || !containsTerm(config,pred.arity,term)) {
+						Term[] copy = Term.copyArray(config);
+						copy[pos] = term;
+						configurations.add(copy);
+					}
+				}
+					
+			}
+			
+		}
+		
+		ArrayList<Clause> clauses = new ArrayList<Clause>();
+		for (Term[] termArray: configurations) {
+			Clause copy = clause.copy();
+			copy.preds.add(pred);
+			copy.terms.add(termArray);
+			// this needs to be made more efficient:
+			if (!copy.isSymmetric() 
+				&& !copy.isReducable()) {
+				
+				clauses.add(copy);
+			}
+		}
+		
+		return clauses;
+		
+	}
+	
+	public ArrayList<Restriction> constrain2(Clause node) {
+		
+		if (node.preds.isEmpty()) { return new ArrayList<Restriction>(); }
+		
+		// make copy of clause and remove last literal
+		Clause clause  = node.copy();
+		Predicate pred = clause.preds.remove(clause.preds.size()-1);
+		Term[] config  = clause.terms.remove(clause.terms.size()-1);
+		
+		// generate all (reasonable) restrictions on the last literal:
+		ArrayList<Restriction> restrictions = new ArrayList<Restriction>();
+		
+		// cycle over variables in the last literal:
+		for (int pos=0; pos<pred.arity; pos++) {
+			if (config[pos] == null) {
+				
+				ArrayList<Term> possibleTerms = findVariables(clause,pred.types[pos]);
+				
+				for (Term term: possibleTerms) {
+					// check for repeated term
+					if (!noVarRepetition || !containsTerm(config,pred.arity,term)) {
+						
+						// create new restriction:
+						Restriction r = new Restriction();
+						r.position = pos;
+						r.variable = term;
+						r.previousClause = node;
+						r.updateClause();
+						
+						// this needs to be made more efficient:
+						if (!r.updatedClause.isSymmetric() 
+							&& !r.updatedClause.isReducable()) {
+							restrictions.add(r);
+						}
+
+					}
+				}
+					
+			}
+			
+		}
+			
+		return restrictions;
+		
+	}
+
+	///////////////////////////////////////////////////////////
+	// private methods:
+	
+	private ArrayList<Clause> addLiteral(Clause node) {
+		
+		ArrayList<Clause> extendedClauses = new ArrayList<Clause>();
+		if (node.preds.isEmpty()) {
+			// add head literal
+			Predicate target = domain.target;
+			Clause emptyClause = node.copy();
+			emptyClause.preds.add(target);
+			emptyClause.terms.add(new Term[target.arity]);
+			extendedClauses.add(emptyClause);
+		}
+		else {
+			// cycle over source and comparison predicates
+			for (Predicate pred: (new Heuristic(heuristic,domain,maxClauseLength,maxPredRepitition)).orderedPreds(node)) {
+				//if (node.toStringI().indexOf("GetCentroid(zip0,_,_), GetCentroid(zip1,_,_)")!=-1) {
+				//	System.out.println("\n Adding literal containing predicate: "+pred.toString());
+				//}
+				extendedClauses.addAll(addPredicate(node,pred));
+			}
+		}
+		return extendedClauses;
+	}
+	
+	private ArrayList<Clause> addPredicate(Clause node, Predicate pred) {
+		
+		// generate minimal configurations for variables:
+		ArrayList<Term[]> configurations = new ArrayList<Term[]>();
+		
+		if (!pred.inputSignature().isEmpty()) {
+			
+			// bind all predicate inputs:
+			
+			configurations.add(new Term[pred.arity]);
+			
+			// cycle over the input variables in the last literal:
+			for (int pos=0; pos<pred.arity; pos++) {
+				if (pred.bindings[pos]) {
+					ArrayList<Term[]> previousConfigs = configurations;
+					configurations = new ArrayList<Term[]>();
+					ArrayList<Term> possibleTerms = findVariables(node,pred.types[pos]);
+					for (Term[] config: previousConfigs) {
+						for (Term term: possibleTerms) {
+							// check for repeated term
+							if (!noVarRepetition || !containsTerm(config,pos,term)) {
+								Term[] copy = Term.copyArray(config);
+								copy[pos] = term;
+								configurations.add(copy);
+							}	
+						}
+					}
+				}
+			}
+			/*
+			// bind one of the output variables as well:
+			if (configurations.size()<10) {
+				ArrayList<Term[]> previousConfigs = new ArrayList<Term[]>();
+				previousConfigs.addAll(configurations);
+				for (int pos=0; pos<pred.arity; pos++) {
+					if (!pred.bindings[pos]) {
+						ArrayList<Term> possibleTerms = findVariables(node,pred.types[pos]);
+						for (Term[] config: previousConfigs) {
+							for (Term term: possibleTerms) {
+								// check for repeated term
+								if (!noVarRepetition || !containsTerm(config,pred.arity,term)) {
+									Term[] copy = Term.copyArray(config);
+									copy[pos] = term;
+									configurations.add(copy);
+								}	
+							}
+						}
+					}
+				}
+			}
+			*/
+			/*
+			if (pred.category == Predicate.FUNCTION) {
+				// bind one of the output variables as well:
+				ArrayList<Term[]> previousConfigs = configurations;
+				configurations = new ArrayList<Term[]>();
+				for (int pos=0; pos<pred.arity; pos++) {
+					if (!pred.bindings[pos]) {
+						ArrayList<Term> possibleTerms = findVariables(node,pred.types[pos]);
+						for (Term[] config: previousConfigs) {
+							for (Term term: possibleTerms) {
+								// check for repeated term
+								if (!noVarRepetition || !containsTerm(config,pred.arity,term)) {
+									Term[] copy = Term.copyArray(config);
+									copy[pos] = term;
+									configurations.add(copy);
+								}	
+							}
+						}
+					}
+				}
+			}
+			*/
+			
+		}
+		else {
+			
+			// bind just one variable in the last literal:
+			
+			for (int pos=0; pos<pred.arity; pos++) {
+				ArrayList<Term> possibleTerms = findVariables(node,pred.types[pos]);
+				for (Term term: possibleTerms) {
+					Term[] copy = new Term[pred.arity];
+					copy[pos] = term;
+					configurations.add(copy);
+				}
+			}
+			
+		}
+		
+		
+		ArrayList<Clause> clauses = new ArrayList<Clause>();
+		for (Term[] config: configurations) {
+			Clause copy = node.copy();
+			copy.preds.add(pred);
+			copy.terms.add(config);
+			// this needs to be made more efficient:
+			if (!copy.isSymmetric() 
+				&& !copy.isReducable() 
+				&& copy.maxLevel()<=maxVarLevel) {
+				
+				clauses.add(copy);
+			}
+		}
+		
+		return clauses;
+		
+	}
+	
+	private ArrayList<Term> findVariables(Clause node, SemanticType type) {
+		ArrayList<Term> possibleTerms = new ArrayList<Term>();
+		for (int i=0; i<node.terms.size(); i++) {
+			Predicate pred 	 = node.preds.elementAt(i);
+			Term[] termArray = node.terms.elementAt(i);
+			for (int j=0; j<pred.arity; j++) {
+				if (type == pred.types[j] && (termArray[j] == null || termArray[j].isConstant)) {
+					possibleTerms.add(new Term(i,j));
+				}
+			}
+		}	
+		return possibleTerms;
+	}
+	
+	private boolean containsTerm(Term[] array, int pos, Term term) {
+		for (int i=0; i<pos; i++) {
+			if (term.equals(array[i])) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+
+}	

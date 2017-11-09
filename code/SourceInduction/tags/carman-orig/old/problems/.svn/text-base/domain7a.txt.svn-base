@@ -1,0 +1,51 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Uses Weather Services:
+##  http://www.webservicex.net/WeatherForecast.asmx?WSDL
+
+## Semantic Types: 
+type zipcode	  [varchar(9)] {uscensusbureau.zipnov99.zipcode}
+type latitude	  [varchar(13)] {numeric: -90.0, +90.0, 0.05}
+type longitude	  [varchar(13)] {numeric: -180.0, +180.0, 0.05}
+type miles		  [varchar(30)] {numeric: 0.0, 24901.55 , 2%}
+type kilometres	  [varchar(30)] {numeric: 0.0, 40075.16 , 2%}
+type streetnumber [varchar(10)] 
+type street		  [varchar(80)] 
+type apartment	  [varchar(10)] 
+type city		  [varchar(50)] 
+type state		  [varchar(2)] {miscellaneous.usstates.code}
+type areacode	  [varchar(3)] 
+type timezone	  [varchar(5)] 
+type celsius	  [varchar(13)] {numeric: -90.0, +90.0, 3%}
+type fahrenheit	  [varchar(13)] {numeric: -90.0, +90.0, 3%}
+type date		  [varchar(80)]
+type url		  [varchar(80)]
+type unknown	  [varchar(80)]
+
+
+## Domain Relations: 
+relation centroid(zipcode,latitude,longitude)
+relation distance(latitude,longitude,latitude,longitude,kilometres)
+relation convert(kilometres,miles)
+relation address(streetnumber,street,apartment,zipcode)
+relation municipality(city,state,zipcode)
+relation phoneprefix(zipcode,areacode)
+relation timezone(state,timezone)
+relation convertTemp(celsius,fahrenheit)
+
+## Comparison Predicates: 
+comparison <($miles,$miles)
+comparison <($kilometres,$kilometres)
+comparison <($celsius,$celsius)
+comparison <($fahrenheit,$fahrenheit)
+
+## Sources: 
+source GetCentroid($zip,lat,long) 	 :- centroid(zip,lat,long). 	  {invocation.wrappers.Ragnarok; getCentroid }
+source GetCityState($zip,city,state) :- municipality(city,state,zip). {invocation.wrappers.Ragnarok; query; SELECT t0.zipcode, t0.postofficename, t1.state_abbrev FROM uscensusbureau.zipnov99 t0, miscellaneous.statecodes t1 WHERE (t0.fips_state = t1.fips_code) AND (t0.zipcode=$input0)}
+source GetFahrenheit($tempC,tempF)	 :- convertTemp(tempC,tempF).  	  {invocation.wrappers.Ragnarok; convertCelsiusToFahrenheit}
+
+## Target Predicate: 
+target GetWeatherByZipCode($zipcode,latitude,longitude,unknown,unknown,city,state,date,url,fahrenheit,fahrenheit,celsius,celsius) {invocation.wrappers.WebServiceX; GetWeatherByZipCode}
+	    	
+##############################################################

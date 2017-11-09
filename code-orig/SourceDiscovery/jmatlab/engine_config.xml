@@ -1,0 +1,6 @@
+<ConfigHolder xmlns:j="http://javolution.org" xmlns="java:com.jstatcom.engine" xmlns:jstatcom="java:com.jstatcom" engine="MATLAB">
+<ConfigHolder$KeyValPair key="MATLAB_COMPILER_VERSION" value="4.0"/>
+<ConfigHolder$KeyValPair key="SHARED_MEM_SIZE" value="10000000"/>
+<ConfigHolder$KeyValPair key="DLL_NAME" value="mclmcrrt70"/>
+<ConfigHolder$KeyValPair key="RUNTIME_SUBDIR" value="MATLAB Component Runtime/v70/runtime/win32"/>
+</ConfigHolder>

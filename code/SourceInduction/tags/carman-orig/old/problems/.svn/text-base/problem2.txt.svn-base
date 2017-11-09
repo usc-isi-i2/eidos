@@ -1,0 +1,19 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+import problems/types.txt
+
+## Relations: 
+import problems/relations.txt
+import problems/comparisons.txt
+
+## Sources: 
+#source GetStateInfo($name,state,capital)      		  :- state(state,name,capital).				{invocation.wrappers.Ragnarok; getStateInfo}
+source GetAirportInfo($icao,iata,apt,cty,st,cn)       :- airport(icao,iata,apt,cty,st,cn,_,_).	{invocation.wrappers.Ragnarok; getAirportInfo}
+source WeatherFeed($c,$st,f,cl,sk,dw,hm,w,pr,lt,ln,t) :- state(s,st,_),municipality(c,s,z,_),centroid(z,lt,ln),conditions(lt,ln,t,f,sk,dw,hm,dr,sp,_,pr),convertTemp(cl,f),concat(dr,sp,w).	{invocation.wrappers.BoyGenius; WeatherFeed}
+
+## Target Predicate: 
+target airportWeather($icao,sky,temperatureF,humidity,direction,speedMph,pressureMb,temperatureF)				{invocation.wrappers.NOAAWeather; current_obs2}
+
+##############################################################

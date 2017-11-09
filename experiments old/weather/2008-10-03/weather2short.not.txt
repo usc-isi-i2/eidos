@@ -1,0 +1,46 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+type PR_ZipCode5Digit	        [varchar(200)]	{examples.zipcode5digit.val} # complete list: {uscensusbureau.zipnov99.zipcode}
+type CT_TemperatureF		[varchar(100)]  {numeric: -100.0, +200.0, 5%}
+type CT_TemperatureC		[varchar(100)]  {numeric: -50.0, +80.0, 5%}
+type PR_Humidity		[varchar(100)]  {numeric: 0.0, 100.0, 10%}
+type PR_WindDirection		[varchar(100)]  {examples.wind_direction.val}
+type CT_VisibilityFeet		[varchar(100)]
+type CT_VisibilityMiles		[varchar(100)]
+type CT_PressureInches  	[varchar(100)] {numeric: 26.0, 30.99, 0.02}
+type PR_Sky			[varchar(100)]
+type CT_PressureMb		[varchar(100)]	{numeric: 1016.0, 1025.9, 1.0}
+
+## Domain Relations: 
+
+relation weather(PR_ZipCode5Digit,CT_TemperatureF:high,CT_TemperatureF:low,CT_TemperatureF:nextday,PR_Humidity,PR_Sky,CT_PressureInches,PR_WindDirection,CT_VisibilityFeet)
+
+# relation convertDistMFt(distanceM,distanceFt)
+relation convertDistMFt(CT_VisibilityMiles,CT_VisibilityFeet)
+
+relation convertTemp(CT_TemperatureC,CT_TemperatureF)
+
+## Sources: 
+
+# function ConvertM2Ft($distM,distFt)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertM2Ft}
+
+function ConvertC2F($tempC,tempF)	 			:- convertTemp(tempC,tempF).  	  							{wrappers.Ragnarok; convertC2F}
+
+function ConvertFt2M($distFt,distM)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertFt2M}
+
+source weather1($ZIP,HU,TF:high,TF:low,TF:nextday,SKY,VF,PI,WD) :- weather(ZIP,TF:high,TF:low,TF:nextday,HU,SKY,PI,WD,VF).												{wrappers.DBService; http://www.wunderground.com/}
+
+
+## Target Predicate: 
+
+target weather2($PR_ZipCode5Digit,PR_Sky,CT_TemperatureF,CT_TemperatureC,PR_Humidity,PR_WindDirection,CT_TemperatureF) 					{wrappers.DBService; http://weather.unisys.com/}
+
+
+######################################################################
+#
+# EXPERIMENTS
+
+#does not work with the short names. Need to have similar names in the DB.

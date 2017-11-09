@@ -1,0 +1,164 @@
+************************************************************************
+timestmp = 1230056498909
+target = geospatial49($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude)
+definition = geospatial49($PR_Address0,_,PR_StateAbbr2,_,PR_Zip4,PR_Street5,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street5,_,PR_StateAbbr2,PR_Zip4,PR_Latitude7,PR_Longitude8).
+unfolding = geospatial49($PR_Address0,_,PR_StateAbbr2,_,PR_Zip4,PR_Street5,_,PR_Latitude7,PR_Longitude8)	:- Address(PR_Address0,PR_Street5,_,PR_StateAbbr2,_,PR_Zip4,_,_,PR_Latitude7,PR_Longitude8).
+score = 2.4913494809688584E-5
+normalisedScore = -0.4338645826298623
+candidates = 30
+totalCandidates = 30
+accesses = 21
+totalAccesses = 21
+time = 130
+totalTime = 130
+timeout = 300
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+
+************************************************************************
+timestmp = 1230056744286
+target = geospatial101($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+definition = geospatial101($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+unfolding = geospatial101($PR_Address0,_,_,PR_Zip3,_)	:- Address(PR_Address0,_,_,_,_,PR_Zip3,_,_,_,_).
+score = 1.825694966190834E-4
+normalisedScore = -1.4146938356415886
+candidates = 3
+totalCandidates = 9
+accesses = 21
+totalAccesses = 22
+time = 126
+totalTime = 142
+timeout = 300
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+
+************************************************************************
+timestmp = 1230056943678
+target = geospatial46($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address)
+definition = geospatial46($PR_Address0,PR_Street1,_,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,PR_Latitude3,PR_Longitude5).
+unfolding = geospatial46($PR_Address0,PR_Street1,_,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- Address(PR_Address0,PR_Street1,_,_,_,_,_,_,PR_Latitude3,PR_Longitude5).
+score = 1.091452291923184E-65
+normalisedScore = -0.21072103131565267
+candidates = 36
+totalCandidates = 71
+accesses = 21
+totalAccesses = 22
+time = 127
+totalTime = 148
+timeout = 300
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+
+************************************************************************
+timestmp = 1230057272600
+target = geospatial56($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address)
+definition = geospatial56($_,_,_,_,_,_).
+unfolding = geospatial56($_,_,_,_,_,_).
+score = 2.8624763251971977E-14
+normalisedScore = -0.10536051565782628
+candidates = 1
+totalCandidates = 6
+accesses = 11
+totalAccesses = 22
+time = 0
+totalTime = 145
+timeout = 300
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+
+************************************************************************
+timestmp = 1230057524631
+target = geospatial76($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address)
+definition = geospatial76($PR_Address0,PR_Street1,PR_StateAbbr2,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,PR_StateAbbr2,_,_,_).
+unfolding = geospatial76($PR_Address0,PR_Street1,PR_StateAbbr2,_,_,_,_)	:- Address(PR_Address0,PR_Street1,_,PR_StateAbbr2,_,_,_,_,_,_).
+score = 5.532408988457072E-5
+normalisedScore = -0.21072103131565267
+candidates = 5
+totalCandidates = 21
+accesses = 21
+totalAccesses = 22
+time = 126
+totalTime = 165
+timeout = 300
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+************************************************************************
+timestmp = 1230057761959
+target = geospatial84($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+definition = geospatial84($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+unfolding = geospatial84($PR_Address0,_,_,PR_Zip3,_)	:- Address(PR_Address0,_,_,_,_,PR_Zip3,_,_,_,_).
+score = 1.825694966190834E-4
+normalisedScore = -1.4146938356415886
+candidates = 3
+totalCandidates = 9
+accesses = 21
+totalAccesses = 22
+time = 127
+totalTime = 147
+timeout = 300
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+************************************************************************
+timestmp = 1230058014397
+target = geospatial92($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+definition = geospatial92($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+unfolding = geospatial92($PR_Address0,_,_,PR_Zip3,_)	:- Address(PR_Address0,_,_,_,_,PR_Zip3,_,_,_,_).
+score = 1.825694966190834E-4
+normalisedScore = -1.4146938356415886
+candidates = 3
+totalCandidates = 9
+accesses = 21
+totalAccesses = 22
+time = 126
+totalTime = 145
+timeout = 300
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+************************************************************************
+timestmp = 1230058298413
+target = geospatial99($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address)
+definition = geospatial99($PR_Address0,_,PR_Street2,_,PR_StateAbbr4,_,_,_)	:- USGeocoder(PR_Address0,PR_Street2,_,PR_StateAbbr4,_,_,_).
+unfolding = geospatial99($PR_Address0,_,PR_Street2,_,PR_StateAbbr4,_,_,_)	:- Address(PR_Address0,PR_Street2,_,PR_StateAbbr4,_,_,_,_,_,_).
+score = 5.029462716779157E-6
+normalisedScore = -0.21072103131565253
+candidates = 5
+totalCandidates = 25
+accesses = 21
+totalAccesses = 22
+time = 128
+totalTime = 165
+timeout = 300
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************

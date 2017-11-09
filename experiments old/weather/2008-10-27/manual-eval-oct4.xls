@@ -1,0 +1,2828 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Jose Luis Ambite</LastAuthor>
+  <LastSaved>2008-10-29T03:31:33Z</LastSaved>
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>6015</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Table1">
+  <Table ss:ExpandedColumnCount="16" ss:ExpandedRowCount="171" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:Index="3" ss:Width="54.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="21.75"/>
+   <Column ss:Width="124.5"/>
+   <Column ss:Width="102.75"/>
+   <Column ss:Width="63"/>
+   <Column ss:Width="42"/>
+   <Column ss:Width="15.75"/>
+   <Column ss:Width="49.5"/>
+   <Column ss:Width="238.5"/>
+   <Column ss:Width="53.25"/>
+   <Column ss:Width="78.75"/>
+   <Column ss:Width="280.5"/>
+   <Column ss:Width="54.75"/>
+   <Column ss:Width="95.25"/>
+   <Row>
+    <Cell><Data ss:Type="String">good</Data></Cell>
+    <Cell><Data ss:Type="String">why</Data></Cell>
+    <Cell><Data ss:Type="String">tablename</Data></Cell>
+    <Cell><Data ss:Type="String">argumentno</Data></Cell>
+    <Cell><Data ss:Type="String">argumentname</Data></Cell>
+    <Cell><Data ss:Type="String">semantictype</Data></Cell>
+    <Cell><Data ss:Type="String">score</Data></Cell>
+    <Cell><Data ss:Type="String">direction</Data></Cell>
+    <Cell><Data ss:Type="String">id</Data></Cell>
+    <Cell><Data ss:Type="String">domain</Data></Cell>
+    <Cell><Data ss:Type="String">url</Data></Cell>
+    <Cell><Data ss:Type="String">formname</Data></Cell>
+    <Cell><Data ss:Type="String">formmethod</Data></Cell>
+    <Cell><Data ss:Type="String">formurl</Data></Cell>
+    <Cell><Data ss:Type="String">tablename</Data></Cell>
+    <Cell><Data ss:Type="String">lastupdate</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">geospatial1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">address</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Address</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.us/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.us/demo.cgi</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial1</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:08:07</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">geospatial1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Street_2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Street</Data></Cell>
+    <Cell><Data ss:Type="Number">0.32211538461538503</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.us/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.us/demo.cgi</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial1</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:08:07</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">geospatial1</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Latitude_17</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Latitude</Data></Cell>
+    <Cell><Data ss:Type="Number">0.82499999999999996</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.us/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.us/demo.cgi</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial1</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:08:07</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">geospatial1</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Longitude_34</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Longitude</Data></Cell>
+    <Cell><Data ss:Type="Number">0.64666666666666694</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.us/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.us/demo.cgi</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial1</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:08:07</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">geospatial1</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Address_51</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Address</Data></Cell>
+    <Cell><Data ss:Type="Number">0.116243912337662</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.us/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.us/demo.cgi</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial1</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:08:07</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">geospatial7</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">locate</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Address</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.ca/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.ca</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial7</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:21:47</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">geospatial7</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip_11</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">0.33333333333333298</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.ca/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.ca</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial7</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:21:47</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">geospatial7</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Street_12</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Street</Data></Cell>
+    <Cell><Data ss:Type="Number">0.23365384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.ca/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.ca</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial7</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:21:47</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">geospatial7</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Latitude_19</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Latitude</Data></Cell>
+    <Cell><Data ss:Type="Number">0.82499999999999996</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.ca/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.ca</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial7</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:21:47</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">898748</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial7</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-LonDMS_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-LonDMS</Data></Cell>
+    <Cell><Data ss:Type="Number">0.25</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.ca/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://geocoder.ca</Data></Cell>
+    <Cell><Data ss:Type="String">geospatial7</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:21:47</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/index.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:31:41</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/index.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:31:41</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/index.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:31:41</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/index.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:31:41</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/index.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:31:41</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/index.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather10</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:31:41</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:48:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_21</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:48:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_74</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.7</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:48:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_442</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:48:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_454</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.4</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:48:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_473</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:48:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_484</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.57307692307692304</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:48:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_2718</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.88888888888888895</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather11</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:48:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:49:58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_21</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:49:58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_74</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.7</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:49:58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_442</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:49:58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_454</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.4</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:49:58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_473</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:49:58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_484</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.57307692307692304</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:49:58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_2717</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.88888888888888895</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather12</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:49:58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.hpc.ncep.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:52:52</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.hpc.ncep.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:52:52</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.hpc.ncep.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:52:52</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.hpc.ncep.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:52:52</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.hpc.ncep.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:52:52</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.hpc.ncep.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather13</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:52:52</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">location</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:54:09</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_40</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.22500000000000001</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:54:09</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_59</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.24285714285714299</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:54:09</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_61</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">0.46666666666666701</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:54:09</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_62</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:54:09</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_67</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.24285714285714299</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:54:09</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempInF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.24285714285714299</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.forecastadvisor.com/</Data></Cell>
+    <Cell><Data ss:Type="String">weather14</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:54:09</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:59:13</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:59:13</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF_16</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.66666666666666696</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:59:13</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell><Data ss:Type="String">47 F (8 C)</Data></Cell>
+    <Cell><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF_22</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.22222222222222199</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:59:13</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_24</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:59:13</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">0.7</Data></Cell>
+    <Cell><Data ss:Type="String">39 F, 1026.2 mb (30.31 in)</Data></Cell>
+    <Cell><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF_28</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:59:13</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_122</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.36111111111111099</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather15</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:59:13</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.spc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:00:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.spc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:00:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.spc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:00:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.spc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:00:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.spc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:00:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.spc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather16</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:00:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.stormtracker.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">getforecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:02:57</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.stormtracker.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">getforecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:02:57</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.stormtracker.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">getforecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:02:57</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.stormtracker.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">getforecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:02:57</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.stormtracker.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">getforecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:02:57</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.stormtracker.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">getforecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather17</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:02:57</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:15:43</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:15:43</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_65</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.7</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:15:43</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_410</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:15:43</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_422</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.4</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:15:43</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_441</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:15:43</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_452</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.57307692307692304</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:15:43</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_2610</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.88888888888888895</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather18</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:15:43</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:16:50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_21</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:16:50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_66</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">0.7</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:16:50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_411</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:16:50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_423</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.4</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:16:50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_442</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:16:50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_453</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.57307692307692304</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:16:50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi_2611</Data></Cell>
+    <Cell><Data ss:Type="String">PR-VisibilityInMi</Data></Cell>
+    <Cell><Data ss:Type="Number">0.88888888888888895</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather19</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:16:50</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">where</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:14:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_37</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:14:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_39</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:14:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53846153846153799</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:14:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_53</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:14:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Visibility_56</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Visibility</Data></Cell>
+    <Cell><Data ss:Type="Number">0.793333333333333</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:14:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_97</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53846153846153799</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:14:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_114</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:14:54</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">where</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/?from=globalnav</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:22:48</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_37</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/?from=globalnav</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:22:48</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_39</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/?from=globalnav</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:22:48</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53846153846153799</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/?from=globalnav</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:22:48</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_51</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/?from=globalnav</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:22:48</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_94</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53846153846153799</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/?from=globalnav</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:22:48</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_111</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/?from=globalnav</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather20</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:22:48</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-CityState</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/aboutrss.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:26:25</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_21</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/aboutrss.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:26:25</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_35</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53846153846153799</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/aboutrss.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:26:25</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_42</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/aboutrss.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:26:25</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_72</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/aboutrss.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:26:25</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_84</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55769230769230804</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/aboutrss.shtml</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather21</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:26:25</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-CityState</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/radar_tab.php</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:31:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_21</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/radar_tab.php</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:31:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_35</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53846153846153799</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/radar_tab.php</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:31:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_42</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/radar_tab.php</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:31:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_72</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/radar_tab.php</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:31:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_84</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55769230769230804</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/radar_tab.php</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather22</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:31:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:32:19</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">0.4</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:32:19</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF_16</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.66666666666666696</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:32:19</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF_22</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.22222222222222199</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:32:19</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_24</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:32:19</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF_28</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempF</Data></Cell>
+    <Cell><Data ss:Type="Number">0.56666666666666698</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:32:19</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_125</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.36111111111111099</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather23</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:32:19</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.rap.ucar.edu/weather/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:33:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.rap.ucar.edu/weather/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:33:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.rap.ucar.edu/weather/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:33:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.rap.ucar.edu/weather/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:33:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.rap.ucar.edu/weather/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:33:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.rap.ucar.edu/weather/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.crh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather24</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:33:26</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nco.ncep.noaa.gov/pmb/nwprod/analysis/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:35:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nco.ncep.noaa.gov/pmb/nwprod/analysis/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:35:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nco.ncep.noaa.gov/pmb/nwprod/analysis/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:35:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nco.ncep.noaa.gov/pmb/nwprod/analysis/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:35:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nco.ncep.noaa.gov/pmb/nwprod/analysis/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:35:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nco.ncep.noaa.gov/pmb/nwprod/analysis/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.srh.noaa.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather25</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:35:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/climate/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:38:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/climate/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:38:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/climate/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:38:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/climate/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:38:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/climate/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:38:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/climate/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather26</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 17:38:35</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nws.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:16:27</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nws.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:16:27</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nws.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:16:27</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nws.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:16:27</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nws.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:16:27</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nws.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:16:27</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:18:14</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:18:14</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:18:14</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:18:14</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:18:14</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:18:14</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">where</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:19:37</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_37</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:19:37</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_39</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:19:37</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53846153846153799</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:19:37</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_52</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:19:37</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_95</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53846153846153799</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:19:37</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_112</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:19:37</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:20:59</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:20:59</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:20:59</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:20:59</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:20:59</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.nhc.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:20:59</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">inputstring</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:27:22</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_20</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:27:22</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54230769230769205</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:27:22</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_48</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.54615384615384599</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:27:22</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_71</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.27500000000000002</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:27:22</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_83</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.noaa.gov/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_POST</Data></Cell>
+    <Cell><Data ss:Type="String">http://forecast.weather.gov/zipcity.php</Data></Cell>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:27:22</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">where</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Zip</Data></Cell>
+    <Cell><Data ss:Type="Number">-1</Data></Cell>
+    <Cell><Data ss:Type="String">IN</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/weather/my/signup</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:29:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky_37</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="Number">0.3</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/weather/my/signup</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:29:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_39</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.55384615384615399</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/weather/my/signup</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:29:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_41</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53846153846153799</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/weather/my/signup</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:29:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity_52</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/weather/my/signup</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:29:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg_95</Data></Cell>
+    <Cell><Data ss:Type="String">PR-TempFdeg</Data></Cell>
+    <Cell><Data ss:Type="Number">0.53846153846153799</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/weather/my/signup</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:29:04</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH_112</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindSpeedInMPH</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">OUT</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/weather/my/signup</Data></Cell>
+    <Cell><Data ss:Type="String">whatwhere</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.weather.com/search/enhancedlocalsearch</Data></Cell>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-28 16:29:04</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <TopRowVisible>40</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>49</ActiveRow>
+     <ActiveCol>10</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

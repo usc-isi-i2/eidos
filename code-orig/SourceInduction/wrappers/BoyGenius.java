@@ -1,0 +1,132 @@
+package wrappers;
+
+import invocation.Wrapper;
+import relational.Table;
+import java.util.ArrayList;
+
+import javax.xml.xpath.*;
+import org.w3c.dom.*;
+import org.xml.sax.InputSource;
+
+public class BoyGenius implements Wrapper {
+	
+	XPath xpath;
+	String baseURL = "http://weather.boygenius.com/feeds/";
+	
+	public BoyGenius() {
+		xpath = XPathFactory.newInstance().newXPath();
+	}
+	
+	
+	public Table invoke(String[] endpoint, ArrayList<String> inputTuple) {
+    	
+		String url = baseURL;
+    	
+		if (endpoint[1].equalsIgnoreCase("WeatherFeed")) {
+			
+			// list of xml weather feeds: http://weather.boygenius.com/feeds/
+			// example feed: http://weather.boygenius.com/feeds/california-long_beach.xml
+			//    i.e. "http://weather.boygenius.com/feeds/" + lowercase&underscore($state) + "-" + lowercase&underscore($city) + ".xml"
+				
+			try {
+			
+				String city = inputTuple.get(0);
+				String state = inputTuple.get(1);
+				
+				// normalise city and state names:
+				state = state.trim();
+				state = state.toLowerCase();
+				state = state.replaceAll(" ","_");
+				city = city.trim();
+				city = city.toLowerCase();
+				city = city.replaceAll(" ","_");
+				
+				url += java.net.URLEncoder.encode(state+"-"+city+".xml","UTF-8");
+			
+		    	/*	
+		    	 * http://weather.boygenius.com/feeds/california-long_beach.xml
+		    	 * 			  
+	  				<city>
+	  				  <name>Long Beach</name>
+	  				  <state>California</state>
+	  				  <temperatures>
+					      <fahrenheit>52</fahrenheit>
+					      <celsius>11</celsius>
+					  </temperatures>						 
+					  <conditions>Clear</conditions>
+					  <dewpoint>41</dewpoint>
+					  <relative_humidity>66</relative_humidity>
+					  <wind>CALM</wind>
+					  <barometric_pressure>30.08S</barometric_pressure>			   
+					  <coordinates>
+					      <latitude>33.770553</latitude>
+					      <longitude>118.182025</longitude>
+					  </coordinates>
+					  <last_updated>January 22, 2006 05:25:13 GMT</last_updated>
+				*/
+		    	
+				// metadata 
+		    	String[] columns = new String[] {"name","state","fahrenheit","celsius","conditions","dewpoint","humidity","wind","pressure","lat","long","updated"};
+		    	
+		    	// the data
+		    	Table output = new Table(columns);
+		    	ArrayList<String> tuple = new ArrayList<String>();
+		    	
+		    	// invoke source and parse xml output
+				Node cityElement = ((NodeList) xpath.evaluate("//*[local-name()='city']",new InputSource(url),XPathConstants.NODESET)).item(0);
+				
+				tuple.add((String) xpath.evaluate("./*[local-name()='name'][1]/text()", cityElement,XPathConstants.STRING));
+				tuple.add((String) xpath.evaluate("./*[local-name()='state'][1]/text()", cityElement,XPathConstants.STRING));
+		    	
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='temperatures']/*[local-name()='fahrenheit'][1]/text()",cityElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='temperatures']/*[local-name()='celsius'][1]/text()",cityElement,XPathConstants.STRING));
+		    	
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='conditions'][1]/text()", cityElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='dewpoint'][1]/text()", cityElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='relative_humidity'][1]/text()", cityElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='wind'][1]/text()", cityElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='barometric_pressure'][1]/text()", cityElement,XPathConstants.STRING));
+
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='coordinates']/*[local-name()='latitude'][1]/text()",cityElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='coordinates']/*[local-name()='longitude'][1]/text()",cityElement,XPathConstants.STRING));
+		    	
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='last_updated'][1]/text()", cityElement,XPathConstants.STRING));
+			    
+		    	output.insertDistinct(tuple);
+				
+				return output;
+				
+			}
+			catch (Exception e) {
+				return null;
+	    	}
+	    				
+		}
+		else {
+			System.err.println("Error: No method called " + endpoint[1] + " in wrapper: " + this.getClass().getName());
+			System.err.println("Please update source definition and restart system .... exiting");
+    		System.exit(9);
+		}
+		
+		return null;
+		
+	}
+
+
+	public void testWrapper() {
+		BoyGenius r = new BoyGenius();
+		String[] endpoint;
+		ArrayList<String> input;
+		
+		System.out.println("BoyGenius.WeatherFeed");
+		
+		endpoint = new String[2];
+		endpoint[1] = "WeatherFeed";
+		input = new ArrayList<String>();
+		input.add("Marina Del Rey");
+		input.add("California");
+		r.invoke(endpoint,input).print();
+						
+	}
+	
+}

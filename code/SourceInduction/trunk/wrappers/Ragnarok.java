@@ -1,0 +1,148 @@
+package wrappers;
+
+import invocation.Wrapper;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
+import relational.Table;
+
+public class Ragnarok implements Wrapper {
+
+	XPath xpath;
+
+	public Ragnarok() {
+		xpath = XPathFactory.newInstance().newXPath();
+	}
+
+
+	public Table invoke(String[] endpoint, List<String> inputTuple) {
+
+		String url = "http://ragnarok.isi.edu/services/" + endpoint[1] + ".php";
+
+		Table t = new Table();
+
+		try {
+
+			if (endpoint[1].equals("query")) {
+
+				// first insert input constants into sql query
+				String sql = endpoint[2];
+				for (int i=0; i<inputTuple.size(); i++) {
+					sql = sql.replaceAll("\\$input"+i,"'"+inputTuple.get(i).replaceAll("'","\\\\\\\\'")+"'");
+				}
+				// then URL encode the query
+				String auth = "taipei101";
+				url += "?auth="+auth+"&sql=" + java.net.URLEncoder.encode(sql,"UTF-8");
+
+			}
+	    	else {
+
+	    		// simply add inputs to url
+				for (int i=0; i<inputTuple.size(); i++) {
+					if (i==0) {url += "?";} else {url += "&";}
+					url += "attr"+i+"="+java.net.URLEncoder.encode(inputTuple.get(i),"UTF-8");
+				}
+
+	    	}
+
+			// invoke source and parse resulting table
+			InputSource is = new InputSource(url);
+			System.out.println(url); // JLA
+			NodeList rows = (NodeList) xpath.evaluate("//table/tr",is,XPathConstants.NODESET);
+
+			// get the metadata (first row of table)
+	    	Node row = rows.item(0);
+	    	NodeList fields = (NodeList) xpath.evaluate("./td",row,XPathConstants.NODESET);
+	    	for (int i=0; i<fields.getLength(); i++) {
+	    		t.colNames.add(fields.item(i).getTextContent());
+	    	}
+
+	    	// get the data
+	    	ArrayList<String> tuple;
+	    	for (int i=1; i<rows.getLength(); i++) {
+	    		tuple = new ArrayList<String>();
+				row = rows.item(i);
+		    	fields = (NodeList) xpath.evaluate("./td",row,XPathConstants.NODESET);
+		    	for (int j=0; j<fields.getLength(); j++) {
+		    		tuple.add(fields.item(j).getTextContent());
+		    	}
+		    	t.insertDistinct(tuple);
+	    	}
+
+	    	return t;
+
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			return null;
+    	}
+
+
+	}
+
+
+	public void testWrapper() {
+		Ragnarok r = new Ragnarok();
+		String[] endpoint;
+		ArrayList<String> input;
+
+		// test 0:
+		endpoint = new String[3];
+		endpoint[1] = "query";
+		endpoint[2] = "SELECT zipcode, latitude, longitude FROM uscensusbureau.zipnov99 WHERE zipcode=$input0";
+		input = new ArrayList<String>();
+		input.add("90293");
+		r.invoke(endpoint,input).print();
+
+		// test 1:
+		endpoint = new String[3];
+		endpoint[1] = "query";
+		endpoint[2] = "SELECT t0.zipcode, t0.postofficename, t1.state_abbrev FROM uscensusbureau.zipnov99 t0, miscellaneous.statecodes t1 WHERE (t0.fips_state = t1.fips_code) AND (t0.zipcode=$input0)";
+		input = new ArrayList<String>();
+		input.add("90293");
+		r.invoke(endpoint,input).print();
+
+		// test 2:
+		endpoint = new String[2];
+		endpoint[1] = "convertCelsiusToFahrenheit";
+		input = new ArrayList<String>();
+		input.add("+18.16");
+		r.invoke(endpoint,input).print();
+
+		// test 3:
+		endpoint = new String[2];
+		endpoint[1] = "convertK2M";
+		input = new ArrayList<String>();
+		input.add("100.0");
+		r.invoke(endpoint,input).print();
+
+		// test 4:
+		endpoint = new String[2];
+		endpoint[1] = "getCentroid";
+		input = new ArrayList<String>();
+		input.add("90292");
+		r.invoke(endpoint,input).print();
+
+		// test 5:
+		endpoint = new String[2];
+		endpoint[1] = "getDistance";
+		input = new ArrayList<String>();
+		input.add("+18.162156");
+		input.add("-065.753485");
+		input.add("+17.998520");
+		input.add("-066.264825");
+		r.invoke(endpoint,input).print();
+
+
+	}
+
+}

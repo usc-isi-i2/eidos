@@ -1,0 +1,6 @@
+geospatial1, http://geocoder.us/
+CT-Address, CT-Street, CT-Address, PR-Latitude, PR-Longitude, CT-CityState
+
+geospatial2, http://geocoder.ca/
+CT-Address, CT-CityState, PR-State-Abbr, CT-Address, CT-Street, PR-Latitude, PR-Longitude
+

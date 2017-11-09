@@ -1,0 +1,228 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: C:\users\ambite\projects\source-modeling\experiments\weather\2008-10-27\weather6.txt
+
+## Semantic Types: 
+type PR_Forecast    [varchar(100)]  
+type PR_ZIP         [varchar(100)]  {examples: examples.zipcode5digit.val}
+type PR_CityState   [varchar(100)]  {examples: source_model.citystate.val}
+type PR_Date        [varchar(100)]  {equality: Date = 1.0}
+type PR_TimeWZone   [varchar(100)]  
+type PR_TempF       [varchar(100)]  {numeric: -100.0, 150.0, 10.0%}
+type PR_TempC       [varchar(100)]  {numeric: -50.0, 70.0, 10.0%}
+type PR_Sky         [varchar(100)]  {examples: source_model.sky.val}
+type PR_Humidity    [varchar(100)]  {numeric: 0.0, 100.0, 15.0%}
+type PR_WindSpeed   [varchar(100)]  {numeric: 0.0, 200.0, 10.0%}
+type PR_WindDir     [varchar(100)]  {examples: source_model.winddir.val}
+type PR_Pressure    [varchar(100)]  {numeric: 26.0, 32.0, 10.0%}
+type PR_Visibility  [varchar(100)]  {numeric: 0.0, 100.0, 10.0%}
+
+## Domain Relations: 
+relation weather(PR_Forecast,PR_ZIP,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeed,PR_WindDir,PR_Visibility)
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+## Comparison Predicates: 
+
+## Sources: 
+source wunderground($PR_ZIP, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeed, PR_WindDir, PR_Pressure, PR_Visibility, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5)	:- weather("current", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeed, PR_WindDir, PR_Visibility), weather("current+1", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _), weather("current+2", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _), weather("current+3", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _), weather("current+4", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _), weather("current+5", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _).	{wrappers.DBService; http://www.wunderground.com/; JLA}
+
+## Target Predicates: 
+target weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky)	{wrappers.DBService; http://weather.unisys.com/; Forecast}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.wunderground
+DROP TABLE IF EXISTS cache.InvocationsOf_wunderground
+CREATE TABLE cache.wunderground ( PR_ZIP0 varchar(100),PR_CityState1 varchar(100),PR_TimeWZone2 varchar(100),PR_TempF3 varchar(100),PR_Sky4 varchar(100),PR_Humidity5 varchar(100),PR_WindSpeed6 varchar(100),PR_WindDir7 varchar(100),PR_Pressure8 varchar(100),PR_Visibility9 varchar(100),PR_TempF10 varchar(100),PR_TempF11 varchar(100),PR_Sky12 varchar(100),PR_TempF13 varchar(100),PR_TempF14 varchar(100),PR_Sky15 varchar(100),PR_TempF16 varchar(100),PR_TempF17 varchar(100),PR_Sky18 varchar(100),PR_TempF19 varchar(100),PR_TempF20 varchar(100),PR_Sky21 varchar(100),PR_TempF22 varchar(100),PR_TempF23 varchar(100),PR_Sky24 varchar(100) )
+CREATE TABLE cache.InvocationsOf_wunderground ( PR_ZIP0 varchar(100) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.weather6
+DROP TABLE IF EXISTS cache.InvocationsOf_weather6
+CREATE TABLE cache.weather6 ( PR_ZIP0 varchar(100),PR_WindSpeed1 varchar(100),PR_TempF2 varchar(100),PR_TempC3 varchar(100),PR_TempC4 varchar(100),PR_Humidity5 varchar(100),PR_TempF6 varchar(100),PR_TempF7 varchar(100),PR_Sky8 varchar(100) )
+CREATE TABLE cache.InvocationsOf_weather6 ( PR_ZIP0 varchar(100) )
+Invoking target: weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) with [32399]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) with [36130]
+Invoking target: weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) with [85007]
+Invoking target: weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) with [33040]
+Invoking target: weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) with [90292]
+Invoking target: weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) with [46208]
+Invoking target: weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) with [50319]
+Invoking target: weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) with [66612]
+Invoking target: weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) with [20502]
+Invoking target: weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) with [06106]
+
+****************************************************************
+STARTING SEARCH: 
+*****************************************************************************************************
+PR_ZIP0                                                                                              
+(PR_ZIP)                                                                                             
+
+06106                                                                                                
+66612                                                                                                
+90292                                                                                                
+36130                                                                                                
+85007                                                                                                
+32399                                                                                                
+46208                                                                                                
+20502                                                                                                
+33040                                                                                                
+50319                                                                                                
+*****************************************************************************************************
+
+-9.982: weather6($_,_,_,_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+-10.028: weather6($PR_ZIP0,_,_,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-8.630: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-9.153: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-9.028: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF7,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,_,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,_,PR_Sky8,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-9.472: weather6($PR_ZIP0,_,_,_,_,PR_Humidity5,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,PR_Humidity5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,PR_WindSpeed1,_,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,PR_WindSpeed1,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-9.630: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-8.727: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-9.329: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-9.153: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-9.222: weather6($PR_ZIP0,_,_,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8,_,_,_,_,_,_,_,_,_,_,_,_).
+-9.630: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_).
+-9.630: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_,_,_,_,_).
+-9.153: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_).
+-9.329: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_,_,_,_).
+-8.727: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_,_,_,_).
+-9.523: weather6($PR_ZIP0,_,_,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8,_,_,_,_,_,_,_,_,_).
+-9.153: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF2,_,_,_,_,_,_,_,_).
+-9.153: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_,_).
+-9.153: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF2,_,_,_,_,_,_,_).
+-9.329: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_).
+-8.630: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_).
+-9.523: weather6($PR_ZIP0,_,_,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8,_,_,_,_,_,_).
+-9.630: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF2,_,_,_,_,_).
+-9.329: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_).
+-9.028: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF2,_,_,_,_).
+-9.329: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_).
+-8.676: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,_,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8,_,_,_).
+-9.329: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF2,_,_).
+-9.329: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_).
+-Infinity: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_).
+-9.028: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF2,_).
+-9.329: weather6($PR_ZIP0,_,_,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_).
+-8.727: weather6($PR_ZIP0,_,_,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_).
+-9.523: weather6($PR_ZIP0,_,_,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,PR_Sky8,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-8.074: weather6($PR_ZIP0,_,PR_TempF2,_,_,PR_Humidity5,_,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,PR_Humidity5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,PR_WindSpeed1,PR_TempF2,_,_,_,_,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,PR_WindSpeed1,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-7.931: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-7.755: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_,_,_,_,_,_,_).
+-7.824: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,PR_Sky8,_,_,_,_,_,_,_,_,_,_,_,_).
+-8.232: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_,_,_,_,_).
+-7.931: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_,_,_,_).
+-7.329: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_,_,_,_).
+-8.125: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8,_,_,_,_,_,_,_,_,_).
+-7.755: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_,_).
+-7.931: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,_).
+-7.232: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_).
+-8.125: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8,_,_,_,_,_,_).
+-7.931: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_).
+-7.931: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_).
+-7.278: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8,_,_,_).
+-7.931: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_).
+-7.931: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,_,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_).
+-7.329: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_).
+-8.125: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,_,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,PR_Sky8,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_).
+-6.676: weather6($PR_ZIP0,_,PR_TempF2,_,_,PR_Humidity5,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,PR_Humidity5,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,PR_WindSpeed1,PR_TempF2,_,_,_,_,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,PR_WindSpeed1,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_).
+-6.533: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,PR_TempF6,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_).
+-6.426: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,PR_Sky8,_,_,_,_,PR_TempF7,_,_,_,_,_,_,_).
+-6.834: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,_,PR_TempF7,_,_,_,_,_,_,_).
+-6.533: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,PR_TempF6,_,_,PR_TempF7,_,_,_,_,_,_,_).
+-6.727: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8,_,PR_TempF7,_,_,_,_,_,_,_).
+-6.357: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+-6.727: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,PR_Sky8,_,_,_,_,_,_).
+-6.533: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,PR_TempF6,_,_,_,_,_).
+-6.533: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,PR_TempF6,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,PR_Sky8,_,_,_).
+-6.533: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,PR_TempF6,_,_).
+-6.533: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,PR_TempF6,_).
+-6.727: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,_,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF7,_,_,_,_,_,_,PR_Sky8).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,PR_Sky8,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+-5.755: weather6($PR_ZIP0,_,PR_TempF2,_,_,PR_Humidity5,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,PR_Humidity5,_,_,_,_,_,_,_,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,PR_WindSpeed1,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,_)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,PR_WindSpeed1,_,_,_,_,_,_,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+-5.329: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,PR_Sky8,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,PR_Sky8,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,PR_TempF7,PR_Sky8,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,PR_TempF7,_,_,_,PR_Sky8,_,_,_).
+-5.329: weather6($PR_ZIP0,_,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,PR_Sky8).
+-4.551: weather6($PR_ZIP0,_,PR_TempF2,_,_,PR_Humidity5,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,PR_Humidity5,_,_,_,_,_,_,PR_Sky8,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,PR_WindSpeed1,PR_TempF2,_,_,_,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,_,PR_WindSpeed1,_,_,_,_,_,PR_Sky8,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+-Infinity: weather6($PR_ZIP0,PR_WindSpeed1,PR_TempF2,_,_,PR_Humidity5,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,PR_Humidity5,PR_WindSpeed1,_,_,_,_,_,PR_Sky8,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+
+************************************************************************
+timestmp = 1225427660870
+target = weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky)
+definition = weather6($PR_ZIP0,_,PR_TempF2,_,_,PR_Humidity5,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,PR_Humidity5,_,_,_,_,_,_,PR_Sky8,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+unfolding = weather6($PR_ZIP0,_,PR_TempF2,_,_,PR_Humidity5,PR_TempF6,PR_TempF7,PR_Sky8)	:- weather("current",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,PR_TempF2,_,_,_,PR_Humidity5,_,_,_,_), weather("current+1",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,_,_,_,PR_Sky8,_,_,_,_,_), weather("current+2",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,_,_,_,_,_,_,_,_,_), weather("current+3",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,_,PR_TempF7,PR_TempF6,_,_,_,_,_,_), weather("current+4",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,_,_,_,_,_,_,_,_,_), weather("current+5",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,_,_,_,_,_,_,_,_,_).
+score = 2.8125000000000003E-5
+normalisedScore = -2.513306124309698
+candidates = 99
+totalCandidates = 99
+accesses = 20
+totalAccesses = 20
+time = 4
+totalTime = 4
+timeout = 300
+maxClauseLength = 7
+maxPredRepitition = 2
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************

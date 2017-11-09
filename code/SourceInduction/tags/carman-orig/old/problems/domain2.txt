@@ -1,0 +1,31 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Uses USZip Web Service at:
+##  http://www.webservicex.net/uszip.asmx
+
+## Semantic Types: 
+type streetnumber	[varchar(10)]
+type street			[varchar(80)]
+type apartment		[varchar(10)]
+type city			[varchar(50)]
+type stateAbbr		[varchar(2)]	{miscellaneous.usstates.code}
+type zipcode		[varchar(9)]	{uscensusbureau.zipnov99.zipcode}
+type areacode		[varchar(3)]
+type timezone		[varchar(5)]
+
+## Domain Predicates: 
+relation address(streetnumber,street,apartment,zipcode)
+relation municipality(city,stateAbbr,zipcode)
+relation phoneprefix(zipcode,areacode)
+relation timezone(stateAbbr,timezone)
+
+## Comparison Predicates: 
+    
+## Sources: 
+source GetInfoByZip(city,state,$zipcode,areacode,timezone) :- municipality(city,state,zipcode), phoneprefix(zipcode,areacode), timezone(state,timezone).  {invocation.wrappers.USZip; GetInfoByZip}
+
+## Target Predicate: 
+target GetInfoByState($stateAbbr,city,stateAbbr,zipcode,areacode,timezone) {invocation.wrappers.USZip; GetInfoByState}
+
+##############################################################

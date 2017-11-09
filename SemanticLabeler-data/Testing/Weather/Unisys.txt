@@ -1,0 +1,8 @@
+"KHHR (Hawthorne, CA)"	2 PM PST 8 NOV 05 	65 F	53 F	66%	SE at 8 knt 	NULL	29.93 in	1013.4 mb	mostly cloudy 	6:19 AM	4:54 PM	90292
+"KDTW (Detroit, MI)"	5 PM EST 8 NOV 05	57 F	41 F	55%	E at 6 knt 	NULL	30.09 in	1018.5 mb	mostly cloudy 	7:15 AM	5:18 PM	"Detroit, MI"
+"KBAF (Westfield, MA)"	6 PM EST 9 DEC 05	33 F	22 F 	63%	N at 11 knt 	24 F	29.89 in	1012.0 mb 	cloudy 	7:07 AM	4:18 PM	1101
+"KPWM (Portland, ME)"	6 PM EST 9 DEC 05	26 F	22 F	84%	NW at 10 knt 	16 F 	29.72 in	1006.0 mb 	cloudy	7:04 AM	4:04 PM	4021
+"KCEW (Crestview, FL)"	5 PM CST 9 DEC 05 	49 F	31 F	50%	N at 4 knt 	47 F	30.28 in	1025.1 mb	clear 	6:34 AM	4:46 PM	32570
+"KBOI (Boise, ID)"	4 PM MST 9 DEC 05	23 F	8 F	52%	W at 8 knt 	13 F 	30.69 in	1039.0 mb	cloudy 	8:06 AM	5:07 PM	83702
+"KHHR (Hawthorne, CA) "	3 PM PST 9 DEC 05	71 F	34 F	25%	W at 8 knt 	NULL	30.07 in	1018.1 mb	clear 	6:46 AM	4:44 PM	90089
+"KSLE (Salem, OR)"	3 PM PST 9 DEC 05	42 F 	27 F	55%	NE at 5 knt 	38 F	30.40 in	1029.3 mb	clear	7:39 AM	4:31 PM	97338

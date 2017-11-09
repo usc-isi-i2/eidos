@@ -1,0 +1,4 @@
+a.whatsthis:link {text-decoration:none;color:#666666;font-size:9px;font-family:arial;}
+a.whatsthis:active {text-decoration:none;color:#666666;font-size:9px;font-family:arial;}
+a.whatsthis:visited {text-decoration:none;color:#666666;font-size:9px;font-family:arial;}
+a.whatsthis:hover {text-decoration:underline;color:#666666;font-size:9px;font-family:arial;}

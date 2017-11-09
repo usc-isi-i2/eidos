@@ -1,0 +1,1066 @@
+<!doctype html public "-//w3c//dtd xhtml 1.1//en" "http://www.w3.org/tr/xhtml11/dtd/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<script type="text/javascript" src="http://vortex.accuweather.com/adc2004/pub/ads/js/searchpage_adcode.js"></script>
+
+<title>AccuWeather.com Weather: Site Search Results</title>
+<link href="http://vortex.accuweather.com/adc2004/pub/css/2006/search.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="http://vortex.accuweather.com/adc2004/pub/css/2006/adc_base.css" />
+<link type="text/css" rel="stylesheet" href="http://vortex.accuweather.com/adc2004/pub/css/2006/adc_general_search.css" />
+<link type="text/css" rel="stylesheet" href="http://vortex.accuweather.com/adc2004/pub/css/2006/adc_ads.css" />
+<link type="text/css" rel="stylesheet" href="http://vortex.accuweather.com/adc2004/pub/css/2006/adc_promo.css" />
+<link type="text/css" rel="stylesheet" href="http://vortex.accuweather.com/adc2004/pub/css/2006/adc_print.css" />
+
+<link type="text/css" rel="stylesheet" href="http://vortex.accuweather.com/adc2004/pub/css/2006/adc_sitemap.css" /><style type="text/css">
+	#nav, #nav ul {float: left;list-style: none;line-height: 1;background: transparent;font-weight: bold;padding: 0;margin: 0 0 1em 0;}
+	#nav a {display:block;color: #FFFFFF;text-decoration: none;padding: 0.25em .65em;font-size:8pt;}
+	#nav a.expand {background: url(http://vortex.accuweather.com/adc2004/pub/images/2006/arrow_nav_right.gif) center right no-repeat;}
+	#nav li {float: left;padding: 0;text-align:center;}
+	#nav li ul {position: absolute;left: -999em;height: auto;font-weight: normal;margin: 0;background:#d5d5d5;z-index:99;}
+	/*#nav li li {border:solid 1px;border-top-color:#D3D3D3;border-bottom-color:#575757;border-left-color:#838383;border-right-color:#838383;text-align:left;text-indent:5px;}*/
+	#nav li li {border:solid 1px;border-top-color:#D3D3D3;border-bottom-color:#BBBBBB;border-left-color:#BBBBBB;border-right-color:#BBBBBB;text-align:left;text-indent:5px;}
+	#nav li ul a {color:#000000;font-weight:bold;padding:1px 0px 3px 0px;font-size:8pt;line-height:16px;}
+	#nav li ul ul {margin: -1.90em 0 0 15.35em;}
+	#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {left: -999em;}
+	#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {left: auto;}
+	#nav li:hover, #nav li.sfhover {background: #919191;}
+	#nav, #nav ul {float: left;list-style: none;line-height: 1;background: transparent;font-weight: bold;padding: 0;margin: 0 0 1em 0;}
+	#nav a {display:block;color: #FFFFFF;text-decoration: none;padding: 0.25em .65em;font-size:8pt;}
+	#nav a.daddy {background: url(http://vortex.accuweather.com/adc2004/pub/images/2006/arrow_nav_right.gif) center right no-repeat;}
+	#nav li {float: left;padding: 0;text-align:center;}
+	#nav li ul {position: absolute;left: -999em;height: auto;font-weight: normal;margin: 0;background:#d5d5d5;z-index:99;}
+	#nav li li {border:solid 1px;border-top-color:#D3D3D3;border-bottom-color:#575757;border-left-color:#838383;border-right-color:#838383;text-align:left;text-indent:5px;}
+	#nav li ul a {color:#000000;font-weight:bold;padding:3px 0px 3px 0px;font-size:8pt;}
+	#nav li ul ul {margin: -1.75em 0 0 14em;}
+	#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {left: -999em;}
+	#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li.sfhover ul, #nav li li.sfhover ul, #nav li li li.sfhover ul {left: auto;}
+	#nav li:hover, #nav li.sfhover {background: #919191;}
+</style>
+
+<!-- global menu -->
+
+<script type="text/javascript" src="http://vortex.accuweather.com/adc2004/common/javascript/browserInfo.js"></script>
+<script type="text/javascript" src="http://vortex.accuweather.com/adc2004/common/javascript/run_flash_content.js"></script>
+<script type="text/javascript" src="http://vortex.accuweather.com/adc2004/common/javascript/set_flash_content.js"></script>
+<script type="text/javascript" src="http://vortex.accuweather.com/adc2004/common/javascript/pagefunctions2.js"></script>
+<script type="text/javascript" src="http://vortex.accuweather.com/adc2004/pub/js/ADCFreepagefunctions.js"></script>
+<script type="text/javascript" src="http://vortex.accuweather.com/adc2004/pub/js/help.js"></script>
+
+<script type="text/javascript" language="JavaScript">
+
+function checkQuery(frm) {
+	if (frm.elements["sp-q"].value != "") {
+		return true;
+	} else {
+		alert("Please enter a search query");
+		return false;
+	}
+}
+
+//Pagination Script
+function pagination(low, high, total, per_page) {
+  var show_amount = 5;
+  var method = 1;
+  var show_dots = 0;
+  var total_pages = Math.floor((total - 1) / per_page ) + 1;
+  var current_page = 1 + Math.floor(low / per_page);
+
+  var page_first = 1;
+  if ( method == 1 ) {
+    if ( current_page < (show_amount / 2) || total_pages <= show_amount) {
+      page_first = 1;
+    } else if ( total_pages - current_page < show_amount / 2 ) {
+      page_first = (total_pages - show_amount) + 1;
+    } else {
+      page_first = current_page - Math.floor(show_amount / 2);
+    }
+  } else if ( method == 2 ) {
+    page_first = Math.floor((current_page - 1)/ show_amount) * show_amount + 1;
+  }
+
+  var page_last = page_first + show_amount - 1;
+  if ( page_last >= total_pages ) {
+    page_last = total_pages;
+    show_dots = 0;
+  }
+
+
+  if (total_pages > 1) {
+
+
+    if (current_page > 1) {
+      var url = document.location.href;
+
+   	  if ( url.match(/sp[-_]n=\d+/) ) {
+          url = url.replace(/sp[-_]n=\d+/, "sp-n=1");
+      } else {
+          url += '&sp-n=1';
+      }
+
+      document.write('<a href="' + url + '" title="Go to first page">First</a> | ');
+
+/*   	  if ( url.match(/sp[-_]n=\d+/) ) {*/
+          url = url.replace(/sp[-_]n=\d+/, "sp-n=" + ((current_page - 1 - 1) * per_page + 1) );
+/*
+      } else {
+          url += '&sp-n=' + ((current_page - 1 - 1) * per_page + 1);
+      }
+*/
+      document.write('<a href="' + url + '" title="Previous page">Prev</a> | ');
+
+    }
+    document.write("Page: ");
+    for (var i = page_first; i <= page_last; i++ ) {
+      if ( i == current_page ) {
+        document.write('<strong>' + i + '</strong> | ');
+      } else {
+        var url = document.location.href;
+   		if ( url.match(/sp[-_]n=\d+/) ) {
+          url = url.replace(/sp[-_]n=\d+/, "sp-n=" + ((i - 1) * per_page + 1) );
+        } else {
+          url += '&sp-n=' + ((i - 1) * per_page + 1);
+        }
+        document.write('<a href="' + url + '">' + i + '</a> | ');
+      }
+    }
+    if(show_dots){
+      document.write(' ...');
+    }
+    if (current_page < total_pages) {
+      var url = document.location.href;
+   	  if ( url.match(/sp[-_]n=\d+/) ) {
+          url = url.replace(/sp[-_]n=\d+/, "sp-n=" + ((current_page + 1 - 1) * per_page + 1) );
+      } else {
+          url += '&sp-n=' + ((current_page + 1 - 1) * per_page + 1);
+      }
+
+      document.write('<a href="' + url + '" class="Next page">Next</a> | ');
+
+      url = url.replace(/sp[-_]n=\d+/, "sp-n=" + ((total_pages - 1) * per_page + 1) );
+
+	  document.write('<a href="' + url + '" title="Go to last page">Last</a> ');
+    }
+  }
+}
+
+</script>
+
+<script type="text/javascript">
+	function openMediaPlayer(mediacode,mediacat,getcurrent)
+	{
+		/* Media Player Launcher - determines and launches either Flash or H264 Media Player */
+		var collection = '';
+		switch (mediacat)
+		{
+			case 'citiesusa':
+			{
+				mediacat = 'USNOSP';
+				collection = 'weather';
+				break;
+			}
+			case 'health':
+			{
+				collection='lifestyle';
+				break;
+			}
+			case 'entertainment':
+			{
+				collection='lifestyle';
+				break;
+			}
+			case 'breaking':
+			{
+				mediacat = 'national_all';
+				collection='weather';
+				break;
+			}	
+			case 'travel':
+			{
+				mediacat = 'national_all';
+				collection='weather';
+				break;
+			}	
+			case 'sports':
+			{
+				mediacat = 'national_all';
+				collection='weather';
+				break;
+			}	
+			case 'regions':
+			{
+				mediacat = 'national_all';
+				collection='weather';
+				break;
+			}	
+			case 'national':
+			{
+				mediacat = 'national_all';
+				collection='weather';
+				break;
+			}	
+			case 'tropical':
+			{
+				mediacat = 'national_all';
+				collection='weather';
+				break;
+			}	
+			case 'severe':
+			{
+				mediacat = 'national_all';
+				collection='weather';
+				break;
+			}	
+			case 'rewind':
+			{
+				collection='fun';
+				break;
+			}
+			case 'bloopers':
+			{
+				collection='fun';
+				break;
+			}
+			case 'lighterside':
+			{
+				collection='fun';
+				break;
+			}
+			case 'vblog_bilo':
+			{
+				collection='fun';
+				break;
+			}
+			case 'weatherwhys2':
+			{
+				collection='fun';
+				break;
+			}
+			case 'weatherwhys3':
+			{
+				collection='fun';
+				break;
+			}
+			case 'weatherwhys4':
+			{
+				collection='fun';
+				break;
+			}
+			case 'weatherwhys5':
+			{
+				collection='fun';
+				break;
+			}
+			case 'citiescan':
+			{
+				collection = 'weather';
+				break;
+			}
+			case 'national_all':
+			{
+				collection = 'weather';
+				break;
+			}
+			case 'international':
+			{
+				collection = 'weather';
+				break;
+			}
+			case 'geocode':
+			{
+				collection = 'weather';
+				break;
+			}
+			case 'spanishcontent':
+			{
+				collection = 'weather';
+				break;
+			}
+			case 'headline_earth':
+			{
+				collection = 'lifestyle';
+				break;
+			}
+			case 'consumer':
+			{
+				collection = 'lifestyle';
+				break;
+			}
+			case 'weatherwhys1':
+			{
+				collection = 'lifestyle';
+				break;
+			}
+			case 'cotw':
+			{
+				collection = 'lifestyle';
+				break;
+			}
+			default:
+			{
+				collection='weather';
+				mediacat = 'national_all';
+				break;
+			}
+		}
+		window.location = 'http://www.accuweather.com/video-on-demand.asp?video='+mediacode+'&category='+mediacat+'&collection='+collection;
+	}
+</script>
+	        <meta name="description" content="Weather Forecasts from AccuWeather.com. Includes hurricane weather, world weather and local weather forecasts plus radars, news & weather maps." />
+		<meta name="keywords" content="weather video, hurricane video, weather, weather forecast, weather forecasts, world weather, local weather, local weather forecast, local weather forecasts, weather forecast" />
+		<meta name="ROBOTS" content="NOODP">
+</head>
+<body>
+<!-- onload="intForecastFlipper();" /-->
+<div id="page_container">
+  <div id="topAdContainer">
+	<!-- Advertisment bar -->
+	<div id="ad_728_head">
+		<div class="ad_728">
+			<script type='text/javascript'>
+				createAdCodeTop728();
+			</script>
+		</div>
+	</div>
+  </div>
+
+
+
+
+ <!-- Brand bar -->
+
+  <div id="brand_container">
+    <map name="headermap">
+        <area shape="rect" coords="3,4,449,57" href="http://www.accuweather.com/index.asp?partner=accuweather&traveler=0">
+        <area shape="rect" alt="Login to AccuWeather.com Premium" coords="786,58,840,69" href="http://premium.accuweather.com/" title="Login to AccuWeather.com Premium" />
+        <area shape="rect" alt="Login to AccuWeather.com Professional" coords="848,56,918,70" href="http://pro.accuweather.com/" title="Login to AccuWeather.com Professional" />
+        <area shape="rect" alt="Login to AccuWeather.com RadarPlus" coords="926,56,983,71" href="http://radarplus.accuweather.com" title="Login to AccuWeather.com RadarPlus" />
+    </map>
+    <img id="img_random_brand_graphic" src="http://vortex.accuweather.com/adc2004/pub/images/header2/adc_sun1.jpg" alt="AccuWeather.com" usemap="#headermap" />
+   </div>
+  <!-- Search bar -->
+  <!-- Search bar -->
+  <div id="searchnav_container">
+    <div style="float:left;">
+      <form id="localwxform" action="http://www.accuweather.com/us-city-list.asp" method="get" name="localwxform" onSubmit="return localWxCheck();">
+        <img src="http://spotlight.accuweather.com/dyndoc/spotlight/b_qxk6675/index/flasher.gif?partner=accuweather&traveler=0" style="width:1px;height:1px;border-style:none;" /> &nbsp;<a href="http://www.accuweather.com/us-city-list.asp" style="color:#ffffff;text-decoration:none;">Local Weather Forecast</a> &nbsp;
+        	<input id="zipcode_form_input" type="text" name="zipcode" value="Zip Code or City, State" onFocus="focusForecastLookup(this);" title="Did you know? If your Zip Code or City, State appear in the box... just click GO!" />
+        <input id="zipcode_form_button" type="submit" name="submit" value="GO" />
+        <input type="hidden" name="u" value="1" ID="Hidden1" />
+      </form>
+    </div>
+    <div style="position:relative;float:left;margin-top:9px;" id="searchnav_airport"> <a class="searchnav_link" href="javascript:void(0);" onClick="showHideToolbox('popupLookupBox2');">Airport Search</a><a class="searchnav_link" href="javascript:void(0);" onClick="showHideToolbox('popupLookupBox2');"><img src="http://vortex.accuweather.com/adc2004/pub/images/misc/arrow_white_down.gif" class="img_white_arrow_down" alt="^" /></a>
+
+
+<div id="popupLookupBox2" name="popupLookupBox2">
+<div class="textsmallbold" style="margin:3px 0px 2px 5px;float:left;">Airport Weather Forecast</div>
+<a href="javascript:void(0);" onclick="showHideToolbox('popupLookupBox2');" class="textsmallbold" style="margin:3px 3px 2px 5px;color:white;background-color:#000033;float:right;text-align:center;line-height:12px;padding-left:3px;padding-right:2px;display:block;text-decoration:none;">X</a>
+<form style="margin:0px 0px 0px 5px;" action="http://www.accuweather.com/world-airport-list2.asp" method="get" style="clear:both;">
+<input type="text" name="aircode" class="textbox" />&nbsp;
+<input type="hidden" name="traveler" value="1" />
+<input type="submit" value="go" class="button" name="submit1" />
+</form>
+<p class="textsmall" style="margin:2px 0px 0px 5px;">Enter your airport code - <a href="javascript:openAirportList();" onclick="showHideToolbox('popupLookupBox2');" class="textsmall">See Common Codes</a><br />(example: BWI for Baltimore Washington Int.)</p>
+</div>
+
+    </div>
+    <div style="float:left;margin-top:9px;" id="searchnav_world2"> <a class="searchnav_link" href="http://www.accuweather.com/world-index.asp">World Weather</a> | <a class="searchnav_link" href="http://www.accuweather.com/canada-index.asp?">Canada</a> | <a class="searchnav_link" href="http://www.accuweather.com/ukie/index.asp?">UK & Ireland</a> </div>
+	<div style="float:right;margin-right:5px;margin-top:6px;">
+		<form method="get" action="http://search.accuweather.com/search" id="adcSearchForm">
+	   Site Search
+			<input type="text" name="sp_q" id="search_form_input" value="Enter Search Phrase" onfocus="this.value='';" />
+			<input type="hidden" name="sp_a" value="sp100394bf" />
+			<input type="hidden" name="sp_p" value="all" />
+			<input type="hidden" name="sp_f" value="ISO-8859-1" />
+			<input type="submit" value="Go" id="search_form_button" />
+		</form>	   
+    </div>
+  </div>
+
+<!-- End Search Bar /-->		
+
+
+<!-- Navigation bar -->
+
+<div id="navigation_container">
+	<!-- Global Navigation -->
+	<script type="text/javascript">
+		function bugfixFFoxMacDivScroll(overflowPropValue)
+		{
+			if((browser.isMac)&&(browser.isFirefox))
+			{
+				var orBoxHead = document.getElementById('content_box_headlines');
+				var orBoxBlog = document.getElementById('content_box_blogs');
+				orBoxHead.style.overflow = overflowPropValue;
+				orBoxBlog.style.overflow = overflowPropValue;			
+			}		
+		}
+	</script>
+	<div id="menu" style="position:absolute;top:4px;left:5px;z-index:10;">
+		<ul id="nav">
+			<li>
+				<a id="home_link" href="http://wwwa.accuweather.com/index.asp?partner=accuweather&traveler=0" name="&lpos=menu_home&lid=index">Home</a>
+			</li>
+			<li onmouseover="bugfixFFoxMacDivScroll('hidden');" onmouseout="bugfixFFoxMacDivScroll('auto');">
+				<a href="http://wwwa.accuweather.com/index-forecast.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=index">Forecast</a>
+				<ul style="width:176px;">
+					<li style="width:175px;"><a style="width:175px;" href="http://wwwa.accuweather.com/index-forecast.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=quick_look" title="">Quick Look</a></li>
+					<li style="width:175px;"><a style="width:175px;" href="http://wwwa.accuweather.com/forecast-current-conditions.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=current_conditions" title="">Detailed Current Conditions</a></li>
+					<li style="width:175px;"><a style="width:175px;" href="http://wwwa.accuweather.com/forecast-accupop.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=accu_pop" title="">AccuPOP&trade;</a></li>
+					<li style="width:175px;position:relative;">
+						<a style="width:175px;" href="http://wwwa.accuweather.com/forecast.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=days_1_5a" title="">
+							15-Day Forecast
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:165px;padding:0px;margin:0px;" />
+						</a>						
+						<ul style="width:141px;margin-left:170px;">
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/forecast.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=days_1_5b" title="">Forecasts: Days 1-5</a></li>
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/forecast2.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=days_6_10" title="">Forecasts: Days 6-10</a></li>
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/forecast3.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=days_11_15" title="">Forecasts: Days 11-15</a></li>
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/forecast-weekends.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=weekends" title="">Forecasts: Weekends</a></li>
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/forecast-15day.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=15_day" title="">15-Day Overview</a></li>
+						</ul>
+					</li>
+					<li style="width:175px;"><a style="width:175px;" href="http://wwwa.accuweather.com/forecast-hourly.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=hourly" title="">Hourly Forecast</a></li>
+					<li style="width:175px;position:relative;">
+						<a style="width:175px;" href="http://wwwa.accuweather.com/forecast-climo.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=climo_a" title="">
+							Historical Weather
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:165px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:106px;margin-left:170px;">
+							<li style="width:105px;"><a style="width:105px;" href="http://wwwa.accuweather.com/forecast-past24.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=past24" title="AccuWeather.com Past 24 HOurs Weather Details">Past 24 Hours</a></li>
+							<li style="width:105px;"><a style="width:105px;" href="http://wwwa.accuweather.com/forecast-climo.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=climo_b" title="AccuWeather.com Past Month Weather Details">Past Month</a></li>
+							<li style="width:105px;"><a style="width:105px;" href="http://wwwa.accuweather.com/forecast-normals.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=normals" title="">Typical Weather</a></li>
+						</ul>
+					</li>
+					<li style="width:175px;position:relative;">
+						<a style="width:175px;" href="http://wwwa.accuweather.com/forecast-state.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=state" title="">
+							State Weather Center
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:165px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:201px;margin-left:170px;">
+							<li style="width:200px;"><a style="width:200px;" href="http://wwwa.accuweather.com/forecast-state-conditions.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=state_cond" title="">Current Weather Around the State</a></li>
+							<li style="width:200px;"><a style="width:200px;" href="http://wwwa.accuweather.com/forecast-state.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=state_forecast" title="">Travel Forecast Selector</a></li>
+						</ul>
+					</li>
+					<li style="width:175px;"><a style="width:175px;" href="http://wwwa.accuweather.com/forecast-nws.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_forecast&lid=nws" title="">NWS Forecast</a></li>
+					<li style="width:175px;position:relative;">
+						<a style="width:175px;" href="http://wwwa.accuweather.com/world-index.asp?partner=accuweather&traveler=0" name="&lpos=menu_forecast&lid=world" title="">
+							International Weather
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:165px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:131px;margin-left:170px;">
+							<li style="width:130px;"><a style="width:130px;" href="http://wwwa.accuweather.com/canada-index.asp?partner=accuweather&traveler=0" name="&lpos=menu_forecast&lid=canada" title="">Canada Weather</a></li>
+							<li style="width:130px;"><a style="width:130px;" href="http://ukie.accuweather.com/ukie/index.asp?partner=accuweather&traveler=0" name="&lpos=menu_forecast&lid=uk" title="">UK &amp; Ireland Weather</a></li>
+							<li style="width:130px;"><a style="width:130px;" href="http://wwwa.accuweather.com/world-index.asp?partner=accuweather&traveler=0" name="&lpos=menu_forecast&lid=global" title="">World Weather</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li onmouseover="bugfixFFoxMacDivScroll('hidden');" onmouseout="bugfixFFoxMacDivScroll('auto');">
+				<a href="http://wwwa.accuweather.com/index-radar.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_radar&lid=radar">Radar</a>
+				<ul style="width:116px;">
+					<li style="width:115px;"><a style="width:115px;" href="http://wwwa.accuweather.com/index-radar.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_radar&lid=center" title="">Radar Center</a></li>
+					<li style="width:115px;position:relative;">
+						<a style="width:115px;" href="http://wwwa.accuweather.com/radar-national.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;site=us_" name="&lpos=menu_radar&lid=nation" title="">
+							National Radar
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:105px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:151px;margin-left:110px;">
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-national.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=sir&amp;site=us_" name="&lpos=menu_radar&lid=natsir" title="">Snow, Ice and Rain</a></li>
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-national.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=rs&amp;site=us_" name="&lpos=menu_radar&lid=natradsat" title="">Radar/Satellite Combo</a></li>
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-national.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=24HR&amp;site=us_" name="&lpos=menu_radar&lid=natprecip24" title="">Past 24hr Precipitation</a></li>
+						</ul>
+					</li>
+					<li style="width:115px;position:relative;">
+						<a style="width:115px;" href="http://wwwa.accuweather.com/radar-regional.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_radar&lid=regrad_a" title="">
+							Regional Radars
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:105px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:151px;margin-left:110px;">
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-regional.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=sir" name="&lpos=menu_radar&lid=regrad_b" title="">Regional Radar</a></li>
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-regional.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=sir" name="&lpos=menu_radar&lid=regsir" title="">Snow, Ice and Rain</a></li>
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-regional.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=rs" name="&lpos=menu_radar&lid=regradsat" title="">Radar/Satellite Combo</a></li>
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-regional.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=24HR" name="&lpos=menu_radar&lid=regprecip24" title="">Past 24hr Precipitation</a></li>
+
+						</ul>
+					</li>
+					<li style="width:115px;position:relative;">
+						<a style="width:115px;" href="http://wwwa.accuweather.com/radar-state.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_radar&lid=staterad_a" title="">
+							State Radars
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:105px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:151px;margin-left:110px;">
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-state.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=sir" name="&lpos=menu_radar&lid=staterad_b" title="">State Radar</a></li>
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-state.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=sir" name="&lpos=menu_radar&lid=statesir" title="">Snow, Ice and Rain</a></li>
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-state.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=rs" name="&lpos=menu_radar&lid=stateradsat" title="">Radar/Satellite Combo</a></li>
+							<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/radar-state.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=24HR" name="&lpos=menu_radar&lid=stateprecip24" title="">Past 24hr Precipitation</a></li>
+						</ul>
+					</li>
+					<li style="width:115px;"><a style="width:115px;" href="http://wwwa.accuweather.com/radar-local.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_radar&lid=local" title="">Local Radars</a></li>
+					<li style="width:115px;"><a style="width:115px;" href="http://wwwa.accuweather.com/radar-metro.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_radar&lid=metro" title="">Metro Radars</a></li>
+				</ul>
+			</li>
+			<li onmouseover="bugfixFFoxMacDivScroll('hidden');" onmouseout="bugfixFFoxMacDivScroll('auto');">
+				<a href="http://wwwa.accuweather.com/maps-satellite.asp?partner=accuweather&traveler=0&amp;type=ei" name="&lpos=menu_map&lid=satei_a">Maps</a>
+				<ul style="width:126px;">
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/maps-satellite.asp?partner=accuweather&traveler=0&amp;type=ei" name="&lpos=menu_map&lid=satei_b">
+							Satellite
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:141px;margin-left:120px;">
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/maps-satellite.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=ir" name="&lpos=menu_map&lid=satir" title="">Standard Infrared</a></li>
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/maps-satellite.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=ei" name="&lpos=menu_map&lid=satei" title="">Enhanced Infrared</a></li>
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/maps-satellite.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=vis" name="&lpos=menu_map&lid=satvis" title="">Visible</a></li>
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/maps-satellite.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=wv" name="&lpos=menu_map&lid=satwv" title="">Water Vapor</a></li>
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/maps-satellite.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=rs" name="&lpos=menu_map&lid=satrs" title="">Radar/Satellite Combo</a></li>
+						</ul>
+					</li>
+					<li style="width:125px;"><a style="width:125px;" href="http://wwwa.accuweather.com/index-radar.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_map&lid=radar" title="">Radar</a>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=fhgh" name="&lpos=menu_map&lid=temp" title="">
+							Temperature
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:171px;margin-left:120px;">
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=fhgh" name="&lpos=menu_map&lid=tempfhgh" title="">High Temperature</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=flow" name="&lpos=menu_map&lid=tempflow" title="">Low Temperature</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=apt" name="&lpos=menu_map&lid=tempapt" title="">Heat Index</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=wch" name="&lpos=menu_map&lid=tempwch" title="">Wind Chill</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=temp&amp;fday=1" name="&lpos=menu_map&lid=temp_1_5" title="">Temperatures: Days 1-5</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=temp&amp;fday=2" name="&lpos=menu_map&lid=temp_6_10" title="">Temperatures: Days 6-10</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=temp&amp;fday=3" name="&lpos=menu_map&lid=temp_11_15" title="">Temperatures: Days 11-15</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=temp&amp;fday=4" name="&lpos=menu_map&lid=temp_30" title="">Temperatures: 30-Day</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-temperature.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=temp&amp;fday=5" name="&lpos=menu_map&lid=temp_90" title="">Temperatures: 90-Day</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-galileo.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=highs" name="&lpos=menu_map&lid=temphighs" title="">High Res High Temperatures</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-galileo.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=lows" name="&lpos=menu_map&lid=templows" title="">High Res Low Temperatures</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-galileo.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=wchill" name="&lpos=menu_map&lid=tempwchill" title="">High Res Wind Chill</a></li>
+							<li style="width:170px;"><a style="width:170px;" href="http://wwwa.accuweather.com/maps-galileo.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=heatindex" name="&lpos=menu_map&lid=tempheatindex" title="">High Res Heat Index</a></li>
+						</ul>
+					</li>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;type=liq" name="&lpos=menu_map&lid=precipliq_a" title="">
+							Precipitation
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:161px;margin-left:120px;">
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=liq" name="&lpos=menu_map&lid=precipliq_b" title="">Amount of Precipitation</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=polp" name="&lpos=menu_map&lid=precip_polp" title="">Probability of Precipitation</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=snow" name="&lpos=menu_map&lid=precip_snow" title="">Snowfall</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=ice" name="&lpos=menu_map&lid=precip_ice" title="">Icefall</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=rain" name="&lpos=menu_map&lid=precip_rain" title="">Rainfall</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=precip&amp;fday=1" name="&lpos=menu_map&lid=precip_day1" title="">Precipitation: Days 1-5</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=precip&amp;fday=2" name="&lpos=menu_map&lid=precip_day2" title="">Precipitation: Days 6-10</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=precip&amp;fday=3" name="&lpos=menu_map&lid=precip_day3" title="">Precipitation: Days 11-15</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=precip&amp;fday=4" name="&lpos=menu_map&lid=precip_day4" title="">Precipitation: 30-Day</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-precipitation.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=precip&amp;fday=5" name="&lpos=menu_map&lid=precip_day5" title="">Precipitation: 90-Day</a></li>									
+						</ul>
+					</li>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/maps-winds.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=wsp&amp;fday=1" name="&lpos=menu_map&lid=wind_wsp_a" title="">
+							Wind
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:121px;margin-left:120px;">
+							<li style="width:120px;"><a style="width:120px;" href="http://wwwa.accuweather.com/maps-winds.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=wsp&amp;fday=1" name="&lpos=menu_map&lid=wind_wsp_b" title="">Wind Speeds</a></li>
+							<li style="width:120px;"><a style="width:120px;" href="http://wwwa.accuweather.com/maps-winds.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=gus&amp;fday=1" name="&lpos=menu_map&lid=wind_gust" title="">Wind Gusts</a></li>
+							<li style="width:120px;"><a style="width:120px;" href="http://wwwa.accuweather.com/maps-surface.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=jet" name="&lpos=menu_map&lid=sfcjet" title="">Jetstream</a></li>							
+							<li style="width:120px;"><a style="width:120px;" href="http://wwwa.accuweather.com/maps-winds.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=highwind&amp;fday=5" name="&lpos=menu_map&lid=wind_high" title="">Today's High Winds</a></li>
+						</ul>
+					</li>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/maps-flight.asp?partner=accuweather&traveler=0&amp;type=flight" name="&lpos=menu_map&lid=flight_a" title="">
+							Flight Delays
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:141px;margin-left:120px;">
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/maps-flight.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=faa" name="&lpos=menu_map&lid=flight_faa" title="">Current Flight Delays</a></li>
+							<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/maps-flight.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=flight" name="&lpos=menu_map&lid=flight_b" title="">Forecast Flight Delays</a></li>
+						</ul>
+					</li>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/index-severe-weather.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_map&lid=severe" title="">
+							Extreme Weather
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:161px;margin-left:120px;">
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-weatherrisk.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_map&lid=svrrisk" title="">Severe Weather Risk</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-lightning.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_map&lid=lightning" title="">Lightning</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-thunderstorms.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_map&lid=thunder" title="">Thunderstorm Probability</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-watches.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_map&lid=watches" title="">Watches/Warnings</a></li>
+						</ul>
+					</li>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/maps-surface.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=sfc" name="&lpos=menu_map&lid=sfc_a" title="">
+							Surface
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:161px;margin-left:120px;">
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-surface.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=sfc" name="&lpos=menu_map&lid=sfc_b" title="">Fronts &amp; Pressure</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-galileo.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=surface&amp;fday=1" name="&lpos=menu_map&lid=sfchcur" title="">High Res Surface: Current</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-galileo.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=surface&amp;fday=2" name="&lpos=menu_map&lid=sfch12" title="">High Res Surface: 12hr</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-galileo.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=surface&amp;fday=3" name="&lpos=menu_map&lid=sfch24" title="">High Res Surface: 24hr</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-galileo.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=surface&amp;fday=4" name="&lpos=menu_map&lid=sfch36" title="">High Res Surface: 36hr</a></li>
+							<li style="width:160px;"><a style="width:160px;" href="http://wwwa.accuweather.com/maps-galileo.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=surface&amp;fday=5" name="&lpos=menu_map&lid=sfch48" title="">High Res Surface: 48hr</a></li>
+						</ul>
+					</li>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/maps-health.asp?partner=accuweather&traveler=0&amp;type=airq" name="&lpos=menu_map&lid=airq_a" title="">
+							Health
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:101px;margin-left:120px;">
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/maps-health.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=uvi" name="&lpos=menu_map&lid=airuvi" title="">UV Index</a></li>
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/maps-health.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=airq" name="&lpos=menu_map&lid=air_b" title="">Air Quality</a></li>
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/maps-health.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=overall" name="&lpos=menu_map&lid=airoverall" title="">Overall Pollen</a></li>
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/maps-health.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=grass" name="&lpos=menu_map&lid=airgrass" title="">Grass Pollen</a></li>
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/maps-health.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=tree" name="&lpos=menu_map&lid=airtree" title="">Tree Pollen</a></li>
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/maps-health.asp?partner=accuweather&traveler=0&amp;zipcode=&amp;type=ragweed" name="&lpos=menu_map&lid=airragweed" title="">Ragweed Pollen</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li onmouseover="bugfixFFoxMacDivScroll('hidden');" onmouseout="bugfixFFoxMacDivScroll('auto');">
+				<a href="http://wwwa.accuweather.com/news-center.asp?partner=accuweather&traveler=0" name="&lpos=menu_news&lid=center_a">News</a>
+				<ul style="width:156px;">
+					<li style="width:155px;"><a style="width:155px;" href="http://wwwa.accuweather.com/news-center.asp?partner=accuweather&traveler=0" name="&lpos=menu_news&lid=center_b" title="">News Center</a></li>
+					<li style="width:155px;position:relative;">
+						<a style="width:155px;" href="http://wwwa.accuweather.com/news-center.asp?partner=accuweather&traveler=0" name="&lpos=menu_news&lid=regional_c" title="">
+							Regional News
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:145px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:166px;margin-left:150px;">		
+							<li style="width:165px;"><a style="width:165px;" href="http://wwwa.accuweather.com/regional-news-story.asp?partner=accuweather&traveler=0&amp;region=eastusnews" name="&lpos=menu_news&lid=eastusnews" title="">East US News</a></li>
+							<li style="width:165px;"><a style="width:165px;" href="http://wwwa.accuweather.com/regional-news-story.asp?partner=accuweather&traveler=0&amp;region=midwestusnews" name="&lpos=menu_news&lid=midwestusnews" title="">Midwest US News</a></li>
+							<li style="width:165px;"><a style="width:165px;" href="http://wwwa.accuweather.com/regional-news-story.asp?partner=accuweather&traveler=0&amp;region=southusnews" name="&lpos=menu_news&lid=southusnews" title="">South US News</a></li>
+							<li style="width:165px;"><a style="width:165px;" href="http://wwwa.accuweather.com/regional-news-story.asp?partner=accuweather&traveler=0&amp;region=southwestusnews" name="&lpos=menu_news&lid=southwestusnews" title="">Southwest US News</a></li>
+							<li style="width:165px;"><a style="width:165px;" href="http://wwwa.accuweather.com/regional-news-story.asp?partner=accuweather&traveler=0&amp;region=westusnews" name="&lpos=menu_news&lid=westusnews" title="">West US News</a></li>
+							<li style="width:165px;"><a style="width:165px;" href="http://wwwa.accuweather.com/regional-news-story.asp?partner=accuweather&traveler=0&amp;region=worldnews" name="&lpos=menu_news&lid=worldnews" title="">World News</a></li>
+						</ul>
+					</li>					
+					<li style="width:155px;"><a style="width:155px;" href="http://wwwa.accuweather.com/news-summary.asp?partner=accuweather&traveler=0" name="&lpos=menu_news&lid=summary" title="">Weather Summaries</a></li>
+					<li style="width:155px;"><a style="width:155px;" href="http://wwwa.accuweather.com/news-bloggers.asp?partner=accuweather&traveler=0" name="&lpos=menu_news&lid=summary" title="">Blogs</a></li>
+					<li style="width:155px;"><a style="width:155px;" href="http://traffic.accuweather.com" target="_blank" name="&lpos=menu_news&lid=traffic" title="">Traffic Reports</a></li>
+					<li style="width:155px;position:relative;">
+						<a style="width:155px;" href="http://wwwa.accuweather.com/news-center.asp?partner=accuweather&traveler=0" name="&lpos=menu_news&lid=center_c" title="">
+							Interesting News Facts
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:145px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:166px;margin-left:150px;">		
+							<li style="width:165px;"><a style="width:165px;" href="http://wwwa.accuweather.com/news-summary.asp?partner=accuweather&traveler=0#extremes" name="&lpos=menu_news&lid=extemes" title="">Daily U.S. Extremes</a></li>
+							<li style="width:165px;"><a style="width:165px;" href="http://wwwa.accuweather.com/news-weather-why.asp?partner=accuweather&traveler=0#worst" name="&lpos=menu_news&lid=worst" title="">Today's Worst Weather</a></li>
+							<li style="width:165px;"><a style="width:165px;" href="http://wwwa.accuweather.com/news-weather-why.asp?partner=accuweather&traveler=0#wxwhy" name="&lpos=menu_news&lid=whys" title="">WeatherWhys&reg;</a></li>
+							<li style="width:165px;"><a style="width:165px;" href="http://wwwa.accuweather.com/news-weather-why.asp?partner=accuweather&traveler=0#hotspot" name="&lpos=menu_news&lid=hotspot" title="">World Weather "Hot Spot"</a></li>
+						</ul>
+					</li>			
+					<li style="width:155px;"><a style="width:155px;" href="http://wwwa.accuweather.com/news-personalities.asp?partner=accuweather&traveler=0" name="&lpos=menu_news&lid=onair" title="">On-Air Personalities</a></li>
+					<!--<li style="width:155px;"><a style="width:155px;" href="javascript:openMediaPlayer();" name="&lpos=menu_news&lid=videos" title="">Videos</a></li>-->
+					<li style="width:155px;"><a style="width:155px;" href="http://wwwa.accuweather.com/news-podcasts.asp?partner=accuweather&traveler=0" name="&lpos=menu_news&lid=podcast" title="">Weather Podcasts </a></li>
+					<li style="width:155px;"><a style="width:155px;" href="http://wwwa.accuweather.com/news-weatherhost.asp?partner=accuweather&traveler=0" name="&lpos=menu_news&lid=wxhost" title="">WeatherHost</a></li>
+				</ul>														
+			</li>
+			<li>
+				<a href="http://wwwa.accuweather.com/index-severe-weather.asp?partner=accuweather&traveler=0" name="&lpos=menu_extreme&lid=center_a">Extreme Weather</a>    
+				<ul style="width:151px;">
+					<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/index-severe-weather.asp?partner=accuweather&traveler=0" name="&lpos=menu_extreme&lid=center_b" title="">Severe Weather Center</a></li>
+					<li style="width:150px;"><a style="width:150px;" href="http://hurricane.accuweather.com/hurricane/index.asp?partner=accuweather&traveler=0" name="&lpos=menu_extreme&lid=hurricane" title="">Hurricane Center</a></li>
+					<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/index-winter-center.asp?partner=accuweather&traveler=0" name="&lpos=menu_extreme&lid=winter" title="">Winter Center</a></li>
+					<li style="width:150px;"><a style="width:150px;" href="http://wwwa.accuweather.com/global-warming/index.asp?partner=accuweather&traveler=0" name="&lpos=menu_extreme&lid=gwCenter" title="">Global Warming Center</a></li>
+				</ul>														
+			</li>
+			<li>
+				<a href="http://wwwa.accuweather.com/adc2004/pub/products_services/index.asp?partner=accuweather&traveler=0" name="&lpos=menu_products&lid=center_a" target="_blank">Products &amp; Services</a>    
+				<ul style="width:126px;">
+					<li style="width:125px;"><a style="width:125px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/advertising.asp?partner=accuweather&traveler=0&header=a" name="&lpos=menu_products&lid=advertise" target="_blank">Advertise With Us</a></li>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/business.asp?partner=accuweather&traveler=0&header=b" name="&lpos=menu_products&lid=industry" title="" target="_blank">
+							Business
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:146px;margin-left:120px;">
+							<li style="width:145px;"><a style="width:145px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/agriculture.asp?partner=accuweather&traveler=0&header=b" name="&lpos=menu_products&lid=agriculture" title="" target="_blank">Agriculture</a></li>
+							<li style="width:145px;"><a style="width:145px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/construction.asp?partner=accuweather&traveler=0&header=b" name="&lpos=menu_products&lid=construction" title="" target="_blank">Construction</a></li>
+							<li style="width:145px;"><a style="width:145px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/energy.asp?partner=accuweather&traveler=0&header=b" name="&lpos=menu_products&lid=utilities" title="" target="_blank">Energy &amp; Utilities</a></li>
+							<li style="width:145px;"><a style="width:145px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/forensics.asp?partner=accuweather&traveler=0&header=b" title="" name="&lpos=menu_products&lid=forensics" target="_blank">Forensics</a></li>
+							<li style="width:145px;"><a style="width:145px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/hospitality.asp?partner=accuweather&traveler=0&header=b" name="&lpos=menu_products&lid=hospitality" title="" target="_blank">Hospitality</a></li>
+							<li style="width:145px;"><a style="width:145px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/insurance.asp?partner=accuweather&traveler=0&header=b" name="&lpos=menu_products&lid=finance" title="" target="_blank">Insurance</a></li>
+							<li style="width:145px;"><a style="width:145px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/manufacturing.asp?partner=accuweather&traveler=0&header=b" name="&lpos=menu_products&lid=manufacturing" title="" target="_blank">Manufacturing</a></li>
+							<li style="width:145px;"><a style="width:145px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/businessrecreation.asp?partner=accuweather&traveler=0&header=b" name="&lpos=menu_products&lid=recreation" title="" target="_blank">Recreation</a></li>
+							<li style="width:145px;"><a style="width:145px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/retail.asp?partner=accuweather&traveler=0&header=b" name="&lpos=menu_products&lid=retail" title="" target="_blank">Retail</a></li>
+							<li style="width:145px;"><a style="width:145px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/transportation.asp?partner=accuweather&traveler=0&header=b" name="&lpos=menu_products&lid=transport" title="" target="_blank">Transportation</a></li>
+						</ul>
+					</li>					
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/consumer.asp?partner=accuweather&traveler=0&header=c" target="_blank" name="&lpos=menu_products&lid=consumer" title="">
+							Consumer
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:111px;margin-left:120px;">						
+							<li style="width:110px;"><a style="width:110px;" href="http://alert.accuweather.com/alertssignup/index.asp?partner=accuweather&traveler=0" name="&lpos=menu_products&lid=conalerts" title="" target="_new">Email Alerts</a></li>
+							<!--<li style="width:110px;"><a style="width:110px;" href="http://desktop.accuweather.com?partner=accuweather&traveler=0" name="&lpos=menu_products&lid=condesktop" title="" target="_new">Desktop</a></li>-->
+							<li style="width:110px;"><a style="width:110px;" href="http://netweather.accuweather.com?partner=accuweather&traveler=0" name="&lpos=menu_products&lid=connetwx" title="" target="_new">netWeather&reg;</a></li>
+							<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/premium-benefits.asp" name="&lpos=menu_products&lid=conpremium" title="" target="_new">Premium</a></li>
+							<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/adcbin/public/pro_benefits.asp" name="&lpos=menu_products&lid=conpro" title="" target="_new">Professional</a></li>
+							<li style="width:110px;"><a style="width:110px;" href="http://www.stormhawk.com" name="&lpos=menu_products&lid=constormhawk" title="" target="_new">StormHawk&reg;</a></li>
+							<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/adcbin/public/radarplus_benefits.asp" name="&lpos=menu_products&lid=conradar">RadarPlus&trade;</a></li>
+							<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/adcbin/public/lightningplus_benefits.asp" name="&lpos=menu_products&lid=conlightning">LightningPlus&trade;</a></li>
+							<li style="width:110px;"><a style="width:110px;" href="http://wireless.accuweather.com/" name="&lpos=menu_products&lid=conwireless" title="" target="_new">Wireless</a></li>
+						</ul>
+					</li>
+					<li style="width:125px;"><a style="width:100px;" href="http://wwwa.accuweather.com/promo-ad.asp?partner=accuweather&traveler=0&amp;dir=aw&amp;page=forecastfox" title="" name="&lpos=menu_products&lid=forecastfox" target="_blank">Developers</a></li>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/education.asp?partner=accuweather&traveler=0&header=e" target="_blank" name="&lpos=menu_products&lid=education" title="">
+							Education
+						</a>
+					</li>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/government.asp?partner=accuweather&traveler=0&header=g" target="_blank" name="&lpos=menu_products&lid=gov" title="">
+							Government
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:156px;margin-left:120px;">					
+							<li style="width:155px;"><a style="width:155px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/parksandrec.asp?partner=accuweather&traveler=0&header=g" name="&lpos=menu_products&lid=govparks" title="" target="_blank">Parks &amp; Recreation</a></li>	
+							<li style="width:155px;"><a style="width:155px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/ema.asp?partner=accuweather&traveler=0&header=g" name="&lpos=menu_products&lid=govema" title="" target="_blank">Emergency Management</a></li>
+							<li style="width:155px;"><a style="width:155px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/deptoftransportation.asp?partner=accuweather&traveler=0&header=g" name="&lpos=menu_products&lid=govtransport" title="" target="_blank">Transportation</a></li>
+							<li style="width:155px;"><a style="width:155px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/forensics.asp?partner=accuweather&traveler=0&header=g" name="&lpos=menu_products&lid=forensics" title="" target="_blank">Forensics</a></li>
+						</ul>
+					</li>										
+					<li style="width:125px;"><a style="width:125px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/forensics.asp?partner=accuweather&traveler=0&header=g" name="&lpos=menu_products&lid=legal" target="_blank">Legal</a></li>
+					<li style="width:125px;position:relative;">
+						<a style="width:125px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/media.asp?partner=accuweather&traveler=0" name="&lpos=menu_products&lid=center_b" target="_blank" title="">
+							Media
+							<img src="http://vortex.accuweather.com/adc2004/common/images/icons/standard/arrows/arrow_nav_right.gif" style="width:9px;height:13px;position:absolute;top:2px;left:115px;padding:0px;margin:0px;" />
+						</a>
+						<ul style="width:101px;margin-left:120px;">				
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/tv.asp?partner=accuweather&traveler=0&header=m" name="&lpos=menu_products&lid=tv" title="" target="_blank">Television</a></li>
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/internet.asp?partner=accuweather&traveler=0&header=m" title="" name="&lpos=menu_products&lid=internet" target="_blank">Internet</a></li>
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/newspaper.asp?partner=accuweather&traveler=0&header=m" name="&lpos=menu_products&lid=newspaper" title="" target="_blank">Newspapers</a></li>
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/radio.asp?partner=accuweather&traveler=0&header=m" name="&lpos=menu_products&lid=radio" title="" target="_blank">Radio</a></li>
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/wireless.asp?partner=accuweather&traveler=0&header=m" title="" name="&lpos=menu_products&lid=wireless" target="_blank">Wireless</a></li>
+							<li style="width:100px;"><a style="width:100px;" href="http://wwwa.accuweather.com/adc2004/pub/products_services/digitalsignage.asp?partner=accuweather&traveler=0&header=m" name="&lpos=menu_products&lid=digsigns" title="" target="_blank">Digital Signage</a></li>
+						</ul>
+					</li>					
+				</ul>							
+			</li>
+			<li>
+				<a href="http://wwwa.accuweather.com/travel-weather.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=center">Interests</a>    
+				<ul style="width:111px;">
+					<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/astronomy.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=astronomy" title="">Astronomy</a></li>
+					<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/education.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=education" title="">Education</a></li>
+					<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/entertainment-weather.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=education" title="">Entertainment</a></li>
+					<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/fashion.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=fashion" title="">Fashion Weather</a></li>					
+					<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/golf.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=golf" title="">Golf</a></li>
+					<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/health.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=health" title="">Health</a></li>
+					<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/gardening.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=garden" title="">Home &amp; Garden</a></li>					
+					<li style="width:110px;"><a style="width:110px;" href="http://kidz.accuweather.com" target="_blank" name="&lpos=menu_intrestss&lid=kidz" title="">Kids Weather</a></li>
+					<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/marine.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=marine" title="">Marine</a></li>
+					<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/ski.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=ski" title="">Ski</a></li>
+					<li style="width:110px;"><a style="width:110px;" href="http://wwwa.accuweather.com/travel-weather.asp?partner=accuweather&traveler=0&amp;zipcode=" name="&lpos=menu_intrests&lid=travel" title="">Travel</a></li>
+				</ul>														
+			</li>
+			<li>
+				<a href="http://wwwa.accuweather.com/promotion.asp?partner=accuweather&traveler=0&amp;dir=aw&amp;page=community" name="&lpos=menu_community&lid=center_a">Community</a>    
+				<ul style="width:141px;margin-left:-56px;">
+					<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/promotion.asp?partner=accuweather&traveler=0&amp;dir=aw&amp;page=community" name="&lpos=menu_community&lid=center_b" title="">Community Center</a></li>
+					<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/news-blogs.asp?partner=accuweather&traveler=0&amp;blog=community" name="&lpos=menu_community&lid=comblog" title="">Community Blog</a></li>
+					<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/news-bloggers.asp?partner=accuweather&traveler=0" name="&lpos=menu_community&lid=blogs" title="">Blogs</a></li>
+					<li style="width:140px;"><a style="width:140px;" href="http://photo.accuweather.com?partner=accuweather&traveler=0" target="_blank" name="&lpos=menu_community&lid=photo" title="">Photo Gallery</a></li>
+					<li style="width:140px;"><a style="width:140px;" href="http://wwwa.accuweather.com/promotion.asp?partner=accuweather&traveler=0&amp;dir=aw&amp;page=poll" name="&lpos=menu_community&lid=trivia" title="">Daily Trivia Challenge</a></li>
+				</ul>														
+			</li>
+			<!--<li><a id="store_link" href="http://www.accumall.com" name="&lpos=menu_store&lid=mall" title="Visit the AccuWeather.com AccuMall!" target="_new">Store</a></li>-->
+			<li onmouseover="bugfixFFoxMacDivScroll('hidden');" onmouseout="bugfixFFoxMacDivScroll('auto');">
+				<a href="http://www.accumall.com" name="&lpos=menu_store&lid=mall" title="Visit the AccuWeather.com AccuMall!" target="_new">Shop</a>
+				<ul style="width:151px;margin-left:-110px;">
+					<li style="width:150px;"><a style="width:150px;" href="http://www.accumall.com/Weather-Instruments/" name="&lpos=menu_store&lid=instruments" title="" target="_new">Weather Instruments</a></li>
+					<li style="width:150px;"><a style="width:150px;" href="http://www.accumall.com/Weather-Instruments/Weather-Stations/" name="&lpos=menu_store&lid=stations" title="" target="_new">Weather Stations</a></li>
+					<li style="width:150px;"><a style="width:150px;" href="http://www.accumall.com/Weather-Instruments/Lightning-Detectors/" name="&lpos=menu_store&lid=detectors" title="" target="_new">Lightning Detectors</a></li>
+					<li style="width:150px;"><a style="width:150px;" href="http://www.accumall.com/Weather-Instruments/Thermometers/" name="&lpos=menu_store&lid=thermometers" title="" target="_new">Outdoor Thermometers</a></li>
+					<li style="width:150px;"><a style="width:150px;" href="http://www.accumall.com/Weather-Instruments/Weather-Radios/" name="&lpos=menu_store&lid=radios" title="" target="_new">Weather Radios</a></li>
+					<li style="width:150px;"><a style="width:150px;" href="http://www.accumall.com/Weather-Instruments/Windmeters/" name="&lpos=menu_store&lid=windmeters" title="" target="_new">Windmeters</a></li>
+					<li style="width:150px;"><a style="width:150px;" href="http://www.accumall.com/Weather-Instruments/Rain-Gauges/" name="&lpos=menu_store&lid=raingauges" title="" target="_new">Rain Gauges</a></li>
+					<li style="width:150px;"><a style="width:150px;" href="http://www.accumall.com/" name="&lpos=menu_store&lid=gadgets" title="" target="_new">Gadgets and Gifts</a></li>
+				</ul>														
+			</li>
+						
+	</div>					
+	<!-- Featured area (Winter Center, Hurricane Center, etc) -->
+	<div id="navbar_feature" style="position:absolute;top:0px;left:750px;">
+	Featured Area:&nbsp;<a id="nav_link_featured" style="font-size:9pt;" href="http://wwwa.accuweather.com/global-warming/index.asp?partner=accuweather&traveler=0" name="&lpos=menu_winter&lid=center" target="_blank">Global Warming</a>
+
+	</div>
+</div>
+<!--End Menu /-->
+  <!-- CONTENT -->
+  <div id="content_container_2col660"><div id="content_column_660">
+		<div class="content_box_660">
+			
+<body text="#000000" link="#0000FF" vlink="#800080" alink="#FF0000" bgcolor="#FFFFFF">
+
+<br>
+	<div class="search_head">Search Results</div>
+<br>
+<div class="results_number">
+    
+    
+    Results for <span style="font-weight:bold;">20502</span>
+    
+</div>
+
+<!-- Results display and prev/next buttons -->
+    
+ 
+
+
+<!-- Put up the next form.  -->
+<div class="search_form">
+<form method="get" action="http://search.accuweather.com/search/" id="adcSearchForm">
+
+
+<input type="hidden" name="sp_a" value="sp100394bf">
+<input type="hidden" name="sp_f" value="ISO-8859-1">
+
+<input size="55" name="sp_q" value="20502">
+<input type=hidden name="sp_p" value="all">
+<input type=submit value="New Search">
+
+
+
+</form>
+</div>
+
+
+<div class="search_google_ad">
+		<div class="sponsored_hd">Sponsored Results</div>
+<strong>
+<div class="google_search_link">
+<a href="http://www.google.com/aclk?sa=L&ai=CysDkMZ9RSbmTOpGaNJ3C1aUFz4yqadG3sPICiaiBwAIQASDpnfQHUK_WxuEEYMmGo4fUo4AQyAEBqgQZT9Bj9PJ9TTGmc9nOC6DiiVMyq6a7OYXVKw&num=1&sig=AGiWqtypqZonCJSHh_dgNnelKRQE9YOZMg&q=http://shopping.yahoo.com/search%3B_ylc%3DX3oDMTJuNTVqMGZrBF9TAzc4NDcxNjIxMwRhZGdycAMzMzUxNzc3NzMEZXZ0AzEzNTM2MDczBGsDMjA1MDIEb21tA2Jyb2FkBHNlYwN0aXRsZQRzZW0DZ29vZ2xlBHNsawNrYg--%3Fview%3Dl%26sem%3Dgoogle%26p%3D20502%26sp%3Dpall%26no_truncation%3D1" language="Javascript" onmouseover="window.status='shopping.yahoo.com';return true">
+<b>20502</b>
+</div></strong>
+<div class="google_search_descrip">
+<a href="http://www.google.com/aclk?sa=L&ai=CysDkMZ9RSbmTOpGaNJ3C1aUFz4yqadG3sPICiaiBwAIQASDpnfQHUK_WxuEEYMmGo4fUo4AQyAEBqgQZT9Bj9PJ9TTGmc9nOC6DiiVMyq6a7OYXVKw&num=1&sig=AGiWqtypqZonCJSHh_dgNnelKRQE9YOZMg&q=http://shopping.yahoo.com/search%3B_ylc%3DX3oDMTJuNTVqMGZrBF9TAzc4NDcxNjIxMwRhZGdycAMzMzUxNzc3NzMEZXZ0AzEzNTM2MDczBGsDMjA1MDIEb21tA2Jyb2FkBHNlYwN0aXRsZQRzZW0DZ29vZ2xlBHNsawNrYg--%3Fview%3Dl%26sem%3Dgoogle%26p%3D20502%26sp%3Dpall%26no_truncation%3D1" style="text-decoration:none; color: #000000;" language="Javascript" onmouseover="window.status='shopping.yahoo.com';return true">
+<b>20502</b> &amp; More! 100,000 Stores. Deals. Reviews.</a></div>
+<div class="google_search_url">
+<a href="http://www.google.com/aclk?sa=L&ai=CysDkMZ9RSbmTOpGaNJ3C1aUFz4yqadG3sPICiaiBwAIQASDpnfQHUK_WxuEEYMmGo4fUo4AQyAEBqgQZT9Bj9PJ9TTGmc9nOC6DiiVMyq6a7OYXVKw&num=1&sig=AGiWqtypqZonCJSHh_dgNnelKRQE9YOZMg&q=http://shopping.yahoo.com/search%3B_ylc%3DX3oDMTJuNTVqMGZrBF9TAzc4NDcxNjIxMwRhZGdycAMzMzUxNzc3NzMEZXZ0AzEzNTM2MDczBGsDMjA1MDIEb21tA2Jyb2FkBHNlYwN0aXRsZQRzZW0DZ29vZ2xlBHNsawNrYg--%3Fview%3Dl%26sem%3Dgoogle%26p%3D20502%26sp%3Dpall%26no_truncation%3D1" language="Javascript" onmouseover="window.status='shopping.yahoo.com';return true">shopping.yahoo.com</a>
+</div>
+
+</div>
+
+
+
+<!-- ResultListStart -->
+
+	
+		<p>Did you mean
+		
+			
+			<a href="http://search.atomz.com/search/?sp_a=sp100394bf&sp_f=ISO-8859-1&search_form_button=Go&sp_q=a&sp_p=all">a</a>, 
+		
+			
+			<a href="http://search.atomz.com/search/?sp_a=sp100394bf&sp_f=ISO-8859-1&search_form_button=Go&sp_q=c&sp_p=all">c</a>, 
+		
+			 or 
+			<a href="http://search.atomz.com/search/?sp_a=sp100394bf&sp_f=ISO-8859-1&search_form_button=Go&sp_q=b&sp_p=all">b</a>
+		?
+		</p>
+	
+
+
+
+
+<!-- ResultListEnd -->
+
+
+<p>
+Sorry, no matches were found containing <b>20502.</b></p>
+
+
+
+<p>
+
+
+    
+  
+
+</body>
+
+</div>
+		</div><div id="content_column_300right">   
+
+<div class="content_box_300" style="margin-top:10px;">  
+<div class="content_box_300body">  
+	<div>  
+	  <script type='text/javascript'>
+		createAdCodeRightTop();
+	  </script>
+	</div>  
+</div>  
+</div>
+<!-- place google here -->
+
+<!-- GOOGLE TEXT ADS -->
+
+
+<div class="content_box_300body">  
+	<div>  
+	  <script type='text/javascript'>
+		createAdCodeRightBot();
+	  </script>
+	</div>  
+</div>  
+
+
+<div style="margin-top:4px">
+</div>
+
+  <!--footer /-->
+</div>
+<!-- this closing div closes the body div (page_container) /-->
+
+<div id="bottom_nav">
+  <a class="bottom_nav_link" href="http://wwwa.accuweather.com/company.asp">About AccuWeather</a> <a href="http://wwwa.accuweather.com/adc2004/pub/products_services/advertising.asp?partner=accuweather&traveler=0" class="bottom_nav_link">Advertise with Us</a> <a class="bottom_nav_link" href="http://netweather.accuweather.com">Partnerships</a> <a class="bottom_nav_link" href="http://wwwa.accuweather.com/employment.asp">Employment Opportunities</a> <a class="bottom_nav_link" href="http://wwwa.accuweather.com/pressroom.asp">Press Room</a> <a class="bottom_nav_link" href="http://wwwa.accuweather.com/privacy.asp?partner=accuweather&traveler=0">Privacy Statement</a> <a class="bottom_nav_link" href="http://wwwa.accuweather.com/contact.asp?partner=accuweather&traveler=0">Contact Us</a> <a class="bottom_nav_link" href="http://wwwa.accuweather.com/faq.asp?partner=accuweather&traveler=0">Help</a> <a class="bottom_nav_link" href="http://wwwa.accuweather.com/site-map.asp?partner=accuweather&traveler=0">Site Map</a>
+</div>
+<div id="copyright_container">
+  <div id="copyright_left">
+    <p id="text_copyright_awx">&copy; 2007 AccuWeather, Inc.</p>
+    <p id="text_copyright"> All Rights Reserved.<br />
+    
+      <a href="http://wwwa.accuweather.com/termsofusage.asp?partner=accuweather&traveler=0">Terms of usage</a> under which this service is provided.<br />
+    </p>
+  </div>
+
+
+
+  <div id="copyright_right">
+    <p id="text_subscriber" style="text-align: right;"> Subscribers sign-in to <a href="http://premium.accuweather.com">AccuWeather Premium</a>&nbsp;|&nbsp;<a href="http://pro.accuweather.com">AccuWeather Professional</a>&nbsp;|&nbsp;<a href="http://radarplus.accuweather.com">AccuWeather RadarPlus</a> </p>
+    <p id="text_nonmember" style="text-align: right;"> Not a Member? Read all about <a href="http://wwwa.accuweather.com/premium-benefits.asp" target="_blank">Premium</a>, <a href="http://wwwa.accuweather.com/adcbin/public/pro_benefits.asp" target="_blank">Professional</a>, <a href="http://wwwa.accuweather.com/adcbin/public/radarplus_benefits.asp?partner=accuweather&traveler=0">RadarPlus</a>, and <a href="http://wwwa.accuweather.com/adcbin/public/lightningplus_benefits.asp?partner=accuweather&traveler=0">LightningPlus</a></p>
+    <p id="links_rss_pod_blog" style="text-align: right;"> <a href="http://rss.accuweather.com/www/rss/headline2.xml"><img class="img_copyright_button" id="button_rss_3D" src="http://vortex.accuweather.com/adc2004/pub/images/2006/btn_rss.gif" width="24" height="11" /></a>RSS Feeds Available &nbsp; <a href="http://wwwa.accuweather.com/news-podcasts.asp?partner=accuweather&traveler=0"><img class="img_copyright_button" id="button_podcast_3D" src="http://vortex.accuweather.com/adc2004/pub/images/2006/btn_podcasts.gif" width="54" height="11" /></a>Podcasts Available &nbsp; <a href="http://wwwa.accuweather.com/news-bloggers.asp?partner=accuweather&traveler=0"><img class="img_copyright_button" id="button_blog_3D" src="http://vortex.accuweather.com/adc2004/pub/images/2006/btn_blogs.gif" width="35" height="11" /></a>Blogs Available<br />
+    </p>
+    
+<script language="JavaScript">
+var x = '<a timestamp="1230085938"></a>';
+x = x.replace(/^[^"]+"([^"]+)".*$/, "$1");
+x = x * 1000;
+var d = new Date();
+d.setTime(x);
+var omYear = d.getFullYear();
+</script>
+ 
+<script>
+<!-- 
+omVars = new Object();
+// the next line was set to omChannel -- disabled for testing & comments by omniture
+omVars["channel"] = "internal site search";
+omVars["prop1"] = "20502"
+omVars["prop2"] = "zero"
+omVars["prop3"] = "internal search results"; // content title
+omVars["prop5"] = "internal site search "; // sub section home
+omVars["prop6"] = "internal search results"; // site section
+omVars["prop7"] = "internal search results"; // sub section
+omVars["prop8"] = "internal search results"; // sub section 2
+omVars["prop9"] = "internal search results"; // sub section 3 (optional)
+omVars["prop14"] = ""; // location code
+omVars["prop15"] = "us"; // Country
+omVars["prop17"] = ""; // city
+omVars["prop18"] = ""; // State
+var s_account = "accuweatherusprod";
+//-->
+</script>
+
+			<script type="text/javascript">
+				function omEventFromClick(omEventItem) {
+					s_gi = "accuweatherusprod";
+					s.linkTrackVars = omEventItem;
+				}
+			
+			</script>
+		
+		<!-- SiteCatalyst code version: H.16.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="http://vortex.accuweather.com/adc2004/common/javascript/s_code.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.server="search.accuweather.com";
+s.channel=omVars["channel"];
+s.pageType="";
+s.prop1="20502";
+s.prop1 = s.prop1.toLowerCase();
+s.pageName="internal search results: " + s.prop1;
+s.prop2=omVars["prop2"];
+s.prop3=omVars["prop3"]; 
+s.prop5=omVars["prop5"]; 
+s.prop6=omVars["prop6"]; 
+s.prop7=omVars["prop7"]; 
+s.prop8=omVars["prop8"];
+s.prop9 = omVars["prop9"]; 
+s.charSet = "ISO-8859-1";
+s.prop14=omVars["prop14"];
+s.prop15=omVars["prop15"];
+s.prop17=omVars["prop17"];
+s.prop18=omVars["prop18"];
+s.prop16="accuweather";
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="event1,event8";
+s.products="";
+s.purchaseID="";
+s.eVar14="";
+s.eVar15="";
+s.eVar16="accuweather";
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img src="http://accuweather.122.2o7.net/b/ss/accuweatherdev/1/H.16--NS/0" height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+
+<!-- End SiteCatalyst code version: H.16. -->
+    
+<!--WEBSIDESTORY CODE HBX1.0 (Universal)-->
+<!--COPYRIGHT 1997-2005 WEBSIDESTORY,INC. ALL RIGHTS RESERVED. U.S.PATENT No. 6,393,479B1. MORE  INFO:http://websidestory.com/privacy-->
+<script language="javascript">
+var _hbEC=0,_hbE=new Array;function _hbEvent(a,b){b=_hbE[_hbEC++]=new Object();b._N=a;b._C=0;return b;}
+var hbx=_hbEvent("pv");hbx.vpc="HBX0100u";hbx.gn="ehg-accuweather.hitbox.com";
+
+//BEGIN EDITABLE SECTION
+//CONFIGURATION VARIABLES
+hbx.acct="DM55093049DE71EN3";//ACCOUNT NUMBER(S)
+
+hbx.pn="search results";//PAGE NAME(S)
+hbx.mlc="/root/site-/";//MULTI-LEVEL CONTENT CATEGORY
+
+hbx.pndef="title";//DEFAULT PAGE NAME
+hbx.ctdef="full";//DEFAULT CONTENT CATEGORY
+
+hbx.lt="auto";//LINK TRACKING ... by link only
+hbx.fv="4";//FORM VALIDATION MINIMUM ELEMENTS OR SUBMIT FUNCTION NAME
+
+//INSERT CUSTOM EVENTS
+var ev1 = _hbEvent("search"); // required definition to create custom event
+ev1.keywords = "20502"; // required value
+ev1.keywords = ev1.keywords.toLowerCase(); 
+ev1.results = "0"; // integer value required. Any number of results, or 0 to have the keyword displayed in the Failed Keywords report
+
+//END EDITABLE SECTION
+
+</script>
+<!--END WEBSIDESTORY CODE-->
+
+<script language="javascript1.1" defer src="http://vortex.accuweather.com/websidestory/hbx.js"></script>
+
+  </div>
+</div>
+</div>
+<div id="helpBox" style="width:250px;height:150px;position:absolute;top:10px;left:10px;visibility:hidden;z-index:99;border:1px solid black;background-color:#e1e2e0;">
+	<div class="textsmallbold" style="margin: 3px 0px 2px 5px; float: left;">Help Info</div>
+	<a href="javascript:void(0);" onClick="hideHelp();" class="textsmallbold" style="margin: 3px 3px 2px 5px; color: white; background-color: rgb(0, 0, 51); float: right; text-align: center; line-height: 12px; padding-left: 3px; padding-right: 2px; display: block; text-decoration: none;">X</a>
+	<div style="clear:both;"></div>
+	No Help Available
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Uses Ragnarok Services:
+##  http://ragnarok.isi.edu/services/getCentroid.html
+##  http://ragnarok.isi.edu/services/distanceInMiles.html
+
+## Semantic Types: 
+type zipcode	  [varchar(9)] {uscensusbureau.zipnov99.zipcode}
+type latitude	  [varchar(11)] {numeric: -90.0, +90.0, 0.05}
+type longitude	  [varchar(11)] {numeric: -180.0, +180.0, 0.05}
+type miles		  [varchar(30)] {numeric: 0.0, 24901.55 , 1.0}
+type streetnumber [varchar(10)] 
+type street		  [varchar(80)] 
+type apartment	  [varchar(10)] 
+type city		  [varchar(50)] 
+type state		  [varchar(2)] {miscellaneous.usstates.code}
+type areacode	  [varchar(3)] 
+type timezone	  [varchar(5)] 
+
+## Domain Relations: 
+relation centroid(zipcode,latitude,longitude)
+relation distance(latitude,longitude,latitude,longitude,miles)
+relation address(streetnumber,street,apartment,zipcode)
+relation municipality(city,state,zipcode)
+relation phoneprefix(zipcode,areacode)
+relation timezone(state,timezone)
+
+## Comparison Predicates: 
+comparison <($miles,$miles)
+
+## Sources: 
+source GetCentroid($zip,lat,long) 					:- centroid(zip,lat,long). 					{invocation.wrappers.Ragnarok; getCentroid }
+source GetDistance($lat1,$long1,$lat2,$long2,dist)	:- distance(lat1,long1,lat2,long2,dist).  	{invocation.wrappers.Ragnarok; distanceInMiles}
+
+## Target Predicate: 
+target GetDistanceBetweenZipCodes($zipcode,$zipcode,miles) {invocation.wrappers.Codebump; GetDistanceBetweenZipCodes}
+
+##############################################################

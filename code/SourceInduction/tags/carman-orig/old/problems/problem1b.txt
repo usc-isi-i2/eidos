@@ -1,0 +1,56 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+import problems/types.txt
+
+## Relations: 
+import problems/relations.txt
+import problems/comparisons.txt
+
+## Sources: 
+
+
+import problems/sources_ragnarok.txt
+
+source HotelsByCity($city,hotel,street,state,zipcode,floors,phone)				:- hotel(hotel,_,street,zipcode,"US",phone), municipality(city,state,zipcode,_),building(street,zipcode,country,floors). 				{invocation.wrappers.USFireAdmin; HotelsByCity}
+source YahooFinance($tkr,ls,dt,tm,chg,op,mx,mn,vol)	 							:- trade(dt,tm,tkr,ls),market(dt,tkr,cl,op,mx,mn,vol),add(cl,chg,ls). 																	{invocation.wrappers.YahooFinance; GetQuote}
+source WeatherFeed($c,$sn,f,cl,sk,dw,hm,w,pr,lt,ln,t)							:- state(st,sn,_),municipality(c,st,z,_),centroid(z,lt,ln),conditions(lt,ln,t,f,sk,dw,hm,dr,sp,_,pr),convertTemp(cl,f),concat(dr,sp,w).	{invocation.wrappers.BoyGenius; WeatherFeed}
+source YahooGeocoder($street,$zipcode,city,state,country,latitude,longitude)	:- address(street,_,zipcode,country,latitude,longitude), municipality(city,state,zipcode,_).				 							{invocation.wrappers.YahooMaps; geocode}
+
+#source GetDistanceBetweenZipCodes($X0,$X1,X2)	 	 	:- GetCentroid(X0,Y1,Y2),GetCentroid(X1,Y4,Y5),GetDistance(Y1,Y2,Y4,Y5,Y10),Convert2distanceMi(Y10,X2). 		{invocation.wrappers.Codebump; GetDistanceBetweenZipCodes}
+#source airportWeather($icao,sky,tmp,hm,dr,spd,pr,dw) 	:- airport(icao,_,_,_,_,_,lat,lon),conditions(lat,lon,_,tmp,sky,dw,hm,dr,spd,_,pr).								{invocation.wrappers.NOAAWeather; current_obs2}
+#source YahooWeather($z,c,s,cn,dy,d,hi,lo,sk)   	 	:- municipality(c,s,z),northAmerica(cn),centroid(z,lt,ln),forecast(lt,ln,d,hi,lo,sk),weekday(d,dy).				{invocation.wrappers.YahooWeather; forecastrss2}
+
+
+## Target Predicate: 
+
+target YahooHotel($zipcode,hotel,street,city,state,phone,latitude,longitude,distanceMi,url) 	{invocation.wrappers.YahooLocal; hotelsByZip}                                                                              
+
+#target GetInfoByZip($zipcode,city,state,areacode,timezone) 											 																{invocation.wrappers.USZip; GetInfoByZip}
+#target GetInfoByState($state,city,zipcode,areacode,timezone) 										 																{invocation.wrappers.USZip; GetInfoByState}
+#target GetDistanceBetweenZipCodes($zipcode,$zipcode,distanceMi) 											 														{invocation.wrappers.Codebump; GetDistanceBetweenZipCodes}
+#target GetZipCodesWithin($zipcode,$distanceMi,zipcode,distanceMi) 												 													{invocation.wrappers.Codebump; GetZipCodesWithin}
+
+#target GetQuote($ticker,price,date,time,price,price,price,price,count,price,price,percentage,priceRange,price,ratio,company) 										{invocation.wrappers.WebServiceX; GetQuote}
+
+#target USGeocoder($street,$zipcode,city,state,latitude,longitude)																									{invocation.wrappers.USGeocoder; geocode}
+#target YahooTraffic($zipcode,$distanceMi,unknown,latitude,longitude,timestamp,timestamp,timestamp)				 													{invocation.wrappers.YahooTraffic; TrafficByZipAndRadius}
+
+##target HotelsByZip($zipcode,hotel,street,city,state,count,phone)			 																						{invocation.wrappers.USFireAdmin; HotelsByZip}
+
+#target WeatherChannelConditions($city,state,country,latitude,longitude,time,time,timeoffset,datetime,temperatureF,sky,pressureIn,direction,speedMph,humidity,temperatureF)	{invocation.wrappers.WeatherChannel; CurrentConditions}
+#target WeatherChannelForecast($city,state,country,latitude,longitude,timeoffset,day,date,temperatureF,temperatureF,time,time,sky,direction,speedMph,humidity)				{invocation.wrappers.WeatherChannel; TwoDayForecast}
+#target NOAAWeather($icao,airport,latitudeDMS,longitudeDMS,sky,temperatureF,humidity,direction,speedMph,speedMph,pressureMb,temperatureF,temperatureF,distanceMi)	{invocation.wrappers.NOAAWeather; current_obs}
+
+##target airportWeather($icao,sky,temperatureF,humidity,direction,speedMph,pressureMb,temperatureF)																	{invocation.wrappers.NOAAWeather; current_obs2}
+
+##target CountryCode($latitude,$longitude,countryAbbr) 																												{invocation.wrappers.Geonames; countrycode}
+##target Altitude($latitude,$longitude,distanceM) 																													{invocation.wrappers.Geonames; gtopo30}
+#target CountryInfo($countryAbbr,country,city:cap,areaSqKm,count:pop,currency,longitude:bbW,latitude:bbN,longitude:bbE,latitude:bbS) 								{invocation.wrappers.Geonames; countryInfo}
+
+##target YahooGeocoder($street,$zipcode,city,state,country,latitude,longitude)			 																			{invocation.wrappers.YahooMaps; geocode}
+##target HotelsByCity($city,hotel,street,state,zipcode,count,phone)			 																						{invocation.wrappers.USFireAdmin; HotelsByCity}
+
+
+##############################################################

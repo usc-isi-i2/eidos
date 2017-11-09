@@ -1,0 +1,354 @@
+***** WITHOUT VARIABLE REPETITION
+
+weather12($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather12($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather14($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather14($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather14(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+weather17($PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather17($_,PR_WindSpeed1,PR_Zip2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather17(PR_Zip2,_,_,_,_,_,PR_WindSpeed1,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather19($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather19($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather2($PR_Zip,PR_WindSpeedInMPH,PR_Zip)
+
+weather2($_,_,_).
+
+
+weather21($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather21($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather22($PR_Zip,PR_PlaceAbbr,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather22($_,_,PR_Zip2,_,_,_,_,_,PR_WindSpeed8,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather22(PR_Zip2,_,_,_,_,_,PR_WindSpeed8,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather25($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather25($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather25(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+weather28($PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH)
+
+weather28($_,_,PR_Zip2,PR_WindSpeed3)	:- wunderground_weather28(PR_Zip2,_,_,_,_,_,PR_WindSpeed3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather30($PR_Zip,PR_PlaceAbbr,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH)
+
+weather30($PR_Zip0,_,PR_WindSpeed2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather30(PR_Zip0,_,_,_,_,_,PR_WindSpeed2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather31($PR_Zip,PR_WindSpeedInMPH,PR_Zip)
+
+weather31($_,_,_).
+
+
+weather36($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather36($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather39($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather39($_,_,_,PR_WindSpeed3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Zip21)	:- wunderground_weather39(PR_Zip21,_,_,_,_,_,PR_WindSpeed3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather4($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather4($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather41($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather41($_,PR_Zip1,_,_,_,PR_WindSpeed5,_,_)	:- wunderground_weather41(PR_Zip1,_,_,_,_,_,PR_WindSpeed5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather45($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather45($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky18,_,_,_,_,PR_Sky23,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather45(PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_Sky18,_,_,_,_,_,_,_,_,PR_Sky23,_,_,_).
+
+
+weather47($PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip)
+
+weather47($_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather49($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempF,PR_TempF,PR_Humidity,PR_WindDir,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky)
+
+weather49($_,_,PR_Zip2,_,_,_,_,_,_,PR_TempF9,_,PR_TempC11,_,PR_TempF13,PR_TempF14,PR_Humidity15,_,PR_TempF17,_,_,_,_,PR_Sky22,_,PR_Sky24,_,_,_,_,_,_,_,_,_,_,PR_Sky35,PR_Sky36,_,_,_,_,_,_,_,_,_)	:- wunderground_weather49(PR_Zip2,_,_,PR_TempF9,_,PR_Humidity15,_,_,_,_,PR_TempF14,PR_TempF17,PR_Sky24,_,_,PR_Sky22,_,_,PR_Sky35,_,_,PR_Sky36,PR_TempF13,_,_), ConvertC2F(PR_TempC11,PR_TempF9).
+
+
+weather51($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather51($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather53($PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather53($_,_,_,_,_).
+
+
+weather55($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather55($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather56($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather56($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather56(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+weather59($PR_Zip,PR_PlaceAbbr,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH)
+
+weather59($PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather59(PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather6($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather6($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather6(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF22,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF12,_,_).
+
+
+weather60($PR_Zip,PR_WindSpeedInMPH,PR_Zip)
+
+weather60($_,_,_).
+
+
+weather61($PR_Zip,PR_PlaceAbbr,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH)
+
+weather61($PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather61(PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather65($PR_Zip,PR_WindSpeedInMPH)
+
+weather65($_,_).
+
+
+weather68($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindDir)
+
+weather68($PR_Zip0,_,_,_,_,_,PR_Humidity6,_,_,PR_WindSpeed9,_,_,_,_,_)	:- wunderground_weather68(PR_Zip0,_,_,_,_,PR_Humidity6,PR_WindSpeed9,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather70($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather70($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather72($PR_Zip,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC)
+
+weather72($PR_Zip0,PR_WindSpeed1,_,_,PR_TempC4,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather72(PR_Zip0,_,_,_,_,_,PR_WindSpeed1,_,_,_,_,_,_,_,PR_TempF14,_,_,_,_,_,_,_,_,_,_), ConvertC2F(PR_TempC4,PR_TempF14).
+
+
+weather73($PR_Zip,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC)
+
+weather73($PR_Zip0,_,_,_,_,_,PR_TempC6,PR_WindSpeed7,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather73(PR_Zip0,_,_,_,_,_,PR_WindSpeed7,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF20,_,_,_,_), ConvertC2F(PR_TempC6,PR_TempF20).
+
+
+weather76($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather76($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather76(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+weather79($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather79($_,PR_Zip1,_,_,PR_WindSpeed4,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather79(PR_Zip1,_,_,_,_,_,PR_WindSpeed4,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather80($PR_Zip,PR_WindSpeedInMPH)
+
+weather80($_,_).
+
+
+weather83($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather83($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather83(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+weather86($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempF,PR_TempF,PR_Humidity,PR_WindDir,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky)
+
+weather86($_,_,PR_Zip2,_,_,_,_,PR_Sky7,_,PR_TempF9,_,PR_TempC11,_,PR_TempF13,PR_TempF14,PR_Humidity15,_,PR_TempF17,_,_,_,_,PR_Sky22,_,PR_Sky24,_,_,_,_,_,_,_,_,_,_,PR_Sky35,PR_Sky36,_,_,_,_,_,_,_,_,_)	:- wunderground_weather86(PR_Zip2,_,_,PR_TempF9,_,PR_Humidity15,_,_,_,_,PR_TempF14,PR_TempF17,PR_Sky24,_,_,PR_Sky22,PR_TempF16,_,PR_Sky7,_,_,PR_Sky35,PR_TempF13,_,PR_Sky36), ConvertC2F(PR_TempC11,PR_TempF16).
+
+
+weather88($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather88($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather88(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+weather9($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather9($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather9(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+weather90($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_Zip)
+
+weather90($_,_,_,_,_,_).
+
+
+weather94($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather94($_,_,_,_).
+
+
+weather96($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather96($PR_Zip0,_,_,_,_,_,_,_,_,_,_,PR_TempF11,_,PR_TempF13,_,_,PR_TempF16,_,PR_TempF18,_,_,PR_TempF21,_,PR_TempF23,_,PR_TempF25,_,PR_TempF27,PR_Sky28,PR_Sky29,_,PR_TempF31,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather96(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF16,PR_TempF13,PR_Sky28,PR_TempF11,PR_TempF18,_,PR_TempF25,PR_TempF23,_,PR_TempF31,PR_TempF27,PR_Sky29,PR_TempF21,_,_).
+
+
+***** WITH VARIABLE REPETITION
+
+weather12($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather12($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather14($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather14($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather14(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+weather17($PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather17($_,PR_WindSpeed1,PR_Zip2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather17(PR_Zip2,_,_,_,_,_,PR_WindSpeed1,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather19($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather19($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather2($PR_Zip,PR_WindSpeedInMPH,PR_Zip)
+
+weather2($_,_,_).
+
+
+weather21($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather21($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather22($PR_Zip,PR_PlaceAbbr,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather22($_,_,PR_Zip2,_,_,_,_,_,PR_WindSpeed8,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather22(PR_Zip2,_,_,_,_,_,PR_WindSpeed8,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather25($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather25($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather25(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+weather28($PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH)
+
+weather28($_,_,PR_Zip2,PR_WindSpeed3)	:- wunderground_weather28(PR_Zip2,_,_,_,_,_,PR_WindSpeed3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather30($PR_Zip,PR_PlaceAbbr,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH)
+
+weather30($PR_Zip0,_,PR_WindSpeed2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather30(PR_Zip0,_,_,_,_,_,PR_WindSpeed2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather31($PR_Zip,PR_WindSpeedInMPH,PR_Zip)
+
+weather31($_,_,_).
+
+
+weather36($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather36($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather39($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather39($_,_,_,PR_WindSpeed3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Zip21)	:- wunderground_weather39(PR_Zip21,_,_,_,_,_,PR_WindSpeed3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather4($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather4($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather41($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather41($_,PR_Zip1,_,_,_,PR_WindSpeed5,_,_)	:- wunderground_weather41(PR_Zip1,_,_,_,_,_,PR_WindSpeed5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather45($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather45($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky18,_,_,_,_,PR_Sky23,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather45(PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_Sky18,_,_,_,_,_,_,_,_,PR_Sky23,_,_,_).
+
+
+weather47($PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip)
+
+weather47($_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather49($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempF,PR_TempF,PR_Humidity,PR_WindDir,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky)
+
+weather49($_,_,PR_Zip2,_,_,_,_,_,_,PR_TempF9,_,PR_TempC11,_,PR_TempF13,PR_TempF14,PR_Humidity15,_,PR_TempF17,_,_,_,_,PR_Sky22,_,PR_Sky24,_,_,_,_,_,_,_,_,_,_,PR_Sky35,PR_Sky36,_,_,_,_,_,_,_,_,_)	:- wunderground_weather49(PR_Zip2,_,_,PR_TempF9,_,PR_Humidity15,_,_,_,_,PR_TempF14,PR_TempF17,PR_Sky24,_,PR_TempF17,PR_Sky22,_,_,PR_Sky35,_,_,PR_Sky36,PR_TempF13,PR_TempF14,_), ConvertC2F(PR_TempC11,PR_TempF9).
+
+
+weather51($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather51($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather53($PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather53($_,_,_,_,_).
+
+
+weather55($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather55($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather56($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather56($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather56(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+weather59($PR_Zip,PR_PlaceAbbr,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH)
+
+weather59($PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather59(PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather6($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather6($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather6(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF22,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF12,_,_).
+
+
+weather60($PR_Zip,PR_WindSpeedInMPH,PR_Zip)
+
+weather60($_,_,_).
+
+
+weather61($PR_Zip,PR_PlaceAbbr,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH)
+
+weather61($PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather61(PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather65($PR_Zip,PR_WindSpeedInMPH)
+
+weather65($_,_).
+
+
+weather68($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindDir)
+
+weather68($PR_Zip0,_,_,_,_,_,PR_Humidity6,_,_,PR_WindSpeed9,_,_,_,_,_)	:- wunderground_weather68(PR_Zip0,_,_,_,_,PR_Humidity6,PR_WindSpeed9,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+weather70($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather70($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+

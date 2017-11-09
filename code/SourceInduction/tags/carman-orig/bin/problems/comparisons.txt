@@ -1,0 +1,13 @@
+import problems/types.txt
+
+## Comparison Predicates: 
+
+comparison <($distanceMi,$distanceMi)
+comparison <($distanceKm,$distanceKm)
+comparison <($temperatureC,$temperatureC)
+comparison <($temperatureF,$temperatureF)
+comparison <($price,$price)
+comparison <($timestamp,$timestamp)
+comparison <($speedMph,$speedMph)
+comparison <($latitude,$latitude)
+comparison <($longitude,$longitude)

@@ -1,0 +1,15 @@
+PR-ZipCode5Digit, PR-Sky, PR-Humidity, CT-PressureInches, CT-TemperatureF, PR-WindDirection
+pands,column34,column38,column40,column68,column91
+20502,Partly Cloudy,44%,30.45 in.,Hi: 75&deg;F,EDT
+33040,Heavy Rain,94%,29.98 in.,Hi: 89&deg;F,EDT
+90292,Hazy,76%,30.00 in.,Hi: 85&deg;F,PDT
+36130,Partly Cloudy,48%,30.24 in.,Hi: 86&deg;F,CDT
+85007,Fair,31%,29.99 in.,Hi: 99&deg;F,MST
+6106,Fair,56%,30.48 in.,Hi: 70&deg;F,EDT
+32399,Fair,21%,30.15 in.,Hi: 87&deg;F,EDT
+46208,Fair,48%,30.36 in.,Hi: 81&deg;F,EDT
+50319,Partly Cloudy,58%,30.18 in.,Hi: 81&deg;F,CDT
+66612,Fair,60%,30.20 in.,Hi: 83&deg;F,CDT
+
+
+http://www.timetemperature.com/,weather8,,,,

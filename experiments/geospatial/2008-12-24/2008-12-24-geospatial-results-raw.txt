@@ -1,0 +1,1471 @@
+wrapcache_081223b_no__geospatial137.txt
+java -classpath .;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/lib/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin Tester C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial137.txt C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/dbProperties.txt
+noVarRepetition = true
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial137.txt
+
+## Semantic Types: 
+type PR_Latitude    [varchar(200)]  {numeric: -90.0, 90.0, 0.01}
+type PR_Longitude   [varchar(200)]  {numeric: -180.0, 180.0, 0.01}
+type PR_LatDMS      [varchar(200)]  {examples: examples.latitudedms.val}
+type PR_LonDMS      [varchar(200)]  {examples: examples.longitudedms.val}
+type PR_UTM         [varchar(200)]  
+type PR_Address     [varchar(200)]  {examples: examples.address.val;equality: JaroWinkler > 0.85}
+type PR_Street      [varchar(200)]  {examples: examples.street.val;equality: JaroWinkler > 0.85}
+type PR_City        [varchar(200)]  {examples: examples.city.val[occurs]}
+type PR_StateAbbr   [varchar(200)]  {examples: examples.usstates.code}
+type PR_State       [varchar(200)]  {examples: examples.usstates.name[occurs]}
+type PR_Zip         [varchar(200)]  {examples: examples.zipcode.val}
+type PR_Country     [varchar(200)]  {examples: examples.country.val}
+type PR_Country_Abbr [varchar(200)] {examples: examples.countryAbbr.val}
+type PR_CityStateZip [varchar(200)] {examples: examples.city_state_zip.val;equality: JaroWinkler > 0.85}
+type PR_CityState   [varchar(200)]  
+
+## Domain Relations: 
+relation Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Comparison Predicates: 
+
+## Sources: 
+source USGeocoder($PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Latitude,PR_Longitude)	:- Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).	{wrappers.USGeocoder; address}
+
+## Target Predicates: 
+target geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address)	{wrappers.DBService; http://geocoder.us/; null; PR-Address}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.USGeocoder
+DROP TABLE IF EXISTS cache.InvocationsOf_USGeocoder
+CREATE TABLE cache.USGeocoder ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_City2 varchar(200),PR_StateAbbr3 varchar(200),PR_Zip4 varchar(200),PR_Latitude5 varchar(200),PR_Longitude6 varchar(200) )
+CREATE TABLE cache.InvocationsOf_USGeocoder ( PR_Address0 varchar(200) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.geospatial137
+DROP TABLE IF EXISTS cache.InvocationsOf_geospatial137
+CREATE TABLE cache.geospatial137 ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_Street2 varchar(200),PR_Latitude3 varchar(200),PR_Latitude4 varchar(200),PR_Longitude5 varchar(200),PR_Longitude6 varchar(200),PR_Latitude7 varchar(200),PR_Latitude8 varchar(200),PR_Latitude9 varchar(200),PR_Latitude10 varchar(200),PR_Latitude11 varchar(200),PR_Latitude12 varchar(200),PR_Longitude13 varchar(200),PR_Longitude14 varchar(200),PR_Latitude15 varchar(200),PR_Latitude16 varchar(200),PR_LonDMS17 varchar(200),PR_LonDMS18 varchar(200),PR_Latitude19 varchar(200),PR_Latitude20 varchar(200),PR_Address21 varchar(200) )
+CREATE TABLE cache.InvocationsOf_geospatial137 ( PR_Address0 varchar(200) )
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [1600 Pennsylvania Ave NW, Washington, DC, 20502]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [4676 Admiralty Way, Marina del Rey, CA, 90292]
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [1007 East Grand Ave., Des Moines, IA 50319]
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [601 Whitehead St, Key West, FL, 33040]
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [300 SW 10th Ave., Topeka, KS 66612]
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [400 S. Monroe St., Tallahassee, FL 32399]
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [210 Capitol Avenue, Hartford, CT 06106]
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [623 Sierra St, El Segundo, CA, 90245]
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [600 Dexter Avenue, Montgomery, AL 36130]
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [1700 West Washington, Phoenix, AZ 85007]
+Invoking target: geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address) with [4750 N. Meridian St., Indianapolis, IN 46208]
+
+****************************************************************
+STARTING SEARCH: 
+*********************************************************************************************************************************************************************************************************
+PR_Address0                                                                                                                                                                                              
+(PR_Address)                                                                                                                                                                                             
+
+4676 Admiralty Way, Marina del Rey, CA, 90292                                                                                                                                                            
+1600 Pennsylvania Ave NW, Washington, DC, 20502                                                                                                                                                          
+400 S. Monroe St., Tallahassee, FL 32399                                                                                                                                                                 
+210 Capitol Avenue, Hartford, CT 06106                                                                                                                                                                   
+601 Whitehead St, Key West, FL, 33040                                                                                                                                                                    
+4750 N. Meridian St., Indianapolis, IN 46208                                                                                                                                                             
+600 Dexter Avenue, Montgomery, AL 36130                                                                                                                                                                  
+300 SW 10th Ave., Topeka, KS 66612                                                                                                                                                                       
+1700 West Washington, Phoenix, AZ 85007                                                                                                                                                                  
+1007 East Grand Ave., Des Moines, IA 50319                                                                                                                                                               
+623 Sierra St, El Segundo, CA, 90245                                                                                                                                                                     
+*********************************************************************************************************************************************************************************************************
+
+-74.728: geospatial137($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+url = http://geocoder.us/service/csv/geocode?address=4676+Admiralty+Way%2C+Marina+del+Rey%2C+CA%2C+90292
+data= 33.980305,-118.440470,4676 Admiralty Way,Marina del Rey,CA,90292
+tuple= [4676 Admiralty Way, Marina del Rey, CA, 90292, 4676 Admiralty Way, Marina del Rey, CA, 90292, 33.980305, -118.440470]
+url = http://geocoder.us/service/csv/geocode?address=1600+Pennsylvania+Ave+NW%2C+Washington%2C+DC%2C+20502
+data= 38.898748,-77.037684,1600 Pennsylvania Ave NW,Washington,DC,20502
+tuple= [1600 Pennsylvania Ave NW, Washington, DC, 20502, 1600 Pennsylvania Ave NW, Washington, DC, 20502, 38.898748, -77.037684]
+url = http://geocoder.us/service/csv/geocode?address=400+S.+Monroe+St.%2C+Tallahassee%2C+FL+32399
+data= 30.439000,-84.280499,400 S Monroe St,Tallahassee,FL,32301
+tuple= [400 S. Monroe St., Tallahassee, FL 32399, 400 S Monroe St, Tallahassee, FL, 32301, 30.439000, -84.280499]
+url = http://geocoder.us/service/csv/geocode?address=210+Capitol+Avenue%2C+Hartford%2C+CT+06106
+data= 41.762664,-72.682270,210 Capitol Ave,Hartford,CT,06106
+tuple= [210 Capitol Avenue, Hartford, CT 06106, 210 Capitol Ave, Hartford, CT, 06106, 41.762664, -72.682270]
+url = http://geocoder.us/service/csv/geocode?address=601+Whitehead+St%2C+Key+West%2C+FL%2C+33040
+data= 24.553922,-81.803260,601 Whitehead St,Key West,FL,33040
+tuple= [601 Whitehead St, Key West, FL, 33040, 601 Whitehead St, Key West, FL, 33040, 24.553922, -81.803260]
+url = http://geocoder.us/service/csv/geocode?address=4750+N.+Meridian+St.%2C+Indianapolis%2C+IN+46208
+data= 39.822204,-86.156831,3701 N Meridian St,Indianapolis city,IN,46208
+tuple= [4750 N. Meridian St., Indianapolis, IN 46208, 3701 N Meridian St, Indianapolis city, IN, 46208, 39.822204, -86.156831]
+url = http://geocoder.us/service/csv/geocode?address=600+Dexter+Avenue%2C+Montgomery%2C+AL+36130
+data= 32.377189,-86.301963,600 Dexter Ave,Montgomery,AL,36104
+tuple= [600 Dexter Avenue, Montgomery, AL 36130, 600 Dexter Ave, Montgomery, AL, 36104, 32.377189, -86.301963]
+url = http://geocoder.us/service/csv/geocode?address=300+SW+10th+Ave.%2C+Topeka%2C+KS+66612
+data= 39.046754,-95.678724,300 SW 10th Ave,Topeka,KS,66612
+tuple= [300 SW 10th Ave., Topeka, KS 66612, 300 SW 10th Ave, Topeka, KS, 66612, 39.046754, -95.678724]
+url = http://geocoder.us/service/csv/geocode?address=1700+West+Washington%2C+Phoenix%2C+AZ+85007
+data= 33.448543,-112.095704,1700 W Washington St,Phoenix,AZ,85007
+tuple= [1700 West Washington, Phoenix, AZ 85007, 1700 W Washington St, Phoenix, AZ, 85007, 33.448543, -112.095704]
+url = http://geocoder.us/service/csv/geocode?address=1007+East+Grand+Ave.%2C+Des+Moines%2C+IA+50319
+data= 41.591974,-93.604559,1007 E Grand Ave,Des Moines,IA,50316
+tuple= [1007 East Grand Ave., Des Moines, IA 50319, 1007 E Grand Ave, Des Moines, IA, 50316, 41.591974, -93.604559]
+-74.774: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,_).
+-73.774: geospatial137($PR_Address0,PR_Street1,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,_,_).
+-73.774: geospatial137($PR_Address0,_,PR_Street2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street2,_,_,_,_,_).
+-70.518: geospatial137($PR_Address0,_,_,PR_Latitude3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude3,_).
+-70.518: geospatial137($PR_Address0,_,_,_,PR_Latitude4,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude4,_).
+-70.518: geospatial137($PR_Address0,_,_,_,_,_,_,PR_Latitude7,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude7,_).
+-70.518: geospatial137($PR_Address0,_,_,_,_,_,_,_,PR_Latitude8,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude8,_).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,PR_Latitude9,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude9,_).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,_,PR_Latitude10,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude10,_).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,_,_,PR_Latitude11,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude11,_).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude12,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude12,_).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude15,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude15,_).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude16,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude16,_).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude19,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude19,_).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude20,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude20,_).
+-70.217: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,PR_Longitude5).
+-70.217: geospatial137($PR_Address0,_,_,_,_,_,PR_Longitude6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,PR_Longitude6).
+-70.217: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,_,_,_,_,PR_Longitude13,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,PR_Longitude13).
+-70.217: geospatial137($PR_Address0,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Longitude14,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,PR_Longitude14).
+-69.217: geospatial137($PR_Address0,PR_Street1,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,_,PR_Longitude5).
+-69.217: geospatial137($PR_Address0,_,PR_Street2,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street2,_,_,_,_,PR_Longitude5).
+-65.962: geospatial137($PR_Address0,_,_,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude3,PR_Longitude5).
+-65.962: geospatial137($PR_Address0,_,_,_,PR_Latitude4,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude4,PR_Longitude5).
+-65.962: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,PR_Latitude7,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude7,PR_Longitude5).
+-65.962: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,_,PR_Latitude8,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude8,PR_Longitude5).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,_,_,PR_Latitude9,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude9,PR_Longitude5).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,_,_,_,PR_Latitude10,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude10,PR_Longitude5).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,_,_,_,_,PR_Latitude11,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude11,PR_Longitude5).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,PR_Latitude12,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude12,PR_Longitude5).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,PR_Latitude15,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude15,PR_Longitude5).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,PR_Latitude16,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude16,PR_Longitude5).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude19,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude19,PR_Longitude5).
+-Infinity: geospatial137($PR_Address0,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude20,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude20,PR_Longitude5).
+-64.962: geospatial137($PR_Address0,PR_Street1,_,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,PR_Latitude3,PR_Longitude5).
+-64.962: geospatial137($PR_Address0,_,PR_Street2,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street2,_,_,_,PR_Latitude3,PR_Longitude5).
+url = http://geocoder.us/service/csv/geocode?address=623+Sierra+St%2C+El+Segundo%2C+CA%2C+90245
+data= 33.923727,-118.408731,623 Sierra St,El Segundo,CA,90245
+tuple= [623 Sierra St, El Segundo, CA, 90245, 623 Sierra St, El Segundo, CA, 90245, 33.923727, -118.408731]
+-74.815: geospatial137($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,_,_).
+-73.815: geospatial137($_,PR_Street1,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,PR_Street1,_,_,_,_,_).
+-73.815: geospatial137($_,_,PR_Street2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,PR_Street2,_,_,_,_,_).
+-70.560: geospatial137($_,_,_,PR_Latitude3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude3,_).
+-70.560: geospatial137($_,_,_,_,PR_Latitude4,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude4,_).
+-70.560: geospatial137($_,_,_,_,_,_,_,PR_Latitude7,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude7,_).
+-70.560: geospatial137($_,_,_,_,_,_,_,_,PR_Latitude8,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude8,_).
+-Infinity: geospatial137($_,_,_,_,_,_,_,_,_,PR_Latitude9,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude9,_).
+-Infinity: geospatial137($_,_,_,_,_,_,_,_,_,_,PR_Latitude10,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude10,_).
+-Infinity: geospatial137($_,_,_,_,_,_,_,_,_,_,_,PR_Latitude11,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude11,_).
+-Infinity: geospatial137($_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude12,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude12,_).
+-Infinity: geospatial137($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude15,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude15,_).
+-Infinity: geospatial137($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude16,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude16,_).
+-Infinity: geospatial137($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude19,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude19,_).
+-Infinity: geospatial137($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude20,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude20,_).
+-70.259: geospatial137($_,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,_,PR_Longitude5).
+-70.259: geospatial137($_,_,_,_,_,_,PR_Longitude6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,_,PR_Longitude6).
+-70.259: geospatial137($_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Longitude13,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,_,PR_Longitude13).
+-70.259: geospatial137($_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Longitude14,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,_,PR_Longitude14).
+-69.259: geospatial137($_,PR_Street1,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,PR_Street1,_,_,_,_,PR_Longitude5).
+-69.259: geospatial137($_,_,PR_Street2,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,PR_Street2,_,_,_,_,PR_Longitude5).
+-66.003: geospatial137($_,_,_,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude3,PR_Longitude5).
+-66.003: geospatial137($_,_,_,_,PR_Latitude4,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude4,PR_Longitude5).
+-66.003: geospatial137($_,_,_,_,_,PR_Longitude5,_,PR_Latitude7,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude7,PR_Longitude5).
+-66.003: geospatial137($_,_,_,_,_,PR_Longitude5,_,_,PR_Latitude8,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude8,PR_Longitude5).
+-Infinity: geospatial137($_,_,_,_,_,PR_Longitude5,_,_,_,PR_Latitude9,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude9,PR_Longitude5).
+-Infinity: geospatial137($_,_,_,_,_,PR_Longitude5,_,_,_,_,PR_Latitude10,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude10,PR_Longitude5).
+-Infinity: geospatial137($_,_,_,_,_,PR_Longitude5,_,_,_,_,_,PR_Latitude11,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude11,PR_Longitude5).
+-Infinity: geospatial137($_,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,PR_Latitude12,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude12,PR_Longitude5).
+-Infinity: geospatial137($_,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,PR_Latitude15,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude15,PR_Longitude5).
+-Infinity: geospatial137($_,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,PR_Latitude16,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude16,PR_Longitude5).
+-Infinity: geospatial137($_,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude19,_,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude19,PR_Longitude5).
+-Infinity: geospatial137($_,_,_,_,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Latitude20,PR_Address21)	:- USGeocoder(PR_Address21,_,_,_,_,PR_Latitude20,PR_Longitude5).
+-65.003: geospatial137($_,PR_Street1,_,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,PR_Street1,_,_,_,PR_Latitude3,PR_Longitude5).
+-65.003: geospatial137($_,_,PR_Street2,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Address21)	:- USGeocoder(PR_Address21,PR_Street2,_,_,_,PR_Latitude3,PR_Longitude5).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+
+************************************************************************
+timestmp = 1230150202109
+target = geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address)
+definition = geospatial137($PR_Address0,PR_Street1,_,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,PR_Latitude3,PR_Longitude5).
+unfolding = geospatial137($PR_Address0,PR_Street1,_,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- Address(PR_Address0,PR_Street1,_,_,_,_,_,_,PR_Latitude3,PR_Longitude5).
+score = 1.091452291923184E-65
+normalisedScore = -0.21072103131565267
+candidates = 36
+totalCandidates = 71
+accesses = 21
+totalAccesses = 22
+time = 128
+totalTime = 149
+timeout = 5400
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+CREATE TABLE IF NOT EXISTS output.wrapcache_081223b_no__geospatial137 ( `timestmp` varchar(15),`target` varchar(2000),`definition` varchar(2000),`unfolding` varchar(5000),`score` varchar(45),`normalisedScore` varchar(45),`candidates` varchar(10),`totalCandidates` varchar(10),`accesses` varchar(10),`totalAccesses` varchar(10),`time` varchar(15),`totalTime` varchar(15),`timeout` varchar(15),`maxClauseLength` varchar(10),`maxPredRepitition` varchar(10),`maxVarLevel` varchar(10),`noVarRepetition` varchar(10),`heuristic` varchar(100), PRIMARY KEY (`timestmp`) )
+
+real	2m31.600s
+user	0m0.031s
+sys	0m0.015s
+wrapcache_081223b_no__geospatial139.txt
+java -classpath .;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/lib/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin Tester C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial139.txt C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/dbProperties.txt
+noVarRepetition = true
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial139.txt
+
+## Semantic Types: 
+type PR_Latitude    [varchar(200)]  {numeric: -90.0, 90.0, 0.01}
+type PR_Longitude   [varchar(200)]  {numeric: -180.0, 180.0, 0.01}
+type PR_LatDMS      [varchar(200)]  {examples: examples.latitudedms.val}
+type PR_LonDMS      [varchar(200)]  {examples: examples.longitudedms.val}
+type PR_UTM         [varchar(200)]  
+type PR_Address     [varchar(200)]  {examples: examples.address.val;equality: JaroWinkler > 0.85}
+type PR_Street      [varchar(200)]  {examples: examples.street.val;equality: JaroWinkler > 0.85}
+type PR_City        [varchar(200)]  {examples: examples.city.val[occurs]}
+type PR_StateAbbr   [varchar(200)]  {examples: examples.usstates.code}
+type PR_State       [varchar(200)]  {examples: examples.usstates.name[occurs]}
+type PR_Zip         [varchar(200)]  {examples: examples.zipcode.val}
+type PR_Country     [varchar(200)]  {examples: examples.country.val}
+type PR_Country_Abbr [varchar(200)] {examples: examples.countryAbbr.val}
+type PR_CityStateZip [varchar(200)] {examples: examples.city_state_zip.val;equality: JaroWinkler > 0.85}
+type PR_CityState   [varchar(200)]  
+
+## Domain Relations: 
+relation Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Comparison Predicates: 
+
+## Sources: 
+source USGeocoder($PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Latitude,PR_Longitude)	:- Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).	{wrappers.USGeocoder; address}
+
+## Target Predicates: 
+target geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude)	{wrappers.DBService; http://geocoder.ca/; null; PR-Address}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.USGeocoder
+DROP TABLE IF EXISTS cache.InvocationsOf_USGeocoder
+CREATE TABLE cache.USGeocoder ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_City2 varchar(200),PR_StateAbbr3 varchar(200),PR_Zip4 varchar(200),PR_Latitude5 varchar(200),PR_Longitude6 varchar(200) )
+CREATE TABLE cache.InvocationsOf_USGeocoder ( PR_Address0 varchar(200) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.geospatial139
+DROP TABLE IF EXISTS cache.InvocationsOf_geospatial139
+CREATE TABLE cache.geospatial139 ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_StateAbbr2 varchar(200),PR_StateAbbr3 varchar(200),PR_Zip4 varchar(200),PR_Street5 varchar(200),PR_StateAbbr6 varchar(200),PR_Latitude7 varchar(200),PR_Longitude8 varchar(200) )
+CREATE TABLE cache.InvocationsOf_geospatial139 ( PR_Address0 varchar(200) )
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [1700 West Washington, Phoenix, AZ 85007]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [600 Dexter Avenue, Montgomery, AL 36130]
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [400 S. Monroe St., Tallahassee, FL 32399]
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [210 Capitol Avenue, Hartford, CT 06106]
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [1600 Pennsylvania Ave NW, Washington, DC, 20502]
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [4676 Admiralty Way, Marina del Rey, CA, 90292]
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [601 Whitehead St, Key West, FL, 33040]
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [4750 N. Meridian St., Indianapolis, IN 46208]
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [1007 East Grand Ave., Des Moines, IA 50319]
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [623 Sierra St, El Segundo, CA, 90245]
+Invoking target: geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) with [300 SW 10th Ave., Topeka, KS 66612]
+
+****************************************************************
+STARTING SEARCH: 
+*********************************************************************************************************************************************************************************************************
+PR_Address0                                                                                                                                                                                              
+(PR_Address)                                                                                                                                                                                             
+
+400 S. Monroe St., Tallahassee, FL 32399                                                                                                                                                                 
+1700 West Washington, Phoenix, AZ 85007                                                                                                                                                                  
+300 SW 10th Ave., Topeka, KS 66612                                                                                                                                                                       
+1600 Pennsylvania Ave NW, Washington, DC, 20502                                                                                                                                                          
+600 Dexter Avenue, Montgomery, AL 36130                                                                                                                                                                  
+1007 East Grand Ave., Des Moines, IA 50319                                                                                                                                                               
+4676 Admiralty Way, Marina del Rey, CA, 90292                                                                                                                                                            
+4750 N. Meridian St., Indianapolis, IN 46208                                                                                                                                                             
+601 Whitehead St, Key West, FL, 33040                                                                                                                                                                    
+210 Capitol Avenue, Hartford, CT 06106                                                                                                                                                                   
+623 Sierra St, El Segundo, CA, 90245                                                                                                                                                                     
+*********************************************************************************************************************************************************************************************************
+
+-19.401: geospatial139($_,_,_,_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+url = http://geocoder.us/service/csv/geocode?address=400+S.+Monroe+St.%2C+Tallahassee%2C+FL+32399
+data= 30.439000,-84.280499,400 S Monroe St,Tallahassee,FL,32301
+tuple= [400 S. Monroe St., Tallahassee, FL 32399, 400 S Monroe St, Tallahassee, FL, 32301, 30.439000, -84.280499]
+url = http://geocoder.us/service/csv/geocode?address=1700+West+Washington%2C+Phoenix%2C+AZ+85007
+data= 33.448543,-112.095704,1700 W Washington St,Phoenix,AZ,85007
+tuple= [1700 West Washington, Phoenix, AZ 85007, 1700 W Washington St, Phoenix, AZ, 85007, 33.448543, -112.095704]
+url = http://geocoder.us/service/csv/geocode?address=300+SW+10th+Ave.%2C+Topeka%2C+KS+66612
+data= 39.046754,-95.678724,300 SW 10th Ave,Topeka,KS,66612
+tuple= [300 SW 10th Ave., Topeka, KS 66612, 300 SW 10th Ave, Topeka, KS, 66612, 39.046754, -95.678724]
+url = http://geocoder.us/service/csv/geocode?address=1600+Pennsylvania+Ave+NW%2C+Washington%2C+DC%2C+20502
+data= 38.898748,-77.037684,1600 Pennsylvania Ave NW,Washington,DC,20502
+tuple= [1600 Pennsylvania Ave NW, Washington, DC, 20502, 1600 Pennsylvania Ave NW, Washington, DC, 20502, 38.898748, -77.037684]
+url = http://geocoder.us/service/csv/geocode?address=600+Dexter+Avenue%2C+Montgomery%2C+AL+36130
+data= 32.377189,-86.301963,600 Dexter Ave,Montgomery,AL,36104
+tuple= [600 Dexter Avenue, Montgomery, AL 36130, 600 Dexter Ave, Montgomery, AL, 36104, 32.377189, -86.301963]
+url = http://geocoder.us/service/csv/geocode?address=1007+East+Grand+Ave.%2C+Des+Moines%2C+IA+50319
+data= 41.591974,-93.604559,1007 E Grand Ave,Des Moines,IA,50316
+tuple= [1007 East Grand Ave., Des Moines, IA 50319, 1007 E Grand Ave, Des Moines, IA, 50316, 41.591974, -93.604559]
+url = http://geocoder.us/service/csv/geocode?address=4676+Admiralty+Way%2C+Marina+del+Rey%2C+CA%2C+90292
+data= 33.980305,-118.440470,4676 Admiralty Way,Marina del Rey,CA,90292
+tuple= [4676 Admiralty Way, Marina del Rey, CA, 90292, 4676 Admiralty Way, Marina del Rey, CA, 90292, 33.980305, -118.440470]
+url = http://geocoder.us/service/csv/geocode?address=4750+N.+Meridian+St.%2C+Indianapolis%2C+IN+46208
+data= 39.822204,-86.156831,3701 N Meridian St,Indianapolis city,IN,46208
+tuple= [4750 N. Meridian St., Indianapolis, IN 46208, 3701 N Meridian St, Indianapolis city, IN, 46208, 39.822204, -86.156831]
+url = http://geocoder.us/service/csv/geocode?address=601+Whitehead+St%2C+Key+West%2C+FL%2C+33040
+data= 24.553922,-81.803260,601 Whitehead St,Key West,FL,33040
+tuple= [601 Whitehead St, Key West, FL, 33040, 601 Whitehead St, Key West, FL, 33040, 24.553922, -81.803260]
+url = http://geocoder.us/service/csv/geocode?address=210+Capitol+Avenue%2C+Hartford%2C+CT+06106
+data= 41.762664,-72.682270,210 Capitol Ave,Hartford,CT,06106
+tuple= [210 Capitol Avenue, Hartford, CT 06106, 210 Capitol Ave, Hartford, CT, 06106, 41.762664, -72.682270]
+-19.447: geospatial139($PR_Address0,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,_).
+-18.748: geospatial139($PR_Address0,PR_Street1,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,_,_).
+-18.493: geospatial139($PR_Address0,_,_,_,_,PR_Street5,_,_,_)	:- USGeocoder(PR_Address0,PR_Street5,_,_,_,_,_).
+-17.740: geospatial139($PR_Address0,_,PR_StateAbbr2,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr2,_,_,_).
+-17.740: geospatial139($PR_Address0,_,_,PR_StateAbbr3,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr3,_,_,_).
+-17.740: geospatial139($PR_Address0,_,_,_,_,_,PR_StateAbbr6,_,_)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr6,_,_,_).
+-16.072: geospatial139($PR_Address0,_,_,_,PR_Zip4,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip4,_,_).
+-15.238: geospatial139($PR_Address0,_,_,_,_,_,_,PR_Latitude7,_)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude7,_).
+-14.891: geospatial139($PR_Address0,_,_,_,_,_,_,_,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,_,_,_,PR_Longitude8).
+-14.192: geospatial139($PR_Address0,PR_Street1,_,_,_,_,_,_,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,_,PR_Longitude8).
+-13.937: geospatial139($PR_Address0,_,_,_,_,PR_Street5,_,_,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street5,_,_,_,_,PR_Longitude8).
+-13.183: geospatial139($PR_Address0,_,PR_StateAbbr2,_,_,_,_,_,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr2,_,_,PR_Longitude8).
+-13.183: geospatial139($PR_Address0,_,_,PR_StateAbbr3,_,_,_,_,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr3,_,_,PR_Longitude8).
+-13.183: geospatial139($PR_Address0,_,_,_,_,_,PR_StateAbbr6,_,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr6,_,_,PR_Longitude8).
+-11.515: geospatial139($PR_Address0,_,_,_,PR_Zip4,_,_,_,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip4,_,PR_Longitude8).
+-10.681: geospatial139($PR_Address0,_,_,_,_,_,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,_,_,PR_Latitude7,PR_Longitude8).
+-9.937: geospatial139($PR_Address0,PR_Street1,_,_,_,_,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,PR_Latitude7,PR_Longitude8).
+-9.681: geospatial139($PR_Address0,_,_,_,_,PR_Street5,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street5,_,_,_,PR_Latitude7,PR_Longitude8).
+-8.974: geospatial139($PR_Address0,_,PR_StateAbbr2,_,_,_,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr2,_,PR_Latitude7,PR_Longitude8).
+-8.974: geospatial139($PR_Address0,_,_,PR_StateAbbr3,_,_,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr3,_,PR_Latitude7,PR_Longitude8).
+-8.974: geospatial139($PR_Address0,_,_,_,_,_,PR_StateAbbr6,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr6,_,PR_Latitude7,PR_Longitude8).
+-7.311: geospatial139($PR_Address0,_,_,_,PR_Zip4,_,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip4,PR_Latitude7,PR_Longitude8).
+-6.515: geospatial139($PR_Address0,PR_Street1,_,_,PR_Zip4,_,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street1,_,_,PR_Zip4,PR_Latitude7,PR_Longitude8).
+-6.311: geospatial139($PR_Address0,_,_,_,PR_Zip4,PR_Street5,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street5,_,_,PR_Zip4,PR_Latitude7,PR_Longitude8).
+-5.604: geospatial139($PR_Address0,_,PR_StateAbbr2,_,PR_Zip4,_,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr2,PR_Zip4,PR_Latitude7,PR_Longitude8).
+-5.604: geospatial139($PR_Address0,_,_,PR_StateAbbr3,PR_Zip4,_,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr3,PR_Zip4,PR_Latitude7,PR_Longitude8).
+-5.604: geospatial139($PR_Address0,_,_,_,PR_Zip4,_,PR_StateAbbr6,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr6,PR_Zip4,PR_Latitude7,PR_Longitude8).
+-4.808: geospatial139($PR_Address0,PR_Street1,PR_StateAbbr2,_,PR_Zip4,_,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street1,_,PR_StateAbbr2,PR_Zip4,PR_Latitude7,PR_Longitude8).
+-4.604: geospatial139($PR_Address0,_,PR_StateAbbr2,_,PR_Zip4,PR_Street5,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street5,_,PR_StateAbbr2,PR_Zip4,PR_Latitude7,PR_Longitude8).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+
+************************************************************************
+timestmp = 1230150354078
+target = geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude)
+definition = geospatial139($PR_Address0,_,PR_StateAbbr2,_,PR_Zip4,PR_Street5,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street5,_,PR_StateAbbr2,PR_Zip4,PR_Latitude7,PR_Longitude8).
+unfolding = geospatial139($PR_Address0,_,PR_StateAbbr2,_,PR_Zip4,PR_Street5,_,PR_Latitude7,PR_Longitude8)	:- Address(PR_Address0,PR_Street5,_,PR_StateAbbr2,_,PR_Zip4,_,_,PR_Latitude7,PR_Longitude8).
+score = 2.4913494809688584E-5
+normalisedScore = -0.4338645826298623
+candidates = 30
+totalCandidates = 30
+accesses = 21
+totalAccesses = 21
+time = 129
+totalTime = 129
+timeout = 5400
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+CREATE TABLE IF NOT EXISTS output.wrapcache_081223b_no__geospatial139 ( `timestmp` varchar(15),`target` varchar(2000),`definition` varchar(2000),`unfolding` varchar(5000),`score` varchar(45),`normalisedScore` varchar(45),`candidates` varchar(10),`totalCandidates` varchar(10),`accesses` varchar(10),`totalAccesses` varchar(10),`time` varchar(15),`totalTime` varchar(15),`timeout` varchar(15),`maxClauseLength` varchar(10),`maxPredRepitition` varchar(10),`maxVarLevel` varchar(10),`noVarRepetition` varchar(10),`heuristic` varchar(100), PRIMARY KEY (`timestmp`) )
+
+real	2m11.744s
+user	0m0.015s
+sys	0m0.015s
+wrapcache_081223b_no__geospatial140.txt
+java -classpath .;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/lib/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin Tester C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial140.txt C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/dbProperties.txt
+noVarRepetition = true
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial140.txt
+
+## Semantic Types: 
+type PR_Latitude    [varchar(200)]  {numeric: -90.0, 90.0, 0.01}
+type PR_Longitude   [varchar(200)]  {numeric: -180.0, 180.0, 0.01}
+type PR_LatDMS      [varchar(200)]  {examples: examples.latitudedms.val}
+type PR_LonDMS      [varchar(200)]  {examples: examples.longitudedms.val}
+type PR_UTM         [varchar(200)]  
+type PR_Address     [varchar(200)]  {examples: examples.address.val;equality: JaroWinkler > 0.85}
+type PR_Street      [varchar(200)]  {examples: examples.street.val;equality: JaroWinkler > 0.85}
+type PR_City        [varchar(200)]  {examples: examples.city.val[occurs]}
+type PR_StateAbbr   [varchar(200)]  {examples: examples.usstates.code}
+type PR_State       [varchar(200)]  {examples: examples.usstates.name[occurs]}
+type PR_Zip         [varchar(200)]  {examples: examples.zipcode.val}
+type PR_Country     [varchar(200)]  {examples: examples.country.val}
+type PR_Country_Abbr [varchar(200)] {examples: examples.countryAbbr.val}
+type PR_CityStateZip [varchar(200)] {examples: examples.city_state_zip.val;equality: JaroWinkler > 0.85}
+type PR_CityState   [varchar(200)]  
+
+## Domain Relations: 
+relation Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Comparison Predicates: 
+
+## Sources: 
+source USGeocoder($PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Latitude,PR_Longitude)	:- Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).	{wrappers.USGeocoder; address}
+
+## Target Predicates: 
+target geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address)	{wrappers.DBService; http://world.maporama.com; null; PR-Address}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.USGeocoder
+DROP TABLE IF EXISTS cache.InvocationsOf_USGeocoder
+CREATE TABLE cache.USGeocoder ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_City2 varchar(200),PR_StateAbbr3 varchar(200),PR_Zip4 varchar(200),PR_Latitude5 varchar(200),PR_Longitude6 varchar(200) )
+CREATE TABLE cache.InvocationsOf_USGeocoder ( PR_Address0 varchar(200) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.geospatial140
+DROP TABLE IF EXISTS cache.InvocationsOf_geospatial140
+CREATE TABLE cache.geospatial140 ( PR_Address0 varchar(200),PR_Address1 varchar(200),PR_Address2 varchar(200),PR_Address3 varchar(200),PR_UTM4 varchar(200),PR_Address5 varchar(200) )
+CREATE TABLE cache.InvocationsOf_geospatial140 ( PR_Address0 varchar(200) )
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [300 SW 10th Ave., Topeka, KS 66612]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [601 Whitehead St, Key West, FL, 33040]
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [1700 West Washington, Phoenix, AZ 85007]
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [210 Capitol Avenue, Hartford, CT 06106]
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [1007 East Grand Ave., Des Moines, IA 50319]
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [600 Dexter Avenue, Montgomery, AL 36130]
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [4676 Admiralty Way, Marina del Rey, CA, 90292]
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [4750 N. Meridian St., Indianapolis, IN 46208]
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [623 Sierra St, El Segundo, CA, 90245]
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [1600 Pennsylvania Ave NW, Washington, DC, 20502]
+Invoking target: geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address) with [400 S. Monroe St., Tallahassee, FL 32399]
+
+****************************************************************
+STARTING SEARCH: 
+*********************************************************************************************************************************************************************************************************
+PR_Address0                                                                                                                                                                                              
+(PR_Address)                                                                                                                                                                                             
+
+1007 East Grand Ave., Des Moines, IA 50319                                                                                                                                                               
+4750 N. Meridian St., Indianapolis, IN 46208                                                                                                                                                             
+210 Capitol Avenue, Hartford, CT 06106                                                                                                                                                                   
+4676 Admiralty Way, Marina del Rey, CA, 90292                                                                                                                                                            
+601 Whitehead St, Key West, FL, 33040                                                                                                                                                                    
+600 Dexter Avenue, Montgomery, AL 36130                                                                                                                                                                  
+300 SW 10th Ave., Topeka, KS 66612                                                                                                                                                                       
+400 S. Monroe St., Tallahassee, FL 32399                                                                                                                                                                 
+1700 West Washington, Phoenix, AZ 85007                                                                                                                                                                  
+1600 Pennsylvania Ave NW, Washington, DC, 20502                                                                                                                                                          
+623 Sierra St, El Segundo, CA, 90245                                                                                                                                                                     
+*********************************************************************************************************************************************************************************************************
+
+-13.543: geospatial140($_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+url = http://geocoder.us/service/csv/geocode?address=1007+East+Grand+Ave.%2C+Des+Moines%2C+IA+50319
+data= 41.591974,-93.604559,1007 E Grand Ave,Des Moines,IA,50316
+tuple= [1007 East Grand Ave., Des Moines, IA 50319, 1007 E Grand Ave, Des Moines, IA, 50316, 41.591974, -93.604559]
+url = http://geocoder.us/service/csv/geocode?address=4750+N.+Meridian+St.%2C+Indianapolis%2C+IN+46208
+data= 39.822204,-86.156831,3701 N Meridian St,Indianapolis city,IN,46208
+tuple= [4750 N. Meridian St., Indianapolis, IN 46208, 3701 N Meridian St, Indianapolis city, IN, 46208, 39.822204, -86.156831]
+url = http://geocoder.us/service/csv/geocode?address=210+Capitol+Avenue%2C+Hartford%2C+CT+06106
+data= 41.762664,-72.682270,210 Capitol Ave,Hartford,CT,06106
+tuple= [210 Capitol Avenue, Hartford, CT 06106, 210 Capitol Ave, Hartford, CT, 06106, 41.762664, -72.682270]
+url = http://geocoder.us/service/csv/geocode?address=4676+Admiralty+Way%2C+Marina+del+Rey%2C+CA%2C+90292
+data= 33.980305,-118.440470,4676 Admiralty Way,Marina del Rey,CA,90292
+tuple= [4676 Admiralty Way, Marina del Rey, CA, 90292, 4676 Admiralty Way, Marina del Rey, CA, 90292, 33.980305, -118.440470]
+url = http://geocoder.us/service/csv/geocode?address=601+Whitehead+St%2C+Key+West%2C+FL%2C+33040
+data= 24.553922,-81.803260,601 Whitehead St,Key West,FL,33040
+tuple= [601 Whitehead St, Key West, FL, 33040, 601 Whitehead St, Key West, FL, 33040, 24.553922, -81.803260]
+url = http://geocoder.us/service/csv/geocode?address=600+Dexter+Avenue%2C+Montgomery%2C+AL+36130
+data= 32.377189,-86.301963,600 Dexter Ave,Montgomery,AL,36104
+tuple= [600 Dexter Avenue, Montgomery, AL 36130, 600 Dexter Ave, Montgomery, AL, 36104, 32.377189, -86.301963]
+url = http://geocoder.us/service/csv/geocode?address=300+SW+10th+Ave.%2C+Topeka%2C+KS+66612
+data= 39.046754,-95.678724,300 SW 10th Ave,Topeka,KS,66612
+tuple= [300 SW 10th Ave., Topeka, KS 66612, 300 SW 10th Ave, Topeka, KS, 66612, 39.046754, -95.678724]
+url = http://geocoder.us/service/csv/geocode?address=400+S.+Monroe+St.%2C+Tallahassee%2C+FL+32399
+data= 30.439000,-84.280499,400 S Monroe St,Tallahassee,FL,32301
+tuple= [400 S. Monroe St., Tallahassee, FL 32399, 400 S Monroe St, Tallahassee, FL, 32301, 30.439000, -84.280499]
+url = http://geocoder.us/service/csv/geocode?address=1700+West+Washington%2C+Phoenix%2C+AZ+85007
+data= 33.448543,-112.095704,1700 W Washington St,Phoenix,AZ,85007
+tuple= [1700 West Washington, Phoenix, AZ 85007, 1700 W Washington St, Phoenix, AZ, 85007, 33.448543, -112.095704]
+url = http://geocoder.us/service/csv/geocode?address=1600+Pennsylvania+Ave+NW%2C+Washington%2C+DC%2C+20502
+data= 38.898748,-77.037684,1600 Pennsylvania Ave NW,Washington,DC,20502
+tuple= [1600 Pennsylvania Ave NW, Washington, DC, 20502, 1600 Pennsylvania Ave NW, Washington, DC, 20502, 38.898748, -77.037684]
+-13.589: geospatial140($PR_Address0,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,_).
+url = http://geocoder.us/service/csv/geocode?address=623+Sierra+St%2C+El+Segundo%2C+CA%2C+90245
+data= 33.923727,-118.408731,623 Sierra St,El Segundo,CA,90245
+tuple= [623 Sierra St, El Segundo, CA, 90245, 623 Sierra St, El Segundo, CA, 90245, 33.923727, -118.408731]
+-13.630: geospatial140($_,PR_Address1,_,_,_,_)	:- USGeocoder(PR_Address1,_,_,_,_,_,_).
+-13.630: geospatial140($_,_,PR_Address2,_,_,_)	:- USGeocoder(PR_Address2,_,_,_,_,_,_).
+-13.630: geospatial140($_,_,_,PR_Address3,_,_)	:- USGeocoder(PR_Address3,_,_,_,_,_,_).
+-13.630: geospatial140($_,_,_,_,_,PR_Address5)	:- USGeocoder(PR_Address5,_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+
+************************************************************************
+timestmp = 1230150485437
+target = geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address)
+definition = geospatial140($_,_,_,_,_,_).
+unfolding = geospatial140($_,_,_,_,_,_).
+score = 2.8624763251971977E-14
+normalisedScore = -0.10536051565782628
+candidates = 1
+totalCandidates = 6
+accesses = 11
+totalAccesses = 22
+time = 0
+totalTime = 151
+timeout = 5400
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+CREATE TABLE IF NOT EXISTS output.wrapcache_081223b_no__geospatial140 ( `timestmp` varchar(15),`target` varchar(2000),`definition` varchar(2000),`unfolding` varchar(5000),`score` varchar(45),`normalisedScore` varchar(45),`candidates` varchar(10),`totalCandidates` varchar(10),`accesses` varchar(10),`totalAccesses` varchar(10),`time` varchar(15),`totalTime` varchar(15),`timeout` varchar(15),`maxClauseLength` varchar(10),`maxPredRepitition` varchar(10),`maxVarLevel` varchar(10),`noVarRepetition` varchar(10),`heuristic` varchar(100), PRIMARY KEY (`timestmp`) )
+
+real	2m33.286s
+user	0m0.031s
+sys	0m0.031s
+wrapcache_081223b_no__geospatial152.txt
+java -classpath .;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/lib/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin Tester C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial152.txt C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/dbProperties.txt
+noVarRepetition = true
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial152.txt
+
+## Semantic Types: 
+type PR_Latitude    [varchar(200)]  {numeric: -90.0, 90.0, 0.01}
+type PR_Longitude   [varchar(200)]  {numeric: -180.0, 180.0, 0.01}
+type PR_LatDMS      [varchar(200)]  {examples: examples.latitudedms.val}
+type PR_LonDMS      [varchar(200)]  {examples: examples.longitudedms.val}
+type PR_UTM         [varchar(200)]  
+type PR_Address     [varchar(200)]  {examples: examples.address.val;equality: JaroWinkler > 0.85}
+type PR_Street      [varchar(200)]  {examples: examples.street.val;equality: JaroWinkler > 0.85}
+type PR_City        [varchar(200)]  {examples: examples.city.val[occurs]}
+type PR_StateAbbr   [varchar(200)]  {examples: examples.usstates.code}
+type PR_State       [varchar(200)]  {examples: examples.usstates.name[occurs]}
+type PR_Zip         [varchar(200)]  {examples: examples.zipcode.val}
+type PR_Country     [varchar(200)]  {examples: examples.country.val}
+type PR_Country_Abbr [varchar(200)] {examples: examples.countryAbbr.val}
+type PR_CityStateZip [varchar(200)] {examples: examples.city_state_zip.val;equality: JaroWinkler > 0.85}
+type PR_CityState   [varchar(200)]  
+
+## Domain Relations: 
+relation Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Comparison Predicates: 
+
+## Sources: 
+source USGeocoder($PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Latitude,PR_Longitude)	:- Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).	{wrappers.USGeocoder; address}
+
+## Target Predicates: 
+target geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address)	{wrappers.DBService; http://www.51ditu.com/; aform; PR-Address}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.USGeocoder
+DROP TABLE IF EXISTS cache.InvocationsOf_USGeocoder
+CREATE TABLE cache.USGeocoder ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_City2 varchar(200),PR_StateAbbr3 varchar(200),PR_Zip4 varchar(200),PR_Latitude5 varchar(200),PR_Longitude6 varchar(200) )
+CREATE TABLE cache.InvocationsOf_USGeocoder ( PR_Address0 varchar(200) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.geospatial152
+DROP TABLE IF EXISTS cache.InvocationsOf_geospatial152
+CREATE TABLE cache.geospatial152 ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_StateAbbr2 varchar(200),PR_Address3 varchar(200),PR_Address4 varchar(200),PR_Address5 varchar(200),PR_Address6 varchar(200) )
+CREATE TABLE cache.InvocationsOf_geospatial152 ( PR_Address0 varchar(200) )
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [400 S. Monroe St., Tallahassee, FL 32399]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [1700 West Washington, Phoenix, AZ 85007]
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [1007 East Grand Ave., Des Moines, IA 50319]
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [210 Capitol Avenue, Hartford, CT 06106]
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [623 Sierra St, El Segundo, CA, 90245]
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [4676 Admiralty Way, Marina del Rey, CA, 90292]
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [300 SW 10th Ave., Topeka, KS 66612]
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [1600 Pennsylvania Ave NW, Washington, DC, 20502]
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [600 Dexter Avenue, Montgomery, AL 36130]
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [4750 N. Meridian St., Indianapolis, IN 46208]
+Invoking target: geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address) with [601 Whitehead St, Key West, FL, 33040]
+
+****************************************************************
+STARTING SEARCH: 
+*********************************************************************************************************************************************************************************************************
+PR_Address0                                                                                                                                                                                              
+(PR_Address)                                                                                                                                                                                             
+
+1700 West Washington, Phoenix, AZ 85007                                                                                                                                                                  
+601 Whitehead St, Key West, FL, 33040                                                                                                                                                                    
+400 S. Monroe St., Tallahassee, FL 32399                                                                                                                                                                 
+600 Dexter Avenue, Montgomery, AL 36130                                                                                                                                                                  
+300 SW 10th Ave., Topeka, KS 66612                                                                                                                                                                       
+1600 Pennsylvania Ave NW, Washington, DC, 20502                                                                                                                                                          
+210 Capitol Avenue, Hartford, CT 06106                                                                                                                                                                   
+4676 Admiralty Way, Marina del Rey, CA, 90292                                                                                                                                                            
+4750 N. Meridian St., Indianapolis, IN 46208                                                                                                                                                             
+1007 East Grand Ave., Des Moines, IA 50319                                                                                                                                                               
+623 Sierra St, El Segundo, CA, 90245                                                                                                                                                                     
+*********************************************************************************************************************************************************************************************************
+
+-6.919: geospatial152($_,_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+url = http://geocoder.us/service/csv/geocode?address=1700+West+Washington%2C+Phoenix%2C+AZ+85007
+data= 33.448543,-112.095704,1700 W Washington St,Phoenix,AZ,85007
+tuple= [1700 West Washington, Phoenix, AZ 85007, 1700 W Washington St, Phoenix, AZ, 85007, 33.448543, -112.095704]
+url = http://geocoder.us/service/csv/geocode?address=601+Whitehead+St%2C+Key+West%2C+FL%2C+33040
+data= 24.553922,-81.803260,601 Whitehead St,Key West,FL,33040
+tuple= [601 Whitehead St, Key West, FL, 33040, 601 Whitehead St, Key West, FL, 33040, 24.553922, -81.803260]
+url = http://geocoder.us/service/csv/geocode?address=400+S.+Monroe+St.%2C+Tallahassee%2C+FL+32399
+data= 30.439000,-84.280499,400 S Monroe St,Tallahassee,FL,32301
+tuple= [400 S. Monroe St., Tallahassee, FL 32399, 400 S Monroe St, Tallahassee, FL, 32301, 30.439000, -84.280499]
+url = http://geocoder.us/service/csv/geocode?address=600+Dexter+Avenue%2C+Montgomery%2C+AL+36130
+data= 32.377189,-86.301963,600 Dexter Ave,Montgomery,AL,36104
+tuple= [600 Dexter Avenue, Montgomery, AL 36130, 600 Dexter Ave, Montgomery, AL, 36104, 32.377189, -86.301963]
+url = http://geocoder.us/service/csv/geocode?address=300+SW+10th+Ave.%2C+Topeka%2C+KS+66612
+data= 39.046754,-95.678724,300 SW 10th Ave,Topeka,KS,66612
+tuple= [300 SW 10th Ave., Topeka, KS 66612, 300 SW 10th Ave, Topeka, KS, 66612, 39.046754, -95.678724]
+url = http://geocoder.us/service/csv/geocode?address=1600+Pennsylvania+Ave+NW%2C+Washington%2C+DC%2C+20502
+data= 38.898748,-77.037684,1600 Pennsylvania Ave NW,Washington,DC,20502
+tuple= [1600 Pennsylvania Ave NW, Washington, DC, 20502, 1600 Pennsylvania Ave NW, Washington, DC, 20502, 38.898748, -77.037684]
+url = http://geocoder.us/service/csv/geocode?address=210+Capitol+Avenue%2C+Hartford%2C+CT+06106
+data= 41.762664,-72.682270,210 Capitol Ave,Hartford,CT,06106
+tuple= [210 Capitol Avenue, Hartford, CT 06106, 210 Capitol Ave, Hartford, CT, 06106, 41.762664, -72.682270]
+url = http://geocoder.us/service/csv/geocode?address=4676+Admiralty+Way%2C+Marina+del+Rey%2C+CA%2C+90292
+data= 33.980305,-118.440470,4676 Admiralty Way,Marina del Rey,CA,90292
+tuple= [4676 Admiralty Way, Marina del Rey, CA, 90292, 4676 Admiralty Way, Marina del Rey, CA, 90292, 33.980305, -118.440470]
+url = http://geocoder.us/service/csv/geocode?address=4750+N.+Meridian+St.%2C+Indianapolis%2C+IN+46208
+data= 39.822204,-86.156831,3701 N Meridian St,Indianapolis city,IN,46208
+tuple= [4750 N. Meridian St., Indianapolis, IN 46208, 3701 N Meridian St, Indianapolis city, IN, 46208, 39.822204, -86.156831]
+url = http://geocoder.us/service/csv/geocode?address=1007+East+Grand+Ave.%2C+Des+Moines%2C+IA+50319
+data= 41.591974,-93.604559,1007 E Grand Ave,Des Moines,IA,50316
+tuple= [1007 East Grand Ave., Des Moines, IA 50319, 1007 E Grand Ave, Des Moines, IA, 50316, 41.591974, -93.604559]
+-6.965: geospatial152($PR_Address0,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,_).
+-5.965: geospatial152($PR_Address0,PR_Street1,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,_,_).
+-5.257: geospatial152($PR_Address0,_,PR_StateAbbr2,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr2,_,_,_).
+-4.257: geospatial152($PR_Address0,PR_Street1,PR_StateAbbr2,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,PR_StateAbbr2,_,_,_).
+url = http://geocoder.us/service/csv/geocode?address=623+Sierra+St%2C+El+Segundo%2C+CA%2C+90245
+data= 33.923727,-118.408731,623 Sierra St,El Segundo,CA,90245
+tuple= [623 Sierra St, El Segundo, CA, 90245, 623 Sierra St, El Segundo, CA, 90245, 33.923727, -118.408731]
+-7.006: geospatial152($_,_,_,PR_Address3,_,_,_)	:- USGeocoder(PR_Address3,_,_,_,_,_,_).
+-6.006: geospatial152($_,PR_Street1,_,PR_Address3,_,_,_)	:- USGeocoder(PR_Address3,PR_Street1,_,_,_,_,_).
+-5.298: geospatial152($_,_,PR_StateAbbr2,PR_Address3,_,_,_)	:- USGeocoder(PR_Address3,_,_,PR_StateAbbr2,_,_,_).
+-4.298: geospatial152($_,PR_Street1,PR_StateAbbr2,PR_Address3,_,_,_)	:- USGeocoder(PR_Address3,PR_Street1,_,PR_StateAbbr2,_,_,_).
+-7.006: geospatial152($_,_,_,_,PR_Address4,_,_)	:- USGeocoder(PR_Address4,_,_,_,_,_,_).
+-6.006: geospatial152($_,PR_Street1,_,_,PR_Address4,_,_)	:- USGeocoder(PR_Address4,PR_Street1,_,_,_,_,_).
+-5.298: geospatial152($_,_,PR_StateAbbr2,_,PR_Address4,_,_)	:- USGeocoder(PR_Address4,_,_,PR_StateAbbr2,_,_,_).
+-4.298: geospatial152($_,PR_Street1,PR_StateAbbr2,_,PR_Address4,_,_)	:- USGeocoder(PR_Address4,PR_Street1,_,PR_StateAbbr2,_,_,_).
+-7.006: geospatial152($_,_,_,_,_,PR_Address5,_)	:- USGeocoder(PR_Address5,_,_,_,_,_,_).
+-6.006: geospatial152($_,PR_Street1,_,_,_,PR_Address5,_)	:- USGeocoder(PR_Address5,PR_Street1,_,_,_,_,_).
+-5.298: geospatial152($_,_,PR_StateAbbr2,_,_,PR_Address5,_)	:- USGeocoder(PR_Address5,_,_,PR_StateAbbr2,_,_,_).
+-4.298: geospatial152($_,PR_Street1,PR_StateAbbr2,_,_,PR_Address5,_)	:- USGeocoder(PR_Address5,PR_Street1,_,PR_StateAbbr2,_,_,_).
+-7.006: geospatial152($_,_,_,_,_,_,PR_Address6)	:- USGeocoder(PR_Address6,_,_,_,_,_,_).
+-6.006: geospatial152($_,PR_Street1,_,_,_,_,PR_Address6)	:- USGeocoder(PR_Address6,PR_Street1,_,_,_,_,_).
+-5.298: geospatial152($_,_,PR_StateAbbr2,_,_,_,PR_Address6)	:- USGeocoder(PR_Address6,_,_,PR_StateAbbr2,_,_,_).
+-4.298: geospatial152($_,PR_Street1,PR_StateAbbr2,_,_,_,PR_Address6)	:- USGeocoder(PR_Address6,PR_Street1,_,PR_StateAbbr2,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+
+************************************************************************
+timestmp = 1230150638828
+target = geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address)
+definition = geospatial152($PR_Address0,PR_Street1,PR_StateAbbr2,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,PR_StateAbbr2,_,_,_).
+unfolding = geospatial152($PR_Address0,PR_Street1,PR_StateAbbr2,_,_,_,_)	:- Address(PR_Address0,PR_Street1,_,PR_StateAbbr2,_,_,_,_,_,_).
+score = 5.532408988457072E-5
+normalisedScore = -0.21072103131565267
+candidates = 5
+totalCandidates = 21
+accesses = 21
+totalAccesses = 22
+time = 137
+totalTime = 156
+timeout = 5400
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+CREATE TABLE IF NOT EXISTS output.wrapcache_081223b_no__geospatial152 ( `timestmp` varchar(15),`target` varchar(2000),`definition` varchar(2000),`unfolding` varchar(5000),`score` varchar(45),`normalisedScore` varchar(45),`candidates` varchar(10),`totalCandidates` varchar(10),`accesses` varchar(10),`totalAccesses` varchar(10),`time` varchar(15),`totalTime` varchar(15),`timeout` varchar(15),`maxClauseLength` varchar(10),`maxPredRepitition` varchar(10),`maxVarLevel` varchar(10),`noVarRepetition` varchar(10),`heuristic` varchar(100), PRIMARY KEY (`timestmp`) )
+
+real	2m38.009s
+user	0m0.031s
+sys	0m0.031s
+wrapcache_081223b_no__geospatial154.txt
+java -classpath .;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/lib/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin Tester C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial154.txt C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/dbProperties.txt
+noVarRepetition = true
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial154.txt
+
+## Semantic Types: 
+type PR_Latitude    [varchar(200)]  {numeric: -90.0, 90.0, 0.01}
+type PR_Longitude   [varchar(200)]  {numeric: -180.0, 180.0, 0.01}
+type PR_LatDMS      [varchar(200)]  {examples: examples.latitudedms.val}
+type PR_LonDMS      [varchar(200)]  {examples: examples.longitudedms.val}
+type PR_UTM         [varchar(200)]  
+type PR_Address     [varchar(200)]  {examples: examples.address.val;equality: JaroWinkler > 0.85}
+type PR_Street      [varchar(200)]  {examples: examples.street.val;equality: JaroWinkler > 0.85}
+type PR_City        [varchar(200)]  {examples: examples.city.val[occurs]}
+type PR_StateAbbr   [varchar(200)]  {examples: examples.usstates.code}
+type PR_State       [varchar(200)]  {examples: examples.usstates.name[occurs]}
+type PR_Zip         [varchar(200)]  {examples: examples.zipcode.val}
+type PR_Country     [varchar(200)]  {examples: examples.country.val}
+type PR_Country_Abbr [varchar(200)] {examples: examples.countryAbbr.val}
+type PR_CityStateZip [varchar(200)] {examples: examples.city_state_zip.val;equality: JaroWinkler > 0.85}
+type PR_CityState   [varchar(200)]  
+
+## Domain Relations: 
+relation Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Comparison Predicates: 
+
+## Sources: 
+source USGeocoder($PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Latitude,PR_Longitude)	:- Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).	{wrappers.USGeocoder; address}
+
+## Target Predicates: 
+target geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)	{wrappers.DBService; http://www.hostip.info/use.html; null; PR-Address}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.USGeocoder
+DROP TABLE IF EXISTS cache.InvocationsOf_USGeocoder
+CREATE TABLE cache.USGeocoder ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_City2 varchar(200),PR_StateAbbr3 varchar(200),PR_Zip4 varchar(200),PR_Latitude5 varchar(200),PR_Longitude6 varchar(200) )
+CREATE TABLE cache.InvocationsOf_USGeocoder ( PR_Address0 varchar(200) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.geospatial154
+DROP TABLE IF EXISTS cache.InvocationsOf_geospatial154
+CREATE TABLE cache.geospatial154 ( PR_Address0 varchar(200),PR_Address1 varchar(200),PR_Address2 varchar(200),PR_Zip3 varchar(200),PR_Address4 varchar(200) )
+CREATE TABLE cache.InvocationsOf_geospatial154 ( PR_Address0 varchar(200) )
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [1600 Pennsylvania Ave NW, Washington, DC, 20502]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [1007 East Grand Ave., Des Moines, IA 50319]
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [1700 West Washington, Phoenix, AZ 85007]
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [4750 N. Meridian St., Indianapolis, IN 46208]
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [600 Dexter Avenue, Montgomery, AL 36130]
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [623 Sierra St, El Segundo, CA, 90245]
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [601 Whitehead St, Key West, FL, 33040]
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [400 S. Monroe St., Tallahassee, FL 32399]
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [300 SW 10th Ave., Topeka, KS 66612]
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [4676 Admiralty Way, Marina del Rey, CA, 90292]
+Invoking target: geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [210 Capitol Avenue, Hartford, CT 06106]
+
+****************************************************************
+STARTING SEARCH: 
+*********************************************************************************************************************************************************************************************************
+PR_Address0                                                                                                                                                                                              
+(PR_Address)                                                                                                                                                                                             
+
+4676 Admiralty Way, Marina del Rey, CA, 90292                                                                                                                                                            
+210 Capitol Avenue, Hartford, CT 06106                                                                                                                                                                   
+400 S. Monroe St., Tallahassee, FL 32399                                                                                                                                                                 
+4750 N. Meridian St., Indianapolis, IN 46208                                                                                                                                                             
+601 Whitehead St, Key West, FL, 33040                                                                                                                                                                    
+1600 Pennsylvania Ave NW, Washington, DC, 20502                                                                                                                                                          
+1007 East Grand Ave., Des Moines, IA 50319                                                                                                                                                               
+1700 West Washington, Phoenix, AZ 85007                                                                                                                                                                  
+600 Dexter Avenue, Montgomery, AL 36130                                                                                                                                                                  
+300 SW 10th Ave., Topeka, KS 66612                                                                                                                                                                       
+623 Sierra St, El Segundo, CA, 90245                                                                                                                                                                     
+*********************************************************************************************************************************************************************************************************
+
+-6.591: geospatial154($_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+url = http://geocoder.us/service/csv/geocode?address=4676+Admiralty+Way%2C+Marina+del+Rey%2C+CA%2C+90292
+data= 33.980305,-118.440470,4676 Admiralty Way,Marina del Rey,CA,90292
+tuple= [4676 Admiralty Way, Marina del Rey, CA, 90292, 4676 Admiralty Way, Marina del Rey, CA, 90292, 33.980305, -118.440470]
+url = http://geocoder.us/service/csv/geocode?address=210+Capitol+Avenue%2C+Hartford%2C+CT+06106
+data= 41.762664,-72.682270,210 Capitol Ave,Hartford,CT,06106
+tuple= [210 Capitol Avenue, Hartford, CT 06106, 210 Capitol Ave, Hartford, CT, 06106, 41.762664, -72.682270]
+url = http://geocoder.us/service/csv/geocode?address=400+S.+Monroe+St.%2C+Tallahassee%2C+FL+32399
+data= 30.439000,-84.280499,400 S Monroe St,Tallahassee,FL,32301
+tuple= [400 S. Monroe St., Tallahassee, FL 32399, 400 S Monroe St, Tallahassee, FL, 32301, 30.439000, -84.280499]
+url = http://geocoder.us/service/csv/geocode?address=4750+N.+Meridian+St.%2C+Indianapolis%2C+IN+46208
+data= 39.822204,-86.156831,3701 N Meridian St,Indianapolis city,IN,46208
+tuple= [4750 N. Meridian St., Indianapolis, IN 46208, 3701 N Meridian St, Indianapolis city, IN, 46208, 39.822204, -86.156831]
+url = http://geocoder.us/service/csv/geocode?address=601+Whitehead+St%2C+Key+West%2C+FL%2C+33040
+data= 24.553922,-81.803260,601 Whitehead St,Key West,FL,33040
+tuple= [601 Whitehead St, Key West, FL, 33040, 601 Whitehead St, Key West, FL, 33040, 24.553922, -81.803260]
+url = http://geocoder.us/service/csv/geocode?address=1600+Pennsylvania+Ave+NW%2C+Washington%2C+DC%2C+20502
+data= 38.898748,-77.037684,1600 Pennsylvania Ave NW,Washington,DC,20502
+tuple= [1600 Pennsylvania Ave NW, Washington, DC, 20502, 1600 Pennsylvania Ave NW, Washington, DC, 20502, 38.898748, -77.037684]
+url = http://geocoder.us/service/csv/geocode?address=1007+East+Grand+Ave.%2C+Des+Moines%2C+IA+50319
+data= 41.591974,-93.604559,1007 E Grand Ave,Des Moines,IA,50316
+tuple= [1007 East Grand Ave., Des Moines, IA 50319, 1007 E Grand Ave, Des Moines, IA, 50316, 41.591974, -93.604559]
+url = http://geocoder.us/service/csv/geocode?address=1700+West+Washington%2C+Phoenix%2C+AZ+85007
+data= 33.448543,-112.095704,1700 W Washington St,Phoenix,AZ,85007
+tuple= [1700 West Washington, Phoenix, AZ 85007, 1700 W Washington St, Phoenix, AZ, 85007, 33.448543, -112.095704]
+url = http://geocoder.us/service/csv/geocode?address=600+Dexter+Avenue%2C+Montgomery%2C+AL+36130
+data= 32.377189,-86.301963,600 Dexter Ave,Montgomery,AL,36104
+tuple= [600 Dexter Avenue, Montgomery, AL 36130, 600 Dexter Ave, Montgomery, AL, 36104, 32.377189, -86.301963]
+url = http://geocoder.us/service/csv/geocode?address=300+SW+10th+Ave.%2C+Topeka%2C+KS+66612
+data= 39.046754,-95.678724,300 SW 10th Ave,Topeka,KS,66612
+tuple= [300 SW 10th Ave., Topeka, KS 66612, 300 SW 10th Ave, Topeka, KS, 66612, 39.046754, -95.678724]
+-6.637: geospatial154($PR_Address0,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,_).
+-3.739: geospatial154($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+url = http://geocoder.us/service/csv/geocode?address=623+Sierra+St%2C+El+Segundo%2C+CA%2C+90245
+data= 33.923727,-118.408731,623 Sierra St,El Segundo,CA,90245
+tuple= [623 Sierra St, El Segundo, CA, 90245, 623 Sierra St, El Segundo, CA, 90245, 33.923727, -118.408731]
+-6.679: geospatial154($_,PR_Address1,_,_,_)	:- USGeocoder(PR_Address1,_,_,_,_,_,_).
+-3.780: geospatial154($_,PR_Address1,_,PR_Zip3,_)	:- USGeocoder(PR_Address1,_,_,_,PR_Zip3,_,_).
+-6.679: geospatial154($_,_,PR_Address2,_,_)	:- USGeocoder(PR_Address2,_,_,_,_,_,_).
+-3.780: geospatial154($_,_,PR_Address2,PR_Zip3,_)	:- USGeocoder(PR_Address2,_,_,_,PR_Zip3,_,_).
+-6.679: geospatial154($_,_,_,_,PR_Address4)	:- USGeocoder(PR_Address4,_,_,_,_,_,_).
+-3.780: geospatial154($_,_,_,PR_Zip3,PR_Address4)	:- USGeocoder(PR_Address4,_,_,_,PR_Zip3,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+
+************************************************************************
+timestmp = 1230150796734
+target = geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+definition = geospatial154($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+unfolding = geospatial154($PR_Address0,_,_,PR_Zip3,_)	:- Address(PR_Address0,_,_,_,_,PR_Zip3,_,_,_,_).
+score = 1.825694966190834E-4
+normalisedScore = -1.4146938356415886
+candidates = 3
+totalCandidates = 9
+accesses = 21
+totalAccesses = 22
+time = 133
+totalTime = 149
+timeout = 5400
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+CREATE TABLE IF NOT EXISTS output.wrapcache_081223b_no__geospatial154 ( `timestmp` varchar(15),`target` varchar(2000),`definition` varchar(2000),`unfolding` varchar(5000),`score` varchar(45),`normalisedScore` varchar(45),`candidates` varchar(10),`totalCandidates` varchar(10),`accesses` varchar(10),`totalAccesses` varchar(10),`time` varchar(15),`totalTime` varchar(15),`timeout` varchar(15),`maxClauseLength` varchar(10),`maxPredRepitition` varchar(10),`maxVarLevel` varchar(10),`noVarRepetition` varchar(10),`heuristic` varchar(100), PRIMARY KEY (`timestmp`) )
+
+real	2m30.779s
+user	0m0.015s
+sys	0m0.062s
+wrapcache_081223b_no__geospatial157.txt
+java -classpath .;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/lib/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin Tester C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial157.txt C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/dbProperties.txt
+noVarRepetition = true
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial157.txt
+
+## Semantic Types: 
+type PR_Latitude    [varchar(200)]  {numeric: -90.0, 90.0, 0.01}
+type PR_Longitude   [varchar(200)]  {numeric: -180.0, 180.0, 0.01}
+type PR_LatDMS      [varchar(200)]  {examples: examples.latitudedms.val}
+type PR_LonDMS      [varchar(200)]  {examples: examples.longitudedms.val}
+type PR_UTM         [varchar(200)]  
+type PR_Address     [varchar(200)]  {examples: examples.address.val;equality: JaroWinkler > 0.85}
+type PR_Street      [varchar(200)]  {examples: examples.street.val;equality: JaroWinkler > 0.85}
+type PR_City        [varchar(200)]  {examples: examples.city.val[occurs]}
+type PR_StateAbbr   [varchar(200)]  {examples: examples.usstates.code}
+type PR_State       [varchar(200)]  {examples: examples.usstates.name[occurs]}
+type PR_Zip         [varchar(200)]  {examples: examples.zipcode.val}
+type PR_Country     [varchar(200)]  {examples: examples.country.val}
+type PR_Country_Abbr [varchar(200)] {examples: examples.countryAbbr.val}
+type PR_CityStateZip [varchar(200)] {examples: examples.city_state_zip.val;equality: JaroWinkler > 0.85}
+type PR_CityState   [varchar(200)]  
+
+## Domain Relations: 
+relation Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Comparison Predicates: 
+
+## Sources: 
+source USGeocoder($PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Latitude,PR_Longitude)	:- Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).	{wrappers.USGeocoder; address}
+
+## Target Predicates: 
+target geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)	{wrappers.DBService; http://www.hostip.info/; null; PR-Address}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.USGeocoder
+DROP TABLE IF EXISTS cache.InvocationsOf_USGeocoder
+CREATE TABLE cache.USGeocoder ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_City2 varchar(200),PR_StateAbbr3 varchar(200),PR_Zip4 varchar(200),PR_Latitude5 varchar(200),PR_Longitude6 varchar(200) )
+CREATE TABLE cache.InvocationsOf_USGeocoder ( PR_Address0 varchar(200) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.geospatial157
+DROP TABLE IF EXISTS cache.InvocationsOf_geospatial157
+CREATE TABLE cache.geospatial157 ( PR_Address0 varchar(200),PR_Address1 varchar(200),PR_Address2 varchar(200),PR_Zip3 varchar(200),PR_Address4 varchar(200) )
+CREATE TABLE cache.InvocationsOf_geospatial157 ( PR_Address0 varchar(200) )
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [400 S. Monroe St., Tallahassee, FL 32399]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [210 Capitol Avenue, Hartford, CT 06106]
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [601 Whitehead St, Key West, FL, 33040]
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [1600 Pennsylvania Ave NW, Washington, DC, 20502]
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [4676 Admiralty Way, Marina del Rey, CA, 90292]
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [4750 N. Meridian St., Indianapolis, IN 46208]
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [600 Dexter Avenue, Montgomery, AL 36130]
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [623 Sierra St, El Segundo, CA, 90245]
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [1007 East Grand Ave., Des Moines, IA 50319]
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [1700 West Washington, Phoenix, AZ 85007]
+Invoking target: geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [300 SW 10th Ave., Topeka, KS 66612]
+
+****************************************************************
+STARTING SEARCH: 
+*********************************************************************************************************************************************************************************************************
+PR_Address0                                                                                                                                                                                              
+(PR_Address)                                                                                                                                                                                             
+
+400 S. Monroe St., Tallahassee, FL 32399                                                                                                                                                                 
+1007 East Grand Ave., Des Moines, IA 50319                                                                                                                                                               
+300 SW 10th Ave., Topeka, KS 66612                                                                                                                                                                       
+1600 Pennsylvania Ave NW, Washington, DC, 20502                                                                                                                                                          
+210 Capitol Avenue, Hartford, CT 06106                                                                                                                                                                   
+4750 N. Meridian St., Indianapolis, IN 46208                                                                                                                                                             
+600 Dexter Avenue, Montgomery, AL 36130                                                                                                                                                                  
+1700 West Washington, Phoenix, AZ 85007                                                                                                                                                                  
+4676 Admiralty Way, Marina del Rey, CA, 90292                                                                                                                                                            
+601 Whitehead St, Key West, FL, 33040                                                                                                                                                                    
+623 Sierra St, El Segundo, CA, 90245                                                                                                                                                                     
+*********************************************************************************************************************************************************************************************************
+
+-6.591: geospatial157($_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+url = http://geocoder.us/service/csv/geocode?address=400+S.+Monroe+St.%2C+Tallahassee%2C+FL+32399
+data= 30.439000,-84.280499,400 S Monroe St,Tallahassee,FL,32301
+tuple= [400 S. Monroe St., Tallahassee, FL 32399, 400 S Monroe St, Tallahassee, FL, 32301, 30.439000, -84.280499]
+url = http://geocoder.us/service/csv/geocode?address=1007+East+Grand+Ave.%2C+Des+Moines%2C+IA+50319
+data= 41.591974,-93.604559,1007 E Grand Ave,Des Moines,IA,50316
+tuple= [1007 East Grand Ave., Des Moines, IA 50319, 1007 E Grand Ave, Des Moines, IA, 50316, 41.591974, -93.604559]
+url = http://geocoder.us/service/csv/geocode?address=300+SW+10th+Ave.%2C+Topeka%2C+KS+66612
+data= 39.046754,-95.678724,300 SW 10th Ave,Topeka,KS,66612
+tuple= [300 SW 10th Ave., Topeka, KS 66612, 300 SW 10th Ave, Topeka, KS, 66612, 39.046754, -95.678724]
+url = http://geocoder.us/service/csv/geocode?address=1600+Pennsylvania+Ave+NW%2C+Washington%2C+DC%2C+20502
+data= 38.898748,-77.037684,1600 Pennsylvania Ave NW,Washington,DC,20502
+tuple= [1600 Pennsylvania Ave NW, Washington, DC, 20502, 1600 Pennsylvania Ave NW, Washington, DC, 20502, 38.898748, -77.037684]
+url = http://geocoder.us/service/csv/geocode?address=210+Capitol+Avenue%2C+Hartford%2C+CT+06106
+data= 41.762664,-72.682270,210 Capitol Ave,Hartford,CT,06106
+tuple= [210 Capitol Avenue, Hartford, CT 06106, 210 Capitol Ave, Hartford, CT, 06106, 41.762664, -72.682270]
+url = http://geocoder.us/service/csv/geocode?address=4750+N.+Meridian+St.%2C+Indianapolis%2C+IN+46208
+data= 39.822204,-86.156831,3701 N Meridian St,Indianapolis city,IN,46208
+tuple= [4750 N. Meridian St., Indianapolis, IN 46208, 3701 N Meridian St, Indianapolis city, IN, 46208, 39.822204, -86.156831]
+url = http://geocoder.us/service/csv/geocode?address=600+Dexter+Avenue%2C+Montgomery%2C+AL+36130
+data= 32.377189,-86.301963,600 Dexter Ave,Montgomery,AL,36104
+tuple= [600 Dexter Avenue, Montgomery, AL 36130, 600 Dexter Ave, Montgomery, AL, 36104, 32.377189, -86.301963]
+url = http://geocoder.us/service/csv/geocode?address=1700+West+Washington%2C+Phoenix%2C+AZ+85007
+data= 33.448543,-112.095704,1700 W Washington St,Phoenix,AZ,85007
+tuple= [1700 West Washington, Phoenix, AZ 85007, 1700 W Washington St, Phoenix, AZ, 85007, 33.448543, -112.095704]
+url = http://geocoder.us/service/csv/geocode?address=4676+Admiralty+Way%2C+Marina+del+Rey%2C+CA%2C+90292
+data= 33.980305,-118.440470,4676 Admiralty Way,Marina del Rey,CA,90292
+tuple= [4676 Admiralty Way, Marina del Rey, CA, 90292, 4676 Admiralty Way, Marina del Rey, CA, 90292, 33.980305, -118.440470]
+url = http://geocoder.us/service/csv/geocode?address=601+Whitehead+St%2C+Key+West%2C+FL%2C+33040
+data= 24.553922,-81.803260,601 Whitehead St,Key West,FL,33040
+tuple= [601 Whitehead St, Key West, FL, 33040, 601 Whitehead St, Key West, FL, 33040, 24.553922, -81.803260]
+-6.637: geospatial157($PR_Address0,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,_).
+-3.739: geospatial157($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+url = http://geocoder.us/service/csv/geocode?address=623+Sierra+St%2C+El+Segundo%2C+CA%2C+90245
+data= 33.923727,-118.408731,623 Sierra St,El Segundo,CA,90245
+tuple= [623 Sierra St, El Segundo, CA, 90245, 623 Sierra St, El Segundo, CA, 90245, 33.923727, -118.408731]
+-6.679: geospatial157($_,PR_Address1,_,_,_)	:- USGeocoder(PR_Address1,_,_,_,_,_,_).
+-3.780: geospatial157($_,PR_Address1,_,PR_Zip3,_)	:- USGeocoder(PR_Address1,_,_,_,PR_Zip3,_,_).
+-6.679: geospatial157($_,_,PR_Address2,_,_)	:- USGeocoder(PR_Address2,_,_,_,_,_,_).
+-3.780: geospatial157($_,_,PR_Address2,PR_Zip3,_)	:- USGeocoder(PR_Address2,_,_,_,PR_Zip3,_,_).
+-6.679: geospatial157($_,_,_,_,PR_Address4)	:- USGeocoder(PR_Address4,_,_,_,_,_,_).
+-3.780: geospatial157($_,_,_,PR_Zip3,PR_Address4)	:- USGeocoder(PR_Address4,_,_,_,PR_Zip3,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+
+************************************************************************
+timestmp = 1230150947593
+target = geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+definition = geospatial157($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+unfolding = geospatial157($PR_Address0,_,_,PR_Zip3,_)	:- Address(PR_Address0,_,_,_,_,PR_Zip3,_,_,_,_).
+score = 1.825694966190834E-4
+normalisedScore = -1.4146938356415886
+candidates = 3
+totalCandidates = 9
+accesses = 21
+totalAccesses = 22
+time = 136
+totalTime = 152
+timeout = 5400
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+CREATE TABLE IF NOT EXISTS output.wrapcache_081223b_no__geospatial157 ( `timestmp` varchar(15),`target` varchar(2000),`definition` varchar(2000),`unfolding` varchar(5000),`score` varchar(45),`normalisedScore` varchar(45),`candidates` varchar(10),`totalCandidates` varchar(10),`accesses` varchar(10),`totalAccesses` varchar(10),`time` varchar(15),`totalTime` varchar(15),`timeout` varchar(15),`maxClauseLength` varchar(10),`maxPredRepitition` varchar(10),`maxVarLevel` varchar(10),`noVarRepetition` varchar(10),`heuristic` varchar(100), PRIMARY KEY (`timestmp`) )
+
+real	2m33.907s
+user	0m0.015s
+sys	0m0.061s
+wrapcache_081223b_no__geospatial158.txt
+java -classpath .;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/lib/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin Tester C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial158.txt C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/dbProperties.txt
+noVarRepetition = true
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial158.txt
+
+## Semantic Types: 
+type PR_Latitude    [varchar(200)]  {numeric: -90.0, 90.0, 0.01}
+type PR_Longitude   [varchar(200)]  {numeric: -180.0, 180.0, 0.01}
+type PR_LatDMS      [varchar(200)]  {examples: examples.latitudedms.val}
+type PR_LonDMS      [varchar(200)]  {examples: examples.longitudedms.val}
+type PR_UTM         [varchar(200)]  
+type PR_Address     [varchar(200)]  {examples: examples.address.val;equality: JaroWinkler > 0.85}
+type PR_Street      [varchar(200)]  {examples: examples.street.val;equality: JaroWinkler > 0.85}
+type PR_City        [varchar(200)]  {examples: examples.city.val[occurs]}
+type PR_StateAbbr   [varchar(200)]  {examples: examples.usstates.code}
+type PR_State       [varchar(200)]  {examples: examples.usstates.name[occurs]}
+type PR_Zip         [varchar(200)]  {examples: examples.zipcode.val}
+type PR_Country     [varchar(200)]  {examples: examples.country.val}
+type PR_Country_Abbr [varchar(200)] {examples: examples.countryAbbr.val}
+type PR_CityStateZip [varchar(200)] {examples: examples.city_state_zip.val;equality: JaroWinkler > 0.85}
+type PR_CityState   [varchar(200)]  
+
+## Domain Relations: 
+relation Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Comparison Predicates: 
+
+## Sources: 
+source USGeocoder($PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Latitude,PR_Longitude)	:- Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).	{wrappers.USGeocoder; address}
+
+## Target Predicates: 
+target geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address)	{wrappers.DBService; http://en.wikipedia.org/wiki/Geocoding; null; PR-Address}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.USGeocoder
+DROP TABLE IF EXISTS cache.InvocationsOf_USGeocoder
+CREATE TABLE cache.USGeocoder ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_City2 varchar(200),PR_StateAbbr3 varchar(200),PR_Zip4 varchar(200),PR_Latitude5 varchar(200),PR_Longitude6 varchar(200) )
+CREATE TABLE cache.InvocationsOf_USGeocoder ( PR_Address0 varchar(200) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.geospatial158
+DROP TABLE IF EXISTS cache.InvocationsOf_geospatial158
+CREATE TABLE cache.geospatial158 ( PR_Address0 varchar(200),PR_Address1 varchar(200),PR_Street2 varchar(200),PR_Address3 varchar(200),PR_StateAbbr4 varchar(200),PR_Address5 varchar(200),PR_Address6 varchar(200),PR_Address7 varchar(200) )
+CREATE TABLE cache.InvocationsOf_geospatial158 ( PR_Address0 varchar(200) )
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [4750 N. Meridian St., Indianapolis, IN 46208]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [1600 Pennsylvania Ave NW, Washington, DC, 20502]
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [601 Whitehead St, Key West, FL, 33040]
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [300 SW 10th Ave., Topeka, KS 66612]
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [623 Sierra St, El Segundo, CA, 90245]
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [210 Capitol Avenue, Hartford, CT 06106]
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [600 Dexter Avenue, Montgomery, AL 36130]
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [4676 Admiralty Way, Marina del Rey, CA, 90292]
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [1700 West Washington, Phoenix, AZ 85007]
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [400 S. Monroe St., Tallahassee, FL 32399]
+Invoking target: geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address) with [1007 East Grand Ave., Des Moines, IA 50319]
+
+****************************************************************
+STARTING SEARCH: 
+*********************************************************************************************************************************************************************************************************
+PR_Address0                                                                                                                                                                                              
+(PR_Address)                                                                                                                                                                                             
+
+4750 N. Meridian St., Indianapolis, IN 46208                                                                                                                                                             
+601 Whitehead St, Key West, FL, 33040                                                                                                                                                                    
+300 SW 10th Ave., Topeka, KS 66612                                                                                                                                                                       
+1700 West Washington, Phoenix, AZ 85007                                                                                                                                                                  
+1600 Pennsylvania Ave NW, Washington, DC, 20502                                                                                                                                                          
+1007 East Grand Ave., Des Moines, IA 50319                                                                                                                                                               
+4676 Admiralty Way, Marina del Rey, CA, 90292                                                                                                                                                            
+400 S. Monroe St., Tallahassee, FL 32399                                                                                                                                                                 
+210 Capitol Avenue, Hartford, CT 06106                                                                                                                                                                   
+600 Dexter Avenue, Montgomery, AL 36130                                                                                                                                                                  
+623 Sierra St, El Segundo, CA, 90245                                                                                                                                                                     
+*********************************************************************************************************************************************************************************************************
+
+-7.960: geospatial158($_,_,_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+url = http://geocoder.us/service/csv/geocode?address=4750+N.+Meridian+St.%2C+Indianapolis%2C+IN+46208
+data= 39.822204,-86.156831,3701 N Meridian St,Indianapolis city,IN,46208
+tuple= [4750 N. Meridian St., Indianapolis, IN 46208, 3701 N Meridian St, Indianapolis city, IN, 46208, 39.822204, -86.156831]
+url = http://geocoder.us/service/csv/geocode?address=601+Whitehead+St%2C+Key+West%2C+FL%2C+33040
+data= 24.553922,-81.803260,601 Whitehead St,Key West,FL,33040
+tuple= [601 Whitehead St, Key West, FL, 33040, 601 Whitehead St, Key West, FL, 33040, 24.553922, -81.803260]
+url = http://geocoder.us/service/csv/geocode?address=300+SW+10th+Ave.%2C+Topeka%2C+KS+66612
+data= 39.046754,-95.678724,300 SW 10th Ave,Topeka,KS,66612
+tuple= [300 SW 10th Ave., Topeka, KS 66612, 300 SW 10th Ave, Topeka, KS, 66612, 39.046754, -95.678724]
+url = http://geocoder.us/service/csv/geocode?address=1700+West+Washington%2C+Phoenix%2C+AZ+85007
+data= 33.448543,-112.095704,1700 W Washington St,Phoenix,AZ,85007
+tuple= [1700 West Washington, Phoenix, AZ 85007, 1700 W Washington St, Phoenix, AZ, 85007, 33.448543, -112.095704]
+url = http://geocoder.us/service/csv/geocode?address=1600+Pennsylvania+Ave+NW%2C+Washington%2C+DC%2C+20502
+data= 38.898748,-77.037684,1600 Pennsylvania Ave NW,Washington,DC,20502
+tuple= [1600 Pennsylvania Ave NW, Washington, DC, 20502, 1600 Pennsylvania Ave NW, Washington, DC, 20502, 38.898748, -77.037684]
+url = http://geocoder.us/service/csv/geocode?address=1007+East+Grand+Ave.%2C+Des+Moines%2C+IA+50319
+data= 41.591974,-93.604559,1007 E Grand Ave,Des Moines,IA,50316
+tuple= [1007 East Grand Ave., Des Moines, IA 50319, 1007 E Grand Ave, Des Moines, IA, 50316, 41.591974, -93.604559]
+url = http://geocoder.us/service/csv/geocode?address=4676+Admiralty+Way%2C+Marina+del+Rey%2C+CA%2C+90292
+data= 33.980305,-118.440470,4676 Admiralty Way,Marina del Rey,CA,90292
+tuple= [4676 Admiralty Way, Marina del Rey, CA, 90292, 4676 Admiralty Way, Marina del Rey, CA, 90292, 33.980305, -118.440470]
+url = http://geocoder.us/service/csv/geocode?address=400+S.+Monroe+St.%2C+Tallahassee%2C+FL+32399
+data= 30.439000,-84.280499,400 S Monroe St,Tallahassee,FL,32301
+tuple= [400 S. Monroe St., Tallahassee, FL 32399, 400 S Monroe St, Tallahassee, FL, 32301, 30.439000, -84.280499]
+url = http://geocoder.us/service/csv/geocode?address=210+Capitol+Avenue%2C+Hartford%2C+CT+06106
+data= 41.762664,-72.682270,210 Capitol Ave,Hartford,CT,06106
+tuple= [210 Capitol Avenue, Hartford, CT 06106, 210 Capitol Ave, Hartford, CT, 06106, 41.762664, -72.682270]
+url = http://geocoder.us/service/csv/geocode?address=600+Dexter+Avenue%2C+Montgomery%2C+AL+36130
+data= 32.377189,-86.301963,600 Dexter Ave,Montgomery,AL,36104
+tuple= [600 Dexter Avenue, Montgomery, AL 36130, 600 Dexter Ave, Montgomery, AL, 36104, 32.377189, -86.301963]
+-8.006: geospatial158($PR_Address0,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,_).
+-7.006: geospatial158($PR_Address0,_,PR_Street2,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street2,_,_,_,_,_).
+-6.298: geospatial158($PR_Address0,_,_,_,PR_StateAbbr4,_,_,_)	:- USGeocoder(PR_Address0,_,_,PR_StateAbbr4,_,_,_).
+-5.298: geospatial158($PR_Address0,_,PR_Street2,_,PR_StateAbbr4,_,_,_)	:- USGeocoder(PR_Address0,PR_Street2,_,PR_StateAbbr4,_,_,_).
+url = http://geocoder.us/service/csv/geocode?address=623+Sierra+St%2C+El+Segundo%2C+CA%2C+90245
+data= 33.923727,-118.408731,623 Sierra St,El Segundo,CA,90245
+tuple= [623 Sierra St, El Segundo, CA, 90245, 623 Sierra St, El Segundo, CA, 90245, 33.923727, -118.408731]
+-8.047: geospatial158($_,PR_Address1,_,_,_,_,_,_)	:- USGeocoder(PR_Address1,_,_,_,_,_,_).
+-7.047: geospatial158($_,PR_Address1,PR_Street2,_,_,_,_,_)	:- USGeocoder(PR_Address1,PR_Street2,_,_,_,_,_).
+-6.340: geospatial158($_,PR_Address1,_,_,PR_StateAbbr4,_,_,_)	:- USGeocoder(PR_Address1,_,_,PR_StateAbbr4,_,_,_).
+-5.340: geospatial158($_,PR_Address1,PR_Street2,_,PR_StateAbbr4,_,_,_)	:- USGeocoder(PR_Address1,PR_Street2,_,PR_StateAbbr4,_,_,_).
+-8.047: geospatial158($_,_,_,PR_Address3,_,_,_,_)	:- USGeocoder(PR_Address3,_,_,_,_,_,_).
+-7.047: geospatial158($_,_,PR_Street2,PR_Address3,_,_,_,_)	:- USGeocoder(PR_Address3,PR_Street2,_,_,_,_,_).
+-6.340: geospatial158($_,_,_,PR_Address3,PR_StateAbbr4,_,_,_)	:- USGeocoder(PR_Address3,_,_,PR_StateAbbr4,_,_,_).
+-5.340: geospatial158($_,_,PR_Street2,PR_Address3,PR_StateAbbr4,_,_,_)	:- USGeocoder(PR_Address3,PR_Street2,_,PR_StateAbbr4,_,_,_).
+-8.047: geospatial158($_,_,_,_,_,PR_Address5,_,_)	:- USGeocoder(PR_Address5,_,_,_,_,_,_).
+-7.047: geospatial158($_,_,PR_Street2,_,_,PR_Address5,_,_)	:- USGeocoder(PR_Address5,PR_Street2,_,_,_,_,_).
+-6.340: geospatial158($_,_,_,_,PR_StateAbbr4,PR_Address5,_,_)	:- USGeocoder(PR_Address5,_,_,PR_StateAbbr4,_,_,_).
+-5.340: geospatial158($_,_,PR_Street2,_,PR_StateAbbr4,PR_Address5,_,_)	:- USGeocoder(PR_Address5,PR_Street2,_,PR_StateAbbr4,_,_,_).
+-8.047: geospatial158($_,_,_,_,_,_,PR_Address6,_)	:- USGeocoder(PR_Address6,_,_,_,_,_,_).
+-7.047: geospatial158($_,_,PR_Street2,_,_,_,PR_Address6,_)	:- USGeocoder(PR_Address6,PR_Street2,_,_,_,_,_).
+-6.340: geospatial158($_,_,_,_,PR_StateAbbr4,_,PR_Address6,_)	:- USGeocoder(PR_Address6,_,_,PR_StateAbbr4,_,_,_).
+-5.340: geospatial158($_,_,PR_Street2,_,PR_StateAbbr4,_,PR_Address6,_)	:- USGeocoder(PR_Address6,PR_Street2,_,PR_StateAbbr4,_,_,_).
+-8.047: geospatial158($_,_,_,_,_,_,_,PR_Address7)	:- USGeocoder(PR_Address7,_,_,_,_,_,_).
+-7.047: geospatial158($_,_,PR_Street2,_,_,_,_,PR_Address7)	:- USGeocoder(PR_Address7,PR_Street2,_,_,_,_,_).
+-6.340: geospatial158($_,_,_,_,PR_StateAbbr4,_,_,PR_Address7)	:- USGeocoder(PR_Address7,_,_,PR_StateAbbr4,_,_,_).
+-5.340: geospatial158($_,_,PR_Street2,_,PR_StateAbbr4,_,_,PR_Address7)	:- USGeocoder(PR_Address7,PR_Street2,_,PR_StateAbbr4,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+
+************************************************************************
+timestmp = 1230151101421
+target = geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address)
+definition = geospatial158($PR_Address0,_,PR_Street2,_,PR_StateAbbr4,_,_,_)	:- USGeocoder(PR_Address0,PR_Street2,_,PR_StateAbbr4,_,_,_).
+unfolding = geospatial158($PR_Address0,_,PR_Street2,_,PR_StateAbbr4,_,_,_)	:- Address(PR_Address0,PR_Street2,_,PR_StateAbbr4,_,_,_,_,_,_).
+score = 5.029462716779157E-6
+normalisedScore = -0.21072103131565253
+candidates = 5
+totalCandidates = 25
+accesses = 21
+totalAccesses = 22
+time = 137
+totalTime = 156
+timeout = 5400
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+CREATE TABLE IF NOT EXISTS output.wrapcache_081223b_no__geospatial158 ( `timestmp` varchar(15),`target` varchar(2000),`definition` varchar(2000),`unfolding` varchar(5000),`score` varchar(45),`normalisedScore` varchar(45),`candidates` varchar(10),`totalCandidates` varchar(10),`accesses` varchar(10),`totalAccesses` varchar(10),`time` varchar(15),`totalTime` varchar(15),`timeout` varchar(15),`maxClauseLength` varchar(10),`maxPredRepitition` varchar(10),`maxVarLevel` varchar(10),`noVarRepetition` varchar(10),`heuristic` varchar(100), PRIMARY KEY (`timestmp`) )
+
+real	2m37.753s
+user	0m0.015s
+sys	0m0.015s
+wrapcache_081223b_no__geospatial159.txt
+java -classpath .;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/lib/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin/*;C:/users/ambite/projects/source-modeling/code/SourceInduction/trunk/bin Tester C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial159.txt C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/dbProperties.txt
+noVarRepetition = true
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: C:/users/ambite/projects/source-modeling/experiments/geospatial/2008-12-24/wrapcache_081223b_no__geospatial159.txt
+
+## Semantic Types: 
+type PR_Latitude    [varchar(200)]  {numeric: -90.0, 90.0, 0.01}
+type PR_Longitude   [varchar(200)]  {numeric: -180.0, 180.0, 0.01}
+type PR_LatDMS      [varchar(200)]  {examples: examples.latitudedms.val}
+type PR_LonDMS      [varchar(200)]  {examples: examples.longitudedms.val}
+type PR_UTM         [varchar(200)]  
+type PR_Address     [varchar(200)]  {examples: examples.address.val;equality: JaroWinkler > 0.85}
+type PR_Street      [varchar(200)]  {examples: examples.street.val;equality: JaroWinkler > 0.85}
+type PR_City        [varchar(200)]  {examples: examples.city.val[occurs]}
+type PR_StateAbbr   [varchar(200)]  {examples: examples.usstates.code}
+type PR_State       [varchar(200)]  {examples: examples.usstates.name[occurs]}
+type PR_Zip         [varchar(200)]  {examples: examples.zipcode.val}
+type PR_Country     [varchar(200)]  {examples: examples.country.val}
+type PR_Country_Abbr [varchar(200)] {examples: examples.countryAbbr.val}
+type PR_CityStateZip [varchar(200)] {examples: examples.city_state_zip.val;equality: JaroWinkler > 0.85}
+type PR_CityState   [varchar(200)]  
+
+## Domain Relations: 
+relation Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Comparison Predicates: 
+
+## Sources: 
+source USGeocoder($PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Latitude,PR_Longitude)	:- Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).	{wrappers.USGeocoder; address}
+
+## Target Predicates: 
+target geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)	{wrappers.DBService; http://www.hostip.info/index.html; null; PR-Address}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.USGeocoder
+DROP TABLE IF EXISTS cache.InvocationsOf_USGeocoder
+CREATE TABLE cache.USGeocoder ( PR_Address0 varchar(200),PR_Street1 varchar(200),PR_City2 varchar(200),PR_StateAbbr3 varchar(200),PR_Zip4 varchar(200),PR_Latitude5 varchar(200),PR_Longitude6 varchar(200) )
+CREATE TABLE cache.InvocationsOf_USGeocoder ( PR_Address0 varchar(200) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.geospatial159
+DROP TABLE IF EXISTS cache.InvocationsOf_geospatial159
+CREATE TABLE cache.geospatial159 ( PR_Address0 varchar(200),PR_Address1 varchar(200),PR_Address2 varchar(200),PR_Zip3 varchar(200),PR_Address4 varchar(200) )
+CREATE TABLE cache.InvocationsOf_geospatial159 ( PR_Address0 varchar(200) )
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [601 Whitehead St, Key West, FL, 33040]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [1700 West Washington, Phoenix, AZ 85007]
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [623 Sierra St, El Segundo, CA, 90245]
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [1600 Pennsylvania Ave NW, Washington, DC, 20502]
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [4676 Admiralty Way, Marina del Rey, CA, 90292]
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [4750 N. Meridian St., Indianapolis, IN 46208]
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [600 Dexter Avenue, Montgomery, AL 36130]
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [300 SW 10th Ave., Topeka, KS 66612]
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [210 Capitol Avenue, Hartford, CT 06106]
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [400 S. Monroe St., Tallahassee, FL 32399]
+Invoking target: geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address) with [1007 East Grand Ave., Des Moines, IA 50319]
+
+****************************************************************
+STARTING SEARCH: 
+*********************************************************************************************************************************************************************************************************
+PR_Address0                                                                                                                                                                                              
+(PR_Address)                                                                                                                                                                                             
+
+1700 West Washington, Phoenix, AZ 85007                                                                                                                                                                  
+300 SW 10th Ave., Topeka, KS 66612                                                                                                                                                                       
+210 Capitol Avenue, Hartford, CT 06106                                                                                                                                                                   
+1007 East Grand Ave., Des Moines, IA 50319                                                                                                                                                               
+601 Whitehead St, Key West, FL, 33040                                                                                                                                                                    
+1600 Pennsylvania Ave NW, Washington, DC, 20502                                                                                                                                                          
+4750 N. Meridian St., Indianapolis, IN 46208                                                                                                                                                             
+600 Dexter Avenue, Montgomery, AL 36130                                                                                                                                                                  
+400 S. Monroe St., Tallahassee, FL 32399                                                                                                                                                                 
+4676 Admiralty Way, Marina del Rey, CA, 90292                                                                                                                                                            
+623 Sierra St, El Segundo, CA, 90245                                                                                                                                                                     
+*********************************************************************************************************************************************************************************************************
+
+-6.591: geospatial159($_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+url = http://geocoder.us/service/csv/geocode?address=1700+West+Washington%2C+Phoenix%2C+AZ+85007
+data= 33.448543,-112.095704,1700 W Washington St,Phoenix,AZ,85007
+tuple= [1700 West Washington, Phoenix, AZ 85007, 1700 W Washington St, Phoenix, AZ, 85007, 33.448543, -112.095704]
+url = http://geocoder.us/service/csv/geocode?address=300+SW+10th+Ave.%2C+Topeka%2C+KS+66612
+data= 39.046754,-95.678724,300 SW 10th Ave,Topeka,KS,66612
+tuple= [300 SW 10th Ave., Topeka, KS 66612, 300 SW 10th Ave, Topeka, KS, 66612, 39.046754, -95.678724]
+url = http://geocoder.us/service/csv/geocode?address=210+Capitol+Avenue%2C+Hartford%2C+CT+06106
+data= 41.762664,-72.682270,210 Capitol Ave,Hartford,CT,06106
+tuple= [210 Capitol Avenue, Hartford, CT 06106, 210 Capitol Ave, Hartford, CT, 06106, 41.762664, -72.682270]
+url = http://geocoder.us/service/csv/geocode?address=1007+East+Grand+Ave.%2C+Des+Moines%2C+IA+50319
+data= 41.591974,-93.604559,1007 E Grand Ave,Des Moines,IA,50316
+tuple= [1007 East Grand Ave., Des Moines, IA 50319, 1007 E Grand Ave, Des Moines, IA, 50316, 41.591974, -93.604559]
+url = http://geocoder.us/service/csv/geocode?address=601+Whitehead+St%2C+Key+West%2C+FL%2C+33040
+data= 24.553922,-81.803260,601 Whitehead St,Key West,FL,33040
+tuple= [601 Whitehead St, Key West, FL, 33040, 601 Whitehead St, Key West, FL, 33040, 24.553922, -81.803260]
+url = http://geocoder.us/service/csv/geocode?address=1600+Pennsylvania+Ave+NW%2C+Washington%2C+DC%2C+20502
+data= 38.898748,-77.037684,1600 Pennsylvania Ave NW,Washington,DC,20502
+tuple= [1600 Pennsylvania Ave NW, Washington, DC, 20502, 1600 Pennsylvania Ave NW, Washington, DC, 20502, 38.898748, -77.037684]
+url = http://geocoder.us/service/csv/geocode?address=4750+N.+Meridian+St.%2C+Indianapolis%2C+IN+46208
+data= 39.822204,-86.156831,3701 N Meridian St,Indianapolis city,IN,46208
+tuple= [4750 N. Meridian St., Indianapolis, IN 46208, 3701 N Meridian St, Indianapolis city, IN, 46208, 39.822204, -86.156831]
+url = http://geocoder.us/service/csv/geocode?address=600+Dexter+Avenue%2C+Montgomery%2C+AL+36130
+data= 32.377189,-86.301963,600 Dexter Ave,Montgomery,AL,36104
+tuple= [600 Dexter Avenue, Montgomery, AL 36130, 600 Dexter Ave, Montgomery, AL, 36104, 32.377189, -86.301963]
+url = http://geocoder.us/service/csv/geocode?address=400+S.+Monroe+St.%2C+Tallahassee%2C+FL+32399
+data= 30.439000,-84.280499,400 S Monroe St,Tallahassee,FL,32301
+tuple= [400 S. Monroe St., Tallahassee, FL 32399, 400 S Monroe St, Tallahassee, FL, 32301, 30.439000, -84.280499]
+url = http://geocoder.us/service/csv/geocode?address=4676+Admiralty+Way%2C+Marina+del+Rey%2C+CA%2C+90292
+data= 33.980305,-118.440470,4676 Admiralty Way,Marina del Rey,CA,90292
+tuple= [4676 Admiralty Way, Marina del Rey, CA, 90292, 4676 Admiralty Way, Marina del Rey, CA, 90292, 33.980305, -118.440470]
+-6.637: geospatial159($PR_Address0,_,_,_,_)	:- USGeocoder(PR_Address0,_,_,_,_,_,_).
+-3.739: geospatial159($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+url = http://geocoder.us/service/csv/geocode?address=623+Sierra+St%2C+El+Segundo%2C+CA%2C+90245
+data= 33.923727,-118.408731,623 Sierra St,El Segundo,CA,90245
+tuple= [623 Sierra St, El Segundo, CA, 90245, 623 Sierra St, El Segundo, CA, 90245, 33.923727, -118.408731]
+-6.679: geospatial159($_,PR_Address1,_,_,_)	:- USGeocoder(PR_Address1,_,_,_,_,_,_).
+-3.780: geospatial159($_,PR_Address1,_,PR_Zip3,_)	:- USGeocoder(PR_Address1,_,_,_,PR_Zip3,_,_).
+-6.679: geospatial159($_,_,PR_Address2,_,_)	:- USGeocoder(PR_Address2,_,_,_,_,_,_).
+-3.780: geospatial159($_,_,PR_Address2,PR_Zip3,_)	:- USGeocoder(PR_Address2,_,_,_,PR_Zip3,_,_).
+-6.679: geospatial159($_,_,_,_,PR_Address4)	:- USGeocoder(PR_Address4,_,_,_,_,_,_).
+-3.780: geospatial159($_,_,_,PR_Zip3,PR_Address4)	:- USGeocoder(PR_Address4,_,_,_,PR_Zip3,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+class induction.Heuristic: Ordering predicates according to heuristic: random
+
+************************************************************************
+timestmp = 1230151259234
+target = geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+definition = geospatial159($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+unfolding = geospatial159($PR_Address0,_,_,PR_Zip3,_)	:- Address(PR_Address0,_,_,_,_,PR_Zip3,_,_,_,_).
+score = 1.825694966190834E-4
+normalisedScore = -1.4146938356415886
+candidates = 3
+totalCandidates = 9
+accesses = 21
+totalAccesses = 22
+time = 133
+totalTime = 151
+timeout = 5400
+maxClauseLength = 7
+maxPredRepitition = 1
+maxVarLevel = 5
+noVarRepetition = true
+heuristic = random
+************************************************************************
+CREATE TABLE IF NOT EXISTS output.wrapcache_081223b_no__geospatial159 ( `timestmp` varchar(15),`target` varchar(2000),`definition` varchar(2000),`unfolding` varchar(5000),`score` varchar(45),`normalisedScore` varchar(45),`candidates` varchar(10),`totalCandidates` varchar(10),`accesses` varchar(10),`totalAccesses` varchar(10),`time` varchar(15),`totalTime` varchar(15),`timeout` varchar(15),`maxClauseLength` varchar(10),`maxPredRepitition` varchar(10),`maxVarLevel` varchar(10),`noVarRepetition` varchar(10),`heuristic` varchar(100), PRIMARY KEY (`timestmp`) )
+
+real	2m33.576s
+user	0m0.031s
+sys	0m0.031s
+
+
+real    20m10.845s
+user    0m0.260s
+sys     0m0.479s

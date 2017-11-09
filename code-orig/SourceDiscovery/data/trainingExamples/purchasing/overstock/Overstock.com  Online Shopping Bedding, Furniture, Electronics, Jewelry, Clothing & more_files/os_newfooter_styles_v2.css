@@ -1,0 +1,17 @@
+#OverstockCanWeHelp  {border: 1px solid #cccccc; border-bottom: 1px solid #eeeeee; }
+#OverstockFooter {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; color: #333333; background-color: #eeeeee; border: 1px solid #cccccc; border-top: 3px solid #96171a; background-image: url(http://www.overstock.com/img/mxc/overstockfooter_o.gif); background-repeat: no-repeat; background-position: right top; }
+#OverstockFooter a {color: #333333; text-decoration: none !important;}
+#OverstockFooter a:hover {text-decoration: underline !important;}
+#OverstockFooter FORM { margin: 0; padding: 0; }
+#OverstockFooter TD { text-align:left; padding: 5px; border-left: 1px solid #dddddd;}
+#OverstockFooter ul {margin: 0; padding: 0;}
+#OverstockFooter li {padding: 1px; margin:0; margin-left: 15px;}	
+#OverstockFooter li.top {list-style: none; margin: 0; padding: 0; font-size:12px; font-weight:bold;}
+#OverstockFooter li.extrapad {padding-top: 5px;}
+#OverstockFooter li.nobullet {list-style: none;}
+#OverstockFooter input.footsearch {width: 110px; height: 20px; border: 1px solid #cccccc; padding: 1px; margin: 3px 5px 0px 0px;}
+#OverstockFooter input.footgo {width: 25px; height: 20px; background: #333333; color: #ffffff; border: 1px solid #ffffff; font-weight: bold; font-size: 12px;}
+#OverstockFooter select.footdrop {width: 150px; height: 20px; color: #333333; border: 1px solid #cccccc; font-size: 10px;  margin: 3px 5px 0px 0px;}
+td.footverify { background: #ffffff; padding-top: 20px; text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px; 	color: #333333;}
+
+#BVdefaultURL { visibility: visible }

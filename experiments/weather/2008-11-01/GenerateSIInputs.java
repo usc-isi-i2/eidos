@@ -1,0 +1,144 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.sql.Connection;
+import java.util.StringTokenizer;
+import edu.isi.calo.mapping.gui.ODBCSourceInfo;
+
+public class GenerateSIInputs {
+
+	//the DB that has the type examples
+	static String dbInfo = "MYSQL:dbName:ragnarok.isi.edu:3306:root:taipei";
+	static Connection conn;
+	static String dbName = "wrapcache_oct5";
+
+	static String inputFileName = "./weather.txt";
+	static String outputFileName = "./";
+
+	public static void main(String args[]){
+
+		if(args.length>0){
+			//should have 2 args
+			inputFileName = args[0];
+			dbName = args[1];
+		}
+
+		System.out.println( "args[0]= " + args[0] + 
+				    "  args[1]= " + args[1] );
+
+		dbInfo = dbInfo.replaceAll("dbName", dbName);		
+
+		conn = ODBCSourceInfo.connect(dbInfo);
+		
+		StringBuffer fileContent = getFileContent(inputFileName);
+		
+		constructFiles(fileContent.toString());
+	}
+	
+	static void constructFiles(String fileContent){
+		String q = "select tablename, formname, url from sourceid";
+		String result = ODBCSourceInfo.executeQuery(conn,q,"@@@");
+		//System.out.println("Result=" + result);
+		
+		StringTokenizer row = new StringTokenizer(result, "\n");
+		while(row.hasMoreTokens()){
+			String oneRow = row.nextToken().trim();
+			StringTokenizer col = new StringTokenizer(oneRow,"@@@");
+			//will have 3 tokens
+			String tablename = col.nextToken().trim();
+			String formname = col.nextToken().trim();
+			String formurl = col.nextToken().trim();
+			String target = buildTarget(tablename, formname, formurl);
+			constructFile(fileContent, target, tablename);
+			//System.exit(0);
+		}
+	}
+	
+	static void constructFile(String fileContent, String target, String tablename){
+		String fName = outputFileName+ dbName + "__" + tablename + ".txt";
+		System.out.println("Create file:" + fName);
+		//System.out.println("target:" + target);
+		fileContent += "\n" + target + "\n";
+		try{
+			FileWriter fo = new FileWriter(fName);
+			fo.write(fileContent, 0, fileContent.length()-1);
+			fo.close();
+		} catch (IOException e) {
+			System.out.println(e);
+		}
+
+	}
+
+	static String buildTarget(String tablename, String formname, String formurl){
+		String target = "";
+		String semanticTypes = getSemanticTypes(tablename);
+		
+		target = "target " + tablename + "(" + semanticTypes + ") {wrappers.DBService; " + 
+			formurl + "; " + formname + "}";
+		return target;
+	}
+
+	static String getSemanticTypes(String tablename){
+		String semanticTypes = "";
+		String q = "select semantictype, direction, argumentno from sourceschema where tablename ='" +
+				tablename + "' order by argumentno DESC";
+		
+		String result = ODBCSourceInfo.executeQuery(conn,q,"@@@");
+		//System.out.println("Result=" + result);
+		
+		StringTokenizer row = new StringTokenizer(result, "\n");
+		int nrRows=0;
+		while(row.hasMoreTokens()){
+			String oneRow = row.nextToken().trim();
+			StringTokenizer col = new StringTokenizer(oneRow,"@@@");
+			//will have 2 tokens
+			String semantictype = col.nextToken().trim();
+			String direction = col.nextToken().trim();
+
+			if(nrRows>0) semanticTypes += ","; 
+			semanticTypes += prepareTypeName(semantictype, direction);
+			nrRows++;
+		}
+		return semanticTypes;
+	}
+	
+	static StringBuffer getFileContent(String file){
+
+		StringBuffer content = new StringBuffer();
+		BufferedReader buff = null;
+		File f = null;
+		try {
+			f = new File(file);
+			buff = new BufferedReader(new FileReader(f));
+		} catch (FileNotFoundException e) {
+			System.out.println(e);
+			System.out.println("pattern file was not found:"+ f.toString());
+		}
+		try {
+			String line = null;
+			while((line= buff.readLine())!=null){
+				content.append(line + "\n");
+			}
+			buff.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return content;
+	}
+
+	static public String prepareTypeName(String name, String direction){
+		String s = name;
+		s = s.replace('-','_');
+		if(s.equals("PR_TempInC") || s.equals("PR_TempCdeg"))
+			s="PR_TempC";
+		if(s.equals("PR_TempInF") || s.equals("PR_TempFdeg"))
+			s="PR_TempF";
+		if(direction.equals("IN"))
+			s = "$" + s;
+		return s;
+	}	
+}
+

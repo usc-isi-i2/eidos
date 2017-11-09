@@ -1,0 +1,92 @@
+package invocation;
+
+import invocation.Wrapper;
+import relational.Table;
+import java.util.ArrayList;
+
+public class Local implements Wrapper {
+			
+	public Table invoke(String[] endpoint, ArrayList<String> inputTuple) {
+		return invokeStatic(endpoint,inputTuple);
+	}
+	
+	public static Table invokeStatic(String[] endpoint, ArrayList<String> inputTuple) {
+		    	
+		if (endpoint[1].equalsIgnoreCase("add")||
+			endpoint[1].equalsIgnoreCase("subtract")||
+			endpoint[1].equalsIgnoreCase("multiply")||
+			endpoint[1].equalsIgnoreCase("divide")) {
+				
+			Table t = new Table(new String[] {"input0","input1","result"});
+			try {
+				Double input0 = Double.parseDouble(inputTuple.get(0)); 
+				Double input1 = Double.parseDouble(inputTuple.get(1));
+				Double result = null;
+				if (endpoint[1].equalsIgnoreCase("add")) { result = input0 + input1; } 
+				else if (endpoint[1].equalsIgnoreCase("subtract")) { result = input0 - input1; } 
+				else if (endpoint[1].equalsIgnoreCase("multiply")) { result = input0 * input1; } 
+				else if (endpoint[1].equalsIgnoreCase("divide")) { result = input0 / input1; } 
+				t.insertDistinct(new String[] {inputTuple.get(0),inputTuple.get(1),result+""});
+	    	}
+			catch (Exception e) {
+				//System.err.println("Error in invocation.Local with inputs: <"+inputTuple.get(0)+","+inputTuple.get(1)+">");
+			}
+			return t;
+			
+		}
+		else if (endpoint[1].equalsIgnoreCase("contains")) {
+			Table t = new Table(new String[] {"input0","output"});
+			String input0 = inputTuple.get(0).trim();
+			String[] items = input0.split(",");
+			for (String item: items) {
+				t.insertDistinct(new String[] {inputTuple.get(0),item.trim()});
+			}	
+	    	return t;
+		}
+		else if (endpoint[1].equalsIgnoreCase("substring")) {
+			Table t = new Table(new String[] {"input0","input1"});
+			String input0 = inputTuple.get(0).trim();
+			String input1 = inputTuple.get(1).trim();
+			if (input0.length()>3 && input1.indexOf(input0)!=-1) {
+				t.insertDistinct(new String[] {inputTuple.get(0),inputTuple.get(1)});
+			}	
+	    	return t;
+		}
+		else if (endpoint[1].equalsIgnoreCase("addIntegers")) {
+			Table t = new Table(new String[] {"input0","input1","result"});
+			try {
+				int input0 = Integer.parseInt(inputTuple.get(0).trim());
+			    int input1 = Integer.parseInt(inputTuple.get(1).trim());
+				t.insertDistinct(new String[] {inputTuple.get(0),inputTuple.get(1),(input0+input1)+""});
+			}
+			catch (Exception e) {
+				//System.err.println("Error in invocation.Local with inputs: <"+inputTuple.get(0)+","+inputTuple.get(1)+">");
+			}
+	    	return t;
+		}
+		else {
+    		System.err.println("Error: No method called " + endpoint[1] + " in  invocation.Local");
+    		System.exit(9);
+    	}
+
+    	return null;
+    	
+	}
+
+
+	public void testWrapper() {
+
+		String[] endpoint;
+		ArrayList<String> input;
+		
+		// test 0:
+		endpoint = new String[2];
+		endpoint[1] = "divide";
+		input = new ArrayList<String>();
+		input.add("10");
+		input.add("5");
+		invoke(endpoint,input).print();
+		
+	}
+	
+}

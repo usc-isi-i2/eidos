@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <Worksheet ss:Name="Table1">
+  <Table>
+   <Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>   <Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>   <Row>
+    <Cell><Data ss:Type="String">airlinecode2</Data></Cell>
+    <Cell><Data ss:Type="String">flightnumber</Data></Cell>
+    <Cell><Data ss:Type="String">flightstatus</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">DL</Data></Cell>
+    <Cell><Data ss:Type="String">1013</Data></Cell>
+    <Cell><Data ss:Type="String">Arrived</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">UA</Data></Cell>
+    <Cell><Data ss:Type="String">1152</Data></Cell>
+    <Cell><Data ss:Type="String">Arrived</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">UA</Data></Cell>
+    <Cell><Data ss:Type="String">1174</Data></Cell>
+    <Cell><Data ss:Type="String">Scheduled</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">UA</Data></Cell>
+    <Cell><Data ss:Type="String">1247</Data></Cell>
+    <Cell><Data ss:Type="String">Arrived</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA</Data></Cell>
+    <Cell><Data ss:Type="String">2</Data></Cell>
+    <Cell><Data ss:Type="String">In Flight</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">FL</Data></Cell>
+    <Cell><Data ss:Type="String">379</Data></Cell>
+    <Cell><Data ss:Type="String">Scheduled</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">WN</Data></Cell>
+    <Cell><Data ss:Type="String">452</Data></Cell>
+    <Cell><Data ss:Type="String">Arrived</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA</Data></Cell>
+    <Cell><Data ss:Type="String">463</Data></Cell>
+    <Cell><Data ss:Type="String">Scheduled</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AA</Data></Cell>
+    <Cell><Data ss:Type="String">621</Data></Cell>
+    <Cell><Data ss:Type="String">Arrived</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">AS</Data></Cell>
+    <Cell><Data ss:Type="String">665</Data></Cell>
+    <Cell><Data ss:Type="String">Arrived</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,157 @@
+package relational;
+
+import java.util.Hashtable;
+import java.util.Vector;
+
+import domain.Clause;
+import domain.Predicate;
+import domain.Term;
+
+/*
+ * 
+ * This class provides utility functions for converting
+ * Datalog expressions into SQL queries
+ * 
+ *  NOTE: THESE METHODS ARE CURRENTLY NOT USED IN THE IMPLEMENTATION AND MAY REQUIRE DEBUGGING!!!!
+ * 
+ */
+
+public class Datalog {
+
+
+	
+	public static String toSQL(Clause c) {
+		
+		// variable renaming table
+		Hashtable<String,String> renaming = new Hashtable<String,String>();
+		
+		String query = "SELECT DISTINCT ";
+		
+		boolean[] selectVars = c.varsInBody();
+		boolean first = true;
+		for (int i=0; i<selectVars.length; i++) {
+			if (selectVars[i]) {
+				if (first) { first = false; }
+				else { query += ", "; }
+				String key = "&0." + i;
+				Term term = c.terms.firstElement()[i];
+				if (term != null) {
+					if (term.isConstant) {
+						renaming.put(key,"'"+term.val+"'");
+					}
+					else {
+						key = "&" + term.lit + "." + term.pos;
+					}
+				}	
+				query += key + " AS attr" + i;
+			}
+		}
+		
+		Vector<String> whereClause = new Vector<String>();
+    	
+		// generate FROM and WHERE clauses
+		first = true;
+		for (int i=1; i<c.preds.size(); i++) {
+    		Predicate pred = c.preds.elementAt(i);
+    		Term[] termArray = c.terms.elementAt(i);
+    		if (pred.category == Predicate.SOURCE || pred.category == Predicate.FUNCTION) {
+        		if (first) { query += " FROM "; first = false; } 
+        		else { query += ", "; }
+    			query += pred.dbTable + " t" + i;
+    			for (int j=0; j<termArray.length; j++) {
+    				Term term = termArray[j];
+    				if (term!=null) {
+    					String key;
+    					if (term.isConstant) {
+    						key = "&" + i + "." + j;
+    						renaming.put(key,"'"+term.val+"'");
+        					whereClause.add("t" + i + ".attr" + j + " = "+key);
+    					}
+        				else {
+        					key = "&" + term.lit + "." + term.pos;
+        					if (renaming.containsKey(key)) {
+        						whereClause.add("t" + i + ".attr" + j + " = "+key);
+            				}
+        					else {
+        						renaming.put(key,"t" + i + ".attr" + j);
+            				}	
+        				}
+    				}
+    				else {
+    					String key = "&" + i + "." + j;
+    					String val = "t" + i + ".attr" + j;
+    					renaming.put(key,val);
+    				}
+    			}
+    		}
+    		else { // comparison predicate
+    			Term term0 = termArray[0];
+    			String key0;
+    			if (term0.isConstant) {
+    				key0 = "&" + i + "." + 0;
+					renaming.put(key0,"'"+term0.val+"'");
+				}
+    			else {
+    				key0 = "&" + term0.lit + "." + term0.pos;
+    			}
+    			Term term1 = termArray[1];
+    			String key1;
+    			if (term1.isConstant) {
+    				key1 = "&" + i + "." + 1;
+					renaming.put(key1,"'"+term1.val+"'");
+				}
+    			else {
+    				key1 = "&" + term1.lit + "." + term1.pos;
+    			}
+    			whereClause.add(key0 + " " + pred.dbTable + " " + key1);
+    		}
+    	}
+		
+		// add input constants to WHERE clause
+		Predicate headPred = c.preds.firstElement();
+		int count = 0;
+		for (int i=0; i<headPred.arity; i++) {
+			if (headPred.bindings[i]) {
+				if (selectVars[i]) {
+					String key = "&0." + i;
+					String val = "&input"+count;
+					if (renaming.containsKey(key)) {
+						whereClause.add(key + " = " + val);
+					}
+					else {
+						renaming.put(key,val);
+					}
+				}
+				count++;
+			}
+		}
+		
+		// append WHERE clause to query
+    	first = true;
+    	for (String element: whereClause) {
+    		if (first) { query += " WHERE "; first = false; }
+			else { query += " AND "; }
+			query += "(" + element + ")";
+    	}
+    	
+    	// perform renaming
+    	for (String key: renaming.keySet()) {
+    		query = query.replaceAll(key, renaming.get(key));
+    	}
+    	
+    	return query;
+    	
+	}
+
+	
+	public static String toSQL(Clause c, String[] tuple) {
+		String query = toSQL(c);
+		for (int i=0; i<tuple.length; i++) {
+			query = query.replaceAll("&input"+i,"'"+tuple[i]+"'");
+		}
+		return query;
+	}
+	
+
+	
+}

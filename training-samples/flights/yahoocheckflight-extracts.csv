@@ -1,0 +1,369 @@
+flight:airline,flight:fltnumber,flight:airport,datetime:time,datetime:date,flight:baggageclaim,flight:gate,flight:airportcode
+United Airlines,839,"New York-Kennedy, NY (JFK)",6:00pm,14-Jul,1,75A,JFK
+United Airlines,71,"New York-Kennedy, NY (JFK)",8:14am,14-Jul,4,87,JFK
+United Airlines,886,"Osaka Kansai, Japan (KIX)",3:31pm,14-Jul,CHK,99,KIX
+United Airlines,5,"New York-Kennedy, NY (JFK)",7:04am,14-Jul,4,83,JFK
+United Airlines,5217,"New York-Kennedy, NY (JFK)",6:10am,14-Jul,Not provided by airline,Not provided by airline,JFK
+United Airlines,53,"Los Angeles, CA (LAX)",9:03am,14-Jul,CHK,8,LAX
+United Airlines,1472,"Las Vegas, NV (LAS)",6:40am,14-Jul,Not provided by airline,Not provided by airline,LAS
+United Airlines,1485,"Las Vegas, NV (LAS)",10:11am,14-Jul,Not provided by airline,Not provided by airline,LAS
+United Airlines,6551,"Phoenix, AZ (PHX)",6:12am,14-Jul,Not provided by airline,Not provided by airline,PHX
+United Airlines,1483,"Las Vegas, NV (LAS)",7:55am,14-Jul,Not provided by airline,Not provided by airline,LAS
+United Airlines,858,"Shanghai Pu Dong, China (PVG)",1:40pm,14-Jul,CHK,96,PVG
+United Airlines,43,"Denver, CO (DEN)",11:52am,14-Jul,CHK,8,DEN
+United Airlines,215,Washington DC-Dulles (IAD),9:34am,14-Jul,1,73,IAD
+United Airlines,2657,"Phoenix, AZ (PHX)",7:00am,14-Jul,Not provided by airline,Not provided by airline,PHX
+United Airlines,1876,"Phoenix, AZ (PHX)",6:00am,14-Jul,Not provided by airline,Not provided by airline,PHX
+United Airlines,1412,"Las Vegas, NV (LAS)",7:35am,14-Jul,Not provided by airline,Not provided by airline,LAS
+United Airlines,191,Washington DC-Dulles (IAD),8:42am,14-Jul,1,75A,IAD
+United Airlines,1503,"Las Vegas, NV (LAS)",8:05am,14-Jul,Not provided by airline,Not provided by airline,LAS
+United Airlines,5217,"New York-Kennedy, NY (JFK)",6:10am,14-Jul,Not provided by airline,Not provided by airline,JFK
+United Airlines,1505,"Las Vegas, NV (LAS)",6:15am,14-Jul,Not provided by airline,Not provided by airline,LAS
+United Airlines,1532,"Phoenix, AZ (PHX)",7:05am,14-Jul,Not provided by airline,Not provided by airline,PHX
+United Airlines,11,"New York-Kennedy, NY (JFK)",2:21pm,14-Jul,1,73,JFK
+United Airlines,61,"San Francisco, CA (SFO)",12:13pm,14-Jul,CHK,9,SFO
+United Airlines,55,"Los Angeles, CA (LAX)",12:08pm,14-Jul,CHK,6,LAX
+United Airlines,59,"San Francisco, CA (SFO)",9:20am,14-Jul,CHK,7,SFO
+United Airlines,29,"New York-Kennedy, NY (JFK)",8:55pm,14-Jul,1,77,JFK
+United Airlines,1481,"Las Vegas, NV (LAS)",6:28am,14-Jul,Not provided by airline,Not provided by airline,LAS
+United Airlines,15,"New York-Kennedy, NY (JFK)",7:18am,14-Jul,1,75B,JFK
+United Airlines,7715,"Chicago-Ohare, IL (ORD)",12:20pm,14-Jul,Not provided by airline,Not provided by airline,ORD
+United Airlines,19,"New York-Kennedy, NY (JFK)",12:00noon,14-Jul,1,76,JFK
+United Airlines,17,"New York-Kennedy, NY (JFK)",9:52am,14-Jul,1,77,JFK
+United Airlines,1540,"Phoenix, AZ (PHX)",6:00am,14-Jul,Not provided by airline,Not provided by airline,PHX
+United Airlines,306,"Oakland, CA (OAK)",6:52am,14-Jul,4,75B,OAK
+United Airlines,1425,"Denver, CO (DEN)",7:00am,14-Jul,Not provided by airline,Not provided by airline,DEN
+United Airlines,25,"New York-Kennedy, NY (JFK)",5:24pm,14-Jul,1,75B,JFK
+United Airlines,791,"Seattle/Tacoma, WA (SEA)",6:34pm,13-Jun,CHK,71,SEA
+United Airlines,993,"Seattle/Tacoma, WA (SEA)",11:55am,13-Jun,2,73A,SEA
+Northwest Airlines,1125,"Buffalo, NY (BUF)",1:00pm,13-Jun,Not provided by airline,A19,BUF
+American Airlines,3999,"Chicago-Ohare, IL (ORD)",11:52am,13-Jun,1,C12,ORD
+Alaska Airlines,558,"Seattle/Tacoma, WA (SEA)",9:15pm,13-Jun,Not provided by airline,Not provided by airline,SEA
+Northwest Airlines,1119,"Buffalo, NY (BUF)",5:02pm,13-Jun,Not provided by airline,A21,BUF
+Alaska Airlines,884,"Fairbanks Intl, AK (FAI)",8:30am,13-Jun,Not provided by airline,Not provided by airline,FAI
+Alaska Airlines,104,"Fairbanks Intl, AK (FAI)",6:00am,13-Jun,Not provided by airline,Not provided by airline,FAI
+Alaska Airlines,146,"Barrow, AK (BRW)",7:49pm,13-Jun,Not provided by airline,Not provided by airline,BRW
+Alaska Airlines,202,"Seattle/Tacoma, WA (SEA)",8:32am,13-Jun,Not provided by airline,Not provided by airline,SEA
+Alaska Airlines,102,"Fairbanks Intl, AK (FAI)",10:44am,13-Jun,Not provided by airline,Not provided by airline,FAI
+United Airlines,198,"Seattle/Tacoma, WA (SEA)",6:11am,13-Jun,CHK,75,SEA
+Alaska Airlines,144,"Barrow, AK (BRW)",10:01am,13-Jun,Not provided by airline,Not provided by airline,BRW
+Alaska Airlines,104,"Fairbanks Intl, AK (FAI)",6:00am,13-Jun,Not provided by airline,Not provided by airline,FAI
+Northwest Airlines,1125,"Buffalo, NY (BUF)",1:00pm,13-Jun,Not provided by airline,A19,BUF
+United Airlines,1237,"Seattle/Tacoma, WA (SEA)",1:43pm,13-Jun,3,71,SEA
+Alaska Airlines,2475,"Portland, OR (PDX)",9:30pm,13-Jun,Not provided by airline,Not provided by airline,PDX
+American Airlines,4316,"Miami, FL (MIA)",11:52am,13-Jun,Not provided by airline,C10,MIA
+Alaska Airlines,580,"Seattle/Tacoma, WA (SEA)",11:28am,13-Jun,Not provided by airline,Not provided by airline,SEA
+Alaska Airlines,884,"Fairbanks Intl, AK (FAI)",8:30am,13-Jun,Not provided by airline,Not provided by airline,FAI
+Alaska Airlines,550,"Seattle/Tacoma, WA (SEA)",7:25am,13-Jun,Not provided by airline,Not provided by airline,SEA
+Alaska Airlines,822,"Fairbanks Intl, AK (FAI)",2:44pm,13-Jun,Not provided by airline,Not provided by airline,FAI
+Northwest Airlines,1123,"Buffalo, NY (BUF)",3:19pm,13-Jun,Not provided by airline,A67,BUF
+Alaska Airlines,104,"Fairbanks Intl, AK (FAI)",6:00am,13-Jun,Not provided by airline,Not provided by airline,FAI
+Alaska Airlines,884,"Fairbanks Intl, AK (FAI)",8:30am,13-Jun,Not provided by airline,Not provided by airline,FAI
+Alaska Airlines,316,"Seattle/Tacoma, WA (SEA)",1:16pm,13-Jun,Not provided by airline,Not provided by airline,SEA
+Alaska Airlines,144,"Barrow, AK (BRW)",10:01am,13-Jun,Not provided by airline,Not provided by airline,BRW
+Northwest Airlines,1129,"Buffalo, NY (BUF)",9:40am,13-Jun,Not provided by airline,A19,BUF
+American Airlines,1033,"Nashville, TN (BNA)",6:49am,13-Jun,21,D47,BNA
+Northwest Airlines,1119,"Buffalo, NY (BUF)",5:02pm,13-Jun,Not provided by airline,A21,BUF
+Alaska Airlines,116,"Fairbanks Intl, AK (FAI)",6:30am,13-Jun,Not provided by airline,Not provided by airline,FAI
+Alaska Airlines,140,"Fairbanks Intl, AK (FAI)",8:45pm,13-Jun,Not provided by airline,Not provided by airline,FAI
+Alaska Airlines,562,"Seattle/Tacoma, WA (SEA)",7:42pm,13-Jun,Not provided by airline,Not provided by airline,SEA
+Alaska Airlines,884,"Fairbanks Intl, AK (FAI)",8:30am,13-Jun,Not provided by airline,Not provided by airline,FAI
+Alaska Airlines,498,"Seattle/Tacoma, WA (SEA)",5:55pm,13-Jun,Not provided by airline,Not provided by airline,SEA
+United Airlines,156,"Seattle/Tacoma, WA (SEA)",3:31pm,13-Jun,3,85,SEA
+Alaska Airlines,112,"Fairbanks Intl, AK (FAI)",7:35pm,13-Jun,Not provided by airline,Not provided by airline,FAI
+United Airlines,156,"Seattle/Tacoma, WA (SEA)",3:31pm,13-Jun,3,85,SEA
+Northwest Airlines,1980,"Buffalo, NY (BUF)",6:56am,13-Jun,Not provided by airline,A29,BUF
+Alaska Airlines,1290,"Los Angeles, CA (LAX)",7:35pm,13-Jun,Not provided by airline,Not provided by airline,LAX
+Northwest Airlines,4149,"Seattle/Tacoma, WA (SEA)",8:40pm,13-Jun,Not provided by airline,Not provided by airline,SEA
+American Airlines,493,"Miami, FL (MIA)",10:05am,13-Jun,A28,A24/A,MIA
+Northwest Airlines,1129,"Buffalo, NY (BUF)",9:40am,13-Jun,Not provided by airline,A19,BUF
+Northwest Airlines,1980,"Buffalo, NY (BUF)",6:56am,13-Jun,Not provided by airline,A29,BUF
+Alaska Airlines,498,"Seattle/Tacoma, WA (SEA)",5:55pm,13-Jun,Not provided by airline,Not provided by airline,SEA
+Alaska Airlines,453,"Los Angeles, CA (LAX)",6:15pm,13-Jun,Not provided by airline,Not provided by airline,LAX
+United Airlines,198,"Seattle/Tacoma, WA (SEA)",6:11am,13-Jun,CHK,75,SEA
+United Airlines,993,"Seattle/Tacoma, WA (SEA)",11:55am,13-Jun,2,73A,SEA
+Alaska Airlines,596,"Seattle/Tacoma, WA (SEA)",8:40pm,13-Jun,Not provided by airline,Not provided by airline,SEA
+Northwest Airlines,1121,"Buffalo, NY (BUF)",7:08pm,13-Jun,Not provided by airline,A11,BUF
+United Airlines,239,"Seattle/Tacoma, WA (SEA)",7:00pm,13-Jun,CHK,82,SEA
+Alaska Airlines,884,"Fairbanks Intl, AK (FAI)",8:30am,13-Jun,Not provided by airline,Not provided by airline,FAI
+United Airlines,239,"Seattle/Tacoma, WA (SEA)",7:00pm,13-Jun,Not provided by airline,Not provided by airline,SEA
+Alaska Airlines,816,"Seattle/Tacoma, WA (SEA)",6:10am,13-Jun,Not provided by airline,Not provided by airline,SEA
+Alaska Airlines,520,"Seattle/Tacoma, WA (SEA)",9:21am,13-Jun,Not provided by airline,Not provided by airline,SEA
+United Airlines,729,"Seattle/Tacoma, WA (SEA)",10:15am,13-Jun,2,71,SEA
+Alaska Airlines,202,"Seattle/Tacoma, WA (SEA)",8:32am,13-Jun,Not provided by airline,Not provided by airline,SEA
+NULL,NULL,"Los Angeles, CA (LAX)",6:00pm,14-Jul,NULL,NULL,LAX
+NULL,NULL,"San Francisco, CA (SFO)",8:14am,14-Jul,NULL,NULL,SFO
+NULL,NULL,"San Francisco, CA (SFO)",3:31pm,14-Jul,NULL,NULL,SFO
+NULL,NULL,"San Francisco, CA (SFO)",7:04am,14-Jul,NULL,NULL,SFO
+NULL,NULL,Washington DC-Dulles (IAD),Contact Airline,14-Jul,NULL,NULL,IAD
+NULL,NULL,"Honolulu, HI (HNL)",9:03am,14-Jul,NULL,NULL,HNL
+NULL,NULL,"Denver, CO (DEN)",Contact Airline,14-Jul,NULL,NULL,DEN
+NULL,NULL,"Los Angeles, CA (LAX)",Contact Airline,14-Jul,NULL,NULL,LAX
+NULL,NULL,"Los Angeles, CA (LAX)",Contact Airline,14-Jul,NULL,NULL,LAX
+NULL,NULL,"Los Angeles, CA (LAX)",Contact Airline,14-Jul,NULL,NULL,LAX
+NULL,NULL,"San Francisco, CA (SFO)",1:40pm,14-Jul,NULL,NULL,SFO
+NULL,NULL,"Honolulu, HI (HNL)",11:52am,14-Jul,NULL,NULL,HNL
+NULL,NULL,"Los Angeles, CA (LAX)",9:34am,14-Jul,NULL,NULL,LAX
+NULL,NULL,"Philadelphia, PA (PHL)",Contact Airline,14-Jul,NULL,NULL,PHL
+NULL,NULL,"Pittsburgh, PA (PIT)",Contact Airline,14-Jul,NULL,NULL,PIT
+NULL,NULL,"Denver, CO (DEN)",Contact Airline,14-Jul,NULL,NULL,DEN
+NULL,NULL,"Los Angeles, CA (LAX)",8:42am,14-Jul,NULL,NULL,LAX
+NULL,NULL,"San Francisco, CA (SFO)",Contact Airline,14-Jul,NULL,NULL,SFO
+NULL,NULL,Washington DC-Dulles (IAD),Contact Airline,14-Jul,NULL,NULL,IAD
+NULL,NULL,"San Francisco, CA (SFO)",Contact Airline,14-Jul,NULL,NULL,SFO
+NULL,NULL,"Chicago-Ohare, IL (ORD)",Contact Airline,14-Jul,NULL,NULL,ORD
+NULL,NULL,"Los Angeles, CA (LAX)",2:21pm,14-Jul,NULL,NULL,LAX
+NULL,NULL,"Honolulu, HI (HNL)",12:13pm,14-Jul,NULL,NULL,HNL
+NULL,NULL,"Honolulu, HI (HNL)",12:08pm,14-Jul,NULL,NULL,HNL
+NULL,NULL,"Honolulu, HI (HNL)",9:20am,14-Jul,NULL,NULL,HNL
+NULL,NULL,"Los Angeles, CA (LAX)",Not Available,14-Jul,NULL,NULL,LAX
+NULL,NULL,"Los Angeles, CA (LAX)",Contact Airline,14-Jul,NULL,NULL,LAX
+NULL,NULL,"Los Angeles, CA (LAX)",7:18am,14-Jul,NULL,NULL,LAX
+NULL,NULL,"Des Moines, IA (DSM)",Contact Airline,14-Jul,NULL,NULL,DSM
+NULL,NULL,"Los Angeles, CA (LAX)",12:00noon,14-Jul,NULL,NULL,LAX
+NULL,NULL,"Los Angeles, CA (LAX)",9:52am,14-Jul,NULL,NULL,LAX
+NULL,NULL,"Denver, CO (DEN)",Contact Airline,14-Jul,NULL,NULL,DEN
+NULL,NULL,"Los Angeles, CA (LAX)",6:52am,14-Jul,NULL,NULL,LAX
+NULL,NULL,"Las Vegas, NV (LAS)",Contact Airline,14-Jul,NULL,NULL,LAS
+NULL,NULL,"Los Angeles, CA (LAX)",5:24pm,14-Jul,NULL,NULL,LAX
+NULL,NULL,"San Francisco, CA (SFO)",Not Available,13-Jun,NULL,NULL,SFO
+NULL,NULL,"San Francisco, CA (SFO)",11:55am,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Detroit, MI (DTW)",12:58pm,13-Jun,NULL,NULL,DTW
+NULL,NULL,"Nashville, TN (BNA)",11:49am,13-Jun,NULL,NULL,BNA
+NULL,NULL,"San Diego, CA (SAN)",Not Available,13-Jun,NULL,NULL,SAN
+NULL,NULL,"Detroit, MI (DTW)",5:25pm,13-Jun,NULL,NULL,DTW
+NULL,NULL,"Anchorage, AK (ANC)",8:33am,13-Jun,NULL,NULL,ANC
+NULL,NULL,"Anchorage, AK (ANC)",5:56am,13-Jun,NULL,NULL,ANC
+NULL,NULL,"Fairbanks Intl, AK (FAI)",Not Available,13-Jun,NULL,NULL,FAI
+NULL,NULL,"San Francisco, CA (SFO)",8:45am,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Anchorage, AK (ANC)",10:57am,13-Jun,NULL,NULL,ANC
+NULL,NULL,"San Francisco, CA (SFO)",6:11am,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Fairbanks Intl, AK (FAI)",10:16am,13-Jun,NULL,NULL,FAI
+NULL,NULL,"Anchorage, AK (ANC)",5:56am,13-Jun,NULL,NULL,ANC
+NULL,NULL,"Detroit, MI (DTW)",12:58pm,13-Jun,NULL,NULL,DTW
+NULL,NULL,"San Francisco, CA (SFO)",1:43pm,13-Jun,NULL,NULL,SFO
+NULL,NULL,"San Francisco, CA (SFO)",Not Available,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Nashville, TN (BNA)",11:52am,13-Jun,NULL,NULL,BNA
+NULL,NULL,"San Diego, CA (SAN)",11:32am,13-Jun,NULL,NULL,SAN
+NULL,NULL,"Anchorage, AK (ANC)",8:33am,13-Jun,NULL,NULL,ANC
+NULL,NULL,"San Diego, CA (SAN)",7:49am,13-Jun,NULL,NULL,SAN
+NULL,NULL,"Anchorage, AK (ANC)",2:48pm,13-Jun,NULL,NULL,ANC
+NULL,NULL,"Detroit, MI (DTW)",3:24pm,13-Jun,NULL,NULL,DTW
+NULL,NULL,"Anchorage, AK (ANC)",5:56am,13-Jun,NULL,NULL,ANC
+NULL,NULL,"Anchorage, AK (ANC)",8:33am,13-Jun,NULL,NULL,ANC
+NULL,NULL,"San Francisco, CA (SFO)",1:29pm,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Fairbanks Intl, AK (FAI)",10:16am,13-Jun,NULL,NULL,FAI
+NULL,NULL,"Detroit, MI (DTW)",9:34am,13-Jun,NULL,NULL,DTW
+NULL,NULL,"Miami, FL (MIA)",6:47am,13-Jun,NULL,NULL,MIA
+NULL,NULL,"Detroit, MI (DTW)",5:25pm,13-Jun,NULL,NULL,DTW
+NULL,NULL,"Seattle/Tacoma, WA (SEA)",6:17am,13-Jun,NULL,NULL,SEA
+NULL,NULL,"Anchorage, AK (ANC)",Not Available,13-Jun,NULL,NULL,ANC
+NULL,NULL,"San Diego, CA (SAN)",Not Available,13-Jun,NULL,NULL,SAN
+NULL,NULL,"Anchorage, AK (ANC)",8:33am,13-Jun,NULL,NULL,ANC
+NULL,NULL,"San Francisco, CA (SFO)",Not Available,13-Jun,NULL,NULL,SFO
+NULL,NULL,"San Francisco, CA (SFO)",3:31pm,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Anchorage, AK (ANC)",7:47pm*,13-Jun,NULL,NULL,ANC
+NULL,NULL,"San Francisco, CA (SFO)",3:31pm,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Detroit, MI (DTW)",6:52am,13-Jun,NULL,NULL,DTW
+NULL,NULL,"San Francisco, CA (SFO)",Not Available,13-Jun,NULL,NULL,SFO
+NULL,NULL,"San Francisco, CA (SFO)",Not Available,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Dallas/Ft Worth, TX (DFW)",9:59am,13-Jun,NULL,NULL,DFW
+NULL,NULL,"Detroit, MI (DTW)",9:34am,13-Jun,NULL,NULL,DTW
+NULL,NULL,"Detroit, MI (DTW)",6:52am,13-Jun,NULL,NULL,DTW
+NULL,NULL,"San Francisco, CA (SFO)",Not Available,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Portland, OR (PDX)",7:33pm*,13-Jun,NULL,NULL,PDX
+NULL,NULL,"San Francisco, CA (SFO)",6:11am,13-Jun,NULL,NULL,SFO
+NULL,NULL,"San Francisco, CA (SFO)",11:55am,13-Jun,NULL,NULL,SFO
+NULL,NULL,"San Francisco, CA (SFO)",Not Available,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Detroit, MI (DTW)",7:01pm,13-Jun,NULL,NULL,DTW
+NULL,NULL,"San Francisco, CA (SFO)",Not Available,13-Jun,NULL,NULL,SFO
+NULL,NULL,"Anchorage, AK (ANC)",8:33am,13-Jun,NULL,NULL,ANC
+NULL,NULL,"San Francisco, CA (SFO)",Contact Airline,13-Jun,NULL,NULL,SFO
+NULL,NULL,"San Francisco, CA (SFO)",6:07am,13-Jun,NULL,NULL,SFO
+NULL,NULL,"San Diego, CA (SAN)",9:15am,13-Jun,NULL,NULL,SAN
+NULL,NULL,"San Francisco, CA (SFO)",10:15am,13-Jun,NULL,NULL,SFO
+NULL,NULL,"San Francisco, CA (SFO)",8:45am,13-Jun,NULL,NULL,SFO
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:30am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:24am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:15am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:31am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:57am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,2:29pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,12:50pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:26am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:38am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:30am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:37am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,12:22pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:54pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:29am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,1:36pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:40am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:47am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,2:12pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,1:15pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:56pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,6:14pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:29am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,6:58am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:06pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:46am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:44am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:20am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,6:58am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,2:12pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:15pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,1:05pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,2:09pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:29am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:09am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,3:43pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,4:27pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,6:58am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:29am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,3:26pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:20am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:52am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:55am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,6:14pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:07am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:36pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:27pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:29am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:02pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:34pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:09am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:47pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:51pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,12:04pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:52am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:09am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:02pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:26pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:51pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:14pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:57pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:29am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:57pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:17am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,12:02pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:46am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:25pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:46am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:54am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:27am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:08am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:09am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,2:17pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:19am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:18am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,4:16pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,1:59pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,2:26pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:02am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:18am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,2:03pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:45am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:54am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:25pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:39pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,1:44pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,2:03pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,1:11pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:50pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,6:29pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:36am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:00am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:45am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,12:04pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:55am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:37am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:00am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,2:03pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,3:32pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,1:06pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,2:06pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:36am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:34am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,3:47pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,4:29pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:00am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:36am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,3:34pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:37am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:44am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:47am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,6:29pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:05am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:20pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:36am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:58pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,5:23pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:46pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,5:23pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:03am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:49pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,12:22pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:44am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:03am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:58pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:41pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,7:55am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,1:44pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:43pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:04pm*,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Not Available,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,9:36am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,Contact Airline,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,8:18am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,11:51am,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,12:04pm,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,10:45am,NULL,NULL,NULL,NULL

@@ -1,0 +1,39 @@
+Xerox 6400 Flatbed Scanner	Xerox	X64005D-WU	$117.99 	117.99	3200	6400	8.5'	8.5	11.69'	11.69	48-bit	48	16-bit	16	USB 2.0	PC Compatible	1 Year Limited Parts and Labor
+Umax PowerLook 2100XL Flatbed Scanner	Umax	IPDV-21183	"$1,199.99 "	"1,199.99"	800	1600	12”	12	17”	17	42-bit	42	14-bit	14	SCSI II	PC and Mac	NULL
+HP ScanJet 8200 Flatbed Scanner	HP	C9931A#A2L	$460.99 	460.99	4800	4800	8.5'	8.5	14'	14	48-bit	48	8-bit	8	USB 2.0	PC and MAC Compatible	1 Year Limited Parts and Labor
+Panasonic KV S7065C Flatbed scanner	Panasonic	KV-S7065C	"$5,362.99 "	"5,362.99"	600	600	8.5'	8.5	14'	14	24-bit	24	8-bit	8	"USB 2.0 &amp; SCSI-3, HD 50"	PC Compatible	1 Year Limited Parts and Labor
+HP Scanjet 8290 Flatbed Scanner (with ADF)	HP	C9933A#ABA	"$1,349.99 "	"1,349.99"	4		8.5'	8.5	14'	14	48-bit	48	8-bit	8	USB 2.0 and SCSI	PC and MAC Compatible	1 Year Limited Parts and Labor
+Bell & Howell 730DC Flatbed Scanner with ADF	Bell	102425	"$2,528.99 "	"2,528.99"	600	600	11.7'	11.7	18.7'	18.7	24-bit	24	NULL	NULL	SCSI-2/SCSI-3(Standard	PC Compatible	NULL
+Canon Flatbed Scanner Unit for DR 2580C	Canon	0106B001	$459.99 	459.99	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+Canon CanoScan LiDE 25 Flatbed Scanner	Canon	0307B001	$47.99 	47.99	1200	2400	8.5”	8.5	11.7”	11.7	NULL	NULL	48-bit	"48-bit , Grayscale: 16"	USB	PC and Mac Compatible	1 Year Limited Parts and Labor
+Canon CanoScan LiDE 60 Flatbed Scanner	Canon	0337B002	$74.99 	74.99	1200	2400	8.5”	8.5	11.7”	11.7	NULL	NULL	48-bit	"48-bit , Grayscale: 16"	Hi-Speed USB 2.0	PC and Mac Compatible	1 Year Limited Parts and Labor
+Microtek ArtixScan 1800F Flatbed Scanner	Microtek	1108-03-280151	$998.99 	998.99	3600	1800	8.5'	8.5	14' 	14' 	48-bit	48	NULL	NULL	FireWire and USB 2.0	PC and MAC Compatible	1 Year Limited Parts and Labor
+Microtek ScanMaker 9800XL Flatbed Scanner	Microtek	1108-03-360072	"$1,140.99 "	"1,140.99"	3200	1600	12'	12	17'	17	48-bit	48	16-bit	16	"FireWire, SCSI 2, and USB 1.1"	PC and MAC Compatible	NULL
+Microtek ScanMaker 9800XL TMA Flatbed Scanner	Microtek	1108-03-360073	"$1,455.99 "	"1,455.99"	3200	1600	12'	12	17'	17	48-bit	48	16-bit	16	"FireWire, SCSI-2, and USB 1.1"	PC and Mac Compatible	NULL
+Microtek ScanMaker 5950 Pro Flatbed Scanner	Microtek	1108-03-540027	$195.99 	195.99	4800	2400	8.5'	8.5	14' 	14' 	48-bit	48	NULL	NULL	USB 2.0	PC Compatible	1 Year Limited Parts and Labor
+Microtek ScanMaker i700 Flatbed Scanner	Microtek	1108-03-650002	$337.99 	337.99		9600	8.5'	8.5	14' 	14' 	48-bit	48	NULL	NULL	FireWire&nbsp;or USB 2.0	NULL	1 Year Limited Parts and Labor
+Microtek ScanMaker i320 Flatbed Scanner	Microtek	1108-03-660012	$99 	99	6400	3200	8.5'	8.5	11.7'	11.7	48-bit	48	16-bit	16	Hi-Speed USB	PC and Mac Compatible	1 Year Limited Parts and Labor
+Microtek ScanMaker S400 Flatbed Scanner	Microtek	1108-03-750001	$142.99 	142.99	9600	4800	8.5'	8.5	11.7'	11.7	48-bit	48	16-bit	16	Hi-Speed USB	PC and Mac Compatible	1 Year Limited Parts and Labor
+Microtek 1000XL Pro Flatbed Scanner	Microtek	1108-03-770002	"$2,637.99 "	"2,637.99"	3200	6400	12'	12	17'	17	48-bit	48	16-bit	16	Hi-Speed USB and FireWire	PC and Mac Compatible	1 Year Limited Parts and Labor
+Microtek ScanMaker 1000XL Flatbed Scanner	Microtek	1108-03-770003	"$2,130.99 "	"2,130.99"	3200	6400	12'	12	17'	17	48-bit	48	16-bit	16	Hi-Speed USB and FireWire	PC and Mac Compatible	1 Year Limited Parts and Labor
+Microtek ScanMaker i900 Flatbed Scanner	Microtek	1.10804E+11	$568.99 	568.99	6400	3200	8.5'	8.5	14'	14	48-bit	48	16-bit	16	"USB 2.0, Firewire"	PC and MAC Compatible	1 Year Limited Parts and Labor
+Kodak i80 Flatbed Scanner (with ADF)	Kodak	140-1009	"$1,921.99 "	"1,921.99"	NULL	NULL	8.5'	8.5	17'	11.7	48-bit	48	8-bit	8	SCSI-2	PC Compatible	1 Year Limited Parts and Labor
+Kodak i50 Flatbed Scanner (with ADF)	Kodak	194-7472	"$1,047.99 "	"1,047.99"	NULL	NULL	8.5'	8.5	17'	11.7	36-bit	36	8-bit	8	SCSI-2	PC Compatible	1 Year Limited Parts and Labor
+Ricoh IS450SE Flatbed Scanner (with ADF)	Ricoh	400361	"$3,399.99 "	"3,399.99"	400	400	NULL	NULL	17'	17	8-bit	8	NULL	NULL	NULL	PC Compatible	1 Year Limited Parts and Labor
+Ricoh IS330DC Flatbed Scanner (with ADF)	Ricoh	400672	"$2,349.99 "	"2,349.99"	600	600	11'	11	17'	17	36-bit	36	NULL	NULL	NULL	PC Compatible	1 Year Limited Parts and Labor
+Ricoh IS760 Flatbed Scanner (with ADF)	Ricoh	402054	"$4,899.99 "	"4,899.99"	400	400	12.2'	12.2	17'	17.3	24-bit	24	NULL	NULL	NULL	PC Compatible	1 Year Limited Parts and Labor
+Ricoh IS760D Flatbed Scanner (with ADF)	Ricoh	402055	"$5,749.99 "	"5,749.99"	400	400	12.2'	12.2	17'	17.3	24-bit	24	NULL	NULL	NULL	PC Compatible	1 Year Limited Parts and Labor
+Ricoh IS300e Flatbed Scanner (with ADF)	Ricoh	402252	"$2,999.99 "	"2,999.99"	600	600	11'	11	11.7'	11.7	NULL	NULL	NULL	NULL	NULL	PC Compatible	1 Year with Options for up to 2 More Years
+Ricoh IS200e Flatbed Scanner (with ARDF)	Ricoh	402334	"$1,699.99 "	"1,699.99"	600	600	8.5'	8.5	17'	11.7	24-bit	24	NULL	NULL	NULL	PC Compatible	1 Year Limited Parts and Labor
+Visioneer OneTouch 7300 Flatbed Scanner	Visioneer	73007D-WU	$74.99 	74.99	1200	1200	8.5'	8.5	11.69'	11.69	48-bit	48	16-bit	16	USB 1.1 and 2.0	PC Compatible	NULL
+Kodak i55 Flatbed Scanner (with ADF)	Kodak	841-2447	"$1,202.99 "	"1,202.99"	NULL	NULL	8.5'	8.5	17'	11.7	48-bit	48	8-bit	8	SCSI 2 and USB 2.0	PC Compatible	1 Year Limited Parts and Labor
+Kodak i65 Flatbed Scanner (with ADF)	Kodak	884-7121	"$1,532.99 "	"1,532.99"	NULL	NULL	8.5'	8.5	17'	11.7	48-bit	48	8-bit	8	SCSI 2 and USB 2.0	PC Compatible	1 Year Limited Parts and Labor
+Visioneer OneTouch 9120 Flatbed Scanner	Visioneer	91201D-WU	$75.99 	75.99	4800	2400	8.5'	8.5	11.69'	11.69	48-bit	48	16-bit	16	USB 2.0	PC Compatible	1 Year Limited Parts and Labor
+Canon CanoScan 9950F Color Image Flatbed Scanner	Canon	9190A002	$368.99 	368.99	4800		8.5”	8.5	11.7”	11.7	NULL	NULL	48-bit	48	"Hi-Speed USB 2.0 and FireWire (Mac only, cable not included"	PC and Mac Compatible</LI>  <LI><STRONG>Warranty:	1 Year Limited Parts and Labor
+Visioneer OneTouch 9320 Flatbed Scanner	Visioneer	93201D-WU	$121.99 	121.99	3200	6400	8.5'	8.5	11.69'	11.69	48-bit	48	NULL	NULL	NULL	PC Compatible	1 Year Limited Parts and Labor
+Visioneer OneTouch 9420 Flatbed Scanner	Visioneer	94201D-WU	$117.99 	117.99	4800	9600	8.5'	8.5	11.69'	11.69	48-bit	48	16-bit	16	NULL	PC Compatible	1 Year Limited Parts and Labor
+Visioneer 9450 Flatbed Scanner (with ADF)	Visioneer	94501D-USB	$283.99 	283.99	600	1200	8.5'	8.5	11.69'	11.69	42-bit	42	14-bit	14	NULL	PC Compatible	1 Year Limited Parts and Labor
+Canon CanoScan 8400F Color Image Flatbed Scanner	Canon	9554A002	$138.99 	138.99	3200	6400	8.5”	8.5	11.7”	11.7	48-bit	48	16-bit	16	Hi-Speed USB 2.0	PC and Mac Compatible</LI>  <LI><STRONG>Warranty:	1 Year Limited Parts and Labor
+Visioneer OneTouch 9650 Flatbed Scanner (with ADF)	Visioneer	96501D-WU	$544.99 	544.99	600	1200	8.5'	8.5	14' 	14	42-bit	42	14-bit	14	NULL	PC Compatible	1 Year Limited Parts and Labor
+Visioneer 9750 PDF Flatbed Scanner (with ADF)	Visioneer	97501DWU	$907.99 	907.99	600	1200	8.5'	8.5	11.69'	11.69	48-bit	48	NULL	NULL	USB 2.0	PC Compatible	1 Year Limited Parts and Labor
+Canon CanoScan 4200F Color Image Flatbed Scanner	Canon	9996A001	$92.99 	92.99	3200	6400	8.5”	8.5	11.7”	11.7	48-bit	48	16-bit	16	Hi-Speed USB 2.0	PC Compatible	1 Year Limited Parts and Labor

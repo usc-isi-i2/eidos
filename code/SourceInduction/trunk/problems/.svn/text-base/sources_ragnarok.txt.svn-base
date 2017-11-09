@@ -1,0 +1,40 @@
+##############################################################
+## Sources Available on Ragnarok: 
+##
+##  http://ragnarok.isi.edu/services/
+
+import problems/types.txt
+import problems/relations.txt
+
+
+source GetCentroid($zip,lat,long) 	 			:- centroid(zip,lat,long). 	  								{wrappers.Ragnarok; getCentroid}
+source GetCityState($zip,city,state) 			:- municipality(city,state,zip,_). 							{wrappers.Ragnarok; getCityState}
+source GetZipcode($city,$state,zip)	 			:- municipality(city,state,zip,_). 							{wrappers.Ragnarok; getZipcode}
+source GetTimezone($state,zone,offset,ds) 		:- municipality(_,state,_,zone),timezone(zone,offset,ds).	{wrappers.Ragnarok; getTimezone}
+
+source GetCompanyName($tkr,comp,inds,exch)		:- listing(exch,comp,tkr,inds). 							{wrappers.Ragnarok; getCompany}
+source GetCountryName($abbrev,name)				:- country(name,abbrev,_).									{wrappers.Ragnarok; getCountryName}
+source GetStateInfo($name,state,capital)      	:- state(state,name,capital).								{wrappers.Ragnarok; getStateInfo}
+source GetStateName($state,name,capital)      	:- state(state,name,capital).								{wrappers.Ragnarok; stateInfoByCode}
+
+source GetAirportInfo($icao,iata,apt,cty,st,cn) :- airport(icao,iata,apt,cty,st,cn,_,_).					{wrappers.Ragnarok; getAirportInfo}
+source GetAirportCoords($iata,aprt,lat,long) 	:- airport(_,iata,aprt,_,_,_,lat,long).						{wrappers.Ragnarok; getAirportCoordinates}
+
+source GetCurrentTime(stamp,dtime,date,time) 	:- currentTime(stamp),time(stamp,dtime,_,date,time,_,_).	{wrappers.Ragnarok; currentTime}
+
+source HotelsByZip($zip,hotel,str,cty,st,rooms)	:- hotel(hotel,_,str,zip,"US",_),hotelInfo(hotel,rooms),municipality(cty,st,zip,_). {wrappers.Ragnarok; GetHotelsByZip}
+source CurrencyInfo($cur,curName,country)       :- currency(cur,curName,country).  							{wrappers.Ragnarok; getCountryFromCurrency}
+source GetAirline($airlinecode,airline)         :- airline(airline,airlinecode) 							{wrappers.Ragnarok; getAirline}
+source CarModels($make,$year,model,trim) 		:- car(make,model,trim,year,_).								{wrappers.Ragnarok; getModels}
+
+function ConvertDatetime($dtme,stmp)  			:- time(stmp,dtme,_,_,_,_,_).								{wrappers.Ragnarok; convertDatetime2Timestamp}
+function GetDatetime($stmp,dtme,date,tme,zone)  :- time(stmp,dtme,_,date,tme,zone,_).						{wrappers.Ragnarok; convertTimestamp}
+function GetDistance($lt1,$ln1,$lt2,$ln2,dist)	:- distance(lt1,ln1,lt2,ln2,dist).  						{wrappers.Ragnarok; getDistance}
+
+function ConvertDMS($latDMS,$lonDMS,lat,lon)	:- convertCoord(latDMS,lonDMS,lat,lon). 					{wrappers.Ragnarok; convertDMS}
+function ConvertKm2Mi($distKm,distMi)			:- convertDist(distKm,distMi). 								{wrappers.Ragnarok; convertKm2Mi}
+function ConvertM2Ft($distM,distFt)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertM2Ft}
+function ConvertFt2M($distFt,distM)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertFt2M}
+function ConvertC2F($tempC,tempF)	 			:- convertTemp(tempC,tempF).  	  							{wrappers.Ragnarok; convertC2F}
+function ConvertIn2mb($pressIn,pressMb)			:- convertPress(pressIn,pressMb).  							{wrappers.Ragnarok; convertIn2mb}
+function ConvertSpeedKm2Mi($speedKm,speedMi)	:- convertSpeed(speedKm,speedMi). 							{wrappers.Ragnarok; convertKm2Mi}

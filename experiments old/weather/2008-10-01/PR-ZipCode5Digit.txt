@@ -1,0 +1,9 @@
+SELECT tablename,argumentname FROM sourceschema where semantictype = 'PR-ZipCode5Digit';
+
+
+select query from weather3 union 
+select query from weather4 union 
+select query from weather5 union 
+select query from weather6 union 
+select Name from weather7 union 
+select pands from weather8 

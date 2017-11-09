@@ -1,0 +1,27 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+### Types: 
+
+type PR_FirstName    [varchar(100)]
+type PR_LastName     [varchar(100)] {examples.zipcode5digit.val}
+type PR_Street	     [varchar(100)] {numeric: -100.0, +150.0, 10%}
+type PR_City	     [varchar(100)] {numeric: -100.0, +150.0, 10%}
+type PR_StateAbbr    [varchar(100)] {source_model.citystate.val}
+type PR_Zip          [varchar(100)] {examples.zipcode5digit.val}
+type PR_Phone        [varchar(100)] {source_model.citystate.val}
+
+
+### Domain Relations: 
+
+relation dir_info(PR_FirstName,PR_LastName,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Phone)
+
+## Sources: 
+
+source whitepages(PR_FirstName,PR_LastName,PR_Zip,PR_Street,PR_City,PR_StateAbbr,PR_Phone)  :- dir_info(PR_FirstName,PR_LastName,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Phone). {wrappers.DBService; http://www.whitepages.com/; JLA}
+
+## Target Predicate: 
+
+# target weather6($PR_Zip,PR_WindSpeedInMPH,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) 					{wrappers.DBService; http://weather.unisys.com/; Forecast}
+
+

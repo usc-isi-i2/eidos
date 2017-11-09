@@ -1,0 +1,9 @@
+.TabBox { border-top: 2px solid #FFF; border-right: 1px solid #FFF; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; }
+#photoBox { border: 0px; }
+#top { visibility: hidden; }
+#printPhoto { display: block; }
+#photoTable { width: 650px; }
+#blogUpdated { border-top: 1px solid #666; background-color: #EEE; margin-top: 5px; margin-bottom: 10px; }
+#checkWeather, #photoRating, #viewComments, #postComment, #blogSort, #blogRead, #blogReport, #more, #blogInfo, #towerAd, #chat, #gutter, #photoTabs, #photoNav, #photoDetails, #photoLinks, #photoBottom, #leftBar, #topNav, #copyNav, #features, #bottomAds, H5 { display: none; }
+
+.noPrint { display: none; }

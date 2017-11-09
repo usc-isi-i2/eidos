@@ -1,0 +1,41 @@
+type price    	   [varchar(8)]
+type ratio		   [varchar(4)]
+type day    	   [varchar(2)]
+type month		   [varchar(2)]
+type year  		   [varchar(4)]
+type date          [varchar(10)]
+type company       [varchar(30)]
+type address       [varchar(74)]
+type city          [varchar(8)]
+type region        [varchar(2)]
+type postCode      [varchar(7)]
+type country       [varchar(3)]
+type name          [varchar(16)]
+type jobTitle 	   [varchar(24)]
+type courtesyTitle [varchar(4)]
+type phone         [varchar(14)]
+type extension     [varchar(5)]
+type orderId       [varchar(5)] {imap.inv_orders.order_id}
+type employeeId    [varchar(2)] {imap.inv_employees.employee_id}
+type productId     [varchar(2)] {imap.inv_products.product_id}
+type supplierId    [varchar(2)]
+type categoryId    [varchar(2)]
+type product       [varchar(32)]
+type quantity      [varchar(30)]
+type count         [varchar(6)]
+type boolean	   [varchar(1)]
+
+#type category      [varchar(14)]
+#type product_in_stock_cost [varchar(6)]
+#type product_order_cost [varchar(4)]
+#type customer_id   [varchar(12)]
+#type ship_via      [varchar(16)]
+
+relation employee(employeeId,name,name,jobTitle,courtesyTitle,date,date,address,city,region,postCode,country,phone,extension,employeeId)
+relation product(productId,product,supplierId,categoryId,quantity,price,count,count,count,boolean)
+
+source inv_employees($id,last,first,job,courtesy,birth,hire,address,city,region,postCode,country,home,ext,reports_to) :- employee(id,last,first,job,courtesy,birth,hire,address,city,region,postCode,country,home,ext,reports_to). {invocation.wrappers.Ragnarok; query; SELECT employee_id,last_name,first_name,title,title_of_courtesy,birth_date,hire_date,address,city,region,postal_code,country,home_phone,extension,reports_to FROM imap.inv_employees WHERE (employee_id = $input0)}
+#source inv_products($pid,pname,sid,cid,quantity,price,stock,order,reorder,discontinued) :- product(pid,pname,sid,cid,quantity,price,stock,order,reorder,discontinued). {invocation.wrappers.Ragnarok; query; SELECT product_id,product_name,supplier_id,category_id,quantity_per_unit,unit_price,units_in_stock,units_on_order,reorder_level,discontinued FROM imap.inv_products WHERE (product_id = $input0)}
+
+#target newSource($employeeId,name,name,jobTitle,courtesyTitle,date,date,address,city,region,postCode,country,phone,extension,employeeId) {invocation.wrappers.Ragnarok; query; SELECT employee_id,last_name,first_name,title,title_of_courtesy,birth_date,hire_date,address,city,region,postal_code,country,home_phone,extension,reports_to FROM imap.inv_employees WHERE (employee_id = $input0)}
+target newSource($productId,product,supplierId,categoryId,quantity,price,count,count,count,boolean) {invocation.wrappers.Ragnarok; query; SELECT product_id,product_name,supplier_id,category_id,quantity_per_unit,unit_price,units_in_stock,units_on_order,reorder_level,discontinued FROM imap.inv_products WHERE (product_id = $input0)}

@@ -1,0 +1,106 @@
+package xquery;
+
+import invocation.Client;
+import relational.Table;
+
+import java.io.StringWriter;
+import java.util.ArrayList;
+import java.util.Properties;
+
+import net.sf.saxon.query.StaticQueryContext;
+import net.sf.saxon.query.DynamicQueryContext;
+import net.sf.saxon.query.XQueryExpression;
+import net.sf.saxon.om.Item;
+import net.sf.saxon.om.NodeInfo;
+import net.sf.saxon.om.SequenceIterator;
+import net.sf.saxon.type.Type;
+
+
+public class Fetch extends Client {
+	
+	public Fetch() {
+	}
+		
+	public Table invoke(String[] endpoint, ArrayList<String> inputTuple) {
+    	return null;
+    }
+	
+	public static String executeFetchAgent(String agentRepository, String agentPlan, String inputs) {
+	
+		String url = agentRepository + "?plan=" + agentPlan + "%2Fplans%2Fproduction" + "&" + inputs;
+		String output = "";
+		try {
+			java.io.BufferedReader br = new java.io.BufferedReader(new java.io.InputStreamReader((new java.net.URL(url)).openStream()));
+		    String line = null;
+		    while ((line = br.readLine()) != null) { 
+		       output += line;
+		    }
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		return output;
+	}
+
+    public static ArrayList<String> getXQueryResults(String xmlDoc, String strXQuery) {
+        ArrayList<String> output = new ArrayList<String>();
+    	try {
+            // Read the xml document
+            javax.xml.transform.Source src = new javax.xml.transform.sax.SAXSource(new org.xml.sax.InputSource(new java.io.StringReader(xmlDoc)));
+            net.sf.saxon.Configuration conf = new net.sf.saxon.Configuration();
+            StaticQueryContext sc = new StaticQueryContext(conf);
+            XQueryExpression expr = sc.compileQuery(strXQuery);
+            DynamicQueryContext dc = new DynamicQueryContext(conf);
+            dc.setContextItem(sc.buildDocument(src));
+            SequenceIterator results = expr.iterator(dc);
+
+            Item item;
+            while ((item = results.next()) != null) {
+            	if (!Type.getItemType(item).isAtomicType()) {
+                    NodeInfo node = (NodeInfo) item;
+                    StringWriter sw = new StringWriter(); 
+                    net.sf.saxon.query.QueryResult.serialize(node, new javax.xml.transform.stream.StreamResult(sw),new Properties(),conf);
+                    output.add(sw.toString());
+            	}
+            	else {
+            		output.add(item.getStringValue());
+            	}	
+            }
+
+    	}
+        catch (Exception e) {
+        	e.printStackTrace();
+        }
+        return output;
+    }
+
+    public static String getFetchResultAttribute(String xml, String attr) {
+      String xquery = "for $h in //Row return $h/"+attr+"/Value/text()";
+      return getXQueryResults(xml, xquery).get(0);
+    }
+    
+	public static void testWrapper() {
+		
+		try {
+			String agentRepository = "http://pegasus2.isi.edu:8080/agent/runner";
+			String agentPlan       = java.net.URLEncoder.encode("weather/accuweather","UTF-8");
+			String inputs          = "zipcodeorcitycommastate=90292";
+			String output          = executeFetchAgent(agentRepository, agentPlan, inputs);
+			System.out.println(output);
+			   
+			String xquery = "let $h := //AgentExecution/ExtractedData/Data return $h/Row";
+			ArrayList<String> rows = getXQueryResults(output, xquery);
+			for (String row: rows) {
+				System.out.println(row);
+				System.out.println("sky = " + getFetchResultAttribute(row, "sky"));
+				System.out.println("temp = " + getFetchResultAttribute(row, "temperature"));
+				}
+			
+			
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+}

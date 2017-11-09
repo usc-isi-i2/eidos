@@ -1,0 +1,55 @@
+tsa >> Time Series Analysis (Ver 3.00)
+Analysis functions
+   acovf
+   acorf
+   biacovf
+   bispec
+   durlev
+   lattice
+   pacf
+   parcor
+   invest0
+   invest1
+   selmo
+   histo
+   histo2
+   histo3
+   histo4
+   hup
+   ucp
+   y2res
+   ar_spa
+   detrend
+   flix
+
+Multivariate analysis
+   mvar
+   mvfilter
+   mvfreqz
+   arfit2    
+
+Adaptive (time-varying) analysis
+   aar   
+ 
+Conversions between forms
+   ac2poly
+   ac2rc
+   ar2rc
+   rc2ar
+   poly2ac
+   poly2ar
+   poly2rc
+   rc2ac
+   rc2poly
+   ar2poly
+   
+Utility functions
+   arcext
+   sinvest1
+   sbispec
+
+Test suites
+   tsademo
+   bisdemo
+   invfdemo
+

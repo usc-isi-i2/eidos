@@ -1,0 +1,52 @@
+*** GEOSPATIAL DOMAIN
+
+* Known Source:
+
+
+geocoder.us( address:CT-Address, 
+	     c16:PR-Longitude, c49:CT-Address,
+	     c2:CT-Street, c3:CT-CityState, c7:PR-Latitude)
+
+The argument ordering aboce is suspect. Let's assume it's:
+
+geocoder.us( FullAddress, Latitude, Longitude, Street, CityStateZIP):- 
+  address(Street, City, State, Zip, Latitude, Longitude) ^ 
+  split(CityStateZIP, City, State, Zip)
+
+
+
+
+  
+
+ 
+'4676 Admiralty Way, Marina del Rey, CA 90292', '-118.440470', '4676 Admiralty Way, Marina del Rey, CA 90292', '4676 Admiralty Way', 'Marina del Rey CA 90292', '33.980305'
+
+
+
+
+
+* Target sources:
+
+
+
+mapquest.com( longitude:PR-Longitude, latitude:PR-Latitude,
+	      c1:CT-Street, c2:PR-Latitude, c39:PR-City,
+	      c22:PR-Longitude, c43:CT-Address, c40:CT-CityState)
+
+ontok.com( addr:CT-Address, 
+	   c1:CT-Address, c2:PR-City, c3:CT-Street,
+	   c5:CT-CityStateZip, c27:PR-Longitude, c28:PR-Latitude)
+
+mapmyrun.com( txtLocation:CT-Address, 
+	      c0:PR-StateName, c2:CT-Address, c3:CT-Street,
+	      c4:CT-CityState, c31:PR-Latitude, c44:PR-Longitude) 
+
+geocoder.ca( locate:CT-Address, 
+	     c0:CT-Address, c1:CT-Street, c19:PR-Latitude,
+	     c4:CT-CityState, c5:PR-City, c23:PR-Longitude)
+
+terraserver.microsoft.com( 
+     PgSrh:NavLon:PR-Longitude, PgSrh:NavLat:PR-Latitude, 
+     c5:PR-Longitude, c6:PR-Latitude, c13:PR-City, c28:CT-CityState,
+     c14:CT-Street)
+

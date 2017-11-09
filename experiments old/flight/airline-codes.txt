@@ -1,0 +1,418 @@
+TRS AirTran Airways
+ASA Alaska Airlines
+
+AAL American Airlines
+AMT ATA Airlines
+COA Continental Airlines
+DAL Delta Air Lines
+JBU Jet Blue Airways
+MEP Midwest Airlines
+
+NWA Northwest Airlines
+SWA Southwest Airlines
+UAL United Airlines
+AWE US Airways
+
+AEX Aces
+
+AXQ Action Airlines
+EIN Aer Lingus
+SER Aero California
+AEK Aero Costa Rica
+AMX Aero Mexico
+DAP Aerodias Chile
+
+AJS Aeroejecutiva SA-DE-CV
+AFL Aeroflot
+ARG Aerolineas Argentinas
+LNT Aerolineas Internacionales
+ROM Aeromar
+PLI AeroPeru
+
+LAV Aeropostal
+ATD Aerotour Dominicano
+RKT Air 21
+AAQ Air Alliance
+AAJ Air Alma
+ARU Air Aruba
+
+ABD Air Atlanta
+ACA Air Canada
+ISB Air Caraibes Exploitations
+CCA Air China
+CRQ Air Creebec
+AEA Air Eurpoa
+
+AEL Air Eurpoe
+RUF Air First Aviation
+AFR Air France
+GGN Air Georgian
+AIC Air India
+AIE Air Inuit
+
+AJM Air Jamaica
+AMC Air Malta
+AMW Air Midwest
+ANV Air Nevada
+ANZ Air New Zealand
+ANT Air North
+
+CRK Air Pacific
+FJI Air Pacific Limited
+APM Air Pack
+MPD Air Plus Comet
+TAP Air Portugal
+ASK Air Sask Aviation
+
+ASJ Air Satellite
+SPM Air St. Pierre
+STT Air St. Thomas
+RSI Air Sunshine
+THT Air Tahiti Nui
+TSC Air Transat
+
+VGA Air Vegas
+AWI Air Wisconsin
+ABX Airbourne
+TRS AirTran Airways
+AKK Aklak Air
+ASA Alaska Airlines
+
+AER Alaska Central Express</
+AZA Alitalia Airlines
+CNX All Canada Express
+ANA All Nippon Airways
+AAY Allegiant Air
+ALM Air Antillean Airlines
+
+AAH Aloha Airlines
+AIP Alpine Aviation
+AWE America West Airlines
+AAL American Airlines
+EGF American Eagle
+AMF Ameriflight
+
+ADB Antonov Design Bureau
+AOM AOM French Airlines
+APY APA Intl Air
+CIR Arctic Circle Air
+AAR Asiana Airlines
+AMT ATA Airlines
+
+ABS Athabaska Airways
+MDC Atlantic Aero
+BJK Atlantic Airlines
+ASQ Atlantic Southeast Airlines
+GTI Atlas Air
+AUS Australian Airlines
+
+AUA Austrian Airlines
+ARB Avia Air
+TWN Avialeasing
+AVA Avianca
+GUG Aviateca
+AWO Awood Air
+
+BHS Bahamasair
+BAJ Baker Aviation
+BBB Belair
+BIA Baltic Intl Airlines
+CJY Baltimore Air Transport
+BLS Bearskin Airlines
+
+BMJ Bemidji Airlines
+BRG Bering Air
+BSY Big Sky Airlines
+BBC Biman Bangladesh Airlines
+FAB Bradley Air Service
+BAW British Airways
+
+BMA British MIdland Airways Ltd
+BAL Britannia
+BFL Buffalo Airways Ltd
+BVA Buffalo Airways
+CAV Calm Air Intl
+CFC Canadian Forces
+
+MPE Canadian North
+CJA Canjet Airlines
+KAP Cape Air
+CMY Cape Smythe Air Service
+DCF Cardinal Airlines
+BWA Caribbean Airlines
+
+CJT Cargojet
+CLX Cargolux Airlines
+BCB Caribair
+CPA Cathay Pacific Airways
+CAY Cayman Airways
+GLR Central Mountain Air
+
+CDL CCAir
+CCP Champion Air
+CHQ Chautauqua Airlines
+WDY Chicago Express
+CAL China Airlines
+CES China Eastern Airlines
+
+CSN China Southern Airlines
+CXT Coastal Air Transport
+CJC Colgan Air
+COM Comair
+UCA Commutair
+CFG Condor Flugdienst
+
+CAC Conguest Airlines
+COA Continental Airlines
+BTA Continental Express
+CMI Continental Micronesia
+CTN Croatia Airlines
+CAT Custom Air Transport
+
+CYP Cyprus Airways
+CSA Czech Airlines
+DAL Delta Air Lines
+DHL DHL Airways
+DCV Discover Air
+DOW Downeast Express
+
+TLO Eagle Canyon Airlines
+BBE Eastwind Airlines
+EZY EasyJet
+ELY El Al Airlines
+UAE Emirates
+CFS Empire Airlines
+
+ESS Eos Airlines
+ERH Era Aviation
+ETH Ethiopian Airlines
+ETD Etihad Airways
+EVA EVA Air
+EIA Evergreen Int'l Airlines
+
+EJA Executive Jet Aviation
+BTA Express Jet
+FDX Federal Express
+UFS Feeder Express
+FBF Fine Airlines
+FAB First Air
+
+FIN Finnair
+FLE Flair Airlines
+FMR Flamingo Air
+OPT Flight Options
+FEX FlightExec
+FFT Frontier Airlines
+
+FTA Frontier Flying Service
+EYE FS Air Service
+GIA Garuda, Indonesia
+GCO Gemini Air Cargo
+GRO Great American Airways
+GLA Great Lakes Aviation
+
+GRP Great Plains/Ozark Airlines
+GFA Gulf Air
+GFT Gulfstream Intl Airlines
+GYA Guyana Airways
+HBC Halisa Air
+HAR Harbor Airlines
+
+HMY Harmony Airways
+HAL Hawaiian Airlines
+HCL Helenair Corportation Ltd
+JBA Helijet Airways
+PCE Hooters Air
+QXE Horizon Air
+
+CSQ IBC Airways
+IBE Iberia
+ICE Icelandair
+IDE Independence Air
+IML Island Air
+ISA Island Airlines
+
+SDY Island Express
+ISR Israir Airlines
+JAL Japan Airlines
+JZA Jazz, Air Canada
+JAI Jet Airways
+JBU Jet Blue Airways
+
+KDC K D Air Corporation
+KFS Kalitta Flying Service
+KFA Kelowna Flightcraft
+KBA Kenn Borek Air Ltd
+KQA Kenya Airways
+KEE Keystone Air Services
+
+KHA Kitty Hawk Airlines
+KLM KLM Royal Dutch Airlines
+KNX Knighthawk Air Express
+KAL Korean Airlines
+KAC Kuwait Airways
+LAB L.A.B. Flying Services
+
+LAL Labrador Airways
+LRC LACSA
+LRC LACSA Costa Rica Airline
+LCO Ladeco
+LBH Laker Airways
+LAN Lan Chile
+
+LIA LIAT
+LLB Lloyd Aero Boliviano
+LSS Lone Star Airlines
+LOT LOT Polish Airlines
+LTU LTU Intl Airways
+DLH Lufthansa German Airline
+
+MLH Mahalo Air
+MAS Malaysia Airlines
+MAH Malev-Hungarian Airlines
+MPH Martinair
+FAE Merlin Express
+ASH Mesa Airlines
+
+MES Mesaba
+MXA Mexicana
+MEP Midwest Airlines
+SYX Midwest Connect
+MON Monarch Airlines
+MAL Morningstar Air Express
+
+PKP Mountain Air Express
+MAW Mustique Airways
+NEA New England Airlines
+NXT National Express
+ROK National Airlines
+NCA Nippon Cargo Airlines
+
+NAO North American Airlines
+NRV North Vancouver Airlines
+NWL North Wright Air
+NTA Northern Thunderbird
+NWA Northwest Airlines
+FLG Northwest Airlink
+
+NWT Northwest Territorial
+PLR Northwestern Air Lease
+OAL Olympic Airways
+OAE Omni Air Intl
+PCE Pace Airlines
+PCO Pacific Coastal Airlines
+
+PAK Pakistan Intl Airlines
+PXA Pan American World Air
+PEN Peninsula Airways
+ALO Pennsylvania Commuter
+PAG Perimeter Airlines
+PAL Philippine Airlines
+
+PDD Phillips Alaska, Inc.
+PDT Piedmont Airlines
+PXX Pine State Airlines
+FLG Pinnacle Airlines
+PAC Polar Air Cargo
+POT Polet Aviakompania
+
+PRI Princeville Airways
+PAL Provincial Airlines
+JIA PSA Airlines
+QFA Qantas Airways
+RWG Redwing Airways
+TSH Regional 1 Airlines
+
+RPA Republic Airlines
+ROV Rover Airways Intl
+RAX Royal Air Freight
+RAM Royal Air Maroc
+RJA Royal Jordanian
+RNA Royal Nepal Airlines
+
+RYN Ryan Intl Airlines
+SAB SN Brussels Airlines
+SVA Saudi Arabian Airlines
+SAS Scandinavian Airlines
+YRR Scenic Airlines
+SFC Shuswap Air
+
+TCF Shuttle America
+SIA Singapore Airlines
+SPA Sierra Pacific Airlines
+FJE Silverjet
+SGY Skagway Air Service
+SKB Skybus Airlines
+
+SKK Skylink Express
+SSV Skyservice Airlines
+SGK Skyward Aviation
+SYX Skyway Airlines
+SKZ Skyway Enterprise
+SKW Skywest Airlines
+
+SNK Southeast Airlines
+SWA Southwest Airlines
+SAA South African Airways
+SCA South Central Air
+SOO Southern Air
+NKS Spirit Airlines
+
+ALK SriLankan Airlines
+SCX Sun Country Airlines
+SJI Sunjet Intl. Airlines
+SWG Sunwing Airlines
+SWI Sunworld Intl Airlines
+SLM Surinam Airlines
+
+SWR SWISS
+TBI Tab Express Intl
+TAI TACA
+TNR Tanana Air Service
+FXG Tatonduk Flying Service
+THA Thai Airways Intl
+
+THU Thunder Airlines
+TOW Tower Air
+TNT Trans North Aviation
+LOF Trans States Airlines
+LOF Trans World Express
+TRZ TransMeridian
+
+THY Turkish Airlines
+UAL United Airlines
+UPS United Parcel Service
+GWY USA 3000
+AWE US Airways
+USX US Express
+
+VSP VASP (Brazil)
+VGD Vanguard Airlines
+VRG Varig
+VES Vieques Air Link
+VRD Virgin America
+VIR Virgin Atlantic
+
+VDA Volga-Dnepr Airlines
+VAL Voyageur Airways
+VNA Warbelow's Air Ventures
+WSG Wasaya Airways
+WCC West Coast Air
+WIL West Isle Air
+
+SDU Westair Commuter
+WSA Westates Airlines
+WES Western Express Airlines
+WJA Westjet Airlines
+WLD Wilderness Airlines
+WIA Windward Island Airways
+
+WAI Wings Air
+WOA World Airways
+WSG Wasays Airlines
+CXP Xtra Airways
+YZR Yangtze River Express
+JAT Yugoslov Airlines
+
+UYA Yute Air Alaska
+OOM Zoom Airlines

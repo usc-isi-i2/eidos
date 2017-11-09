@@ -1,0 +1,68 @@
+* Relevant classes and methods
+
+com/fetch/autowrap/dom/DomTools.java
+  public static DomTreeHandle parseDocument(String html, 
+                                            TokenizationContext ctx)
+
+  	Parses html and returns a handle to the parse tree.
+	TokenizationContext determines the particular tokenizer we use and its configuration. Please set it up
+	like this:
+
+	import com.fetch.tokenization.impl.TokenizationContext;
+	import com.fetch.tokenization.utils.TokenizationUtils;
+	
+	  TokenizationContext ctx = 
+	    TokenizationContext.newInstance(TokenizationUtils.ID_STALKER, 
+	                                    TokenizationUtils.ID_STALKER);
+                                    
+
+  public static BasicLabeledColumnSparseList getSlots(List domTrees) 
+
+  Finds the template for domTrees which should be a list of
+  DomTreeHandles. Then extracts the slots into a
+  BasicLabeledColumnSparseList. This list has as many rows as there are
+  pages in domTrees and each column corresponds to a slot.
+
+
+com/fetch/autowrap/list/BasicLabeledColumnSparseList.java
+
+  A 2D array except that some cells can contain other
+  BasicLabeledColumnSparseLists instead of slot values. If any cell in a
+  columnn contains a BasicLabeledColumnSparseList then all cells in that
+  column are assumed to contain BasicLabeledColumnSparseLists.
+
+  isLiteralColumn()
+
+  Misnamed method which tests whether a column contains
+  slot values or BasicLabeledColumnSparseLists.
+
+  rows()
+
+  Returns the number of rows.
+
+  columns()
+
+  Returns the number of columns.
+
+  getObject(r, c)
+
+  Returns the value stored in row=r, col=c. This is either a
+  NodeListWrapper, which contains tokens, or another
+  BasicLabeledColumnSparseList.
+
+com/fetch/autowrap/dom/NodeListWrapper.java
+
+  A list of dom' nodes.
+
+  getSrcFromTo() -> IntPair
+
+  Returns the starting token (character?) position in the source file.
+
+
+* Usage
+
+  Create a list of DomTreeHandles by calling DomTools.parseDocument.
+  Call DomTools.getSlots to extract the slots into a
+                                   BasicLabeledColumnSparseList.
+  Recursively examine the cells of the BasicLabeledColumnSparseList to
+       find the extracted data within lists.

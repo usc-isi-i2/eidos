@@ -1,0 +1,44 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## $ ./run.bat wrapcache_20090109_no ../flight/2009-01-09/flight_flytecomm_domain.txt ../flight/2009-01-09/ flight
+
+## Types: 
+
+type PR_Aircraft       [varchar(100)] {source_model.aircraft.val}
+type PR_Airline	       [varchar(100)] {source_model.flights.airlinename}
+type PR_AirlineCode2   [varchar(100)] {source_model.flights.airlinecode2}
+type PR_AirlineCode3   [varchar(100)] {source_model.flights.airlinecode3}
+type PR_AirportCode    [varchar(100)] {source_model.airportcode.val}
+type PR_Altitude       [varchar(100)] {source_model.altitude.val}
+type PR_BaggageClaim   [varchar(100)] {source_model.baggageclaim.val}
+type PR_CityState      [varchar(100)] {source_model.citystate.val}
+type PR_Date	       [varchar(100)] {source_model.date.val; equality: Date = 1.0}
+type PR_FlightNumber   [varchar(100)] {source_model.flights.flightnumber}
+type PR_FlightStatus   [varchar(100)] {source_model.flightstatus.val; equality: Synonym = 1.0}
+type PR_RemainingTime  [varchar(100)] {source_model.remainingtime.val}
+type PR_SpeedMPH       [varchar(100)] {source_model.speedmph.val}
+type PR_Time	       [varchar(100)] {source_model.time.val}
+
+## Domain Relations: 
+
+relation flight_status(PR_Airline,PR_FlightNumber,PR_CityState,PR_AirportCode,PR_Date,PR_Time,PR_CityState,PR_AirportCode,PR_Date,PR_Time,PR_RemainingTime,PR_Aircraft,PR_Altitude,PR_SpeedMPH,PR_FlightStatus)
+
+relation airline(PR_Airline,PR_AirlineCode2,PR_AirlineCode3)
+
+# relation synonym(PR_FlightStatus,PR_FlightStatus)
+
+## Sources: 
+
+# source flightstatus_synonym($PR_FlightStatus:a,PR_FlightStatus:b)	:- synonym(PR_FlightStatus:a,PR_FlightStatus:b). {wrappers.DBService; http://jla.flightstatus_synonym.com/; JLA; PR-FlightStatus}
+
+source airline_codes2(PR_Airline,$PR_AirlineCode2,PR_AirlineCode3)	:- airline(PR_Airline,PR_AirlineCode2,PR_AirlineCode3). {wrappers.DBService; http://jla.airline_codes.com/; JLA; PR-AirlineCode2}
+
+source airline_codes3(PR_Airline,PR_AirlineCode2,$PR_AirlineCode3)	:- airline(PR_Airline,PR_AirlineCode2,PR_AirlineCode3). {wrappers.DBService; http://jla.airline_codes.com/; JLA; PR-AirlineCode3}
+
+source flytecomm_flight153(PR_Airline,$PR_FlightNumber,PR_CityState:departure,PR_AirportCode:departure,PR_Date:departure,PR_Time:departure,PR_CityState:arrival,PR_AirportCode:arrival,PR_Date:arrival,PR_Time:arrival,PR_RemainingTime,PR_Aircraft,PR_Altitude,PR_SpeedMPH,PR_FlightStatus,$PR_AirlineCode3) :- flight_status(PR_Airline,PR_FlightNumber,PR_CityState:departure,PR_AirportCode:departure,PR_Date:departure,PR_Time:departure,PR_CityState:arrival,PR_AirportCode:arrival,PR_Date:arrival,PR_Time:arrival,PR_RemainingTime,PR_Aircraft,PR_Altitude,PR_SpeedMPH,PR_FlightStatus),airline(PR_Airline,PR_AirlineCode2,PR_AirlineCode3). {wrappers.DBService; http://www.flytecomm.com/; JLA:flight153; PR-FlightNumber,PR-AirlineCode3}
+
+#### Note that I changed the formtypes list to be comma-separated
+
+## Target Predicate: 
+

@@ -1,0 +1,67 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+### Types: 
+
+type PR_Forecast     [varchar(100)]
+type PR_Zip          [varchar(100)] {examples.zipcode5digit.val}
+type PR_CityState    [varchar(100)] {source_model.citystate.val}
+type PR_Date         [varchar(100)] {equality: Date = 1.0}
+type PR_TimeWZone    [varchar(100)] # {equality: TimeWZoneEq = 1.0}
+type PR_TempF	     [varchar(100)] {numeric: -100.0, +150.0, 10%}
+type PR_TempC        [varchar(100)] {numeric: -50.0, +70.0, 10%}
+type PR_Sky          [varchar(100)] {source_model.sky.val}
+type PR_Humidity     [varchar(100)] {numeric: 0.0, 100.0, 15%}
+type PR_WindSpeedInMPH    [varchar(100)] {numeric: 0.0, +200.0, 10%}
+type PR_WindDir      [varchar(100)] {source_model.winddir.val}
+type PR_Pressure     [varchar(100)] {numeric: 26.0, 32.0, 10%}
+type PR_VisibilityInMi   [varchar(100)] {numeric: 0.0, 100.0, 10%}
+
+
+### Domain Relations: 
+
+relation weather(PR_Forecast,PR_Zip,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeedInMPH,PR_WindDir,PR_VisibilityInMi)
+
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+## Sources: 
+
+function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF).  	  							{wrappers.Ragnarok; convertC2F}
+
+
+# source wunderground ( PR_CityState, PR_TimeWZone,
+# 		      PR_TempF:current, PR_Sky, PR_Humidity,
+# 		      PR_WindSpeedInMPH, PR_WindDir, PR_Pressure,
+# 		      PR_VisibilityInMi, 
+# 		      PR_TempF:low1, PR_TempF:high1, PR_Sky:n1,
+# 		      PR_TempF:low2, PR_TempF:high2, PR_Sky:n2,
+# 		      PR_TempF:low3, PR_TempF:high3, PR_Sky:n3,
+# 		      PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, 
+# 		      PR_TempF:low5, PR_TempF:high5, PR_Sky:n5,
+# 		      $PR_Zip) :-  
+#   weather( "current", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure,
+# 	   PR_WindSpeedInMPH, PR_WindDir, PR_VisibilityInMi), 
+#   weather( "current+1", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _,), 
+#   weather( "current+2", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _,), 
+#   weather( "current+3", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _,), 
+#   weather( "current+4", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _,), 
+#   weather( "current+5", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _,).
+# {wrappers.DBService; http://www.wunderground.com/}
+
+
+source wunderground($PR_Zip, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeedInMPH, PR_WindDir, PR_Pressure, PR_VisibilityInMi, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5) :- weather("current", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeedInMPH, PR_WindDir, PR_VisibilityInMi), weather("current+1", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _,), weather("current+2", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _,), weather("current+3", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _,), weather("current+4", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _,), weather("current+5", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _,). {wrappers.DBService; http://www.wunderground.com/; JLA}
+
+
+## Target Predicate: 
+
+# target weather6($PR_Zip,PR_WindSpeedInMPH,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) 					{wrappers.DBService; http://weather.unisys.com/; Forecast}
+
+
+
+target weather8($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) {wrappers.DBService; http://www.wunderground.com/radar/map.asp; null}

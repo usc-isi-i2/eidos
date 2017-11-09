@@ -1,0 +1,38 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+type PR_Latitude        [varchar(200)]  {numeric: -90.0, +90.0, 0.02}
+type PR_Longitude       [varchar(200)]  {numeric: -180.0, +180.0, 0.02}
+type PR_Latitude_DMS    [varchar(200)]	{examples.latitudedms.val}
+type PR_Longitude_DMS   [varchar(200)]	{examples.longitudedms.val}
+type PR_City	        [varchar(200)]	{examples.city.val[occurs]}
+type PR_State_Abbr      [varchar(200)]  {examples.usstates.name}
+type PR_State	        [varchar(200)]	{examples.usstates.name}
+type PR_ZIP	        [varchar(200)]	{examples.zipcode.val} # complete list: {uscensusbureau.zipnov99.zipcode}
+type PR_Country	        [varchar(200)]  {examples.country.val}
+type PR_Country_Abbr    [varchar(200)]  {examples.countryAbbr.val}
+		       
+type CT_Address	        [varchar(200)]	{examples.address.val}
+type CT_Street	        [varchar(200)]	{examples.street.val}
+type CT_CityStateZip    [varchar(200)]  {examples.city_state_zip.val}
+type CT_CityState       [varchar(200)]
+
+
+## Domain Relations: 
+
+relation Address(CT_Address,CT_Street,PR_City,PR_State_Abbr,PR_State,PR_ZIP,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Sources: 
+
+source USGeocoder($CT_Address,CT_Street,PR_City,PR_State_Abbr,PR_ZIP,PR_Latitude,PR_Longitude)			:- Address(CT_Address,CT_Street,PR_City,PR_State_Abbr,PR_State,PR_ZIP,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).												{wrappers.USGeocoder; address}
+
+
+## Target Predicate: 
+
+target geospatial4($CT_Address,CT_Address,CT_CityState,PR_State_Abbr,CT_Street,PR_Latitude,PR_Longitude) 					{wrappers.DBService; http://geocoder.ca/}
+
+
+##############################################################
+

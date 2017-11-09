@@ -1,0 +1,65 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+type PR_City         [varchar(100)]
+type PR_CityState    [varchar(100)] {source_model.citystate.val}
+type PR_Date         [varchar(100)] {equality: Date = 1.0}
+type PR_ForecastDay     [varchar(100)]
+type PR_Humidity     [varchar(100)] {numeric: 0.0, 100.0, 15%}
+type PR_PlaceAbbr    [varchar(100)]
+type PR_Pressure     [varchar(100)] {numeric: 26.0, 32.0, 10%}
+type PR_PressureInInches [varchar(100)] {numeric: 26.0, 32.0, 10%}
+type PR_Sky          [varchar(100)] {source_model.sky.val}
+type PR_StateAbbr    [varchar(100)]
+type PR_TempF	     [varchar(100)] {numeric: -100.0, +150.0, 10%}
+type PR_TempC        [varchar(100)] {numeric: -50.0, +70.0, 10%}
+type PR_TimeWZone    [varchar(100)] # {equality: TimeWZoneEq = 1.0}
+type PR_VisibilityInMi   [varchar(100)] {numeric: 0.0, 100.0, 10%}
+type PR_Visibility   [varchar(100)] {numeric: 0.0, 100.0, 10%}
+type PR_WindDir      [varchar(100)] {source_model.winddir.val}
+type PR_WindSpeedInMPH    [varchar(100)] {numeric: 0.0, +200.0, 10%}
+type PR_Zip          [varchar(100)] {datasamples.zipcode_samples.zipcode}
+type OBJECT_TYPE  [varchar(100)]
+
+
+## Domain Relations: 
+
+# relation weather(Forecast,Zip,CityState,Date,TimeWZone,TempF,TempF,TempF,Sky,Humidity,Pressure,WindSpeedInMPH,WindDir,VisibilityInMi)
+
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+relation weatherForecast(OBJECT_TYPE)
+relation hasForecastDay(OBJECT_TYPE, PR_ForecastDay)
+relation hasZIP(OBJECT_TYPE, PR_Zip)
+relation hasCityState(OBJECT_TYPE, PR_CityState)
+relation hasDate(OBJECT_TYPE, PR_Date)
+relation hasTimeWZone(OBJECT_TYPE, PR_TimeWZone)
+relation hasCurrentTemperatureFarenheit(OBJECT_TYPE, PR_TempF)
+relation hasHighTemperatureFarenheit(OBJECT_TYPE, PR_TempF)
+relation hasLowTemperatureFarenheit(OBJECT_TYPE, PR_TempF)
+relation hasCurrentTemperatureCelsius(OBJECT_TYPE, PR_TempC)
+relation hasHighTemperatureCelsius(OBJECT_TYPE, PR_TempC)
+relation hasLowTemperatureCelsius(OBJECT_TYPE, PR_TempC)
+relation hasSkyConditions(OBJECT_TYPE, PR_Sky)
+relation hasHumidity(OBJECT_TYPE, PR_Humidity)
+relation hasPressure(OBJECT_TYPE, PR_Pressure)
+relation hasWindSpeed(OBJECT_TYPE, OBJECT_TYPE)
+relation WindSpeed(OBJECT_TYPE)
+relation hasWindSpeedInMPH(OBJECT_TYPE, PR_WindSpeedInMPH)
+relation hasWindDir(OBJECT_TYPE, PR_WindDir)
+relation hasVisibilityInMi(OBJECT_TYPE, PR_VisibilityInMi)
+
+## Sources: 
+
+function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF) {wrappers.Ragnarok; convertC2F}
+#      hasTemperatureFarenheit(OBJECT_TYPE, TempF),
+#      hasTemperatureCelsius(OBJECT_TYPE, TempC)
+
+#PR_Date,
+source wunderground( $PR_Zip, PR_CityState,  PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeedInMPH, PR_WindDir, PR_Pressure, PR_VisibilityInMi, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5,) :- weatherForecast("@o1"),hasForecastDay("@o1", "current"),hasZIP("@o1", PR_Zip),hasCityState("@o1", PR_CityState),hasDate("@o1", PR_Date),hasTimeWZone("@o1", PR_TimeWZone),hasCurrentTemperatureFarenheit("@o1", PR_TempF:current),hasSkyConditions("@o1", PR_Sky),hasHumidity("@o1", PR_Humidity),hasPressure("@o1", PR_Pressure),hasWindSpeed("@o1","@ws1"),WindSpeed("@ws1"),hasWindSpeedInMPH("@ws1", PR_WindSpeedInMPH),hasWindDir("@ws1", PR_WindDir),hasVisibilityInMi("@o1", PR_VisibilityInMi),weatherForecast("@o2"),hasForecastDay("@o2", "current+1"),hasZIP("@o2", PR_Zip),hasCityState("@o2", PR_CityState),hasDate("@o2", PR_Date),hasTimeWZone("@o2", PR_TimeWZone),hasLowTemperatureFarenheit("@o2", PR_TempF:low1),hasHighTemperatureFarenheit("@o2", PR_TempF:high1),hasSkyConditions("@o2", PR_Sky:n1),weatherForecast("@o2"),hasForecastDay("@o3", "current+2"),hasZIP("@o3", PR_Zip),hasCityState("@o3", PR_CityState),hasDate("@o3", PR_Date),hasTimeWZone("@o3", PR_TimeWZone),hasLowTemperatureFarenheit("@o3", PR_TempF:low2),hasHighTemperatureFarenheit("@o3", PR_TempF:high2),hasSkyConditions("@o3", PR_Sky:n2),weatherForecast("@o3"),hasForecastDay("@o4", "current+3"),hasZIP("@o4", PR_Zip),hasCityState("@o4", PR_CityState),hasDate("@o4", PR_Date),hasTimeWZone("@o4", PR_TimeWZone),hasLowTemperatureFarenheit("@o4", PR_TempF:low3),hasHighTemperatureFarenheit("@o4", PR_TempF:high3),hasSkyConditions("@o4", PR_Sky:n3),weatherForecast("@o5"),hasForecastDay("@o5", "current+4"),hasZIP("@o5", PR_Zip),hasCityState("@o5", PR_CityState),hasDate("@o5", PR_Date),hasTimeWZone("@o5", PR_TimeWZone),hasLowTemperatureFarenheit("@o5", PR_TempF:low4),hasHighTemperatureFarenheit("@o5", PR_TempF:high4),hasSkyConditions("@o5", PR_Sky:n4),weatherForecast("@o6"),hasForecastDay("@o6", "current+4"),hasZIP("@o6", PR_Zip),hasCityState("@o6", PR_CityState),hasDate("@o6", PR_Date),hasTimeWZone("@o6", PR_TimeWZone),hasLowTemperatureFarenheit("@o6", PR_TempF:low5),hasHighTemperatureFarenheit("@o6", PR_TempF:high5),hasSkyConditions("@o6", PR_Sky:n5).{wrappers.DBService; http://www.wunderground.com/; JLA:weather75; zipcode}
+## Target Pedicate: 
+
+
+target weather75($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempC,PR_TempF,PR_TempF,PR_Humidity,PR_WindDir,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH) {wrappers.DBService; http://weather.unisys.com/; form0; zipcode}

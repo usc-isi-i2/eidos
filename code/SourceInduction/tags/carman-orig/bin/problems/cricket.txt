@@ -1,0 +1,41 @@
+type count   [varchar(100)] {imap.count.val} 
+type unknown [varchar(200)] {imap.cricinfo.bowling_style}
+type name    [varchar(200)] {imap.cricinfo.name}
+type list    [varchar(500)] {imap.cricinfo.major_teams}
+type country [varchar(100)] {imap.country.val}
+
+import problems/types.txt
+
+relation player(name,date,city,date,city,list,name,unknown,unknown)
+relation test(name,unknown,unknown,count,count,count,count,count,decimal,decimal,count,count,count,count,count,count,count,count,decimal,unknown,decimal,decimal)
+relation odi(name,unknown,unknown,count,count,count,count,count,decimal,decimal,count,count,count,count,count,count,count,count,decimal,unknown,decimal,decimal)
+relation member(list,country)
+relation substr(unknown,unknown)
+relation sumCounts(count,count,count)
+relation sumDecimals(decimal,decimal,decimal)
+relation multiply1(count,decimal,decimal)
+relation multiply2(count,count,decimal)
+
+comparison <($count,$count)
+comparison <($decimal,$decimal)
+comparison <($timestamp,$timestamp)
+
+import problems/relations.txt
+
+source cricinfo_player($name,date_of_birth,place_of_birth,date_of_death,place_of_death,major_list,known_as,batting_style,bowling_style) :- player(name,date_of_birth,place_of_birth,date_of_death,place_of_death,major_list,known_as,batting_style,bowling_style). {wrappers.Ragnarok; cricinfo_player}
+source cricinfo_test($name,test_debut,test_latest,test_batting_matches,test_batting_innings,test_batting_not_outs,test_batting_runs_scored,test_batting_highest,test_batting_average,test_batting_strike_rate,test_batting_hundreds,test_batting_fifties,test_fielding_catches,test_fielding_stumpings,test_bowling_balls,test_bowling_maidens,test_bowling_runs_given,test_bowling_wickets,test_bowling_average,test_bowling_best,test_bowling_strike_rate,test_bowling_runs_per_over) :- test(name,test_debut,test_latest,test_batting_matches,test_batting_innings,test_batting_not_outs,test_batting_runs_scored,test_batting_highest,test_batting_average,test_batting_strike_rate,test_batting_hundreds,test_batting_fifties,test_fielding_catches,test_fielding_stumpings,test_bowling_balls,test_bowling_maidens,test_bowling_runs_given,test_bowling_wickets,test_bowling_average,test_bowling_best,test_bowling_strike_rate,test_bowling_runs_per_over).  {wrappers.Ragnarok; cricinfo_test}
+source cricinfo_odi($name,ODI_debut,ODI_latest,ODI_batting_matches,ODI_batting_innings,ODI_batting_not_outs,ODI_batting_runs_scored,ODI_batting_highest,ODI_batting_average,ODI_batting_strike_rate,ODI_batting_hundreds,ODI_batting_fifties,ODI_fielding_catches,ODI_fielding_stumpings,ODI_bowling_balls,ODI_bowling_maidens,ODI_bowling_runs_given,ODI_bowling_wickets,ODI_bowling_average,ODI_bowling_best,ODI_bowling_strike_rate,ODI_bowling_runs_per_over)                       :- odi(name,ODI_debut,ODI_latest,ODI_batting_matches,ODI_batting_innings,ODI_batting_not_outs,ODI_batting_runs_scored,ODI_batting_highest,ODI_batting_average,ODI_batting_strike_rate,ODI_batting_hundreds,ODI_batting_fifties,ODI_fielding_catches,ODI_fielding_stumpings,ODI_bowling_balls,ODI_bowling_maidens,ODI_bowling_runs_given,ODI_bowling_wickets,ODI_bowling_average,ODI_bowling_best,ODI_bowling_strike_rate,ODI_bowling_runs_per_over).                        {wrappers.Ragnarok; cricinfo_odi}
+
+source contains($list,country) :- member(list,country).   {invocation.Local; contains}
+source substring($val0,$val1)  :- substr($val0,$val1).    {invocation.Local; substring}
+function addIntegers($count0,$count1,count2) :- sumCounts(count0,count1,count2). {invocation.Local; addIntegers}
+function addFloats($dec0,$dec1,dec2) :- sumDecimals(dec0,dec1,dec2).        {invocation.Local; add}
+function multiplyVals($count0,$dec1,dec2) :- multiply1(count0,dec1,dec2).    {invocation.Local; multiply}
+function divideVals($count0,$count1,dec2) :- multiply2(count0,count1,dec2).  {invocation.Local; divide}
+
+function ConvertTime($dtme,stmp,date,tme,zone)  :- time(stmp,dtme,_,date,tme,zone,_).	{wrappers.Ragnarok; convertDateTime}
+
+
+#target cricbase_players($country,name,unknown,date,unknown,unknown,unknown) {wrappers.Ragnarok; cricbase_players}
+target cricbase_test($country,name,count,date,date,count,count,count,decimal,count,count,unknown,count,count,count,decimal,decimal,decimal,count,count,unknown) {wrappers.Ragnarok; cricbase_test}
+target cricbase_odi($country,name,count,date,date,count,count,count,decimal,count,count,unknown,count,count,count,decimal,decimal,decimal,count,count,unknown) {wrappers.Ragnarok; cricbase_odi}

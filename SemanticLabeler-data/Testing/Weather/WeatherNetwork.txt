@@ -1,0 +1,10 @@
+AKR	-6°C	21°F	Partly cloudy. Light	12°F	W 11 km/h	79%	15°F	101.70 kPa	16 km	2900 ft	"Friday January 6 2006, 19:00 EST"	Akron-Canton Regional Airport
+NULL	1°C	33°F	A few clouds. Haze.	24°F	NW 22 km/h	51%	17°F	100.81 kPa	6.4 km	unlimited	"Friday January 6 2006, 19:00"	Newark 
+TAM	9°C	48°F	A few clouds	NULL	NW 19 km/h	62%	35°F	101.61 kPa	16 km	unlimited	"Friday January 6 2006, 19:00 EST"	Tampa 
+MILW	-1°C	30°F	Partly cloudy	19°F	SW 26 km/h	69%	21°F	101.35 kPa	14 km	12000 ft	"Friday January 6 2006, 18:00 CST"	Milwaukee International Airport 
+LOS	26°C	78°F	A few clouds	NULL	SW 15 km/h	21%	35°F	101.46 kPa	16 km	unlimited	"Friday January 6 2006, 16:00 PST"	Los Angeles Intl Airport 
+NULL	11°C	51°F	Partly cloudy	NULL	S 11 km/h	82%	46°F	101.24 kPa	16 km	7000 ft	"Friday January 6 2006, 16:00 PST"	Tacoma
+SNTB	20°C	68°F	Clear	NULL	W 11 km/h	43%	44°F	101.46 kPa	16 km	unlimited	"Friday January 6 2006, 16:00 PST"	Santa Barbara Municipal Airport
+OMAHNE	7°C	44°F	Clear	NULL	SW 11 km/h	45%	24°F	101.47 kPa	16 km	unlimited	"Friday January 6 2006, 18:00 CST"	Eppley Airfield
+PRTLNOR	8°C	46°F	Overcast. Light rain.	NULL	E 20 km/h	93%	44°F	101.40 kPa	16 km	1400 ft	"Friday January 6 2006, 16:00 PST"	Portland International Airport
+CHI	-1°C	30°F	Overcast	21°F	SW 17 km/h	69%	21°F	101.52 kPa	16 km	2200 ft	"Friday January 6 2006, 18:00 CST"	Chicago-O'Hare Intl Airport 

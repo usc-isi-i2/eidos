@@ -1,0 +1,1 @@
+// Verisign Fixfunction verisignFix() {var verisign = document.getElementById('verisignTop').innerHTML;document.getElementById('verisignBottom').innerHTML = verisign;}

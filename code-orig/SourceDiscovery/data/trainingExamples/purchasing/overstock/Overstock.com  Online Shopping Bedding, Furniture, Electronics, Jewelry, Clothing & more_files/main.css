@@ -1,0 +1,90 @@
+html, body, div, a, input, table, td, th, span,p { font-family: Verdana, Geneva, Arial, Helvetica; color: #000; font-size: 12px;}
+font						 		{font-family: Verdana, Geneva, Arial, Helvetica;font-size: 10px;}
+A                   			 				{color: #000; text-decoration: underline; }
+A:hover,A:visited:hover						{color: #333;}
+h2, h3,.tinyblue, .littleblue 	{color: #039;}
+h1 {color: #039; font-size: 16px; font-weight: bold;}
+.productDescription {color: #039; font-size: 14px; font-weight: bold;}
+.tiny               {color: #114C81;}
+.links              {color: #114C81; text-decoration: underline; }
+.whitelink,.littlewhite 					{color: #FFF;}
+.little             {color: #F00;}
+.only               {color: #0000FF;}
+.littleorange       {color: #C90000;}
+.lou                {color: #C90000; text-decoration: underline; }
+.department,.header {font-size: 11px; color: #FFF;}
+.textwhite          {font-size: 11px; color: #FFF;}
+.text,.testform     {font-size: 11px;}
+.testform2          {font-size: 12px;}
+.bigred,.orange     {font-size: 11px; color: #C90000;}
+.title              {font-size: 12px; color: #114C81;}
+.bigwhite           {font-size: 12px; color: #FFF;}
+.bigblue            {font-size: 12px; color: #003399;}
+.bigwhite           {font-size: 12px; color: #DDD;}
+.ours               {font-size: 14px; color: #F00;}
+
+/* Checkout Styles */
+.ShopNeedHelp       {font-size: 12px;	font-weight: bold; color: #41699a; text-decoration: none; }
+.ShopHelpLinks      {color: #41699a; text-decoration: none; }
+.CartHeaders        {font-size: 11px; font-weight: bold; color: #333; text-decoration: none; }
+.FormHead           {font-weight: bold; color: #41699a; text-decoration: none; }
+.DefaultShopxext    {font-size: 12px;	font-weight: normal;  text-decoration: none; }
+.ReviewLinks        {color: #C00; text-decoration: none; font-weight: bold; }
+.StepGrey           {color: #000; text-decoration: underline; }
+.StepGreyNoLine     {color: #000; text-decoration: none; }
+.FormInside         {font-size: 11px; color: #000; text-decoration: none; }
+.FormInsideUL       {font-size: 11px; color: #000; text-decoration: underline; }
+.NeedHelpSide       {font-size: 9px; color: #000;}
+.NeedHelpSide:hover {color: #c00; }
+.HelpDetails        {font-size: 9px; color: #000; }
+.HelpDetailsRed     {font-size: 9px; color: #C00; font-weight: bold; }
+
+/*Product Display Box Styles */
+.NewCatListPro, .NewCatListPro a { text-decoration: underline; height: auto !IMPORTANT;}
+.NewCatListPro:hover, .NewCatListPro a:hover   {color: #c00;	text-decoration: underline;}
+.NewCatList               {color: #114C81; }
+.NewCatListPrice          {color: #c00;	text-decoration: none;}
+.NewCatListPercent        {color: #000; text-decoration: none;}
+.NewCatListHowMany  			{color: #06C;	text-decoration: none;}
+.NewCatListBorderRight 		{padding: 15px 5px; border-right: 1px solid #ddd; border-bottom: 4px solid #ddd; text-align: center; }
+.NewCatListBorderNone  		{padding: 15px 5px; border-bottom: 4px solid #ddd;	text-align: center; }
+
+/* SOLD OUT STYLES */
+.proComplete 			 	 			{width: 130px; text-align:left;}
+.proComplete 			 				{position: relative;	margin: 10px 0px;}
+.proComplete td 					{padding: 3px 0px 0px 0px;}
+.proBanner 	 							{margin: 0px;	padding: 0px;	position: absolute;	z-index: 5;	top: -5px;	}
+
+/* Quick Links Footer */
+#EasyNavWhite  				    {color: #FFF;	background-color: #7b9ac0;	text-align: center; padding: 4px;} 
+#EasyNavWhite a 					{color: #FFF;}
+#EasyNavWhite a:hover     {color: #EEE;}
+
+/* Normal New Footer */
+.FooterCrumbsOrange       {font-size: 11px; font-weight: bold;	color: #900;	text-decoration: none;}
+#FooterCrumbs a           {color: #4a709f;	text-decoration: underline;}
+#FooterCrumbs a:hover     {color: #2E4664;	text-decoration: underline;}
+#FooterCrumbs 						{color: #4a709f;	text-decoration: none;}
+
+/* Category Pages */
+.redText 									{font-size: 12px;	font-weight: bold;	color: #C00;}
+.formText 								{font-size: 11px;		text-decoration: none;} 
+
+/*Club O Tally Styles */
+#CluboTally 							{color: #333;	background-color: #FFF;	border: 1px solid #7b9ac0;	padding: 5px;	position: relative;	height: 110px;	width: 150px;	margin: 15px 0px;}
+.TallyHeader 							{font-weight: bold;	color: #FFF;	text-align: center;	padding: 4px;	margin-bottom: 4px;	background-color: #7b9ac0;}
+.TallyRBox 								{text-align: right;	position: absolute;	top: 25px;	right: 5px;	width: 60px;	font-size: 9px;}
+.TallyLBox 								{text-align: left;	position: absolute;	top: 25px;	left: 5px;	width: 90px;	font-size: 9px;}
+.TallyLeft 								{font-size: 9px; padding-top: 4px;	white-space: nowrap;}
+.TallyRight 							{font-size: 9px; color: #900;	font-weight: bold; padding-top: 4px;	white-space: nowrap;}
+
+/* Content Site Module */
+.cmodule {width: 100%; border: 1px solid #ccc; padding: 10px;}
+.cmodtitle {color: #039; font-size: 14px; font-weight: bold; margin-bottom:0px;}
+.cmodtitleh1 {color: #039; font-size: 14px; font-weight: bold; margin-bottom:0px; display:inline;}
+.addedToCart {padding: 20px; font-size: 14px; color: rgb(170, 0, 0); font-weight: 700;}
+.addedToCart a {font-size: 14px; color: rgb(170, 0, 0); font-weight: 700;}
+
+/* Almost Sold Out for Cart */
+.almostSoldOutC           {font-weight: bold; color: #95171a; text-decoration: none; text-transform: uppercase}
+

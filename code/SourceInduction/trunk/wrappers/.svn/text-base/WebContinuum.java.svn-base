@@ -1,0 +1,123 @@
+package wrappers;
+
+import invocation.Wrapper;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathFactory;
+
+import org.xml.sax.InputSource;
+
+import relational.Table;
+
+public class WebContinuum implements Wrapper {
+
+	XPath xpath;
+
+	public WebContinuum() {
+		xpath = XPathFactory.newInstance().newXPath();
+	}
+
+
+	public Table invoke(String[] endpoint, List<String> inputTuple) {
+
+		Table output = null;
+		String url = null;
+
+		if (endpoint[1].equalsIgnoreCase("calcExcRate")) {
+
+			/*
+			 * http://www.webcontinuum.net/webservices/ccydemo.asmx/calcExcRate?sCurrIn=USD&sCurrOut=AUD&fAmt=1
+			 *
+<?xml version="1.0" encoding="utf-8"?>
+<float xmlns="http://webcontinuum.net/webcontccydemo1">1.6235261</float>
+			 *
+			 */
+
+			try {
+
+				url = "http://www.webcontinuum.net/webservices/ccydemo.asmx/calcExcRate";
+				url += "?sCurrIn=" + java.net.URLEncoder.encode(inputTuple.get(0).trim(),"UTF-8"); // currency
+				url += "&sCurrOut=" + java.net.URLEncoder.encode(inputTuple.get(1).trim(),"UTF-8"); // currency
+				url += "&fAmt=" + java.net.URLEncoder.encode(inputTuple.get(2).trim(),"UTF-8"); // amount
+
+				//System.err.println("url = "+url);
+
+				// the metadata
+		    	String[] columns = new String[] {"sCurrIn","sCurrOut","fAmt","float"};
+		    	output = new Table(columns);
+
+		    	// invoke source and parse xml output
+				String value = (String) xpath.evaluate("//*[local-name()='float'][1]/text()",new InputSource(url),XPathConstants.STRING);
+
+		    	ArrayList<String> tuple = new ArrayList<String>();
+			    tuple.addAll(inputTuple);
+
+			    tuple.add(removeTags(value));
+
+			    output.insertDistinct(tuple);
+
+			}
+			catch (Exception e) { return null; }
+
+
+		}
+		else {
+    		System.err.println("Error: No method called " + endpoint[1] + " in wrapper: " + this.getClass().getName());
+			System.err.println("Please update source definition and restart system .... exiting");
+    		System.exit(9);
+		}
+
+		return output;
+
+	}
+
+	public static String removeTags(String input) {
+		String output;
+		int index;
+		while ((index = input.indexOf("<"))!=-1) {
+			output = input.substring(0,index);
+			if ((index = input.indexOf(">",index))!=-1) {
+				output += input.substring(index+1);
+			}
+			input = output;
+		}
+		return input;
+	}
+
+
+	public void testWrapper() {
+		WebContinuum r = new WebContinuum();
+		String[] endpoint;
+		ArrayList<String> input;
+
+		System.out.println("WebContinuum.calcExcRate");
+
+		endpoint = new String[2];
+		endpoint[1] = "calcExcRate";
+		input = new ArrayList<String>();
+		input.add("USD");
+		input.add("AUD");
+		input.add("1.1");
+		r.invoke(endpoint,input).print();
+
+		//--------------------------------
+
+		System.out.println("WebContinuum.calcExcRate");
+
+		endpoint = new String[2];
+		endpoint[1] = "calcExcRate";
+		input = new ArrayList<String>();
+		input.add("zzz");
+		input.add("xxx");
+		input.add("1.1");
+		r.invoke(endpoint,input).print();
+
+		//--------------------------------
+
+	}
+
+}

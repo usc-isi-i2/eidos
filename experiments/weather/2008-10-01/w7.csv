@@ -1,0 +1,15 @@
+PR-ZipCode5Digit, CT-TemperatureF, PR-Humidity, PR-WindDirection, CT-VisibilityMiles, PR-Sky
+Name,column16,column24,column25,column31,column176
+20502,73F,44%,NE at 14 knt,1031.0 mb (30.45 in),Partly Cloudy
+33040,76F,94%,E at 6 knt,1015.3 mb (29.99 in),NULL
+90292,67F,76%,SSW at 5 knt,4 mi,NULL
+36130,82F,48%,ESE at 12 knt,1023.7 mb (30.24 in),Partly Cloudy
+85007,89F,32%,calm,1013.6 mb (29.94 in),NULL
+6106,65F,56%,NNE at 7 knt,10 mi,Partly Cloudy
+32399,83F,21%,NE at 10 knt,1020.9 mb (30.16 in),Partly Cloudy
+46208,78F,46%,N at 4 knt,1027.4 mb (30.35 in),NULL
+50319,79F,58%,S at 16 knt,1021.4 mb (30.17 in),NULL
+66612,79F,60%,S at 12 knt,1022.0 mb (30.19 in),NULL
+
+
+http://weather.unisys.com/,weather7,,,,

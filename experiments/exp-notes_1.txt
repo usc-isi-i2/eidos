@@ -1,0 +1,110 @@
+*** DEIMOS
+
+For each target human constructs model. 
+At every step we evaluate against that model.
+
+Compute precision-recall at each level:
+http://en.wikipedia.org/wiki/Precision_and_recall
+
+1. Source Discovery
+   - Evaluation: manual eyeball URL (form is relevant to seed)
+
+2. Source Invocation
+   - Do combinations(forminputs, inputsemantictypes)
+   - Evaluation: 
+     - How many sources have at least 1 correct invocations?
+     - Did we generate the right inputs?
+       - 404 page not found
+       - 403 forbidden
+       - timeouts
+
+    - 3 source types according to inputs:
+      - in domain, take same input as seed, works
+      - in domain, take same input as seed, fails
+      - in domain, take different input as seed, could work if more seeds
+      - out of domain
+
+3. Source Extraction (Autowrap)
+   - solve parser related issues: 
+     - number extraction (negative numbers), multi-token extractions
+   - Evaluation: 
+     - For how many sources could the system build a template?
+     - How many of the attributes expected to extract it extracts?
+     - other intersting statistics
+       - record (average) number of extracted columns?
+       - number of consistent columns (mixed columns are wrong)
+
+4. Semantic Typing/Labeling
+   - Evaluation:
+     - are consistent columns of the labeled type?
+
+5. Source Modeling (EIDOS)
+   - Evaluation:
+     - are predicates/attributes in the source description correct?
+
+
+*** Action items
+
+- Source invocation: 
+  - do all combinations (important for directory)  -> Tom, by 2008-11-21
+
+- Source Extraction:
+  - include improved number extraction from Cenk   -> Tom, by 2008-11-17
+
+- Needs good inputs for directory domain -> Kristina, by 2008-11-18
+
+- collect seed weather data as temporally close as possible to learning 
+  -> Tom, JL, by 2008-11-21
+
+- automate experiments  -> Maria, JL, by 2008-11-19
+  - Set up paths correctly
+  - make dbProperties an argument
+
+- create gold standard for evaluation -> JL, by 2008-11-24
+
+
+
+* Collect Gold Standard
+
+- Weather: 
+  - collect weather info as temporally close as possible to learning
+    - before each learning phase of a target source
+    - before each individual call?
+
+- Directory  
+  - identify data that 
+    1. returns phone numbers (only 3 out 10 in current set) 
+    2. returns unique results (most returned multiple hits)
+       - adding middle initial may help.
+       - choose rarer last names
+       - (does autowrap return lists? even if so, we may not wnat to model that)
+
+* Background Knowledge
+  - Only types in seed sources
+    - note that the wunderground agent does not have Celsius, but that the ConvertC2F source does.
+  - add more types? 
+    - PressureInMb? 
+  - add more sources?
+    - mmhg2mb? inhg2mb? ...
+    - translation among different Lat/Lon formats
+
+* Source Descriptions
+  - what level of detail are we aiming for?
+    - executable descriptions?
+      - too high?
+      - need to get all the value transformations right
+    - help human write source descriptions
+      - more reasonable
+      - human fills/corrects details
+
+* IJCAI paper
+  - spin: problem is very hard, combination of techniques essential to solve it.
+  
+
+* Evaluate learned version of seed? NO
+
+* Code
+  - Set up paths correctly
+  - make dbProperties an argument
+
+

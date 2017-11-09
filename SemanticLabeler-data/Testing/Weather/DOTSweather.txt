@@ -1,0 +1,7 @@
+"1:51 PM EST Nov 8, 2005"	65	NA	78	39%	39	West at 11	30.03	Mostly Cloudy	06:35 AM (CST)	04:45 PM (CST)	Newark	New Jersey	01:09 PM (CST)	10:58 PM (CST)
+"1:51 PM EST Nov 8, 2005"	63	63	NA	43%	40	WSW at 8	30.06	Clear	06:34 AM (CST)	04:44 PM (CST)	Brooklyn	New York	01:08 PM (CST)	10:58 PM (CST)
+"1:16 PM EST Nov 8, 2005"	84	NA	85	48%	63	East at 8	30.13	Clear	06:46 AM (CST)	05:41 PM (CST)	Tampa	Florida	01:11 PM (CST)	No Moon Set
+"12:52 PM CST Nov 8, 2005"	55	52	NA	77%	48	ESE at 11	30.02	Mostly Cloudy	06:36 AM (MST)	04:35 PM (MST)	Milwaukee	Wisconsin	01:13 PM (MST)	10:50 PM (MST)
+"10:53 AM PST Nov 8, 2005"	64	NA	NA	68%	53	Variable at 5	29.97	Scattered Clouds	06:20 AM ()	04:55 PM ()	Marina Del Rey	California	12:52 AM ()	11:21:00 PM ()
+"10:53 AM PST Nov 8, 2005"	63	62	NA	70%	53	ESE at 9	29.97	Overcast	06:26 AM ()	04:59 PM ()	Santa Barbara	California	12:59 AM ()	11:25 PM ()
+"10:55 AM PST Nov 8, 2005"	48	44	NA	71%	39	SSW at 9	30.25	Overcast	07:04 AM ()	04:42 PM ()	Tacoma	Washington	01:48 PM ()	11:02 PM ()

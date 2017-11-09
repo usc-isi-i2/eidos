@@ -1,0 +1,14 @@
+0:PR-ModelName	1:PR-Manufacturer	2:PR-Vendor	3:PR-ModelNumber	4:PR-VendorItemNumber	5:PR-DeviceTotalPrice	6:PR-ColorBitDepth	7:PR-ImageBrightness	8:PR-ImageContrastRatio	9:PR-DisplayWidth	10:PR-DisplayHeight	11:PR-DisplaySize	12:PR-DisplayDotSize	13:PR-CompatibleWithDesc	14:PR-DeviceHeight	15:PR-DeviceWidth	16:PR-DeviceDepth	17:PR-WarrantyDesc
+HP TFT8030 18-inch Flat Panel Monitor	HP	Overstock.com	TFT8030	963821	499.99	NULL	NULL	NULL	1280	1024	18	0.28	PC, Mac	15.8	14.8	8.2	1 year - manufacturer
+HP L1502 15-inch Flat Panel Display	HP	Overstock.com	L1502	960629	289.99	NULL	NULL	NULL	1024	768	15	NULL	Plug and Play	13.6	7.5	14	1 year - manufacturer
+Apple Studio Display 17-inch LCD Monitor	HP	Overstock.com	M7649ZM	409185	579.99	24	NULL	350	1280	NULL	17	NULL	Mac	17.3	17.6	6.9	30 day - distributor
+Cornea 18-in. LCD with Speakers - White	HP	Overstock.com	CT1810W	470139	399.99	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	17.82	17.48	9.5	90 day - distributor
+Medion 17-inch Flat Panel Monitor	HP	Overstock.com	MD9494	954038	399.99	NULL	NULL	350	1280	NULL	17	NULL	NULL	16.46	16.14	5.79	30 day -  manufacturer
+HP Pavilion F1703 17-inch LCD Monitor	HP	Overstock.com	F1703	137277	399.99	NULL	NULL	350	1280	NULL	17	0.264	Plug and Play	16	15	7.5	90 day - manufacturer
+HP L1730 17-inch LCD Monitor	HP	Overstock.com	L1730	411469	379.99	NULL	NULL	NULL	1280	NULL	17	0.264	NULL	17	15	8.25	30 day  - Overstock
+Sony VAIO V100G Computer System with Epson Printer Bundle	HP	Overstock.com	PCV-V100g	1004141	1349.99	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	30 day  - Overstock
+Apple Studio Display 17-inch LCD Monitor	HP	Overstock.com	M7649ZM	409185	579.9	24	NULL	350	1280	NULL	17	NULL	Mac	17.3	17.6	6.9	30 day - distributor
+Compaq Presario FP7317 17-inch LCD Monitor	HP	Overstock.com	FP7317	1009577	279.99	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	90 day - manufacturer
+HP Flat Panel Monitor 23 1920x1200 WUXGA	HP	Overstock.com	P9615A#ABA	953742	1499.99	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	21.46	17.36	8.27	1 year - manufacturer
+HP L1730 17-inch LCD Monitor	HP	Overstock.com	L1730	411469	379.99	NULL	NULL	NULL	1280	NULL	17	0.264	NULL	17	15	8.25	30 day  - Overstock
+Tatung 15inch LCD Monitor	HP	Overstock.com	L15CCAE	1011623	219.99	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	14.4            Selected Customer Reviews...  Click here to write a review!  This product has no reviews on file.    Customers who bought this item often buy...	NULL	90 day - manufacturer

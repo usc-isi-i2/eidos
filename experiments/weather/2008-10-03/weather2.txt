@@ -1,0 +1,104 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+type PR_ZipCode5Digit	        [varchar(200)]	{examples.zipcode5digit.val} # complete list: {uscensusbureau.zipnov99.zipcode}
+type CT_TemperatureF		[varchar(100)]  {numeric: -100.0, +200.0, 5%}
+type CT_TemperatureC		[varchar(100)]  {numeric: -50.0, +80.0, 5%}
+type PR_Humidity		[varchar(100)]  {numeric: 0.0, 100.0, 10%}
+type PR_WindDirection		[varchar(100)]  {examples.wind_direction.val}
+type CT_VisibilityFeet		[varchar(100)]
+type CT_VisibilityMiles		[varchar(100)]
+type CT_PressureInches  	[varchar(100)]  {numeric: 26.0, 30.99, 0.02}
+type PR_Sky			[varchar(100)]
+type CT_PressureMb		[varchar(100)]	{numeric: 1016.0, 1025.9, 1.0}
+
+## Domain Relations: 
+
+relation weather(PR_ZipCode5Digit,CT_TemperatureF:high,CT_TemperatureF:low,CT_TemperatureF:highnextday,PR_Humidity,PR_Sky,CT_PressureInches,PR_WindDirection,CT_VisibilityFeet)
+
+# relation convertDistMFt(distanceM,distanceFt)
+relation convertDistMFt(CT_VisibilityMiles,CT_VisibilityFeet)
+
+relation convertTemp(CT_TemperatureC,CT_TemperatureF)
+
+## Sources: 
+
+# function ConvertM2Ft($distM,distFt)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertM2Ft}
+
+function ConvertC2F($tempC,tempF)	 			:- convertTemp(tempC,tempF).  	  							{wrappers.Ragnarok; convertC2F}
+
+function ConvertFt2M($distFt,distM)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertFt2M}
+
+source weather1($PR_ZipCode5Digit,PR_Humidity,CT_TemperatureF:high,CT_TemperatureF:low,CT_TemperatureF:highnextday,PR_Sky,CT_VisibilityFeet,CT_PressureInches,PR_WindDirection) :- weather(PR_ZipCode5Digit,CT_TemperatureF:high,CT_TemperatureF:low,CT_TemperatureF:highnextday,PR_Humidity,PR_Sky,CT_PressureInches,PR_WindDirection,CT_VisibilityFeet).												{wrappers.DBService; http://www.wunderground.com/}
+
+
+## Target Predicate: 
+
+target weather2($PR_ZipCode5Digit,PR_Sky,CT_TemperatureF,CT_TemperatureC,PR_Humidity,PR_WindDirection,CT_TemperatureF) 					{wrappers.DBService; http://weather.unisys.com/}
+
+
+######################################################################
+#
+# EXPERIMENTS
+# 
+# 2008-10-03 18:06:46
+
+# Analysis: 
+
+# weather2($PR_ZipCode5Digit,PR_Sky,CT_TemperatureF:high,CT_TemperatureC,_,_,CT_TemperatureF)	:- weather(PR_ZipCode5Digit,CT_TemperatureF:high,_,_,_,PR_Sky,_,_,_), convertTemp(CT_TemperatureC,CT_TemperatureF).
+
+# ground truth: 
+# weather2(PR_ZipCode5Digit, PR_Sky, CT_TemperatureF:current, CT_TemperatureC:current, 
+#          PR_Humidity, PR_WindDirection, CT_TemperatureF/CT_PressureMb)
+# 
+# learned:
+# weather2($PR_ZipCode5Digit,PR_Sky,CT_TemperatureF:high,CT_TemperatureC,_,_,CT_TemperatureF)
+# 
+# correct: 2
+# missing: 2
+# incorrect: 2
+#   debatable: corectly translates between C anf F, but with CT_TemperatureF(:current) and CT_TemperatureF/CT_PressureMb
+
+
+# timestmp = 1223081712306
+# target = weather2($PR_ZipCode5Digit,PR_Sky,CT_TemperatureF,CT_TemperatureC,PR_Humidity,PR_WindDirection,CT_TemperatureF)
+# definition = weather2($PR_0,PR_1,CT_2,CT_3,_,_,CT_6)	:- weather1(PR_0,_,CT_2,_,_,PR_1,_,_,_), ConvertC2F(CT_3,CT_6).
+# unfolding = weather2($PR_0,PR_1,CT_2,CT_3,_,_,CT_6)	:- weather(PR_0,CT_2,_,_,_,PR_1,_,_,_), convertTemp(CT_3,CT_6).
+# score = 1.649321266968326E-5
+# normalisedScore = -5.876763177989006
+# candidates = 31
+# totalCandidates = 64
+# accesses = 143
+# totalAccesses = 149
+# time = 14
+# totalTime = 27
+# timeout = 300
+# maxClauseLength = 7
+# maxPredRepitition = 2
+# maxVarLevel = 5
+# noVarRepetition = true
+# heuristic = random
+
+
+# without the convertTemp function
+#
+# timestmp = 1223081392599
+# target = weather2($PR_ZipCode5Digit,PR_Sky,CT_TemperatureF,CT_TemperatureC,PR_Humidity,PR_WindDirection,CT_TemperatureF)
+# definition = weather2($PR_0,PR_1,CT_2,_,_,_,_)	:- weather1(PR_0,_,CT_2,_,_,PR_1,_,_,_).
+# unfolding = weather2($PR_0,PR_1,CT_2,_,_,_,_)	:- weather(PR_0,CT_2,_,_,_,PR_1,_,_,_).
+# score = 6.108597285067874E-7
+# normalisedScore = -1.8201589437497527
+# candidates = 23
+# totalCandidates = 42
+# accesses = 20
+# totalAccesses = 20
+# time = 1
+# totalTime = 1
+# timeout = 300
+# maxClauseLength = 7
+# maxPredRepitition = 2
+# maxVarLevel = 5
+# noVarRepetition = true
+# heuristic = random

@@ -1,0 +1,76 @@
+package evaluation;
+
+import java.util.ArrayList;
+
+import relational.DBConnection;
+import relational.Table;
+import domain.Clause;
+import domain.Predicate;
+import domain.SemanticType;
+import domain.Term;
+
+import invocation.Dispatcher;
+
+public abstract class Evaluator {
+	
+	public Dispatcher   dispatcher;
+	public DBConnection dbCon;
+	public String 		dbName;
+	
+	public Evaluator(DBConnection dbCon) {
+		this.dbCon  = dbCon;
+		this.dbName = dbCon.cacheDbName;
+		this.dispatcher = new Dispatcher(dbCon,dbName);
+	}
+	
+	public abstract Evaluation evaluate(Clause c);
+	
+	
+	public String[] checkForConstants(Predicate p, int min) {
+		String[] constants = new String[p.arity];
+		String dbTable = dbName+"."+p.name;
+		if (dbCon.count(dbTable) >= min) {
+			for (int i=0; i<p.arity; i++) {
+				String column = p.types[i].name+i;
+				if (dbCon.countDistinct(dbTable,column)==1) {
+					constants[i] = dbCon.randomSubset(dbTable,column,1,false).get(0);
+				}	
+			}
+		}
+		return constants;
+	}
+	
+	
+	//////////////////////////////////////////////////
+	// utility methods
+
+	Table selectTargetInput(Predicate p, int count) {
+		if (p.inputSignature().isEmpty()) {
+			System.err.println("Target predicate has no input attributes!");
+			System.err.println(".... this case is not handled yet, sorry! Exiting....");
+			System.exit(9);
+		}
+		// method gets input tuples and guarantees that at least half of them 
+		//   are positive (return values when used to invoke target predicate)
+		Table t1 = dbCon.randomSubset(dbName+".InvocationsOf_"+p.dbTable,count, false);
+		Table t2 = dbCon.randomSubset(dbName+"."+p.dbTable, t1.colNames,(count+1)/2, true);
+		for (ArrayList<String> tuple: t1.tuples) {
+			t2.insertDistinct(tuple);
+			if (t2.size()==count) {	break; }
+		}
+		// set column types
+		t2.colTypes = new ArrayList<SemanticType>(p.inputSignature()); 
+		return t2;
+	}
+	
+	ArrayList<String> targetColumns(int arity) {
+		ArrayList<String> columns = new ArrayList<String>(arity);
+		for (int i=0; i<arity; i++) {
+			columns.add((new Term(0,i)).toString());
+		}
+		return columns;
+	}
+	
+
+	
+}

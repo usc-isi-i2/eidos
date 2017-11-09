@@ -1,0 +1,91 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+type PR_Latitude        [varchar(200)]  {numeric: -90.0, +90.0, 0.01}
+type PR_Longitude       [varchar(200)]  {numeric: -180.0, +180.0, 0.01}
+type PR_Latitude_DMS    [varchar(200)]	{examples.latitudedms.val}
+type PR_Longitude_DMS   [varchar(200)]	{examples.longitudedms.val}
+type PR_City	        [varchar(200)]	{examples.city.val[occurs]}
+type PR_State_Abbr      [varchar(200)]  {examples.usstates.name[occurs]}
+type PR_State	        [varchar(200)]	{examples.usstates.name[occurs]}
+type PR_ZIP	        [varchar(200)]	{examples.zipcode.val} # complete list: {uscensusbureau.zipnov99.zipcode}
+type PR_Country	        [varchar(200)]  {examples.country.val}
+type PR_Country_Abbr    [varchar(200)]  {examples.countryAbbr.val}
+		       
+type CT_Address	        [varchar(200)]	{examples.address.val; equality: JaroWinkler > 0.85}
+type CT_Street	        [varchar(200)]	{examples.street.val; equality: JaroWinkler > 0.85}
+type CT_CityStateZip    [varchar(200)]  {examples.city_state_zip.val; equality: JaroWinkler > 0.85}
+# type CT_CityState       [varchar(200)]
+
+
+## Domain Relations: 
+
+relation Address(CT_Address,CT_Street,PR_City,PR_State_Abbr,PR_State,PR_ZIP,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Sources: 
+
+source USGeocoder($CT_Address,CT_Street,PR_City,PR_State_Abbr,PR_ZIP,PR_Latitude,PR_Longitude)			:- Address(CT_Address,CT_Street,PR_City,PR_State_Abbr,PR_State,PR_ZIP,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).												{wrappers.USGeocoder; address}
+
+
+## Target Predicate: 
+
+target geospatial3($CT_Address,CT_Address,PR_Longitude,PR_Latitude,CT_Street,PR_State_Abbr) 					{wrappers.DBService; http://www.ontok.com/geocode/index.php}
+
+
+##############################################################
+
+
+#### WITHOUT VARIABLE REPETITION (DEFAULT MODE)
+# Since there is no var repetition, it assigns the second address of geospatial3 to the CT_Street of USGeocoder, whic is pretty good.
+
+# target = geospatial3($CT_Address,CT_Address,PR_Longitude,PR_Latitude,CT_Street,PR_State_Abbr)
+# definition = geospatial3($CT_0,CT_1,PR_2,PR_3,_,_)	:- USGeocoder(CT_0,CT_1,_,_,_,PR_3,PR_2), USGeocoder(CT_1,CT_1,_,_,_,_,_).
+# unfolding = geospatial3($CT_0,CT_1,PR_2,PR_3,_,_)	:- Address(CT_0,CT_1,_,_,_,_,_,_,PR_3,PR_2), Address(CT_1,CT_1,_,_,_,_,_,_,_,_).
+
+#### WITH VARIABLE REPETITION 
+# target = geospatial3($CT_Address,CT_Address,PR_Longitude,PR_Latitude,CT_Street,PR_State_Abbr)
+# definition = geospatial3($CT_0,CT_1,PR_2,PR_3,_,_)	:- USGeocoder(CT_0,CT_1,_,_,_,PR_3,PR_2), USGeocoder(CT_1,CT_1,_,_,_,_,_).
+# unfolding = geospatial3($CT_0,CT_1,PR_2,PR_3,_,_)	:- Address(CT_0,CT_1,_,_,_,_,_,_,PR_3,PR_2), Address(CT_1,CT_1,_,_,_,_,_,_,_,_).
+
+
+
+# tuple= [4676 Admiralty Way, Marina del Rey, CA, 90292, 4676 Admiralty Way, Marina del Rey, CA, 90292, 33.980305, -118.440470]
+# "4676 Admiralty Way, Marina del Rey, CA, 90292","4676 Admiralty Way, Marina del Rey, CA, 90292","-118.440389","33.980364","<font size='-1'>4676 ADMIRALTY WAY MARINA DEL REY, CA 90292","<font size='-1'>CA"
+
+# tuple= [400 S. Monroe St., Tallahassee, FL 32399, 400 S Monroe St, Tallahassee, FL, 32301, 30.439000, -84.280499]
+# "400 S. Monroe St., Tallahassee, FL 32399","400 S. Monroe St., Tallahassee, FL 32399","-84.280751","30.438749","<font size='-1'>400 S MONROE ST TALLAHASSEE, FL 32301","<font size='-1'>FL"
+
+# tuple= [1700 West Washington, Phoenix, AZ 85007, 1700 W Washington St, Phoenix, AZ, 85007, 33.448543, -112.095704]
+# "1700 West Washington, Phoenix, AZ 85007","1700 West Washington, Phoenix, AZ 85007","-112.095717","33.448642","<font size='-1'>1700 W WASHINGTON ST PHOENIX, AZ 85007","<font size='-1'>AZ"
+
+# tuple= [300 SW 10th Ave., Topeka, KS 66612, 300 SW 10th Ave, Topeka, KS, 66612, 39.046754, -95.678724]
+# "300 SW 10th Ave., Topeka, KS 66612","300 SW 10th Ave., Topeka, KS 66612","-95.678690","39.046885","<font size='-1'>300 SW 10TH AVE TOPEKA, KS 66604","<font size='-1'>KS"
+
+# tuple= [601 Whitehead St, Key West, FL, 33040, 601 Whitehead St, Key West, FL, 33040, 24.553922, -81.803260]
+# "601 Whitehead St, Key West, FL, 33040","601 Whitehead St, Key West, FL, 33040","-81.803178","24.553979","<font size='-1'>601 WHITEHEAD ST KEY WEST, FL 33040","<font size='-1'>FL"
+
+# tuple= [210 Capitol Avenue, Hartford, CT 06106, 210 Capitol Ave, Hartford, CT, 06106, 41.762664, -72.682270]
+# "210 Capitol Avenue, Hartford, CT 06106","210 Capitol Avenue, Hartford, CT 06106","-72.682251","41.762733","<font size='-1'>210 CAPITOL AVE HARTFORD, CT 06106","<font size='-1'>CT"
+
+# tuple= [4750 N. Meridian St., Indianapolis, IN 46208, 3701 N Meridian St, Indianapolis city, IN, 46208, 39.822204, -86.156831]
+# "4750 N. Meridian St., Indianapolis, IN 46208","4750 N. Meridian St., Indianapolis, IN 46208","-86.172000","39.819000","<font size='-1'>46208","<font"
+
+# tuple= [1007 East Grand Ave., Des Moines, IA 50319, 1007 E Grand Ave, Des Moines, IA, 50316, 41.591974, -93.604559]
+# "1007 East Grand Ave., Des Moines, IA 50319","1007 East Grand Ave., Des Moines, IA 50319","-93.604539","41.591875","<font size='-1'>1007 E GRAND AVE DES MOINES, IA 50309","<font size='-1'>IA"
+
+# tuple= [1600 Pennsylvania Ave NW, Washington, DC, 20502, 1600 Pennsylvania Ave NW, Washington, DC, 20502, 38.898748, -77.037684]
+# "1600 Pennsylvania Ave NW, Washington, DC, 20502","1600 Pennsylvania Ave NW, Washington, DC, 20502","-77.036828","38.898646","<font size='-1'>1600 PENNSYLVANIA AVE NW WASHINGTON, DC 20502","<font size='-1'>DC"
+
+# tuple= [600 Dexter Avenue, Montgomery, AL 36130, 600 Dexter Ave, Montgomery, AL, 36104, 32.377189, -86.301963]
+# "600 Dexter Avenue, Montgomery, AL 36130","600 Dexter Avenue, Montgomery, AL 36130","-86.301955","32.377089","<font size='-1'>600 DEXTER AVE MONTGOMERY, AL 36104","<font size='-1'>AL"
+
+
+
+
+
+
+
+
+

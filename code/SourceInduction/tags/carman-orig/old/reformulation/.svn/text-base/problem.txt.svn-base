@@ -1,0 +1,2 @@
+GetInfoByState(Z0,Z1,X2,X3,X4,X5) :- phoneprefix(X3,X4), timezone(X2,X5).
+s0(X0,X1,X2,X3,X4) :- address(_,_,_,X0,X1,X2), phoneprefix(X2,X3), timezone(X1,X4).

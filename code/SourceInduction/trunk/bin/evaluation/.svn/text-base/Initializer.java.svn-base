@@ -1,0 +1,182 @@
+package evaluation;
+
+import invocation.Dispatcher;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import relational.DBConnection;
+import relational.Table;
+import domain.Predicate;
+import domain.SemanticType;
+
+
+
+public class Initializer {
+
+	public Dispatcher dispatcher;
+	public DBConnection dbCon;
+	public String dbName;
+
+	public Initializer(Dispatcher d) {
+		this.dispatcher = d;
+		this.dbCon = dispatcher.dbCon;
+		this.dbName = dispatcher.dbName;
+	}
+
+
+	public void initialize(Predicate target, ArrayList<Predicate> sources) {
+
+		Initializer in = this;
+		in.dbCon.resetTable(in.dbName, target);
+		// try to populate the target table:
+		if (!in.populateTargetTable(target,20)) {
+			System.out.println("System unable to successfully invoke target predicate using examples available");
+			System.out.println("... now attempting to generate examples by invoking other sources");
+			if (!in.searchForValidTargetInputs(target,sources,20)) {
+				// then try again with lots of random inputs
+				if (!in.populateTargetTable(target,40)) {
+					System.out.println("System was unable to successfully invoke target predicate: "+target);
+					return;
+				}
+			}
+		}
+	}
+
+
+	public boolean populateTargetTable(Predicate target, int sampleSize) {
+		//	get example tuples of the target predicate's input signature
+		//  and invoke target source using each input tuple
+		int successCount = 0;
+		while (successCount < sampleSize/2) {
+			boolean successful = false;
+			for (List<String> tuple: Utils.generateExamples(dbCon,target.inputSignature(), sampleSize).tuples) {
+				String s = "Invoking target: "+ target.toString() +" with ["; for (String val: tuple) { s+=val+","; } System.out.println(s.substring(0,s.length()-1)+"]");
+				Table t = dispatcher.invoke(target,tuple);
+				if (t.size()>0) {
+					successful = true;
+					successCount++;
+				}
+			}
+			if (!successful) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	// hack - should probably be found somewhere else
+	// is called when populateTargetTable fails
+	public boolean searchForValidTargetInputs(Predicate target, ArrayList<Predicate> sources, int sampleSize) {
+
+		// look for a source which provides the type of variables required by the target
+		ArrayList<SemanticType> types = target.inputSignature();
+		ArrayList<Predicate> usefulSources = new ArrayList<Predicate>();
+		for (Predicate p: sources) {
+			if (containsAllTypes(p,types)) {
+				usefulSources.add(p);
+			}
+		}
+		// order the sources by number of inputs (easiest to invoke first)
+		usefulSources = orderByInputArity(usefulSources);
+
+		int successCount = 0;
+		int index = 0;
+		while (successCount < sampleSize/2 && index < usefulSources.size()) {
+
+			Predicate p = usefulSources.get(index);
+			index++;
+
+			System.out.println("NOW INVOKING SOURCE: "+p.toString()+" .....");
+			System.out.println(" WHICH HAS INPUT SIGNATURE: ");
+			for (SemanticType st: p.inputSignature()) {
+	    		System.out.println(st.toString());
+	    	}
+			System.out.println(" TO GENERATE EXAMPLE INPUTS FOR TARGET PREDICATE");
+
+
+			Table table = null;
+			for (List<String> tuple: Utils.generateExamples(dbCon,p.inputSignature(), sampleSize).tuples) {
+				if (table==null) {
+					table = dispatcher.invoke(p,tuple);
+				}
+				else {
+					for (List<String> t: dispatcher.invoke(p,tuple).tuples) {
+						table.insertDistinct(t);
+					}
+				}
+			}
+
+			ArrayList<String> cols = new ArrayList<String>();
+			for (SemanticType t: target.inputSignature()) {
+				for (int i=0; i<p.arity; i++) {
+					if (p.types[i] == t) {
+						cols.add(table.colNames.get(i));
+						break;
+					}
+				}
+			}
+			Table targetInput = table.distinctProjection(cols);
+
+			System.out.println("Producing example inputs:");
+			targetInput.print();
+
+			// now execute using the new input tuples
+			for (List<String> tuple: targetInput.randomSubsetWithReplacement(sampleSize).tuples) {
+				String s = "INVOKING TARGET PREDICATE WITH INPUT: "; for (String val: tuple) { s+= val+","; } System.out.println(s.substring(0,s.length()-1));
+				Table t = dispatcher.invoke(target,tuple);
+				if (t.size()>0) {
+					successCount++;
+				}
+			}
+
+		}
+
+
+		return (successCount >= sampleSize/2);
+
+	}
+
+
+	// following methods used by method searchForValidTargetInputs
+	private boolean containsAllTypes(Predicate p, ArrayList<SemanticType> types) {
+		boolean inputsOnly = true;
+		for (SemanticType t: types) {
+			boolean found = false;
+			for (int i=0; i<p.arity; i++) {
+				if (t == p.types[i]) {
+					found = true;
+					// check if it's an output
+					if (!p.bindings[i]) {
+						inputsOnly = false;
+					}
+					break;
+				}
+			}
+			if (!found) {
+				return false;
+			}
+		}
+		return !inputsOnly;
+	}
+
+	private ArrayList<Predicate> orderByInputArity(ArrayList<Predicate> sources) {
+		ArrayList<Predicate> ordered = new ArrayList<Predicate>();
+		for (Predicate p: sources) {
+			int arity = p.inputSignature().size();
+			boolean inserted = false;
+			for (int i=0; i<ordered.size(); i++) {
+				if (arity <= ordered.get(i).inputSignature().size()) {
+					ordered.add(i,p);
+					inserted = true;
+					break;
+				}
+			}
+			if (!inserted) {
+				ordered.add(p);
+			}
+		}
+		return ordered;
+	}
+
+}

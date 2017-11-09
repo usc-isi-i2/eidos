@@ -1,0 +1,40 @@
+	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24	25	26	27	28	29	30	31	32	33	34	35
+flightarrivalbyairport.txt	"PR-AirportName,PR-Place,CT-CityState"	PR-Airline	PR-FlightNumber	CT-Time	PR-FlightStatus	CT-Date																													
+flightarrivalbyflight.txt	PR-FlightStatus	"PR-AirportName, PR-Place, CT-CityState"	CT-Date	CT-Time	CT-TemperatureF	PR-Sky	"PR-AirportName, PR-Place, CT-CityState"	CT-Date	CT-Time	CT-TemperatureF	PR-Sky																								
+uaflightstatus.txt	PR-FlightNumber	PR-FlightStatus	CT-Airport	CT-Date	CT-Time	CT-Time	NULL	PR-FlightGateNumber	CT-Airport	CT-Date	CT-Time	CT-Time	NULL	PR-FlightGateNumber	PR-FlightBaggageClaim																				
+yahoocheckflight.txt	PR-Airline	PR-FlightNumber	CT-Airport	CT-Time	CT-Date	CT-Time	CT-Airport	CT-Time	CT-Date	CT-Time	PR-FlightBaggageClaim	PR-FlightGateNumber																							
+superpages.txt	CT-PersonName	CT-StreetAddress	"CT-CityStateZip, PR-Place"	CT-Phone	PR-City	PR-State-Abbr	PR-ZipCode5Digit																												
+switchboardpeople.txt	CT-PersonName	CT-StreetAddress	PR-City	PR-State-Abbr	CT-Phone	PR-ZipCode5Digit	PR-ZipCode5Plus4Digit																												
+yahoopeople.txt	CT-PersonName	PR-State-Abbr	CT-Phone	PR-City	CT-StreetAddress																														
+ArcWebAddressFinder.txt	CT-Address	PR-Longitude	PR-Latitude																																
+ImacionDistance.txt	PR-ZipCode5Digit	PR-ZipCode5Digit	CT-CityState	PR-Longitude	PR-Latitude	CT-CityState	PR-Longitude	PR-Latitude	CT-DistanceMiles																										
+Terraworld.txt	PR-Latitude	PR-Longitude																																	
+USZip.txt	PR-ZipCode5Digit	PR-City	PR-State-Abbr	PR-ZipCode5Digit	PR-AreaCode	PR-TimeZone																													
+buycomprojector.txt	PR-ModelName	PR-Manufacturer	PR-Vendor	PR-ModelNumber	PR-VendorItemNumber	"PR-DeviceTotalPrice, PR-Price"	PR-ImageBrightness	PR-ImageContrastRatio	PR-DisplayWidth	PR-DisplayHeight	PR-PowerConsumption	PR-InterfaceTypeDesc	PR-ColorBitDepth	PR-DeviceHeight	PR-DeviceWidth	PR-DeviceDepth	PR-DeviceWeight	PR-WarrantyDesc																	
+PCUniverseFlatbedScanner.txt	PR-ModelName	PR-Manufacturer	NULL	PR-ModelNumber	PR-DeviceTotalPrice, PR-Price	PR-DeviceTotalPrice, PR-Price	PR-DeviceWidth	PR-DeviceWidth	PR-DeviceDepth	PR-DeviceDepth	PR-DeviceHeight	PR-DeviceHeight	PR-InterfaceTypeDesc	PR-WarrantyDesc	PR-HorizontalScanSize	PR-HorizontalScanSize	PR-VerticalScanSize	PR-VerticalScanSize	PR-HorizontalOpticalScanResolution	PR-HorizontalOpticalScanResolution	PR-VerticalOpticalScanResolution	PR-VerticalOpticalScanResolution	NULL	PR-ColorBitDepth	PR-ColorBitDepth	PR-GrayscaleBitDepth	PR-GrayscaleBitDepth	PR-DeviceWeight	PR-DeviceWeight	PR-HorizontalInterpolatedScanResolution	PR-HorizontalInterpolatedScanResolution	PR-VerticalInterpolatedScanResolution	PR-VerticalInterpolatedScanResolution		
+PCUniverseLCDMonitor.txt	PR-ModelName	PR-Manufacturer	NULL	PR-ModelNumber	PR-DeviceTotalPrice, PR-Price	PR-DeviceTotalPrice, PR-Price	PR-ColorBitDepth	PR-ColorBitDepth	NULL	NULL	PR-DeviceWidth	PR-DeviceWidth	PR-DeviceDepth	PR-DeviceDepth	PR-DeviceHeight	PR-DeviceHeight	NULL	NULL	PR-ImageBrightness	PR-ImageBrightness	PR-ImageContrastRatio	PR-ImageContrastRatio	PR-InterfaceTypeDesc	PR-WarrantyDesc	PR-HorizontalOpticalScanResolution	PR-VerticalOpticalScanResolution	NULL	PR-PowerConsumption	PR-PowerConsumption	NULL	NULL	NULL	PR-DeviceWeight	PR-DeviceWeight	
+projectorsolution.txt	PR-ModelName	PR-ModelNumber	PR-Manufacturer	PR-DeviceTotalPrice, PR-Price	PR-DeviceTotalPrice, PR-Price	PR-DisplayWidth, PR-HorizontalOpticalScanResolution	PR-DisplayHeight, PR-VerticalOpticalScanResolution	PR-ImageBrightness	PR-ImageBrightness	NULL	PR-DeviceWeight	PR-DeviceWeight																							
+SuperwarehouseFlatbedScanner.txt	PR-ModelName	PR-Manufacturer	PR-ModelNumber	"PR-DeviceTotalPrice, PR-Price"	"PR-DeviceTotalPrice, PR-Price"	PR-HorizontalOpticalScanResolution	PR-VerticalOpticalScanResolution	PR-HorizontalScanSize	PR-HorizontalScanSize	PR-VerticalScanSize	PR-VerticalScanSize	PR-ColorBitDepth	PR-ColorBitDepth	PR-GrayscaleBitDepth	PR-GrayscaleBitDepth	PR-InterfaceTypeDesc	PR-CompatibleWithDesc	PR-WarrantyDesc																	
+SuperwarehouseLCDMonitor.txt	PR-ModelName	PR-Manufacturer	PR-ModelNumber	PR-DeviceTotalPrice, PR-Price	PR-DeviceTotalPrice, PR-Price	PR-DisplayWidth, PR-HorizontalOpticalScanResolution	PR-DisplayHeight, PR-VerticalOpticalScanResolution	PR-ImageContrastRatio	PR-ImageContrastRatio	PR-ImageBrightness	PR-ImageBrightness	NULL	PR-Color	PR-DeviceWidth	PR-DeviceWidth	PR-DeviceHeight	PR-DeviceHeight	PR-DeviceDepth	PR-DeviceDepth	NULL	PR-CompatibleWithDesc	PR-WarrantyDesc													
+AcuraOfPasadena.txt	PR-Year	PR-CarMake	PR-CarModel	PR-CarBodyStyle	PR-Color	PR-CarMileage	PR-Price	CT-CarEngine	PR-VIN																										
+CanogaJeep.txt	PR-Year	PR-CarMake, PR-CarModel	PR-Color	PR-Price																															
+NormReeves.txt	PR-Year	PR-CarMake	PR-CarModel	PR-CarBodyStyle	PR-Color	PR-CarMileage	PR-Price	CT-CarEngine	PR-VIN	NULL																									
+accuweather.txt	CT-Time	CT-CityState	CT-TemperatureF	CT-TemperatureF	PR-Sky	PR-WindSpeed	PR-WindSpeed	PR-WindDirection	CT-VisibilityMiles	CT-VisibilityMiles	PR-ZipCode5Digit																								
+DOTSweather.txt	CT-DateTime	CT-TemperatureF	NULL	NULL	PR-Humidity	NULL	CT-Wind, PR-WindDirection	CT-PressurePascal	PR-Sky	CT-Time	CT-Time	PR-City	PR-StateName	CT-Time	CT-Time																				
+FastWeatherForecast.txt	CT-CityStateZip, PR-Place	PR-Latitude	PR-Longitude	CT-DateTime	PR-Sky	CT-TemperatureF	CT-TemperatureF	PR-Humidity	CT-Wind	CT-PressureInches	CT-PressureInches	NULL	NULL	NULL	NULL	NULL	NULL	CT-Time	CT-Time	CT-Time	CT-Time														
+Unisys.txt	CT-CityState	CT-DateTime	CT-TemperatureF	NULL	PR-Humidity	PR-WindDirection	NULL	CT-PressureInches	CT-PressureBar	PR-Sky	CT-Time	CT-Time	PR-ZipCode5Digit																						
+WeatherNetwork.txt	NULL	CT-TemperatureC	CT-TemperatureF	PR-Sky	CT-TemperatureF	CT-Wind, PR-WindDirection	PR-Humidity	CT-TemperatureF	CT-PressureKiloPascal	CT-VisibilityKm, CT-DistanceKm	CT-VisibilityFeet, CT-DistanceFeet	CT-DateTime	PR-Place, PR-AirportName																						
+yahooweather.txt	CT-Time	PR-City	CT-TemperatureF	CT-TemperatureF	PR-Sky	CT-Wind, PR-WindDirection	CT-VisibilityMiles, PR-DistanceMiles	CT-VisibilityMiles, PR-DistanceMiles	PR-WindSpeed	PR-WindSpeed	PR-WindDirection	CT-TemperatureF	CT-PressureInches	PR-Humidity	CT-Time	CT-Time																			
+CEEDirectoryAgent	CT-PersonName	CT-Phone	PR-Email																																
+CEEPurchaseRequests	CT-PersonName	PR-Email	CT-Date	NULL	NULL	PR-DeviceTotalPrice, PR-Price	PR-DeviceTotalPrice, PR-Price	PR-DeviceTotalPrice, PR-Price	PR-DeviceTotalPrice, PR-Price	PR-DeviceTotalPrice, PR-Price	NULL																								
+CEETravelAuthorizations	NULL	CT-PersonName	PR-Email	CT-Date	NULL	CT-Date	NULL	PR-Place, CT-CityState	CT-PersonName	NULL	PR-HotelName	NULL																							
+ISIPurchaseRequests	NULL	PR-Email	PR-Email	PR-Vendor	CT-Date																														
+YahooDistance	CT-StreetAddress	PR-ZipCode5Digit	CT-StreetAddress	PR-ZipCode5Digit	CT-DistanceMiles																														
+YahooWeather	PR-ZipCode5Digit	PR-MonthName	PR-Day	PR-Sky	CT-TemperatureF	CT-TemperatureF	PR-Humidity																												
+AmericanAirlinesHotelPartners	PR-HotelName	CT-Phone	PR-HotelURL, PR-URL																																
+DeltaAirlineHotelPartners	PR-HotelName	PR-HotelURL																																	
+ContinentalAirlineHotelPartners	PR-HotelName	PR-HotelURL, PR-URL	CT-Phone																																
+AlaskaAirlineHotelPartners	PR-HotelName	PR-HotelURL, PR-URL	CT-Phone																																
+OnlineReservationZ	PR-Day	PR-MonthNumber	PR-Year	PR-Day	PR-MonthNumber	PR-Year	PR-City	PR-HotelName	CT-StreetAddress	PR-City	PR-State-Abbr	PR-ZipCode5Digit	PR-Price, PR-HotelPrice	PR-HotelAmenity																					
+																																			
+																																			

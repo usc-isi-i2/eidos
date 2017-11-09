@@ -1,0 +1,98 @@
+## List of Semantic Types: 
+
+# geospatial
+type latitude	  [varchar(20)]  {numeric: -90.0, +90.0, 0.002}
+type longitude	  [varchar(20)]  {numeric: -180.0, +180.0, 0.002}
+type latitudeDMS  [varchar(20)]  {examples.latitudedms.val}
+type longitudeDMS [varchar(20)]  {examples.longitudedms.val}
+type distanceMi   [varchar(30)]  {numeric: 0.0, 12451, 1%} # should be subtype of distance, syntax: "type distance:distanceMi ..."
+type distanceKm	  [varchar(30)]  {numeric: 0.0, 20037, 1%}
+type distanceFt   [varchar(30)]  {numeric: -10000, 60000, 1%} # used for altitude  
+type distanceM    [varchar(30)]  {numeric: -3000, 30000, 1%}  # used for altitude  
+type distanceIn   [varchar(30)]  # used for rainfall
+type speedMph	  [varchar(30)]  {numeric: 0.0, 500.0, 1%}
+type speedKmph 	  [varchar(45)]  {numeric: 0.0, 1000.0, 1%} 
+type direction	  [varchar(30)]	 # e.g. "N", "SW",...
+type degrees 	  [varchar(45)]  {numeric: 0.0, 360.0, 1} # used for wind direction (should be able to define the type as cyclic: modulo 360) 
+type areaSqKm	  [varchar(30)]
+type decimal 	  [varchar(45)] {numeric: -128.0, 128.0, 0.1} # earthquake magnitude
+
+# address
+type poBox	 	  [varchar(30)]
+type street		  [varchar(100)] {examples.street.val}
+type apartment	  [varchar(10)] 
+type city		  [varchar(100)] {examples.city.val[occurs]}
+type state		  [varchar(2)]   {examples.usstates.code}
+type stateName	  [varchar(100)]  {examples.usstates.name}
+type zipcode	  [varchar(10)]  {examples.zipcode.val} # complete list: {uscensusbureau.zipnov99.zipcode}
+type zipPlusFour  [varchar(10)]  
+type country	  [varchar(100)] {examples.country.val}
+type countryAbbr  [varchar(2)]   {examples.countryAbbr.val}
+type cityState	  [varchar(100)]
+				
+# telecom
+type areacode	  [varchar(3)] 
+type url		  [varchar(200)]
+type phone		  [varchar(20)]
+type email		  [varchar(100)]
+
+# weather 
+type temperatureC   [varchar(13)]  {numeric: -50.0, +100.0, 1%}
+type temperatureF   [varchar(13)]  {numeric: -100.0, +200.0, 1%}
+type sky		    [varchar(100)] 
+type humidity	    [varchar(30)]  {numeric: 0.0, 100.0, 1}
+type directionSpeed [varchar(60)]   
+type pressureIn  	[varchar(30)]  	{numeric: 26.0, 30.99, 0.02}
+type pressureMb		[varchar(30)]	{numeric: 1016.0, 1025.9, 1.0}
+
+# time and date
+type timezone	  [varchar(5)] 
+type timeoffset	  [varchar(6)] 
+type time		  [varchar(80)]  {examples.time.val}
+type date		  [varchar(80)]  {equality: Date = 1.0}
+type datetime	  [varchar(80)]	 {examples.datetime.val}
+type day		  [varchar(30)] # was: [varchar(10)]
+type timestamp	  [varchar(80)]  {examples.timestamp.val}
+type boolean      [varchar(5)]
+type duration 	  [varchar(80)]   
+
+# finance
+type company 	  [varchar(80)]  {examples.company.val; equality: JaroWinkler > 0.85}
+type ticker		  [varchar(6)]   {examples.ticker.val}
+type price		  [varchar(30)]  {numeric: 0.0, 10000, 1%} ##{finance.quotes.Last}
+type priceRange	  [varchar(65)] 
+type count		  [varchar(30)]  
+type percentage	  [varchar(30)]
+type ratio		  [varchar(30)]
+type currency 	  [varchar(12)]  {examples.currency.val}
+type currencyName [varchar(45)]
+type industry     [varchar(100)]  # name of industry classification
+type exchange 	  [varchar(45)]   # stock exchange
+
+# travel
+type icao		  [varchar(4)]   {examples.airports.icao}
+type iata		  [varchar(3)]   {examples.airports.iata}
+type airport	  [varchar(80)]  {examples.airports.name; equality: JaroWinkler > 0.85}
+type hotel	  	  [varchar(100)]  {examples.hotel.val; equality: JaroWinkler > 0.85}
+type airline  	  [varchar(80)]  
+type airlinecode  [varchar(2)]  
+type flight  	  [varchar(4)]  
+type aircraft  	  [varchar(80)]  
+type flightstatus [varchar(80)] 
+type rating       [varchar(20)] 
+
+# person
+type fullname     [varchar(200)]
+
+# cars
+type year		  [varchar(4)] {examples.year.val[occurs]}
+type make		  [varchar(45)] {examples.make.val[occurs]}
+type model		  [varchar(45)] 
+type trim		  [varchar(100)] 
+type color		  [varchar(45)] 
+type mileage 	  [varchar(45)]  
+type engine 	  [varchar(45)]  # volumeLi ???
+type vin 		  [varchar(45)]
+
+type unknown	  [varchar(100)]
+

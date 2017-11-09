@@ -1,0 +1,158 @@
+package metrics;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import com.wcohen.secondstring.*;
+
+public class Metric {
+	
+	final static String Digits = "(\\p{Digit}+)";
+	final static String HexDigits = "(\\p{XDigit}+)";
+	// an exponent is 'e' or 'E' followed by an optionally 
+	// signed decimal integer.
+	final static String Exp = "[eE][+-]?" + Digits;
+	final static String fpRegex = ("[\\x00-\\x20]*" + // Optional leading "whitespace"
+			"[+-]?(" + // Optional sign character
+			"NaN|" + // "NaN" string
+			"Infinity|" + // "Infinity" string
+
+			// A decimal floating-point string representing a finite positive
+			// number without a leading sign has at most five basic pieces:
+			// Digits . Digits ExponentPart FloatTypeSuffix
+			// 
+			// Since this method allows integer-only strings as input
+			// in addition to strings of floating-point literals, the
+			// two sub-patterns below are simplifications of the grammar
+			// productions from the Java Language Specification, 2nd 
+			// edition, section 3.10.2.
+
+			// Digits ._opt Digits_opt ExponentPart_opt FloatTypeSuffix_opt
+			"(((" + Digits + "(\\.)?(" + Digits + "?)(" + Exp + ")?)|" +
+
+	// . Digits ExponentPart_opt FloatTypeSuffix_opt
+			"(\\.(" + Digits + ")(" + Exp + ")?)|" +
+
+			// Hexadecimal strings
+			"((" +
+			// 0[xX] HexDigits ._opt BinaryExponent FloatTypeSuffix_opt
+			"(0[xX]" + HexDigits + "(\\.)?)|" +
+
+			// 0[xX] HexDigits_opt . HexDigits BinaryExponent FloatTypeSuffix_opt
+			"(0[xX]" + HexDigits + "?(\\.)" + HexDigits + ")" +
+
+			")[pP][+-]?" + Digits + "))" + "[fFdD]?))" + "[\\x00-\\x20]*");// Optional trailing "whitespace"
+
+	static final Pattern doublePattern = Pattern.compile(fpRegex);
+
+	public String name;
+	private StringDistance sd;
+
+	
+	public Metric(String name) {
+		this.name = name;
+		try {
+			if (name.equals("Date") || 
+					name.equals("NumericStringDiffPercent") ||
+					name.equals("Synonym") )
+			{
+				// Do nothing.  Handled specially in 'evaluate'
+			} else {
+				// Need to setup the specified StringDistance class.
+				sd = (StringDistance) Class.forName(
+						"com.wcohen.secondstring." + name).newInstance();
+			} 
+			
+		} catch (Exception e) {
+			System.err.println("ERROR in " + this.getClass()
+					+ ": unknown string distance " + name);
+			System.exit(9);
+		}
+	}
+
+	public double evaluate(String s1, String s2) {
+		double result = 0;
+		if (name.equals("Date")) {
+			result = Date.evaluate(s1, s2);
+		} else if (name.equals("NumericStringDiffPercent")) {
+			result = NumericStringDiffPercent(s1, s2);
+		} else if (name.equals("Synonym")) {
+			result =  Synonym(s1, s2);
+		} else {
+		result = sd.score(sd.prepare(s1), sd.prepare(s2));
+		}
+		// System.out.println("Metric.evaluate(" + s1 + ", " + s2 + ") = " + result);
+		return result;
+	}
+
+	private double Synonym(String s1, String s2) {
+		double result = 0;
+		if ( s1.equals(s2) || 
+				(s1.equals("Landed") && s2.equals("Arrived")) ||
+				(s1.equals("Arrived") && s2.equals("Landed")) ||
+				(s1.equals("In Flight") && s2.equals("Flight is Currently En Route")) ||
+				(s1.equals("Flight is Currently En Route") && s2.equals("In Flight")) 
+				) {
+			result = 1.0;
+		} 
+		// System.out.println("Synonym: " + s1 + " vs " + s2 + " = " + result);
+		return result;
+	}
+		
+	public static void main(String[] args) {
+		for (String arg : args) {
+			System.out.println(arg + " " + safeParseDouble(arg));
+		}
+	}
+
+	public static double safeParseDouble(String arg) {
+		Matcher m = doublePattern.matcher(arg);
+		if (m.find())
+			return Double.valueOf(m.group()); // Will not throw NumberFormatException
+		else {
+			// Perform suitable alternative action
+			return Double.NaN;
+		}
+	}
+
+	private double NumericStringDiffPercent(String s1, String s2) {
+		double d1 = safeParseDouble(s1);
+		double d2 = safeParseDouble(s2);
+		if (Double.isNaN(d1) || Double.isNaN(d2)) {
+			return Double.NaN;
+		} else {
+			double result = 100 * Math.abs(d1-d2)/Math.max(d1, d2);
+			// System.out.println("NSDP: " + d1 + " vs " + d2 + " = " + result);
+			return result;
+		}
+	}
+
+	/*
+	if((v+"").equals("-Infinity")) { v = -2.0; }
+	if(!Double.isNaN(v)) { return v; }
+	return 0;
+	
+	public double getMaxJaroWinklerScore(String ref, String tok) {
+		double maxVal = 0.0;
+		String splitVal[] = ref.split(" ");
+		for(int i = 0; i < splitVal.length; i++) {
+			double v = jaro.score(splitVal[i],tok);
+			if(v > maxVal) {
+				maxVal = v;
+			}
+		}
+		if((maxVal+"").equals("-Infinity")) {
+			maxVal = -2.0;
+		}
+		return maxVal;
+	}
+	
+	
+	public double getSubstringScore(String s, String t) {
+		if(s.indexOf(t)>-1 || t.indexOf(s)>-1) {
+			return 1.0;
+	    }
+		return 0.0;
+	}
+	 */
+}

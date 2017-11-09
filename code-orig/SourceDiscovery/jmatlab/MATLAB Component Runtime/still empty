@@ -1,0 +1,7 @@
+To run the demo, a version of Matlab must be installed, or the 
+Matlab Component Runtime.
+
+IMPORTANT: the test dll (matlabtest.dll) was compiled for use
+with the Matlab Runtime v71. If another Runtime  (or Matlab version)
+is being used, then the dlls must be compiled to the new Runtime 
+first, see the directory matlabtest_sources.

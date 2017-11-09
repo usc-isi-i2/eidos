@@ -1,0 +1,70 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+type PR-Latitude        [varchar(200)]
+type PR-Longitude       [varchar(200)]
+type PR-Latitude-DMS    [varchar(200)]
+type PR-Longitude-DMS   [varchar(200)]
+type PR-City	        [varchar(200)]
+type PR-State-Abbr      [varchar(200)]
+type PR-State	        [varchar(200)]
+type PR-ZIP	        [varchar(200)]
+type PR-Country	        [varchar(200)]
+type PR-Country-Abbr    [varchar(200)]
+		       
+type CT-Address	        [varchar(200)]
+type CT-Street	        [varchar(200)]
+type CT-CityStateZip    [varchar(200)]
+type CT-CityState       [varchar(200)]
+
+
+# geospatial
+type latitude	  [varchar(20)]  {numeric: -90.0, +90.0, 0.002}
+type longitude	  [varchar(20)]  {numeric: -180.0, +180.0, 0.002}
+type latitudeDMS  [varchar(20)]  {examples.latitudedms.val}
+type longitudeDMS [varchar(20)]  {examples.longitudedms.val}
+type direction	  [varchar(30)]	 # e.g. "N", "SW",...
+type degrees 	  [varchar(45)]  {numeric: 0.0, 360.0, 1} # used for wind direction (should be able to define the type as cyclic: modulo 360) 
+
+# address
+type poBox	 	  [varchar(30)]
+type street		  [varchar(100)] {examples.street.val}
+type apartment	  [varchar(10)] 
+type city		  [varchar(100)] {examples.city.val[occurs]}
+type state		  [varchar(2)]   {examples.usstates.code}
+type stateName	  [varchar(100)]  {examples.usstates.name}
+type zipcode	  [varchar(10)]  {examples.zipcode.val} # complete list: {uscensusbureau.zipnov99.zipcode}
+type zipPlusFour  [varchar(10)]  
+type country	  [varchar(100)] {examples.country.val}
+type countryAbbr  [varchar(2)]   {examples.countryAbbr.val}
+type cityState	  [varchar(100)]
+				
+
+## Domain Relations: 
+
+relation Address(CT-Address,CT-Street,PR-City,PR-State-Abbr,PR-State,PR-ZIP,PR-Country-Abbr,PR-Country,PR-Latitude,PR-Longitude)
+
+relation convertCoord(PR-Latitude-DMS,PR-Longitude-DMS,PR-Latitude,PR-Longitude)
+
+## Comparison Predicates: 
+
+comparison <($PR-Latitude,%PR-Latitude)
+comparison <($PR-Longitude,$PR-Longitude)
+
+## Sources: 
+
+source USGeocoder($CT-Address,CT-Street,PR-City,PR-State-Abbr,PR-Latitude,PR-Longitude)			:- Address(CT-Address,CT-Street,PR-City,PR-State-Abbr,PR-State,PR-ZIP,PR-Country-Abbr,PR-Country,PR-Latitude,PR-Longitude).												{wrappers.USGeocoder2; geocode}
+
+function ConvertDMS($latDMS,$lonDMS,lat,lon)	:- convertCoord(latDMS,lonDMS,lat,lon). 					{wrappers.Ragnarok; convertDMS}
+
+
+
+## Target Predicate: 
+
+# http://www.ontok.com/geocode/index.php
+target geospatial3($CT-Address, CT-Address, PR-State-Abbr, CT-CityStateZip, CT-Street, PR-Longitude, PR-Latitude)
+
+
+##############################################################

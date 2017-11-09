@@ -1,0 +1,2294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ROOT SYSTEM "o4_g1.dtd">
+<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <row>
+      <field name="address">1600 Pennsylvania Ave NW, Washington, DC, 20502</field>
+      <field name="PR-Street_2">1600 
+		Pennsylvania Ave NW</field>
+      <field name="PR-Latitude_17">38.898748</field>
+      <field name="PR-Longitude_34">-77.037684 &amp;deg;</field>
+      <field name="PR-Address_51">1600 Pennsylvania Ave NW, Washington, DC, 20502</field>
+      <field name="SourceTime">2008-10-28 16:04:09</field>
+      <field name="SourcePage">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;geocoder.us: a free US geocoder&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- this div is opened here, closed in the footer or somewhere else --&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;pub-1219510847949987&quot;;
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = &quot;728x90_as&quot;;
+google_ad_type = &quot;text_image&quot;;
+google_ad_channel =&quot;&quot;;
+google_color_border = [&quot;336699&quot;,&quot;B4D0DC&quot;,&quot;DDB7BA&quot;,&quot;FDEFD2&quot;];
+google_color_bg = [&quot;FFFFFF&quot;,&quot;ECF8FF&quot;,&quot;FFF5F6&quot;,&quot;FDEFD2&quot;];
+google_color_link = [&quot;0000FF&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;];
+google_color_url = &quot;008000&quot;;
+google_color_text = [&quot;000000&quot;,&quot;6F6F6F&quot;,&quot;6F6F6F&quot;,&quot;000000&quot;];
+//--&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;!--
+&lt;h2&gt;&lt;a href=&quot;/blog&quot;&gt;Read the Geocoder.US Blog&lt;/a&gt;&lt;/h2&gt;
+--&gt;
+
+  &lt;a href=&quot;/&quot;&gt;&lt;h1&gt;geocoder.us / geocoder.net&lt;/h1&gt;&lt;/a&gt;
+  &lt;h2&gt;find the latitude &amp;amp; longitude of any US address - for &lt;em&gt;free&lt;/em&gt;&lt;/h2&gt;
+
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 38.898748, mapCenterLon = -77.037684,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom &lt; mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom &gt; mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = &quot;img/red-dot.png&quot;;
+	document.mapImage.src = 
+	    &quot;http://tiger.census.gov/cgi-bin/mapgen?&quot; +
+		&quot;lon=&quot; + mapLon + &quot;&amp;lat=&quot; + mapLat + 
+		&quot;&amp;wid=&quot; + mapWid + &quot;&amp;ht=&quot;  + mapWid +
+		&quot;&amp;iht=&quot; + mapPixels + &quot;&amp;iwd=&quot; + mapPixels +
+		&quot;&amp;mark=&quot; + mapCenterLon + &quot;,&quot; + mapCenterLat + &quot;,redpin&quot;;
+    }
+&lt;/script&gt;
+
+  &lt;table width=&quot;90%&quot; cellspacing=&quot;20%&quot; border=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+	&lt;h3&gt;Address&lt;/h3&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+	
+	    1600 
+		Pennsylvania Ave NW
+	
+	&lt;br /&gt;Washington DC 20502&lt;br&gt;
+        (38.898748, -77.037684)
+    &lt;/td&gt;
+    &lt;td width=&quot;320&quot; rowspan=&quot;4&quot;&gt;
+&lt;div&gt;(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)&lt;/div&gt;
+    &lt;div onClick=&quot;return mapCenter(event)&quot;&gt;
+&lt;img
+	name=&quot;mapImage&quot; src=&quot;http://tiger.census.gov/cgi-bin/mapgen?lon=-77.037684&amp;lat=38.898748&amp;wid=0.035&amp;ht=0.035&amp;iht=320&amp;iwd=320&amp;mark=-77.037684,38.898748,redpin&quot;
+	width=&quot;320&quot; height=&quot;320&quot; border=&quot;2&quot;
+	style=&quot;cursor: crosshair&quot;
+	onLoad=&quot;document.mapLoading.src = 'img/green-dot.png';&quot; /&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomIn()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-in.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomOut()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-out.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapRecenter()&quot;&gt;&lt;img
+	    src=&quot;img/recenter.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;img name=&quot;mapLoading&quot;
+	    src=&quot;img/red-dot.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Latitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;38.898748 &amp;deg;&lt;br&gt;
+        N 38 &amp;deg; 53' 55.5&quot; &lt;br&gt;
+        38 &amp;deg; 53.9249' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Longitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;-77.037684 &amp;deg;&lt;br&gt;
+        W 77 &amp;deg; 2' 15.7&quot; &lt;br&gt;
+        -77 &amp;deg;  2.2610' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;
+	&lt;h3&gt;Search for another address:&lt;/h3&gt;
+	&lt;form&gt;
+	    &lt;input type=&quot;text&quot; name=&quot;address&quot; size=&quot;45&quot; value=&quot;1600 Pennsylvania Ave NW, Washington, DC, 20502&quot; /&gt;
+	    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to &lt;a href=&quot;mailto:missing@geocoder.us&quot;&gt;missing@geocoder.us&lt;/a&gt;,
+and we'll try to help you find your location.
+
+&lt;p&gt;
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;hr noshade=&quot;1&quot; width=&quot;90%&quot; /&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    = &lt;a href=&quot;/&quot;&gt;geocoder.us&lt;/a&gt; = &amp;copy; 2004-8 &lt;a
+href=&quot;http://locative.us/&quot;&gt;Locative Technologies&lt;/a&gt; = &lt;a
+href=&quot;/terms.shtml&quot;&gt;terms &amp;amp; conditions&lt;/a&gt; = &lt;a
+href=&quot;mailto:contact@geocoder.us&quot;&gt;contact us&lt;/a&gt; = 
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+&lt;!-- Open Knowledge Link --&gt;
+&lt;a href=&quot;http://okd.okfn.org/&quot;&gt; &lt;img alt=&quot;This material is Open Knowlege&quot; border=&quot;0&quot; src=&quot;http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png&quot; height=&quot;31&quot; vspace=&quot;5&quot; /&gt;&lt;/a&gt; &lt;!-- /Open Knowledge Link --&gt;
+&lt;a href=&quot;http://www.perl.org&quot;&gt;&lt;img src=&quot;/img/rectangle_power_perl.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/2.0/&quot;&gt;&lt;img src=&quot;/img/somerights20.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;!-- PayPal Logo --&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;
+
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');&quot;&gt;&lt;img  src=&quot;https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif&quot; border=&quot;0&quot; alt=&quot;Acceptance Mark&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;!-- PayPal Logo --&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+&lt;/html&gt;</field>
+    </row>
+    <row>
+      <field name="address">400 S. Monroe St., Tallahassee, FL 32399</field>
+      <field name="PR-Street_2">400 S
+		Monroe St</field>
+      <field name="PR-Latitude_17">30.439000</field>
+      <field name="PR-Longitude_34">-84.280499 &amp;deg;</field>
+      <field name="PR-Address_51">400 S. Monroe St., Tallahassee, FL 32399</field>
+      <field name="SourceTime">2008-10-28 16:04:36</field>
+      <field name="SourcePage">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;geocoder.us: a free US geocoder&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- this div is opened here, closed in the footer or somewhere else --&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;pub-1219510847949987&quot;;
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = &quot;728x90_as&quot;;
+google_ad_type = &quot;text_image&quot;;
+google_ad_channel =&quot;&quot;;
+google_color_border = [&quot;336699&quot;,&quot;B4D0DC&quot;,&quot;DDB7BA&quot;,&quot;FDEFD2&quot;];
+google_color_bg = [&quot;FFFFFF&quot;,&quot;ECF8FF&quot;,&quot;FFF5F6&quot;,&quot;FDEFD2&quot;];
+google_color_link = [&quot;0000FF&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;];
+google_color_url = &quot;008000&quot;;
+google_color_text = [&quot;000000&quot;,&quot;6F6F6F&quot;,&quot;6F6F6F&quot;,&quot;000000&quot;];
+//--&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;!--
+&lt;h2&gt;&lt;a href=&quot;/blog&quot;&gt;Read the Geocoder.US Blog&lt;/a&gt;&lt;/h2&gt;
+--&gt;
+
+  &lt;a href=&quot;/&quot;&gt;&lt;h1&gt;geocoder.us / geocoder.net&lt;/h1&gt;&lt;/a&gt;
+  &lt;h2&gt;find the latitude &amp;amp; longitude of any US address - for &lt;em&gt;free&lt;/em&gt;&lt;/h2&gt;
+
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 30.439000, mapCenterLon = -84.280499,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom &lt; mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom &gt; mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = &quot;img/red-dot.png&quot;;
+	document.mapImage.src = 
+	    &quot;http://tiger.census.gov/cgi-bin/mapgen?&quot; +
+		&quot;lon=&quot; + mapLon + &quot;&amp;lat=&quot; + mapLat + 
+		&quot;&amp;wid=&quot; + mapWid + &quot;&amp;ht=&quot;  + mapWid +
+		&quot;&amp;iht=&quot; + mapPixels + &quot;&amp;iwd=&quot; + mapPixels +
+		&quot;&amp;mark=&quot; + mapCenterLon + &quot;,&quot; + mapCenterLat + &quot;,redpin&quot;;
+    }
+&lt;/script&gt;
+
+  &lt;table width=&quot;90%&quot; cellspacing=&quot;20%&quot; border=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+	&lt;h3&gt;Address&lt;/h3&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+	
+	    400 S
+		Monroe St 
+	
+	&lt;br /&gt;Tallahassee FL 32301&lt;br&gt;
+        (30.439000, -84.280499)
+    &lt;/td&gt;
+    &lt;td width=&quot;320&quot; rowspan=&quot;4&quot;&gt;
+&lt;div&gt;(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)&lt;/div&gt;
+    &lt;div onClick=&quot;return mapCenter(event)&quot;&gt;
+&lt;img
+	name=&quot;mapImage&quot; src=&quot;http://tiger.census.gov/cgi-bin/mapgen?lon=-84.280499&amp;lat=30.439000&amp;wid=0.035&amp;ht=0.035&amp;iht=320&amp;iwd=320&amp;mark=-84.280499,30.439000,redpin&quot;
+	width=&quot;320&quot; height=&quot;320&quot; border=&quot;2&quot;
+	style=&quot;cursor: crosshair&quot;
+	onLoad=&quot;document.mapLoading.src = 'img/green-dot.png';&quot; /&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomIn()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-in.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomOut()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-out.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapRecenter()&quot;&gt;&lt;img
+	    src=&quot;img/recenter.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;img name=&quot;mapLoading&quot;
+	    src=&quot;img/red-dot.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Latitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;30.439000 &amp;deg;&lt;br&gt;
+        N 30 &amp;deg; 26' 20.4&quot; &lt;br&gt;
+        30 &amp;deg; 26.3400' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Longitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;-84.280499 &amp;deg;&lt;br&gt;
+        W 84 &amp;deg; 16' 49.8&quot; &lt;br&gt;
+        -84 &amp;deg; 16.8299' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;
+	&lt;h3&gt;Search for another address:&lt;/h3&gt;
+	&lt;form&gt;
+	    &lt;input type=&quot;text&quot; name=&quot;address&quot; size=&quot;45&quot; value=&quot;400 S. Monroe St., Tallahassee, FL 32399&quot; /&gt;
+	    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to &lt;a href=&quot;mailto:missing@geocoder.us&quot;&gt;missing@geocoder.us&lt;/a&gt;,
+and we'll try to help you find your location.
+
+&lt;p&gt;
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;hr noshade=&quot;1&quot; width=&quot;90%&quot; /&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    = &lt;a href=&quot;/&quot;&gt;geocoder.us&lt;/a&gt; = &amp;copy; 2004-8 &lt;a
+href=&quot;http://locative.us/&quot;&gt;Locative Technologies&lt;/a&gt; = &lt;a
+href=&quot;/terms.shtml&quot;&gt;terms &amp;amp; conditions&lt;/a&gt; = &lt;a
+href=&quot;mailto:contact@geocoder.us&quot;&gt;contact us&lt;/a&gt; = 
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+&lt;!-- Open Knowledge Link --&gt;
+&lt;a href=&quot;http://okd.okfn.org/&quot;&gt; &lt;img alt=&quot;This material is Open Knowlege&quot; border=&quot;0&quot; src=&quot;http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png&quot; height=&quot;31&quot; vspace=&quot;5&quot; /&gt;&lt;/a&gt; &lt;!-- /Open Knowledge Link --&gt;
+&lt;a href=&quot;http://www.perl.org&quot;&gt;&lt;img src=&quot;/img/rectangle_power_perl.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/2.0/&quot;&gt;&lt;img src=&quot;/img/somerights20.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;!-- PayPal Logo --&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;
+
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');&quot;&gt;&lt;img  src=&quot;https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif&quot; border=&quot;0&quot; alt=&quot;Acceptance Mark&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;!-- PayPal Logo --&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+&lt;/html&gt;</field>
+    </row>
+    <row>
+      <field name="address">601 Whitehead St, Key West, FL, 33040</field>
+      <field name="PR-Street_2">601 
+		Whitehead St</field>
+      <field name="PR-Latitude_17">24.553922</field>
+      <field name="PR-Longitude_34">-81.803260 &amp;deg;</field>
+      <field name="PR-Address_51">601 Whitehead St, Key West, FL, 33040</field>
+      <field name="SourceTime">2008-10-28 16:05:02</field>
+      <field name="SourcePage">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;geocoder.us: a free US geocoder&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- this div is opened here, closed in the footer or somewhere else --&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;pub-1219510847949987&quot;;
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = &quot;728x90_as&quot;;
+google_ad_type = &quot;text_image&quot;;
+google_ad_channel =&quot;&quot;;
+google_color_border = [&quot;336699&quot;,&quot;B4D0DC&quot;,&quot;DDB7BA&quot;,&quot;FDEFD2&quot;];
+google_color_bg = [&quot;FFFFFF&quot;,&quot;ECF8FF&quot;,&quot;FFF5F6&quot;,&quot;FDEFD2&quot;];
+google_color_link = [&quot;0000FF&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;];
+google_color_url = &quot;008000&quot;;
+google_color_text = [&quot;000000&quot;,&quot;6F6F6F&quot;,&quot;6F6F6F&quot;,&quot;000000&quot;];
+//--&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;!--
+&lt;h2&gt;&lt;a href=&quot;/blog&quot;&gt;Read the Geocoder.US Blog&lt;/a&gt;&lt;/h2&gt;
+--&gt;
+
+  &lt;a href=&quot;/&quot;&gt;&lt;h1&gt;geocoder.us / geocoder.net&lt;/h1&gt;&lt;/a&gt;
+  &lt;h2&gt;find the latitude &amp;amp; longitude of any US address - for &lt;em&gt;free&lt;/em&gt;&lt;/h2&gt;
+
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 24.553922, mapCenterLon = -81.803260,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom &lt; mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom &gt; mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = &quot;img/red-dot.png&quot;;
+	document.mapImage.src = 
+	    &quot;http://tiger.census.gov/cgi-bin/mapgen?&quot; +
+		&quot;lon=&quot; + mapLon + &quot;&amp;lat=&quot; + mapLat + 
+		&quot;&amp;wid=&quot; + mapWid + &quot;&amp;ht=&quot;  + mapWid +
+		&quot;&amp;iht=&quot; + mapPixels + &quot;&amp;iwd=&quot; + mapPixels +
+		&quot;&amp;mark=&quot; + mapCenterLon + &quot;,&quot; + mapCenterLat + &quot;,redpin&quot;;
+    }
+&lt;/script&gt;
+
+  &lt;table width=&quot;90%&quot; cellspacing=&quot;20%&quot; border=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+	&lt;h3&gt;Address&lt;/h3&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+	
+	    601 
+		Whitehead St 
+	
+	&lt;br /&gt;Key West FL 33040&lt;br&gt;
+        (24.553922, -81.803260)
+    &lt;/td&gt;
+    &lt;td width=&quot;320&quot; rowspan=&quot;4&quot;&gt;
+&lt;div&gt;(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)&lt;/div&gt;
+    &lt;div onClick=&quot;return mapCenter(event)&quot;&gt;
+&lt;img
+	name=&quot;mapImage&quot; src=&quot;http://tiger.census.gov/cgi-bin/mapgen?lon=-81.803260&amp;lat=24.553922&amp;wid=0.035&amp;ht=0.035&amp;iht=320&amp;iwd=320&amp;mark=-81.803260,24.553922,redpin&quot;
+	width=&quot;320&quot; height=&quot;320&quot; border=&quot;2&quot;
+	style=&quot;cursor: crosshair&quot;
+	onLoad=&quot;document.mapLoading.src = 'img/green-dot.png';&quot; /&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomIn()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-in.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomOut()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-out.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapRecenter()&quot;&gt;&lt;img
+	    src=&quot;img/recenter.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;img name=&quot;mapLoading&quot;
+	    src=&quot;img/red-dot.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Latitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;24.553922 &amp;deg;&lt;br&gt;
+        N 24 &amp;deg; 33' 14.1&quot; &lt;br&gt;
+        24 &amp;deg; 33.2353' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Longitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;-81.803260 &amp;deg;&lt;br&gt;
+        W 81 &amp;deg; 48' 11.7&quot; &lt;br&gt;
+        -81 &amp;deg; 48.1956' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;
+	&lt;h3&gt;Search for another address:&lt;/h3&gt;
+	&lt;form&gt;
+	    &lt;input type=&quot;text&quot; name=&quot;address&quot; size=&quot;45&quot; value=&quot;601 Whitehead St, Key West, FL, 33040&quot; /&gt;
+	    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to &lt;a href=&quot;mailto:missing@geocoder.us&quot;&gt;missing@geocoder.us&lt;/a&gt;,
+and we'll try to help you find your location.
+
+&lt;p&gt;
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;hr noshade=&quot;1&quot; width=&quot;90%&quot; /&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    = &lt;a href=&quot;/&quot;&gt;geocoder.us&lt;/a&gt; = &amp;copy; 2004-8 &lt;a
+href=&quot;http://locative.us/&quot;&gt;Locative Technologies&lt;/a&gt; = &lt;a
+href=&quot;/terms.shtml&quot;&gt;terms &amp;amp; conditions&lt;/a&gt; = &lt;a
+href=&quot;mailto:contact@geocoder.us&quot;&gt;contact us&lt;/a&gt; = 
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+&lt;!-- Open Knowledge Link --&gt;
+&lt;a href=&quot;http://okd.okfn.org/&quot;&gt; &lt;img alt=&quot;This material is Open Knowlege&quot; border=&quot;0&quot; src=&quot;http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png&quot; height=&quot;31&quot; vspace=&quot;5&quot; /&gt;&lt;/a&gt; &lt;!-- /Open Knowledge Link --&gt;
+&lt;a href=&quot;http://www.perl.org&quot;&gt;&lt;img src=&quot;/img/rectangle_power_perl.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/2.0/&quot;&gt;&lt;img src=&quot;/img/somerights20.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;!-- PayPal Logo --&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;
+
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');&quot;&gt;&lt;img  src=&quot;https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif&quot; border=&quot;0&quot; alt=&quot;Acceptance Mark&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;!-- PayPal Logo --&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+&lt;/html&gt;</field>
+    </row>
+    <row>
+      <field name="address">4676 Admiralty Way, Marina del Rey, CA, 90292</field>
+      <field name="PR-Street_2">4676 
+		Admiralty Way</field>
+      <field name="PR-Latitude_17">33.980305</field>
+      <field name="PR-Longitude_34">-118.440470 &amp;deg;</field>
+      <field name="PR-Address_51">4676 Admiralty Way, Marina del Rey, CA, 90292</field>
+      <field name="SourceTime">2008-10-28 16:05:28</field>
+      <field name="SourcePage">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;geocoder.us: a free US geocoder&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- this div is opened here, closed in the footer or somewhere else --&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;pub-1219510847949987&quot;;
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = &quot;728x90_as&quot;;
+google_ad_type = &quot;text_image&quot;;
+google_ad_channel =&quot;&quot;;
+google_color_border = [&quot;336699&quot;,&quot;B4D0DC&quot;,&quot;DDB7BA&quot;,&quot;FDEFD2&quot;];
+google_color_bg = [&quot;FFFFFF&quot;,&quot;ECF8FF&quot;,&quot;FFF5F6&quot;,&quot;FDEFD2&quot;];
+google_color_link = [&quot;0000FF&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;];
+google_color_url = &quot;008000&quot;;
+google_color_text = [&quot;000000&quot;,&quot;6F6F6F&quot;,&quot;6F6F6F&quot;,&quot;000000&quot;];
+//--&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;!--
+&lt;h2&gt;&lt;a href=&quot;/blog&quot;&gt;Read the Geocoder.US Blog&lt;/a&gt;&lt;/h2&gt;
+--&gt;
+
+  &lt;a href=&quot;/&quot;&gt;&lt;h1&gt;geocoder.us / geocoder.net&lt;/h1&gt;&lt;/a&gt;
+  &lt;h2&gt;find the latitude &amp;amp; longitude of any US address - for &lt;em&gt;free&lt;/em&gt;&lt;/h2&gt;
+
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 33.980305, mapCenterLon = -118.440470,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom &lt; mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom &gt; mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = &quot;img/red-dot.png&quot;;
+	document.mapImage.src = 
+	    &quot;http://tiger.census.gov/cgi-bin/mapgen?&quot; +
+		&quot;lon=&quot; + mapLon + &quot;&amp;lat=&quot; + mapLat + 
+		&quot;&amp;wid=&quot; + mapWid + &quot;&amp;ht=&quot;  + mapWid +
+		&quot;&amp;iht=&quot; + mapPixels + &quot;&amp;iwd=&quot; + mapPixels +
+		&quot;&amp;mark=&quot; + mapCenterLon + &quot;,&quot; + mapCenterLat + &quot;,redpin&quot;;
+    }
+&lt;/script&gt;
+
+  &lt;table width=&quot;90%&quot; cellspacing=&quot;20%&quot; border=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+	&lt;h3&gt;Address&lt;/h3&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+	
+	    4676 
+		Admiralty Way 
+	
+	&lt;br /&gt;Marina del Rey CA 90292&lt;br&gt;
+        (33.980305, -118.440470)
+    &lt;/td&gt;
+    &lt;td width=&quot;320&quot; rowspan=&quot;4&quot;&gt;
+&lt;div&gt;(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)&lt;/div&gt;
+    &lt;div onClick=&quot;return mapCenter(event)&quot;&gt;
+&lt;img
+	name=&quot;mapImage&quot; src=&quot;http://tiger.census.gov/cgi-bin/mapgen?lon=-118.440470&amp;lat=33.980305&amp;wid=0.035&amp;ht=0.035&amp;iht=320&amp;iwd=320&amp;mark=-118.440470,33.980305,redpin&quot;
+	width=&quot;320&quot; height=&quot;320&quot; border=&quot;2&quot;
+	style=&quot;cursor: crosshair&quot;
+	onLoad=&quot;document.mapLoading.src = 'img/green-dot.png';&quot; /&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomIn()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-in.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomOut()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-out.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapRecenter()&quot;&gt;&lt;img
+	    src=&quot;img/recenter.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;img name=&quot;mapLoading&quot;
+	    src=&quot;img/red-dot.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Latitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;33.980305 &amp;deg;&lt;br&gt;
+        N 33 &amp;deg; 58' 49.1&quot; &lt;br&gt;
+        33 &amp;deg; 58.8183' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Longitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;-118.440470 &amp;deg;&lt;br&gt;
+        W 118 &amp;deg; 26' 25.7&quot; &lt;br&gt;
+        -118 &amp;deg; 26.4282' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;
+	&lt;h3&gt;Search for another address:&lt;/h3&gt;
+	&lt;form&gt;
+	    &lt;input type=&quot;text&quot; name=&quot;address&quot; size=&quot;45&quot; value=&quot;4676 Admiralty Way, Marina del Rey, CA, 90292&quot; /&gt;
+	    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to &lt;a href=&quot;mailto:missing@geocoder.us&quot;&gt;missing@geocoder.us&lt;/a&gt;,
+and we'll try to help you find your location.
+
+&lt;p&gt;
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;hr noshade=&quot;1&quot; width=&quot;90%&quot; /&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    = &lt;a href=&quot;/&quot;&gt;geocoder.us&lt;/a&gt; = &amp;copy; 2004-8 &lt;a
+href=&quot;http://locative.us/&quot;&gt;Locative Technologies&lt;/a&gt; = &lt;a
+href=&quot;/terms.shtml&quot;&gt;terms &amp;amp; conditions&lt;/a&gt; = &lt;a
+href=&quot;mailto:contact@geocoder.us&quot;&gt;contact us&lt;/a&gt; = 
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+&lt;!-- Open Knowledge Link --&gt;
+&lt;a href=&quot;http://okd.okfn.org/&quot;&gt; &lt;img alt=&quot;This material is Open Knowlege&quot; border=&quot;0&quot; src=&quot;http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png&quot; height=&quot;31&quot; vspace=&quot;5&quot; /&gt;&lt;/a&gt; &lt;!-- /Open Knowledge Link --&gt;
+&lt;a href=&quot;http://www.perl.org&quot;&gt;&lt;img src=&quot;/img/rectangle_power_perl.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/2.0/&quot;&gt;&lt;img src=&quot;/img/somerights20.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;!-- PayPal Logo --&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;
+
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');&quot;&gt;&lt;img  src=&quot;https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif&quot; border=&quot;0&quot; alt=&quot;Acceptance Mark&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;!-- PayPal Logo --&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+&lt;/html&gt;</field>
+    </row>
+    <row>
+      <field name="address">600 Dexter Avenue, Montgomery, AL 36130</field>
+      <field name="PR-Street_2">600 
+		Dexter Ave</field>
+      <field name="PR-Latitude_17">32.377189</field>
+      <field name="PR-Longitude_34">-86.301963 &amp;deg;</field>
+      <field name="PR-Address_51">600 Dexter Avenue, Montgomery, AL 36130</field>
+      <field name="SourceTime">2008-10-28 16:05:55</field>
+      <field name="SourcePage">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;geocoder.us: a free US geocoder&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- this div is opened here, closed in the footer or somewhere else --&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;pub-1219510847949987&quot;;
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = &quot;728x90_as&quot;;
+google_ad_type = &quot;text_image&quot;;
+google_ad_channel =&quot;&quot;;
+google_color_border = [&quot;336699&quot;,&quot;B4D0DC&quot;,&quot;DDB7BA&quot;,&quot;FDEFD2&quot;];
+google_color_bg = [&quot;FFFFFF&quot;,&quot;ECF8FF&quot;,&quot;FFF5F6&quot;,&quot;FDEFD2&quot;];
+google_color_link = [&quot;0000FF&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;];
+google_color_url = &quot;008000&quot;;
+google_color_text = [&quot;000000&quot;,&quot;6F6F6F&quot;,&quot;6F6F6F&quot;,&quot;000000&quot;];
+//--&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;!--
+&lt;h2&gt;&lt;a href=&quot;/blog&quot;&gt;Read the Geocoder.US Blog&lt;/a&gt;&lt;/h2&gt;
+--&gt;
+
+  &lt;a href=&quot;/&quot;&gt;&lt;h1&gt;geocoder.us / geocoder.net&lt;/h1&gt;&lt;/a&gt;
+  &lt;h2&gt;find the latitude &amp;amp; longitude of any US address - for &lt;em&gt;free&lt;/em&gt;&lt;/h2&gt;
+
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 32.377189, mapCenterLon = -86.301963,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom &lt; mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom &gt; mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = &quot;img/red-dot.png&quot;;
+	document.mapImage.src = 
+	    &quot;http://tiger.census.gov/cgi-bin/mapgen?&quot; +
+		&quot;lon=&quot; + mapLon + &quot;&amp;lat=&quot; + mapLat + 
+		&quot;&amp;wid=&quot; + mapWid + &quot;&amp;ht=&quot;  + mapWid +
+		&quot;&amp;iht=&quot; + mapPixels + &quot;&amp;iwd=&quot; + mapPixels +
+		&quot;&amp;mark=&quot; + mapCenterLon + &quot;,&quot; + mapCenterLat + &quot;,redpin&quot;;
+    }
+&lt;/script&gt;
+
+  &lt;table width=&quot;90%&quot; cellspacing=&quot;20%&quot; border=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+	&lt;h3&gt;Address&lt;/h3&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+	
+	    600 
+		Dexter Ave 
+	
+	&lt;br /&gt;Montgomery AL 36104&lt;br&gt;
+        (32.377189, -86.301963)
+    &lt;/td&gt;
+    &lt;td width=&quot;320&quot; rowspan=&quot;4&quot;&gt;
+&lt;div&gt;(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)&lt;/div&gt;
+    &lt;div onClick=&quot;return mapCenter(event)&quot;&gt;
+&lt;img
+	name=&quot;mapImage&quot; src=&quot;http://tiger.census.gov/cgi-bin/mapgen?lon=-86.301963&amp;lat=32.377189&amp;wid=0.035&amp;ht=0.035&amp;iht=320&amp;iwd=320&amp;mark=-86.301963,32.377189,redpin&quot;
+	width=&quot;320&quot; height=&quot;320&quot; border=&quot;2&quot;
+	style=&quot;cursor: crosshair&quot;
+	onLoad=&quot;document.mapLoading.src = 'img/green-dot.png';&quot; /&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomIn()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-in.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomOut()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-out.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapRecenter()&quot;&gt;&lt;img
+	    src=&quot;img/recenter.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;img name=&quot;mapLoading&quot;
+	    src=&quot;img/red-dot.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Latitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;32.377189 &amp;deg;&lt;br&gt;
+        N 32 &amp;deg; 22' 37.9&quot; &lt;br&gt;
+        32 &amp;deg; 22.6313' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Longitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;-86.301963 &amp;deg;&lt;br&gt;
+        W 86 &amp;deg; 18' 7.1&quot; &lt;br&gt;
+        -86 &amp;deg; 18.1178' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;
+	&lt;h3&gt;Search for another address:&lt;/h3&gt;
+	&lt;form&gt;
+	    &lt;input type=&quot;text&quot; name=&quot;address&quot; size=&quot;45&quot; value=&quot;600 Dexter Avenue, Montgomery, AL 36130&quot; /&gt;
+	    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to &lt;a href=&quot;mailto:missing@geocoder.us&quot;&gt;missing@geocoder.us&lt;/a&gt;,
+and we'll try to help you find your location.
+
+&lt;p&gt;
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;hr noshade=&quot;1&quot; width=&quot;90%&quot; /&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    = &lt;a href=&quot;/&quot;&gt;geocoder.us&lt;/a&gt; = &amp;copy; 2004-8 &lt;a
+href=&quot;http://locative.us/&quot;&gt;Locative Technologies&lt;/a&gt; = &lt;a
+href=&quot;/terms.shtml&quot;&gt;terms &amp;amp; conditions&lt;/a&gt; = &lt;a
+href=&quot;mailto:contact@geocoder.us&quot;&gt;contact us&lt;/a&gt; = 
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+&lt;!-- Open Knowledge Link --&gt;
+&lt;a href=&quot;http://okd.okfn.org/&quot;&gt; &lt;img alt=&quot;This material is Open Knowlege&quot; border=&quot;0&quot; src=&quot;http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png&quot; height=&quot;31&quot; vspace=&quot;5&quot; /&gt;&lt;/a&gt; &lt;!-- /Open Knowledge Link --&gt;
+&lt;a href=&quot;http://www.perl.org&quot;&gt;&lt;img src=&quot;/img/rectangle_power_perl.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/2.0/&quot;&gt;&lt;img src=&quot;/img/somerights20.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;!-- PayPal Logo --&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;
+
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');&quot;&gt;&lt;img  src=&quot;https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif&quot; border=&quot;0&quot; alt=&quot;Acceptance Mark&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;!-- PayPal Logo --&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+&lt;/html&gt;</field>
+    </row>
+    <row>
+      <field name="address">1700 West Washington, Phoenix, AZ 85007</field>
+      <field name="PR-Street_2">1700 W
+		Washington St</field>
+      <field name="PR-Latitude_17">33.448543</field>
+      <field name="PR-Longitude_34">-112.095704 &amp;deg;</field>
+      <field name="PR-Address_51">1700 West Washington, Phoenix, AZ 85007</field>
+      <field name="SourceTime">2008-10-28 16:06:20</field>
+      <field name="SourcePage">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;geocoder.us: a free US geocoder&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- this div is opened here, closed in the footer or somewhere else --&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;pub-1219510847949987&quot;;
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = &quot;728x90_as&quot;;
+google_ad_type = &quot;text_image&quot;;
+google_ad_channel =&quot;&quot;;
+google_color_border = [&quot;336699&quot;,&quot;B4D0DC&quot;,&quot;DDB7BA&quot;,&quot;FDEFD2&quot;];
+google_color_bg = [&quot;FFFFFF&quot;,&quot;ECF8FF&quot;,&quot;FFF5F6&quot;,&quot;FDEFD2&quot;];
+google_color_link = [&quot;0000FF&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;];
+google_color_url = &quot;008000&quot;;
+google_color_text = [&quot;000000&quot;,&quot;6F6F6F&quot;,&quot;6F6F6F&quot;,&quot;000000&quot;];
+//--&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;!--
+&lt;h2&gt;&lt;a href=&quot;/blog&quot;&gt;Read the Geocoder.US Blog&lt;/a&gt;&lt;/h2&gt;
+--&gt;
+
+  &lt;a href=&quot;/&quot;&gt;&lt;h1&gt;geocoder.us / geocoder.net&lt;/h1&gt;&lt;/a&gt;
+  &lt;h2&gt;find the latitude &amp;amp; longitude of any US address - for &lt;em&gt;free&lt;/em&gt;&lt;/h2&gt;
+
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 33.448543, mapCenterLon = -112.095704,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom &lt; mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom &gt; mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = &quot;img/red-dot.png&quot;;
+	document.mapImage.src = 
+	    &quot;http://tiger.census.gov/cgi-bin/mapgen?&quot; +
+		&quot;lon=&quot; + mapLon + &quot;&amp;lat=&quot; + mapLat + 
+		&quot;&amp;wid=&quot; + mapWid + &quot;&amp;ht=&quot;  + mapWid +
+		&quot;&amp;iht=&quot; + mapPixels + &quot;&amp;iwd=&quot; + mapPixels +
+		&quot;&amp;mark=&quot; + mapCenterLon + &quot;,&quot; + mapCenterLat + &quot;,redpin&quot;;
+    }
+&lt;/script&gt;
+
+  &lt;table width=&quot;90%&quot; cellspacing=&quot;20%&quot; border=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+	&lt;h3&gt;Address&lt;/h3&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+	
+	    1700 W
+		Washington St 
+	
+	&lt;br /&gt;Phoenix AZ 85007&lt;br&gt;
+        (33.448543, -112.095704)
+    &lt;/td&gt;
+    &lt;td width=&quot;320&quot; rowspan=&quot;4&quot;&gt;
+&lt;div&gt;(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)&lt;/div&gt;
+    &lt;div onClick=&quot;return mapCenter(event)&quot;&gt;
+&lt;img
+	name=&quot;mapImage&quot; src=&quot;http://tiger.census.gov/cgi-bin/mapgen?lon=-112.095704&amp;lat=33.448543&amp;wid=0.035&amp;ht=0.035&amp;iht=320&amp;iwd=320&amp;mark=-112.095704,33.448543,redpin&quot;
+	width=&quot;320&quot; height=&quot;320&quot; border=&quot;2&quot;
+	style=&quot;cursor: crosshair&quot;
+	onLoad=&quot;document.mapLoading.src = 'img/green-dot.png';&quot; /&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomIn()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-in.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomOut()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-out.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapRecenter()&quot;&gt;&lt;img
+	    src=&quot;img/recenter.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;img name=&quot;mapLoading&quot;
+	    src=&quot;img/red-dot.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Latitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;33.448543 &amp;deg;&lt;br&gt;
+        N 33 &amp;deg; 26' 54.8&quot; &lt;br&gt;
+        33 &amp;deg; 26.9126' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Longitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;-112.095704 &amp;deg;&lt;br&gt;
+        W 112 &amp;deg; 5' 44.5&quot; &lt;br&gt;
+        -112 &amp;deg;  5.7422' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;
+	&lt;h3&gt;Search for another address:&lt;/h3&gt;
+	&lt;form&gt;
+	    &lt;input type=&quot;text&quot; name=&quot;address&quot; size=&quot;45&quot; value=&quot;1700 West Washington, Phoenix, AZ 85007&quot; /&gt;
+	    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to &lt;a href=&quot;mailto:missing@geocoder.us&quot;&gt;missing@geocoder.us&lt;/a&gt;,
+and we'll try to help you find your location.
+
+&lt;p&gt;
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;hr noshade=&quot;1&quot; width=&quot;90%&quot; /&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    = &lt;a href=&quot;/&quot;&gt;geocoder.us&lt;/a&gt; = &amp;copy; 2004-8 &lt;a
+href=&quot;http://locative.us/&quot;&gt;Locative Technologies&lt;/a&gt; = &lt;a
+href=&quot;/terms.shtml&quot;&gt;terms &amp;amp; conditions&lt;/a&gt; = &lt;a
+href=&quot;mailto:contact@geocoder.us&quot;&gt;contact us&lt;/a&gt; = 
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+&lt;!-- Open Knowledge Link --&gt;
+&lt;a href=&quot;http://okd.okfn.org/&quot;&gt; &lt;img alt=&quot;This material is Open Knowlege&quot; border=&quot;0&quot; src=&quot;http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png&quot; height=&quot;31&quot; vspace=&quot;5&quot; /&gt;&lt;/a&gt; &lt;!-- /Open Knowledge Link --&gt;
+&lt;a href=&quot;http://www.perl.org&quot;&gt;&lt;img src=&quot;/img/rectangle_power_perl.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/2.0/&quot;&gt;&lt;img src=&quot;/img/somerights20.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;!-- PayPal Logo --&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;
+
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');&quot;&gt;&lt;img  src=&quot;https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif&quot; border=&quot;0&quot; alt=&quot;Acceptance Mark&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;!-- PayPal Logo --&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+&lt;/html&gt;</field>
+    </row>
+    <row>
+      <field name="address">210 Capitol Avenue, Hartford, CT 06106</field>
+      <field name="PR-Street_2">210 
+		Capitol Ave</field>
+      <field name="PR-Latitude_17">41.762664</field>
+      <field name="PR-Longitude_34">-72.682270 &amp;deg;</field>
+      <field name="PR-Address_51">210 Capitol Avenue, Hartford, CT 06106</field>
+      <field name="SourceTime">2008-10-28 16:06:46</field>
+      <field name="SourcePage">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;geocoder.us: a free US geocoder&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- this div is opened here, closed in the footer or somewhere else --&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;pub-1219510847949987&quot;;
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = &quot;728x90_as&quot;;
+google_ad_type = &quot;text_image&quot;;
+google_ad_channel =&quot;&quot;;
+google_color_border = [&quot;336699&quot;,&quot;B4D0DC&quot;,&quot;DDB7BA&quot;,&quot;FDEFD2&quot;];
+google_color_bg = [&quot;FFFFFF&quot;,&quot;ECF8FF&quot;,&quot;FFF5F6&quot;,&quot;FDEFD2&quot;];
+google_color_link = [&quot;0000FF&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;];
+google_color_url = &quot;008000&quot;;
+google_color_text = [&quot;000000&quot;,&quot;6F6F6F&quot;,&quot;6F6F6F&quot;,&quot;000000&quot;];
+//--&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;!--
+&lt;h2&gt;&lt;a href=&quot;/blog&quot;&gt;Read the Geocoder.US Blog&lt;/a&gt;&lt;/h2&gt;
+--&gt;
+
+  &lt;a href=&quot;/&quot;&gt;&lt;h1&gt;geocoder.us / geocoder.net&lt;/h1&gt;&lt;/a&gt;
+  &lt;h2&gt;find the latitude &amp;amp; longitude of any US address - for &lt;em&gt;free&lt;/em&gt;&lt;/h2&gt;
+
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 41.762664, mapCenterLon = -72.682270,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom &lt; mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom &gt; mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = &quot;img/red-dot.png&quot;;
+	document.mapImage.src = 
+	    &quot;http://tiger.census.gov/cgi-bin/mapgen?&quot; +
+		&quot;lon=&quot; + mapLon + &quot;&amp;lat=&quot; + mapLat + 
+		&quot;&amp;wid=&quot; + mapWid + &quot;&amp;ht=&quot;  + mapWid +
+		&quot;&amp;iht=&quot; + mapPixels + &quot;&amp;iwd=&quot; + mapPixels +
+		&quot;&amp;mark=&quot; + mapCenterLon + &quot;,&quot; + mapCenterLat + &quot;,redpin&quot;;
+    }
+&lt;/script&gt;
+
+  &lt;table width=&quot;90%&quot; cellspacing=&quot;20%&quot; border=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+	&lt;h3&gt;Address&lt;/h3&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+	
+	    210 
+		Capitol Ave 
+	
+	&lt;br /&gt;Hartford CT 06106&lt;br&gt;
+        (41.762664, -72.682270)
+    &lt;/td&gt;
+    &lt;td width=&quot;320&quot; rowspan=&quot;4&quot;&gt;
+&lt;div&gt;(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)&lt;/div&gt;
+    &lt;div onClick=&quot;return mapCenter(event)&quot;&gt;
+&lt;img
+	name=&quot;mapImage&quot; src=&quot;http://tiger.census.gov/cgi-bin/mapgen?lon=-72.682270&amp;lat=41.762664&amp;wid=0.035&amp;ht=0.035&amp;iht=320&amp;iwd=320&amp;mark=-72.682270,41.762664,redpin&quot;
+	width=&quot;320&quot; height=&quot;320&quot; border=&quot;2&quot;
+	style=&quot;cursor: crosshair&quot;
+	onLoad=&quot;document.mapLoading.src = 'img/green-dot.png';&quot; /&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomIn()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-in.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomOut()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-out.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapRecenter()&quot;&gt;&lt;img
+	    src=&quot;img/recenter.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;img name=&quot;mapLoading&quot;
+	    src=&quot;img/red-dot.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Latitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;41.762664 &amp;deg;&lt;br&gt;
+        N 41 &amp;deg; 45' 45.6&quot; &lt;br&gt;
+        41 &amp;deg; 45.7598' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Longitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;-72.682270 &amp;deg;&lt;br&gt;
+        W 72 &amp;deg; 40' 56.2&quot; &lt;br&gt;
+        -72 &amp;deg; 40.9362' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;
+	&lt;h3&gt;Search for another address:&lt;/h3&gt;
+	&lt;form&gt;
+	    &lt;input type=&quot;text&quot; name=&quot;address&quot; size=&quot;45&quot; value=&quot;210 Capitol Avenue, Hartford, CT 06106&quot; /&gt;
+	    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to &lt;a href=&quot;mailto:missing@geocoder.us&quot;&gt;missing@geocoder.us&lt;/a&gt;,
+and we'll try to help you find your location.
+
+&lt;p&gt;
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;hr noshade=&quot;1&quot; width=&quot;90%&quot; /&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    = &lt;a href=&quot;/&quot;&gt;geocoder.us&lt;/a&gt; = &amp;copy; 2004-8 &lt;a
+href=&quot;http://locative.us/&quot;&gt;Locative Technologies&lt;/a&gt; = &lt;a
+href=&quot;/terms.shtml&quot;&gt;terms &amp;amp; conditions&lt;/a&gt; = &lt;a
+href=&quot;mailto:contact@geocoder.us&quot;&gt;contact us&lt;/a&gt; = 
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+&lt;!-- Open Knowledge Link --&gt;
+&lt;a href=&quot;http://okd.okfn.org/&quot;&gt; &lt;img alt=&quot;This material is Open Knowlege&quot; border=&quot;0&quot; src=&quot;http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png&quot; height=&quot;31&quot; vspace=&quot;5&quot; /&gt;&lt;/a&gt; &lt;!-- /Open Knowledge Link --&gt;
+&lt;a href=&quot;http://www.perl.org&quot;&gt;&lt;img src=&quot;/img/rectangle_power_perl.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/2.0/&quot;&gt;&lt;img src=&quot;/img/somerights20.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;!-- PayPal Logo --&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;
+
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');&quot;&gt;&lt;img  src=&quot;https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif&quot; border=&quot;0&quot; alt=&quot;Acceptance Mark&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;!-- PayPal Logo --&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+&lt;/html&gt;</field>
+    </row>
+    <row>
+      <field name="address">4750 N. Meridian St., Indianapolis, IN 46208</field>
+      <field name="PR-Street_2">3701 N
+		Meridian St</field>
+      <field name="PR-Latitude_17">39.822204</field>
+      <field name="PR-Longitude_34">-86.156831 &amp;deg;</field>
+      <field name="PR-Address_51">4750 N. Meridian St., Indianapolis, IN 46208</field>
+      <field name="SourceTime">2008-10-28 16:07:12</field>
+      <field name="SourcePage">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;geocoder.us: a free US geocoder&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- this div is opened here, closed in the footer or somewhere else --&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;pub-1219510847949987&quot;;
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = &quot;728x90_as&quot;;
+google_ad_type = &quot;text_image&quot;;
+google_ad_channel =&quot;&quot;;
+google_color_border = [&quot;336699&quot;,&quot;B4D0DC&quot;,&quot;DDB7BA&quot;,&quot;FDEFD2&quot;];
+google_color_bg = [&quot;FFFFFF&quot;,&quot;ECF8FF&quot;,&quot;FFF5F6&quot;,&quot;FDEFD2&quot;];
+google_color_link = [&quot;0000FF&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;];
+google_color_url = &quot;008000&quot;;
+google_color_text = [&quot;000000&quot;,&quot;6F6F6F&quot;,&quot;6F6F6F&quot;,&quot;000000&quot;];
+//--&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;!--
+&lt;h2&gt;&lt;a href=&quot;/blog&quot;&gt;Read the Geocoder.US Blog&lt;/a&gt;&lt;/h2&gt;
+--&gt;
+
+  &lt;a href=&quot;/&quot;&gt;&lt;h1&gt;geocoder.us / geocoder.net&lt;/h1&gt;&lt;/a&gt;
+  &lt;h2&gt;find the latitude &amp;amp; longitude of any US address - for &lt;em&gt;free&lt;/em&gt;&lt;/h2&gt;
+
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 39.822204, mapCenterLon = -86.156831,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom &lt; mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom &gt; mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = &quot;img/red-dot.png&quot;;
+	document.mapImage.src = 
+	    &quot;http://tiger.census.gov/cgi-bin/mapgen?&quot; +
+		&quot;lon=&quot; + mapLon + &quot;&amp;lat=&quot; + mapLat + 
+		&quot;&amp;wid=&quot; + mapWid + &quot;&amp;ht=&quot;  + mapWid +
+		&quot;&amp;iht=&quot; + mapPixels + &quot;&amp;iwd=&quot; + mapPixels +
+		&quot;&amp;mark=&quot; + mapCenterLon + &quot;,&quot; + mapCenterLat + &quot;,redpin&quot;;
+    }
+&lt;/script&gt;
+
+  &lt;table width=&quot;90%&quot; cellspacing=&quot;20%&quot; border=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+	&lt;h3&gt;Address&lt;/h3&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+	
+	    3701 N
+		Meridian St 
+	
+	&lt;br /&gt;Indianapolis city IN 46208&lt;br&gt;
+        (39.822204, -86.156831)
+    &lt;/td&gt;
+    &lt;td width=&quot;320&quot; rowspan=&quot;4&quot;&gt;
+&lt;div&gt;(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)&lt;/div&gt;
+    &lt;div onClick=&quot;return mapCenter(event)&quot;&gt;
+&lt;img
+	name=&quot;mapImage&quot; src=&quot;http://tiger.census.gov/cgi-bin/mapgen?lon=-86.156831&amp;lat=39.822204&amp;wid=0.035&amp;ht=0.035&amp;iht=320&amp;iwd=320&amp;mark=-86.156831,39.822204,redpin&quot;
+	width=&quot;320&quot; height=&quot;320&quot; border=&quot;2&quot;
+	style=&quot;cursor: crosshair&quot;
+	onLoad=&quot;document.mapLoading.src = 'img/green-dot.png';&quot; /&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomIn()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-in.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomOut()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-out.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapRecenter()&quot;&gt;&lt;img
+	    src=&quot;img/recenter.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;img name=&quot;mapLoading&quot;
+	    src=&quot;img/red-dot.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Latitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;39.822204 &amp;deg;&lt;br&gt;
+        N 39 &amp;deg; 49' 19.9&quot; &lt;br&gt;
+        39 &amp;deg; 49.3322' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Longitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;-86.156831 &amp;deg;&lt;br&gt;
+        W 86 &amp;deg; 9' 24.6&quot; &lt;br&gt;
+        -86 &amp;deg;  9.4099' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;
+	&lt;h3&gt;Search for another address:&lt;/h3&gt;
+	&lt;form&gt;
+	    &lt;input type=&quot;text&quot; name=&quot;address&quot; size=&quot;45&quot; value=&quot;4750 N. Meridian St., Indianapolis, IN 46208&quot; /&gt;
+	    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to &lt;a href=&quot;mailto:missing@geocoder.us&quot;&gt;missing@geocoder.us&lt;/a&gt;,
+and we'll try to help you find your location.
+
+&lt;p&gt;
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;hr noshade=&quot;1&quot; width=&quot;90%&quot; /&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    = &lt;a href=&quot;/&quot;&gt;geocoder.us&lt;/a&gt; = &amp;copy; 2004-8 &lt;a
+href=&quot;http://locative.us/&quot;&gt;Locative Technologies&lt;/a&gt; = &lt;a
+href=&quot;/terms.shtml&quot;&gt;terms &amp;amp; conditions&lt;/a&gt; = &lt;a
+href=&quot;mailto:contact@geocoder.us&quot;&gt;contact us&lt;/a&gt; = 
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+&lt;!-- Open Knowledge Link --&gt;
+&lt;a href=&quot;http://okd.okfn.org/&quot;&gt; &lt;img alt=&quot;This material is Open Knowlege&quot; border=&quot;0&quot; src=&quot;http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png&quot; height=&quot;31&quot; vspace=&quot;5&quot; /&gt;&lt;/a&gt; &lt;!-- /Open Knowledge Link --&gt;
+&lt;a href=&quot;http://www.perl.org&quot;&gt;&lt;img src=&quot;/img/rectangle_power_perl.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/2.0/&quot;&gt;&lt;img src=&quot;/img/somerights20.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;!-- PayPal Logo --&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;
+
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');&quot;&gt;&lt;img  src=&quot;https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif&quot; border=&quot;0&quot; alt=&quot;Acceptance Mark&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;!-- PayPal Logo --&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+&lt;/html&gt;</field>
+    </row>
+    <row>
+      <field name="address">1007 East Grand Ave., Des Moines, IA 50319</field>
+      <field name="PR-Street_2">1007 E
+		Grand Ave</field>
+      <field name="PR-Latitude_17">41.591974</field>
+      <field name="PR-Longitude_34">-93.604559 &amp;deg;</field>
+      <field name="PR-Address_51">1007 East Grand Ave., Des Moines, IA 50319</field>
+      <field name="SourceTime">2008-10-28 16:07:38</field>
+      <field name="SourcePage">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;geocoder.us: a free US geocoder&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- this div is opened here, closed in the footer or somewhere else --&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;pub-1219510847949987&quot;;
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = &quot;728x90_as&quot;;
+google_ad_type = &quot;text_image&quot;;
+google_ad_channel =&quot;&quot;;
+google_color_border = [&quot;336699&quot;,&quot;B4D0DC&quot;,&quot;DDB7BA&quot;,&quot;FDEFD2&quot;];
+google_color_bg = [&quot;FFFFFF&quot;,&quot;ECF8FF&quot;,&quot;FFF5F6&quot;,&quot;FDEFD2&quot;];
+google_color_link = [&quot;0000FF&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;];
+google_color_url = &quot;008000&quot;;
+google_color_text = [&quot;000000&quot;,&quot;6F6F6F&quot;,&quot;6F6F6F&quot;,&quot;000000&quot;];
+//--&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;!--
+&lt;h2&gt;&lt;a href=&quot;/blog&quot;&gt;Read the Geocoder.US Blog&lt;/a&gt;&lt;/h2&gt;
+--&gt;
+
+  &lt;a href=&quot;/&quot;&gt;&lt;h1&gt;geocoder.us / geocoder.net&lt;/h1&gt;&lt;/a&gt;
+  &lt;h2&gt;find the latitude &amp;amp; longitude of any US address - for &lt;em&gt;free&lt;/em&gt;&lt;/h2&gt;
+
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 41.591974, mapCenterLon = -93.604559,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom &lt; mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom &gt; mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = &quot;img/red-dot.png&quot;;
+	document.mapImage.src = 
+	    &quot;http://tiger.census.gov/cgi-bin/mapgen?&quot; +
+		&quot;lon=&quot; + mapLon + &quot;&amp;lat=&quot; + mapLat + 
+		&quot;&amp;wid=&quot; + mapWid + &quot;&amp;ht=&quot;  + mapWid +
+		&quot;&amp;iht=&quot; + mapPixels + &quot;&amp;iwd=&quot; + mapPixels +
+		&quot;&amp;mark=&quot; + mapCenterLon + &quot;,&quot; + mapCenterLat + &quot;,redpin&quot;;
+    }
+&lt;/script&gt;
+
+  &lt;table width=&quot;90%&quot; cellspacing=&quot;20%&quot; border=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+	&lt;h3&gt;Address&lt;/h3&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+	
+	    1007 E
+		Grand Ave 
+	
+	&lt;br /&gt;Des Moines IA 50316&lt;br&gt;
+        (41.591974, -93.604559)
+    &lt;/td&gt;
+    &lt;td width=&quot;320&quot; rowspan=&quot;4&quot;&gt;
+&lt;div&gt;(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)&lt;/div&gt;
+    &lt;div onClick=&quot;return mapCenter(event)&quot;&gt;
+&lt;img
+	name=&quot;mapImage&quot; src=&quot;http://tiger.census.gov/cgi-bin/mapgen?lon=-93.604559&amp;lat=41.591974&amp;wid=0.035&amp;ht=0.035&amp;iht=320&amp;iwd=320&amp;mark=-93.604559,41.591974,redpin&quot;
+	width=&quot;320&quot; height=&quot;320&quot; border=&quot;2&quot;
+	style=&quot;cursor: crosshair&quot;
+	onLoad=&quot;document.mapLoading.src = 'img/green-dot.png';&quot; /&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomIn()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-in.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomOut()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-out.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapRecenter()&quot;&gt;&lt;img
+	    src=&quot;img/recenter.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;img name=&quot;mapLoading&quot;
+	    src=&quot;img/red-dot.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Latitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;41.591974 &amp;deg;&lt;br&gt;
+        N 41 &amp;deg; 35' 31.1&quot; &lt;br&gt;
+        41 &amp;deg; 35.5184' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Longitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;-93.604559 &amp;deg;&lt;br&gt;
+        W 93 &amp;deg; 36' 16.4&quot; &lt;br&gt;
+        -93 &amp;deg; 36.2735' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;
+	&lt;h3&gt;Search for another address:&lt;/h3&gt;
+	&lt;form&gt;
+	    &lt;input type=&quot;text&quot; name=&quot;address&quot; size=&quot;45&quot; value=&quot;1007 East Grand Ave., Des Moines, IA 50319&quot; /&gt;
+	    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to &lt;a href=&quot;mailto:missing@geocoder.us&quot;&gt;missing@geocoder.us&lt;/a&gt;,
+and we'll try to help you find your location.
+
+&lt;p&gt;
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;hr noshade=&quot;1&quot; width=&quot;90%&quot; /&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    = &lt;a href=&quot;/&quot;&gt;geocoder.us&lt;/a&gt; = &amp;copy; 2004-8 &lt;a
+href=&quot;http://locative.us/&quot;&gt;Locative Technologies&lt;/a&gt; = &lt;a
+href=&quot;/terms.shtml&quot;&gt;terms &amp;amp; conditions&lt;/a&gt; = &lt;a
+href=&quot;mailto:contact@geocoder.us&quot;&gt;contact us&lt;/a&gt; = 
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+&lt;!-- Open Knowledge Link --&gt;
+&lt;a href=&quot;http://okd.okfn.org/&quot;&gt; &lt;img alt=&quot;This material is Open Knowlege&quot; border=&quot;0&quot; src=&quot;http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png&quot; height=&quot;31&quot; vspace=&quot;5&quot; /&gt;&lt;/a&gt; &lt;!-- /Open Knowledge Link --&gt;
+&lt;a href=&quot;http://www.perl.org&quot;&gt;&lt;img src=&quot;/img/rectangle_power_perl.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/2.0/&quot;&gt;&lt;img src=&quot;/img/somerights20.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;!-- PayPal Logo --&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;
+
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');&quot;&gt;&lt;img  src=&quot;https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif&quot; border=&quot;0&quot; alt=&quot;Acceptance Mark&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;!-- PayPal Logo --&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+&lt;/html&gt;</field>
+    </row>
+    <row>
+      <field name="address">300 SW 10th Ave., Topeka, KS 66612</field>
+      <field name="PR-Street_2">300 SW
+		10th Ave</field>
+      <field name="PR-Latitude_17">39.046754</field>
+      <field name="PR-Longitude_34">-95.678724 &amp;deg;</field>
+      <field name="PR-Address_51">300 SW 10th Ave., Topeka, KS 66612</field>
+      <field name="SourceTime">2008-10-28 16:08:04</field>
+      <field name="SourcePage">&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;geocoder.us: a free US geocoder&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;/style.css&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- this div is opened here, closed in the footer or somewhere else --&gt;
+&lt;div align=&quot;center&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;&lt;!--
+google_ad_client = &quot;pub-1219510847949987&quot;;
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = &quot;728x90_as&quot;;
+google_ad_type = &quot;text_image&quot;;
+google_ad_channel =&quot;&quot;;
+google_color_border = [&quot;336699&quot;,&quot;B4D0DC&quot;,&quot;DDB7BA&quot;,&quot;FDEFD2&quot;];
+google_color_bg = [&quot;FFFFFF&quot;,&quot;ECF8FF&quot;,&quot;FFF5F6&quot;,&quot;FDEFD2&quot;];
+google_color_link = [&quot;0000FF&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;,&quot;0000CC&quot;];
+google_color_url = &quot;008000&quot;;
+google_color_text = [&quot;000000&quot;,&quot;6F6F6F&quot;,&quot;6F6F6F&quot;,&quot;000000&quot;];
+//--&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;
+  src=&quot;http://pagead2.googlesyndication.com/pagead/show_ads.js&quot;&gt;
+&lt;/script&gt;
+
+&lt;!--
+&lt;h2&gt;&lt;a href=&quot;/blog&quot;&gt;Read the Geocoder.US Blog&lt;/a&gt;&lt;/h2&gt;
+--&gt;
+
+  &lt;a href=&quot;/&quot;&gt;&lt;h1&gt;geocoder.us / geocoder.net&lt;/h1&gt;&lt;/a&gt;
+  &lt;h2&gt;find the latitude &amp;amp; longitude of any US address - for &lt;em&gt;free&lt;/em&gt;&lt;/h2&gt;
+
+
+&lt;script language=&quot;JavaScript&quot;&gt;
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 39.046754, mapCenterLon = -95.678724,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom &lt; mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom &gt; mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = &quot;img/red-dot.png&quot;;
+	document.mapImage.src = 
+	    &quot;http://tiger.census.gov/cgi-bin/mapgen?&quot; +
+		&quot;lon=&quot; + mapLon + &quot;&amp;lat=&quot; + mapLat + 
+		&quot;&amp;wid=&quot; + mapWid + &quot;&amp;ht=&quot;  + mapWid +
+		&quot;&amp;iht=&quot; + mapPixels + &quot;&amp;iwd=&quot; + mapPixels +
+		&quot;&amp;mark=&quot; + mapCenterLon + &quot;,&quot; + mapCenterLat + &quot;,redpin&quot;;
+    }
+&lt;/script&gt;
+
+  &lt;table width=&quot;90%&quot; cellspacing=&quot;20%&quot; border=&quot;0&quot;&gt;
+  &lt;tr valign=&quot;top&quot;&gt;
+    &lt;td&gt;
+	&lt;h3&gt;Address&lt;/h3&gt;
+    &lt;/td&gt;
+    &lt;td&gt;
+	
+	    300 SW
+		10th Ave 
+	
+	&lt;br /&gt;Topeka KS 66612&lt;br&gt;
+        (39.046754, -95.678724)
+    &lt;/td&gt;
+    &lt;td width=&quot;320&quot; rowspan=&quot;4&quot;&gt;
+&lt;div&gt;(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)&lt;/div&gt;
+    &lt;div onClick=&quot;return mapCenter(event)&quot;&gt;
+&lt;img
+	name=&quot;mapImage&quot; src=&quot;http://tiger.census.gov/cgi-bin/mapgen?lon=-95.678724&amp;lat=39.046754&amp;wid=0.035&amp;ht=0.035&amp;iht=320&amp;iwd=320&amp;mark=-95.678724,39.046754,redpin&quot;
+	width=&quot;320&quot; height=&quot;320&quot; border=&quot;2&quot;
+	style=&quot;cursor: crosshair&quot;
+	onLoad=&quot;document.mapLoading.src = 'img/green-dot.png';&quot; /&gt;&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td rowspan=&quot;4&quot;&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomIn()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-in.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapZoomOut()&quot;&gt;&lt;img
+	    src=&quot;img/zoom-out.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;a href=&quot;&quot; onClick=&quot;return mapRecenter()&quot;&gt;&lt;img
+	    src=&quot;img/recenter.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+	    &lt;br /&gt;
+	&lt;img name=&quot;mapLoading&quot;
+	    src=&quot;img/red-dot.png&quot; width=&quot;32&quot; height=&quot;32&quot; border=&quot;0&quot; /&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Latitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;39.046754 &amp;deg;&lt;br&gt;
+        N 39 &amp;deg; 2' 48.3&quot; &lt;br&gt;
+        39 &amp;deg;  2.8052' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;h3&gt;Longitude&lt;/h3&gt;&lt;/td&gt;
+    &lt;td&gt;-95.678724 &amp;deg;&lt;br&gt;
+        W 95 &amp;deg; 40' 43.4&quot; &lt;br&gt;
+        -95 &amp;deg; 40.7234' (degree m.mmmm)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot;&gt;
+	&lt;h3&gt;Search for another address:&lt;/h3&gt;
+	&lt;form&gt;
+	    &lt;input type=&quot;text&quot; name=&quot;address&quot; size=&quot;45&quot; value=&quot;300 SW 10th Ave., Topeka, KS 66612&quot; /&gt;
+	    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+	&lt;/form&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan=&quot;2&quot;&gt;
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to &lt;a href=&quot;mailto:missing@geocoder.us&quot;&gt;missing@geocoder.us&lt;/a&gt;,
+and we'll try to help you find your location.
+
+&lt;p&gt;
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+&lt;/td&gt;
+&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;hr noshade=&quot;1&quot; width=&quot;90%&quot; /&gt;
+&lt;div class=&quot;footer&quot;&gt;
+    = &lt;a href=&quot;/&quot;&gt;geocoder.us&lt;/a&gt; = &amp;copy; 2004-8 &lt;a
+href=&quot;http://locative.us/&quot;&gt;Locative Technologies&lt;/a&gt; = &lt;a
+href=&quot;/terms.shtml&quot;&gt;terms &amp;amp; conditions&lt;/a&gt; = &lt;a
+href=&quot;mailto:contact@geocoder.us&quot;&gt;contact us&lt;/a&gt; = 
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;
+
+&lt;!-- Open Knowledge Link --&gt;
+&lt;a href=&quot;http://okd.okfn.org/&quot;&gt; &lt;img alt=&quot;This material is Open Knowlege&quot; border=&quot;0&quot; src=&quot;http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png&quot; height=&quot;31&quot; vspace=&quot;5&quot; /&gt;&lt;/a&gt; &lt;!-- /Open Knowledge Link --&gt;
+&lt;a href=&quot;http://www.perl.org&quot;&gt;&lt;img src=&quot;/img/rectangle_power_perl.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/2.0/&quot;&gt;&lt;img src=&quot;/img/somerights20.png&quot; width=&quot;88&quot; height=&quot;31&quot; hspace=&quot;5&quot; vspace=&quot;5&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;!-- PayPal Logo --&gt;&lt;table border=&quot;0&quot; cellpadding=&quot;10&quot; cellspacing=&quot;0&quot; align=&quot;center&quot;&gt;&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;
+
+&lt;tr&gt;&lt;td align=&quot;center&quot;&gt;&lt;a href=&quot;#&quot; onclick=&quot;javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');&quot;&gt;&lt;img  src=&quot;https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif&quot; border=&quot;0&quot; alt=&quot;Acceptance Mark&quot;&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;!-- PayPal Logo --&gt;
+
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/div&gt;
+&lt;/div&gt; 
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+&lt;/html&gt;</field>
+    </row>
+</ROOT>

@@ -1,0 +1,112 @@
+.usatLogoFill {
+	width: 192px;
+	float: left;
+	background-image: url(http://i.usatoday.net/_fronts/_weather/_images/weather_logo_2.gif);
+	background-color: #FDC004;
+	height: 128px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.common_topper {
+	height: 28px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-left-color: #666;
+	background-image: url(http://i.usatoday.net/_fronts/_weather/_images/gradient.gif);
+	background-repeat: repeat-x;
+	margin-bottom: 12px;
+	background-position: bottom;
+}
+.active-2tab {
+	background-image: url(http://i.usatoday.net/_fronts/_weather/_images/active-2tab.gif);
+	background-repeat: no-repeat;
+}
+
+.inactive-2tab {
+	background-image: url(http://i.usatoday.net/_fronts/_weather/_images/inactive-2tab.gif);
+	background-repeat: no-repeat;
+}
+.active-3tab {
+	background-image: url(http://i.usatoday.net/_fronts/_weather/_images/active-3tab.gif);
+	background-repeat: no-repeat;
+}
+.inactive-3tab {
+	background-image: url(http://i.usatoday.net/_fronts/_weather/_images/inactive-3tab.gif);
+	background-repeat: no-repeat;
+}
+.njSearchLabel{
+	background-image: url(http://i.usatoday.net/_fronts/_weather/_images/search_label.gif);
+	background-repeat: no-repeat;
+}
+.njSearchBtn{
+	background-image: url(http://i.usatoday.net/_fronts/_weather/_images/section_go_btn.gif);
+	background-repeat: no-repeat;
+}
+
+.njBkg-0 {background-color: #FDC004;}
+.njBkg-1 {background-color: #FFE47F;}
+.njBkg-2 {background-color: #FFEDA6;}
+.njBkg-3 {background-color: #FFF2BF;}
+
+.uslCommentsCount {color:#FDC004; background:url(http://i.usatoday.net/community/_common/_images/comments-after_weather.gif) left 50% no-repeat;}
+.uslRecommendCount {color:#FDC004; background:url(http://i.usatoday.net/community/_common/_images/recommend_weather.gif) left 50% no-repeat;}
+.uslRecommendedCount {color:#FDC004; background:url(http://i.usatoday.net/community/_common/_images/recommend-after_weather.gif) left 50% no-repeat;}
+
+#section-nav li a {
+	display: block;
+	color:#666;
+	font-size:12px;
+	font-weight: bold;
+	text-decoration:none;
+	background: #fff url(http://i.usatoday.net/_common/_images/divider_weather.gif) left no-repeat;
+	padding: 0 10px 0 8px;
+	margin: 5px 0 0 0;
+}
+
+#section-nav a:hover {
+	color:#fdc004;
+}
+
+#section-nav li.sectionlabel a{
+	color:#fdc004;
+	font-size:18px;
+	background:none;
+	padding: 0 8px 0 0;
+	margin: 0;
+}
+
+#section-nav li.subsectionlabel a{
+	color:#fdc004;
+	font-size:18px;
+	background:none;
+	padding: 0 8px 0 0;
+	margin: 0;
+}
+
+.njCustomFragment h1         /* content-header */     { font-size:14px; line-height:27px; font-weight:bold; text-align:left; text-indent:24px; border:1px solid #666666; border-bottom:1px solid #ffffff; background-repeat:repeat-x; background-position:left top; height:26px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-h1-bg-weather.gif); }
+.njCommonFragment h1         /* content-header */     { font-size:14px; line-height:27px; font-weight:bold; text-align:left; text-indent:24px; border:1px solid #666666; border-bottom:1px solid #ffffff; background-repeat:repeat-x; background-position:left top; height:26px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-h1-bg-weather.gif); }
+
+a.njMakeHome {font-size: 11px;font-weight: bold;text-decoration:none;}
+a.njMakeHome:link {color: #FFE47F}
+a.njMakeHome:visited {color: #FFE47F}
+a.njMakeHome:hover {text-decoration:none; color:#FFFFFF}
+.njSearchLogo {background-image: url(http://i.usatoday.net/_fronts/_weather/_images/search_label_weather.gif);background-repeat: no-repeat;}
+
+
+#weather-forecasts   h1{background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-h1-bg-weather.gif)}
+#weather-forecasts  .chatter{margin:6px 0 12px 0}
+#weather-forecasts   form{margin:0 0 8px 0}
+#weather-forecasts   ul{margin:0; padding:0}
+#weather-forecasts   ul li{margin:0; padding:0}
+#weather-forecasts   ul li a{margin:0; padding:0}
+#weather-forecasts   ul li a:hover{text-decoration:underline}
+#weather-forecasts p.spike{font-size:10px; line-height:11px; margin:0; padding:0 0 0 8px; background-repeat:no-repeat; background-position:left 3px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-spike-bullet.gif)}
+#weather-forecasts div.spike-row{padding:0; margin:0; width:150px; height:12px}

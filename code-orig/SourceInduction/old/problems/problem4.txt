@@ -1,0 +1,20 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+import problems/types.txt
+
+## Relations: 
+import problems/relations.txt
+import problems/comparisons.txt
+
+
+## Sources: 
+source YahooGeocoder($street,$zipcode,city,state,country,latitude,longitude)	:- address(street,_,zipcode,country,latitude,longitude), municipality(city,state,zipcode,_).								 {invocation.wrappers.YahooMaps; geocode}
+source HotelsByCity($city,hotel,poBox,street,state,zipcode,floors,phone)		:- hotel(hotel,poBox,street,zipcode,"US",phone), municipality(city,state,zipcode,_),building(street,zipcode,country,floors). {invocation.wrappers.USFireAdmin; HotelsByCity}
+import problems/sources_ragnarok.txt
+
+## Target Predicate: 
+target hotelsByZipRadius($zipcode,$distanceMi,hotel,street,city,state,phone,latitude,longitude,distanceMi,url) 	{invocation.wrappers.YahooLocal; hotelsByZipRadius}                                                                              
+
+##############################################################

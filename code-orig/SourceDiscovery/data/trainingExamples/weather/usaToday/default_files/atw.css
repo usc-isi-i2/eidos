@@ -1,0 +1,311 @@
+.ATWVerticalBannerAd {
+	float:right;
+  padding-right:5px;
+}
+
+.ATWcomment {
+	display: none;
+}
+
+.ATWcontrolCell table {
+	width:158px;
+}
+
+.ATWcontrolContainer {
+	font-size:10px;
+	width:474px;
+}
+.ATWcontrolContainer td {
+	height:20px;
+	font-size:10px;
+}
+
+.ATWcontrols {
+	width:100%;
+}
+
+.ATWcontrolsExpandCollapse {
+	text-align:center;
+}
+
+.ATWcontrolsExpandCollapse a {
+	color:#000000;
+	text-decoration:underline;
+}
+
+.ATWcontrolsExpandCollapseImg img {
+	border:none;
+	text-decoration:none;
+}
+
+.ATWdescription {
+	font-size:12px;
+}
+
+.ATWeditorsChoice td {
+	font-weight: bold;
+	font-size:11px;
+}
+
+.ATWfavicon {
+	border:none;
+	height:16px;
+	margin-right:2px;
+	vertical-align:text-bottom;
+	width:16px;
+}
+
+.ATWfaviconContainer,.ATWfeedDecreasePosts,.ATWfeedIncreasePosts {
+	float:left;
+}
+
+.ATWfeedArrow {
+	cursor:pointer;
+	float:left;
+	margin:2px 5px 0;
+}
+
+.ATWfeedBox {
+	display:block;
+	margin-left:-4px;
+}
+.ATWfeedExpand {
+	width:445px;
+  margin-bottom:10px;
+}
+.ATWfeedCollapse {
+	width:445px;
+  margin-bottom:10px;
+}
+.ATWfeedButton {
+	margin-right:4px;
+	margin-top:3px;
+}
+
+.ATWfeedClose {
+	background:url(http://i.usatoday.net/_common/_images/_static/X.gif) no-repeat 0 6px;
+	cursor:pointer;
+	float:left;
+	height:24px;
+	left:10px;
+	padding-right:0;
+	right:0;
+	text-align:left;
+	width:20px;
+}
+
+.ATWfeedCollapse .ATWfeedView {
+	display: none;
+}
+
+.ATWfeedDnDHandle {
+	background-image:url(http://i.usatoday.net/_common/_images/_static/middle_sliver.jpg);
+	background-position:0 1px;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	position:static;
+}
+
+.ATWfeedNumber {
+	color:Black;
+	font-size:11px;
+	font-weight:bold;
+	margin:0 2px 0 0;
+	text-align:right;
+}
+
+.ATWfeedTitle {
+	border-left:1px solid;
+	color:#333333;
+	float:left;
+	height:24px;
+	margin-top:1px;
+	padding-top:4px;
+	/* width:443px; */
+	width:428px;
+}
+
+.ATWfeedTitleRight {
+	background-image:url(http://i.usatoday.net/_common/_images/_static/right_sliver.jpg);
+	background-position:15px 0;
+	background-repeat:no-repeat;
+	float:left;
+	margin-left:-15px;
+	width:28px;
+}
+
+.ATWfeedTitleText {
+	float:left;
+	font-size:14px;
+	height: 16px;
+	margin-left:5px;
+	overflow: hidden;
+	/* width:340px; */
+	width:325px;
+}
+
+.ATWfeedValue img {
+	border:0;
+}
+
+.ATWfeedValue,.ATWfeedValue div {
+	float:left;
+	position:relative;
+}
+
+.ATWfeedView {
+	color:#333333;
+	display:inline;
+	float:left;
+	margin-bottom:12px;
+	width:420px;
+}
+
+.ATWfeedView a {
+	color:#333333;
+	text-decoration:none;
+}
+
+.ATWfeedWithVerticalBanner {
+	display:inline;
+	margin-right:20px;
+	width:240px;
+}
+
+.ATWfeedsContainer {
+	display:inline;
+	float:left;
+	margin-top:5px;
+	position:static;
+	text-align:left;
+	width:474px;
+}
+
+.ATWfeedsContainer li {
+	float:left;
+	list-style-type:none;
+}
+
+.ATWfeedsContainer ul {
+	margin-left:0;
+	padding-left:0;
+}
+
+.ATWincreasePostsA,.ATWpostLink:link,.ATWpostLink:visited {
+	text-decoration:none;
+}
+
+.ATWlongName {
+	font-size:16px;
+	font-weight:bold;
+}
+
+.ATWnag {
+	background-color: #FFEDA3;
+	margin-top:15px;
+	text-align: center;
+	width: 460px;
+	float: left;
+}
+
+.ATWpost {
+	color:#000000;
+	display:inline;
+	font-weight:bold;
+	margin:2px 0 4px;
+	padding-left:15px;
+	text-decoration:none;
+	width: 100%;
+}
+
+.ATWpostDate {
+	color:#999999;
+	font-size:10px;
+	font-weight:normal;
+	line-height:12px;
+	padding-left:10px;
+	position:relative;
+}
+
+.ATWpostDate a {
+	color:#888888;
+}
+
+.ATWpostDate img {
+	border:0;
+	font-size:10px;
+	vertical-align:text-bottom;
+}
+
+.ATWPosterAd {
+	text-align:center;
+  margin-bottom:15px;
+	width:460px;
+}
+
+.ATWpostInvis {
+	display: none;
+}
+
+.ATWpostLink {
+	color:#000000;
+	font-size:13px;
+}
+
+.ATWpostLink:hover {
+	text-decoration:underline;
+}
+
+.ATWpostLinkContainer {
+	background-image:url(http://i.usatoday.net/_common/_images/_static/bulletSquare.gif);
+	background-position:0 6px;
+	background-repeat:no-repeat;
+	padding-left:10px;
+}
+
+.ATWpostText {
+	font-size:12px;
+	font-weight:normal;
+	margin-bottom:2px;
+	padding-left:10px;
+	width:100%;
+}
+
+.ATWpostText p {
+	line-height:normal;
+	margin-top:0;
+}
+
+.ATWpostVis {
+	display: block;
+}
+
+.ATWwidgetContainer {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+  margin-bottom:15px;
+}
+.ATWwidgetContainer {
+	width:474px;
+}
+.tooltip {
+	background-color:rgb(255, 255, 234);
+	border:1px solid black;
+	font-size:12px;
+	margin:1em;
+	padding:2px;
+	position:absolute;
+	width:auto;
+}
+
+.tooltip .close {
+	display:none;
+}
+
+.tooltip p {
+	line-height:1.2em;
+	margin-bottom:0;
+	margin-top:0;
+	padding:2px;
+}

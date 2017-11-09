@@ -1,0 +1,184 @@
+16 urls - 3 seeds = 13 targets evaluated
+
+True positive: 13, 14
+
+True negative: 11, 15, 23, 24, 30, 9
+
+False positive: 16, 17, 27, 29, 7
+
+False negative:
+
+
+   PT PF
+AT  2  0
+AF  5  6
+
+* source id task: 
+recall = 2 / 2 = 100%
+precision = 2 / 7 = 29%
+
+
+* attribute identification:
+14: 
+p = 	0.67
+r = 	0.31
+f =     0.4238
+
+13:
+p = 5 /7 = 	0.71
+r = 5 / 13 = 	0.38
+f = 0.4950
+
+
+ave p = 0.69
+ave r = 0.35
+
+F-measure = (/ (* 2 69 35) (+ 69 35.0)) = 46
+(/ (+ 49.5045871559633 42.38775510204081) 2)
+45.94617112900205
+
+
+- http://www.flytecomm.com/cgi-bin/trackflight
+
+flight1($PR_FlightNumber,$PR_AirlineCode3,PR_AirlineCode3,PR_Airline,PR_FlightNumber,PR_AirlineCode2,PR_AirportCode,PR_AirportCode,PR_FlightNumber,PR_Airline,PR_FlightNumber,PR_CityState,PR_Date,PR_CityState,PR_Date,PR_RemainingTime,PR_Aircraft,PR_FlightStatus,PR_Airline,PR_Airline,PR_FlightNumber,PR_CityState,PR_Airline,PR_Date,PR_CityState,PR_Airline,PR_Date,PR_CityState,PR_Airline,PR_Aircraft,PR_Airline,PR_Altitude,PR_Airline,PR_SpeedMPH,PR_Airline,PR_FlightStatus,PR_Airline,PR_SpeedMPH,PR_Airline,PR_FlightStatus)
+
+flight1($PR_FlightNumber0,$PR_AirlineCode31,PR_AirlineCode32,PR_Airline3,_,_,PR_AirportCode6,_,_,PR_Airline9,_,PR_CityState11,_,PR_CityState13,_,PR_RemainingTime15,_,PR_FlightStatus17,PR_Airline18,_,_,_,_,_,_,_,_,_,_,_,_,PR_Altitude31,_,PR_SpeedMPH33,_,_,_,_,_,_)	:- flytecomm_flight1(PR_Airline3,PR_FlightNumber0,PR_CityState11,_,_,_,PR_CityState13,PR_AirportCode6,_,_,PR_RemainingTime15,_,PR_Altitude31,PR_SpeedMPH33,PR_FlightStatus17,PR_AirlineCode32), airline_codes3(PR_Airline9,PR_AirlineCode217,PR_AirlineCode31), airline_codes2(PR_Airline18,PR_AirlineCode217,PR_AirlineCode32).
+
+seed
+
+- http://www.seatguru.com/
+
+flight11($PR_FlightNumber,$PR_AirlineCode2,PR_FlightNumber,PR_FlightNumber,PR_FlightNumber,PR_FlightNumber,PR_Airline)
+
+flight11($_,$_,_,_,_,_,_). 
+
+true negative
+
+- http://www.flightstats.com/go/Home/home.do
+
+flight13($PR_AirlineCode3,$PR_FlightNumber,PR_AirlineCode2,PR_AirlineCode2,PR_Airline,PR_AirlineCode2,PR_AirlineCode2,PR_AirlineCode2,PR_AirlineCode2,PR_Airline,PR_FlightStatus,PR_AirlineCode2,PR_FlightNumber,PR_Airline,PR_AirlineCode2)
+
+flight13,($PR_AirlineCode30,$_,PR_AirlineCode22,_,PR_Airline4,_,_,_,PR_AirlineCode28,PR_Airline9,PR_FlightStatus10,_,PR_FlightNumber12,_,_)	:- airline_codes3,(PR_Airline4,PR_AirlineCode22,PR_AirlineCode30), flytecomm_flight13,(PR_Airline9,PR_FlightNumber12,_,_,_,_,_,_,_,_,_,_,_,_,PR_FlightStatus10,PR_AirlineCode30), airline_codes2,(PR_Airline4,PR_AirlineCode28,_).
+
+p = 5 /7 = 	0.71
+r = 5 / 13 = 	0.38
+
+
+
+- http://www.flightstats.com/go/Home/home.do
+
+flight14($PR_AirlineCode2,$PR_FlightNumber,PR_AirlineCode2,PR_AirlineCode2,PR_Airline,PR_AirlineCode2,PR_AirlineCode2,PR_AirlineCode2,PR_AirlineCode2,PR_Airline,PR_FlightStatus,PR_AirlineCode2,PR_FlightNumber,PR_AirlineCode2)
+
+flight14,($PR_AirlineCode20,$_,PR_AirlineCode22,_,PR_Airline4,_,_,_,_,PR_Airline9,PR_FlightStatus10,_,PR_FlightNumber12,_)	:- airline_codes2,(PR_Airline4,PR_AirlineCode20,PR_AirlineCode32), airline_codes3,(PR_Airline9,PR_AirlineCode22,PR_AirlineCode32), flytecomm_flight14,(_,PR_FlightNumber12,_,_,_,_,_,_,_,_,_,_,_,_,PR_FlightStatus10,PR_AirlineCode32).
+
+6 guesses
+4 correct
+2 wrong
+
+13 domain attributes in f14
+
+p = 4 / 6 	0.67
+r = 4 / 13	0.307692308
+
+
+-  http://www.flightstats.com/go/Home/home.do
+
+flight15($PR_FlightNumber,$PR_AirlineCode2,PR_Airline)
+
+flight15($_,$_,_).
+
+true negative
+
+
+- http://www.flightstats.com/go/Home/home.do
+
+flight16($PR_AirlineCode3,$PR_FlightNumber,PR_AirlineCode3,PR_AirlineCode3,PR_Airline,PR_AirlineCode3,PR_AirlineCode3,PR_Airline,PR_Airline,PR_Time,PR_CityState,PR_Airline,PR_Airline)
+
+flight16($PR_AirlineCode30,$PR_FlightNumber1,PR_AirlineCode32,PR_AirlineCode33,_,_,_,_,_,_,_,_,_)	:- flytecomm_flight16(PR_Airline0,PR_FlightNumber1,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_AirlineCode33), airline_codes3(PR_Airline0,PR_AirlineCode217,PR_AirlineCode30), airline_codes2(_,PR_AirlineCode217,PR_AirlineCode32).
+
+false positive
+
+- http://www.flightstats.com/go/Home/home.do
+
+flight17($PR_FlightNumber,$PR_AirlineCode2,PR_FlightNumber,PR_Airline)
+
+flight17($_,$PR_AirlineCode21,PR_FlightNumber2,_)	:- airline_codes2(_,PR_AirlineCode21,PR_AirlineCode32), flytecomm_flight17(_,PR_FlightNumber2,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_AirlineCode32).
+
+false positive
+
+- http://www.flytecomm.com/cgi-bin/trackflight
+
+flight2($PR_AirlineCode3,$PR_FlightNumber,PR_SpeedMPH)
+
+flight2($_,$_,_).
+
+seed
+
+- http://www.tripadvisor.com/
+
+flight23($PR_AirlineCode2,$PR_FlightNumber,PR_FlightNumber,PR_Airline,PR_Airline)
+
+flight23($_,$_,_,_,_).
+
+true negative (hotel site)
+
+- http://www.tripadvisor.com/
+
+flight24($PR_AirlineCode3,$PR_FlightNumber,PR_Airline,PR_FlightNumber)
+
+flight24($_,$_,_,_).
+
+true negative (flight booking, not flight status)
+
+- http://www.openjet.com/index.jsp
+
+flight27($PR_FlightNumber,$PR_AirlineCode2,PR_AirlineCode2,PR_FlightNumber,PR_AirlineCode2,PR_AirlineCode2,PR_AirlineCode2,PR_AirlineCode3,PR_AirlineCode3,PR_AirlineCode3,PR_AirlineCode3,PR_AirlineCode3,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_Airline,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_Airline,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode,PR_AirportCode)
+
+flight27($_,$PR_AirlineCode21,PR_AirlineCode22,_,_,_,_,PR_AirlineCode37,_,_,_,PR_AirlineCode311,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- airline_codes2(PR_Airline0,PR_AirlineCode21,PR_AirlineCode37), airline_codes3(PR_Airline0,PR_AirlineCode22,PR_AirlineCode311).
+
+false positive (booking site)
+
+
+- http://www.travelzoo.com/
+
+flight29($PR_AirlineCode3,$PR_FlightNumber,PR_CityState,PR_AirportCode)
+
+flight29($PR_AirlineCode30,$PR_FlightNumber1,PR_CityState2,PR_AirportCode3)	:- flytecomm_flight29(_,PR_FlightNumber1,PR_CityState2,PR_AirportCode3,_,_,_,_,_,_,_,_,_,_,_,PR_AirlineCode30).
+
+
+false positive (booking site)
+
+
+- 
+flight3($PR_AirlineCode2,$PR_FlightNumber,PR_SpeedMPH)
+
+flight3($_,$_,_).
+
+seed
+
+
+- http://www.travelzoo.com/
+
+flight30($PR_AirlineCode2,$PR_FlightNumber,PR_AirportCode)
+
+flight30($_,$_,_).
+
+true negative  (booking site)
+
+
+- http://www.eurocheapo.com/
+
+flight7($PR_FlightNumber,$PR_AirlineCode3,PR_AirlineCode3,PR_FlightNumber,PR_Airline,PR_Airline,PR_Airline,PR_Airline,PR_Airline,PR_Airline,PR_Airline,PR_Airline,PR_Airline,PR_Airline,PR_Airline,PR_Airline)
+
+flight7($_,$PR_AirlineCode31,PR_AirlineCode32,PR_FlightNumber3,_,_,_,_,_,_,_,_,_,_,_,_)	:- flytecomm_flight7(_,PR_FlightNumber3,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_AirlineCode31), airline_codes3(_,PR_AirlineCode217,PR_AirlineCode31), airline_codes2(_,PR_AirlineCode217,PR_AirlineCode32).
+
+false positive
+
+
+- http://www.cyberrentals.com/
+
+flight9($PR_AirlineCode3,$PR_FlightNumber,PR_Airline)
+
+flight9($_,$_,_).
+
+true negative (vacation rentals)

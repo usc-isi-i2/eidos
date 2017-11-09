@@ -1,0 +1,326 @@
+package wrappers;
+
+import invocation.Wrapper;
+import relational.Table;
+import java.util.ArrayList;
+import java.util.Vector;
+
+import javax.xml.xpath.*;
+import org.w3c.dom.*;
+import org.xml.sax.InputSource;
+
+public class WeatherChannel implements Wrapper {
+	
+	XPath xpath;
+
+//	 http://xoap.weather.com/weather/local/ASXX0001?cc=*&dayf=10&prod=xoap&par=1017197022&key=affb4d8b2d5d195b
+
+	/*
+	Invoking source is 2 step process:
+		1) search for location id by city name:
+			e.g. http://xoap.weather.com/search/search?where=adelaide
+				<search ver="2.0">
+					<loc id="ASXX0001" type="1">Adelaide, Australia</loc>
+				</search>
+		2) get 10 day weather forecast using id:
+			e.g. http://xoap.weather.com/weather/local/ASXX0001?dayf=10
+	OR 	2a) get current conditions using id:
+			e.g. http://xoap.weather.com/weather/local/ASXX0001?cc
+	*/
+	
+	public WeatherChannel() {
+		xpath = XPathFactory.newInstance().newXPath();
+	}
+	
+	
+	public Table invoke(String[] endpoint, ArrayList<String> inputTuple) {
+    	
+		Table output = null;
+		String url = "";
+		
+		try {
+			
+			String city = inputTuple.get(0).trim().toLowerCase();
+			
+			// first get location id:
+			url = "http://xoap.weather.com/search/search?where=" + java.net.URLEncoder.encode(city,"UTF-8");
+			
+			// invoke source and parse xml output
+			NodeList locElements = (NodeList) xpath.evaluate("//*[local-name()='loc']",new InputSource(url),XPathConstants.NODESET);
+			Vector<String> locationIds = new Vector<String>();
+			for (int i=0; i<locElements.getLength(); i++) {
+				Node locElement = locElements.item(i);
+				String name = locElement.getTextContent();
+				if ((name.indexOf(",")!=-1) && name.substring(name.indexOf("/")+1,name.indexOf(",")).equalsIgnoreCase(city)) {
+					locationIds.add((String) xpath.evaluate("./@id",locElement,XPathConstants.STRING));
+				}
+			}
+			
+			url = "http://xoap.weather.com/weather/local/";
+	    	
+			if (endpoint[1].equalsIgnoreCase("TenDayForecast")) {
+				output = new Table(new String[] {"city","state","country","lat","lon","zone","day","date","hi","low","sunr","suns","text","dir","speed","hmid"});
+				for (String locationId: locationIds) {
+		    		parseForecast(url+locationId+"?dayf=10",output);
+		    	}
+			}
+			else if (endpoint[1].equalsIgnoreCase("TwoDayForecast")) {
+				output = new Table(new String[] {"city","state","country","lat","lon","zone","day","date","hi","low","sunr","suns","text","dir","speed","hmid"});
+		    	for (String locationId: locationIds) {
+		    		parseForecast(url+locationId+"?dayf=2",output);
+		    	}
+			}
+			else if (endpoint[1].equalsIgnoreCase("CurrentConditions")) {
+				output = new Table(new String[] {"city","state","country","lat","lon","sunr","suns","zone","time","tmp","text","bar","dir","speed","hmid","dewp"});
+				for (String locationId: locationIds) {
+		    		parseCurrentConditions(url+locationId+"?cc",output);
+		    	}
+			}
+			else {
+	    		System.err.println("Error: No method called " + endpoint[1] + " in wrapper: " + this.getClass().getName());
+				System.err.println("Please update source definition and restart system .... exiting");
+	    		System.exit(9);
+			}
+			
+		}
+		catch (Exception e) {
+			return null;
+		}
+		return output;
+    	
+	}
+
+	private void parseForecast(String url, Table table) {
+		try {
+			
+			/*
+			 * example: http://xoap.weather.com/weather/local/ASXX0001?dayf=2
+			 * 
+<weather ver="2.0">
+  <loc id="ASXX0001">
+    <dnam>Adelaide, Australia</dnam>
+    <tm>10:26 AM</tm>
+    <lat>-34.95</lat>
+    <lon>138.53</lon>
+    <zone>10</zone>
+  </loc>
+  <dayf>
+    <lsup>3/16/06 1:14 AM Local Time</lsup>
+    <day d="0" t="Thursday" dt="Mar 16">
+      <hi>71</hi>
+      <low>58</low>
+      <sunr>6:46 AM</sunr>
+      <suns>7:02 PM</suns>
+      <part p="d">
+        <t>Mostly Sunny</t>
+        <wind>
+          <s>15</s>
+          <gust>N/A</gust>
+          <d>228</d>
+          <t>SW</t>
+        </wind>
+        <ppcp>0</ppcp>
+        <hmid>51</hmid>
+      </part>
+    </day>
+			 * 
+			 */
+			
+			
+			// invoke source and parse xml output
+			Node weatherElement = (Node) xpath.evaluate("//*[local-name()='weather'][1]",new InputSource(url),XPathConstants.NODE);
+			
+			// parse top level fields
+	    	ArrayList<String> tuple = new ArrayList<String>();
+	    	
+	    	Node locElement = (Node) xpath.evaluate("./*[local-name()='loc'][1]",weatherElement,XPathConstants.NODE);
+			String name = (String) xpath.evaluate("./*[local-name()='dnam'][1]/text()",locElement,XPathConstants.STRING);
+			tuple.add(name.substring(0,name.indexOf(",")));// city
+			
+			String region = name.substring(name.indexOf(",")+1).trim();
+			if (((String) xpath.evaluate("./@id",locElement,XPathConstants.STRING)).startsWith("US")) {
+				tuple.add(region); // state
+				tuple.add("United States"); // country
+			}
+			else {
+				tuple.add(""); // state
+		    	tuple.add(region); // country
+			}
+	    	tuple.add((String) xpath.evaluate("./*[local-name()='lat'][1]/text()",locElement,XPathConstants.STRING)); // lat 
+	    	tuple.add((String) xpath.evaluate("./*[local-name()='lon'][1]/text()",locElement,XPathConstants.STRING)); // lon
+	    	tuple.add((String) xpath.evaluate("./*[local-name()='zone'][1]/text()",locElement,XPathConstants.STRING));// zone 
+			
+	    	// parse individual forecasts
+	    	NodeList dayElements = (NodeList) xpath.evaluate("./*[local-name()='dayf']/*[local-name()='day']",weatherElement,XPathConstants.NODESET);
+	    	
+	    	for (int i=0; i<dayElements.getLength(); i++) {
+	    		Node dayElement = dayElements.item(i);
+				
+	    		ArrayList<String> extendedTuple = new ArrayList<String>();
+				extendedTuple.addAll(tuple);
+				
+				extendedTuple.add((String) xpath.evaluate("./@t", dayElement,XPathConstants.STRING));// day 
+				extendedTuple.add((String) xpath.evaluate("./@dt", dayElement,XPathConstants.STRING));// date 
+				extendedTuple.add((String) xpath.evaluate("./*[local-name()='hi'][1]/text()", dayElement,XPathConstants.STRING));// hi
+				extendedTuple.add((String) xpath.evaluate("./*[local-name()='low'][1]/text()", dayElement,XPathConstants.STRING));// low
+				extendedTuple.add((String) xpath.evaluate("./*[local-name()='sunr'][1]/text()", dayElement,XPathConstants.STRING));// sunr
+				extendedTuple.add((String) xpath.evaluate("./*[local-name()='suns'][1]/text()", dayElement,XPathConstants.STRING));// suns
+			    
+				Node partElement = (Node) xpath.evaluate("./*[local-name()='part'][1]", dayElement,XPathConstants.NODE);
+				extendedTuple.add((String) xpath.evaluate("./*[local-name()='t'][1]/text()", partElement,XPathConstants.STRING));// text 
+				
+				Node windElement = (Node) xpath.evaluate("./*[local-name()='wind'][1]", partElement,XPathConstants.NODE);
+				extendedTuple.add((String) xpath.evaluate("./*[local-name()='t'][1]/text()", windElement,XPathConstants.STRING)); // dir
+				extendedTuple.add((String) xpath.evaluate("./*[local-name()='s'][1]/text()", windElement,XPathConstants.STRING)); // speed
+				
+				extendedTuple.add((String) xpath.evaluate("./*[local-name()='hmid'][1]/text()", partElement,XPathConstants.STRING));// hmid
+				
+				table.insertDistinct(extendedTuple);
+			}	
+			
+		}
+		catch (Exception e) {
+			System.err.println("Error parsing file: " + url);
+    	}
+	
+	} 
+
+	
+	private void parseCurrentConditions(String url, Table table) {
+		
+		/*
+		 * example: http://xoap.weather.com/weather/local/ASXX0001?cc
+		 * 
+<weather ver="2.0">
+  <loc id="ASXX0001">
+    <dnam>Adelaide, Australia</dnam>
+    <tm>10:25 AM</tm>
+    <lat>-34.95</lat>
+    <lon>138.53</lon>
+    <sunr>6:45 AM</sunr>
+    <suns>7:04 PM</suns>
+    <zone>10</zone>
+  </loc>
+  <cc>
+    <lsup>3/16/06 10:00 AM Local Time</lsup>
+    <obst>Adelaide, Australia</obst>
+    <tmp>65</tmp>
+    <bar>
+      <r>29.97</r>
+      <d>rising</d>
+    </bar>
+    <wind>
+      <s>17</s>
+      <gust>N/A</gust>
+      <d>220</d>
+      <t>SW</t>
+    </wind>
+    <hmid>57</hmid>
+    <vis>N/A</vis>
+    <uv>
+      <i>N/A</i>
+      <t>N/A</t>
+    </uv>
+    <dewp>49</dewp>
+    <moon>
+      <icon>15</icon>
+      <t>Full</t>
+    </moon>
+  </cc>
+</weather>
+
+		 * 
+		 */
+		
+		try {
+			
+			// invoke source and parse xml output
+			Node weatherElement = (Node) xpath.evaluate("//*[local-name()='weather'][1]",new InputSource(url),XPathConstants.NODE);
+			
+			// parse top level fields
+	    	ArrayList<String> tuple = new ArrayList<String>();
+	    	
+	    	Node locElement = (Node) xpath.evaluate("./*[local-name()='loc'][1]",weatherElement,XPathConstants.NODE);
+			String name = (String) xpath.evaluate("./*[local-name()='dnam'][1]/text()",locElement,XPathConstants.STRING);
+			tuple.add(name.substring(0,name.indexOf(",")));// city
+			
+			String region = name.substring(name.indexOf(",")+1).trim();
+			if (((String) xpath.evaluate("./@id",locElement,XPathConstants.STRING)).startsWith("US")) {
+				tuple.add(region); // state
+				tuple.add("United States"); // country
+			}
+			else {
+				tuple.add(""); // state
+		    	tuple.add(region); // country
+			}
+	    	tuple.add((String) xpath.evaluate("./*[local-name()='lat'][1]/text()",locElement,XPathConstants.STRING)); // lat 
+	    	tuple.add((String) xpath.evaluate("./*[local-name()='lon'][1]/text()",locElement,XPathConstants.STRING)); // lon
+	    	tuple.add((String) xpath.evaluate("./*[local-name()='sunr'][1]/text()",locElement,XPathConstants.STRING)); // sunr
+	    	tuple.add((String) xpath.evaluate("./*[local-name()='suns'][1]/text()",locElement,XPathConstants.STRING)); // suns
+	    	tuple.add((String) xpath.evaluate("./*[local-name()='zone'][1]/text()",locElement,XPathConstants.STRING));// zone 
+
+	        // parse current conditions
+	    	Node ccElement = (Node) xpath.evaluate("./*[local-name()='cc'][1]",weatherElement,XPathConstants.NODE);
+	    	
+	    	tuple.add((String) xpath.evaluate("./*[local-name()='lsup'][1]/text()", ccElement,XPathConstants.STRING));// lsup
+	    	tuple.add((String) xpath.evaluate("./*[local-name()='tmp'][1]/text()", ccElement,XPathConstants.STRING));// tmp
+			//tuple.add((String) xpath.evaluate("./*[local-name()='flik'][1]/text()", ccElement,XPathConstants.STRING));// flik
+			tuple.add((String) xpath.evaluate("./*[local-name()='t'][1]/text()", ccElement,XPathConstants.STRING));// text
+			
+			tuple.add((String) xpath.evaluate("./*[local-name()='bar'][1]/*[local-name()='r'][1]/text()", ccElement,XPathConstants.STRING));// bar
+			    
+			Node windElement = (Node) xpath.evaluate("./*[local-name()='wind'][1]", ccElement,XPathConstants.NODE);
+			tuple.add((String) xpath.evaluate("./*[local-name()='t'][1]/text()", windElement,XPathConstants.STRING)); // dir
+			tuple.add((String) xpath.evaluate("./*[local-name()='s'][1]/text()", windElement,XPathConstants.STRING)); // speed
+			
+			tuple.add((String) xpath.evaluate("./*[local-name()='hmid'][1]/text()", ccElement,XPathConstants.STRING));// hmid
+			tuple.add((String) xpath.evaluate("./*[local-name()='dewp'][1]/text()", ccElement,XPathConstants.STRING));// dewp
+			
+			table.insertDistinct(tuple);
+
+		}
+		catch (Exception e) {
+			System.err.println("Error parsing file: " + url);
+    	}
+	
+	} 
+
+
+	
+	public void testWrapper() {
+		
+		WeatherChannel r = new WeatherChannel();
+		String[] endpoint;
+		ArrayList<String> input;
+		
+		System.out.println("WeatherChannel.TenDayForecast");
+		
+		endpoint = new String[2];
+		endpoint[1] = "TenDayForecast";
+		input = new ArrayList<String>();
+		input.add("Marina del Rey");
+		r.invoke(endpoint,input).print();
+						
+		//---------------------------------
+		
+		System.out.println("WeatherChannel.TwoDayForecast");
+		
+		endpoint = new String[2];
+		endpoint[1] = "TwoDayForecast";
+		input = new ArrayList<String>();
+		input.add("Marina del Rey");
+		r.invoke(endpoint,input).print();
+		
+		//---------------------------------
+		
+		System.out.println("WeatherChannel.CurrentConditions");
+		
+		endpoint = new String[2];
+		endpoint[1] = "CurrentConditions";
+		input = new ArrayList<String>();
+		input.add("Marina del Rey");
+		r.invoke(endpoint,input).print();
+		
+	}
+	
+}

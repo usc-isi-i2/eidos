@@ -1,0 +1,23 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+import problems/types.txt
+
+## Relations: 
+import problems/relations.txt
+import problems/comparisons.txt
+
+# hack!
+relation CountryData(countryAbbr,country,city:cap,areaSqKm,count:pop,currency,longitude:bbW,latitude:bbN,longitude:bbE,latitude:bbS) 	
+
+## Sources: 
+import problems/sources_ragnarok.txt
+
+source CountryInfo($abbr,cntry,cap,area,pop,cur,bbW,bbN,bbE,bbS) :- CountryData($abbr,cntry,cap,area,pop,cur,bbW,bbN,bbE,bbS). 			{wrappers.Geonames; countryInfo}
+
+## Target Predicate: 
+target CountryCode($latitude,$longitude,countryAbbr) 																					{wrappers.Geonames; countrycode}
+#target Altitude($latitude,$longitude,distanceM) 																						{wrappers.Geonames; gtopo30}
+
+##############################################################

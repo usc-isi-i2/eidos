@@ -1,0 +1,204 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: problems/thesis.txt
+
+## Semantic Types: 
+type latitude       [varchar(20)]   {numeric: -90.0, 90.0, 0.0020}
+type longitude      [varchar(20)]   {numeric: -180.0, 180.0, 0.0020}
+type latitudeDMS    [varchar(20)]   {examples: examples.latitudedms.val}
+type longitudeDMS   [varchar(20)]   {examples: examples.longitudedms.val}
+type distanceMi     [varchar(30)]   {numeric: 0.0, 12451.0, 1.0%}
+type distanceKm     [varchar(30)]   {numeric: 0.0, 20037.0, 1.0%}
+type distanceFt     [varchar(30)]   {numeric: -10000.0, 60000.0, 1.0%}
+type distanceM      [varchar(30)]   {numeric: -3000.0, 30000.0, 1.0%}
+type distanceIn     [varchar(30)]   
+type speedMph       [varchar(30)]   {numeric: 0.0, 500.0, 1.0%}
+type speedKmph      [varchar(45)]   {numeric: 0.0, 1000.0, 1.0%}
+type direction      [varchar(30)]   
+type degrees        [varchar(45)]   {numeric: 0.0, 360.0, 1.0}
+type areaSqKm       [varchar(30)]   
+type decimal        [varchar(45)]   {numeric: -128.0, 128.0, 0.1}
+type poBox          [varchar(30)]   
+type street         [varchar(100)]  {examples: examples.street.val}
+type apartment      [varchar(10)]   
+type city           [varchar(100)]  {examples: examples.city.val}
+type state          [varchar(2)]    {examples: miscellaneous.usstates.code}
+type stateName      [varchar(100)]  {examples: miscellaneous.usstates.name}
+type zipcode        [varchar(10)]   {examples: examples.zipcode.val}
+type zipPlusFour    [varchar(10)]   
+type country        [varchar(100)]  {examples: examples.country.val}
+type countryAbbr    [varchar(2)]    {examples: examples.countryAbbr.val}
+type cityState      [varchar(100)]  
+type areacode       [varchar(3)]    
+type url            [varchar(200)]  
+type phone          [varchar(20)]   
+type email          [varchar(100)]  
+type temperatureC   [varchar(13)]   {numeric: -50.0, 100.0, 1.0%}
+type temperatureF   [varchar(13)]   {numeric: -100.0, 200.0, 1.0%}
+type sky            [varchar(100)]  
+type humidity       [varchar(30)]   {numeric: 0.0, 100.0, 1.0}
+type directionSpeed [varchar(60)]   
+type pressureIn     [varchar(30)]   {numeric: 26.0, 30.99, 0.02}
+type pressureMb     [varchar(30)]   {numeric: 1016.0, 1025.9, 1.0}
+type timezone       [varchar(5)]    
+type timeoffset     [varchar(6)]    
+type time           [varchar(80)]   {examples: examples.time.val}
+type date           [varchar(80)]   {equality: Date = 1.0}
+type datetime       [varchar(80)]   {examples: examples.datetime.val}
+type day            [varchar(30)]   
+type timestamp      [varchar(80)]   {examples: examples.timestamp.val}
+type boolean        [varchar(5)]    
+type duration       [varchar(80)]   
+type company        [varchar(80)]   {examples: examples.company.val;equality: JaroWinkler > 0.85}
+type ticker         [varchar(6)]    {examples: examples.ticker.val}
+type price          [varchar(30)]   {numeric: 0.0, 10000.0, 1.0%}
+type priceRange     [varchar(65)]   
+type count          [varchar(30)]   
+type percentage     [varchar(30)]   
+type ratio          [varchar(30)]   
+type currency       [varchar(12)]   {examples: examples.currency.val}
+type currencyName   [varchar(45)]   
+type industry       [varchar(100)]  
+type exchange       [varchar(45)]   
+type icao           [varchar(4)]    {examples: miscellaneous.airports.icao}
+type iata           [varchar(3)]    {examples: miscellaneous.airports.iata}
+type airport        [varchar(80)]   {examples: miscellaneous.airports.name;equality: JaroWinkler > 0.85}
+type hotel          [varchar(100)]  {examples: examples.hotel.val;equality: JaroWinkler > 0.85}
+type airline        [varchar(80)]   
+type airlinecode    [varchar(2)]    
+type flight         [varchar(4)]    
+type aircraft       [varchar(80)]   
+type flightstatus   [varchar(80)]   
+type rating         [varchar(20)]   
+type fullname       [varchar(200)]  
+type year           [varchar(4)]    {examples: examples.year.val}
+type make           [varchar(45)]   {examples: examples.make.val}
+type model          [varchar(45)]   
+type trim           [varchar(100)]  
+type color          [varchar(45)]   
+type mileage        [varchar(45)]   
+type engine         [varchar(45)]   
+type vin            [varchar(45)]   
+type unknown        [varchar(100)]  
+
+## Domain Relations: 
+relation centroid(zipcode,latitude,longitude)
+relation distance(latitude,longitude,latitude,longitude,distanceKm)
+relation municipality(city,state,zipcode,timezone)
+relation phoneprefix(zipcode,areacode)
+relation state(state,stateName,city)
+relation country(country,countryAbbr,city)
+relation northAmerica(countryAbbr)
+relation address(street,apartment,zipcode,country,latitude,longitude)
+relation building(street,zipcode,country,count)
+relation hotel(hotel,poBox,street,zipcode,country,phone)
+relation airport(icao,iata,airport,city,stateName,country,latitude,longitude)
+relation airline(airline,airlinecode)
+relation hotelInfo(hotel,count)
+relation timezone(timezone,timeoffset,boolean)
+relation currentTime(timestamp)
+relation time(timestamp,datetime,day,date,time,timezone,timeoffset)
+relation listing(exchange,company,ticker,industry)
+relation trade(date,time,ticker,price)
+relation market(date,ticker,price,price,price,price,count)
+relation currency(currency,currencyName,country)
+relation exchange($currency,$currency,price)
+relation conditions(latitude,longitude,datetime,temperatureF,sky,temperatureF,humidity,direction,speedMph,speedMph,pressureIn,time,time)
+relation forecast(latitude,longitude,date,temperatureF,temperatureF,sky,time,time,direction,speedMph,humidity)
+relation earthquake(decimal,timestamp,latitude,longitude)
+relation elevation(latitude,longitude,distanceM)
+relation convertDist(distanceKm,distanceMi)
+relation convertDistMFt(distanceM,distanceFt)
+relation convertTemp(temperatureC,temperatureF)
+relation convertCoord(latitudeDMS,longitudeDMS,latitude,longitude)
+relation convertPress(pressureIn,pressureMb)
+relation convertSpeed(speedKmph,speedMph)
+relation concat(direction,speedMph,directionSpeed)
+relation sum(price,price,price)
+relation product(price,price,price)
+relation car(make,model,trim,year,vin)
+relation car_details(vin,datetime,zipcode,mileage,color,price)
+
+## Comparison Predicates: 
+comparison <($distanceMi,$distanceMi)
+comparison <($distanceKm,$distanceKm)
+comparison <($temperatureC,$temperatureC)
+comparison <($temperatureF,$temperatureF)
+comparison <($price,$price)
+comparison <($timestamp,$timestamp)
+comparison <($speedMph,$speedMph)
+comparison <($latitude,$latitude)
+comparison <($longitude,$longitude)
+
+## Sources: 
+source GetCentroid($zip,lat,long)				:- centroid(zip,lat,long).			{wrappers.Ragnarok; getCentroid}
+source GetCityState($zip,city,state)			:- municipality(city,state,zip,_).	{wrappers.Ragnarok; getCityState}
+source GetZipcode($city,$state,zip)				:- municipality(city,state,zip,_).	{wrappers.Ragnarok; getZipcode}
+source GetTimezone($state,zone,offset,ds)		:- municipality(_,state,_,zone), timezone(zone,offset,ds).	{wrappers.Ragnarok; getTimezone}
+source GetCompanyName($tkr,comp,inds,exch)		:- listing(exch,comp,tkr,inds).		{wrappers.Ragnarok; getCompany}
+source GetCountryName($abbrev,name)				:- country(name,abbrev,_).			{wrappers.Ragnarok; getCountryName}
+source GetStateInfo($name,state,capital)		:- state(state,name,capital).		{wrappers.Ragnarok; getStateInfo}
+source GetStateName($state,name,capital)		:- state(state,name,capital).		{wrappers.Ragnarok; stateInfoByCode}
+source GetAirportInfo($icao,iata,apt,cty,st,cn)	:- airport(icao,iata,apt,cty,st,cn,_,_).	{wrappers.Ragnarok; getAirportInfo}
+source GetAirportCoords($iata,aprt,lat,long)	:- airport(_,iata,aprt,_,_,_,lat,long).	{wrappers.Ragnarok; getAirportCoordinates}
+source GetCurrentTime(stamp,dtime,date,time)	:- currentTime(stamp), time(stamp,dtime,_,date,time,_,_).	{wrappers.Ragnarok; currentTime}
+source HotelsByZip($zip,hotel,str,cty,st,rooms)	:- hotel(hotel,_,str,zip,"US",_), hotelInfo(hotel,rooms), municipality(cty,st,zip,_).	{wrappers.Ragnarok; GetHotelsByZip}
+source CurrencyInfo($cur,curName,country)		:- currency(cur,curName,country).	{wrappers.Ragnarok; getCountryFromCurrency}
+source GetAirline($airlinecode,airline)			:- airline(airline,airlinecode).	{wrappers.Ragnarok; getAirline}
+source CarModels($make,$year,model,trim)		:- car(make,model,trim,year,_).		{wrappers.Ragnarok; getModels}
+function ConvertDatetime($dtme,stmp)			:- time(stmp,dtme,_,_,_,_,_).		{wrappers.Ragnarok; convertDatetime2Timestamp}
+function GetDatetime($stmp,dtme,date,tme,zone)	:- time(stmp,dtme,_,date,tme,zone,_).	{wrappers.Ragnarok; convertTimestamp}
+function GetDistance($lt1,$ln1,$lt2,$ln2,dist)	:- distance(lt1,ln1,lt2,ln2,dist).	{wrappers.Ragnarok; getDistance}
+function ConvertDMS($latDMS,$lonDMS,lat,lon)	:- convertCoord(latDMS,lonDMS,lat,lon).	{wrappers.Ragnarok; convertDMS}
+function ConvertKm2Mi($distKm,distMi)			:- convertDist(distKm,distMi).		{wrappers.Ragnarok; convertKm2Mi}
+function ConvertM2Ft($distM,distFt)				:- convertDistMFt(distM,distFt).	{wrappers.Ragnarok; convertM2Ft}
+function ConvertFt2M($distFt,distM)				:- convertDistMFt(distM,distFt).	{wrappers.Ragnarok; convertFt2M}
+function ConvertC2F($tempC,tempF)				:- convertTemp(tempC,tempF).		{wrappers.Ragnarok; convertC2F}
+function ConvertIn2mb($pressIn,pressMb)			:- convertPress(pressIn,pressMb).	{wrappers.Ragnarok; convertIn2mb}
+function ConvertSpeedKm2Mi($speedKm,speedMi)	:- convertSpeed(speedKm,speedMi).	{wrappers.Ragnarok; convertKm2Mi}
+function Add($price1,$price2,price3)			:- sum(price1,price2,price3).		{invocation.Local; add}
+function Multiply($price1,$price2,price3)		:- product(price1,price2,price3).	{invocation.Local; multiply}
+
+source GoCurrency(currency,countryAbbr,rate)			:- exchange("USD",currency,rate), currency(currency,_,c), country(c,countryAbbr,_).	{wrappers.GoCurrency; GetRates}
+source YahooFinance($tkr,ls,dt,tm,chg,op,mx,mn,vol)		:- trade(dt,tm,tkr,ls), market(dt,tkr,cl,op,mx,mn,vol), sum(cl,chg,ls).				{wrappers.YahooFinance; GetQuote}
+source USGeocoder($street,$zipcode,city,state,latitude,longitude)	:- address(street,_,zipcode,"US",latitude,longitude), municipality(city,state,zipcode,_).	{wrappers.USGeocoder; geocode}
+source Altitude($latitude,$longitude,distanceM)			:- elevation(latitude,longitude,distanceM).											{wrappers.Geonames; gtopo30}
+source CountryCode($latitude,$longitude,countryAbbr)	:- address(_,_,_,country,latitude,longitude), country(country,countryAbbr,_).		{wrappers.Geonames; countrycode}
+source USGSEarthquakes(decimal,timestamp,latitude,longitude)	:- earthquake(decimal,timestamp,latitude,longitude).						{wrappers.USGS; earthquakes7Days}
+source WeatherConditions($c,s,cn,lt,ln,snr,sns,off,dt,f,sk,pr,dr,sp,hm,dw)	:- municipality(c,s,z,zo), country(cn,ab,_), northAmerica(ab), centroid(z,lt,ln), conditions(lt,ln,dt,f,sk,dw,hm,dr,sp,_,pr,snr,sns), timezone(zo,off,_).	{wrappers.WeatherChannel; CurrentConditions}
+source WeatherForecast($c,s,cn,lt,ln,of,dy,dt,hi,lo,snr,sns,sk,dir,spd,hum)	:- municipality(c,s,z,_), country(cn,ab,_), northAmerica(ab), centroid(z,lt,ln), forecast(lt,ln,dt,hi,lo,sk,snr,sns,dir,spd,hum), time(_,_,dy,dt,_,_,of).	{wrappers.WeatherChannel; TwoDayForecast}
+source GoogleBaseCars($zipcode,$make,datetime,model,price,trim,color,year)	:- car(make,model,trim,year,vin), car_details(vin,datetime,zipcode,mileage,color,price).	{wrappers.GoogleBase; getCars}
+
+## Target Predicates: 
+
+target GetInfoByZip($zipcode,city,state,areacode,timezone)			{wrappers.USZip; GetInfoByZip}
+target GetInfoByState($state,city,zipcode,areacode,timezone)		{wrappers.USZip; GetInfoByState}
+target GetDistanceBetweenZipCodes($zipcode,$zipcode,distanceMi)		{wrappers.Codebump; GetDistanceBetweenZipCodes}
+target GetZipCodesWithin($zipcode,$distanceMi,zipcode,distanceMi)	{wrappers.Codebump; GetZipCodesWithin}
+target YahooGeocoder($street,$zipcode,city,state,country,latitude,longitude)	{wrappers.YahooMaps; geocode}
+target GetCenter($zipcode,latitude,longitude,city,state)			{wrappers.USGeocoder; centroid}
+target Earthquakes($latitude,$longitude,$latitude,$longitude,latitude,longitude,distanceKm,decimal,datetime)	{wrappers.Geonames; earthquakes}
+target USGSElevation($latitude,$longitude,distanceFt)				{wrappers.USGS; getElevation}
+target CountryInfo($countryAbbr,country,city,areaSqKm,count,currency,longitude,latitude,longitude,latitude)	{wrappers.Geonames; countryInfo}
+
+target GetQuote($ticker,price,date,time,price,price,price,price,count,price,price,percentage,priceRange,price,ratio,company)	{wrappers.WebServiceX; GetQuote}
+target YahooExchangeRate($currency,$currency,price,date,time,price,price)	{wrappers.YahooFinance; GetExchangeRate}
+
+target NOAAWeather($icao,airport,latitudeDMS,longitudeDMS,sky,temperatureF,humidity,direction,speedMph,speedMph,pressureMb,temperatureF,temperatureF,distanceMi)	{wrappers.NOAAWeather; current_obs}
+target WunderGround($state,$city,temperatureF,temperatureC,humidity,pressureIn,pressureMb,sky,direction,speedMph,speedMph)	{wrappers.Wunderground; wunderground}
+target WeatherBugLive($zipcode,city,state,zipcode,temperatureF,distanceIn,speedMph,direction,speedMph,direction)	{wrappers.WeatherBug; getLiveCompactWeather}
+target WeatherFeed($city,$stateName,temperatureF,temperatureC,sky,temperatureF,humidity,directionSpeed,pressureIn,latitude,longitude,time)	{wrappers.BoyGenius; WeatherFeed}
+target WeatherByICAO($icao,airport,countryAbbr,latitude,longitude,degrees,distanceM,percentage,sky,speedKmph,temperatureC,datetime,temperatureC)	{wrappers.Geonames; weatherByICAO}
+target WeatherByLatLon($latitude,$longitude,icao,airport,countryAbbr,latitude,longitude,degrees,distanceM,percentage,sky,speedKmph,temperatureC,datetime,temperatureC)	{wrappers.Geonames; weatherByLatLon}
+target YahooWeather($zipcode,city,state,countryAbbr,latitude,longitude,day,date,temperatureF,temperatureF,sky)	{wrappers.YahooWeather; forecastrss}
+target WeatherBugForecast($zipcode,city,state,zipcode,day,sky,temperatureF,temperatureF)	{wrappers.WeatherBug; getFullForecast}
+
+target USFireHotelsByCity($city,hotel,street,state,zipcode,count,phone)	{wrappers.USFireAdmin; HotelsByCity}
+target USFireHotelsByZip($zipcode,hotel,street,city,state,count,phone)	{wrappers.USFireAdmin; HotelsByZip}
+target YahooHotel($zipcode,$distanceMi,hotel,street,city,state,phone,latitude,longitude,distanceMi,url)	{wrappers.YahooLocal; hotelsByZipRadius}
+target GoogleBaseHotels($zipcode,hotel,city,state,datetime,price,latitude,longitude,rating)	{wrappers.GoogleBase; getHotels}
+
+target YahooTraffic($zipcode,$distanceMi,unknown,latitude,longitude,timestamp,timestamp,timestamp)	{wrappers.YahooTraffic; TrafficByZipAndRadius}
+target YahooAutos($zipcode,$make,datetime,year,model,vin,mileage,price,distanceMi)	{wrappers.YahooAutos; usedCars}
+
+##############################################################

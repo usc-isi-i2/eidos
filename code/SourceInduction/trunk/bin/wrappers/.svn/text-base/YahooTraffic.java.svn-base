@@ -1,0 +1,123 @@
+package wrappers;
+
+import invocation.Wrapper;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
+import relational.Table;
+
+public class YahooTraffic implements Wrapper {
+
+	XPath xpath;
+
+	public YahooTraffic() {
+		xpath = XPathFactory.newInstance().newXPath();
+	}
+
+
+	public Table invoke(String[] endpoint, List<String> inputTuple) {
+
+		// example of use: http://api.local.yahoo.com/MapsService/V1/trafficData?appid=sourcemodeling&zip=90292&radius=5
+		Table output = null;
+		String url = "http://api.local.yahoo.com/MapsService/V1/trafficData?appid=sourcemodeling";
+
+
+		try {
+
+			if (endpoint[1].equalsIgnoreCase("TrafficByZipAndRadius")) {
+				url += "&zip="+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8");
+				url += "&radius="+java.net.URLEncoder.encode(inputTuple.get(1),"UTF-8");
+			}
+			else {
+	    		System.err.println("Error: No method called " + endpoint[1] + " in wrapper: " + this.getClass().getName());
+				System.err.println("Please update source definition and restart system .... exiting");
+	    		System.exit(9);
+			}
+
+
+			/*
+			<ResultSet ...>
+				<LastUpdateDate>1139010129</LastUpdateDate>
+				<Result type="incident">
+					<Title>Medical emergency, on TOPANGA CANYON BLVD at PACIFIC COAST HWY</Title>
+					<Description>Traffic Collision  .......</Description>
+					<Latitude>34.044029</Latitude>
+					<Longitude>-118.577953</Longitude>
+					<Direction>N/A</Direction>
+					<Severity>3</Severity>
+					<ReportDate>1139005077</ReportDate>
+					<UpdateDate>1139009763</UpdateDate>
+					<EndDate>1139010719</EndDate>
+				</Result>
+				<Result type="construction">
+					<Title>Paving operations, on I-405 at SUNSET BLVD</Title>
+					...
+			*/
+
+
+			// the metadata
+	    	String[] columns = new String[] {"Zipcode","Radius","Title","Latitude","Longitude","ReportDate","UpdateDate","EndDate"};
+	    	output = new Table(columns);
+
+			// invoke source and parse xml output
+			NodeList resultElements = (NodeList) xpath.evaluate("//*[local-name()='Result']",new InputSource(url),XPathConstants.NODESET);
+
+	    	// the data
+	    	for (int i=0; i<resultElements.getLength(); i++) {
+	    		Node resultElement = resultElements.item(i);
+	    		ArrayList<String> tuple = new ArrayList<String>();
+		    	tuple.add(inputTuple.get(0));
+		    	tuple.add(inputTuple.get(1));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='Title'][1]/text()",resultElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='Latitude'][1]/text()",resultElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='Longitude'][1]/text()",resultElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='ReportDate'][1]/text()",resultElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='UpdateDate'][1]/text()",resultElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='EndDate'][1]/text()",resultElement,XPathConstants.STRING));
+		    	output.insertDistinct(tuple);
+	    	}
+
+
+	    }
+		catch (Exception e) {
+			return null;
+		}
+
+		return output;
+
+	}
+
+
+	public void testWrapper() {
+		YahooTraffic r = new YahooTraffic();
+		String[] endpoint;
+		ArrayList<String> input;
+
+		// test 0:
+		endpoint = new String[2];
+		endpoint[1] = "TrafficByZipAndRadius";
+		input = new ArrayList<String>();
+		input.add("90266");
+		input.add("1.4");
+		r.invoke(endpoint,input).print();
+
+		// test 1:
+		endpoint = new String[2];
+		endpoint[1] = "TrafficByZipAndRadius";
+		input = new ArrayList<String>();
+		input.add("90292");
+		input.add("78.9");
+		r.invoke(endpoint,input).print();
+
+	}
+
+}

@@ -1,0 +1,206 @@
+* http://geocoder.us/
+
+geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address)
+
+geospatial137($PR_Address0,PR_Street1,_,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,PR_Latitude3,PR_Longitude5).
+
+
+precision = 4 / 4 = 100%
+
+recall = 4 / 7 = 57% 
+missed splitting up PR_City,PR_StateAbbr,PR_Zip
+source extraction to blame
+
+
+* http://geocoder.ca/
+
+geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude)
+
+geospatial139($PR_Address0,_,PR_StateAbbr2,_,PR_Zip4,PR_Street5,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street5,_,PR_StateAbbr2,PR_Zip4,PR_Latitude7,PR_Longitude8).
+
+P = 6 / 6 = 100% 
+
+R = 6 /7 = 86% 
+
+missed city because it was ALL CAPS
+
+
+* http://world.maporama.com
+
+geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address)
+
+geospatial140($_,_,_,_,_,_).
+
+
+Not a geocoder = success!
+
+
+* http://www.51ditu.com/
+
+geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address)
+
+geospatial152($PR_Address0,PR_Street1,PR_StateAbbr2,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,PR_StateAbbr2,_,_,_).
+
+
+success! chinese map finder using some chinese grid map encoding.
+
+
+* http://www.hostip.info/use.html
+
+geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+
+geospatial154($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+
+Success! Not a geocoder, instructions for an IP lookup
+
+
+* http://www.hostip.info/
+
+geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+
+geospatial157($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+
+Success! Not a geocoder,  IP lookup
+
+
+* http://en.wikipedia.org/wiki/Geocoding
+
+geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address)
+
+geospatial158($PR_Address0,_,PR_Street2,_,PR_StateAbbr4,_,_,_)	:- USGeocoder(PR_Address0,PR_Street2,_,PR_StateAbbr4,_,_,_).
+
+success! not a geocoder
+
+
+* http://www.hostip.info/index.html
+
+geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+
+geospatial159($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+
+Success! Not a geocoder, instructions for an IP lookup
+
+
+----------------------------------------------------------------------
+
+
+
+
+* Manual Evaluation (Kristina) True geocoders:
+
+- http://ejohn.org/apps/gaddress/
+  lat/lon hidden in javascript over google maps
+
+- http://geocoder.ca/
+
+- http://geocoder.us/
+- http://www.geocoder.us/
+  why don't we learn both
+
+- http://mapper.acme.com/
+  lat/lon not visible in page source 
+  (javascript over google maps)
+
+- http://maps.yuan.cc/ 
+  lat/lon visible in page source 
+
+- http://stevemorse.org/jcal/latlon.php
+  input needs tobe split into street city state zip
+  does not work with full address.
+
+- http://worldkit.org/geocoder/
+  lat/lon not visible
+
+- http://www.batchgeocode.com/
+  input needs to be decomposed (tab delimited)
+  or enter separate street city state zip
+ 
+- http://www.dnsstuff.com/pages/geocoder.htm
+  Empty page, no longer works
+
+- http://www.geocodeamerica.com/
+  no longer exists
+
+- http://www.geonames.org/
+  Good geocoder
+  returns N 38° 53' 54''   W 77° 2' 9''
+
+- http://www.gpsvisualizer.com/convert?form=address
+  beautiful geocoder
+
+- http://www.lat-long.com/
+  It's a gazeteer, requires location name (like parks, buildings, etc)
+
+- http://www.mapbuilder.net/
+  http://www.mapbuilder.net/index.php
+  lat/lon not visible
+
+- http://www.mapquest.com/maps/latlong.adp
+  reverse geocoder
+
+- http://www.multimap.com/
+  results not visible, input defaults to UK
+
+- http://www.nearby.org.uk/
+  does not take address as input
+  takes Lat/Long, NAC, US Zip and UTM or even GB telephone area code
+
+- http://www.ontok.com/geocode/
+  no longer works
+
+- http://www.travelgis.com/geocode/
+  http://www.travelgis.com/geocode/Default.aspx
+  requires captcha and decomposed address
+
+
+*** Learnable today
+
+- http://maps.yuan.cc/ 
+  lat/lon visible in page source 
+  
+  autowrap does not look into javascript????
+
+- http://www.gpsvisualizer.com/convert?form=address
+  beautiful geocoder
+  
+  does not allow robots
+
+
+*** learnable with additional seeds
+
+* need split inputs
+
+- http://stevemorse.org/jcal/latlon.php
+  input needs tobe split into street city state zip
+  does not work with full address.
+
+- http://www.batchgeocode.com/
+  input needs to be decomposed (tab delimited)
+  or enter separate street city state zip
+ 
+* need recognize additional output types
+
+- http://www.geonames.org/
+  Good geocoder
+  returns N 38° 53' 54''   W 77° 2' 9''
+
+
+1600 Pennsylvania Ave NW, Washington, DC, 20502
+
+
+* DEIMOS: 
+
+- Geocoders:
+
+http://geocoder.ca/
+http://geocoder.us/
+
+- Not geocoders
+
+http://en.wikipedia.org/wiki/Geocoding
+http://world.maporama.com
+http://www.51ditu.com/
+http://www.hostip.info/
+http://www.hostip.info/index.html
+http://www.hostip.info/use.html
+

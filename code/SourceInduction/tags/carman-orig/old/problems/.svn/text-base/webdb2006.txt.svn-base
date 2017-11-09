@@ -1,0 +1,36 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+import problems/types.txt
+
+## Relations: 
+
+import problems/relations.txt
+import problems/comparisons.txt
+
+## Sources: 
+
+import problems/sources_ragnarok.txt
+
+source HotelsByCity($city,hotel,street,state,zipcode,floors,phone)				:- hotel(hotel,_,street,zipcode,"US",phone), municipality(city,state,zipcode,_),building(street,zipcode,country,floors). 				{invocation.wrappers.USFireAdmin; HotelsByCity}
+source YahooFinance($tkr,ls,dt,tm,chg,op,mx,mn,vol)	 							:- trade(dt,tm,tkr,ls),market(dt,tkr,cl,op,mx,mn,vol),add(cl,chg,ls). 																	{invocation.wrappers.YahooFinance; GetQuote}
+source WeatherFeed($c,$sn,f,cl,sk,dw,hm,w,pr,lt,ln,t)							:- state(st,sn,_),municipality(c,st,z,_),centroid(z,lt,ln),conditions(lt,ln,t,f,sk,dw,hm,dr,sp,_,pr),convertTemp(cl,f),concat(dr,sp,w).	{invocation.wrappers.BoyGenius; WeatherFeed}
+source YahooWeather($z,c,s,cn,dy,d,hi,lo,sk)   	 								:- municipality(c,s,z,_),northAmerica(cn),centroid(z,lt,ln),forecast(lt,ln,d,hi,lo,sk),time(_,_,dy,d,_,_,_).							{invocation.wrappers.YahooWeather; forecastrss2}
+source YahooGeocoder($street,$zipcode,city,state,country,latitude,longitude)	:- address(street,_,zipcode,country,latitude,longitude), municipality(city,state,zipcode,_).				 							{invocation.wrappers.YahooMaps; geocode}
+
+## Target Predicate: 
+
+target GetInfoByZip($zipcode,city,state,areacode,timezone) 											 																		{invocation.wrappers.USZip; GetInfoByZip}
+target GetInfoByState($state,city,zipcode,areacode,timezone) 										 																		{invocation.wrappers.USZip; GetInfoByState}
+target GetDistanceBetweenZipCodes($zipcode,$zipcode,distanceMi) 											 																{invocation.wrappers.Codebump; GetDistanceBetweenZipCodes}
+target GetZipCodesWithin($zipcode,$distanceMi,zipcode,distanceMi) 												 															{invocation.wrappers.Codebump; GetZipCodesWithin}
+target GetQuote($ticker,price,date,time,price,price,price,price,count,price,price,percentage,priceRange,price,ratio,company) 												{invocation.wrappers.WebServiceX; GetQuote}
+target YahooHotel($zipcode,$distanceMi,hotel,street,city,state,phone,latitude,longitude,distanceMi,url) 																	{invocation.wrappers.YahooLocal; hotelsByZipRadius}                                                                              
+target USGeocoder($street,$zipcode,city,state,latitude,longitude)																											{invocation.wrappers.USGeocoder; geocode}
+target NOAAWeather($icao,airport,latitudeDMS,longitudeDMS,sky,temperatureF,humidity,direction,speedMph,speedMph,pressureMb,temperatureF,temperatureF,distanceMi)			{invocation.wrappers.NOAAWeather; current_obs}
+target WeatherChannelConditions($city,state,country,latitude,longitude,time,time,timeoffset,datetime,temperatureF,sky,pressureIn,direction,speedMph,humidity,temperatureF)	{invocation.wrappers.WeatherChannel; CurrentConditions}
+target WeatherChannelForecast($city,state,country,latitude,longitude,timeoffset,day,date,temperatureF,temperatureF,time,time,sky,direction,speedMph,humidity)				{invocation.wrappers.WeatherChannel; TwoDayForecast}
+target CountryInfo($countryAbbr,country,city:cap,areaSqKm,count:pop,currency,longitude:bbW,latitude:bbN,longitude:bbE,latitude:bbS) 										{invocation.wrappers.Geonames; countryInfo}
+
+##############################################################

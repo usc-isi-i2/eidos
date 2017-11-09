@@ -1,0 +1,133 @@
+package wrappers;
+
+import invocation.Wrapper;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
+import relational.Table;
+
+public class NOAAWeather implements Wrapper {
+
+	XPath xpath;
+
+	public NOAAWeather() {
+		xpath = XPathFactory.newInstance().newXPath();
+	}
+
+
+	public Table invoke(String[] endpoint, List<String> inputTuple) {
+
+		/*
+		 *  service provides current weather conditions for airports in the US
+		 *   - queried by ICAO code, eg: KLAX (Los Angeles International)
+		 *   - example of use: http://www.nws.noaa.gov/data/current_obs/KLAX.xml
+		 *
+<current_observation ...>
+	...
+	<location>Los Angeles Intl Airport, CA</location>
+	<station_id>KLAX</station_id>
+    <latitude>33.56.17N</latitude>
+    <longitude>118.23.20W</longitude>
+	<weather>A Few Clouds</weather>
+    <temp_f>58</temp_f>
+    <relative_humidity>50</relative_humidity>
+    <wind_dir>Variable</wind_dir>
+    <wind_mph>5.75</wind_mph>
+    <wind_gust_mph>NA</wind_gust_mph>
+    <pressure_mb>1021.1</pressure_mb>
+    <dewpoint_f>39</dewpoint_f>
+   	<windchill_f>57</windchill_f>
+	<visibility_mi>10.00</visibility_mi>
+	...
+</current_observation>
+		 *
+		 */
+
+		Table output = null;
+
+		if (endpoint[1].equalsIgnoreCase("current_obs")) {
+
+			String url = null;
+			try {
+
+				url = "http://www.nws.noaa.gov/data/current_obs/"+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8")+".xml";
+
+				output = new Table(new String[] {"station_id","location","latitude","longitude","weather","temp_f","relative_humidity","wind_dir","wind_mph","wind_gust_mph","pressure_mb","dewpoint_f","windchill_f","visibility_mi"});
+
+				// invoke source and parse xml output
+				Node currentElement = ((NodeList) xpath.evaluate("//*[local-name()='current_observation']",new InputSource(url),XPathConstants.NODESET)).item(0);
+
+		    	// top level fields
+		    	ArrayList<String> tuple = new ArrayList<String>();
+
+		    	for (String tag: output.colNames) {
+		    		tuple.add(((NodeList) xpath.evaluate("./*[local-name()='"+tag+"']",currentElement,XPathConstants.NODESET)).item(0).getTextContent());
+		    	}
+		    	output.insertDistinct(tuple);
+
+			}
+			catch (Exception e) {
+				System.err.println("Error invoking method called " + endpoint[1] + " in wrapper: " + this.getClass().getName() + " with URL: "+url);
+			}
+		}
+		else if (endpoint[1].equalsIgnoreCase("current_obs2")) { // scaled back version!
+
+			String url = null;
+			try {
+
+				url = "http://www.nws.noaa.gov/data/current_obs/"+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8")+".xml";
+
+				output = new Table(new String[] {"station_id","weather","temp_f","relative_humidity","wind_dir","wind_mph","pressure_mb","dewpoint_f"});
+
+				// invoke source and parse xml output
+				Node currentElement = ((NodeList) xpath.evaluate("//*[local-name()='current_observation']",new InputSource(url),XPathConstants.NODESET)).item(0);
+
+		    	// top level fields
+		    	ArrayList<String> tuple = new ArrayList<String>();
+
+		    	for (String tag: output.colNames) {
+		    		tuple.add(((NodeList) xpath.evaluate("./*[local-name()='"+tag+"']",currentElement,XPathConstants.NODESET)).item(0).getTextContent());
+		    	}
+		    	output.insertDistinct(tuple);
+
+			}
+			catch (Exception e) {
+				System.err.println("Error invoking method called " + endpoint[1] + " in wrapper: " + this.getClass().getName() + " with URL: "+url);
+			}
+		}
+		else {
+    		System.err.println("Error: No method called " + endpoint[1] + " in wrapper: " + this.getClass().getName());
+    		System.exit(9);
+    	}
+
+		return output;
+
+	}
+
+
+	public void testWrapper() {
+
+		NOAAWeather r = new NOAAWeather();
+		String[] endpoint;
+		ArrayList<String> input;
+
+		System.out.println("NOAAWeather.current_obs");
+
+		endpoint = new String[2];
+		endpoint[1] = "current_obs";
+		input = new ArrayList<String>();
+		input.add("KLAX");
+		r.invoke(endpoint,input).print();
+
+	}
+
+}

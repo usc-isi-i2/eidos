@@ -1,0 +1,1722 @@
+<html>
+<head>
+<title>FlyteComm: The Most Accurate Free Flight Tracking/Tracker Tool in the industry!</title>
+<meta name="description" content="FlyteComm offers the MOST ACCURATE Free and Subscription flight tracking services on the web: Tracker, Status, and Maps for Private (General Aviation) IFR flights, Commercial (Airline) flights, and airports.">
+<meta name="abstract" content="FlyteComm develops real-time flight tracking solutions">
+<meta name="keywords" content="flight track tracker tracking status map airport aviation travel itinerary flights departure arrival airlines airline airplane plane real-time">
+<meta name="revisit-after" content="2 days">
+<meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+<style media="screen" type="text/css"><!--
+.bodytxt   { color: black; font-size: 12px; line-height: 16px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.head     { color: #369; font-weight: bold; font-size: 14px; line-height: 16px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.copyright { color: #369; font-size: 10px; line-height: 12px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+.subhead  { color: #369; font-weight: bold; font-size: 12px; line-height: 14px; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular }
+#about  { position: absolute; top: 84px; left: 193px; width: 92px; visibility: hidden }
+#products  { position: absolute; top: 84px; left: 285px; width: 92px; visibility: hidden }
+#solutions { position: absolute; top: 84px; left: 377px; width: 92px; visibility: hidden }
+#support { position: absolute; top: 84px; left: 469px; width: 93px; visibility: hidden }
+--></style>
+		<csscriptdict>
+			<script><!--
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+CSIsW3CDOM = ((document.getElementById) && !(IsIE()&&CSBVers<6)) ? true : false;
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { if (CSIsW3CDOM) return document.getElementById(s).style; else return CSFindElement(s,0);  }
+CSIImg=false;
+function CSInitImgID() {if (!CSIImg && document.images) { for (var i=0; i<document.images.length; i++) { if (!document.images[i].id) document.images[i].id=document.images[i].name; } CSIImg = true;}}
+function CSFindElement(n,ly) { if (CSBVers<4) return document[n];
+	if (CSIsW3CDOM) {CSInitImgID();return(document.getElementById(n));}
+	var curDoc = ly?ly.document:document; var elem = curDoc[n];
+	if (!elem) {for (var i=0;i<curDoc.layers.length;i++) {elem=CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSGetImage(n) {if(document.images) {return ((!IsIE()&&CSBVers<5)?CSFindElement(n,0):document.images[n]);} else {return null;}}
+CSDInit=false;
+function CSIDOM() { if (CSDInit)return; CSDInit=true; if(document.getElementsByTagName) {var n = document.getElementsByTagName('DIV'); for (var i=0;i<n.length;i++) {CSICSS2Prop(n[i].id);}}}
+function CSICSS2Prop(id) { var n = document.getElementsByTagName('STYLE');for (var i=0;i<n.length;i++) { var cn = n[i].childNodes; for (var j=0;j<cn.length;j++) { CSSetCSS2Props(CSFetchStyle(cn[j].data, id),id); }}}
+function CSFetchStyle(sc, id) {
+	var s=sc; while(s.indexOf("#")!=-1) { s=s.substring(s.indexOf("#")+1,sc.length); if (s.substring(0,s.indexOf("{")).toUpperCase().indexOf(id.toUpperCase())!=-1) return(s.substring(s.indexOf("{")+1,s.indexOf("}")));}
+	return "";
+}
+function CSGetStyleAttrValue (si, id) {
+	var s=si.toUpperCase();
+	var myID=id.toUpperCase()+":";
+	var id1=s.indexOf(myID);
+	if (id1==-1) return "";
+	s=s.substring(id1+myID.length+1,si.length);
+	var id2=s.indexOf(";");
+	return ((id2==-1)?s:s.substring(0,id2));
+}
+function CSSetCSS2Props(si, id) {
+	var el=document.getElementById(id);
+	if (el==null) return;
+	var style=document.getElementById(id).style;
+	if (style) {
+		if (style.left=="") style.left=CSGetStyleAttrValue(si,"left");
+		if (style.top=="") style.top=CSGetStyleAttrValue(si,"top");
+		if (style.width=="") style.width=CSGetStyleAttrValue(si,"width");
+		if (style.height=="") style.height=CSGetStyleAttrValue(si,"height");
+		if (style.visibility=="") style.visibility=CSGetStyleAttrValue(si,"visibility");
+		if (style.zIndex=="") style.zIndex=CSGetStyleAttrValue(si,"z-index");
+	}
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent;
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+function CSButtonReturn () { return !CSClickReturn(); }
+CSIm=new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img=CSGetImage(n);
+			if (img&&typeof(CSIm[n][i].src)!="undefined") {img.src=CSIm[n][i].src;}
+			if(i!=0) self.status=CSIm[n][3]; else self.status=" ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im=action[1];
+	if (document.images) {
+		CSIm[im]=new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i]!='') {CSIm[im][i-2]=new Image(); CSIm[im][i-2].src=action[i];}
+			else CSIm[im][i-2]=0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution=false;
+function CSAction(array) {return CSAction2(CSAct, array);}
+function CSAction2(fct, array) {
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false;
+		var aa = fct[array[i]];
+		if (aa == null) return false;
+		var ta = new Array;
+		for(var j=1;j<aa.length;j++) {
+			if((aa[j]!=null)&&(typeof(aa[j])=="object")&&(aa[j].length==2)){
+				if(aa[j][0]=="VAR"){ta[j]=CSStateArray[aa[j][1]];}
+				else{if(aa[j][0]=="ACT"){ta[j]=CSAction(new Array(new String(aa[j][1])));}
+				else ta[j]=aa[j];}
+			} else ta[j]=aa[j];
+		}
+		result=aa[0](ta);
+	}
+	return result;
+}
+CSAct = new Object;
+function CSSetStyleVis(s,v) {
+	if (CSIsW3CDOM){CSIDOM();document.getElementById(s).style.visibility=(v==0)?"hidden":"visible";}
+	else if(IsIE())CSIEStyl(s).visibility=(v==0)?"hidden":"visible";
+	else CSNSStyl(s).visibility=(v==0)?'hide':'show';
+}
+function CSGetStyleVis(s) {
+	if (CSIsW3CDOM) {CSIDOM();return(document.getElementById(s).style.visibility=="hidden")?0:1;}
+	else if(IsIE())return(CSIEStyl(s).visibility=="hidden")?0:1;
+	else return(CSNSStyl(s).visibility=='hide')?0:1;
+}
+function CSShowHide(action) {
+	if (action[1] == '') return;
+	var type=action[2];
+	if(type==0) CSSetStyleVis(action[1],0);
+	else if(type==1) CSSetStyleVis(action[1],1);
+	else if(type==2) {
+		if (CSGetStyleVis(action[1]) == 0) CSSetStyleVis(action[1],1);
+		else CSSetStyleVis(action[1],0);
+	}
+}
+
+// --></script>
+		</csscriptdict>
+		<csactiondict>
+			<script>
+<!--
+<!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button',/*URL*/'../main_nav/about_off.gif',/*URL*/'',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button2',/*URL*/'../main_nav/products_off.gif',/*URL*/'',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button3',/*URL*/'../main_nav/solutions_off.gif',/*URL*/'',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button4',/*URL*/'../main_nav/support_off.gif',/*URL*/'',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button5',/*URL*/'../main_nav/contact_off.gif',/*URL*/'../main_nav/contact_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button6',/*URL*/'../main_nav/about_on2.gif',/*URL*/'',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button7',/*URL*/'../main_nav/mgmt_off.gif',/*URL*/'../main_nav/mgmt_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button8',/*URL*/'../main_nav/partners_off.gif',/*URL*/'../main_nav/partners_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button9',/*URL*/'../main_nav/contact2_off.gif',/*URL*/'../main_nav/contact2_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button10',/*URL*/'../main_nav/news_off.gif',/*URL*/'../main_nav/news_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button11',/*URL*/'../main_nav/products_on2.gif',/*URL*/'',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button16',/*URL*/'../main_nav/leo1.gif',/*URL*/'../main_nav/leo2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button12',/*URL*/'../main_nav/flytetrax_off.gif',/*URL*/'../main_nav/flytetrax_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button13',/*URL*/'../main_nav/webtrax_off.gif',/*URL*/'../main_nav/webtrax_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button14',/*URL*/'../main_nav/flytesrc_off.gif',/*URL*/'../main_nav/flytesrc_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button15',/*URL*/'../main_nav/fans2_off.gif',/*URL*/'../main_nav/fans2_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button17',/*URL*/'../main_nav/solutions_on2.gif',/*URL*/'',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button21',/*URL*/'../main_nav/bustrav_off.gif',/*URL*/'../main_nav/bustrav_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button19',/*URL*/'../main_nav/fbo_off.gif',/*URL*/'../main_nav/fbo_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button20',/*URL*/'../main_nav/chartop_off.gif',/*URL*/'../main_nav/chartop_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button18',/*URL*/'../main_nav/travmed_off.gif',/*URL*/'../main_nav/travmed_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button22',/*URL*/'../main_nav/support_on2.gif',/*URL*/'',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button23',/*URL*/'../main_nav/faqs_off.gif',/*URL*/'../main_nav/faqs_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'button24',/*URL*/'../main_nav/downloads2_off.gif',/*URL*/'../main_nav/downloads2_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'tim',/*URL*/'../2nd_nav/leo_off.gif',/*URL*/'../2nd_nav/leo_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'flytetrax2',/*URL*/'../2nd_nav/flytetrax_off.gif',/*URL*/'../2nd_nav/flytetrax_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'webtrax2',/*URL*/'../2nd_nav/webtrax_off.gif',/*URL*/'../2nd_nav/webtrax_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'flytesource2',/*URL*/'../2nd_nav/flytesrc_off.gif',/*URL*/'../2nd_nav/flytesrc_on.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'fans2',/*URL*/'../2nd_nav/fans_off.gif',/*URL*/'../2nd_nav/fans_on.gif',/*URL*/'','');
+CSAct[/*CMP*/ 'B951CAC02'] = new Array(CSShowHide,/*CMP*/ 'about',1);
+CSAct[/*CMP*/ 'B951CACE3'] = new Array(CSShowHide,/*CMP*/ 'about',0);
+CSAct[/*CMP*/ 'B951CB1A4'] = new Array(CSShowHide,/*CMP*/ 'about',1);
+CSAct[/*CMP*/ 'B951CB255'] = new Array(CSShowHide,/*CMP*/ 'about',0);
+CSAct[/*CMP*/ 'B951CB336'] = new Array(CSShowHide,/*CMP*/ 'about',1);
+CSAct[/*CMP*/ 'B951CB3B7'] = new Array(CSShowHide,/*CMP*/ 'about',0);
+CSAct[/*CMP*/ 'B951CB468'] = new Array(CSShowHide,/*CMP*/ 'about',1);
+CSAct[/*CMP*/ 'B951CB4E9'] = new Array(CSShowHide,/*CMP*/ 'about',0);
+CSAct[/*CMP*/ 'B951CB5710'] = new Array(CSShowHide,/*CMP*/ 'about',1);
+CSAct[/*CMP*/ 'B951CB6211'] = new Array(CSShowHide,/*CMP*/ 'about',0);
+CSAct[/*CMP*/ 'B951CB6D12'] = new Array(CSShowHide,/*CMP*/ 'products',1);
+CSAct[/*CMP*/ 'B951CB7613'] = new Array(CSShowHide,/*CMP*/ 'products',0);
+CSAct[/*CMP*/ 'B951CDFD16'] = new Array(CSShowHide,/*CMP*/ 'products',1);
+CSAct[/*CMP*/ 'B951CE0617'] = new Array(CSShowHide,/*CMP*/ 'products',0);
+CSAct[/*CMP*/ 'B951CE1218'] = new Array(CSShowHide,/*CMP*/ 'products',1);
+CSAct[/*CMP*/ 'B951CE1B19'] = new Array(CSShowHide,/*CMP*/ 'products',0);
+CSAct[/*CMP*/ 'B951CE2720'] = new Array(CSShowHide,/*CMP*/ 'products',1);
+CSAct[/*CMP*/ 'B951CE2E21'] = new Array(CSShowHide,/*CMP*/ 'products',0);
+CSAct[/*CMP*/ 'B951CE4222'] = new Array(CSShowHide,/*CMP*/ 'products',1);
+CSAct[/*CMP*/ 'B951CE4B23'] = new Array(CSShowHide,/*CMP*/ 'products',0);
+CSAct[/*CMP*/ 'B951CE5524'] = new Array(CSShowHide,/*CMP*/ 'products',1);
+CSAct[/*CMP*/ 'B951CE6225'] = new Array(CSShowHide,/*CMP*/ 'products',0);
+CSAct[/*CMP*/ 'B951CEB226'] = new Array(CSShowHide,/*CMP*/ 'solutions',1);
+CSAct[/*CMP*/ 'B951CEBB27'] = new Array(CSShowHide,/*CMP*/ 'solutions',0);
+CSAct[/*CMP*/ 'B951CEC528'] = new Array(CSShowHide,/*CMP*/ 'solutions',1);
+CSAct[/*CMP*/ 'B951CECE29'] = new Array(CSShowHide,/*CMP*/ 'solutions',0);
+CSAct[/*CMP*/ 'B951CEDB30'] = new Array(CSShowHide,/*CMP*/ 'solutions',1);
+CSAct[/*CMP*/ 'B951CEE331'] = new Array(CSShowHide,/*CMP*/ 'solutions',0);
+CSAct[/*CMP*/ 'B951CEEE32'] = new Array(CSShowHide,/*CMP*/ 'solutions',1);
+CSAct[/*CMP*/ 'B951CEFB33'] = new Array(CSShowHide,/*CMP*/ 'solutions',0);
+CSAct[/*CMP*/ 'B951CF0A34'] = new Array(CSShowHide,/*CMP*/ 'solutions',1);
+CSAct[/*CMP*/ 'B951CF1535'] = new Array(CSShowHide,/*CMP*/ 'solutions',0);
+CSAct[/*CMP*/ 'B951CF3B36'] = new Array(CSShowHide,/*CMP*/ 'support',1);
+CSAct[/*CMP*/ 'B951CF4437'] = new Array(CSShowHide,/*CMP*/ 'support',0);
+CSAct[/*CMP*/ 'B951CF4E38'] = new Array(CSShowHide,/*CMP*/ 'support',1);
+CSAct[/*CMP*/ 'B951CF5839'] = new Array(CSShowHide,/*CMP*/ 'support',0);
+CSAct[/*CMP*/ 'B951CF6240'] = new Array(CSShowHide,/*CMP*/ 'support',1);
+CSAct[/*CMP*/ 'B951CF6B41'] = new Array(CSShowHide,/*CMP*/ 'support',0);
+CSAct[/*CMP*/ 'B951CF8D42'] = new Array(CSShowHide,/*CMP*/ 'about',1);
+CSAct[/*CMP*/ 'B951CFA543'] = new Array(CSShowHide,/*CMP*/ 'products',1);
+CSAct[/*CMP*/ 'B951CFB244'] = new Array(CSShowHide,/*CMP*/ 'solutions',1);
+CSAct[/*CMP*/ 'B951CFBC45'] = new Array(CSShowHide,/*CMP*/ 'support',1);
+CSAct[/*CMP*/ 'B951CFF146'] = new Array(CSShowHide,/*CMP*/ 'about',0);
+CSAct[/*CMP*/ 'B951CFFA47'] = new Array(CSShowHide,/*CMP*/ 'products',0);
+CSAct[/*CMP*/ 'B951D00348'] = new Array(CSShowHide,/*CMP*/ 'solutions',0);
+CSAct[/*CMP*/ 'B951D00E49'] = new Array(CSShowHide,/*CMP*/ 'support',0);
+CSAct[/*CMP*/ 'B95359ED100'] = new Array(CSShowHide,/*CMP*/ 'products',1);
+CSAct[/*CMP*/ 'B95359ED102'] = new Array(CSShowHide,/*CMP*/ 'products',0);
+
+// -->
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function P7_hideEl(evt) { //v1.5 by PVII-www.projectseven.com
+ var b,r,m=false;if(document.layers){b=evt.target;if(b.p7aHide){
+ b.visibility="hidden";}else{routeEvent(evt);}
+ }else if(document.all&&!window.opera){b=event.srcElement;while(b){
+ if(b.p7aHide){break;}b=b.parentElement;}if(!b.contains(event.toElement)){
+ b.style.visibility="hidden";}}else if(document.getElementById){
+ b=evt.currentTarget;r=evt.relatedTarget;while(r){if(b==r){m=true;
+ break;}r=r.parentNode;}if(!m){b.style.visibility="hidden";}}
+}
+
+function P7_autoHide() { //v1.5 by PVII-www.projectseven.com
+ var i,g;for(i=0;i<arguments.length;i++){
+ if((g=MM_findObj(arguments[i]))!=null){g.p7aHide=true;if(document.layers){
+ g.captureEvents(Event.MOUSEOUT);}g.onmouseout=P7_hideEl;}}
+}
+
+function P7_autoShowHide() { //v1.2 by PVII-www.projectseven.com
+ var g,b,k,f,ag=arguments,a=parseInt(ag[0]);
+ if(!document.p7setc){p7c=new Array();document.p7setc=true;for(var u=0;u<10;u++){
+ p7c[u]=new Array();}}for(k=0;k<p7c[a].length;k++){if((g=MM_findObj(p7c[a][k]))!=null){
+ b=(document.layers)?g:g.style;b.visibility="hidden";}}for(k=1;k<ag.length;k++){
+ if((g=MM_findObj(ag[k]))!=null){b=(document.layers)?g:g.style;b.visibility="visible";
+ f=false;for(var j=0;j<p7c[a].length;j++){if(ag[k]==p7c[a][j]){f=true;}}
+ if(!f){p7c[a][p7c[a].length++]=ag[k];}}}
+}
+//-->
+</script>
+		</csactiondict>
+		<csactions>
+			<csaction name="B951CAC02" class="ShowHide" type="onevent" val0="about" val1="1"></csaction>
+			<csaction name="B951CACE3" class="ShowHide" type="onevent" val0="about" val1="0"></csaction>
+			<csaction name="B951CB1A4" class="ShowHide" type="onevent" val0="about" val1="1"></csaction>
+			<csaction name="B951CB255" class="ShowHide" type="onevent" val0="about" val1="0"></csaction>
+			<csaction name="B951CB336" class="ShowHide" type="onevent" val0="about" val1="1"></csaction>
+			<csaction name="B951CB3B7" class="ShowHide" type="onevent" val0="about" val1="0"></csaction>
+			<csaction name="B951CB468" class="ShowHide" type="onevent" val0="about" val1="1"></csaction>
+			<csaction name="B951CB4E9" class="ShowHide" type="onevent" val0="about" val1="0"></csaction>
+			<csaction name="B951CB5710" class="ShowHide" type="onevent" val0="about" val1="1"></csaction>
+			<csaction name="B951CB6211" class="ShowHide" type="onevent" val0="about" val1="0"></csaction>
+			<csaction name="B951CB6D12" class="ShowHide" type="onevent" val0="products" val1="1"></csaction>
+			<csaction name="B951CB7613" class="ShowHide" type="onevent" val0="products" val1="0"></csaction>
+			<csaction name="B951CDFD16" class="ShowHide" type="onevent" val0="products" val1="1"></csaction>
+			<csaction name="B951CE0617" class="ShowHide" type="onevent" val0="products" val1="0"></csaction>
+			<csaction name="B951CE1218" class="ShowHide" type="onevent" val0="products" val1="1"></csaction>
+			<csaction name="B951CE1B19" class="ShowHide" type="onevent" val0="products" val1="0"></csaction>
+			<csaction name="B951CE2720" class="ShowHide" type="onevent" val0="products" val1="1"></csaction>
+			<csaction name="B951CE2E21" class="ShowHide" type="onevent" val0="products" val1="0"></csaction>
+			<csaction name="B951CE4222" class="ShowHide" type="onevent" val0="products" val1="1"></csaction>
+			<csaction name="B951CE4B23" class="ShowHide" type="onevent" val0="products" val1="0"></csaction>
+			<csaction name="B951CE5524" class="ShowHide" type="onevent" val0="products" val1="1"></csaction>
+			<csaction name="B951CE6225" class="ShowHide" type="onevent" val0="products" val1="0"></csaction>
+			<csaction name="B951CEB226" class="ShowHide" type="onevent" val0="solutions" val1="1"></csaction>
+			<csaction name="B951CEBB27" class="ShowHide" type="onevent" val0="solutions" val1="0"></csaction>
+			<csaction name="B951CEC528" class="ShowHide" type="onevent" val0="solutions" val1="1"></csaction>
+			<csaction name="B951CECE29" class="ShowHide" type="onevent" val0="solutions" val1="0"></csaction>
+			<csaction name="B951CEDB30" class="ShowHide" type="onevent" val0="solutions" val1="1"></csaction>
+			<csaction name="B951CEE331" class="ShowHide" type="onevent" val0="solutions" val1="0"></csaction>
+			<csaction name="B951CEEE32" class="ShowHide" type="onevent" val0="solutions" val1="1"></csaction>
+			<csaction name="B951CEFB33" class="ShowHide" type="onevent" val0="solutions" val1="0"></csaction>
+			<csaction name="B951CF0A34" class="ShowHide" type="onevent" val0="solutions" val1="1"></csaction>
+			<csaction name="B951CF1535" class="ShowHide" type="onevent" val0="solutions" val1="0"></csaction>
+			<csaction name="B951CF3B36" class="ShowHide" type="onevent" val0="support" val1="1"></csaction>
+			<csaction name="B951CF4437" class="ShowHide" type="onevent" val0="support" val1="0"></csaction>
+			<csaction name="B951CF4E38" class="ShowHide" type="onevent" val0="support" val1="1"></csaction>
+			<csaction name="B951CF5839" class="ShowHide" type="onevent" val0="support" val1="0"></csaction>
+			<csaction name="B951CF6240" class="ShowHide" type="onevent" val0="support" val1="1"></csaction>
+			<csaction name="B951CF6B41" class="ShowHide" type="onevent" val0="support" val1="0"></csaction>
+			<csaction name="B951CF8D42" class="ShowHide" type="onevent" val0="about" val1="1"></csaction>
+			<csaction name="B951CFA543" class="ShowHide" type="onevent" val0="products" val1="1"></csaction>
+			<csaction name="B951CFB244" class="ShowHide" type="onevent" val0="solutions" val1="1"></csaction>
+			<csaction name="B951CFBC45" class="ShowHide" type="onevent" val0="support" val1="1"></csaction>
+			<csaction name="B951CFF146" class="ShowHide" type="onevent" val0="about" val1="0"></csaction>
+			<csaction name="B951CFFA47" class="ShowHide" type="onevent" val0="products" val1="0"></csaction>
+			<csaction name="B951D00348" class="ShowHide" type="onevent" val0="solutions" val1="0"></csaction>
+			<csaction name="B951D00E49" class="ShowHide" type="onevent" val0="support" val1="0"></csaction>
+			<csaction name="B95359ED100" class="ShowHide" type="onevent" val0="products" val1="1"></csaction>
+			<csaction name="B95359ED102" class="ShowHide" type="onevent" val0="products" val1="0"></csaction>
+		</csactions>
+</head>
+
+
+	<body bgcolor="#ffffff" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" link="#336699" vlink="#330099" alink="#336699" onload="CSScriptInit();MM_preloadImages('../2nd_nav/fltsrcemob_on.gif','../2nd_nav/flytesrc_on.gif','../2nd_nav/flytetrax_on.gif','../2nd_nav/webtrax2_on.gif','../2nd_nav/leo_on.gif','../main_nav/fltsrcmob_on.gif','../2nd_nav/surfacelog_on.gif','main_nav/surfacelog_on.gif','main_nav/pubsafety_on.gif')">
+		<a name="top"></a>
+		<table border="0" cellpadding="0" cellspacing="0" width="789">
+			<tr>
+				<td valign="top"><img src="../images/header.gif" width="789" height="84" border="0"></td>
+			</tr>
+			<tr>
+				<td valign="top"><a href="../index.html"><img src="../images/home.gif" width="193" height="85" border="0"><csobj w="92" h="85" t="Button" csover="B951CF8D42" csout="B951CFF146"></a><a href="#" onmouseover="CSAction(new Array(/*CMP*/'B951CF8D42'));return CSIShow(/*CMP*/'button',1)" onmouseout="CSAction(new Array(/*CMP*/'B951CFF146'));return CSIShow(/*CMP*/'button',0)" onclick="return CSButtonReturn()"><img src="../main_nav/about_off.gif" width="92" height="85" name="button" border="0"></a></csobj><csobj w="92" h="85" t="Button" csover="B951CFA543" csout="B951CFFA47"><a href="#" onmouseover="CSAction(new Array(/*CMP*/'B951CFA543'));return CSIShow(/*CMP*/'button2',1)" onmouseout="CSAction(new Array(/*CMP*/'B951CFFA47'));return CSIShow(/*CMP*/'button2',0)" onclick="return CSButtonReturn()"><img src="../main_nav/products_off.gif" width="92" height="85" name="button2" border="0"></a></csobj><csobj w="92" h="85" t="Button" csover="B951CFB244" csout="B951D00348"><a href="#" onmouseover="CSAction(new Array(/*CMP*/'B951CFB244'));return CSIShow(/*CMP*/'button3',1)" onmouseout="CSAction(new Array(/*CMP*/'B951D00348'));return CSIShow(/*CMP*/'button3',0)" onclick="return CSButtonReturn()"><img src="../main_nav/solutions_off.gif" width="92" height="85" name="button3" border="0"></a></csobj><csobj w="93" h="85" t="Button" csover="B951CFBC45" csout="B951D00E49"><a href="#" onmouseover="CSAction(new Array(/*CMP*/'B951CFBC45'));return CSIShow(/*CMP*/'button4',1)" onmouseout="CSAction(new Array(/*CMP*/'B951D00E49'));return CSIShow(/*CMP*/'button4',0)" onclick="return CSButtonReturn()"><img src="../main_nav/support_off.gif" width="93" height="85" name="button4" border="0"></a></csobj><csobj w="92" h="85" t="Button" ht="../main_nav/contact_on.gif"><a href="../contact.html" onmouseover="return CSIShow(/*CMP*/'button5',1)" onmouseout="return CSIShow(/*CMP*/'button5',0)" onclick="return CSButtonReturn()"><img src="../main_nav/contact_off.gif" width="92" height="85" name="button5" border="0"></a></csobj><img src="../images/header_end.gif" width="135" height="85" border="0"></td>
+			</tr>
+		</table>
+		<div id="about">
+			<table border="0" cellpadding="0" cellspacing="0" width="92">
+				<tr>
+					<td><csobj w="92" h="35" t="Button" csover="B951CAC02" csout="B951CACE3"><a href="../about/about.html" onmouseover="CSAction(new Array(/*CMP*/'B951CAC02'));return CSIShow(/*CMP*/'button6',1)" onmouseout="CSAction(new Array(/*CMP*/'B951CACE3'));return CSIShow(/*CMP*/'button6',0)" onclick="return CSButtonReturn()"><img src="../main_nav/about_on2.gif" width="92" height="35" name="button6" border="0"></a></csobj><br>
+						<csobj w="92" h="24" t="Button" ht="../main_nav/mgmt_on.gif" csover="B951CB1A4" csout="B951CB255"><a href="../about/mgmt.html" onmouseover="CSAction(new Array(/*CMP*/'B951CB1A4'));return CSIShow(/*CMP*/'button7',1)" onmouseout="CSAction(new Array(/*CMP*/'B951CB255'));return CSIShow(/*CMP*/'button7',0)" onclick="return CSButtonReturn()"><img src="../main_nav/mgmt_off.gif" width="92" height="24" name="button7" border="0"></a></csobj><br>
+						<csobj w="92" h="14" t="Button" ht="../main_nav/partners_on.gif" csover="B951CB336" csout="B951CB3B7"><a href="../about/partners.html" onmouseover="CSAction(new Array(/*CMP*/'B951CB336'));return CSIShow(/*CMP*/'button8',1)" onmouseout="CSAction(new Array(/*CMP*/'B951CB3B7'));return CSIShow(/*CMP*/'button8',0)" onclick="return CSButtonReturn()"><img src="../main_nav/partners_off.gif" width="92" height="14" name="button8" border="0"></a></csobj><br>
+						<csobj w="92" h="14" t="Button" ht="../main_nav/contact2_on.gif" csover="B951CB468" csout="B951CB4E9"><a href="../contact.html" onmouseover="CSAction(new Array(/*CMP*/'B951CB468'));return CSIShow(/*CMP*/'button9',1)" onmouseout="CSAction(new Array(/*CMP*/'B951CB4E9'));return CSIShow(/*CMP*/'button9',0)" onclick="return CSButtonReturn()"><img src="../main_nav/contact2_off.gif" width="92" height="14" name="button9" border="0"></a></csobj><br>
+						<csobj w="92" h="14" t="Button" ht="../main_nav/news_on.gif" csover="B951CB5710" csout="B951CB6211"><a href="../about/news/news.html" onmouseover="CSAction(new Array(/*CMP*/'B951CB5710'));return CSIShow(/*CMP*/'button10',1)" onmouseout="CSAction(new Array(/*CMP*/'B951CB6211'));return CSIShow(/*CMP*/'button10',0)" onclick="return CSButtonReturn()"><img src="../main_nav/news_off.gif" width="92" height="14" name="button10" border="0"></a></csobj></td>
+				</tr>
+			</table>
+		</div>
+				<div id="products">
+			<table border="0" cellpadding="0" cellspacing="0" width="92">
+				<tr>
+				  <td><csobj w="92" h="26" t="Button" csover="B951CB6D12" csout="B951CB7613"><a href="../products/prod.html"><img src="../main_nav/products_on2.gif" name="button11" width="92" height="26" border="0" onMouseOver="P7_autoShowHide(0,'products')" onMouseOut="P7_autoHide('products')"></a></csobj><br>
+					  <a href="../products/surfacelog.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('surfacelog','','../main_nav/surfacelog_on.gif',1)"><img src="../main_nav/surfacelog_off.gif" name="surfacelog" width="92" height="24" border="0" id="surfacelog" onMouseOver="P7_autoShowHide(0,'products')" onMouseOut="P7_autoHide('products')"></a><br>
+					  <a href="../products/flytesrc.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('flightsource','','../main_nav/flytesrc_on.gif',1)"><img src="../main_nav/flytesrc_off.gif" name="flightsource" width="92" height="14" border="0" onMouseOver="P7_autoShowHide(0,'products')" onMouseOut="P7_autoHide('products')"></a><br>
+					  <a href="../products/flytetrax.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('flighttrax','','../main_nav/flytetrax_on.gif',1)"><img src="../main_nav/flytetrax_off.gif" name="flighttrax" width="92" height="14" border="0" onMouseOver="P7_autoShowHide(0,'products')" onMouseOut="P7_autoHide('products')"></a><br>
+					  <a href="../products/webtrax.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('wbtrx','','../main_nav/webtrax2_on.gif',1)"><img src="../main_nav/webtrax2_off.gif" name="wbtrx" width="92" height="14" border="0" onMouseOver="P7_autoShowHide(0,'products')" onMouseOut="P7_autoHide('products')"></a><br>
+				  <a href="../products/leo.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('leo_drop','','../main_nav/leo2.gif',1)"><img src="../main_nav/leo1.gif" name="leo_drop" width="92" height="14" border="0" onMouseOver="P7_autoShowHide(0,'products')" onMouseOut="P7_autoHide('products')"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="solutions">
+			<table border="0" cellpadding="0" cellspacing="0" width="92">
+				<tr>
+			    <td><csobj w="92" h="22" t="Button" csover="B733E98D0" csout="B733E99B1"><a href="../solutions/solutions.html"><img src="../main_nav/solutions_on2.gif" name="solutions title" width="92" height="22" border="0" onMouseOver="P7_autoShowHide(0,'solutions')" onMouseOut="P7_autoHide('solutions')"></a></csobj><br>
+						<a href="../solutions/government.html" onMouseOver="MM_swapImage('pubsafety','','../main_nav/pubsafety_on.gif',1)" onMouseOut="MM_swapImgRestore()"><img src="../main_nav/pubsafety_off.gif" name="pubsafety" border="0" id="pubsafety" onMouseOver="P7_autoLayers(0,'solutions')" onMouseOut="P7_autoHide('solutions')" width="92" height="14"></a><br>
+						<a href="../solutions/bustrav.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('bustravel','','../main_nav/bustrav_on.gif',1)"><img src="../main_nav/bustrav_off.gif" name="bustravel" width="92" height="24" border="0" onMouseOver="P7_autoShowHide(0,'solutions')" onMouseOut="P7_autoHide('solutions')"></a><br>
+						<a href="../solutions/fbo.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('fbos','','../main_nav/fbo_on.gif',1)"><img src="../main_nav/fbo_off.gif" name="fbos" width="92" height="14" border="0" onMouseOver="P7_autoShowHide(0,'solutions')" onMouseOut="P7_autoHide('solutions')"></a><br>
+						<a href="../solutions/chartop.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('charter','','../main_nav/chartop_on.gif',1)"><img src="../main_nav/chartop_off.gif" name="charter" width="92" height="24" border="0" onMouseOver="P7_autoShowHide(0,'solutions')" onMouseOut="P7_autoHide('solutions')"></a><br>
+						<a href="../solutions/government.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('govt','','../main_nav/government_on.gif',1)"><img src="../main_nav/government_off.gif" name="govt" width="92" height="14" border="0" onMouseOver="P7_autoShowHide(0,'solutions')" onMouseOut="P7_autoHide('solutions')"></a><br>
+						<a href="../solutions/travelmed.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('trav','','../main_nav/travmed_on.gif',1)"><img src="../main_nav/travmed_off.gif" name="trav" width="92" height="24" border="0" onMouseOver="P7_autoShowHide(0,'solutions')" onMouseOut="P7_autoHide('solutions')"></a></td>
+				</tr>
+			</table>
+		</div>
+		<div id="support">
+			<table border="0" cellpadding="0" cellspacing="0" width="92">
+				<tr>
+					<td><csobj w="93" h="29" t="Button" csover="B951CF6240" csout="B951CF6B41"><a href="../support/supp.html" onmouseover="CSAction(new Array(/*CMP*/'B951CF6240'));return CSIShow(/*CMP*/'button22',1)" onmouseout="CSAction(new Array(/*CMP*/'B951CF6B41'));return CSIShow(/*CMP*/'button22',0)" onclick="return CSButtonReturn()"><img src="../main_nav/support_on2.gif" width="93" height="29" name="button22" border="0"></a></csobj><br>
+						<csobj w="92" h="14" t="Button" ht="../main_nav/faqs_on.gif" csover="B951CF4E38" csout="B951CF5839"><a href="../support/faq.html" onmouseover="CSAction(new Array(/*CMP*/'B951CF4E38'));return CSIShow(/*CMP*/'button23',1)" onmouseout="CSAction(new Array(/*CMP*/'B951CF5839'));return CSIShow(/*CMP*/'button23',0)" onclick="return CSButtonReturn()"><img src="../main_nav/faqs_off.gif" width="92" height="14" name="button23" border="0"></a></csobj><br>
+						<csobj w="92" h="14" t="Button" ht="../main_nav/downloads2_on.gif" csover="B951CF3B36" csout="B951CF4437"><a href="../support/downloads.html" onmouseover="CSAction(new Array(/*CMP*/'B951CF3B36'));return CSIShow(/*CMP*/'button24',1)" onmouseout="CSAction(new Array(/*CMP*/'B951CF4437'));return CSIShow(/*CMP*/'button24',0)" onclick="return CSButtonReturn()"><img src="../main_nav/downloads2_off.gif" width="92" height="14" name="button24" border="0"></a></csobj></td>
+				</tr>
+			</table>
+		</div>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="791">
+        <TR>
+                <TD WIDTH="192" VALIGN="TOP"><A HREF="trackflight"><IMG SRC="../images/btn_track.gif" WIDTH="192" HEIGHT="69" BORDER="0"></A><BR>
+                        <FONT COLOR="#336699" FACE="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" SIZE="2"><BR>
+                        <P STYLE="margin-top: 0; margin-left: 3; margin-right: 2">
+                    	<img src="../images/logo.jpg" width="180" height="73" border="0"><br>
+                    	<br>                        
+                        <SPAN CLASS="bodytxt">
+                                Customize your search by entering an airline and flight number, or by selecting an arrival city. Select a departure airport to further focus the flight search.<BR>
+                                &nbsp;<BR>
+                                For advanced users, enter Flight ID (eg AAL1014) or Arrival and Departure (optional) Airport codes.
+                        </SPAN>
+                        </P></FONT>
+                        
+                        <P ALIGN="CENTER" STYLE="margin-top: 0"><FONT COLOR="#336699" SIZE="2" FACE="Arial">
+                        <SPAN CLASS="head">
+                                <A HREF="trackflight?action=select_random">Click here to track a random flight!</A>
+                        </SPAN>
+                        </FONT></P>
+                        <P ALIGN="CENTER" STYLE="margin-top: 0"><FONT COLOR="#336699" SIZE="2" FACE="Arial">
+                        <SPAN CLASS="head">
+                                <A HREF="../products/webtrax.html">Click here to enable WebTrax on your site.</A>
+                        </SPAN>
+                        </FONT></P>
+                        <DIV ALIGN="CENTER">
+                                <P>&nbsp;</P>
+                        </DIV>
+                </TD>
+                <TD WIDTH="1" VALIGN="TOP" BGCOLOR="#336699"><IMG SRC="../images/blue.gif" WIDTH="1" HEIGHT="400" BORDER="0"></TD>
+                <TD VALIGN="TOP" WIDTH="595"><FONT SIZE="2" FACE="Arial"><IMG SRC="../images/spcr.gif" WIDTH="10" HEIGHT="10" BORDER="0" ALIGN="LEFT">
+                        </FONT>
+      <table border="0" cellpadding="0" cellspacing="0" width="458">
+      </table>
+<br>
+                        <TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" WIDTH="459">
+                                <TR>
+                                        <TD VALIGN="TOP" WIDTH="457">
+                                                <DIV ALIGN="CENTER">
+<!-- flytecomm content -->
+
+                <table CELLSPACING="0" CELLPADDING="0" WIDTH="400" BGCOLOR="#C0C0C0" BORDER="0">
+                        <tbody>
+                                <tr>
+                                        <!-- Include flight selection module here -->
+                                        				<!--Flight Selection Module-->
+					<td BGCOLOR="#ffffff" COLSPAN="3">
+						<table HEIGHT="84" CELLSPACING="0" CELLPADDING="0" WIDTH="400" BGCOLOR="#dde2ec" BORDER="0">
+							<tbody>
+								<tr>
+									<td WIDTH="2" BGCOLOR="#ffffff" HEIGHT="1"><img HEIGHT="1" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="2" BORDER="0"></td>
+									<td WIDTH="6" BGCOLOR="#ffffff" HEIGHT="1"><img HEIGHT="1" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="6" BORDER="0"></td>
+									<td WIDTH="115" BGCOLOR="#ffffff" HEIGHT="1"><img HEIGHT="1" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="115" BORDER="0"></td>
+									<td WIDTH="254" BGCOLOR="#ffffff" HEIGHT="1" COLSPAN="2"><img HEIGHT="1" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="254" BORDER="0"></td>
+									<td WIDTH="3" BGCOLOR="#ffffff" HEIGHT="1"><img HEIGHT="1" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="3" BORDER="0"></td>
+								</tr>
+								<tr>
+									<td VALIGN="top" ALIGN="left" WIDTH="400" BGCOLOR="#ffffff" COLSPAN="6" HEIGHT="18"><img ALT="Real Time Flight Tracking " SRC="http://custom.flytecomm.com/fcoem/trackflight/images/flight_tracking.gif" WIDTH="400" HEIGHT="18"></td>
+								</tr>
+								<tr>
+									<td VALIGN="top" ALIGN="left" WIDTH="2" HEIGHT="226" ROWSPAN="6"><img HEIGHT="226" ALT SRC="http://custom.flytecomm.com/fcoem/trackflight/images/flight_line_lvsh_01.gif" WIDTH="2" BORDER="0"></td>
+									<td WIDTH="6" HEIGHT="226" ROWSPAN="6"><img HEIGHT="1" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="6" BORDER="0"></td>
+									<td VALIGN="top" ALIGN="left" WIDTH="389" BGCOLOR="#dde2ec" COLSPAN="3" HEIGHT="6"><img HEIGHT="6" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="389"></td>
+									<td VALIGN="top" WIDTH="3" HEIGHT="226" ROWSPAN="6"><img ALT SRC="http://custom.flytecomm.com/fcoem/trackflight/images/flight_line_rvsh_01.gif" BORDER="0" WIDTH="3" HEIGHT="230"></td>
+								</tr>
+									<form ID="detail_select" NAME="detail_select" ACTION="/cgi-bin/trackflight" METHOD="POST">
+									<input TYPE="hidden" VALUE="" NAME="oemuser">
+								<tr>
+									<td VALIGN="top" ALIGN="left" WIDTH="115"><font FACE="arial, helvetica, sans-serif" SIZE="2"><b>Search
+										for flight:</b></font><br>
+										<font FACE="arial, helvetica, sans-serif" SIZE="1">Select an airline and enter a
+										flight number.</font></td>
+									<td VALIGN="top" ALIGN="left" WIDTH="185"><font FACE="arial, helvetica, sans serif" SIZE="1">Airline:<br>
+										<select SIZE="1" NAME="airline" FACE="arial, helvetica, sans serif">
+											<option VALUE="" SELECTED>Select Airline</option>
+											<option VALUE>--- Popular Airlines ---</option>
+											<option VALUE="TRS">AirTran Airways</option>
+											<option VALUE="ASA">Alaska Airlines</option>
+											<option VALUE="AAL">American Airlines</option>
+											<option value="AMT">ATA Airlines</option>
+											<option VALUE="COA">Continental Airlines</option>
+											<option VALUE="DAL">Delta Air Lines</option>
+											<option value="JBU">Jet Blue Airways</option>
+											<option VALUE="MEP">Midwest Airlines</option>
+											<option VALUE="NWA">Northwest Airlines</option>
+											<option VALUE="SWA">Southwest Airlines</option>
+											<option VALUE="UAL">United Airlines</option>
+											<option VALUE="AWE">US Airways</option>
+											<option VALUE="">--- Other Airlines ---</option>
+											<option value="AEX">Aces</option>
+											<option value="AXQ">Action Airlines</option>
+											<option value="EIN">Aer Lingus</option>
+											<option value="SER">Aero California</option>
+											<option value="AEK">Aero Costa Rica</option>
+											<option value="AMX">Aero Mexico</option>
+											<option value="DAP">Aerodias Chile</option>
+											<option value="AJS">Aeroejecutiva SA-DE-CV</option>
+											<option value="AFL">Aeroflot</option>
+											<option value="ARG">Aerolineas Argentinas</option>
+											<option value="LNT">Aerolineas Internacionales</option>
+											<option value="ROM">Aeromar</option>
+											<option value="PLI">AeroPeru</option>
+											<option value="LAV">Aeropostal</option>
+											<option value="ATD">Aerotour Dominicano</option>
+											<option value="RKT">Air 21</option>
+											<option value="AAQ">Air Alliance</option>
+											<option value="AAJ">Air Alma</option>
+											<option value="ARU">Air Aruba</option>
+											<option value="ABD">Air Atlanta</option>
+											<option value="ACA">Air Canada</option>
+											<option value="ISB">Air Caraibes Exploitations</option>
+											<option value="CCA">Air China</option>
+											<option value="CRQ">Air Creebec</option>
+											<option value="AEA">Air Eurpoa</option>
+											<option value="AEL">Air Eurpoe</option>
+											<option value="RUF">Air First Aviation</option>
+											<option value="AFR">Air France</option>
+											<option value="GGN">Air Georgian</option>
+											<option value="AIC">Air India</option>
+											<option value="AIE">Air Inuit</option>
+											<option value="AJM">Air Jamaica</option>
+											<option value="AMC">Air Malta</option>
+											<option value="AMW">Air Midwest</option>
+											<option value="ANV">Air Nevada</option>
+											<option value="ANZ">Air New Zealand</option>
+											<option value="ANT">Air North</option>
+											<option value="CRK">Air Pacific</option>
+											<option value="FJI">Air Pacific Limited</option>
+											<option value="APM">Air Pack</option>
+											<option value="MPD">Air Plus Comet</option>
+											<option value="TAP">Air Portugal</option>
+											<option value="ASK">Air Sask Aviation</option>
+											<option value="ASJ">Air Satellite</option>
+											<option value="SPM">Air St. Pierre</option>
+											<option value="STT">Air St. Thomas</option>
+											<option value="RSI">Air Sunshine</option>
+											<option value="THT">Air Tahiti Nui</option>
+											<option value="TSC">Air Transat</option>
+											<option value="VGA">Air Vegas</option>
+											<option value="AWI">Air Wisconsin</option>
+											<option value="ABX">Airbourne</option>
+											<option value="TRS">AirTran Airways</option>
+											<option value="AKK">Aklak Air</option>
+											<option value="ASA">Alaska Airlines</option>
+											<option value="AER">Alaska Central Express</option>		
+											<option value="AZA">Alitalia Airlines</option>
+											<option value="CNX">All Canada Express</option>
+											<option value="ANA">All Nippon Airways</option>
+											<option value="AAY">Allegiant Air</option>
+											<option value="ALM">Air Antillean Airlines</option>
+											<option value="AAH">Aloha Airlines</option>
+											<option value="AIP">Alpine Aviation</option>
+											<option value="AWE">America West Airlines</option>
+											<option value="AAL">American Airlines</option>
+											<option value="EGF">American Eagle</option>
+											<option value="AMF">Ameriflight</option>
+											<option value="ADB">Antonov Design Bureau</option>
+											<option value="AOM">AOM French Airlines</option>
+											<option value="APY">APA Intl Air</option>
+											<option value="CIR">Arctic Circle Air</option>
+											<option value="AAR">Asiana Airlines</option>
+											<option value="AMT">ATA Airlines</option>
+											<option value="ABS">Athabaska Airways</option>
+											<option value="MDC">Atlantic Aero</option>
+											<option value="BJK">Atlantic Airlines</option>
+											<option value="ASQ">Atlantic Southeast Airlines</option>
+											<option value="GTI">Atlas Air</option>
+											<option value="AUS">Australian Airlines</option>
+											<option value="AUA">Austrian Airlines</option>
+											<option value="ARB">Avia Air</option>
+											<option value="TWN">Avialeasing</option>
+											<option value="AVA">Avianca</option>
+											<option value="GUG">Aviateca</option>
+											<option value="AWO">Awood Air</option>
+											<option value="BHS">Bahamasair</option>
+											<option value="BAJ">Baker Aviation</option>
+											<option value="BBB">Belair</option>
+											<option value="BIA">Baltic Intl Airlines</option>
+											<option value="CJY">Baltimore Air Transport</option>
+											<option value="BLS">Bearskin Airlines</option>
+											<option value="BMJ">Bemidji Airlines</option>
+											<option value="BRG">Bering Air</option>
+											<option value="BSY">Big Sky Airlines</option>
+											<option value="BBC">Biman Bangladesh Airlines</option>
+											<option value="FAB">Bradley Air Service</option>
+											<option value="BAW">British Airways</option>
+											<option value="BMA">British MIdland Airways Ltd</option>
+											<option value="BAL">Britannia</option>
+											<option value="BFL">Buffalo Airways Ltd</option>
+											<option value="BVA">Buffalo Airways</option>
+											<option value="CAV">Calm Air Intl</option>
+											<option value="CFC">Canadian Forces</option>
+											<option value="MPE">Canadian North</option>
+											<option value="CJA">Canjet Airlines</option>
+											<option value="KAP">Cape Air</option>
+											<option value="CMY">Cape Smythe Air Service</option>
+											<option value="DCF">Cardinal Airlines</option>
+											<option value="BWA">Caribbean Airlines</option>
+											<option value="CJT">Cargojet</option>
+											<option value="CLX">Cargolux Airlines</option>
+											<option value="BCB">Caribair</option>
+											<option value="CPA">Cathay Pacific Airways</option>
+											<option value="CAY">Cayman Airways</option>
+											<option value="GLR">Central Mountain Air</option>
+											<option value="CDL">CCAir</option>
+											<option value="CCP">Champion Air</option>
+											<option value="CHQ">Chautauqua Airlines</option>
+											<option value="WDY">Chicago Express</option>
+											<option value="CAL">China Airlines</option>
+											<option value="CES">China Eastern Airlines</option>
+											<option value="CSN">China Southern Airlines</option>
+											<option value="CXT">Coastal Air Transport</option>
+											<option value="CJC">Colgan Air</option>
+											<option value="COM">Comair</option>
+											<option value="UCA">Commutair</option>
+											<option value="CFG">Condor Flugdienst</option>
+											<option value="CAC">Conguest Airlines</option>
+											<option value="COA">Continental Airlines</option>
+											<option value="BTA">Continental Express</option>
+											<option value="CMI">Continental Micronesia</option>
+											<option value="CTN">Croatia Airlines</option>
+											<option value="CAT">Custom Air Transport</option>
+											<option value="CYP">Cyprus Airways</option>
+											<option value="CSA">Czech Airlines</option>
+											<option value="DAL">Delta Air Lines</option>
+											<option value="DHL">DHL Airways</option>
+											<option value="DCV">Discover Air</option>
+											<option value="DOW">Downeast Express</option>
+											<option value="TLO">Eagle Canyon Airlines</option>
+											<option value="BBE">Eastwind Airlines</option>
+											<option value="EZY">EasyJet</option>
+											<option value="ELY">El Al Airlines</option>
+											<option value="UAE">Emirates</option>
+											<option value="CFS">Empire Airlines</option>
+											<option value="ESS">Eos Airlines</option>
+											<option value="ERH">Era Aviation</option>
+											<option value="ETH">Ethiopian Airlines</option>
+											<option value="ETD">Etihad Airways</option>
+											<option value="EVA">EVA Air</option>
+											<option value="EIA">Evergreen Int'l Airlines</option>
+											<option value="EJA">Executive Jet Aviation</option>
+											<option value="BTA">Express Jet</option>
+											<option value="FDX">Federal Express</option>
+											<option value="UFS">Feeder Express</option>
+											<option value="FBF">Fine Airlines</option>
+											<option value="FAB">First Air</option>
+											<option value="FIN">Finnair</option>
+											<option value="FLE">Flair Airlines</option>
+											<option value="FMR">Flamingo Air</option>
+											<option value="OPT">Flight Options</option>
+											<option value="FEX">FlightExec</option>
+											<option value="FFT">Frontier Airlines</option>
+											<option value="FTA">Frontier Flying Service</option>
+											<option value="EYE">FS Air Service</option>
+											<option value="GIA">Garuda, Indonesia</option>
+											<option value="GCO">Gemini Air Cargo</option>
+											<option value="GRO">Great American Airways</option>
+											<option value="GLA">Great Lakes Aviation</option>
+											<option value="GRP">Great Plains/Ozark Airlines</option>
+											<option value="GFA">Gulf Air</option>
+											<option value="GFT">Gulfstream Intl Airlines</option>
+											<option value="GYA">Guyana Airways</option>
+											<option value="HBC">Halisa Air</option>
+											<option value="HAR">Harbor Airlines</option>
+											<option value="HMY">Harmony Airways</option>
+											<option value="HAL">Hawaiian Airlines</option>
+											<option value="HCL">Helenair Corportation Ltd</option>
+											<option value="JBA">Helijet Airways</option>
+											<option value="PCE">Hooters Air</option>
+											<option value="QXE">Horizon Air</option>
+											<option value="CSQ">IBC Airways</option>
+											<option value="IBE">Iberia</option>
+											<option value="ICE">Icelandair</option>
+											<option value="IDE">Independence Air</option>
+											<option value="IML">Island Air</option>
+											<option value="ISA">Island Airlines</option>
+											<option value="SDY">Island Express</option>
+											<option value="ISR">Israir Airlines</option>
+											<option value="JAL">Japan Airlines</option>
+											<option value="JZA">Jazz, Air Canada</option>
+											<option value="JAI">Jet Airways</option>
+											<option value="JBU">Jet Blue Airways</option>
+											<option value="KDC">K D Air Corporation</option>
+											<option value="KFS">Kalitta Flying Service</option>
+											<option value="KFA">Kelowna Flightcraft</option>
+											<option value="KBA">Kenn Borek Air Ltd</option>
+											<option value="KQA">Kenya Airways</option>
+											<option value="KEE">Keystone Air Services</option>
+											<option value="KHA">Kitty Hawk Airlines</option>
+											<option value="KLM">KLM Royal Dutch Airlines</option>
+											<option value="KNX">Knighthawk Air Express</option>
+											<option value="KAL">Korean Airlines</option>
+											<option value="KAC">Kuwait Airways</option>
+											<option value="LAB">L.A.B. Flying Services</option>
+											<option value="LAL">Labrador Airways</option>
+											<option value="LRC">LACSA</option>
+											<option value="LRC">LACSA Costa Rica Airline</option>
+											<option value="LCO">Ladeco</option>
+											<option value="LBH">Laker Airways</option>
+											<option value="LAN">Lan Chile</option>
+											<option value="LIA">LIAT</option>
+											<option value="LLB">Lloyd Aero Boliviano</option>
+											<option value="LSS">Lone Star Airlines</option>
+											<option value="LOT">LOT Polish Airlines</option>
+											<option value="LTU">LTU Intl Airways</option>
+											<option value="DLH">Lufthansa German Airline</option>
+											<option value="MLH">Mahalo Air</option>
+											<option value="MAS">Malaysia Airlines</option>
+											<option value="MAH">Malev-Hungarian Airlines</option>
+											<option value="MPH">Martinair</option>
+											<option value="FAE">Merlin Express</option>
+											<option value="ASH">Mesa Airlines</option>
+											<option value="MES">Mesaba</option>
+											<option value="MXA">Mexicana</option>
+											<option VALUE="MEP">Midwest Airlines</option>
+											<option value="SYX">Midwest Connect</option>
+											<option value="MON">Monarch Airlines</option>
+											<option value="MAL">Morningstar Air Express</option>
+											<option value="PKP">Mountain Air Express</option>
+											<option value="MAW">Mustique Airways</option>
+											<option value="NEA">New England Airlines</option>
+											<option value="NXT">National Express</option>
+											<option value="ROK">National Airlines</option>
+											<option value="NCA">Nippon Cargo Airlines</option>
+											<option value="NAO">North American Airlines</option>
+											<option value="NRV">North Vancouver Airlines</option>
+											<option value="NWL">North Wright Air</option>
+											<option value="NTA">Northern Thunderbird</option>
+											<option value="NWA">Northwest Airlines</option>
+											<option value="FLG">Northwest Airlink</option>
+											<option value="NWT">Northwest Territorial</option>
+											<option value="PLR">Northwestern Air Lease</option>
+											<option value="OAL">Olympic Airways</option>
+											<option value="OAE">Omni Air Intl</option>
+											<option value="PCE">Pace Airlines</option>
+											<option value="PCO">Pacific Coastal Airlines</option>
+											<option value="PAK">Pakistan Intl Airlines</option>
+											<option value="PXA">Pan American World Air</option>
+											<option value="PEN">Peninsula Airways</option>
+											<option value="ALO">Pennsylvania Commuter</option>
+											<option value="PAG">Perimeter Airlines</option>
+											<option value="PAL">Philippine Airlines</option>
+											<option value="PDD">Phillips Alaska, Inc.</option>
+											<option value="PDT">Piedmont Airlines</option>
+											<option value="PXX">Pine State Airlines</option>
+											<option value="FLG">Pinnacle Airlines</option>
+											<option value="PAC">Polar Air Cargo</option>
+											<option value="POT">Polet Aviakompania</option>
+											<option value="PRI">Princeville Airways</option>
+											<option value="PAL">Provincial Airlines</option>
+											<option value="JIA">PSA Airlines</option>
+											<option value="QFA">Qantas Airways</option>
+											<option value="RWG">Redwing Airways</option>
+											<option value="TSH">Regional 1 Airlines</option>
+											<option value="RPA">Republic Airlines</option>
+											<option value="ROV">Rover Airways Intl</option>
+											<option value="RAX">Royal Air Freight</option>
+											<option value="RAM">Royal Air Maroc</option>
+											<option value="RJA">Royal Jordanian</option>
+											<option value="RNA">Royal Nepal Airlines</option>
+											<option value="RYN">Ryan Intl Airlines</option>
+											<option value="SAB">SN Brussels Airlines</option>
+											<option value="SVA">Saudi Arabian Airlines</option>
+											<option value="SAS">Scandinavian Airlines</option>
+											<option value="YRR">Scenic Airlines</option>
+											<option value="SFC">Shuswap Air</option>
+											<option value="TCF">Shuttle America</option>
+											<option value="SIA">Singapore Airlines</option>
+											<option value="SPA">Sierra Pacific Airlines</option>
+											<option value="FJE">Silverjet</option>
+											<option value="SGY">Skagway Air Service</option>
+											<option value="SKB">Skybus Airlines</option>
+											<option value="SKK">Skylink Express</option>
+											<option value="SSV">Skyservice Airlines</option>
+											<option value="SGK">Skyward Aviation</option>
+											<option value="SYX">Skyway Airlines</option>
+											<option value="SKZ">Skyway Enterprise</option>
+											<option value="SKW">Skywest Airlines</option>
+											<option value="SNK">Southeast Airlines</option>
+											<option value="SWA">Southwest Airlines</option>
+											<option value="SAA">South African Airways</option>
+											<option value="SCA">South Central Air</option>
+											<option value="SOO">Southern Air</option>
+											<option value="NKS">Spirit Airlines</option>
+											<option value="ALK">SriLankan Airlines</option>
+											<option value="SCX">Sun Country Airlines</option>
+											<option value="SJI">Sunjet Intl. Airlines</option>
+											<option value="SWG">Sunwing Airlines</option>
+											<option value="SWI">Sunworld Intl Airlines</option>
+											<option value="SLM">Surinam Airlines</option>
+											<option value="SWR">SWISS</option>
+											<option value="TBI">Tab Express Intl</option>
+											<option value="TAI">TACA</option>
+											<option value="TNR">Tanana Air Service</option>
+											<option value="FXG">Tatonduk Flying Service</option>
+											<option value="THA">Thai Airways Intl</option>
+											<option value="THU">Thunder Airlines</option>
+											<option value="TOW">Tower Air</option>
+											<option value="TNT">Trans North Aviation</option>
+											<option value="LOF">Trans States Airlines</option>
+											<option value="LOF">Trans World Express</option>
+											<option value="TRZ">TransMeridian</option>
+											<option value="THY">Turkish Airlines</option>
+											<option value="UAL">United Airlines</option>
+											<option value="UPS">United Parcel Service</option>
+											<option value="GWY">USA 3000</option>
+											<option VALUE="AWE">US Airways</option>
+											<option value="USX">US Express</option>
+											<option value="VSP">VASP (Brazil)</option>
+											<option value="VGD">Vanguard Airlines</option>
+											<option value="VRG">Varig</option>
+											<option value="VES">Vieques Air Link</option>
+											<option value="VRD">Virgin America</option>
+											<option value="VIR">Virgin Atlantic</option>
+											<option value="VDA">Volga-Dnepr Airlines</option>
+											<option value="VAL">Voyageur Airways</option>
+											<option value="VNA">Warbelow's Air Ventures</option>
+											<option value="WSG">Wasaya Airways</option>
+											<option value="WCC">West Coast Air</option>
+											<option value="WIL">West Isle Air</option>
+											<option value="SDU">Westair Commuter</option>
+											<option value="WSA">Westates Airlines</option>
+											<option value="WES">Western Express Airlines</option>
+											<option value="WJA">Westjet Airlines</option>
+											<option value="WLD">Wilderness Airlines</option>
+											<option value="WIA">Windward Island Airways</option>
+											<option value="WAI">Wings Air</option>
+											<option value="WOA">World Airways</option>
+											<option value="WSG">Wasays Airlines</option>
+											<option value="CXP">Xtra Airways</option>
+											<option value="YZR">Yangtze River Express</option>
+											<option value="JAT">Yugoslov Airlines</option>
+											<option value="UYA">Yute Air Alaska</option>
+											<option value="OOM">Zoom Airlines</option>
+										</select></font></td>
+									<td VALIGN="top" ALIGN="left" WIDTH="80"><font FACE="arial, helvetica, sans serif" SIZE="1">Flight
+										Number:<br>
+										<input SIZE="4" NAME="fnum"></font><img HEIGHT="10" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="10"><font FACE="arial, helvetica, sans serif" SIZE="1"><input TYPE="hidden" VALUE="select_detail" NAME="action"><input TYPE="image" ALT="go" SRC="http://custom.flytecomm.com/fcoem/trackflight/images/button_go.gif" BORDER="0" NAME="select_detail" WIDTH="17" HEIGHT="17"></font></td>
+								</tr>
+									</FORM>
+								<tr>
+									<td VALIGN="top" ALIGN="left" WIDTH="389" COLSPAN="3" HEIGHT="20">
+										<hr ALIGN="left" WIDTH="380">
+									</td>
+								</tr>
+									<form ID="route_select" NAME="route_select" ACTION="/cgi-bin/trackflight" METHOD="POST">
+									<input TYPE="hidden" VALUE="" NAME="oemuser">
+								<tr>
+									<td VALIGN="top" ALIGN="left" WIDTH="115"><font FACE="arial, helvetica, sans-serif" SIZE="2"><b>Search
+										all flights:</b></font><br>
+										<font FACE="arial, helvetica, sans-serif" SIZE="1">Select an arrival airport and
+										a departure airport (optional).</font></td>
+									<td VALIGN="top" ALIGN="left" WIDTH="254" COLSPAN="2"><font FACE="arial, helvetica, sans serif" SIZE="1">Arrival
+										Airport:<br>
+										<select SIZE="1" NAME="arrival_airport" FACE="arial, helvetica, sans serif">
+											<option VALUE="" SELECTED>Select Arrival Airport</option>
+											<Option Value="Yxx">Abbotsford, BC</Option>
+											<Option Value="Abi">Abilene, TX</Option>
+											<Option Value="Cak">Akron/Canton, OH</Option>
+											<Option Value="Alb">Albany, NY</Option>
+											<Option Value="Abq">Albuquerque, NM</Option>
+											<Option Value="Aex">Alexandria, LA</Option>
+											<Option Value="Abe">Allentown, PA</Option>
+											<Option Value="Ama">Amarillo, TX</Option>
+											<Option Value="Anc">Anchorage, AK</Option>
+											<Option Value="Aqp">Appleton, MN</Option>
+											<Option Value="Atw">Appleton, WI</Option>
+											<Option Value="Acv">Arcata, CA</Option>
+											<Option Value="Avl">Asheville, NC</Option>
+											<Option Value="Ase">Aspen, CO</Option>
+											<Option Value="Atl">Atlanta, GA</Option>
+											<Option Value="Acy">Atlantic City, NJ</Option>
+											<Option Value="Aus">Austin, TX</Option>
+											<Option Value="Bwi">Baltimore, MD</Option>
+											<Option Value="Bgr">Bangor, ME</Option>
+											<Option Value="Brw">Barrow, AK</Option>
+											<Option Value="Bpt">Beaumont, TX</Option>
+											<Option Value="Bet">Bethel, AK</Option>
+											<Option Value="Bil">Billings, MT</Option>
+											<Option Value="Bgm">Binghamton, NY</Option>
+											<Option Value="Bhm">Birmingham, AL</Option>
+											<Option Value="Bis">Bismarck, ND</Option>
+											<Option Value="Bmi">Bloomington, IL</Option>
+											<Option Value="Boi">Boise, ID</Option>
+											<Option Value="Bos">Boston, MA</Option>
+											<Option Value="Bzn">Bozeman, MT</Option>
+											<Option Value="Bro">Brownsville, TX</Option>
+											<Option Value="Bqk">Brunswick, GA</Option>
+											<Option Value="Buf">Buffalo, NY</Option>
+											<Option Value="Ifp">Bullhead City, AZ</Option>
+											<Option Value="Bur">Burbank, CA</Option>
+											<Option Value="Btv">Burlington, VT</Option>
+											<Option Value="yyc">Calgary</Option>
+											<Option Value="ycb">Cambrige Bay, Nunavut</Option>
+											<Option Value="Cid">Cedar Rapids, IA</Option>
+											<Option Value="Cmi">Champaign/Urbana, IL</Option>
+											<Option Value="Chs">Charleston, SC</Option>
+											<Option Value="Crw">Charleston, WV</Option>
+											<Option Value="Clt">Charlotte, NC</Option>
+											<Option Value="Cho">Charlottesville, VA</Option>
+											<Option Value="Cha">Chattanooga, TN</Option>
+											<Option Value="Mdw">Chicago (Midway), IL</Option>
+											<Option Value="Ord">Chicago (O'Hare), IL</Option>
+											<Option Value="Cvg">Cincinnati, OH</Option>
+											<Option Value="Cle">Cleveland, OH</Option>
+											<Option Value="Cdb">Cold Bay, AK</Option>
+											<Option Value="Cll">College Station, TX</Option>
+											<Option Value="Cos">Colorado Springs, CO</Option>
+											<Option Value="Cou">Columbia, MO</Option>
+											<Option Value="Cae">Columbia, SC</Option>
+											<Option Value="Cmh">Columbus, OH</Option>
+											<Option Value="Cdv">Cordova, AK</Option>
+											<Option Value="Crp">Corpus Christi, TX</Option>
+											<Option Value="Dfw">Dallas/Fort Worth, TX</Option>
+											<Option Value="Dal">Dallas (Love Field), TX</Option>
+											<Option Value="Day">Dayton, OH</Option>
+											<Option Value="Dab">Daytona Beach, FL</Option>
+											<Option Value="Scc">Deadhorse, AK</Option>
+											<Option Value="Den">Denver, CO</Option>
+											<Option Value="Dsm">Des Moines, IA</Option>
+											<Option Value="Dtw">Detroit, MI</Option>
+											<Option Value="Dlg">Dillingham, AK</Option>
+											<Option Value="Dlh">Duluth, MN</Option>
+											<Option Value="Dro">Durango, CO</Option>
+											<Option Value="Cid">Eastern Iowa, IA</Option>
+											<Option Value="yeg">Edmonton</Option>
+											<Option Value="Elp">El Paso, TX</Option>
+											<Option Value="Edf">Elmendorf AFB, AK</Option>
+											<Option Value="ERI">Erie, PA</Option>
+											<Option Value="Eug">Eugene, OR</Option>
+											<Option Value="Eka">Eureka, CA</Option>
+											<Option Value="Fai">Fairbanks, AK</Option>
+											<Option Value="Far">Fargo, ND</Option>
+											<Option Value="Fnt">Flint, MI</Option>
+											<Option Value="Flo">Florence, SC</Option>
+											<Option Value="Grk">Fort Hood (Killeen), TX</Option>
+											<Option Value="Fot">Fortuna, CA</Option>
+											<Option Value="Yfc">Fredericton, New Brunswick</Option>
+											<Option Value="Fat">Fresno, CA</Option>
+											<Option Value="Fll">Ft. Lauderdale, FL</Option>
+											<Option Value="Rsw">Ft. Myers, FL</Option>
+											<Option Value="Vps">Ft. Walton/Okaloosa, FL</Option>
+											<Option Value="Fwa">Ft. Wayne, IN</Option>
+											<Option Value="Gnv">Gainesville, FL</Option>
+											<Option Value="Yqx">Gander, Newfoundland</Option>
+											<Option Value="O16">Garberville, CA</Option>
+											<Option Value="Gcc">Gillette, WY</Option>
+											<Option Value="yhk">Gjoa Haven, Nunavut</Option>
+											<Option Value="Yyr">Goose Bay, Labrador</Option>
+											<Option Value="Gfk">Grand Forks, ND</Option>
+											<Option Value="Gjt">Grand Junction, CO</Option>
+											<Option Value="Grr">Grand Rapids, MI</Option>
+											<Option Value="Gtf">Great Falls, MT</Option>
+											<Option Value="Grb">Green Bay, WI</Option>
+											<Option Value="Gso">Greensboro, NC</Option>
+											<Option Value="Gsp">Greenville/Spartanburg, SC</Option>
+											<Option Value="Gpt">Gulfport, MS</Option>
+											<Option Value="Yhz">Halifax</Option>
+											<Option Value="Yhm">Hamilton, Ontario</Option>
+											<Option Value="Hrl">Harlingen</Option>
+											<Option Value="Mdt">Harrisburg, PA</Option>
+											<Option Value="Bdl">Hartford, CT</Option>
+											<Option Value="Hdn">Hayden, CO</Option>
+											<Option Value="Hln">Helena, MT</Option>
+											<Option Value="Ito">Hilo, HI</Option>
+											<Option Value="Hhh">Hilton Head, SC</Option>
+											<Option Value="Hom">Homer, AK</Option>
+											<Option Value="Hnl">Honolulu, HI</Option>
+											<Option Value="Hou">Houston Hobby, TX</Option>
+											<Option Value="Iah">Houston Intl, TX</Option>
+											<Option Value="Hts">Huntington, WV</Option>
+											<Option Value="Hsv">Huntsville Intl, AL</Option>
+											<Option Value="Ida">Idaho Falls, ID</Option>
+											<Option Value="Ind">Indianapolis, IN</Option>
+											<Option Value="Yfb">Iqaluit, Nunavut</Option>
+											<Option Value="Isp">Islip, NY</Option>
+											<Option Value="Ith">Ithaca, NY</Option>
+											<Option Value="Jac">Jackson Hole, WY</Option>
+											<Option Value="Jan">Jackson Int'l, MS</Option>
+											<Option Value="Jax">Jacksonville, FL</Option>
+											<Option Value="Jnu">Juneau, AK</Option>
+											<Option Value="Ogg">Kahului, HI</Option>
+											<Option Value="Fca">Kalispel, MT</Option>
+											<Option Value="Yka">Kamloops, BC</Option>
+											<Option Value="Mci">Kansas City, MO</Option>
+											<Option Value="Jhm">Kapalua, HI</Option>
+											<Option Value="Lih">Kauai, HI</Option>
+											<Option Value="Ylw">Kelowna</Option>
+											<Option Value="Ena">Kenai, AK</Option>
+											<Option Value="Ktn">Ketchikan</Option>
+											<Option Value="Eyw">Key West, FL</Option>
+											<Option Value="Akn">King Salmon, AK</Option>
+											<Option Value="Tys">Knoxville, TN</Option>
+											<Option Value="Adq">Kodiak, AK</Option>
+											<Option Value="Koa">Kona, HI</Option>
+											<Option Value="Otz">Kotzebue, AK</Option>
+											<Option Value="ybb">Kugaarjuk, Nunavut</Option>
+											<Option Value="yco">Kuluktuq, Nunavut</Option>
+											<Option Value="Lny">Lanai, HI</Option>
+											<Option Value="Lan">Lansing, MI</Option>
+											<Option Value="Las">Las Vegas, NV</Option>
+											<Option Value="Lex">Lexington, KY</Option>
+											<Option Value="Lnk">Lincoln, NE</Option>
+											<Option Value="Lit">Little Rock, AR</Option>
+											<Option Value="LGB">Long Beach, CA</Option>
+											<Option Value="Lax">Los Angeles, CA</Option>
+											<Option Value="Sdf">Louisville, KY</Option>
+											<Option Value="Lbb">Lubbock, TX</Option>
+											<Option Value="Lyh">Lynchburg, VA</Option>
+											<Option Value="Msn">Madison, WI</Option>
+											<Option Value="Mht">Manchester, NH</Option>
+											<Option Value="Ogg">Maui, HI</Option>
+											<Option Value="Mfe">McAllen, TX</Option>
+											<Option Value="Mcg">Mcgrath, AK</Option>
+											<Option Value="Mfr">Medford, OR</Option>
+											<Option Value="Mlb">Melbourne, FL</Option>
+											<Option Value="Mem">Memphis, TN</Option>
+											<Option Value="Mce">Merced, CA</Option>
+											<Option Value="Mia">Miami, FL</Option>
+											<Option Value="Maf">Midland/Odessa, TX</Option>
+											<Option Value="Mke">Milwaukee, WI</Option>
+											<Option Value="Msp">Minneapolis/St. Paul, MN</Option>
+											<Option Value="Mot">Minot, ND</Option>
+											<Option Value="Mso">Missoula, MT</Option>
+											<Option Value="Mob">Mobile Regional, AL</Option>
+											<Option Value="Mli">Moline Quad-City, IL</Option>
+											<Option Value="Mkk">Molokai, HI</Option>
+											<Option Value="Yqm">Moncton, New Brunswick</Option>
+											<Option Value="Mry">Monterey, CA</Option>
+											<Option Value="Mgm">Montgomery, AL</Option>
+											<Option Value="Yul">Montreal, Trudeau</Option>
+											<Option Value="Ymx">Montreal, Mirabel</Option>
+											<Option Value="Mtj">Montrose, CO</Option>
+											<Option Value="Cwa">Mosinee, WI</Option>
+											<Option Value="Myr">Myrtle Beach, SC</Option>
+											<Option Value="Apf">Naples, FL</Option>
+											<Option Value="Bna">Nashville, TN</Option>
+											<Option Value="Baz">New Braunfels, TX</Option>
+											<Option Value="Msy">New Orleans, LA</Option>
+											<Option Value="Jfk">New York (Kennedy), NY</Option>
+											<Option Value="Lga">New York (Laguardia), NY</Option>
+											<Option Value="Ewr">Newark, NJ</Option>
+											<Option Value="Swf">Newburgh, NY</Option>
+											<Option Value="Phf">Newport News, VA</Option>
+											<Option Value="Ome">Nome, AK</Option>
+											<Option Value="Orf">Norfolk, VA</Option>
+											<Option Value="Xna">Northwest Arkansas, AR</Option>
+											<Option Value="Oak">Oakland, CA</Option>
+											<Option Value="Okc">Oklahoma City, OK</Option>
+											<Option Value="Oma">Omaha, NE</Option>
+											<Option Value="Ont">Ontario, CA</Option>
+											<Option Value="Sna">Orange County, CA</Option>
+											<Option Value="Mco">Orlando, FL</Option>
+											<Option Value="Sfb">Orlando Sanford, FL</Option>
+											<Option Value="Yow">Ottawa</Option>
+											<Option Value="Psp">Palm Springs, CA</Option>
+											<Option Value="Pfn">Panama City, FL</Option>
+											<Option Value="Psc">Pasco, WA</Option>
+											<Option Value="Pns">Pensacola, FL</Option>
+											<Option Value="Yyf">Penticton, BC</Option>
+											<Option Value="Pia">Peoria, IL</Option>
+											<Option Value="Phl">Philadelphia, PA</Option>
+											<Option Value="Phx">Phoenix, AZ</Option>
+											<Option Value="Pbg">Plattsburgh, NY</Option>
+											<Option Value="Pit">Pittsburgh, PA</Option>
+											<Option Value="Clm">Port Angeles, WA</Option>
+											<Option Value="Pwm">Portland, ME</Option>
+											<Option Value="Pdx">Portland Intl, OR</Option>
+											<Option Value="Prc">Prescott, AZ</Option>
+											<Option Value="Pvd">Providence, RI</Option>
+											<Option Value="Yqb">Quebec</Option>
+											<Option Value="Rdu">Raleigh/Durham, NC</Option>
+											<Option Value="Rap">Rapid City, SD</Option>
+											<Option Value="Rdd">Redding, CA</Option>
+											<Option Value="Rdm">Redmond, OR</Option>
+											<Option Value="Yqr">Regina</Option>
+											<Option Value="Rno">Reno, NV</Option>
+											<Option Value="Ric">Richmond, VA</Option>
+											<Option Value="Roa">Roanoke, VA</Option>
+											<Option Value="Roc">Rochester, NY</Option>
+											<Option Value="Rfd">Rockford, IL</Option>
+											<Option Value="Smf">Sacramento, CA</Option>
+											<Option Value="Mbs">Saginaw, MI</Option>
+											<Option Value="Ysj">Saint John, New Brunswick</Option>
+											<Option Value="Sle">Salem, OR</Option>
+											<Option Value="Slc">Salt Lake City, UT</Option>
+											<Option Value="Sat">San Antonio, TX</Option>
+											<Option Value="San">San Diego, CA</Option>
+											<Option Value="Sfo">San Francisco, CA</Option>
+											<Option Value="Sjc">San Jose, CA</Option>
+											<Option Value="Sju">San Juan, Puerto Rico</Option>
+											<Option Value="Sba">Santa Barbara, CA</Option>
+											<Option Value="Sts">Santa Rosa, CA</Option>
+											<Option Value="Srq">Sarasota/Bradenton, FL</Option>
+											<Option Value="Yxe">Saskatoon</Option>
+											<Option Value="Yam">Sault Ste. Marie, Ontario</option>
+											<Option Value="Sav">Savannah, GA</Option>
+											<Option Value="Sea">Seattle/Tacoma, WA</Option>
+											<Option Value="Shv">Shreveport, LA</Option>
+											<Option Value="Sux">Sioux City, IA</Option>
+											<Option Value="Fsd">Sioux Falls, SD</Option>
+											<Option Value="Sit">Sitka, AK</Option>
+											<Option Value="Sbn">South Bend, IN</Option>
+											<Option Value="Geg">Spokane, WA</Option>
+											<Option Value="Spi">Springfield, IL</Option>
+											<Option Value="Sgf">Springfield, MO</Option>
+											<Option Value="Stx">St. Croix, U.S.V.I</Option>
+											<Option Value="Yyt">St. John's, Newfoundland</Option>
+											<Option Value="Stl">St. Louis, MO</Option>
+											<Option Value="Sxm">St. Maarten, Caribbean</Option>
+											<Option Value="Pie">St. Petersburg, FL</Option>
+											<Option Value="Stt">St. Thomas, U.S.V.I</Option>
+											<Option Value="Yjt">Stephenville, Newfoundland</Option>
+											<Option Value="Syr">Syracuse, NY</Option>
+											<Option Value="Tlh">Tallahassee, FL</Option>
+											<Option Value="Yyh">Taloyoak, Nunavut</Option>
+											<Option Value="Tpa">Tampa, FL</Option>
+											<Option Value="Tex">Telluride, CO</Option>
+											<Option Value="Yqt">Thunder Bay, Ontario</Option>
+											<Option Value="Tol">Toledo Express, OH</Option>
+											<Option Value="Ykz">Toronto (Buttonville)</Option>
+											<Option Value="Ytz">Toronto (City Center AP)</Option>
+											<Option Value="Yyz">Toronto (Pearson)</Option>
+											<Option Value="Tvc">Traverse City, MI</Option>
+											<Option Value="Tri">Tri-City</Option>
+											<Option Value="Tus">Tucson, AZ</Option>
+											<Option Value="Tul">Tulsa, OK</Option>
+											<Option Value="Uta">Tunica, MS</Option>
+											<Option Value="Ege">Vail/Eagle, CO</Option>
+											<Option Value="Vdz">Valdez, AK</Option>
+											<Option Value="Yvr">Vancouver</Option>
+											<Option Value="Yyj">Victoria BC</Option>
+											<Option Value="Alw">Walla Walla, WA</Option>
+											<Option Value="Arg">Walnut Ridge, AR</Option>
+											<Option Value="Dca">Washington Natl, DC</Option>
+											<Option Value="Iad">Washington/Dulles, DC</Option>
+											<Option Value="Eat">Wenatchee, WA</Option>
+											<Option Value="Pbi">West Palm Beach, FL</Option>
+											<Option Value="HLG">Wheeling, OH</Option>
+											<Option Value="Hpn">White Plains, NY</Option>
+											<Option Value="Yxy">Whitehorse, YT</Option>
+											<Option Value="Ict">Wichita, KS</Option>
+											<Option Value="Avp">Wilkes-Barre/Scranton, PA</Option>
+											<Option Value="IPT">Williamsport, PA</Option>
+											<Option Value="Ywg">Winnipeg, MAN</Option>
+											<Option Value="Ykm">Yakima, WA</Option>
+											<Option Value="Yzf">Yellowknife, NWT</Option>
+										</select></font><br>
+										<img HEIGHT="3" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="180" BORDER="0"><br>
+										<font FACE="arial, helvetica, sans serif" SIZE="1">Departure Airport: (Optional)<br>
+										<select SIZE="1" NAME="departure_airport" FACE="arial, helvetica, sans serif">
+											<option VALUE="" SELECTED>Select Departure Airport</option>
+											<Option Value="Yxx">Abbotsford, BC</Option>
+											<Option Value="Abi">Abilene, TX</Option>
+											<Option Value="Cak">Akron/Canton, OH</Option>
+											<Option Value="Alb">Albany, NY</Option>
+											<Option Value="Abq">Albuquerque, NM</Option>
+											<Option Value="Aex">Alexandria, LA</Option>
+											<Option Value="Abe">Allentown, PA</Option>
+											<Option Value="Ama">Amarillo, TX</Option>
+											<Option Value="Anc">Anchorage, AK</Option>
+											<Option Value="Aqp">Appleton, MN</Option>
+											<Option Value="Atw">Appleton, WI</Option>
+											<Option Value="Acv">Arcata, CA</Option>
+											<Option Value="Avl">Asheville, NC</Option>
+											<Option Value="Ase">Aspen, CO</Option>
+											<Option Value="Atl">Atlanta, GA</Option>
+											<Option Value="Acy">Atlantic City, NJ</Option>
+											<Option Value="Aus">Austin, TX</Option>
+											<Option Value="Bwi">Baltimore, MD</Option>
+											<Option Value="Bgr">Bangor, ME</Option>
+											<Option Value="Brw">Barrow, AK</Option>
+											<Option Value="Bpt">Beaumont, TX</Option>
+											<Option Value="Bet">Bethel, AK</Option>
+											<Option Value="Bil">Billings, MT</Option>
+											<Option Value="Bgm">Binghamton, NY</Option>
+											<Option Value="Bhm">Birmingham, AL</Option>
+											<Option Value="Bis">Bismarck, ND</Option>
+											<Option Value="Bmi">Bloomington, IL</Option>
+											<Option Value="Boi">Boise, ID</Option>
+											<Option Value="Bos">Boston, MA</Option>
+											<Option Value="Bzn">Bozeman, MT</Option>
+											<Option Value="Bro">Brownsville, TX</Option>
+											<Option Value="Bqk">Brunswick, GA</Option>
+											<Option Value="Buf">Buffalo, NY</Option>
+											<Option Value="Ifp">Bullhead City, AZ</Option>
+											<Option Value="Bur">Burbank, CA</Option>
+											<Option Value="Btv">Burlington, VT</Option>
+											<Option Value="yyc">Calgary</Option>
+											<Option Value="ycb">Cambrige Bay, Nunavut</Option>
+											<Option Value="Cid">Cedar Rapids, IA</Option>
+											<Option Value="Cmi">Champaign/Urbana, IL</Option>
+											<Option Value="Chs">Charleston, SC</Option>
+											<Option Value="Crw">Charleston, WV</Option>
+											<Option Value="Clt">Charlotte, NC</Option>
+											<Option Value="Cho">Charlottesville, VA</Option>
+											<Option Value="Cha">Chattanooga, TN</Option>
+											<Option Value="Mdw">Chicago (Midway), IL</Option>
+											<Option Value="Ord">Chicago (O'Hare), IL</Option>
+											<Option Value="Cvg">Cincinnati, OH</Option>
+											<Option Value="Cle">Cleveland, OH</Option>
+											<Option Value="Cdb">Cold Bay, AK</Option>
+											<Option Value="Cll">College Station, TX</Option>
+											<Option Value="Cos">Colorado Springs, CO</Option>
+											<Option Value="Cou">Columbia, MO</Option>
+											<Option Value="Cae">Columbia, SC</Option>
+											<Option Value="Cmh">Columbus, OH</Option>
+											<Option Value="Cdv">Cordova, AK</Option>
+											<Option Value="Crp">Corpus Christi, TX</Option>
+											<Option Value="Dfw">Dallas/Fort Worth, TX</Option>
+											<Option Value="Dal">Dallas (Love Field), TX</Option>
+											<Option Value="Day">Dayton, OH</Option>
+											<Option Value="Dab">Daytona Beach, FL</Option>
+											<Option Value="Scc">Deadhorse, AK</Option>
+											<Option Value="Den">Denver, CO</Option>
+											<Option Value="Dsm">Des Moines, IA</Option>
+											<Option Value="Dtw">Detroit, MI</Option>
+											<Option Value="Dlg">Dillingham, AK</Option>
+											<Option Value="Dlh">Duluth, MN</Option>
+											<Option Value="Dro">Durango, CO</Option>
+											<Option Value="Cid">Eastern Iowa, IA</Option>
+											<Option Value="yeg">Edmonton</Option>
+											<Option Value="Elp">El Paso, TX</Option>
+											<Option Value="Edf">Elmendorf AFB, AK</Option>
+											<Option Value="ERI">Erie, PA</Option>
+											<Option Value="Eug">Eugene, OR</Option>
+											<Option Value="Eka">Eureka, CA</Option>
+											<Option Value="Fai">Fairbanks, AK</Option>
+											<Option Value="Far">Fargo, ND</Option>
+											<Option Value="Fnt">Flint, MI</Option>
+											<Option Value="Flo">Florence, SC</Option>
+											<Option Value="Grk">Fort Hood (Killeen), TX</Option>
+											<Option Value="Fot">Fortuna, CA</Option>
+											<Option Value="Yfc">Fredericton, New Brunswick</Option>
+											<Option Value="Fat">Fresno, CA</Option>
+											<Option Value="Fll">Ft. Lauderdale, FL</Option>
+											<Option Value="Rsw">Ft. Myers, FL</Option>
+											<Option Value="Vps">Ft. Walton/Okaloosa, FL</Option>
+											<Option Value="Fwa">Ft. Wayne, IN</Option>
+											<Option Value="Gnv">Gainesville, FL</Option>
+											<Option Value="Yqx">Gander, Newfoundland</Option>
+											<Option Value="O16">Garberville, CA</Option>
+											<Option Value="Gcc">Gillette, WY</Option>
+											<Option Value="yhk">Gjoa Haven, Nunavut</Option>
+											<Option Value="Yyr">Goose Bay, Labrador</Option>
+											<Option Value="Gfk">Grand Forks, ND</Option>
+											<Option Value="Gjt">Grand Junction, CO</Option>
+											<Option Value="Grr">Grand Rapids, MI</Option>
+											<Option Value="Gtf">Great Falls, MT</Option>
+											<Option Value="Grb">Green Bay, WI</Option>
+											<Option Value="Gso">Greensboro, NC</Option>
+											<Option Value="Gsp">Greenville/Spartanburg, SC</Option>
+											<Option Value="Gpt">Gulfport, MS</Option>
+											<Option Value="Yhz">Halifax</Option>
+											<Option Value="Yhm">Hamilton, Ontario</Option>
+											<Option Value="Hrl">Harlingen</Option>
+											<Option Value="Mdt">Harrisburg, PA</Option>
+											<Option Value="Bdl">Hartford, CT</Option>
+											<Option Value="Hdn">Hayden, CO</Option>
+											<Option Value="Hln">Helena, MT</Option>
+											<Option Value="Ito">Hilo, HI</Option>
+											<Option Value="Hhh">Hilton Head, SC</Option>
+											<Option Value="Hom">Homer, AK</Option>
+											<Option Value="Hnl">Honolulu, HI</Option>
+											<Option Value="Hou">Houston Hobby, TX</Option>
+											<Option Value="Iah">Houston Intl, TX</Option>
+											<Option Value="Hts">Huntington, WV</Option>
+											<Option Value="Hsv">Huntsville Intl, AL</Option>
+											<Option Value="Ida">Idaho Falls, ID</Option>
+											<Option Value="Ind">Indianapolis, IN</Option>
+											<Option Value="Yfb">Iqaluit, Nunavut</Option>
+											<Option Value="Isp">Islip, NY</Option>
+											<Option Value="Ith">Ithaca, NY</Option>
+											<Option Value="Jac">Jackson Hole, WY</Option>
+											<Option Value="Jan">Jackson Int'l, MS</Option>
+											<Option Value="Jax">Jacksonville, FL</Option>
+											<Option Value="Jnu">Juneau, AK</Option>
+											<Option Value="Ogg">Kahului, HI</Option>
+											<Option Value="Fca">Kalispel, MT</Option>
+											<Option Value="Yka">Kamloops, BC</Option>
+											<Option Value="Mci">Kansas City, MO</Option>
+											<Option Value="Jhm">Kapalua, HI</Option>
+											<Option Value="Lih">Kauai, HI</Option>
+											<Option Value="Ylw">Kelowna</Option>
+											<Option Value="Ena">Kenai, AK</Option>
+											<Option Value="Ktn">Ketchikan</Option>
+											<Option Value="Eyw">Key West, FL</Option>
+											<Option Value="Akn">King Salmon, AK</Option>
+											<Option Value="Tys">Knoxville, TN</Option>
+											<Option Value="Adq">Kodiak, AK</Option>
+											<Option Value="Koa">Kona, HI</Option>
+											<Option Value="Otz">Kotzebue, AK</Option>
+											<Option Value="ybb">Kugaarjuk, Nunavut</Option>
+											<Option Value="yco">Kuluktuq, Nunavut</Option>
+											<Option Value="Lny">Lanai, HI</Option>
+											<Option Value="Lan">Lansing, MI</Option>
+											<Option Value="Las">Las Vegas, NV</Option>
+											<Option Value="Lex">Lexington, KY</Option>
+											<Option Value="Lnk">Lincoln, NE</Option>
+											<Option Value="Lit">Little Rock, AR</Option>
+											<Option Value="LGB">Long Beach, CA</Option>
+											<Option Value="Lax">Los Angeles, CA</Option>
+											<Option Value="Sdf">Louisville, KY</Option>
+											<Option Value="Lbb">Lubbock, TX</Option>
+											<Option Value="Lyh">Lynchburg, VA</Option>
+											<Option Value="Msn">Madison, WI</Option>
+											<Option Value="Mht">Manchester, NH</Option>
+											<Option Value="Ogg">Maui, HI</Option>
+											<Option Value="Mfe">McAllen, TX</Option>
+											<Option Value="Mcg">Mcgrath, AK</Option>
+											<Option Value="Mfr">Medford, OR</Option>
+											<Option Value="Mlb">Melbourne, FL</Option>
+											<Option Value="Mem">Memphis, TN</Option>
+											<Option Value="Mce">Merced, CA</Option>
+											<Option Value="Mia">Miami, FL</Option>
+											<Option Value="Maf">Midland/Odessa, TX</Option>
+											<Option Value="Mke">Milwaukee, WI</Option>
+											<Option Value="Msp">Minneapolis/St. Paul, MN</Option>
+											<Option Value="Mot">Minot, ND</Option>
+											<Option Value="Mso">Missoula, MT</Option>
+											<Option Value="Mob">Mobile Regional, AL</Option>
+											<Option Value="Mli">Moline Quad-City, IL</Option>
+											<Option Value="Mkk">Molokai, HI</Option>
+											<Option Value="Yqm">Moncton, New Brunswick</Option>
+											<Option Value="Mry">Monterey, CA</Option>
+											<Option Value="Mgm">Montgomery, AL</Option>
+											<Option Value="Yul">Montreal, Trudeau</Option>
+											<Option Value="Ymx">Montreal, Mirabel</Option>
+											<Option Value="Mtj">Montrose, CO</Option>
+											<Option Value="Cwa">Mosinee, WI</Option>
+											<Option Value="Myr">Myrtle Beach, SC</Option>
+											<Option Value="Apf">Naples, FL</Option>
+											<Option Value="Bna">Nashville, TN</Option>
+											<Option Value="Baz">New Braunfels, TX</Option>
+											<Option Value="Msy">New Orleans, LA</Option>
+											<Option Value="Jfk">New York (Kennedy), NY</Option>
+											<Option Value="Lga">New York (Laguardia), NY</Option>
+											<Option Value="Ewr">Newark, NJ</Option>
+											<Option Value="Swf">Newburgh, NY</Option>
+											<Option Value="Phf">Newport News, VA</Option>
+											<Option Value="Ome">Nome, AK</Option>
+											<Option Value="Orf">Norfolk, VA</Option>
+											<Option Value="Xna">Northwest Arkansas, AR</Option>
+											<Option Value="Oak">Oakland, CA</Option>
+											<Option Value="Okc">Oklahoma City, OK</Option>
+											<Option Value="Oma">Omaha, NE</Option>
+											<Option Value="Ont">Ontario, CA</Option>
+											<Option Value="Sna">Orange County, CA</Option>
+											<Option Value="Mco">Orlando, FL</Option>
+											<Option Value="Sfb">Orlando Sanford, FL</Option>
+											<Option Value="Yow">Ottawa</Option>
+											<Option Value="Psp">Palm Springs, CA</Option>
+											<Option Value="Pfn">Panama City, FL</Option>
+											<Option Value="Psc">Pasco, WA</Option>
+											<Option Value="Pns">Pensacola, FL</Option>
+											<Option Value="Yyf">Penticton, BC</Option>
+											<Option Value="Pia">Peoria, IL</Option>
+											<Option Value="Phl">Philadelphia, PA</Option>
+											<Option Value="Phx">Phoenix, AZ</Option>
+											<Option Value="Pbg">Plattsburgh, NY</Option>
+											<Option Value="Pit">Pittsburgh, PA</Option>
+											<Option Value="Clm">Port Angeles, WA</Option>
+											<Option Value="Pwm">Portland, ME</Option>
+											<Option Value="Pdx">Portland Intl, OR</Option>
+											<Option Value="Prc">Prescott, AZ</Option>
+											<Option Value="Pvd">Providence, RI</Option>
+											<Option Value="Yqb">Quebec</Option>
+											<Option Value="Rdu">Raleigh/Durham, NC</Option>
+											<Option Value="Rap">Rapid City, SD</Option>
+											<Option Value="Rdd">Redding, CA</Option>
+											<Option Value="Rdm">Redmond, OR</Option>
+											<Option Value="Yqr">Regina</Option>
+											<Option Value="Rno">Reno, NV</Option>
+											<Option Value="Ric">Richmond, VA</Option>
+											<Option Value="Roa">Roanoke, VA</Option>
+											<Option Value="Roc">Rochester, NY</Option>
+											<Option Value="Rfd">Rockford, IL</Option>
+											<Option Value="Smf">Sacramento, CA</Option>
+											<Option Value="Mbs">Saginaw, MI</Option>
+											<Option Value="Ysj">Saint John, New Brunswick</Option>
+											<Option Value="Sle">Salem, OR</Option>
+											<Option Value="Slc">Salt Lake City, UT</Option>
+											<Option Value="Sat">San Antonio, TX</Option>
+											<Option Value="San">San Diego, CA</Option>
+											<Option Value="Sfo">San Francisco, CA</Option>
+											<Option Value="Sjc">San Jose, CA</Option>
+											<Option Value="Sju">San Juan, Puerto Rico</Option>
+											<Option Value="Sba">Santa Barbara, CA</Option>
+											<Option Value="Sts">Santa Rosa, CA</Option>
+											<Option Value="Srq">Sarasota/Bradenton, FL</Option>
+											<Option Value="Yxe">Saskatoon</Option>
+											<Option Value="Yam">Sault Ste. Marie, Ontario</option>
+											<Option Value="Sav">Savannah, GA</Option>
+											<Option Value="Sea">Seattle/Tacoma, WA</Option>
+											<Option Value="Shv">Shreveport, LA</Option>
+											<Option Value="Sux">Sioux City, IA</Option>
+											<Option Value="Fsd">Sioux Falls, SD</Option>
+											<Option Value="Sit">Sitka, AK</Option>
+											<Option Value="Sbn">South Bend, IN</Option>
+											<Option Value="Geg">Spokane, WA</Option>
+											<Option Value="Spi">Springfield, IL</Option>
+											<Option Value="Sgf">Springfield, MO</Option>
+											<Option Value="Stx">St. Croix, U.S.V.I</Option>
+											<Option Value="Yyt">St. John's, Newfoundland</Option>
+											<Option Value="Stl">St. Louis, MO</Option>
+											<Option Value="Sxm">St. Maarten, Caribbean</Option>
+											<Option Value="Pie">St. Petersburg, FL</Option>
+											<Option Value="Stt">St. Thomas, U.S.V.I</Option>
+											<Option Value="Yjt">Stephenville, Newfoundland</Option>
+											<Option Value="Syr">Syracuse, NY</Option>
+											<Option Value="Tlh">Tallahassee, FL</Option>
+											<Option Value="Yyh">Taloyoak, Nunavut</Option>
+											<Option Value="Tpa">Tampa, FL</Option>
+											<Option Value="Tex">Telluride, CO</Option>
+											<Option Value="Yqt">Thunder Bay, Ontario</Option>
+											<Option Value="Tol">Toledo Express, OH</Option>
+											<Option Value="Ykz">Toronto (Buttonville)</Option>
+											<Option Value="Ytz">Toronto (City Center AP)</Option>
+											<Option Value="Yyz">Toronto (Pearson)</Option>
+											<Option Value="Tvc">Traverse City, MI</Option>
+											<Option Value="Tri">Tri-City</Option>
+											<Option Value="Tus">Tucson, AZ</Option>
+											<Option Value="Tul">Tulsa, OK</Option>
+											<Option Value="Uta">Tunica, MS</Option>
+											<Option Value="Ege">Vail/Eagle, CO</Option>
+											<Option Value="Vdz">Valdez, AK</Option>
+											<Option Value="Yvr">Vancouver</Option>
+											<Option Value="Yyj">Victoria BC</Option>
+											<Option Value="Alw">Walla Walla, WA</Option>
+											<Option Value="Arg">Walnut Ridge, AR</Option>
+											<Option Value="Dca">Washington Natl, DC</Option>
+											<Option Value="Iad">Washington/Dulles, DC</Option>
+											<Option Value="Eat">Wenatchee, WA</Option>
+											<Option Value="Pbi">West Palm Beach, FL</Option>
+											<Option Value="HLG">Wheeling, OH</Option>
+											<Option Value="Hpn">White Plains, NY</Option>
+											<Option Value="Yxy">Whitehorse, YT</Option>
+											<Option Value="Ict">Wichita, KS</Option>
+											<Option Value="Avp">Wilkes-Barre/Scranton, PA</Option>
+											<Option Value="IPT">Williamsport, PA</Option>
+											<Option Value="Ywg">Winnipeg, MAN</Option>
+											<Option Value="Ykm">Yakima, WA</Option>
+											<Option Value="Yzf">Yellowknife, NWT</Option>
+						</select></font><img HEIGHT="10" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="10"><font FACE="arial, helvetica, sans serif" SIZE="1"><input TYPE="hidden" VALUE="select_route" NAME="action"><input TYPE="image" ALT="go" SRC="http://custom.flytecomm.com/fcoem/trackflight/images/button_go.gif" BORDER="0" NAME="select_route" WIDTH="17" HEIGHT="17"></font></td>
+								</tr>
+									</FORM>
+								<tr>
+									<td VALIGN="top" ALIGN="left" WIDTH="389" BGCOLOR="#DDE2EC" COLSPAN="3" HEIGHT="6">
+										<hr ALIGN="left" WIDTH="380">
+									</td>
+								</tr>
+									<form ID="advanced_select" NAME="advanced_select" ACTION="/cgi-bin/trackflight" METHOD="POST">
+									<input TYPE="hidden" VALUE="" NAME="oemuser">
+								<tr>
+									<td VALIGN="top" ALIGN="left" WIDTH="115" BGCOLOR="#DDE2EC"><b><font FACE="arial, helvetica, sans-serif" SIZE="2">Advanced
+										Users:</font></b><br>
+										<font FACE="arial, helvetica, sans-serif" SIZE="1">Enter Flight ID (eg <em>AAL1014</em>)
+										or Arrival and Departure (optional) Airports</font></td>
+									<td VALIGN="top" ALIGN="right" WIDTH="185" BGCOLOR="#DDE2EC"><font FACE="arial, helvetica, sans serif" SIZE="1">Flight
+										Identifier: <input SIZE="8" NAME="flight_id" VALUE="TRS379"><br>
+										Arrival Airport: <input SIZE="4" NAME="arrival_airport" VALUE=""><br>
+										Departure Airport (optional): <input SIZE="4" NAME="departure_airport" VALUE=""><br>
+										</font></td>
+									<td VALIGN="middle" ALIGN="left" WIDTH="80" BGCOLOR="#DDE2EC"><img HEIGHT="10" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="10"><font FACE="arial, helvetica, sans serif" SIZE="1"><input TYPE="hidden" VALUE="select_advanced" NAME="action"><input TYPE="image" ALT="Go Get It" SRC="http://custom.flytecomm.com/fcoem/trackflight/images/button_go.gif" BORDER="0" NAME="select_advanced" WIDTH="17" HEIGHT="17"></font></td>
+								</tr>
+									</FORM>
+									<!-- <tr>
+										<td VALIGN="top" ALIGN="left" WIDTH="389" BGCOLOR="#dde2ec" COLSPAN="3" HEIGHT="1">&nbsp;</td>
+									</tr>
+									<tr>
+										<td VALIGN="top" ALIGN="left" WIDTH="389" BGCOLOR="#DDE2EC" COLSPAN="3"><img HEIGHT="6" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="389"></td>
+									</tr> -->
+								<tr>
+									<td VALIGN="top" ALIGN="left" BGCOLOR="#ffffff" COLSPAN="6" HEIGHT="7"><img ALT="Check Flight Arrivals" SRC="http://custom.flytecomm.com/fcoem/trackflight/images/flight_line_bhsh_01.gif" WIDTH="400" HEIGHT="7"></td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				<!--/Flight Selection Module-->
+
+
+                                        <!-- /Include flight selection module here -->
+                                </tr>
+                                <tr>
+                                        <!--Blank Module Divider-->
+                                        <td BGCOLOR="#ffffff" COLSPAN="3"><img HEIGHT="6" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="1"></td>
+                                        <!--/Blank Module Divider-->
+                                </tr>
+                                <!--Flight Details Module-->
+                                <tr>
+<td VALIGN="center" ALIGN="center" WIDTH="398" BGCOLOR="#336699" COLSPAN="3" HEIGHT="18"><FONT FACE="arial, helvetica, sans-serif" SIZE="2" COLOR="WHITE"><B>Flight Details</B></FONT></td>
+                                </tr>
+                                <tr>
+                                        <td WIDTH="1" BGCOLOR="silver"><img ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="1" HEIGHT="1"></td>
+                                        <td VALIGN="top" NOWRAP WIDTH="400" BGCOLOR="#ffffff">
+                                                                        <table CELLSPACING="0" CELLPADDING="0" WIDTH="400" BORDER="0">
+                                                                                <tbody>
+                                                                                        <tr>
+                                                                                                <td VALIGN="center" ALIGN="left"><font FACE="arial, helvetica, chicago, sans serif" SIZE="3"><b>Detailed
+                                                                                                        Flight Information:</b></font><br>
+                                                                                                        <font FACE="arial, helvetica, chicago, sans serif" SIZE="2"><b>Airtran Airways Flight 379 to Atlanta, GA<BR>(ATL-Hartsfield-Jackson International Airport)</b></font><br>
+<!--
+                                                                                                        <font FACE="arial, helvetica, chicago, sans serif" SIZE="1">n/a</font>
+-->
+                                                                                                </td>
+                                                                                                <td>
+                                                                                                        <!--mini weather module-->
+
+                                                                                                        <table>
+                                                                                                                <tbody>
+                                                                                                                        <tr>
+                                                                                                                                <td><img SRC="http://custom.flytecomm.com/images/weather/clbig.gif" width="55" height="55"></td>
+                                                                                                                                <td><font FACE="Geneva, Arial, Sans Serif" SIZE="1">51&deg; F<BR>Clear<br></font>
+                                                                                                                                </td>
+                                                                                                                        </tr>
+                                                                                                                </tbody>
+                                                                                                        </table>
+
+                                                                                                        <!--/mini weather module-->
+                                                                                                </td>
+                                                                                        </tr>
+                                                                                </tbody>
+                                                                        </table>
+                                                                        <table CELLSPACING="0" CELLPADDING="0" WIDTH="400" BORDER="0">
+                                                                                <tbody>
+                                                                                        <tr>
+                                                                                                <td>
+                                                                                                        <table CELLSPACING="0" CELLPADDING="0" WIDTH="400" BGCOLOR="#FFFFFF" BORDER="0">
+                                                                                                                <tbody>
+                                                                                                                        <tr>
+                                                                                                                                <td BGCOLOR="#004371" COLSPAN="2" HEIGHT="2"><img HEIGHT="2" SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="382"></td>
+                                                                                                                        </tr>
+                                                                                                                                <!-- beginning of generated details -->
+                                                                                                                                        <!-- Flight Details Template -->
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Airline</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">Airtran Airways</font></td>
+	</tr>
+	<tr BGCOLOR="#ffffff">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Flight Number</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">379</font></td>
+	</tr>
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Departure City (Airport)</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">Philadelphia, PA (PHL)</font></td>
+	</tr>
+	<tr BGCOLOR="#ffffff">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Departure Time</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">01/08/2009  06:04 PM</font></td>
+	</tr>
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Arrival City (Airport)</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">Atlanta, GA (ATL)</font></td>
+	</tr>
+	<tr BGCOLOR="#ffffff">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Arrival Time</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">01/08/2009  08:15 PM</font></td>
+	</tr>
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Remaining Flight Time</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">02:11 (scheduled)</font></td>
+	</tr>
+	<tr BGCOLOR="#ffffff">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Aircraft Type</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1"></font></td>
+	</tr>
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Current Altitude</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">0 feet</font></td>
+	</tr>
+	<tr BGCOLOR="#ffffff">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Current Groundspeed</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">0 mph</font></td>
+	</tr>
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Flight Status</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">Scheduled</font></td>
+	</tr>
+<!-- /Flight Details Template -->
+<tr><td BGCOLOR="#004371" COLSPAN="2" HEIGHT="2"><img HEIGHT="2" SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="382"></td></tr>
+<tr><td COLSPAN="2" HEIGHT="270" WIDTH="400"><img ALT="Airtran Airways flight 379" SRC="http://custom.flytecomm.com/flights/images/TRS379@.gif"></td></tr>
+<tr><td BGCOLOR="#004371" COLSPAN="2" HEIGHT="2"><img HEIGHT="2" SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="382"></td></tr>
+<!-- Flight Details Template -->
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Airline</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">Airtran Airways</font></td>
+	</tr>
+	<tr BGCOLOR="#ffffff">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Flight Number</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">379</font></td>
+	</tr>
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Departure City (Airport)</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">Philadelphia, PA (PHL)</font></td>
+	</tr>
+	<tr BGCOLOR="#ffffff">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Departure Time</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">01/07/2009  05:52 PM</font></td>
+	</tr>
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Arrival City (Airport)</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">Atlanta, GA (ATL)</font></td>
+	</tr>
+	<tr BGCOLOR="#ffffff">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Arrival Time</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">01/07/2009  07:51 PM</font></td>
+	</tr>
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Remaining Flight Time</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">01:51</font></td>
+	</tr>
+	<tr BGCOLOR="#ffffff">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Aircraft Type</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">Boeing 717-200</font></td>
+	</tr>
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Current Altitude</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">2,300 feet</font></td>
+	</tr>
+	<tr BGCOLOR="#ffffff">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Current Groundspeed</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">247 mph</font></td>
+	</tr>
+	<tr BGCOLOR="#dde2ec">
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="2"><b>Flight Status</b></font></td>
+		<td ALIGN="left" WIDTH="200"><font FACE="arial, helvetica, sans serif" SIZE="1">In Flight</font></td>
+	</tr>
+<!-- /Flight Details Template -->
+<tr><td BGCOLOR="#004371" COLSPAN="2" HEIGHT="2"><img HEIGHT="2" SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="382"></td></tr>
+
+                                                                                                                                <!-- end of generated details -->
+                                                                                                                        <tr>
+                                                                                                                                <td BGCOLOR="#004371" COLSPAN="2" HEIGHT="2"><img HEIGHT="2" SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="382"></td>
+                                                                                                                        </tr>
+                                                                                                                </tbody>
+                                                                                                        </table>
+                                                                                                </td>
+                                                                                        </tr>
+                                                                                </tbody>
+                                                                        </table>
+                                                                        <img HEIGHT="6" SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="1"><br>
+                                                                        <table CELLSPACING="0" CELLPADDING="0" WIDTH="400" BORDER="0">
+                                                                                <tbody>
+
+<p STYLE="margin-left: 2; margin-right: 2"><font color="#FF0000" face="Arial" size="2">WebTrax is predominantly a US & Canadian Flight Tracking application. Trans-Atlantic, Trans-Pacific, and Central/South American flights may contain errors in the data because of lack of transoceanic radar coverage once the flight leaves FAA tracking range. If necessary, check with the Airline.</font>
+</p>
+
+                                                                                        <tr>
+                                                                                                <td VALIGN="top" ALIGN="left"><font FACE="arial, helvetica, chicago, sans serif" SIZE="1">
+                                                                                                        Departure times are shown in departure airport local time.<BR>
+                                                                                                        Arrival times are shown in arrival airport local time.</font></td>
+
+                                                                                        </tr>
+                                                                                </tbody>
+                                                                        </table>
+                                        </td>
+                                        <td WIDTH="1"><img ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="1" HEIGHT="1"></td>
+                                </tr>
+                                <tr>
+                                        <td BGCOLOR="silver"><img ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="1" HEIGHT="1"></td>
+                                        <td BGCOLOR="silver"><img HEIGHT="1" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="400"></td>
+                                        <td><img ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="1" HEIGHT="1"></td>
+                                </tr>
+                                <!--/Flight Details Module-->
+                                <tr>
+                                        <!--Blank Module Divider-->
+                                        <td BGCOLOR="#ffffff" COLSPAN="3"><img HEIGHT="6" ALT SRC="http://custom.flytecomm.com/images/blank.gif" WIDTH="1"></td>
+                                        <!--/Blank Module Divider-->
+                                </tr>
+                        </tbody>
+                </table>
+<!-- /flytecomm content -->
+
+
+
+                                                </DIV>
+                                                <P>
+                                                <SPAN CLASS="body">
+                                                        <A HREF="trackflight#top"><FONT SIZE="2" FACE="Arial">Back to Top</FONT></A>
+                                                </SPAN>
+                                                </P>
+                                        </TD>
+                                </TR>
+                        </TABLE>
+                </TD>
+                <TD VALIGN="TOP" WIDTH="595">
+                </TD>
+        </TR>
+</TABLE>
+		<table border="0" cellpadding="0" cellspacing="0" width="652">
+			<tr>
+				<td align="center" width="212"></td>
+				<td align="center" width="440"><br>
+					<span class="copyright">Copyright 1996-2008, FlyteComm Corporation<br>
+						<a href="../privacy.html">Privacy Statement<br>
+							<br>
+						</a></span></td>
+			</tr>
+		</table>
+</BODY>
+</HTML>

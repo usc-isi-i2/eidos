@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+    
+        <script type="text/javascript" language="javascript" src="PhotoUploadFrame_data/SiteLifeProxy.htm"></script><link href="PhotoUploadFrame_data/SiteLifeCss.css" rel="stylesheet" type="text/css"><link href="PhotoUploadFrame_data/DefaultOveride.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="PhotoUploadFrame_data/SiteLifeScripts"></script>
+        <script language="javascript">
+            document.domain = "usatoday.com";
+            numUploads = 1;
+        </script>
+        <link href="PhotoUploadFrame_data/SiteLife.css" rel="stylesheet" type="text/css">
+                    <link href="PhotoUploadFrame_data/DefaultOveride.css" rel="stylesheet" type="text/css"></head><body>
+<div>
+    <div class="PhotoUpload_SectionHead">
+        Upload and submit your photos
+    </div>
+<form action="http://sitelife.usatoday.com/ver1.0/Photo/PhotoAddDetails.rails" enctype="multipart/form-data" onsubmit="numUploads=1; return true;" method="post" style="display: inline;">
+    <input name="plckGalleryID" value="ba82f85b-4566-468d-aba1-7f9007b3a33f" type="hidden">
+             <div class="PhotoUpload_Instructions">
+        Click "Browse" to find and select images on your computer.
+    </div>
+    <!--repeat block-->
+    <div class="PhotoUpload_FileBrowse" id="PhotoUploader">
+      <input class="PhotoUpload_FileBrowseInput" disabled="true" value="Get" name="image0" size="40" type="file">
+      <br><br>
+    </div>
+      <!--end repeat block-->
+      <div class="PhotoUpload_AddSubmit">
+        <input class="PhotoUpload_AddAnotherButton" disabled="true" id="AddAnother" value="Add another" onclick="return AddAnotherPhoto('PhotoUploader','AddAnother', 'PhotoUploadIFrame');" type="button">
+        <input class="PhotoUpload_AddSubmitButton" disabled="true" value="Upload" type="submit">
+      </div>
+    </form>
+  
+<script type="text/javascript" language="javascript">
+gSiteLife.AddLoadEvent(function(){autofitIframe('PhotoUploadIFrame', true);});
+</script>
+</div>
+</body></html>

@@ -1,0 +1,439 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="imagetoolbar" content="no"/>
+<title>Hotel price and availability comparison - TripAdvisor</title>
+<script type="text/javascript" src="http://cdn.tripadvisor.com/js2/accommodations/overview-v8b.js"></script>
+<script type="text/javascript" src="http://cdn.tripadvisor.com/js2/hacform-v7b.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="http://cdn.tripadvisor.com/css2/pages/slider-v1b.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="http://cdn.tripadvisor.com/css2/pages/lightning-v3b.css"/>
+<meta http-equiv="pragma" content="no-cache"/>
+<meta http-equiv="cache-control" content="no-cache,must-revalidate"/>
+<meta http-equiv="expires" content="0"/>
+<meta name="keywords" content="attraction, activity, things to do, advice, attractions, vacation, reviews, travel"/>
+<script type="text/javascript">
+var pageInit = new Date();
+var jsGlobalMonths = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+var jsGlobalMonthsAbbrev = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+var jsGlobalDaysAbbrev = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+var jsGlobalDaysShort = new Array("S","M","T","W","T","F","S");
+var sInvalidDates = "The dates you entered are invalid. Please correct your dates and search again.";
+var jsGlobalDayOffset = 0;
+var DATE_FORMAT = { pattern: /(\d{1,2})\/(\d{1,2})\/(\d{2,4})/, month: 1, date: 2, year: 3 };
+var formatDate = function(d, m, y) {return [++m,d,y].join("/");}
+var cal_month_header = function(month, year) {return cal_months[month]+"&nbsp;"+year;}
+var currencyLevel = new Array();
+var currencySymbol = new Array();
+var cur_prefix = false;
+var cur_postfix = true;
+currencyLevel["USD"] = new Array("Any Price", "0,9999999", "Under $100", "0,100", "Under $200", "0,200", "Under $300", "0,300");
+currencyLevel["EUR"] = new Array("Any Price", "0,9999999", "Under \u20AC75", "0,75", "Under \u20AC150", "0,150", "Under \u20AC225", "0,225");
+currencyLevel["GBP"] = new Array("Any Price", "0,9999999", "Under \u00A350", "0,50", "Under \u00A3100", "0,100", "Under \u00A3150", "0,150");
+currencyLevel["CAD"] = new Array("Any Price", "0,9999999", "Under CAD 100", "0,100", "Under CAD 200", "0,200", "Under CAD 300", "0,300");
+currencyLevel["AUD"] = new Array("Any Price", "0,9999999", "Under AUD 100", "0,100", "Under AUD 200", "0,200", "Under AUD 300", "0,300");
+currencyLevel["CHF"] = new Array("Any Price", "0,9999999", "Under CHF 100", "0,100", "Under CHF 200", "0,200", "Under CHF 300", "0,300");
+currencyLevel["JPY"] = new Array("Any Price", "0,9999999", "Under 10,000 Yen", "0,10000", "Under 20,000 Yen", "0,20000", "Under 30,000 Yen", "0,30000");
+currencyLevel["CNY"] = new Array("Any Price", "0,9999999", "Under 700 Yuan", "0,700", "Under 1,400 Yuan", "0,1400", "Under 2,000 Yuan", "0,2000");
+currencyLevel["TWD"] = new Array("Any Price", "0,9999999", "Under 3,000", "0,3000", "Under 7,000", "0,7000", "Under 10,000", "0,10000");
+currencyLevel["HKD"] = new Array("Any Price", "0,9999999", "Under $100", "0,100", "Under $200", "0,200", "Under $300", "0,300");
+currencyLevel["INR"] = new Array("Any Price", "0,9999999", "Under \u20A84,000", "0,4000", "Under \u20A88,000", "0,8000", "Under \u20A812,000", "0,12000");
+currencySymbol["USD"] = new Array(" $", cur_prefix);
+currencySymbol["EUR"] = new Array("\u20AC", cur_postfix);
+currencySymbol["GBP"] = new Array("\u00A3", cur_postfix);
+currencySymbol["CAD"] = new Array("CAD ", cur_prefix);
+currencySymbol["AUD"] = new Array("AUD ", cur_prefix);
+currencySymbol["CHF"] = new Array("CHF ", cur_prefix);
+currencySymbol["JPY"] = new Array(" Yen", cur_postfix);
+currencySymbol["CNY"] = new Array(" Yuan", cur_postfix);
+currencySymbol["TWD"] = new Array("", cur_postfix);
+currencySymbol["HKD"] = new Array("$", cur_prefix);
+currencySymbol["INR"] = new Array("\u20A8", cur_prefix);
+var JS_location_not_found = "Your location not found.";
+var JS_click_to_expand = "Click to Expand";
+var JS_choose_valid_city = "Please choose a valid city from the list.";
+var JS_select_a_cruise_line = "Please select a cruise line.";
+var JS_loading = "Loading ...";
+var JS_Ajax_failed="We're sorry, but there was a problem retrieving the content. Please check back in a few minutes.";
+var JS_Stop_search = "stop search";
+var JS_Resume_search = "Resume search";
+var JS_Thankyou = "Thank you";
+var JS_DateFormat = "mm/dd/yyyy";
+var JS_Any_Date = "Any Date";
+var JS_Update_List = "Update List";
+var sNexusTitleMissing = "The title must be populated";
+var JS_Challenge="Challenge";
+var JS_TIQ_Level="Level";
+var JS_TIQ="Travel IQ";
+var JS_TIQ_Pts="pts";
+var hideOnLoad = new Array();
+var cookieDomain = ".tripadvisor.com";
+var pageServlet = "HACSearch";
+var cdnHost = "http://cdn.tripadvisor.com";
+var arrowLeft     = "http://cdn.tripadvisor.com/img/saves/saveIconArrowLeft.gif";
+var arrow         = "http://cdn.tripadvisor.com/img/saves/saveIconArrow.gif";
+var example       = "http://cdn.tripadvisor.com/img/saves/saveButtonExample.gif";
+var save          = "http://cdn.tripadvisor.com/img/saves/folderSave.gif";
+var closedSub     = "http://cdn.tripadvisor.com/img/saves/closedForSubfolder.gif";
+var closedFolder  = "http://cdn.tripadvisor.com/img/saves/closedFolder.gif";
+var openFolder    = "http://cdn.tripadvisor.com/img/saves/openFolder.gif";
+var add           = "http://cdn.tripadvisor.com/img/saves/addFolder.gif";
+var userLoggedIn = false;
+var migrationMember = false;
+var savesEnable = true;
+var savesJS = 'http://cdn.tripadvisor.com/js2/saves-v5b.js';
+var flagsUrl = '/HACSearch-a_adults.1-a_checkIn.379-a_checkOut.1/30/2009-a_inDay.23-a_inMonth.01/2009-a_outDay.30-a_outMonth.01/2009-qFL';
+var lang_Close  = "Close";
+var img_loop    = "/img2/generic/site/loop.gif";
+var communityEnabled = true
+var footerFlagFormat = "";
+var modelLocId = "";
+var gKey = '';
+var mapsJs = 'http://cdn.tripadvisor.com/js2/ta_maps-v7b.js';
+;
+function DHTMLPopupRequest(action, responseFunction, errorFunction, formElement)
+{
+var sep = "?";
+if (popupConfig.servletUrl.contains(sep))
+{
+sep = "&";
+}
+var url = popupConfig.servletUrl+sep+"Action="+action+"&fromServlet=HACSearch";
+if (!responseFunction)
+{
+responseFunction = popupResponseSuccess;
+}
+if (!errorFunction)
+{
+errorFunction = popupResponeError;
+}
+new Ajax(url, {
+onComplete: responseFunction,
+onFailure: errorFunction,
+data: formElement,
+evalScripts: true
+}).request();
+}
+function showDHTMLPopupOnLoad()
+{
+if(!doCookieCheck())
+{
+return;
+}
+}
+function showDeparturePopup()
+{
+}
+function showPopup()
+{
+}
+</script>
+<script type="text/javascript">
+var freshVSTrackingCookie = true;         </script>
+<script type="text/javascript" src="http://cdn.tripadvisor.com/js2/tripadvisor-v188b.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="http://cdn.tripadvisor.com/css2/main-v87b.css"/>
+<link rel="stylesheet" type="text/css" media="print" href="http://cdn.tripadvisor.com/css2/required/print-v8b.css"/>
+<!--[if IE]>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdn.tripadvisor.com/css2/required/conditionals/winIE-v54b.css" />
+  <![endif]-->
+<!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdn.tripadvisor.com/css2/required/conditionals/winIE6-v56b.css" />
+  <![endif]-->
+<!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://cdn.tripadvisor.com/css2/required/conditionals/winIE7-v12b.css" />
+  <![endif]-->
+<style type="text/css">
+body{}
+</style>
+<!-- web29b.tripadvisor.com -->
+<!-- PRODUCTION -->
+<!-- PRODUCTION -->
+<script type="text/javascript" src="http://cdn.tripadvisor.com/js2/trsupp-v1b.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+function initSaves()
+{
+SV_DEFAULT_FOLDER_NAME = "My Trip";
+if (SV_DEFAULT_FOLDER_NAME.length > $('savesWidgetNewFolder').maxLength) {
+SV_DEFAULT_FOLDER_NAME = "My Trip";
+}
+SV_IS_POPUP = 0;
+}
+</script>
+<div id="BAD_VERSION">
+<div class="data">
+<div>
+<b>We noticed that you're using an unsupported browser. The TripAdvisor website may not display properly.</b><br/> We support the following browsers:
+<b>Windows:</b>
+<a rel="nofollow" target="_blank" href="http://www.microsoft.com/windows/ie/default.htm">Internet Explorer</a>,
+<a rel="nofollow" target="_blank" href="http://www.mozilla.com/firefox/">Mozilla Firefox</a>.
+<b>Mac:</b>
+<a rel="nofollow" target="_blank" href="http://www.apple.com/safari/">Safari</a>.
+</div>
+</div>
+</div><!-- / BAD_VERSION -->
+<div id="iframediv"></div>
+<div id="PAGE">
+<div id="HEAD">
+<div class="wrap">
+<div class="identity" style="height: 45px"><a href="/"><img src="http://cdn.tripadvisor.com/img2/branding/idHeadINT-V1.png" height="45" alt="TripAdvisor - Hotel Reviews"/></a></div><!--/ identity-->
+<h1 class="h14">Hotel price and availability comparison</h1>
+<div class="punchLine"><b> Over 20 million traveler reviews & opinions of hotels, vacations & more
+</b></div> </div><!--/ wrap-->
+<div class="prfs">
+<div class="opts">
+<ul>
+<li class="icn unregistered b">My TripAdvisor</li> <li class="icn login last"><a rel="nofollow" href="/MemberSignIn-e__2F__HACSearch__2D__a_adults__2E__1__2D__a_checkIn__2E__379__2D__a_checkOut__2E__1__2F__30__2F__2009__2D__a_inDay__2E__23__2D__a_inMonth__2E__01__2F__2009__2D__a_outDay__2E__30__2D__a_outMonth__2E__01__2F__2009__2D__qFL-wcmi" class="pid429">Sign in</a></li> </ul>
+</div><!--/ opts-->
+<div class="prompt">
+<ul>
+<li class="icn register flyout"><a rel="nofollow" href="/MemberSignIn-e__2F__HACSearch__2D__a_adults__2E__1__2D__a_checkIn__2E__379__2D__a_checkOut__2E__1__2F__30__2F__2009__2D__a_inDay__2E__23__2D__a_inMonth__2E__01__2F__2009__2D__a_outDay__2E__30__2D__a_outMonth__2E__01__2F__2009__2D__qFL-j1-wcmy" class="pid427">Register Now!</a>
+<div class="flyoutContents"><div class="flyoutContentsWide register">
+<ul>
+<li><b>When you register you can:</b>
+<ul class="dotBullets">
+<li>Share your stories</li>
+<li>Save your favorite places and plan your next trip</li>
+<li>Connect with other travelers</li>
+<li>Get the latest travel deals</li>
+</ul>
+</li>
+</ul>
+<div class="button">
+<div>
+<span><b><a rel="nofollow" href="/MemberSignUp-e__2F__HACSearch__2D__a_adults__2E__1__2D__a_checkIn__2E__379__2D__a_checkOut__2E__1__2F__30__2F__2009__2D__a_inDay__2E__23__2D__a_inMonth__2E__01__2F__2009__2D__a_outDay__2E__30__2D__a_outMonth__2E__01__2F__2009__2D__qFL-j1-wcmy" class="pid430">Register Now</a></b>
+</span>
+</div>
+</div><!--/ button-->
+<div class="reminder">Already a member? <a rel="nofollow" href="/MemberSignIn-e__2F__HACSearch__2D__a_adults__2E__1__2D__a_checkIn__2E__379__2D__a_checkOut__2E__1__2F__30__2F__2009__2D__a_inDay__2E__23__2D__a_inMonth__2E__01__2F__2009__2D__a_outDay__2E__30__2D__a_outMonth__2E__01__2F__2009__2D__qFL-wcmi" class="pid429">Sign in</a></div> </div></div><!--/ flyoutContents-->
+</li>
+</ul>
+</div><!--/ prompt-->
+</div><!--/ prfs-->
+<div class="navBar">
+<ul>
+<li class="icn first" id="INTLPOP"><span class="hvrIE6">International Sites</span></li> <li><a href="/" rel="nofollow">Home</a></li> <li class="icn" id="DESTINATIONSPOP"><span class="hvrIE6">Destinations</span></li>
+<li class="icn" id="FUNSTUFFPOP"><a href="/FunStuff" rel="nofollow">Fun &#x0026; Games</a></li> <li><a href="/MemberBenefits" rel="nofollow">Free Travel Guides</a></li>
+<li><a href="/Inspiration" rel="nofollow" class="pid1337">Vacation Ideas</a></li>
+</ul>
+</div><!--/ navBar-->
+</div><!--/ HEAD-->
+<div id="MAIN" class="HACSearch">
+<div id="LEFTNAV" class="col">
+<div class="navSrch" id="SEARCH_LHN">
+<form method="get" action="/Search">
+<fieldset>
+<legend>
+Search </legend>
+<input type="hidden" name="returnTo" value="__2F__HACSearch__2D__a_adults__2E__1__2D__a_checkIn__2E__379__2D__a_checkOut__2E__1__2F__30__2F__2009__2D__a_inDay__2E__23__2D__a_inMonth__2E__01__2F__2009__2D__a_outDay__2E__30__2D__a_outMonth__2E__01__2F__2009__2D__qFL"/>
+<input type="text" name="q" class="text"/>
+<input type="submit" name="sub-search" class="submit" value="Go" title="Go"/> <input type="hidden" name="geo" value=""/>
+</fieldset>
+</form>
+</div>
+<div class="lhnHigh onShow">
+<ul>
+<li>
+<a class="k_hotels" href="/">Hotels &amp; Accommodations</a>
+</li>
+<li>
+<a class="k_flights" href="/#t1">Flights</a>
+</li>
+<li>
+<a class="k_things_to_do" href="/#t3">Things to Do</a>
+</li>
+<li>
+<a rel="nofollow" class="k_videos" href="/VideoHome">Traveler videos</a>
+</li>
+<li>
+<a class="k_forums" href="/ForumHome">Forums</a>
+</li>
+</ul>
+</div>
+<div class="ad iab_supSky">
+<div id="160X600" style="position:relative"><!-- Ad tags: doubleclick
+domain=ad.doubleclick.net
+site=ta.ta.com.s
+zone=none
+PageType=HACSearch
+pool=C
+kw=fl
+u=HACSearch%7CC
+sz=160X600
+tile=2
+ord=16619903
+area=NONE
+
+-->
+<div class="adServer">
+<script language=Javascript1.1 src="http://ad.doubleclick.net/adj/ta.ta.com.s/none;PageType=HACSearch;pool=C;kw=fl;u=HACSearch%7CC;abr=!webtv;sz=160X600;tile=2;ord=16619903?"></script>
+<noscript>
+<!-- for non JavaScript browsers and Netscape 2.x -->
+<a href="http://ad.doubleclick.net/jump/ta.ta.com.s/none;PageType=HACSearch;pool=C;kw=fl;u=HACSearch%7CC;sz=160X600;tile=2;ord=16619903?" rel="nofollow">
+<img src="http://ad.doubleclick.net/ad/ta.ta.com.s/none;PageType=HACSearch;pool=C;kw=fl;u=HACSearch%7CC;sz=160X600;tile=2;ord=16619903?" width="160" height="600" border="0">
+</a>
+</noscript>
+</div>
+<img height="1" width="1" alt="" class="legacyTrkPxl" border="0" src="/Beacon?src=DoubleClick&from=HACSearch&size=160X600&tile=2&response=AD&rnd=16619903"/>
+</div>
+</div>
+</div><!--/ LEFTNAV-->
+<div id="BODYCON" class="col poolC">
+<div class="ad iab_leaBoa">
+<div id="728X90" style="position:relative"><!-- Ad tags: doubleclick
+domain=ad.doubleclick.net
+site=ta.ta.com.s
+zone=none
+PageType=HACSearch
+pool=C
+kw=fl
+u=HACSearch%7CC
+sz=728X90
+tile=1
+ord=16619903
+area=NONE
+
+-->
+<div class="adServer">
+<script language=Javascript1.1 src="http://ad.doubleclick.net/adj/ta.ta.com.s/none;PageType=HACSearch;pool=C;kw=fl;u=HACSearch%7CC;abr=!webtv;sz=728X90;tile=1;ord=16619903?"></script>
+<noscript>
+<!-- for non JavaScript browsers and Netscape 2.x -->
+<a href="http://ad.doubleclick.net/jump/ta.ta.com.s/none;PageType=HACSearch;pool=C;kw=fl;u=HACSearch%7CC;sz=728X90;tile=1;ord=16619903?" rel="nofollow">
+<img src="http://ad.doubleclick.net/ad/ta.ta.com.s/none;PageType=HACSearch;pool=C;kw=fl;u=HACSearch%7CC;sz=728X90;tile=1;ord=16619903?" width="728" height="90" border="0">
+</a>
+</noscript>
+</div>
+<img height="1" width="1" alt="" class="legacyTrkPxl" border="0" src="/Beacon?src=DoubleClick&from=HACSearch&size=728X90&tile=1&response=AD&rnd=16619903"/>
+</div>
+</div>
+<div class="crumbs">
+<ul>
+<li>
+<a href="/">Home</a>
+</li>
+</ul>
+</div>
+<div class="wrpHeader">
+<h1 id="HEADING">
+Hotel price and availability comparison </h1>
+</div>
+<div class="errorblock">
+<div id="clarify_title">
+Please help us with a little more information: </div>
+<div id="clarify_error">
+The specified location is too large to check all the hotels. </div>
+<form class="hac_form" id="HAC_FORM" name="HAC_FORM" method="get" action="/HACSearch">
+<fieldset>
+<span class="error_msg"></span>
+<div id="hac_geo" class="wrap location">
+<label for="hacGeo">City:</label>
+<input name="q" id="hacGeo" type="text" class="text typeAhead actGEO" autocomplete="off" value="FL"/>
+</div>
+<div class="wrap availability">
+<span class="cal first">
+<input type="hidden" class="day" name="inDay" id="inDay" value="23"/>
+<input type="hidden" class="month" name="inMonth" id="inMonth" value="01/2009"/>
+<label for="checkIn">Check-in:</label> <input name="checkIn" id="checkIn" class="text" type="text" value="1/23/2009"/>
+<span class="icn" title="Show Calendar"></span> <i class="eg">mm/dd/yyyy</i> </span>
+<span class="cal">
+<input type="hidden" class="day" name="outDay" id="outDay" value="30"/>
+<input type="hidden" class="month" name="outMonth" id="outMonth" value="01/2009"/>
+<label for="checkOut">Check-out:</label> <input name="checkOut" id="checkOut" class="text" type="text" value="1/30/2009"/>
+<span class="icn" title="Show Calendar"></span> <i class="eg">mm/dd/yyyy</i> </span>
+</div>
+<div class="wrap price">
+<span class="chooseprice">
+<label for="minmaxrate">Price:</label> <select id="minmaxrate" name="minmaxrate" value=",0"></select>
+<script><!--
+var maxRate="0";
+registerOnLoad (function () {fillRates("USD");});
+--></script>
+<select id="currency" class="dt1 txt11" name="currency" style="margin-right:0" value="USD" onchange="fillRatesAndClear(this.value);">
+<option value="USD">U.S. Dollar</option> <option value="EUR">Euro</option> <option value="GBP">British Pound</option> <option value="CAD">Canadian Dollar</option> <option value="AUD">Australian Dollar</option> <option value="CHF">Swiss Franc</option> <option value="INR">Indian Rupees</option> </select>
+</span>
+<span class="ppl">
+<label for="adults">Adults:</label> <select name="adults" id="adults">
+<option value="1" selected>1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+</span>
+</div>
+<input type="submit" value="Find Hotels"/>
+</fieldset>
+</form>
+</div>
+</div><!--/ BODYCON-->
+</div><!--/ MAIN-->
+<div id="FOOT">
+<div class="corporate">
+<div class="col sidebar">
+<div class="block">
+<dl class="about">
+<dt>About TripAdvisor&#174;</dt> <dd> TripAdvisor&#174; provides recommendations for hotels, resorts, inns, vacations, travel packages, vacation packages, travel guides and lots more.</dd>
+</dl>
+</div><!--/ block-->
+</div><!--/ col.sidebar-->
+<div class="col balance">
+<div class="block">
+<dl class="sep brand">
+<dt><img src="http://cdn.tripadvisor.com/img2/branding/identityFOOT.png" alt="TripAdvisor"/></dt>
+<dd class="meta">Recommendations for hotels, resorts, inns, vacations, travel packages, travel guides and lots more!</dd>
+</dl>
+<dl class="sep flags">
+<dt>Select a TripAdvisor site:</dt>
+<dd>
+<ul>
+<li>
+<a class="flag_uk js_noTAPD" title="TripAdvisor" href="http://www.tripadvisor.co.uk/HACSearch-a_adults.1-a_checkIn.379-a_checkOut.1/30/2009-a_inDay.23-a_inMonth.01/2009-a_outDay.30-a_outMonth.01/2009-qFL"><img src="http://cdn.tripadvisor.com/img2/x.gif" alt="TripAdvisor"/></a>
+</li>
+<li>
+<a class="flag_it js_noTAPD" title="TripAdvisor" href="http://www.tripadvisor.it/HACSearch-a_adults.1-a_checkIn.379-a_checkOut.1/30/2009-a_inDay.23-a_inMonth.01/2009-a_outDay.30-a_outMonth.01/2009-qFL"><img src="http://cdn.tripadvisor.com/img2/x.gif" alt="TripAdvisor"/></a>
+</li>
+<li>
+<a class="flag_es js_noTAPD" title="TripAdvisor" href="http://www.tripadvisor.es/HACSearch-a_adults.1-a_checkIn.379-a_checkOut.1/30/2009-a_inDay.23-a_inMonth.01/2009-a_outDay.30-a_outMonth.01/2009-qFL"><img src="http://cdn.tripadvisor.com/img2/x.gif" alt="TripAdvisor"/></a>
+</li>
+<li>
+<a class="flag_de js_noTAPD" title="TripAdvisor" href="http://www.tripadvisor.de/HACSearch-a_adults.1-a_checkIn.379-a_checkOut.1/30/2009-a_inDay.23-a_inMonth.01/2009-a_outDay.30-a_outMonth.01/2009-qFL"><img src="http://cdn.tripadvisor.com/img2/x.gif" alt="TripAdvisor"/></a>
+</li>
+<li>
+<a class="flag_fr js_noTAPD" title="TripAdvisor" href="http://www.tripadvisor.fr/HACSearch-a_adults.1-a_checkIn.379-a_checkOut.1/30/2009-a_inDay.23-a_inMonth.01/2009-a_outDay.30-a_outMonth.01/2009-qFL"><img src="http://cdn.tripadvisor.com/img2/x.gif" alt="TripAdvisor"/></a>
+</li>
+<li>
+<a class="flag_ie js_noTAPD" rel="nofollow" title="TripAdvisor" href="http://www.tripadvisor.ie/HACSearch-a_adults.1-a_checkIn.379-a_checkOut.1/30/2009-a_inDay.23-a_inMonth.01/2009-a_outDay.30-a_outMonth.01/2009-qFL"><img src="http://cdn.tripadvisor.com/img2/x.gif" alt="TripAdvisor"/></a>
+</li>
+<li>
+<a class="flag_ja js_noTAPD" title="„Éà„É™„ÉÉ„Éó„Ç¢„Éâ„Éê„Ç§„Ç?„Éº" href="http://www.tripadvisor.jp/HACSearch-a_adults.1-a_checkIn.379-a_checkOut.1/30/2009-a_inDay.23-a_inMonth.01/2009-a_outDay.30-a_outMonth.01/2009-qFL"><img src="http://cdn.tripadvisor.com/img2/x.gif" alt="„Éà„É™„ÉÉ„Éó„Ç¢„Éâ„Éê„Ç§„Ç?„Éº"/></a>
+</li>
+<li>
+<a class="flag_in js_noTAPD" title="TripAdvisor" href="http://www.tripadvisor.in/HACSearch-a_adults.1-a_checkIn.379-a_checkOut.1/30/2009-a_inDay.23-a_inMonth.01/2009-a_outDay.30-a_outMonth.01/2009-qFL"><img src="http://cdn.tripadvisor.com/img2/x.gif" alt="TripAdvisor"/></a>
+</li>
+</ul>
+</dd>
+</dl>
+<div class="sep internal">
+<span><a rel="nofollow" href="/pages/about_us.html">About Us</a></span> |
+<span><a rel="nofollow" href="/UserReview">Write a review</a></span> |
+<span><a rel="nofollow" href="/careers">Careers</a></span> | <span><a rel="nofollow" href="/MemberProfile" class="pid432">Membership</a></span> | <span><a href="/pages/site_map_overview.html">Site Map</a></span> | <span><a rel="nofollow" href="http://affiliates.tripadvisor.com/">Become an Affiliate</a></span> | <span><a href="/pages/top200.html">Top Cities</a></span> | <span><a href="/pages/subsitemap/index.html">Hotel Reservations</a></span> | <span><a href="/pages/mtsubsitemap/index.html">Hotel Deals</a></span>
+| <span><a rel="nofollow" href="http://www.cafepress.com/tripadvisor" class="js_popup">TripAdvisor&#8482; Gear</a></span>
+| <span><a rel="nofollow" href="/TCDestinations" class="pid1057">Travelers' Choice</a></span> | <span><a rel="nofollow" href="/help" class="js_popup">Help Center</a></span> </div>
+<div class="sep legal">
+<div class="copyright">
+¬© 2008 TripAdvisor LLC All rights reserved. TripAdvisor <a rel="nofollow" href="/pages/terms.html">Terms of Use</a> and <a rel="nofollow" href="/pages/privacy.html">Privacy Policy</a>.</div>
+<div class="disclaimer">
+* TripAdvisor LLC is not a booking agent and does not charge any service fees to users of our site... (<a href="/pages/pricing_terms.html" rel="nofollow" id="TERMS">more</a>) </div>
+<div>
+<b>
+This site has been tested in Internet Explorer 6.0, Mozilla Firefox 1.5 and AOL Explorer 9 on Windows Operating System and Safari 2.0 on Mac Operating System.
+</b>
+</div>
+<div class="disclaimer">TripAdvisor LLC is not responsible for content on external web sites. Taxes, fees not included for deals content.</div> </div><!-- sep.legal-->
+</div><!--/ block-->
+</div><!--/ col.balance-->
+</div><!--/ corporate-->
+</div><!-- FOOT-->
+</div><!--/ PAGE-->
+</body>
+</html>

@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Jose Luis Ambite</LastAuthor>
+  <LastSaved>2008-10-04T00:28:23Z</LastSaved>
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10005</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Table1">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="13" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:AutoFitWidth="0" ss:Width="110.25" ss:Span="6"/>
+   <Row>
+    <Cell><Data ss:Type="String">PR-ZipCode5Digit</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="String">CT-TemperatureF</Data></Cell>
+    <Cell><Data ss:Type="String">CT-TemperatureC</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDirection</Data></Cell>
+    <Cell><Data ss:Type="String">CT-TemperatureF</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">column15</Data></Cell>
+    <Cell><Data ss:Type="String">column16</Data></Cell>
+    <Cell><Data ss:Type="String">column19</Data></Cell>
+    <Cell><Data ss:Type="String">column25</Data></Cell>
+    <Cell><Data ss:Type="String">column26</Data></Cell>
+    <Cell><Data ss:Type="String">column29</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">06106</Data></Cell>
+    <Cell><Data ss:Type="String">Starry</Data></Cell>
+    <Cell><Data ss:Type="String">66F</Data></Cell>
+    <Cell><Data ss:Type="String">18C)</Data></Cell>
+    <Cell><Data ss:Type="String">68%</Data></Cell>
+    <Cell><Data ss:Type="String">WSW at 4 knt</Data></Cell>
+    <Cell><Data ss:Type="String">1002.0 mb (29.60 in)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">20502</Data></Cell>
+    <Cell><Data ss:Type="String">Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">64F</Data></Cell>
+    <Cell><Data ss:Type="String">17C)</Data></Cell>
+    <Cell><Data ss:Type="String">58%</Data></Cell>
+    <Cell><Data ss:Type="String">W at 8 knt</Data></Cell>
+    <Cell><Data ss:Type="String">1005.4 mb (29.70 in)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">32399</Data></Cell>
+    <Cell><Data ss:Type="String">Sunny</Data></Cell>
+    <Cell><Data ss:Type="String">81F</Data></Cell>
+    <Cell><Data ss:Type="String">27C)</Data></Cell>
+    <Cell><Data ss:Type="String">33%</Data></Cell>
+    <Cell><Data ss:Type="String">NW at 8 knt</Data></Cell>
+    <Cell><Data ss:Type="String">79 F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">33040</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">81F</Data></Cell>
+    <Cell><Data ss:Type="String">27C)</Data></Cell>
+    <Cell><Data ss:Type="String">72%</Data></Cell>
+    <Cell><Data ss:Type="String">calm</Data></Cell>
+    <Cell><Data ss:Type="String">85 F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">36130</Data></Cell>
+    <Cell><Data ss:Type="String">Sunny</Data></Cell>
+    <Cell><Data ss:Type="String">74F</Data></Cell>
+    <Cell><Data ss:Type="String">23C)</Data></Cell>
+    <Cell><Data ss:Type="String">34%</Data></Cell>
+    <Cell><Data ss:Type="String">N at 5 knt</Data></Cell>
+    <Cell><Data ss:Type="String">71 F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">46208</Data></Cell>
+    <Cell><Data ss:Type="String">Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">59F</Data></Cell>
+    <Cell><Data ss:Type="String">15C)</Data></Cell>
+    <Cell><Data ss:Type="String">55%</Data></Cell>
+    <Cell><Data ss:Type="String">NNW at 13 knt</Data></Cell>
+    <Cell><Data ss:Type="String">1013.4 mb (29.93 in)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">50319</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">61F</Data></Cell>
+    <Cell><Data ss:Type="String">16C)</Data></Cell>
+    <Cell><Data ss:Type="String">44%</Data></Cell>
+    <Cell><Data ss:Type="String">N at 10 knt</Data></Cell>
+    <Cell><Data ss:Type="String">1019.2 mb (30.11 in)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">66612</Data></Cell>
+    <Cell><Data ss:Type="String">Sunny</Data></Cell>
+    <Cell><Data ss:Type="String">67F</Data></Cell>
+    <Cell><Data ss:Type="String">19C)</Data></Cell>
+    <Cell><Data ss:Type="String">37%</Data></Cell>
+    <Cell><Data ss:Type="String">N at 8 knt</Data></Cell>
+    <Cell><Data ss:Type="String">1018.7 mb (30.09 in)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">85007</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">100F</Data></Cell>
+    <Cell><Data ss:Type="String">37C)</Data></Cell>
+    <Cell><Data ss:Type="String">10%</Data></Cell>
+    <Cell><Data ss:Type="String">calm</Data></Cell>
+    <Cell><Data ss:Type="String">93 F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">90292</Data></Cell>
+    <Cell><Data ss:Type="String">Sunny</Data></Cell>
+    <Cell><Data ss:Type="String">87F</Data></Cell>
+    <Cell><Data ss:Type="String">30C)</Data></Cell>
+    <Cell><Data ss:Type="String">26%</Data></Cell>
+    <Cell><Data ss:Type="String">SSW at 7 knt</Data></Cell>
+    <Cell><Data ss:Type="String">83 F</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:Index="3"><Data ss:Type="String">current F</Data></Cell>
+    <Cell><Data ss:Type="String">current C</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveCol>6</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <Sorting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Sort>Column A</Sort>
+  </Sorting>
+ </Worksheet>
+</Workbook>

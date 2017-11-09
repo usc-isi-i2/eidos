@@ -1,0 +1,13 @@
+package invocation;
+
+import java.util.List;
+
+import relational.Table;
+
+public interface Wrapper {
+
+	Table invoke(String[] endpoint, List<String> inputTuple);
+
+	void testWrapper();
+
+}

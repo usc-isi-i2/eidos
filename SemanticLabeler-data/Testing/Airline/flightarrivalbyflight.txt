@@ -1,0 +1,416 @@
+completed	Albuquerque NM	Jun 13	03:17 PM	71.1° F	clear skies	Dallas/Fort Worth	Jun 13	05:34 PM	82.0° F	overcast skies
+completed	Albuquerque NM	Jun 13	03:17 PM	71.1° F	clear skies	Dallas/Fort Worth	Jun 13	05:34 PM	82.0° F	overcast skies
+inflight2	Albuquerque NM	Jun 13	04:46 PM	71.1° F	clear skies	San Diego CA	Jun 13	05:10 PM	64.9° F	overcast skies
+completed	Anchorage AK	Jun 13	10:26 AM	53.1° F	mostly cloudy skies	Seattle WA	Jun 13	02:43 PM	53° F 	 mostly cloudy skies
+completed	Anchorage AK	Jun 13	10:26 AM	53.1° F	mostly cloudy skies	Seattle WA	Jun 13	02:43 PM	53° F 	 mostly cloudy skies
+completed	Anchorage AK	Jun 13	12:50 PM	53.1° F	mostly cloudy skies	Vancouver BC	Jun 13	04:08 PM	NULL	"ly cloudy skies, Light rain showers"
+completed	Anchorage AK	Jun 13	08:08 AM	53.1° F	mostly cloudy skies	Portland OR	Jun 13	12:40 PM	59.0° F	mostly cloudy skies
+completed	Anchorage AK	Jun 13	10:26 AM	53.1° F	mostly cloudy skies	Seattle WA	Jun 13	02:43 PM	55.9° F	mostly cloudy skies
+completed	Anchorage AK	Jun 13	10:26 AM	53.1° F	mostly cloudy skies	Seattle WA	Jun 13	02:43 PM	55.9° F	mostly cloudy skies
+completed	Anchorage AK	Jun 13	08:59 AM	53.1° F	mostly cloudy skies	Minneapolis MN	Jun 13	05:33 PM	72.0° F	overcast skies
+completed	Anchorage AK	Jun 13	08:59 AM	53.1° F	mostly cloudy skies	Minneapolis MN	Jun 13	05:33 PM	72.0° F	overcast skies
+completed	Atlanta GA	Jun 13	01:16 PM	82.0° F	partly cloudy skies	St. Louis MO	Jun 13	01:21 PM	80.1° F	mostly cloudy skies
+completed	Atlanta GA	Jun 13	02:10 PM	82.0° F	partly cloudy skies	New York (JFK)	Jun 13	03:57 PM	82.0° F	mostly cloudy skies
+completed	Atlanta GA	Jun 13	03:58 PM	82.0° F	partly cloudy skies	New York (JFK)	Jun 13	05:49 PM	82.0° F	mostly cloudy skies
+completed	Atlanta GA	Jun 13	04:17 PM	82.0° F	partly cloudy skies	St. Louis MO	Jun 13	04:21 PM	80.1° F	mostly cloudy skies
+inflight2	Atlanta GA	Jun 13	05:47 PM	82.0° F	partly cloudy skies	St. Louis MO	Jun 13	06:07 PM	80.1° F	mostly cloudy skies
+inflight2	Atlanta GA	Jun 13	05:47 PM	82.0° F	partly cloudy skies	St. Louis MO	Jun 13	06:07 PM	80.1° F	mostly cloudy skies
+completed	Atlanta GA	Jun 13	07:21 AM	82.0° F	partly cloudy skies	New York (JFK)	Jun 13	09:00 AM	82.0° F	mostly cloudy skies
+completed	Atlanta GA	Jun 13	07:21 AM	82.0° F	partly cloudy skies	New York (JFK)	Jun 13	09:00 AM	82.0° F	mostly cloudy skies
+completed	Baltimore MD	Jun 13	02:18 PM	84.9° F	mostly cloudy skies	Albuquerque NM	Jun 13	03:56 PM	71.1° F	clear skies
+inflight2	Baltimore MD	Jun 13	06:20 PM	84.9° F	mostly cloudy skies	Phoenix AZ	Jun 13	07:45 PM	82.9° F	clear skies
+inflight2	Baltimore MD	Jun 13	06:20 PM	84.9° F	mostly cloudy skies	Phoenix AZ	Jun 13	07:45 PM	88.0° F	clear skies
+inflight2	Baltimore MD	Jun 13	06:28 PM	84.9° F	mostly cloudy skies	Phoenix AZ	Jun 13	08:16 PM	82.9° F	clear skies
+inflight2	Baltimore MD	Jun 13	06:28 PM	84.9° F	mostly cloudy skies	Phoenix AZ	Jun 13	08:16 PM	88.0° F	clear skies
+completed	Baltimore MD	Jun 13	07:30 AM	84.9° F	mostly cloudy skies	Phoenix AZ	Jun 13	08:43 AM	82.9° F	clear skies
+completed	Baltimore MD	Jun 13	07:30 AM	84.9° F	mostly cloudy skies	Phoenix AZ	Jun 13	08:43 AM	88.0° F	clear skies
+completed	Baltimore MD	Jun 13	07:38 AM	84.9° F	mostly cloudy skies	Phoenix AZ	Jun 13	08:56 AM	82.9° F	clear skies
+completed	Baltimore MD	Jun 13	07:38 AM	84.9° F	mostly cloudy skies	Phoenix AZ	Jun 13	08:56 AM	82.9° F	clear skies
+completed	Baltimore MD	Jun 13	10:37 AM	84.9° F	mostly cloudy skies	Phoenix AZ	Jun 13	11:48 AM	82.9° F	clear skies
+completed	Baltimore MD	Jun 13	10:37 AM	84.9° F	mostly cloudy skies	Phoenix AZ	Jun 13	11:48 AM	82.9° F	clear skies
+completed	Baltimore MD	Jun 13	01:14 PM	84.9° F	mostly cloudy skies	Chicago IL (Midway)	Jun 13	01:46 PM	82.0° F	mostly clear skies
+completed	Baltimore MD	Jun 13	01:14 PM	84.9° F	mostly cloudy skies	Chicago IL (Midway)	Jun 13	01:46 PM	82.0° F	mostly clear skies
+completed	Baltimore MD	Jun 13	01:14 PM	84.9° F	mostly cloudy skies	Chicago IL (Midway)	Jun 13	01:46 PM	82.0° F	mostly clear skies
+completed	Baltimore MD	Jun 13	01:14 PM	84.9° F	mostly cloudy skies	Chicago IL (Midway)	Jun 13	01:46 PM	82.0° F	mostly clear skies
+completed	Baltimore MD	Jun 13	03:25 PM	84.9° F	mostly cloudy skies	Chicago IL (Midway)	Jun 13	04:00 PM	82.0° F	mostly clear skies
+scheduled2	Baltimore MD	Jun 13	07:46 PM	84.9° F	mostly cloudy skies	Orlando FL	Jun 13	09:36 PM	84.9° F	mostly cloudy skies
+completed	Baltimore MD	Jun 13	08:46 AM	84.9° F	mostly cloudy skies	Jacksonville FL	Jun 13	10:28 AM	84.9° F	mostly cloudy skies
+completed	Baltimore MD	Jun 13	10:06 AM	84.9° F	mostly cloudy skies	San Diego CA	Jun 13	12:04 PM	64.9° F	overcast skies
+completed	Baltimore MD	Jun 13	06:50 PM	84.9° F	mostly cloudy skies	Norfolk VA	Jun 13	07:16 PM	84.9° F	partly cloudy skies
+scheduled2	Baltimore MD	Jun 13	08:25 PM	84.9° F	mostly cloudy skies	Nashville TN	Jun 13	09:06 PM	82.9° F	partly cloudy skies
+completed	Baltimore MD	Jun 13	08:33 AM	84.9° F	mostly cloudy skies	Chicago IL (O'Hare)	Jun 13	09:10 AM	81.0° F	partly cloudy skies
+completed	Baltimore MD	Jun 13	08:33 AM	84.9° F	mostly cloudy skies	Chicago IL (O'Hare)	Jun 13	09:10 AM	81.0° F	partly cloudy skies
+completed	Baltimore MD	Jun 13	10:08 AM	84.9° F	mostly cloudy skies	Atlanta GA	Jun 13	11:30 AM	82.0° F	partly cloudy skies
+completed	Baltimore MD	Jun 13	11:41 AM	84.9° F	mostly cloudy skies	Tampa FL	Jun 13	01:28 PM	84.9° F	partly cloudy skies
+completed	Barrow AK	Jun 13	10:25 AM	60.1° F	partly cloudy skies	Fairbanks AK	Jun 13	11:40 AM	60.1° F	partly cloudy skies
+completed	Boston (Logan)	Jun 13	08:47 AM	87.1° F	mostly cloudy skies	Seattle WA	Jun 13	11:04 AM	53° F 	 mostly cloudy skies
+inflight2	Boston (Logan)	Jun 13	06:39 PM	87.1° F	mostly cloudy skies	Seattle WA	Jun 13	08:57 PM	55.9° F	mostly cloudy skies
+completed	Boston (Logan)	Jun 13	08:47 AM	87.1° F	mostly cloudy skies	Seattle WA	Jun 13	11:04 AM	55.9° F	mostly cloudy skies
+completed	Bozeman MT	Jun 13	06:13 AM	51.1° F	partly cloudy skies	Minneapolis MN	Jun 13	09:11 AM	72.0° F	overcast skies
+completed	Bozeman MT	Jun 13	06:13 AM	51.1° F	partly cloudy skies	Minneapolis MN	Jun 13	09:11 AM	72.0° F	overcast skies
+completed	Bozeman MT	Jun 13	06:13 AM	51.1° F	partly cloudy skies	Minneapolis MN	Jun 13	09:11 AM	72.0° F	overcast skies
+completed	Charlotte NC	Jun 13	11:06 AM	75.9° F	"overcast skies, Light rain"	Richmond VA	Jun 13	11:41 AM	86° F 	 mostly cloudy skies
+completed	Charlotte NC	Jun 13	11:07 AM	75.9° F	"overcast skies, Light rain"	Myrtle Beach SC	Jun 13	11:36 AM	82° F 	" mostly cloudy skies, Showers in the vicinity"
+completed	Charlotte NC	Jun 13	02:18 PM	75.9° F	"overcast skies, Light rain"	New York (La Guardia)	Jun 13	03:29 PM	84.9° F	mostly cloudy skies
+inflight2	Charlotte NC	Jun 13	07:21 PM	75.9° F	"overcast skies, Light rain"	Allentown PA	Jun 13	08:35 PM	82.0° F	mostly cloudy skies
+completed	Charlotte NC	Jun 13	02:39 PM	75.9° F	"overcast skies, Light rain"	Minneapolis MN	Jun 13	03:47 PM	72.0° F	overcast skies
+completed	Charlotte NC	Jun 13	04:34 PM	75.9° F	"overcast skies, Light rain"	Minneapolis MN	Jun 13	05:31 PM	72.0° F	overcast skies
+inflight2	Charlotte NC	Jun 13	05:50 PM	75.9° F	"overcast skies, Light rain"	Minneapolis MN	Jun 13	07:05 PM	72.0° F	overcast skies
+completed	Charlotte NC	Jun 13	08:37 AM	75.9° F	"overcast skies, Light rain"	Minneapolis MN	Jun 13	09:52 AM	72.0° F	overcast skies
+inflight2	Chicago IL (Midway)	Jun 13	04:50 PM	82.0° F	mostly clear skies	Phoenix AZ	Jun 13	06:09 PM	88.0° F	clear skies
+inflight2	Chicago IL (Midway)	Jun 13	06:19 PM	82.0° F	mostly clear skies	San Diego CA	Jun 13	08:04 PM	64.9° F	overcast skies
+completed	Chicago IL (Midway)	Jun 13	02:33 PM	82.0° F	mostly clear skies	St. Louis MO	Jun 13	03:15 PM	82.9° F	partly cloudy skies
+completed	Chicago IL (Midway)	Jun 13	02:33 PM	82.0° F	mostly clear skies	St. Louis MO	Jun 13	03:15 PM	82.9° F	partly cloudy skies
+completed	Chicago IL (Midway)	Jun 13	02:33 PM	82.0° F	mostly clear skies	St. Louis MO	Jun 13	03:15 PM	82.9° F	partly cloudy skies
+completed	Chicago IL (Midway)	Jun 13	02:33 PM	82.0° F	mostly clear skies	St. Louis MO	Jun 13	03:15 PM	82.9° F	partly cloudy skies
+completed	Chicago IL (Midway)	Jun 13	08:54 AM	82.0° F	mostly clear skies	St. Louis MO	Jun 13	09:43 AM	82.9° F	partly cloudy skies
+completed	Chicago IL (Midway)	Jun 13	08:54 AM	82.0° F	mostly clear skies	St. Louis MO	Jun 13	09:43 AM	82.9° F	partly cloudy skies
+inflight2	Chicago IL (O'Hare)	Jun 13	06:06 PM	81.0° F	partly cloudy skies	Richmond VA	Jun 13	08:37 PM	86° F 	 mostly cloudy skies
+inflight2	Chicago IL (O'Hare)	Jun 13	06:06 PM	81.0° F	partly cloudy skies	Richmond VA	Jun 13	08:37 PM	86° F 	 mostly cloudy skies
+inflight2	Chicago IL (O'Hare)	Jun 13	11:05 AM	81.0° F	partly cloudy skies	Kahului HI	Jun 13	02:38 PM	66.9° F	mostly clear skies
+inflight2	Chicago IL (O'Hare)	Jun 13	11:05 AM	81.0° F	partly cloudy skies	Kahului HI	Jun 13	02:38 PM	66.9° F	mostly clear skies
+completed	Chicago IL (O'Hare)	Jun 13	02:15 PM	81.0° F	partly cloudy skies	Detroit MI	Jun 13	03:59 PM	75.0° F	mostly cloudy skies
+completed	Chicago IL (O'Hare)	Jun 13	07:41 AM	81.0° F	partly cloudy skies	St. Louis MO	Jun 13	08:20 AM	80.1° F	mostly cloudy skies
+completed	Chicago IL (O'Hare)	Jun 13	10:41 AM	81.0° F	partly cloudy skies	Portland OR	Jun 13	12:34 PM	59.0° F	mostly cloudy skies
+completed	Chicago IL (O'Hare)	Jun 13	10:41 AM	81.0° F	partly cloudy skies	Portland OR	Jun 13	12:34 PM	59.0° F	mostly cloudy skies
+scheduled2	Chicago IL (O'Hare)	Jun 13	05:57 PM	81.0° F	partly cloudy skies	Los Angeles CA	Jun 13	08:02 PM	64.0° F	"overcast skies, Haze"
+scheduled2	Chicago IL (O'Hare)	Jun 13	05:57 PM	81.0° F	partly cloudy skies	Los Angeles CA	Jun 13	08:02 PM	64.0° F	"overcast skies, Haze"
+scheduled2	Chicago IL (O'Hare)	Jun 13	05:57 PM	81.0° F	partly cloudy skies	Los Angeles CA	Jun 13	08:02 PM	64.0° F	"overcast skies, Haze"
+scheduled2	Chicago IL (O'Hare)	Jun 13	05:57 PM	81.0° F	partly cloudy skies	Los Angeles CA	Jun 13	08:02 PM	64.0° F	"overcast skies, Haze"
+completed	Chicago IL (O'Hare)	Jun 13	04:42 PM	81.0° F	partly cloudy skies	Fayetteville(NW Arkansas)	Jun 13	06:05 PM	81.0° F	partly cloudy skies
+completed	Chicago IL (O'Hare)	Jun 13	04:42 PM	81.0° F	partly cloudy skies	Fayetteville(NW Arkansas)	Jun 13	06:05 PM	81.0° F	partly cloudy skies
+completed	Chicago IL (O'Hare)	Jun 13	12:41 PM	81.0° F	partly cloudy skies	Houston	Jun 13	02:56 PM	86.0° F	partly cloudy skies
+completed	Cincinnati	Jun 13	03:13 PM	73.9° F	overcast skies	New York (JFK)	Jun 13	04:28 PM	82.0° F	mostly cloudy skies
+completed	Cincinnati	Jun 13	04:20 PM	73.9° F	overcast skies	New York (JFK)	Jun 13	05:36 PM	82.0° F	mostly cloudy skies
+completed	Cincinnati	Jun 13	09:30 AM	73.9° F	overcast skies	Jacksonville FL	Jun 13	11:00 AM	84.9° F	mostly cloudy skies
+completed	Cincinnati	Jun 13	09:30 AM	73.9° F	overcast skies	Jacksonville FL	Jun 13	11:00 AM	84.9° F	mostly cloudy skies
+completed	Columbus OH	Jun 13	05:34 PM	78° F 	 overcast skies	Chicago IL (Midway)	Jun 13	05:26 PM	82.0° F	mostly clear skies
+completed	Columbus OH	Jun 13	01:42 PM	78° F 	 overcast skies	Detroit MI	Jun 13	02:09 PM	75.0° F	mostly cloudy skies
+inflight2	Columbus OH	Jun 13	06:53 PM	78° F 	 overcast skies	Newark	Jun 13	07:59 PM	86.0° F	mostly cloudy skies
+completed	Dallas/Fort Worth	Jun 13	01:19 PM	82.0° F	overcast skies	Minneapolis MN	Jun 13	03:20 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	01:19 PM	82.0° F	overcast skies	Minneapolis MN	Jun 13	03:20 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	01:36 PM	82.0° F	overcast skies	Minneapolis MN	Jun 13	03:39 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 12	02:38 PM	82.0° F	overcast skies	Minneapolis MN	Jun 13	03:39 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 12	02:38 PM	82.0° F	overcast skies	Minneapolis MN	Jun 13	03:39 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 12	02:38 PM	82.0° F	overcast skies	Minneapolis MN	Jun 13	03:39 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	04:21 PM	82.0° F	overcast skies	San Antonio TX	Jun 13	04:58 PM	82.9° F	overcast skies
+scheduled2	Dallas/Fort Worth	Jun 13	05:04 PM	82.0° F	overcast skies	Minneapolis MN	Jun 13	07:00 PM	72.0° F	overcast skies
+scheduled2	Dallas/Fort Worth	Jun 13	05:04 PM	82.0° F	overcast skies	Minneapolis MN	Jun 13	07:00 PM	72.0° F	overcast skies
+scheduled2	Dallas/Fort Worth	Jun 13	05:43 PM	82.0° F	overcast skies	Minneapolis MN	Jun 13	07:42 PM	72.0° F	overcast skies
+scheduled2	Dallas/Fort Worth	Jun 13	05:43 PM	82.0° F	overcast skies	Minneapolis MN	Jun 13	07:42 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	06:20 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	08:11 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	06:20 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	08:11 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	06:20 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	08:11 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	06:20 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	08:11 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	08:11 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	09:59 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	08:11 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	09:59 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	08:11 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	09:59 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	08:11 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	09:59 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	09:15 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	11:05 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	09:15 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	11:05 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	09:15 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	11:05 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	09:15 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	11:05 AM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	11:09 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	12:50 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	11:09 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	12:50 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	11:27 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	01:10 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	11:27 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	01:10 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	11:27 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	01:10 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	11:27 AM	82.0° F	overcast skies	Minneapolis MN	Jun 13	01:10 PM	72.0° F	overcast skies
+completed	Dallas/Fort Worth	Jun 13	01:02 PM	82.0° F	overcast skies	Houston	Jun 13	01:36 PM	86.0° F	partly cloudy skies
+inflight2	Denver	Jun 13	05:28 PM	62.1° F	partly cloudy skies	Seattle WA	Jun 13	06:59 PM	53° F 	 mostly cloudy skies
+scheduled2	Denver	Jun 13	07:17 PM	62.1° F	partly cloudy skies	New Orleans LA	Jun 13	10:55 PM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"
+scheduled2	Denver	Jun 13	07:17 PM	62.1° F	partly cloudy skies	New Orleans LA	Jun 13	10:55 PM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"
+completed	Denver	Jun 13	10:31 AM	62.1° F	partly cloudy skies	New Orleans LA	Jun 13	01:42 PM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"
+completed	Denver	Jun 13	10:31 AM	62.1° F	partly cloudy skies	New Orleans LA	Jun 13	01:42 PM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"
+completed	Denver	Jun 13	10:57 AM	62.1° F	partly cloudy skies	New Orleans LA	Jun 13	02:15 PM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"
+completed	Denver	Jun 13	10:57 AM	62.1° F	partly cloudy skies	New Orleans LA	Jun 13	02:15 PM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"
+completed	Denver	Jun 13	12:39 PM	62.1° F	partly cloudy skies	New Orleans LA	Jun 13	03:45 PM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"
+completed	Denver	Jun 13	12:39 PM	62.1° F	partly cloudy skies	New Orleans LA	Jun 13	03:45 PM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"
+completed	Denver	Jun 13	02:42 PM	62.1° F	partly cloudy skies	Los Angeles CA	Jun 13	03:34 PM	64.0° F	"overcast skies, Haze"
+completed	Denver	Jun 13	12:48 AM	62.1° F	partly cloudy skies	Atlanta GA	Jun 13	05:19 AM	82.0° F	partly cloudy skies
+completed	Denver	Jun 13	12:48 AM	62.1° F	partly cloudy skies	Atlanta GA	Jun 13	05:19 AM	82.0° F	partly cloudy skies
+completed	Des Moines IA	Jun 13	03:44 PM	75° F 	 partly cloudy skies	Chicago IL (O'Hare)	Jun 13	04:32 PM	81.0° F	partly cloudy skies
+completed	Des Moines IA	Jun 13	03:44 PM	75° F 	 partly cloudy skies	Chicago IL (O'Hare)	Jun 13	04:32 PM	81.0° F	partly cloudy skies
+inflight2	Detroit MI	Jun 13	06:27 PM	75.0° F	mostly cloudy skies	Philadelphia PA	Jun 13	07:25 PM	84.0° F	mostly cloudy skies
+completed	Detroit MI	Jun 13	07:20 AM	75.0° F	mostly cloudy skies	New York (La Guardia)	Jun 13	08:27 AM	84.9° F	mostly cloudy skies
+completed	Detroit MI	Jun 13	07:20 AM	75.0° F	mostly cloudy skies	New York (La Guardia)	Jun 13	08:27 AM	84.9° F	mostly cloudy skies
+completed	Detroit MI	Jun 13	07:27 AM	75.0° F	mostly cloudy skies	Philadelphia PA	Jun 13	08:45 AM	84.0° F	mostly cloudy skies
+completed	Detroit MI	Jun 13	09:00 AM	75.0° F	mostly cloudy skies	Philadelphia PA	Jun 13	10:17 AM	84.0° F	mostly cloudy skies
+completed	Detroit MI	Jun 13	11:32 AM	75.0° F	mostly cloudy skies	Philadelphia PA	Jun 13	12:45 PM	84.0° F	mostly cloudy skies
+completed	Detroit MI	Jun 13	12:25 PM	75.0° F	mostly cloudy skies	Philadelphia PA	Jun 13	01:37 PM	84.0° F	mostly cloudy skies
+completed	Detroit MI	Jun 13	03:58 PM	75.0° F	mostly cloudy skies	Miami FL	Jun 13	06:24 PM	86.0° F	partly cloudy skies
+completed	Detroit MI	Jun 13	07:49 AM	75.0° F	mostly cloudy skies	Miami FL	Jun 13	10:19 AM	86.0° F	partly cloudy skies
+completed	Detroit MI	Jun 13	09:16 AM	75.0° F	mostly cloudy skies	Miami FL	Jun 13	11:47 AM	86.0° F	partly cloudy skies
+completed	Detroit MI	Jun 13	12:27 PM	75.0° F	mostly cloudy skies	Miami FL	Jun 13	03:04 PM	86.0° F	partly cloudy skies
+completed	Fairbanks AK	Jun 13	06:35 AM	60.1° F	partly cloudy skies	Seattle WA	Jun 13	10:58 AM	53° F 	 mostly cloudy skies
+completed	Fairbanks AK	Jun 13	02:23 PM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	03:09 PM	53.1° F	mostly cloudy skies
+inflight2	Fairbanks AK	Jun 13	02:57 PM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	03:41 PM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 13	04:52 AM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	05:41 AM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 13	06:13 AM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	07:01 AM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 13	06:35 AM	60.1° F	partly cloudy skies	Seattle WA	Jun 13	10:58 AM	55.9° F	mostly cloudy skies
+scheduled2	Fairbanks AK	Jun 13	07:35 PM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	08:36 PM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 13	08:45 AM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	09:32 AM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 13	08:45 AM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	09:32 AM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 13	08:45 AM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	09:32 AM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 13	08:45 AM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	09:32 AM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 12	09:27 PM	60.1° F	partly cloudy skies	Anchorage AK	Jun 12	10:17 PM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 12	10:49 PM	60.1° F	partly cloudy skies	Anchorage AK	Jun 12	11:39 PM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 13	11:07 AM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	12:00 PM	53.1° F	mostly cloudy skies
+completed	Fairbanks AK	Jun 13	12:03 PM	60.1° F	partly cloudy skies	Anchorage AK	Jun 13	12:52 PM	53.1° F	mostly cloudy skies
+completed	"Flint, MI"	Jun 13	06:54 AM	73° F 	" overcast skies, Mist"	Detroit MI	Jun 13	07:05 AM	75.0° F	mostly cloudy skies
+completed	Fort Lauderdale FL	Jun 13	01:38 PM	84° F 	 partly cloudy skies	Orlando FL	Jun 13	02:07 PM	84.9° F	mostly cloudy skies
+completed	Fort Lauderdale FL	Jun 13	08:46 AM	84° F 	 partly cloudy skies	Dallas/Fort Worth	Jun 13	10:09 AM	82.0° F	overcast skies
+completed	Fort Lauderdale FL	Jun 13	08:46 AM	84° F 	 partly cloudy skies	Dallas/Fort Worth	Jun 13	10:09 AM	82.0° F	overcast skies
+completed	Fort Lauderdale FL	Jun 13	08:46 AM	84° F 	 partly cloudy skies	Dallas/Fort Worth	Jun 13	10:09 AM	82.0° F	overcast skies
+completed	Fort Lauderdale FL	Jun 13	08:46 AM	84° F 	 partly cloudy skies	Dallas/Fort Worth	Jun 13	10:09 AM	82.0° F	overcast skies
+completed	Glasgow (International)	Jun 13	09:46 AM	57° F 	 mostly cloudy skies	Newark	Jun 13	11:05 AM	86.0° F	mostly cloudy skies
+completed	Hartford CT	Jun 13	01:49 PM	87.1° F	mostly cloudy skies	Philadelphia PA	Jun 13	02:39 PM	84.0° F	mostly cloudy skies
+completed	Hartford CT	Jun 13	01:50 PM	87.1° F	mostly cloudy skies	Baltimore MD	Jun 13	02:31 PM	84.9° F	mostly cloudy skies
+completed	Hartford CT	Jun 13	04:25 PM	87.1° F	mostly cloudy skies	Baltimore MD	Jun 13	05:05 PM	84.9° F	mostly cloudy skies
+scheduled2	Hartford CT	Jun 13	06:19 PM	87.1° F	mostly cloudy skies	Baltimore MD	Jun 13	07:06 PM	84.9° F	mostly cloudy skies
+scheduled2	Hartford CT	Jun 13	06:49 PM	87.1° F	mostly cloudy skies	Baltimore MD	Jun 13	07:31 PM	84.9° F	mostly cloudy skies
+completed	Hartford CT	Jun 13	06:55 AM	87.1° F	mostly cloudy skies	Baltimore MD	Jun 13	07:46 AM	84.9° F	mostly cloudy skies
+completed	Hartford CT	Jun 13	08:35 AM	87.1° F	mostly cloudy skies	Baltimore MD	Jun 13	09:14 AM	84.9° F	mostly cloudy skies
+completed	Hartford CT	Jun 13	10:10 AM	87.1° F	mostly cloudy skies	Baltimore MD	Jun 13	10:51 AM	84.9° F	mostly cloudy skies
+completed	Hartford CT	Jun 13	12:38 PM	87.1° F	mostly cloudy skies	Baltimore MD	Jun 13	01:18 PM	84.9° F	mostly cloudy skies
+completed	Hartford CT	Jun 13	04:22 PM	87.1° F	mostly cloudy skies	Chicago IL (O'Hare)	Jun 13	05:24 PM	81.0° F	partly cloudy skies
+completed	Hartford CT	Jun 13	04:22 PM	87.1° F	mostly cloudy skies	Chicago IL (O'Hare)	Jun 13	05:24 PM	81.0° F	partly cloudy skies
+completed	Hartford CT	Jun 13	04:22 PM	87.1° F	mostly cloudy skies	Chicago IL (O'Hare)	Jun 13	05:24 PM	81.0° F	partly cloudy skies
+completed	Hartford CT	Jun 13	04:22 PM	87.1° F	mostly cloudy skies	Chicago IL (O'Hare)	Jun 13	05:24 PM	81.0° F	partly cloudy skies
+completed	Indianapolis IN	Jun 13	02:40 PM	77.0° F	mostly clear skies	Chicago IL (O'Hare)	Jun 13	03:27 PM	81.0° F	partly cloudy skies
+completed	Indianapolis IN	Jun 13	02:40 PM	77.0° F	mostly clear skies	Chicago IL (O'Hare)	Jun 13	03:27 PM	81.0° F	partly cloudy skies
+completed	Jacksonville FL	Jun 13	11:02 AM	84.9° F	mostly cloudy skies	Fort Lauderdale FL	Jun 13	11:58 AM	84° F 	 partly cloudy skies
+scheduled2	Kansas City MO	Jun 13	06:59 PM	73.0° F	partly cloudy skies	St. Louis MO	Jun 13	6:59 pm CDT. Traffic is experiencing gate hold and taxi delays lasting 15 minutes or less.</font>	80.1° F	mostly cloudy skies
+scheduled2	Kansas City MO	Jun 13	06:59 PM	73.0° F	partly cloudy skies	St. Louis MO	Jun 13	6:59 pm CDT. Traffic is experiencing gate hold and taxi delays lasting 15 minutes or less.</font>	80.1° F	mostly cloudy skies
+completed	Kansas City MO	Jun 13	06:37 AM	73.0° F	partly cloudy skies	St. Louis MO	Jun 13	07:13 AM	82.9° F	partly cloudy skies
+completed	Kansas City MO	Jun 13	06:37 AM	73.0° F	partly cloudy skies	St. Louis MO	Jun 13	07:13 AM	82.9° F	partly cloudy skies
+completed	Kauai Island HI (Lihue)	Jun 12	09:18 PM	75.9° F	partly cloudy skies	Los Angeles CA	Jun 13	05:05 AM	64.0° F	"overcast skies, Haze"
+completed	Las Vegas NV	Jun 13	10:40 AM	84.9° F	clear skies	Omaha NE	Jun 13	02:57 PM	73.9° F	mostly clear skies
+completed	Las Vegas NV	Jun 13	10:40 AM	84.9° F	clear skies	Omaha NE	Jun 13	02:57 PM	73.9° F	mostly clear skies
+completed	Las Vegas NV	Jun 13	10:40 AM	84.9° F	clear skies	Omaha NE	Jun 13	02:57 PM	73.9° F	mostly clear skies
+completed	Las Vegas NV	Jun 13	10:40 AM	84.9° F	clear skies	Omaha NE	Jun 13	02:57 PM	73.9° F	mostly clear skies
+completed	Las Vegas NV	Jun 13	01:13 AM	84.9° F	clear skies	Detroit MI	Jun 13	07:34 AM	75.0° F	mostly cloudy skies
+completed	Las Vegas NV	Jun 13	01:13 AM	84.9° F	clear skies	Detroit MI	Jun 13	07:34 AM	75.0° F	mostly cloudy skies
+inflight2	Las Vegas NV	Jun 13	01:58 PM	84.9° F	clear skies	Detroit MI	Jun 13	08:41 PM	75.0° F	mostly cloudy skies
+inflight2	Las Vegas NV	Jun 13	01:58 PM	84.9° F	clear skies	Detroit MI	Jun 13	08:41 PM	75.0° F	mostly cloudy skies
+inflight2	Las Vegas NV	Jun 13	01:58 PM	84.9° F	clear skies	Detroit MI	Jun 13	08:41 PM	75.0° F	mostly cloudy skies
+inflight2	Las Vegas NV	Jun 13	01:58 PM	84.9° F	clear skies	Detroit MI	Jun 13	08:41 PM	75.0° F	mostly cloudy skies
+inflight2	Las Vegas NV	Jun 13	02:53 PM	84.9° F	clear skies	Detroit MI	Jun 13	09:20 PM	75.0° F	mostly cloudy skies
+completed	Las Vegas NV	Jun 12	10:47 PM	84.9° F	clear skies	Detroit MI	Jun 13	05:15 AM	75.0° F	mostly cloudy skies
+completed	Las Vegas NV	Jun 12	10:47 PM	84.9° F	clear skies	Detroit MI	Jun 13	05:15 AM	75.0° F	mostly cloudy skies
+completed	Las Vegas NV	Jun 13	10:58 AM	84.9° F	clear skies	Detroit MI	Jun 13	05:20 PM	75.0° F	mostly cloudy skies
+completed	Las Vegas NV	Jun 12	11:23 PM	84.9° F	clear skies	Detroit MI	Jun 13	05:40 AM	75.0° F	mostly cloudy skies
+completed	Las Vegas NV	Jun 12	11:23 PM	84.9° F	clear skies	Detroit MI	Jun 13	05:40 AM	75.0° F	mostly cloudy skies
+completed	Las Vegas NV	Jun 12	11:23 PM	84.9° F	clear skies	Detroit MI	Jun 13	05:40 AM	75.0° F	mostly cloudy skies
+scheduled2	Las Vegas NV	Jun 13	04:20 PM	84.9° F	clear skies	Buffalo NY	Jun 13	11:12 PM	84.0° F	overcast skies
+scheduled2	Las Vegas NV	Jun 13	04:20 PM	84.9° F	clear skies	Buffalo NY	Jun 13	11:12 PM	84.0° F	overcast skies
+scheduled2	Las Vegas NV	Jun 13	04:20 PM	84.9° F	clear skies	Buffalo NY	Jun 13	11:12 PM	84.0° F	overcast skies
+completed	Las Vegas NV	Jun 13	09:31 AM	84.9° F	clear skies	Minneapolis MN	Jun 13	02:29 PM	72.0° F	overcast skies
+completed	Las Vegas NV	Jun 13	09:31 AM	84.9° F	clear skies	Minneapolis MN	Jun 13	02:29 PM	72.0° F	overcast skies
+completed	Las Vegas NV	Jun 13	08:54 AM	84.9° F	clear skies	Denver	Jun 13	11:23 AM	62.1° F	partly cloudy skies
+completed	Las Vegas NV	Jun 13	08:54 AM	84.9° F	clear skies	Denver	Jun 13	11:23 AM	62.1° F	partly cloudy skies
+completed	Lexington KY	Jun 13	10:01 AM	75.0° F	overcast skies	Detroit MI	Jun 13	10:49 AM	75.0° F	mostly cloudy skies
+completed	Lisbon	Jun 13	10:40 AM	71° F 	 mostly cloudy skies	Newark	Jun 13	12:31 PM	86.0° F	mostly cloudy skies
+completed	Lisbon	Jun 13	10:40 AM	71° F 	 mostly cloudy skies	Newark	Jun 13	12:31 PM	86.0° F	mostly cloudy skies
+completed	London Heathrow	Jun 13	08:48 AM	64° F	NULL	New York (JFK)	Jun 13	10:15 AM	82.0° F	mostly cloudy skies
+completed	London Heathrow	Jun 13	08:48 AM	66° F	NULL	New York (JFK)	Jun 13	10:15 AM	82.0° F	mostly cloudy skies
+inflight2	Long Beach CA	Jun 13	03:05 PM	66° F 	" overcast skies, Haze"	Dallas/Fort Worth	Jun 13	07:46 PM	82.0° F	overcast skies
+completed	Long Beach CA	Jun 13	07:05 AM	66° F 	" overcast skies, Haze"	Dallas/Fort Worth	Jun 13	11:35 AM	82.0° F	overcast skies
+completed	Long Beach CA	Jun 13	08:09 AM	66° F 	" overcast skies, Haze"	Dallas/Fort Worth	Jun 13	12:39 PM	82.0° F	overcast skies
+completed	Long Beach CA	Jun 13	10:23 AM	66° F 	" overcast skies, Haze"	Dallas/Fort Worth	Jun 13	03:01 PM	82.0° F	overcast skies
+completed	Long Beach CA	Jun 13	12:38 PM	66° F 	" overcast skies, Haze"	Dallas/Fort Worth	Jun 13	05:07 PM	82.0° F	overcast skies
+completed	Los Angeles CA	Jun 13	12:15 PM	64.0° F	"overcast skies, Haze"	Las Vegas NV	Jun 13	12:55 PM	84.9° F	clear skies
+completed	Los Angeles CA	Jun 13	12:15 PM	64.0° F	"overcast skies, Haze"	Las Vegas NV	Jun 13	12:55 PM	84.9° F	clear skies
+completed	Los Angeles CA	Jun 13	12:15 PM	64.0° F	"overcast skies, Haze"	Las Vegas NV	Jun 13	12:55 PM	84.9° F	clear skies
+completed	Los Angeles CA	Jun 13	12:15 PM	64.0° F	"overcast skies, Haze"	Las Vegas NV	Jun 13	12:55 PM	84.9° F	clear skies
+scheduled2	Los Angeles CA	Jun 12	06:38 PM	64.0° F	"overcast skies, Haze"	Honolulu HI	Jun 12	08:45 PM	78.1° F	mostly clear skies
+completed	Los Angeles CA	Jun 13	07:34 AM	64.0° F	"overcast skies, Haze"	Orlando FL	Jun 13	03:05 PM	84.9° F	mostly cloudy skies
+completed	Miami FL	Jun 13	12:02 PM	86.0° F	partly cloudy skies	Cancun	Jun 13	12:15 PM	89° F 	" mostly cloudy skies, Towering cumulus clouds observed"
+completed	Miami FL	Jun 13	12:41 PM	86.0° F	partly cloudy skies	Guatemala City	Jun 13	12:54 PM	73° F 	" mostly cloudy skies, Towering cumulus clouds observed"
+completed	Milwaukee WI	Jun 13	06:17 AM	82.0° F	partly cloudy skies	Detroit MI	Jun 13	07:51 AM	75.0° F	mostly cloudy skies
+completed	Milwaukee WI	Jun 13	06:08 AM	82.0° F	partly cloudy skies	Cincinnati	Jun 13	07:58 AM	73.9° F	overcast skies
+completed	Milwaukee WI	Jun 13	06:08 AM	82.0° F	partly cloudy skies	Cincinnati	Jun 13	07:58 AM	73.9° F	overcast skies
+completed	Minneapolis MN	Jun 13	09:43 AM	72.0° F	overcast skies	Reno NV	Jun 13	10:42 AM	63.0° F	clear skies
+completed	Minneapolis MN	Jun 13	09:43 AM	72.0° F	overcast skies	Reno NV	Jun 13	10:42 AM	63.0° F	clear skies
+completed	Minneapolis MN	Jun 13	09:43 AM	72.0° F	overcast skies	Reno NV	Jun 13	10:42 AM	63.0° F	clear skies
+completed	Minneapolis MN	Jun 13	09:43 AM	72.0° F	overcast skies	Reno NV	Jun 13	10:42 AM	63.0° F	clear skies
+completed	Minneapolis MN	Jun 13	01:43 PM	72.0° F	overcast skies	Boston (Logan)	Jun 13	05:11 PM	87.1° F	mostly cloudy skies
+completed	Minneapolis MN	Jun 13	01:43 PM	72.0° F	overcast skies	Boston (Logan)	Jun 13	05:11 PM	87.1° F	mostly cloudy skies
+inflight2	Minneapolis MN	Jun 13	04:10 PM	72.0° F	overcast skies	Boston (Logan)	Jun 13	08:01 PM	87.1° F	mostly cloudy skies
+inflight2	Minneapolis MN	Jun 13	04:10 PM	72.0° F	overcast skies	Boston (Logan)	Jun 13	08:01 PM	87.1° F	mostly cloudy skies
+inflight2	Minneapolis MN	Jun 13	05:02 PM	72.0° F	overcast skies	Boston (Logan)	Jun 13	08:24 PM	87.1° F	mostly cloudy skies
+inflight2	Minneapolis MN	Jun 13	05:02 PM	72.0° F	overcast skies	Boston (Logan)	Jun 13	08:24 PM	87.1° F	mostly cloudy skies
+scheduled2	Minneapolis MN	Jun 13	06:43 PM	72.0° F	overcast skies	Boston (Logan)	Jun 13	10:23 PM	87.1° F	mostly cloudy skies
+scheduled2	Minneapolis MN	Jun 13	06:43 PM	72.0° F	overcast skies	Boston (Logan)	Jun 13	10:23 PM	87.1° F	mostly cloudy skies
+completed	Minneapolis MN	Jun 13	07:34 AM	72.0° F	overcast skies	Boston (Logan)	Jun 13	10:52 AM	87.1° F	mostly cloudy skies
+completed	Minneapolis MN	Jun 13	07:34 AM	72.0° F	overcast skies	Boston (Logan)	Jun 13	10:52 AM	87.1° F	mostly cloudy skies
+completed	Minneapolis MN	Jun 13	11:31 AM	72.0° F	overcast skies	Boston (Logan)	Jun 13	02:51 PM	87.1° F	mostly cloudy skies
+completed	Minneapolis MN	Jun 13	11:31 AM	72.0° F	overcast skies	Boston (Logan)	Jun 13	02:51 PM	87.1° F	mostly cloudy skies
+completed	Minneapolis MN	Jun 13	11:31 AM	72.0° F	overcast skies	Boston (Logan)	Jun 13	02:51 PM	87.1° F	mostly cloudy skies
+completed	Minneapolis MN	Jun 13	11:41 AM	72.0° F	overcast skies	La Crosse WI	Jun 13	12:01 PM	72.0° F	overcast skies
+completed	Minneapolis MN	Jun 13	11:55 AM	72.0° F	overcast skies	Grand Forks ND	Jun 13	12:44 PM	72.0° F	overcast skies
+completed	Minneapolis MN	Jun 13	11:55 AM	72.0° F	overcast skies	Grand Forks ND	Jun 13	12:44 PM	72.0° F	overcast skies
+completed	Minneapolis MN	Jun 13	11:55 AM	72.0° F	overcast skies	Grand Forks ND	Jun 13	12:44 PM	72.0° F	overcast skies
+completed	Minneapolis MN	Jun 13	11:55 AM	72.0° F	overcast skies	Grand Forks ND	Jun 13	12:44 PM	72.0° F	overcast skies
+inflight2	Minneapolis MN	Jun 13	05:18 PM	72.0° F	overcast skies	Rapid City SD	Jun 13	05:38 PM	55.0° F	"overcast skies, Light rain"
+completed	Montego Bay	Jun 13	11:29 AM	87° F 	" partly cloudy skies, Cumulonimbus clouds observed"	Charlotte NC	Jun 13	02:52 PM	75.9° F	"overcast skies, Light rain"
+completed	Nashville TN	Jun 13	07:01 AM	82.9° F	partly cloudy skies	Miami FL	Jun 13	09:46 AM	86.0° F	partly cloudy skies
+completed	New Orleans LA	Jun 13	06:48 AM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"	Dallas/Fort Worth	Jun 13	07:50 AM	82.0° F	overcast skies
+completed	New Orleans LA	Jun 13	06:48 AM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"	Dallas/Fort Worth	Jun 13	07:50 AM	82.0° F	overcast skies
+completed	New Orleans LA	Jun 13	06:48 AM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"	Dallas/Fort Worth	Jun 13	07:50 AM	82.0° F	overcast skies
+completed	New Orleans LA	Jun 13	06:48 AM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"	Dallas/Fort Worth	Jun 13	07:50 AM	82.0° F	overcast skies
+completed	New Orleans LA	Jun 13	03:26 PM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"	Charlotte NC	Jun 13	05:58 PM	75.9° F	"overcast skies, Light rain"
+completed	New Orleans LA	Jun 13	06:00 AM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"	Charlotte NC	Jun 13	08:21 AM	75.9° F	"overcast skies, Light rain"
+completed	New Orleans LA	Jun 13	07:22 AM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"	Charlotte NC	Jun 13	09:41 AM	75.9° F	"overcast skies, Light rain"
+completed	New Orleans LA	Jun 13	10:28 AM	88.0° F	"mostly cloudy skies, Towering cumulus clouds observed"	Charlotte NC	Jun 13	12:57 PM	75.9° F	"overcast skies, Light rain"
+completed	New York (La Guardia)	Jun 13	02:16 PM	84.9° F	mostly cloudy skies	Denver	Jun 13	03:55 PM	62.1° F	partly cloudy skies
+inflight2	New York (La Guardia)	Jun 13	05:47 PM	84.9° F	mostly cloudy skies	Denver	Jun 13	07:25 PM	62.1° F	partly cloudy skies
+scheduled2	New York (La Guardia)	Jun 13	05:55 PM	84.9° F	mostly cloudy skies	Denver	Jun 13	07:32 PM	62.1° F	partly cloudy skies
+completed	New York (La Guardia)	Jun 13	06:09 AM	84.9° F	mostly cloudy skies	Denver	Jun 13	07:47 AM	62.1° F	partly cloudy skies
+completed	New York (La Guardia)	Jun 13	08:20 AM	84.9° F	mostly cloudy skies	Denver	Jun 13	09:50 AM	62.1° F	partly cloudy skies
+completed	New York (La Guardia)	Jun 13	09:09 AM	84.9° F	mostly cloudy skies	Denver	Jun 13	10:44 AM	62.1° F	partly cloudy skies
+completed	New York (La Guardia)	Jun 13	10:07 AM	84.9° F	mostly cloudy skies	Chicago IL (O'Hare)	Jun 13	10:55 AM	81.0° F	partly cloudy skies
+completed	New York (La Guardia)	Jun 13	11:23 AM	84.9° F	mostly cloudy skies	Denver	Jun 13	01:00 PM	62.1° F	partly cloudy skies
+completed	Newark	Jun 13	01:06 PM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	03:14 PM	64.0° F	"overcast skies, Haze"
+inflight2	Newark	Jun 13	03:34 PM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	05:36 PM	64.0° F	"overcast skies, Haze"
+inflight2	Newark	Jun 13	03:34 PM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	05:36 PM	64.0° F	"overcast skies, Haze"
+inflight2	Newark	Jun 13	06:04 PM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	08:16 PM	64.0° F	"overcast skies, Haze"
+inflight2	Newark	Jun 13	06:14 PM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	08:21 PM	64.0° F	"overcast skies, Haze"
+completed	Newark	Jun 13	07:09 AM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	09:20 AM	64.0° F	"overcast skies, Haze"
+completed	Newark	Jun 13	07:26 AM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	09:40 AM	64.0° F	"overcast skies, Haze"
+scheduled2	Newark	Jun 13	07:45 PM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	10:23 PM	64.0° F	"overcast skies, Haze"
+completed	Newark	Jun 13	09:04 AM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	11:07 AM	64.0° F	"overcast skies, Haze"
+completed	Newark	Jun 13	09:24 AM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	11:38 AM	64.0° F	"overcast skies, Haze"
+completed	Newark	Jun 13	12:12 PM	86.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	02:31 PM	64.0° F	"overcast skies, Haze"
+scheduled2	Norfolk VA	Jun 13	07:07 PM	84.9° F	partly cloudy skies	Jacksonville FL	Jun 13	08:49 PM	84.9° F	mostly cloudy skies
+scheduled2	Norfolk VA	Jun 13	08:06 PM	84.9° F	partly cloudy skies	Baltimore MD	Jun 13	08:26 PM	84.9° F	mostly cloudy skies
+scheduled2	Norfolk VA	Jun 13	08:06 PM	84.9° F	partly cloudy skies	Baltimore MD	Jun 13	8:15 pm EDT. Traffic is experiencing gate hold and taxi delays lasting 15 minutes or less.</font>	84.9° F	mostly cloudy skies
+scheduled2	Norfolk VA	Jun 13	08:06 PM	84.9° F	partly cloudy skies	Baltimore MD	Jun 13	8:15 pm EDT. Traffic is experiencing gate hold and taxi delays lasting 15 minutes or less.</font>	84.9° F	mostly cloudy skies
+completed	Oakland CA	Jun 13	06:57 AM	66.0° F	clear skies	Phoenix AZ	Jun 13	08:17 AM	82.9° F	clear skies
+completed	Oakland CA	Jun 13	06:57 AM	66.0° F	clear skies	Phoenix AZ	Jun 13	08:17 AM	82.9° F	clear skies
+completed	Oakland CA	Jun 13	07:07 AM	66.0° F	clear skies	Salt Lake City UT	Jun 13	09:26 AM	60.1° F	clear skies
+completed	Oakland CA	Jun 13	07:07 AM	66.0° F	clear skies	Salt Lake City UT	Jun 13	09:26 AM	60.1° F	clear skies
+completed	Oakland CA	Jun 13	07:07 AM	66.0° F	clear skies	Salt Lake City UT	Jun 13	09:26 AM	60.1° F	clear skies
+completed	Oakland CA	Jun 13	01:41 PM	66.0° F	clear skies	Ontario CA	Jun 13	02:38 PM	64.0° F	"mostly cloudy skies, Haze"
+completed	Oakland CA	Jun 13	01:41 PM	66.0° F	clear skies	Ontario CA	Jun 13	02:38 PM	64.0° F	"mostly cloudy skies, Haze"
+completed	Omaha NE	Jun 13	03:47 PM	73.9° F	mostly clear skies	St. Louis MO	Jun 13	04:37 PM	82.9° F	partly cloudy skies
+completed	Omaha NE	Jun 13	03:47 PM	73.9° F	mostly clear skies	St. Louis MO	Jun 13	04:37 PM	82.9° F	partly cloudy skies
+completed	Omaha NE	Jun 13	03:47 PM	73.9° F	mostly clear skies	St. Louis MO	Jun 13	04:37 PM	82.9° F	partly cloudy skies
+completed	Omaha NE	Jun 13	03:47 PM	73.9° F	mostly clear skies	St. Louis MO	Jun 13	04:37 PM	82.9° F	partly cloudy skies
+completed	Ontario CA	Jun 13	03:14 PM	64.0° F	"mostly cloudy skies, Haze"	Las Vegas NV	Jun 13	03:56 PM	84.9° F	clear skies
+completed	Ontario CA	Jun 13	03:14 PM	64.0° F	"mostly cloudy skies, Haze"	Las Vegas NV	Jun 13	03:56 PM	84.9° F	clear skies
+completed	Ontario CA	Jun 13	03:14 PM	64.0° F	"mostly cloudy skies, Haze"	Las Vegas NV	Jun 13	03:56 PM	84.9° F	clear skies
+completed	Ontario CA	Jun 13	06:22 AM	68.0° F	"clear skies, Haze"	Denver	Jun 13	09:17 AM	62.1° F	partly cloudy skies
+completed	Ontario CA	Jun 13	06:22 AM	68.0° F	"clear skies, Haze"	Denver	Jun 13	09:17 AM	62.1° F	partly cloudy skies
+completed	Orlando FL	Jun 13	03:01 PM	84.9° F	mostly cloudy skies	Columbus OH	Jun 13	04:40 PM	78° F 	 overcast skies
+completed	Philadelphia PA	Jun 13	03:37 PM	84.0° F	mostly cloudy skies	Orlando FL	Jun 13	05:33 PM	84.9° F	mostly cloudy skies
+scheduled2	Philadelphia PA	Jun 13	05:44 PM	84.0° F	mostly cloudy skies	Orlando FL	Jun 13	07:33 PM	84.9° F	mostly cloudy skies
+scheduled2	Philadelphia PA	Jun 13	06:19 PM	84.0° F	mostly cloudy skies	Orlando FL	Jun 13	08:38 PM	84.9° F	mostly cloudy skies
+completed	Philadelphia PA	Jun 13	07:04 AM	84.0° F	mostly cloudy skies	Orlando FL	Jun 13	09:04 AM	84.9° F	mostly cloudy skies
+completed	Philadelphia PA	Jun 13	11:15 AM	84.0° F	mostly cloudy skies	Orlando FL	Jun 13	01:13 PM	84.9° F	mostly cloudy skies
+completed	Phoenix AZ	Jun 13	01:38 PM	82.9° F	clear skies	San Diego CA	Jun 13	02:24 PM	64.9° F	overcast skies
+completed	Phoenix AZ	Jun 13	01:38 PM	82.9° F	clear skies	San Diego CA	Jun 13	02:24 PM	64.9° F	overcast skies
+completed	Phoenix AZ	Jun 13	09:15 AM	82.9° F	clear skies	Buffalo NY	Jun 13	03:46 PM	84.0° F	overcast skies
+completed	Phoenix AZ	Jun 13	09:15 AM	82.9° F	clear skies	Buffalo NY	Jun 13	03:46 PM	84.0° F	overcast skies
+completed	Phoenix AZ	Jun 13	10:33 AM	82.9° F	clear skies	Los Angeles CA	Jun 13	11:28 AM	64.0° F	"overcast skies, Haze"
+completed	Phoenix AZ	Jun 13	10:33 AM	82.9° F	clear skies	Los Angeles CA	Jun 13	11:28 AM	64.0° F	"overcast skies, Haze"
+inflight2	Phoenix AZ	Jun 13	12:16 PM	82.9° F	clear skies	Miami FL	Jun 13	07:18 PM	86.0° F	partly cloudy skies
+completed	Pittsburgh PA	Jun 13	05:05 PM	84.0° F	mostly cloudy skies	Philadelphia PA	Jun 13	06:20 PM	84.0° F	mostly cloudy skies
+completed	Portland OR	Jun 13	01:12 AM	59.0° F	mostly cloudy skies	Minneapolis MN	Jun 13	06:04 AM	72.0° F	overcast skies
+completed	Portland OR	Jun 13	01:12 AM	59.0° F	mostly cloudy skies	Minneapolis MN	Jun 13	06:04 AM	72.0° F	overcast skies
+completed	Portland OR	Jun 13	01:42 PM	59.0° F	mostly cloudy skies	Los Angeles CA	Jun 13	03:41 PM	64.0° F	"overcast skies, Haze"
+completed	Raleigh NC	Jun 13	11:44 AM	84.0° F	mostly cloudy skies	Baltimore MD	Jun 13	12:23 PM	84.9° F	mostly cloudy skies
+completed	Raleigh NC	Jun 13	11:44 AM	84.0° F	mostly cloudy skies	Baltimore MD	Jun 13	12:23 PM	84.9° F	mostly cloudy skies
+completed	Raleigh NC	Jun 13	11:44 AM	84.0° F	mostly cloudy skies	Baltimore MD	Jun 13	12:23 PM	84.9° F	mostly cloudy skies
+completed	Raleigh NC	Jun 13	11:44 AM	84.0° F	mostly cloudy skies	Baltimore MD	Jun 13	12:23 PM	84.9° F	mostly cloudy skies
+completed	Raleigh NC	Jun 13	01:51 PM	84.0° F	mostly cloudy skies	Atlanta GA	Jun 13	02:51 PM	82.0° F	partly cloudy skies
+completed	Rapid City SD	Jun 13	01:06 PM	55.0° F	"overcast skies, Light rain"	Minneapolis MN	Jun 13	03:15 PM	72.0° F	overcast skies
+completed	Rapid City SD	Jun 13	01:06 PM	55.0° F	"overcast skies, Light rain"	Minneapolis MN	Jun 13	03:15 PM	72.0° F	overcast skies
+scheduled2	Rio de Janeiro RJ	Jun 13	08:40 PM	82° F	NULL	Miami FL	Jun 14	04:17 AM	86.0° F	partly cloudy skies
+completed	Salt Lake City UT	Jun 13	10:07 AM	60.1° F	clear skies	St. Louis MO	Jun 13	01:22 PM	82.9° F	partly cloudy skies
+completed	Salt Lake City UT	Jun 13	10:07 AM	60.1° F	clear skies	St. Louis MO	Jun 13	01:22 PM	82.9° F	partly cloudy skies
+completed	Salt Lake City UT	Jun 13	10:07 AM	60.1° F	clear skies	St. Louis MO	Jun 13	01:22 PM	82.9° F	partly cloudy skies
+completed	San Diego CA	Jun 13	07:56 AM	64.9° F	overcast skies	Indianapolis IN	Jun 13	01:42 PM	77.0° F	mostly clear skies
+completed	San Diego CA	Jun 13	07:56 AM	64.9° F	overcast skies	Indianapolis IN	Jun 13	01:42 PM	77.0° F	mostly clear skies
+completed	San Diego CA	Jun 13	06:42 AM	64.9° F	overcast skies	St. Louis MO	Jun 13	11:34 AM	82.9° F	partly cloudy skies
+completed	San Diego CA	Jun 13	06:42 AM	64.9° F	overcast skies	St. Louis MO	Jun 13	11:34 AM	82.9° F	partly cloudy skies
+scheduled4	San Diego CA	Jun 13	07:56 AM	64.9° F	overcast skies	Chicago IL (O'Hare)	Jun 13	02:00 PM	81.0° F	partly cloudy skies
+scheduled4	San Diego CA	Jun 13	07:56 AM	64.9° F	overcast skies	Chicago IL (O'Hare)	Jun 13	02:00 PM	81.0° F	partly cloudy skies
+completed	San Francisco CA	Jun 13	11:51 AM	64.0° F	mostly clear skies	Puerto Vallarta	Jun 13	05:11 PM	84° F 	" mostly cloudy skies, Towering cumulus clouds observed"
+completed	San Francisco CA	Jun 13	11:51 AM	64.0° F	mostly clear skies	Puerto Vallarta	Jun 13	05:11 PM	84° F 	" mostly cloudy skies, Towering cumulus clouds observed"
+completed	San Francisco CA	Jun 13	06:48 AM	64.0° F	mostly clear skies	Las Vegas NV	Jun 13	07:50 AM	84.9° F	clear skies
+completed	San Francisco CA	Jun 13	06:48 AM	64.0° F	mostly clear skies	Las Vegas NV	Jun 13	07:50 AM	84.9° F	clear skies
+completed	San Francisco CA	Jun 13	09:10 AM	64.0° F	mostly clear skies	Washington DC (Dulles)	Jun 13	04:48 PM	84.9° F	mostly cloudy skies
+completed	San Francisco CA	Jun 13	09:10 AM	64.0° F	mostly clear skies	Washington DC (Dulles)	Jun 13	04:48 PM	84.9° F	mostly cloudy skies
+completed	San Francisco CA	Jun 13	02:54 PM	64.0° F	mostly clear skies	Los Angeles CA	Jun 13	03:50 PM	64.0° F	"overcast skies, Haze"
+completed	San Francisco CA	Jun 13	02:54 PM	64.0° F	mostly clear skies	Los Angeles CA	Jun 13	03:50 PM	64.0° F	"overcast skies, Haze"
+scheduled2	San Francisco CA	Jun 13	06:00 PM	64.0° F	mostly clear skies	Chicago IL (O'Hare)	Jun 13	11:44 am PDT. Traffic is experiencing gate hold and taxi delays lasting 15 minutes or less.</font>	81.0° F	partly cloudy skies
+scheduled2	San Francisco CA	Jun 13	06:00 PM	64.0° F	mostly clear skies	Chicago IL (O'Hare)	Jun 13	11:44 am PDT. Traffic is experiencing gate hold and taxi delays lasting 15 minutes or less.</font>	81.0° F	partly cloudy skies
+scheduled2	San Francisco CA	Jun 13	06:00 PM	64.0° F	mostly clear skies	Chicago IL (O'Hare)	Jun 13	11:44 am PDT. Traffic is experiencing gate hold and taxi delays lasting 15 minutes or less.</font>	81.0° F	partly cloudy skies
+scheduled2	San Francisco CA	Jun 13	06:00 PM	64.0° F	mostly clear skies	Chicago IL (O'Hare)	Jun 13	11:44 am PDT. Traffic is experiencing gate hold and taxi delays lasting 15 minutes or less.</font>	81.0° F	partly cloudy skies
+completed	San Jose CA	Jun 13	08:54 AM	68.0° F	clear skies	Las Vegas NV	Jun 13	10:00 AM	84.9° F	clear skies
+completed	San Jose CA	Jun 13	08:54 AM	68.0° F	clear skies	Las Vegas NV	Jun 13	10:00 AM	84.9° F	clear skies
+completed	San Jose CA	Jun 13	08:54 AM	68.0° F	clear skies	Las Vegas NV	Jun 13	10:00 AM	84.9° F	clear skies
+completed	San Jose CA	Jun 13	08:54 AM	68.0° F	clear skies	Las Vegas NV	Jun 13	10:00 AM	84.9° F	clear skies
+completed	San Jose Cabo	Jun 13	08:31 AM	80° F 	 clear skies	Dallas/Fort Worth	Jun 13	11:49 AM	82.0° F	overcast skies
+completed	San Jose Cabo	Jun 13	08:31 AM	80° F 	 clear skies	Dallas/Fort Worth	Jun 13	11:49 AM	82.0° F	overcast skies
+completed	San Jose Cabo	Jun 13	08:31 AM	80° F 	 clear skies	Dallas/Fort Worth	Jun 13	11:49 AM	82.0° F	overcast skies
+completed	San Jose Cabo	Jun 13	08:31 AM	80° F 	 clear skies	Dallas/Fort Worth	Jun 13	11:49 AM	82.0° F	overcast skies
+inflight2	Seattle WA	Jun 13	03:31 PM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	05:17 PM	64.0° F	mostly clear skies
+inflight2	Seattle WA	Jun 13	03:31 PM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	05:17 PM	64.0° F	mostly clear skies
+inflight2	Seattle WA	Jun 13	04:00 PM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	05:46 PM	64.0° F	mostly clear skies
+inflight2	Seattle WA	Jun 13	04:00 PM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	05:46 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	06:11 AM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	07:46 AM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	06:11 AM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	07:46 AM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	07:15 AM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	08:49 AM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	07:26 AM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	09:05 AM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	08:56 AM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	10:30 AM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	08:56 AM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	10:30 AM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 11	11:11 PM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 12	10:37 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	11:55 AM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	01:31 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	12:19 PM	53° F 	 mostly cloudy skies	San Francisco CA	Jun 13	01:54 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	01:44 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	03:18 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	01:48 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	03:24 PM	64.0° F	mostly clear skies
+inflight2	Seattle WA	Jun 13	03:31 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	05:17 PM	64.0° F	mostly clear skies
+inflight2	Seattle WA	Jun 13	03:31 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	05:17 PM	64.0° F	mostly clear skies
+inflight2	Seattle WA	Jun 13	04:00 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	05:46 PM	64.0° F	mostly clear skies
+inflight2	Seattle WA	Jun 13	04:00 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	05:46 PM	64.0° F	mostly clear skies
+scheduled2	Seattle WA	Jun 13	05:30 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	07:34 PM	64.0° F	mostly clear skies
+scheduled2	Seattle WA	Jun 13	05:57 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 12	09:39 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	06:25 AM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	08:05 AM	64.0° F	mostly clear skies
+scheduled2	Seattle WA	Jun 13	06:35 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 12	09:42 PM	64.0° F	mostly clear skies
+scheduled2	Seattle WA	Jun 13	06:35 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 12	09:42 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 12	09:14 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 12	10:47 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 12	09:14 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 12	10:47 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	10:15 AM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	11:56 AM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	11:55 AM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	01:31 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	12:19 PM	55.9° F	mostly cloudy skies	San Francisco CA	Jun 13	01:54 PM	64.0° F	mostly clear skies
+completed	Seattle WA	Jun 13	06:53 AM	53° F 	 mostly cloudy skies	San Diego CA	Jun 13	09:06 AM	64.9° F	overcast skies
+completed	Seattle WA	Jun 13	07:18 AM	53° F 	 mostly cloudy skies	Minneapolis MN	Jun 13	12:20 PM	72.0° F	overcast skies
+completed	Seattle WA	Jun 13	08:07 AM	53° F 	 mostly cloudy skies	San Diego CA	Jun 13	10:20 AM	64.9° F	overcast skies
+completed	Seattle WA	Jun 12	09:20 PM	53° F 	 mostly cloudy skies	San Diego CA	Jun 12	11:28 PM	64.9° F	overcast skies
+completed	Seattle WA	Jun 13	09:33 AM	53° F 	 mostly cloudy skies	San Diego CA	Jun 13	11:42 AM	64.9° F	overcast skies
+completed	Seattle WA	Jun 12	09:39 PM	53° F 	 mostly cloudy skies	San Diego CA	Jun 12	11:47 PM	64.9° F	overcast skies
+completed	Seattle WA	Jun 13	11:50 AM	53° F 	 mostly cloudy skies	San Diego CA	Jun 13	01:59 PM	64.9° F	overcast skies
+completed	Seattle WA	Jun 13	07:18 AM	55.9° F	mostly cloudy skies	Minneapolis MN	Jun 13	12:20 PM	72.0° F	overcast skies
+completed	St. Louis MO	Jun 13	02:22 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	05:31 PM	84.9° F	mostly cloudy skies
+completed	St. Louis MO	Jun 13	02:22 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	05:31 PM	84.9° F	mostly cloudy skies
+completed	St. Louis MO	Jun 13	02:22 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	05:31 PM	84.9° F	mostly cloudy skies
+inflight2	St. Louis MO	Jun 13	04:00 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	07:24 PM	84.9° F	mostly cloudy skies
+inflight2	St. Louis MO	Jun 13	04:00 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	07:24 PM	84.9° F	mostly cloudy skies
+inflight2	St. Louis MO	Jun 13	04:00 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	07:24 PM	84.9° F	mostly cloudy skies
+inflight2	St. Louis MO	Jun 13	04:00 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	07:24 PM	84.9° F	mostly cloudy skies
+inflight2	St. Louis MO	Jun 13	05:21 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	08:15 PM	84.9° F	mostly cloudy skies
+inflight2	St. Louis MO	Jun 13	05:21 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	08:15 PM	84.9° F	mostly cloudy skies
+inflight2	St. Louis MO	Jun 13	05:21 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	08:15 PM	84.9° F	mostly cloudy skies
+inflight2	St. Louis MO	Jun 13	05:21 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	08:15 PM	84.9° F	mostly cloudy skies
+completed	St. Louis MO	Jun 13	07:23 AM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	10:23 AM	84.9° F	mostly cloudy skies
+completed	St. Louis MO	Jun 13	08:03 AM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	11:03 AM	84.9° F	mostly cloudy skies
+completed	St. Louis MO	Jun 13	08:03 AM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	11:03 AM	84.9° F	mostly cloudy skies
+completed	St. Louis MO	Jun 13	10:18 AM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	01:17 PM	84.9° F	mostly cloudy skies
+completed	St. Louis MO	Jun 13	10:18 AM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	01:17 PM	84.9° F	mostly cloudy skies
+completed	St. Louis MO	Jun 13	12:59 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	04:03 PM	84.9° F	mostly cloudy skies
+completed	St. Louis MO	Jun 13	12:59 PM	82.9° F	partly cloudy skies	Orlando FL	Jun 13	04:03 PM	84.9° F	mostly cloudy skies
+scheduled2	Vancouver BC	Jun 13	05:56 PM	64.0° F	mostly clear skies	San Francisco CA	Jun 13	07:35 PM	64.0° F	mostly clear skies
+completed	Washington DC (Dulles)	Jun 13	02:53 PM	84.9° F	mostly cloudy skies	Atlanta GA	Jun 13	04:14 PM	82.0° F	partly cloudy skies
+completed	Washington DC (Dulles)	Jun 13	02:53 PM	84.9° F	mostly cloudy skies	Atlanta GA	Jun 13	04:14 PM	82.0° F	partly cloudy skies

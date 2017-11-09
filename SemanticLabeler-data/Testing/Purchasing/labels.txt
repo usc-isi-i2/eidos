@@ -1,0 +1,183 @@
+--------------------------------------------------
+	File: C:\Dipsy\SemanticLabeler\data\Testing\Purchasing\PCUniverseFlatbedScanner.txt
+--------------------------------------------------
+Matches for column - 1 - are: 
+	PR-ModelName  with score 1467.0
+		and matches correct Label PR-ModelName among top 1
+	PR-Aircraft  with score 242.0
+	CT-Address  with score 221.45096
+	PR-CompatibleWithDesc  with score 219.0
+Matches for column - 2 - are: 
+	PR-Place  with score 258.0
+	PR-ModelName  with score 147.0
+	PR-Manufacturer  with score 147.0
+		and matches correct Label PR-Manufacturer among top 3
+	PR-ImageSensorDesc  with score 147.0
+Matches for column - 3 - are: 
+Matches for column - 4 - are: 
+	PR-ModelNumber  with score 355.0
+		and matches correct Label PR-ModelNumber among top 1
+	PR-Price  with score 48.0
+	PR-VendorItemNumber  with score 47.0
+	CT-Address  with score 40.986
+Matches for column - 5 - are: 
+	PR-HotelPrice  with score 2048.0
+	PR-Price  with score 1032.0
+		and matches correct Label PR-Price among top 2
+	PR-MonthNumber  with score 2.0
+	PR-Hours  with score 2.0
+Matches for column - 6 - are: 
+Matches for column - 7 - are: 
+	PR-Longitude  with score 3111.0
+	PR-DeviceDepth  with score 1955.0
+	PR-DeviceWidth  with score 1405.0
+		and matches correct Label PR-DeviceWidth among top 3
+	PR-Latitude  with score 1064.0
+Matches for column - 8 - are: 
+	PR-Longitude  with score 3198.0
+	PR-DeviceDepth  with score 3149.0
+	PR-DeviceWidth  with score 1704.0
+		and matches correct Label PR-DeviceWidth among top 3
+	PR-Latitude  with score 1596.0
+Matches for column - 9 - are: 
+	PR-Longitude  with score 2579.0
+	PR-DeviceDepth  with score 1949.0
+		and matches correct Label PR-DeviceDepth among top 2
+	PR-Latitude  with score 1400.0
+	PR-DeviceWidth  with score 1378.0
+Matches for column - 10 - are: 
+	PR-DeviceDepth  with score 3139.0
+		and matches correct Label PR-DeviceDepth among top 1
+	PR-Longitude  with score 2652.0
+	PR-Latitude  with score 2100.0
+	PR-DeviceWidth  with score 1674.0
+Matches for column - 11 - are: 
+	PR-DeviceDepth  with score 1537.0
+	PR-DeviceWeight  with score 1522.0
+	PR-DeviceHeight  with score 950.0
+		and matches correct Label PR-DeviceHeight among top 3
+	PR-Longitude  with score 525.0
+Matches for column - 12 - are: 
+	PR-DeviceWeight  with score 2598.0
+	PR-DeviceDepth  with score 2485.0
+	PR-DeviceHeight  with score 1602.0
+		and matches correct Label PR-DeviceHeight among top 3
+	PR-DeviceWidth  with score 564.0
+Matches for column - 13 - are: 
+	PR-ModelNumber  with score 516.0
+	PR-Place  with score 370.0
+	PR-ModelName  with score 267.0
+	PR-CompatibleWithDesc  with score 267.0
+Matches for column - 14 - are: 
+	PR-FlightBaggageClaim  with score 525.0
+	PR-VerticalScanSize  with score 48.0
+	PR-DeviceWeight  with score 48.0
+	PR-VendorItemNumber  with score 21.0
+Matches for column - 15 - are: 
+	PR-DeviceDepth  with score 2419.0
+	PR-HorizontalScanSize  with score 912.0
+		and matches correct Label PR-HorizontalScanSize among top 2
+	PR-DeviceWidth  with score 742.0
+	PR-DeviceHeight  with score 719.0
+Matches for column - 16 - are: 
+	PR-DeviceDepth  with score 3819.0
+	PR-HorizontalScanSize  with score 1380.0
+		and matches correct Label PR-HorizontalScanSize among top 2
+	PR-DeviceHeight  with score 1259.0
+	PR-DeviceWeight  with score 1105.0
+Matches for column - 17 - are: 
+	PR-VerticalScanSize  with score 336.0
+		and matches correct Label PR-VerticalScanSize among top 1
+	PR-DeviceHeight  with score 192.0
+	PR-FlightGateNumber  with score 112.0
+	PR-DisplaySize  with score 66.0
+Matches for column - 18 - are: 
+	PR-VerticalScanSize  with score 156.0
+		and matches correct Label PR-VerticalScanSize among top 1
+	PR-Day  with score 112.0
+	PR-DisplaySize  with score 84.0
+	PR-DeviceHeight  with score 84.0
+Matches for column - 19 - are: 
+	PR-VendorItemNumber  with score 82.0
+	PR-ImageContrastRatio  with score 64.0
+	CT-StreetAddress  with score 62.07521
+	PR-HorizontalOpticalScanResolution  with score 52.0
+		and matches correct Label PR-HorizontalOpticalScanResolution among top 4
+Matches for column - 20 - are: 
+	PR-VerticalOpticalScanResolution  with score 306.0
+	PR-HorizontalOpticalScanResolution  with score 282.0
+		and matches correct Label PR-HorizontalOpticalScanResolution among top 2
+	PR-StreetNumber  with score 156.0
+	PR-DisplayHeight  with score 138.0
+Matches for column - 21 - are: 
+	PR-VendorItemNumber  with score 82.0
+	CT-StreetAddress  with score 62.07521
+	PR-ImageContrastRatio  with score 60.0
+	CT-Address  with score 51.320908
+Matches for column - 22 - are: 
+	PR-VerticalOpticalScanResolution  with score 224.0
+		and matches correct Label PR-VerticalOpticalScanResolution among top 1
+	PR-HorizontalOpticalScanResolution  with score 192.0
+	PR-HorizontalInterpolatedScanResolution  with score 164.0
+	PR-StreetNumber  with score 156.0
+Matches for column - 23 - are: 
+	PR-ModelNumber  with score 88.0
+	CT-Address  with score 21.619225
+	PR-StateAbbr  with score 16.0
+	PR-VIN  with score 12.0
+Matches for column - 24 - are: 
+	PR-FlightGateNumber  with score 200.0
+	PR-CarMileage  with score 84.0
+	PR-Hours  with score 33.0
+	PR-MonthNumber  with score 25.0
+Matches for column - 25 - are: 
+	PR-ColorBitDepth  with score 316.0
+		and matches correct Label PR-ColorBitDepth among top 1
+	PR-Hours  with score 152.0
+	PR-Minutes  with score 132.0
+	PR-Day  with score 104.0
+Matches for column - 26 - are: 
+	PR-FlightGateNumber  with score 84.0
+	PR-VendorItemNumber  with score 17.0
+	PR-GrayscaleBitDepth  with score 15.0
+		and matches correct Label PR-GrayscaleBitDepth among top 3
+	CT-StreetAddress  with score 14.3055
+Matches for column - 27 - are: 
+	PR-GrayscaleBitDepth  with score 240.0
+		and matches correct Label PR-GrayscaleBitDepth among top 1
+	PR-Hours  with score 224.0
+	PR-Longitude  with score 210.0
+	PR-MonthNumber  with score 144.0
+Matches for column - 28 - are: 
+	PR-Longitude  with score 1896.0
+	PR-DeviceDepth  with score 1653.0
+	PR-DeviceWidth  with score 970.0
+	PR-Latitude  with score 920.0
+Matches for column - 29 - are: 
+	PR-DeviceDepth  with score 2357.0
+	PR-Longitude  with score 1728.0
+	PR-DeviceWeight  with score 1233.0
+		and matches correct Label PR-DeviceWeight among top 3
+	PR-Latitude  with score 1200.0
+Matches for column - 30 - are: 
+	PR-VendorItemNumber  with score 82.0
+	CT-StreetAddress  with score 37.23991
+	CT-Address  with score 31.33238
+	PR-ImageContrastRatio  with score 8.0
+Matches for column - 31 - are: 
+	PR-HorizontalInterpolatedScanResolution  with score 124.0
+		and matches correct Label PR-HorizontalInterpolatedScanResolution among top 1
+	PR-VerticalInterpolatedScanResolution  with score 112.0
+	PR-StreetNumber  with score 92.0
+	PR-VendorItemNumber  with score 52.0
+Matches for column - 32 - are: 
+	PR-VendorItemNumber  with score 82.0
+	CT-StreetAddress  with score 37.23991
+	CT-Address  with score 31.33238
+	PR-ImageContrastRatio  with score 8.0
+Matches for column - 33 - are: 
+	PR-HorizontalInterpolatedScanResolution  with score 124.0
+	PR-VerticalInterpolatedScanResolution  with score 112.0
+		and matches correct Label PR-VerticalInterpolatedScanResolution among top 2
+	PR-StreetNumber  with score 92.0
+	PR-VendorItemNumber  with score 52.0

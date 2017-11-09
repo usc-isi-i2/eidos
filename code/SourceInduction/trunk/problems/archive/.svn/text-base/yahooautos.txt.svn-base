@@ -1,0 +1,27 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+import problems/types.txt
+
+## Relations: 
+
+import problems/relations.txt
+import problems/comparisons.txt
+
+## Sources: 
+
+#hack:
+type trim [varchar(50)]
+type vim [varchar(20)]
+relation car(make,model,trim,year,vim)
+relation car_details(vim,mileage,price)
+source CarModels($make,$year,model,trim) :- car(make,model,trim,year,_).	{invocation.wrappers.Ragnarok; getModels}
+
+import problems/sources_ragnarok.txt
+
+## Target Predicate: 
+
+target YahooAutos($zipcode,$make,datetime,year,model,vin,mileage,price,distanceMi)	{invocation.wrappers.YahooAutos; usedCars}
+				
+##############################################################

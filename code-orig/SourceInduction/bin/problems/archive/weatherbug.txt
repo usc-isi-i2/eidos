@@ -1,0 +1,33 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+import problems/types.txt
+
+## Relations: 
+
+import problems/relations.txt
+import problems/comparisons.txt
+
+## Sources: 
+
+import problems/sources_ragnarok.txt
+
+source HotelsByCity($city,hotel,street,state,zipcode,floors,phone)				:- hotel(hotel,_,street,zipcode,"US",phone), municipality(city,state,zipcode,_),building(street,zipcode,country,floors). 				{invocation.wrappers.USFireAdmin; HotelsByCity}
+source YahooFinance($tkr,ls,dt,tm,chg,op,mx,mn,vol)	 							:- trade(dt,tm,tkr,ls),market(dt,tkr,cl,op,mx,mn,vol),add(cl,chg,ls). 																	{invocation.wrappers.YahooFinance; GetQuote}
+source WeatherFeed($c,$sn,f,cl,sk,dw,hm,w,pr,lt,ln,t)							:- state(st,sn,_),municipality(c,st,z,_),centroid(z,lt,ln),conditions(lt,ln,t,f,sk,dw,hm,dr,sp,_,pr),convertTemp(cl,f),concat(dr,sp,w).	{invocation.wrappers.BoyGenius; WeatherFeed}
+
+#source YahooWeather($z,c,s,cn,dy,d,hi,lo,sk)   	 								:- municipality(c,s,z,_),northAmerica(cn),centroid(z,lt,ln),forecast(lt,ln,d,hi,lo,sk),time(_,_,dy,d,_,_,_).	{invocation.wrappers.YahooWeather; forecastrss2}
+
+#hack:
+relation wcf($city,state,country,latitude,longitude,timeoffset,day,date,temperatureF,temperatureF,time,time,sky,direction,speedMph,humidity)
+source WeatherChannelForecast($c,s,cn,lt,ln,of,dy,dt,hi,lo,snr,sns,sk,dir,spd,hum)	:- wcf($c,s,cn,lt,ln,of,dy,dt,hi,lo,snr,sns,sk,dir,spd,hum).	{invocation.wrappers.WeatherChannel; TwoDayForecast}
+
+source YahooGeocoder($street,$zipcode,city,state,country,latitude,longitude)	:- address(street,_,zipcode,country,latitude,longitude), municipality(city,state,zipcode,_).				 							{invocation.wrappers.YahooMaps; geocode}
+
+## Target Predicate: 
+
+target WeatherBugLive($zipcode,city,state,zipcode,temperatureF,distanceIn,speedMph,direction,speedMph,direction)	{invocation.wrappers.WeatherBug; getLiveCompactWeather}
+target WeatherBugForecast($zipcode,city,state,zipcode,day,sky,temperatureF,temperatureF)							{invocation.wrappers.WeatherBug; getFullForecast}
+				
+##############################################################

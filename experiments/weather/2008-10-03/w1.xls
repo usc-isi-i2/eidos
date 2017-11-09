@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Jose Luis Ambite</LastAuthor>
+  <LastSaved>2008-10-04T04:19:08Z</LastSaved>
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>3930</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <HidePivotTableFieldList/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s34">
+   <Font x:Family="Swiss"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Table1">
+  <Table ss:ExpandedColumnCount="9" ss:ExpandedRowCount="14" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:Width="82.5"/>
+   <Column ss:Width="60"/>
+   <Column ss:Width="81" ss:Span="2"/>
+   <Column ss:Index="6" ss:Width="121.5"/>
+   <Column ss:Width="77.25"/>
+   <Column ss:Width="212.25"/>
+   <Column ss:Width="83.25"/>
+   <Row>
+    <Cell><Data ss:Type="String">PR-ZipCode5Digit</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Humidity</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">CT-TemperatureF</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">CT-TemperatureF</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">CT-TemperatureF</Data></Cell>
+    <Cell><Data ss:Type="String">PR-Sky</Data></Cell>
+    <Cell><Data ss:Type="String">CT-VisibilityFeet</Data></Cell>
+    <Cell><Data ss:Type="String">CT-PressureInches</Data></Cell>
+    <Cell><Data ss:Type="String">PR-WindDirection</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">column58</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">column310</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">column313</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">column324</Data></Cell>
+    <Cell><Data ss:Type="String">column336</Data></Cell>
+    <Cell><Data ss:Type="String">column494</Data></Cell>
+    <Cell><Data ss:Type="String">column1316</Data></Cell>
+    <Cell><Data ss:Type="String">column2340</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">06106</Data></Cell>
+    <Cell><Data ss:Type="String">83%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">70&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">50&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">67&amp;deg; F</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">68 ft</Data></Cell>
+    <Cell><Data ss:Type="String">Huckleberry Hill, Avon, CT</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">20502</Data></Cell>
+    <Cell><Data ss:Type="String">70%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">74&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">52&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">68&amp;deg; F</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">90 ft</Data></Cell>
+    <Cell><Data ss:Type="String">Langley Fork Park, McLean, VA</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">32399</Data></Cell>
+    <Cell><Data ss:Type="String">33%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">88&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">50&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">81&amp;deg; F</Data></Cell>
+    <Cell><Data ss:Type="String">Clear</Data></Cell>
+    <Cell><Data ss:Type="String">/</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">33040</Data></Cell>
+    <Cell><Data ss:Type="String">69%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">83&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">76&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">83&amp;deg; F</Data></Cell>
+    <Cell><Data ss:Type="String">Chance of a Thunderstorm</Data></Cell>
+    <Cell><Data ss:Type="String">/</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">36130</Data></Cell>
+    <Cell><Data ss:Type="String">40%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">81&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">49&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">79&amp;deg; F</Data></Cell>
+    <Cell><Data ss:Type="String">Clear</Data></Cell>
+    <Cell><Data ss:Type="String">/</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">46208</Data></Cell>
+    <Cell><Data ss:Type="String">35%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">59&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">41&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">63&amp;deg; F</Data></Cell>
+    <Cell><Data ss:Type="String">Mostly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">723 ft</Data></Cell>
+    <Cell><Data ss:Type="String">Williamsburg in the Woods, Plainfield, IN</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">50319</Data></Cell>
+    <Cell><Data ss:Type="String">58%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">63&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">40&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">65&amp;deg; F</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">822 ft</Data></Cell>
+    <Cell><Data ss:Type="String">IEM Ankeny / Christian Academy , Ankeny, IA</Data></Cell>
+    <Cell><Data ss:Type="String">NW</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">66612</Data></Cell>
+    <Cell><Data ss:Type="String">37%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">70&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">40&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">70&amp;deg; F</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">MesoWest Buck Creek , Perry, KS</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">85007</Data></Cell>
+    <Cell><Data ss:Type="String">15%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">101&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">74&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">101&amp;deg; F</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">/</Data></Cell>
+    <Cell><Data ss:Type="String">AmbientWeather.com, Phoenix, AZ</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">90292</Data></Cell>
+    <Cell><Data ss:Type="String">100%</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">81&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">63&amp;deg; F</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">70&amp;deg; F</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">-</Data></Cell>
+    <Cell><Data ss:Type="String">Sherman Oaks, Los Angeles, CA</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row ss:Index="14">
+    <Cell ss:Index="3"><Data ss:Type="String">high</Data></Cell>
+    <Cell ss:StyleID="s34"><Data ss:Type="String">low</Data></Cell>
+    <Cell><Data ss:Type="String">hi-next-day</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>4</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <Sorting xmlns="urn:schemas-microsoft-com:office:excel">
+   <Sort>Column A</Sort>
+  </Sorting>
+ </Worksheet>
+</Workbook>

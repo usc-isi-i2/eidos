@@ -1,0 +1,331 @@
+.left-bottom-2{width:326px}
+.njCustomFragment, 
+.njCommonFragment{height: auto;  margin: 0 0 20px 0}
+.njCustomFragment *, 
+.njCommonFragment *{ color: #000;  text-align: left;  vertical-align:top}
+.njCustomFragment h4{font-size:10px; margin:15px 0 5px 0; padding:0 0 0 10px; background-repeat:no-repeat; background-position:left; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-square-bullet.gif)}
+.njCustomFragment a:hover{text-decoration:underline}
+.njCustomFragment a{text-decoration:none}
+.njCustomFragment ul li{font-size:10px; margin-top:2px; list-style-type:none; text-indent:13px; background-repeat:no-repeat; background-position:left 3px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-spike-bullet.gif)}
+.njCustomFragment select{font-size:11px; width:200px}
+.njCustomFragment option{font-size:12px; margin:3px}
+.njCustomFragment input{font-size:12px}
+.njCustomFragment .select{}
+.njCustomFragment .select-with-go{}
+.njCustomFragment .input-text{width:180px}
+.njCustomFragment .input-submit{width:30px; text-align:center}
+.njCustomFragment .input-button{width:30px; text-align:center}
+.njCustomFragment .chatter{font-size:12px}
+.njCustomFragment .fragment-margin{margin:5px 9px 0 9px}
+.njCustomFragment ul li a{font-size:10px; color:#666}
+.njCustomFragment .margin-enforce{clear:both; height:auto}
+.njCommonFragment h2{}
+.njCommonFragment h3{}
+.njCommonFragment h4{}
+.njCommonFragment a{text-decoration:none}
+.njCommonFragment a:hover{text-decoration:underline}
+.njCommonFragment .linebreak{font-size:1px; line-height:1px; height:1px; clear:both}
+.njCommonFragment .fragment-margin{margin-left:9px}
+.njCommonFragment .bar{margin:0 2px 0 2px}
+.njCommonFragment #section-label .home{color:#00529b}
+.njCommonFragment #section-label .news{color:#0076cd}
+.njCommonFragment #section-label .travel{color:#00a6d3}
+.njCommonFragment #section-label .money{color:#093}
+.njCommonFragment #section-label .sports{color:#f00}
+.njCommonFragment #section-label .life{color:#906}
+.njCommonFragment #section-label .tech{color:#e85801}
+.njCommonFragment #section-label .weather{color:#fdc004}
+#breaking-news{font-weight:bold; border-top:1px solid #000; border-bottom:2px solid #000; text-align:center; width:433px; padding:10px 0 11px 0; margin-bottom:10px}
+#breaking-news a:hover{text-decoration:underline}
+#breaking-news .label{font-size:12px; color:#666; margin-top:-2px}
+#breaking-news .headline{font-size:32px; color:#000; text-decoration:none; margin:0 0 5px 0}
+#breaking-news .headline a{font-size:32px; color:#000; text-decoration:none}
+#breaking-news .headline a:hover{font-size:32px; color:#000; text-decoration:underline}
+#breaking-news .chatter{font-size:11px; font-weight:bold; color:#000; margin-bottom:0}
+#breaking-news .spike-row{}
+#breaking-news .spikes{font-size:11px; line-height:11px; text-align:center; display:inline-block; margin-bottom:0}
+#breaking-news .spike .grey{color:#666}
+#breaking-news .spikea{text-decoration:none}
+#breaking-news .spike a:hover{text-decoration:underline}
+#breaking-news .lede-in{color:#000; padding-right:0}
+#breaking-news .bar{color:#000; margin:0 2px 0 2px}
+#breaking-news-holy-cow{padding-top:20px; margin-bottom:10px}
+#breaking-news-holy-cow .fragment-area{font-weight:bold; border-top:1px solid #000; border-bottom:1px solid #000; text-align:center; width:938px; padding:10px 0 10px 0; clear:both}
+#breaking-news-holy-cow a:hover{text-decoration:underline}
+#breaking-news-holy-cow .label{font-size:12px; color:#666; margin-top:-3px}
+#breaking-news-holy-cow .headline{font-size:34px; color:#000; text-decoration:none; margin:0 0 10px 0}
+#breaking-news-holy-cow .headline a{font-size:34px; color:#000; text-decoration:none}
+#breaking-news-holy-cow .headline a:hover{font-size:34px; color:#000; text-decoration:underline}
+#breaking-news-holy-cow .chatter{font-size:11px; font-weight:bold; color:#000; margin:0}
+#breaking-news-holy-cow .spike-row{}
+#breaking-news-holy-cow .spikes{font-size:11px; line-height:11px; text-align:center; display:inline-block; margin:0}
+#breaking-news-holy-cow .spike .grey{color:#666}
+#breaking-news-holy-cow .spikea{text-decoration:none}
+#breaking-news-holy-cow .spike a:hover{text-decoration:underline}
+#breaking-news-holy-cow .lede-in{color:#000; padding-right:0}
+#breaking-news-holy-cow .bar{color:#000; margin:0 2px 0 2px}
+#all-text-lead-story{font-weight:bold; border-top:1px solid #000; border-bottom:2px solid #000; width:433px; padding:7px 0 11px 0; margin-bottom:10px}
+#all-text-lead-story a:hover{text-decoration:underline}
+#all-text-lead-story .headline{font-size:31px; line-height:31px; color:#000; text-decoration:none; margin:0 0 5px 0}
+#all-text-lead-story .headline a{font-size:31px; line-height:31px; color:#000; text-decoration:none}
+#all-text-lead-story .headline a:hover{text-decoration:underline}
+#all-text-lead-story .chatter{font-size:11px; font-weight:bold; color:#000; margin-bottom:0}
+#all-text-lead-story .spike-row{}
+#all-text-lead-story .spikes{font-size:11px; line-height:13px; text-align:left; display:inline-block; margin-bottom:0}
+#all-text-lead-story .spike .black{color:#000}
+#all-text-lead-story .spike .grey{color:#666}
+#all-text-lead-story .comment-recommend{font-size:11px; color:#666; font-weight:normal; margin-bottom:0}
+#all-text-lead-story .comment-recommend p{display:inline}
+#all-text-lead-story .comment-recommend a{font-size:11px; color:#666; font-weight:bold}
+#all-text-lead-story .stamp{font-size:10px; color:#666}
+#all-text-lead-story .bar{font-size:10px; color:#666; margin:0 2px 0 2px}
+#all-text-lead-story .lede-in, 
+#breaking-news-holy-cow .lede-in{color:#000; padding-right:0}
+#photo-galleries-with-thumbs{width:336px}
+#photo-galleries-with-thumbs .imageset-item-group a{font-size:10px; color:#00529b; text-decoration:none}
+#photo-galleries-with-thumbs .imageset-item-group a:hover{text-decoration:underline}
+#photo-galleries-with-thumbs .imageset-item-group{float:left; margin-right:5px}
+#photo-galleries-with-thumbs .imageset-item-group p{text-align:center; margin-bottom:2px}
+#photo-galleries-with-thumbs .thumb{}
+#photo-galleries-with-thumbs .customa{border:0; margin:0 5px 8px 0}
+#photo-galleries-with-thumbs .customb{border:1px solid #666}
+#photo-galleries-with-thumbs .source-content-url{clear:both; text-align:right; margin:0 10px 0 0}
+#photo-galleries-with-thumbs .source-content-url a{font-size:11px; color:#00529b; text-decoration:none}
+#photo-galleries-with-thumbs .source-content-url a:hover{text-decoration:underline}
+#photo-galleries-with-squares{}
+#photo-galleries-with-squares p a{font-size:10px; color:#00529b; text-decoration:none}
+#photo-galleries-with-squares p a:hover{text-decoration:underline}
+#photo-galleries-with-squares .imageset-item-group{float:left; margin-right:8px}
+#photo-galleries-with-squares .imageset-item-group p.pgSqr-img{text-align:center; margin:1px 0 5px 0}
+#photo-galleries-with-squares .imageset-item-group p.pgSqr-txt{text-align:center; margin:1px 0 0 0}
+#photo-galleries-with-squares .square{border:1px solid #666; width:99px}
+#photo-galleries-with-squares .source-content-url{clear:both; text-align:right; margin:0 10px 0 0}
+#photo-galleries-with-squares .source-content-url a{font-size:11px; color:#00529b; text-decoration:none}
+#photo-galleries-with-squares .source-content-url a:hover{text-decoration:underline}
+#text-box-with-square-image{}
+#text-box-with-square-image h3{font-size:13px; color:#666; line-height:14px; font-weight:bold; padding-bottom:7px; width:205px}
+#text-box-with-square-image h2{font-size:12px; line-height:14px; color:#000; font-weight:bold; padding:0; margin:0 0 5px 0; width:205px}
+#text-box-with-square-image .chatter{font-size:11px; color:#000; line-height:12px; padding:0; margin:0 0 5px 0; width:205px}
+#text-box-with-square-image p.spike{font-size:10px; line-height:11px; margin:0; padding:0 0 0 8px; background-repeat:no-repeat; background-position:left 3px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-spike-bullet.gif)}
+#text-box-with-square-image div.spike-row{padding:0; margin:0; width:150px; height:auto}
+#text-box-with-square-image .spike a{color:#666; font-size:10px; line-height:12px}
+#text-box-with-square-image a:hover{text-decoration:underline}
+#text-box-with-square-image .spike img{margin-right:6px; border:0 none #fff; display:inline}
+#text-box-with-square-image .source-content-url{clear:both; text-align:right; MARGIN:0 13px 0 0; _MARGIN:0 10px 0 0}
+#text-box-with-square-image .source-content-url a{font-size:11px; color:#00529b; text-decoration:none}
+#text-box-with-square-image .source-content-url a:hover{text-decoration:underline}
+#text-box-with-square-image .text-block{float:left; width:212px}
+#text-box-with-square-image img{border:1px solid #666; float:left; font-size:1px}
+#text-box-with-square-image .fragment-margin{width:320px; height:auto; margin:10px 0 0 10px}
+#text-box-with-square-image .lede-in{padding:0; margin:0}
+#community-call-to-action{width:432px}
+#community-call-to-action h3{font-size:13px; color:#666; line-height:14px; font-weight:bold; padding-bottom:7px; width:301px}
+#community-call-to-action h2{font-size:12px; line-height:14px; color:#000; font-weight:bold; padding:0; margin:0 0 5px 0; width:301px}
+#community-call-to-action .chatter{font-size:11px; color:#000; line-height:12px; padding:0; margin:0 0 12px 0; width:301px}
+#community-call-to-action p.spike{font-size:10px; line-height:11px; margin:0; padding:0 0 0 8px; background-repeat:no-repeat; background-position:left 3px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-spike-bullet.gif)}
+#community-call-to-action div.spike-row{padding:0; margin:0; width:300px; height:auto}
+#community-call-to-action .spike a{color:#666; font-size:10px; line-height:12px}
+#community-call-to-action a:hover{text-decoration:underline}
+#community-call-to-action .spike img{margin-right:6px; border:0 none #fff; display:inline}
+#community-call-to-action .source-content-url{clear:both; text-align:right; margin:10px 12px 0 0}
+#community-call-to-action .source-content-url a{font-size:11px; color:#00529b; text-decoration:none}
+#community-call-to-action .source-content-url a:hover{text-decoration:underline}
+#community-call-to-action .text-block{float:left; width:308px}
+#community-call-to-action img{border:1px solid #666; float:left; font-size:1px}
+#community-call-to-action .fragment-margin{width:416px; height:auto; margin:0 0 0 10px}
+#community-call-to-action .lede-in{padding:0; margin:0}
+#two-column-list{}
+#two-column-list h2{font-size:12px; line-height:13px; margin-top:6px; margin-bottom:2px}
+#two-column-list h2 a:hover{text-decoration:underline}
+#two-column-list .chatter{font-size:12px; line-height:13px; margin-bottom:8px}
+#two-column-list .fragment{padding-bottom:2px}
+#two-column-list .fragment-column{float:left; width:158px}
+#two-column-list .fragment-margin{margin-right:9px}
+#two-column-list #fragment-column-left .fragment{padding-right:10px}
+#two-column-list .container-url{clear:both; text-align:right; margin-top:-4px}
+#two-column-list .container-url a{font-size:11px; color:#00529b; text-decoration:none}
+#two-column-list .container-url a:hover{text-decoration:underline}
+#usat-blogs-and-blogburst{}
+#usat-blogs-and-blogburst h2{font-size:12px; line-height:13px; margin:0 0 2px 0}
+#usat-blogs-and-blogburst h2 a:hover{text-decoration:underline}
+#usat-blogs-and-blogburst h3{font-size:12px; line-height:12px; margin:12px 0 12px 0; color:#666}
+#usat-blogs-and-blogburst .chatter{font-size:12px; line-height:13px; margin:0 0 16px 0}
+#usat-blogs-and-blogburst .fragment{padding-bottom:2px}
+#usat-blogs-and-blogburst .fragment-column{float:left; width:158px; padding:0 0 4px 0}
+#usat-blogs-and-blogburst .fragment-margin{margin-right:9px; margin-top:0}
+#usat-blogs-and-blogburst #fragment-column-left .fragment{padding-right:10px}
+#usat-blogs-and-blogburst .source-content-url{clear:both; text-align:right}
+#usat-blogs-and-blogburst .source-content-url a{font-size:11px; color:#00529b; text-decoration:none}
+#usat-blogs-and-blogburst .source-content-url a:hover{text-decoration:underline}
+#list-with-right-side-thumbs h2{font-size:12px; color:#000; width:240px; height:auto; padding-left:10px; background-repeat:no-repeat; background-position:left 4px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-spike-bullet.gif)}
+#list-with-right-side-thumbs h2 a{text-decoration:none}
+#list-with-right-side-thumbs h2 a:hover{text-decoration:underline}
+#list-with-right-side-thumbs .thumb{float:right; margin-top:5; margin-bottom:10px}
+#list-with-right-side-thumbs .byline{font-size:12px; color:#666; line-height:13px; font-weight:bold; margin:7px 0 0 0; padding:0}
+#list-with-right-side-thumbs .label{font-size:12px; color:#000; line-height:12px; padding-top:0;  margin-bottom:9px}
+#list-with-right-side-thumbs .source-content-url{font-size:11px; color:#00529b; text-decoration:none; clear:both; text-align:right; padding-top:1px; margin-right:-2px}
+#list-with-right-side-thumbs .source-content-url a{font-size:11px; color:#00529b; text-decoration:none}
+#list-with-right-side-thumbs .source-content-url a:hover{text-decoration:underline}
+#list-with-right-side-thumbs .fragment-margin{margin-right:8px; margin-left:8px}
+#list-with-right-side-thumbs .fragment{margin-bottom:-33px}
+#list-with-right-side-thumbs-1{}
+#list-with-right-side-thumbs-1 h2{font-size:12px; color:#000; width:240px; height:auto; padding-left:10px; background-repeat:no-repeat; background-position:left 4px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-spike-bullet.gif)}
+#list-with-right-side-thumbs-1 h2 a{text-decoration:none}
+#list-with-right-side-thumbs-1 h2 a:hover{text-decoration:underline}
+#list-with-right-side-thumbs-1 .thumb{float:right; margin:5px 0 10px 0}
+#list-with-right-side-thumbs-1 .byline{font-size:12px; color:#666; line-height:13px; font-weight:bold; margin:7px 0 0 0; padding:0}
+#list-with-right-side-thumbs-1 .label{font-size:12px; color:#000; line-height:12px; padding-top:0;  margin-bottom:9px}
+#list-with-right-side-thumbs-1 .source-content-url{font-size:11px; color:#00529b; text-decoration:none; clear:both; text-align:right; padding-top:1px; margin-right:-2px}
+#list-with-right-side-thumbs-1 .source-content-url a{font-size:11px; color:#00529b; text-decoration:none}
+#list-with-right-side-thumbs-1 .source-content-url a:hover{text-decoration:underline}
+#list-with-right-side-thumbs-1 .fragment-margin{width:auto; margin:0 8px 0 8px}
+#list-with-right-side-thumbs-1 .fragment{margin-bottom:-33px}
+#three-pack{width:455px; margin:0 0 12px 15px; color:#000;  text-align:left}
+#three-pack img{margin:0 0 10px 5px; border:0}
+#three-pack .fragment-thumb{clear:both; margin:0}
+#three-pack .fragment-thumb h2{font-size:16px; letter-spacing:-.018em; color:#000; line-height:17px; margin:0; padding:0}
+#three-pack a{text-decoration:none; color:#000}
+#three-pack .fragment-thumb h2 a:hover{text-decoration:underline}
+#three-pack .fragment-thumb .chatter{font-size:11px; line-height:12px; margin:0; padding:0}
+#three-pack .fragment-thumb p.imageset-item{float:right; margin-bottom:0; margin-top:0}
+#three-pack .byline{font-size:10px; color:#666}
+#three-pack .pluckWidget{margin:-2px 0 2px 0}
+#packed-headlines{width:455px; margin-left:15px; padding-top:9px; color:#000;  text-align:left}
+#packed-headlines h2{font-size:16px; letter-spacing:-.018em; color:#000; line-height:17px; margin:0; padding:0}
+#packed-headlines .byline{font-size:10px; color:#666}
+#packed-headlines .fragment{}
+#packed-headlines .stamp{font-size:10px; color:#666}
+#packed-headlines .section-label{font-size:11px; font-weight:bold}
+#packed-headlines a{text-decoration:none; color:#000}
+#packed-headlines a:hover{text-decoration:underline}
+#packed-headlines .rule{clear:both; margin:5px 0 11px 0; height:1px; font-size:0; line-height:0; background-color:#ccc}
+#newswell-standard{width:455px; margin-left:15px; color:#000;  text-align:left; margin-bottom:12px}
+#newswell-standard img{border:1px solid #666; margin:0 0 0 5px}
+#newswell-standard .spacing{clear:both; padding-top:7px; height:1px; font-size:0; line-height:0}
+#newswell-standard .fragment-rect{clear:both; margin:0 0 0 0}
+#newswell-standard .fragment-rect h2{font-size:14px; color:#000; line-height:14px; margin-bottom:3px}
+#newswell-standard a{text-decoration:none; color:#000}
+#newswell-standard .fragment-rect h2 a:hover{text-decoration:underline}
+#newswell-standard .fragment-rect .chatter{font-size:11px; line-height:12px; margin:0; padding:0}
+#newswell-standard .fragment-rect div.imageset-item{float:right; margin:0; height:auto}
+#newswell-standard .byline{font-size:10px; color:#666; padding-bottom:5px}
+#newswell-standard .spikes{margin-top:6px}
+#newswell-standard .spike{font-size:10px; line-height:10px; padding-left:8px; background-repeat:no-repeat; background-position:left 3px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-spike-bullet.gif)}
+#newswell-standard .spike a{color:#666; font-size:10px; line-height:10px}
+#newswell-standard .spike a:hover{text-decoration:underline}
+#newswell-standard .spike-row{padding-bottom:1px}
+#newswell-standard p.credit{clear:both; font-size:10px; height:10px; line-height:10px; color:#666; margin:4px 0 0 0; float:right}
+#newswell-standard .pluckWidget{margin-top:-2px; margin-bottom:2px}
+#newswell-standard .njKicker {border-bottom: 1px solid #666; margin-bottom: 10px;padding-bottom: 4px;font-size: 14px;font-weight: bold;text-decoration: none;color: #00529B;}
+#newswell-standard .rule{clear:both; margin-bottom:10px; height:1px; font-size:0; line-height:0; background-color:#ccc}
+#stacked-boxes{}
+#stacked-boxes img{border:1px solid #666; margin:0}
+#stacked-boxes .rule{clear:both; margin:0 9px 10px 10px; height:1px; font-size:0; line-height:0; background-color:#666}
+#stacked-boxes .fragment-squares{width:100px; float:left; padding:9px 0 10px 9px}
+#stacked-boxes .fragment-squares p{margin-bottom:2px}
+#stacked-boxes .fragment-squares h2{font-size:13px; line-height:14px}
+#stacked-boxes .fragment-squares h2 a:hover{text-decoration:underline}
+#stacked-boxes .fragment-squares .chatter{font-size:11px; line-height:12px; margin:2px 0 0 0}
+#stacked-boxes .fragment-thumbs{clear:both; margin:0 9px 10px 10px; height:58px}
+#stacked-boxes .fragment-thumbs h2{font-size:12px; line-height:13px; margin-bottom:2px}
+#stacked-boxes .fragment-thumbs h2 a:hover{text-decoration:underline}
+#stacked-boxes .fragment-thumbs .chatter{font-size:11px; line-height:12px; margin:0; padding:0}
+#stacked-boxes .fragment-thumbs p.imageset-item{float:right; margin:0 0 0 10px}
+#stacked-boxes .fragment-thumbs .thumb{border:none}
+#stacked-boxes .fragment-block{clear:both; margin:0 8px 0 10px}
+#stacked-boxes .fragment-block h2{font-size:12px; line-height:13px}
+#stacked-boxes .fragment-block h2 a:hover{text-decoration:underline}
+#stacked-boxes .fragment-block .chatter{font-size:11px; line-height:12px; margin-bottom:10px}
+#stacked-boxes .source-content-url{clear:both; text-align:right; margin:0 0 0 0}
+#stacked-boxes .source-content-url a{font-size:11px; color:#00529b; text-decoration:none; margin:-5px 10px 0 0}
+#stacked-boxes .source-content-url a:hover{text-decoration:underline}
+#snapshot{margin-bottom:20px; _MARGIN-BOTTOM:0; margin-top:-2px; width:486px; height:133px; background-color:#bfd4e6; border:solid 1px #999; border-top:none}
+#snapshot .label{font-size:13px; height:16px; line-height:16px; font-weight:bold; text-align:left; text-indent:15px; border:0 solid #666; background-repeat:no-repeat; background-position:left 3px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-snapshot-bullet.gif)}
+#snapshot h2{font-size:15px; padding-top:31px; margin-left:-1px}
+#snapshot h2 a{font-size:15px; color:#00529b}
+#snapshot h2 a:hover{text-decoration:underline}
+#snapshot img{border:1px solid #666; float:right; margin-top:3px}
+#snapshot .fragment-margin{padding-top:9px; margin:0 10px 0 15px}
+#snapshot h4{font-size:15px; padding-top:9px; margin-left:-1px}
+#snapshot h4 a{font-size:15px; color:#00529b}
+#snapshot h4 a:hover{text-decoration:underline}
+#snapshot h3{font-size:11px; margin-left:-1px; font-weight:normal}
+#snapshot h3 a{font-size:11px; color:#00529b; font-weight:normal}
+#snapshot h3 a:hover{text-decoration:underline; font-weight:normal}
+#snapshot .rule{width:264px; margin:11px 0 2px 0; height:1px; font-size:0; line-height:0; background-color:#7FA8CD}
+#blogburst{}
+#blogburst h2{font-size:12px; line-height:12px; margin-bottom:3px}
+#blogburst h3{font-size:11px; line-height:11px; margin:0 0 3px 0; color:#666; font-weight:normal}
+#blogburst .chatter{font-size:11px; line-height:13px; margin-bottom:15px}
+#find-a-franchise a{color:#666}
+#find-a-franchise .chatter{margin-bottom:10px}
+#find-a-franchise .select{width:300px; margin-bottom:5px}
+#find-a-franchise .select-with-go{width:266px; margin-bottom:5px}
+#find-a-franchise ul{margin:5px 0 0 2px}
+#find-a-franchise ul li a:hover{text-decoration:underline}
+#community-widget-1{width:415px}
+#community-widget-1  h4, 
+#community-widget-2  h4{font-size:12px; color:#00529b; display:block; margin-top:5px; padding-left:10px; background-repeat:no-repeat; background-position:left 5px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-home-bullet.gif)}
+#community-widget-1 .chatter{font-size:12px; margin-top:5px}
+#community-widget-1  img{float:right; margin-left:10px}
+#community-widget-2 .input-text-small{width:215px}
+#community-widget-2 .input-button-1{width:72px; text-align:center}
+#community-widget-2 .input-button-2{width:92px; text-align:center}
+#community-widget-2 .input-button-3{width:52px; text-align:center}
+#community-widget-2{width:470px}
+#community-widget-2 #first{}
+#community-widget-2 #second{border-left:1px solid #000}
+#community-widget-2 .fragment{width:225px; float:left}
+#community-widget-2 a img{float:right; margin:10px 2px 5px 8px}
+#community-widget-2 #first  .block-margin{padding-right:8px}
+#community-widget-2 #second .block-margin{padding-left:8px}
+#community-widget-1  h3, 
+#community-widget-2  h3{font-size:12px; margin-top:7px}
+#community-widget-2 .chatter{font-size:11px; margin-top:5px}
+#daily-briefing-top-container img{position:absolute}
+#daily-briefing-top-content{margin:-7px 0 0 350px}
+#top-content-byline{color:#666; font-size:10px; line-height:11px; margin:-18px 0 -10px 0}
+#top-content-spikes{clear:both}
+#top-content-spike{color:#666; font-size:10px; text-decoration:none; line-height:11px}
+#top-content-spike a{text-decoration:underline; color:#666; font-size:10px; line-height:11px}
+#top-content-spike ul{margin-left:16px; line-height:14px}
+.tbbBoxLabel{width:100%; height:28px; margin:0 0 10px; padding:0; border:1px solid #60676d; border-bottom:1px solid #fff; text-align:left;  background-image:url(http://i.usatoday.net/_common/_images/nj/blue-gradient.gif); background-repeat:repeat-x}
+.tbbBoxLabel h2{height:13px; font-size:14px; margin:6px 0 4px 0; padding:0; text-align:left; text-indent:24px; background-image:url(http://i.usatoday.net/_common/_images/blue-bullet-10x10.gif); background-repeat:no-repeat; background-position:7px 3px}
+#todays-best-bets-container{font-size:12px; width:249px}
+#todays-best-bets-content{padding:5px 8px 0 8px}
+.fragment-with-right-thumb{margin-top:-4px}
+.fragment-with-right-thumb h2{font-size:12px; color:#000; line-height:14px; margin-top:0}
+.fragment-with-right-thumb p{font-size:10px; color:#929292; line-height:11px; margin:-16px 0 0 -1px}
+.fragment-with-right-thumb img{position:absolute; margin:2px 0 0 163px}
+.fragment-with-right-thumb .solid-border{border-top:solid 1px #CBCBCB; width:100%; margin-top:5px; position:relative}
+.njCustomFragment #what-is-your-home-worth .chatter{font-size:12px; padding-top:8px}
+.njCustomFragment #what-is-your-home-worth h3{font-size:12px; padding-top:10px}
+.njCustomFragment #what-is-your-home-worth .input-text{font-size:11px; width:97%}
+.njCustomFragment #what-is-your-home-worth .input-text-small{font-size:11px; width:115px}
+.njCustomFragment #what-is-your-home-worth .input-submit{font-size:11px; width:30px; text-align:center}
+.njCustomFragment #what-is-your-home-worth .right{float:right; margin:5px 6px 0 0}
+.njCustomFragment #features-and-tools a{color:#666}
+.njCustomFragment #features-and-tools .fragment{width:156px; float:left; padding:0; margin:0}
+.njCustomFragment #features-and-tools .fragment ul{width:154px; padding:0; margin:0; float:left}
+.njCustomFragment #features-and-tools .fragment ul li{line-height:13px}
+.njCustomFragment #features-and-tools a:hover{text-decoration:underline}
+.njCustomFragment #buy-sell-and-research-a-car a{color:#666}
+.njCustomFragment #buy-sell-and-research-a-car h3{font-size:11px; padding-top:10px}
+.njCustomFragment #buy-sell-and-research-a-car .select{font-size:11px; width:252px}
+.njCustomFragment #buy-sell-and-research-a-car .select-small{font-size:11px; width:200px}
+.njCustomFragment #buy-sell-and-research-a-car .input-text{font-size:11px; width:50px}
+.njCustomFragment #buy-sell-and-research-a-car .input-submit{font-size:11px; width:60px; float:right}
+.njCustomFragment #buy-sell-and-research-a-car .rule{clear:both; width:100%; margin:10px 0 4px 0; height:1px; font-size:0; line-height:0; background-color:#666}
+.njCustomFragment #buy-sell-and-research-a-car li{line-height:10px}
+.njCustomFragment #buy-sell-and-research-a-car li  a:hover{text-decoration:underline;  line-height:10px}
+.njCustomFragment #buy-sell-and-research-a-car span{font-weight:normal}
+.njCustomFragment #photo-upload  .spike{margin:4px 0 13px 0}
+.njCustomFragment #photo-upload  .spike a{color:#666; font-size:10px; line-height:10px; padding-left:8px; background-repeat:no-repeat; background-position:left 3px; background-image:url(http://i.usatoday.net/_common/_styles/nj/nj-spike-bullet.gif)}
+.njCustomFragment #photo-upload .spike a:hover{text-decoration:underline}
+div.site_index_container{width:96px; float:left; margin-right:10px; font-size:11px; padding-left:6px}
+div.site_index_container .siteIndexHed{font-weight:bold; border-bottom:1px solid; #000; line-height:13px; margin:8px 0 6px 0}
+.site_index_container .siteIndexLink a{font-size:11px; color:#666; text-decoration:none; line-height:13px}
+.site_index_container .siteIndexLink a:hover{text-decoration:underline}
+.site_index_container .siteIndexLink{padding-left:10px; background-image:url(http://i.usatoday.net/_common/_images/2007/siteindexbullet.gif); background-repeat:no-repeat; margin-bottom:4px; font-weight:normal}
+.newswellIntro {font-size: 12px;color: #666;margin:4px 0 8px 0;font-weight:normal;}
+.njRectCredit {font-size: 10px;color: #666;margin: 2px; 0 0 4px; text-decoration: none;text-align: left;width: 180px;line-height: 12px;}

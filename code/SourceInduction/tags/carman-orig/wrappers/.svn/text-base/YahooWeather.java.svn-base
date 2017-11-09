@@ -1,0 +1,139 @@
+package wrappers;
+
+import invocation.Wrapper;
+import relational.Table;
+import java.util.ArrayList;
+
+import javax.xml.xpath.*;
+import org.w3c.dom.*;
+import org.xml.sax.InputSource;
+
+public class YahooWeather implements Wrapper {
+	
+	XPath xpath;
+	
+	public YahooWeather() {
+		xpath = XPathFactory.newInstance().newXPath();
+	}
+	
+	
+	public Table invoke(String[] endpoint, ArrayList<String> inputTuple) {
+    	
+		// example of use: http://xml.weather.yahoo.com/forecastrss?p=94089
+		Table output = null;
+		String url = null;
+		
+		try {
+			
+			url = "http://xml.weather.yahoo.com/forecastrss";
+	    	
+			if (endpoint[1].equalsIgnoreCase("forecastrss")) {
+
+				url += "?p="+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8");
+			
+				output = new Table(new String[] {"zipcode","city","region","country","lat","long","day","date","low","high","text"});
+				
+				// invoke source and parse xml output
+				Node channelElement = ((NodeList) xpath.evaluate("//*[local-name()='channel']",new InputSource(url),XPathConstants.NODESET)).item(0);
+				
+		    	// top level fields
+		    	ArrayList<String> tuple = new ArrayList<String>();
+		    	
+		    	tuple.add(inputTuple.get(0));
+		    	
+		    	Node locationElement = ((NodeList) xpath.evaluate("./*[local-name()='location']",channelElement,XPathConstants.NODESET)).item(0);
+		    	
+		    	tuple.add((String) xpath.evaluate("./@city",   locationElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./@region", locationElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./@country",locationElement,XPathConstants.STRING));
+			    
+		    	Node itemElement = ((NodeList) xpath.evaluate("./*[local-name()='item']",channelElement,XPathConstants.NODESET)).item(0);
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='lat'][1]/text()",itemElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./*[local-name()='long'][1]/text()",itemElement,XPathConstants.STRING));
+		    	
+		    	// nested fields
+		    	NodeList forecastElements = (NodeList) xpath.evaluate(".//*[local-name()='forecast']",itemElement,XPathConstants.NODESET);
+		    	for (int i=0; i<forecastElements.getLength(); i++) {
+		    		Node forecastElement = forecastElements.item(i);
+					ArrayList<String> extendedTuple = new ArrayList<String>();
+					extendedTuple.addAll(tuple);
+					
+					extendedTuple.add((String) xpath.evaluate("./@day", forecastElement,XPathConstants.STRING));
+					extendedTuple.add((String) xpath.evaluate("./@date",forecastElement,XPathConstants.STRING));
+					extendedTuple.add((String) xpath.evaluate("./@low", forecastElement,XPathConstants.STRING));
+					extendedTuple.add((String) xpath.evaluate("./@high",forecastElement,XPathConstants.STRING));
+					extendedTuple.add((String) xpath.evaluate("./@text",forecastElement,XPathConstants.STRING));
+				    
+					output.insertDistinct(extendedTuple);
+				}	
+			
+			}
+			else if (endpoint[1].equalsIgnoreCase("forecastrss2")) {
+
+				url += "?p="+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8");
+			
+				output = new Table(new String[] {"zipcode","city","region","country","day","date","low","high","text"});
+		    	
+				// invoke source and parse xml output
+				Node channelElement = ((NodeList) xpath.evaluate("//*[local-name()='channel']",new InputSource(url),XPathConstants.NODESET)).item(0);
+				
+		    	// top level fields
+		    	ArrayList<String> tuple = new ArrayList<String>();
+		    	
+		    	tuple.add(inputTuple.get(0));
+		    	
+		    	Node locationElement = ((NodeList) xpath.evaluate("./*[local-name()='location']",channelElement,XPathConstants.NODESET)).item(0);
+		    	
+		    	tuple.add((String) xpath.evaluate("./@city",   locationElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./@region", locationElement,XPathConstants.STRING));
+		    	tuple.add((String) xpath.evaluate("./@country",locationElement,XPathConstants.STRING));
+			    
+		    	Node itemElement = ((NodeList) xpath.evaluate("./*[local-name()='item']",channelElement,XPathConstants.NODESET)).item(0);
+		    	
+		    	// nested fields
+		    	NodeList forecastElements = (NodeList) xpath.evaluate(".//*[local-name()='forecast']",itemElement,XPathConstants.NODESET);
+		    	for (int i=0; i<forecastElements.getLength(); i++) {
+		    		Node forecastElement = forecastElements.item(i);
+					ArrayList<String> extendedTuple = new ArrayList<String>();
+					extendedTuple.addAll(tuple);
+					
+					extendedTuple.add((String) xpath.evaluate("./@day", forecastElement,XPathConstants.STRING));
+					extendedTuple.add((String) xpath.evaluate("./@date",forecastElement,XPathConstants.STRING));
+					extendedTuple.add((String) xpath.evaluate("./@low", forecastElement,XPathConstants.STRING));
+					extendedTuple.add((String) xpath.evaluate("./@high",forecastElement,XPathConstants.STRING));
+					extendedTuple.add((String) xpath.evaluate("./@text",forecastElement,XPathConstants.STRING));
+				    
+					output.insertDistinct(extendedTuple);
+				}	
+			
+			}
+			else {
+	    		System.err.println("Error: No method called " + endpoint[1] + " in wrapper: " + this.getClass().getName());
+				System.err.println("Please update source definition and restart system .... exiting");
+	    		System.exit(9);
+			}			
+	    }
+		catch (Exception e) { return null; }
+    	
+		return output;
+    	
+	}
+
+
+	public void testWrapper() {
+		YahooWeather r = new YahooWeather();
+		String[] endpoint;
+		ArrayList<String> input;
+		
+		System.out.println("YahooWeather.forecastrss");
+		
+		endpoint = new String[2];
+		endpoint[1] = "forecastrss";
+		input = new ArrayList<String>();
+		input.add("90292");
+		r.invoke(endpoint,input).print();
+						
+						
+	}
+	
+}

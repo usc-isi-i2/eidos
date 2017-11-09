@@ -1,0 +1,173 @@
+#njColumnB { padding-top:2px; }
+.njCarouselFrame{display:none}
+#njCarousel *{text-decoration:none}
+#njCarousel{width:432px; margin:0; padding:0}
+#njCarousel{width:432px; margin:0; padding:0; position:relative; top:0; z-index:99}
+#njCarousel .bottom-margin{width:432px; height:7px; font-size:1px; line-height:1px; clear:both}
+
+#njCarousel a:hover{text-decoration:underline}
+#njCarousel * a:hover{text-decoration:underline}
+#njCarousel a:hover headline{text-decoration:underline; color:#000}
+
+#njCarousel .sbxContainer{width:336px; float:left; margin-top:0}
+
+#njCarousel .sbxContainer #sbx a:hover{text-decoration:underline}
+#njCarousel .sbxContainer #sbx .show{display:block}
+#njCarousel .sbxContainer #sbx .hide{display:none}
+#njCarousel .navContainer{width:96px; float:left}
+#njCarousel .dotContainer{width:10px; float:left}
+#njCarousel .dotContainer .dot{width:10px; height:10px; position:relative; top:20px; font-size:1px; line-height:1px}
+#njCarousel .icnContainer{width:76px; float:left; margin-left:4px}
+#njCarousel .navContainer .box{width:100%; height:59px; vertical-align:top; border:0 solid #f0f}
+
+#njCarousel .dotContainer #njCarouselDothome,  #njCarousel .icnContainer img.home{border-color:#00529b; background-color:#00529b}
+#njCarousel .dotContainer #njCarouselDotnews,  #njCarousel .icnContainer img.news{border-color:#0076cd; background-color:#0076cd}
+#njCarousel .dotContainer #njCarouselDottravel,  #njCarousel .icnContainer img.travel{border-color:#00a6d3; background-color:#00a6d3}
+#njCarousel .dotContainer #njCarouselDotmoney,  #njCarousel .icnContainer img.money{border-color:#093; background-color:#093}
+#njCarousel .dotContainer #njCarouselDotsports,  #njCarousel .icnContainer img.sports{border-color:#f00; background-color:#f00}
+#njCarousel .dotContainer #njCarouselDotlife,  #njCarousel .icnContainer img.life{border-color:#906; background-color:#906}
+#njCarousel .dotContainer #njCarouselDottech,  #njCarousel .icnContainer img.tech{border-color:#e85801; background-color:#e85801}
+#njCarousel .dotContainer #njCarouselDotweather, #njCarousel .icnContainer img.weather{border-color:#fdc004; background-color:#fdc004}
+
+#njCarousel .ssts_home{color:#00529b}
+#njCarousel .ssts_news{color:#0076cd}
+#njCarousel .ssts_travel{color:#00a6d3}
+#njCarousel .ssts_money{color:#093}
+#njCarousel .ssts_sports{color:#f00}
+#njCarousel .ssts_life{color:#906}
+#njCarousel .ssts_tech{color:#e85801}
+#njCarousel .ssts_weather{color:#fdc004}
+
+#njCarousel a img{border:0 none #fff}
+#njCarousel .photo{position:relative}
+#njCarousel .photo-image{position:absolute; z-index:10; top:0; left:0; width:336px}
+#njCarousel .photo-margin{font-size:1px; line-height:1px; height:7px}
+#njCarousel .photo-credit{position:relative; z-index:10; top:0; font-size:10px; line-height:10px; height:10px; color:#666; float:right}
+#njCarousel .photo-credit,    
+#njCarousel .photo-cutline-lnk{padding-top:2px; margin-top:2px}
+#njCarousel .photo-cutline-lnk a{position:relative; z-index:10; top:0; font-size:10px; line-height:10px; height:10px; color:#666; float:left; text-indent:10px; background-repeat:no-repeat; background-position:left top}
+#njCarousel .photo-cutline-on{background-image:url(http://images.usatoday.com/test/carousel/images/caption1.jpg)}
+#njCarousel .photo-cutline-off{background-image:url(http://images.usatoday.com/test/carousel/images/caption0.jpg)}
+#njCarousel .photo-cutline-div{position:absolute; z-index:20; bottom:-2px; left:0; width:100%; visibility:hidden; font-size:10px; color:#fff; background-color:#000; filter:alpha(opacity=70); -moz-opacity:0.7; opacity:0.7}
+#njCarousel .photo-cutline-txt{margin:5px; color:#fff}
+#njCarousel .headline{font-size:24px; line-height:24px; color:#000; font-weight:bold; margin-bottom:5px; letter-spacing:-1px}
+#njCarousel .headline a{color:#000; letter-spacing:-1px}
+#njCarousel .chatter{font-size:11px; line-height:11px; color:#000; margin-bottom:10px}
+#njCarousel .chatter a{color:#000}
+#njCarousel .byline{font-size:10px; line-height:10px; color:#666; margin-bottom:5px}
+#njCarousel .bar{margin-left:2px; margin-right:2px}
+#njCarousel .spikes{font-size:10px; line-height:11px; margin-bottom:10px}
+#njCarousel .spike a{color:#666; font-size:10px; line-height:10px}
+#njCarousel .spike{font-size:10px; line-height:11px; color:#666; margin:0; padding:0; margin-bottom:1px; padding-left:10px; background-image:url(http://images.usatoday.com/_common/_styles/nj/nj-spike-bullet.gif); background-repeat:no-repeat; background-position:left 2px}
+#njCarousel .comment-recommend{font-size:10px; color:#666; margin-bottom:4px}
+#njCarousel .comment-recommend p{display:inline}
+#njCarousel .comment-recommend a{font-size:11px; font-weight:bold}
+#njCarousel .comment   a{color:#00529b; margin-left:3px; padding-left:17px; background-image:url(http://images.usatoday.com/test/carousel/images/comment.gif);   background-repeat:no-repeat; background-position:left top}
+#njCarousel .recommend a{color:#00529b; margin-left:3px; padding-left:12px; background-image:url(http://images.usatoday.com/test/carousel/images/recommend.gif); background-repeat:no-repeat; background-position:left top}
+#njCarousel .stamp{font-size:10px; color:#666}
+#njCarousel .section-label{font-size:11px; font-weight:bold}
+ 
+#njCarousel .custom-photo{font-size:0;  z-index:10; line-height:0; margin-bottom:1px}
+#njCarousel .thumb a img{border:1px solid #666}
+#njCarousel .carouselthumb{border:1px solid #666}
+#njCarousel .ssts{clear:both}
+#njCarousel #section-label .Home{color:#00529b}
+#njCarousel #section-label .News{color:#0076cd}
+#njCarousel #section-label .Travel{color:#00a6d3}
+#njCarousel #section-label .Money{color:#093}
+#njCarousel #section-label .Sports{color:#f00}
+#njCarousel #section-label .Life{color:#906}
+#njCarousel #section-label .Tech{color:#e85801}
+#njCarousel #section-label .Weather{color:#fdc004}
+
+#njCarousel .lede-in, 
+.njContainer .spike-row .spike .lede-in{color:#000}
+
+#FM-Carousel-Package .package-side{width:162px; height:222px; margin:0px; padding:0px; margin-top:3px; float:right; border-top:1px solid #666; border-bottom:1px solid #666; text-align:right}
+#FM-Carousel-Package .package-side img{z-index:15; float:right; margin-left:5px}
+#FM-Carousel-Package .rule{clear:both; height:1px; font-size:0; line-height:0; background-color:#666; margin:0px; paddng:0px; margin-top:8px;}
+#FM-Carousel-Package .secondary-story{margin-top:8px}
+#FM-Carousel-Package .package-side .secondary-story,
+#FM-Carousel-Package .package-side .tertiary-story,
+#FM-Carousel-Package .package-side .quaternary-story { width:100%; height:58px; margin:0px; padding:0px; clear:both; margin-top:8px; }
+#FM-Carousel-Package .package-main, 
+#FM-Carousel-Package .primary-story, 
+#FM-Carousel-Package .photo-image, 
+#FM-Carousel-Package .photo-image a{z-index:10; width:162px}
+#FM-Carousel-Package .package-head{clear:both}
+#FM-Carousel-Package .package-main{width:162px; float:left}
+#FM-Carousel-Package .headline a, 
+#FM-Carousel-Package .short-headline a{color:#000}
+#FM-Carousel-Package .chatter{margin-bottom:0}
+#FM-Carousel-Package .secondary-story, 
+#FM-Carousel-Package .tertiary-story, 
+#FM-Carousel-Package .quaternary-story, 
+#FM-Carousel-Package .secondary-story *, 
+#FM-Carousel-Package .tertiary-story *, 
+#FM-Carousel-Package .quaternary-story *{z-index:15}
+
+#FM-Carousel-Package .secondary-story .headline a, 
+#FM-Carousel-Package .tertiary-story .headline a, 
+#FM-Carousel-Package .quaternary-story .headline a{letter-spacing:0}
+
+#FM-Carousel-Package .secondary-story .headline, 
+#FM-Carousel-Package .tertiary-story .headline, 
+#FM-Carousel-Package .quaternary-story .headline, 
+#FM-Carousel-Package .secondary-story .short-headline, 
+#FM-Carousel-Package .tertiary-story .short-headline, 
+#FM-Carousel-Package .quaternary-story .short-headline{font-weight:bold; font-size:11px; line-height:11px; margin-bottom:2px; color:#000}
+#FM-Carousel-Package .comment-recommend{margin-bottom:0}
+#FM-Carousel-Vertical .headline, 
+#FM-Carousel-ImageWithText .headline{letter-spacing:-1px}
+#FM-Carousel-Vertical .subheadline{font-size:14px; line-height:14px; color:#000; font-weight:bold; margin-bottom:6px}
+
+#FM-Carousel-StillPhoto-replacement .comment-recommend, 
+#FM-Carousel-StillPhoto-replacement .headline, 
+#FM-Carousel-StillPhoto-replacement .byline, 
+#FM-Carousel-StillPhoto-replacement .spike-row{margin-left:95px}
+
+#FM-Carousel-Standard a:hover, 
+#FM-Carousel-Package a:hover, 
+#FM-Carousel-Vertical a:hover, 
+#FM-Carousel-StillPhoto a:hover{text-decoration:underline}
+
+#njCarousel .photo-cutline-div-cr{position:absolute; z-index:20; bottom:0; left:0; width:434px; visibility:hidden; font-size:10px; color:#fff; background-color:#000; filter:alpha(opacity=70); -moz-opacity:0.7; opacity:0.7}
+#njCarousel #carouselReplacement img{border:1px solid #666}
+#njCarousel .carouselReplacement-margin{margin-left:96px}
+
+#njCarousel .ssts_home a{color:#00529b}
+#njCarousel .ssts_news a{color:#0076cd}
+#njCarousel .ssts_travel a{color:#00a6d3}
+#njCarousel .ssts_money a{color:#093}
+#njCarousel .ssts_sports a{color:#f00}
+#njCarousel .ssts_life a{color:#906}
+#njCarousel .ssts_tech a{color:#e85801}
+#njCarousel .ssts_weather a{color:#fdc004}
+
+#FM-Carousel-Standard   .photo-image-img,
+#FM-Carousel-Package    .package-main .primary-story a .photo-image-img,
+#FM-Carousel-Vertical   .photo-image-img,
+#FM-Carousel-StillPhoto .photo-image-img { margin-top:3px; border:1px solid #666; }
+
+#njCarousel .navContainer .icnContainer .box div a img{position:relative; top:3px; left:3px; border:1px solid #666}
+#njCarousel .navContainer .icnContainer .box div a img.gray{border-color:#666; background-color:#666}
+#njCarousel .navContainer .icnContainer .box div a img.white{border-color:#fff; background-color:#fff}
+#njCarousel .navContainer .icnContainer .box div, 
+#njCarousel .navContainer .icnContainer .box div.white{background-color:#fff; width:100%; height:53px}
+#njCarousel .navContainer .icnContainer .box div.home,  #njCarousel .dotContainer #njCarouselDothome{border-color:#00529b; background-color:#00529b}
+#njCarousel .navContainer .icnContainer .box div.news,  #njCarousel .dotContainer #njCarouselDotnews{border-color:#0076cd; background-color:#0076cd}
+#njCarousel .navContainer .icnContainer .box div.travel,  #njCarousel .dotContainer #njCarouselDottravel{border-color:#00a6d3; background-color:#00a6d3}
+#njCarousel .navContainer .icnContainer .box div.money,  #njCarousel .dotContainer #njCarouselDotmoney{border-color:#093; background-color:#093}
+#njCarousel .navContainer .icnContainer .box div.sports,  #njCarousel .dotContainer #njCarouselDotsports{border-color:#f00; background-color:#f00}
+#njCarousel .navContainer .icnContainer .box div.life,  #njCarousel .dotContainer #njCarouselDotlife{border-color:#906; background-color:#906}
+#njCarousel .navContainer .icnContainer .box div.tech,  #njCarousel .dotContainer #njCarouselDottech{border-color:#e85801; background-color:#e85801}
+#njCarousel .navContainer .icnContainer .box div.weather, #njCarousel .dotContainer #njCarouselDotweather{border-color:#fdc004; background-color:#fdc004}
+
+#FM-Carousel-Package .package-side .secondary-story  a,
+#FM-Carousel-Package .package-side .tertiary-story   a,
+#FM-Carousel-Package .package-side .quaternary-story a,
+#FM-Carousel-Package .package-side .secondary-story  a p,
+#FM-Carousel-Package .package-side .tertiary-story   a p,
+#FM-Carousel-Package .package-side .quaternary-story a p{ margin:0px; padding:0px; }
+#FM-Carousel-Package .package-main .primary-story a .photo-image-img { height:222px; }
+#FM-Carousel-Package .package-main .primary-story .photo             { height:224px; }

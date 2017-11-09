@@ -1,0 +1,1493 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<TITLE>Informes y mapas clim?°ticos locales y mundiales - weather.com/espanol</TITLE>
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<META name="Description" CONTENT="weather.com/espanol proporciona pron??sticos del tiempo en el mundo, as?? como mapas e informes clim?°ticos locales de Am?©rica del Norte y del Sur.">
+<META name="Keywords" CONTENT="tiempo en el mundo, tiempo local, tiempo de los Estados Unidos, tiempo de Norteam?©rica, pron??stico del tiempo para M?©xico">
+
+
+<script src="http://j.espanol.imwx.com/js/maps/mappane.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://j.espanol.imwx.com/global/js/swfobject.js"></script>
+<link rel="stylesheet" type="text/css" href="http://c.espanol.imwx.com/global/css/main.css">
+<link rel="stylesheet" type="text/css" href="http://c.espanol.imwx.com/global/css/index.css">
+<script language="JavaScript" type="text/javascript">
+//script to handle browser specific dimensions. Used 0=IE6, 1=IE7, 2=FF
+var browserIndex = 0;
+if (window.XMLHttpRequest){
+		if (navigator.appName == "Microsoft Internet Explorer") {
+			browserIndex=1;
+		} else {
+			browserIndex=2;
+		}
+
+	} else if (navigator.appName == "Microsoft Internet Explorer") {
+		browserIndex=0;
+	}
+mapWidthArray = new Array(349,350,352);
+mapHeightArray = new Array(238,240,240);
+configPlayerHeightArray = new Array(251,264,261);
+</script>
+<script language="JavaScript" type="text/javascript">
+	aTabOutlookMaps = new Array("forecast", "sat", "videoForecast")
+
+	function switchTabs(aName, actID) {	
+		for(i=0; i<eval(aName).length; i++) {
+			strDivId = eval(aName)[i];
+			document.getElementById(strDivId).className = "mapTab";
+		}
+		document.getElementById(actID).className = "mapTabOn";
+		document.getElementById('outlook_links_forecast').style.display = 'none';
+		document.getElementById('outlook_links_map').style.display = 'none';
+		document.getElementById('outlook_links_video').style.display = 'none';
+		switch (actID) {
+			case 'forecast' :
+				document.getElementById('outlook_links_forecast').style.display = 'block';
+				document.getElementById('mapImage').style.display = 'block';
+				document.getElementById('mapImage').style.visibility = 'visible';
+				document.getElementById('video_player').style.display = 'none';
+				document.getElementById('video_player').style.visibility = 'hidden';
+				document.getElementById('satMap').style.display = 'none';
+				document.getElementById('satMap').style.visibility = 'hidden';
+				break;
+			case 'sat' :
+				document.getElementById('outlook_links_map').style.display = 'block';
+				document.getElementById('mapImage').style.display = 'none';
+				document.getElementById('mapImage').style.visibility = 'hidden';
+				document.getElementById('video_player').style.display = 'none';
+				document.getElementById('video_player').style.visibility = 'hidden';
+				document.getElementById('satMap').style.display = 'block';
+				document.getElementById('satMap').style.visibility = 'visible';
+				break;
+			case 'videoForecast' :
+				document.getElementById('outlook_links_video').style.display = 'block';
+				document.getElementById('mapImage').style.display = 'none';
+				document.getElementById('mapImage').style.visibility = 'hidden';
+				document.getElementById('video_player').style.display = 'block';
+				document.getElementById('video_player').style.visibility = 'visible';
+				document.getElementById("video_player").style.height = configPlayerHeightArray[browserIndex];
+				document.getElementById('satMap').style.display = 'none';
+				document.getElementById('satMap').style.visibility = 'hidden';
+				break;
+		}
+	}
+	
+</script>
+<script type="text/javascript">
+function zoomHome(mapID,link) {
+	if(mapID=='sat'){
+		var todaySatLink = document.getElementById("todaySatLink");
+		todaySatLink.href=link +'?lat='+39.83+'&'+'lon='+-98.58+'&'+'lev='+4+'&'+'from=home'+'&'+'type='+mapID+'&'+'title='+'Satellite';
+	}
+	else {
+    	var todayMapLink = document.getElementById("todayMapLink");
+    	todayMapLink.href=link +'?mapId='+mapID+'&'+'title='+'Forecast';
+    }
+}
+
+function createVideoPlayer() {
+	
+	document.write('<object id="myExperience" class="BrightcoveExperience">');
+	document.write('	<param name="bgcolor" value="#FFFFFF" />');
+	document.write('	<param name="width" value="351" />');
+	document.write('	<param name="height" value="' + configPlayerHeightArray[browserIndex]  +'"/>');
+	document.write('	<param name="playerID" value="2150457001" />');
+	document.write('	<param name="publisherID" value="70366953"/>');
+	document.write('	<param name="isVid" value="true" />');
+	document.write('	<param name="@videoPlayer" value="1786789872" />');
+	    
+	document.write('</object>');
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	if (!this['EventBroadcaster']) {
+		document.write([
+			'<scr','ipt src="http://j.espanol.imwx.com/global/js/eventbroadcaster.js" type="text/javascript"></scr','ipt>'
+		].join(''));
+	}
+	
+function getCookie(name) {
+    var dc = document.cookie;
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    } else {
+        begin += 2;
+    }
+    var end = document.cookie.indexOf(";", begin);
+    if (end == -1) {
+        end = dc.length;
+    }
+    return unescape(dc.substring(begin + prefix.length, end));
+}	
+
+var vSite = "espanol.weather.com";
+if (getCookie('TestAdskey') != null) {
+	vSite = "qc.espanol.weather.com";
+}
+</script>
+
+
+
+<script type="text/javascript">
+var rand = Math.random()*10000000000000000;
+var addata = {
+    site:vSite,
+    url:"http://www.weather.com/RealMedia/ads/",
+    page:"/home",
+
+	severe:"N",
+	ord:rand,
+	    
+    positions:[
+		"PageCounter"
+		,"HeaderSpon"
+		,"Hidden1"
+		,"Leader2"
+		,"PageSpon"
+		
+		
+		
+		
+		
+    ]
+    
+		
+	
+    
+	    
+};
+</script>
+
+
+<script src="http://j.espanol.imwx.com/js/adstwo/AdController.js" type="text/javascript"></script>
+
+<script src="http://j.espanol.imwx.com/global/common/adstwo/OASController.js" type="text/javascript"></script>
+
+<!--[if IE 6]>
+<style type="text/css">
+	img.transparent{behavior: url(/pngTransparent.htc);}
+</style>
+<![endif]-->
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://j.imwx.com/global/common/elements/javascript/ext-divtools.js"></script>
+
+<!-- Metrics Hash -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+var mx_hash=new Object();
+mx_hash["level1"]='HOME';
+mx_hash["level2"]='';
+mx_hash["level3"]='';
+mx_hash["level4"]='';
+mx_hash["level5"]='';
+mx_hash["level6"]='';
+mx_hash["ad_category"]='';
+mx_hash["content_type"]='';
+mx_hash["ad_family"]='';
+mx_hash["ad_channel"]='';
+mx_hash["cobrand"]=GetCookie("partner");
+if (addata.geo) {
+	mx_hash["country"]=((addata.geo.cntry)?addata.geo.cntry:'0');
+	mx_hash["state"]=((addata.geo.province)?addata.geo.province:'0');
+	mx_hash["dma"]=((addata.geo.market)?addata.geo.market:'0');
+	mx_hash["city"]=((addata.geo.city)?addata.geo.city:'0');
+	mx_hash["zipcode"]=((addata.geo.postcode)?addata.geo.postcode:'0');
+	mx_hash["locid"]=((addata.geo.locid)?addata.geo.locid:'0');
+	mx_hash["loctype"]=((addata.geo.idtype)?addata.geo.idtype:'0');
+	mx_hash["locname"]=((addata.geo.locname)?addata.geo.locname:'0');
+} else {
+	mx_hash["country"]='0';
+	mx_hash["state"]='0';
+	mx_hash["dma"]='0';
+	mx_hash["city"]='0';
+	mx_hash["zipcode"]='0';
+	mx_hash["locid"]='0';
+	mx_hash["loctype"]='0';
+	mx_hash["locname"]='0';
+}
+mx_hash["pagename"]='/home/';
+mx_hash["rm_id"]=GetCookie("RMID");
+mx_hash["urs_id"]='';
+mx_hash["oas_spoof"]=addata.page;
+mx_hash["oas_context"]='';
+mx_hash["reportsuite"]='twciespanol';
+// -->
+</SCRIPT>
+
+</head>
+<body>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<center>
+<DIV class="siteContainer">
+
+
+ 
+
+
+
+
+
+
+
+
+</div>
+</center>
+
+
+
+
+<script type="text/javascript">
+var typeAheadPath = '/search';
+var contextJSPath = '';
+</script>
+<script language="JavaScript" src="http://j.espanol.imwx.com/global/js/typeAhead.js" type="text/javascript"></script>
+<script language="JavaScript" src="http://j.espanol.imwx.com/global/js/util.js" type="text/javascript"></script>
+
+<style type="text/css">input.styled { display: none; } select.styled { position: relative; width: 142px; opacity: 0; filter: alpha(opacity=0); z-index: 5; }</style>
+<!-- /language dropdown -->
+<script type="text/javascript">
+	function selectURL(){
+		 var selectedIND = document.getElementById('selectedLanguage').selectedIndex;			
+		 window.location = document.getElementById('selectedLanguage').options[selectedIND].title;
+	}
+</script>
+<TABLE WIDTH="920" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<TR>
+		<TD WIDTH='70%'>
+			<div style="float:left;">
+				<form id="header_dropdown">
+					<select id="selectedLanguage" class="styled"  onchange="selectURL();">
+					    
+							<option value="United States (English)" title="http://www.weather.com" selected>United States (English)</option>		
+						
+							<option value="Espa?±ol" title="http://espanol.weather.com" selected>Espa?±ol</option>		
+						
+							<option value="UK & Ireland (English)" title="http://uk.weather.com" >UK & Ireland (English)</option>		
+						
+							<option value="France (Fran?ßais)" title="http://fr.weather.com" >France (Fran?ßais)</option>		
+						
+							<option value="Brasil (Portugu?™s)" title="http://br.weather.com" >Brasil (Portugu?™s)</option>		
+						
+							<option value="Deutschland (Deutsch)" title="http://de.weather.com" >Deutschland (Deutsch)</option>		
+						
+							<option value="India (English)" title="http://in.weather.com" >India (English)</option>		
+						         
+					</select>
+				</form>
+			</div>
+		</TD>
+		<TD WIDTH='30%'>			
+			<div style="float:right;">
+				
+				<a href="http://m.espanol.weather.com">Edici??n m??vil</a>
+			</div>			
+		</TD>
+	</TR>
+</TABLE>  
+<script language="JavaScript" src="http://j.espanol.imwx.com/global/js/custom-form-elements.js" type="text/javascript"></script>
+<div id="header">
+	<div id="header_left">	
+		<div id="header_logos">
+			<div id="header_logos_icon"><a href="/"><img src="http://i.espanol.imwx.com/global/images/Logos/TheWeatherChannel-75x67.gif" width="75" height="67" alt="The Weather Channel" border="0" title="The Weather Channel"></a></div>
+			<div id="header_logos_text"><a href="/"><img src="http://i.espanol.imwx.com/images/Header/text/txt_weather_URL.gif" alt="" border="0"></a></div>
+		</div>
+		<div id="header_links_left" style="width:250px">
+	
+		
+		
+			<a href="/travel/index">Viajes</a>
+					
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+		
+			<a href="/health/index">Salud</a>
+				
+			
+				
+			&nbsp;&nbsp;|&nbsp;&nbsp;
+		
+			<a href="/climate/climate">Clima</a>
+					
+		</div>
+	</div>
+	<div id="header_right">
+		<div id="header_recentsearches">
+			
+				<div id="recentsearches_header"  >&nbsp;</div>
+			
+			
+		</div>
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+
+	
+		<div id="headerSpon" style="margin:0px;padding: 0px 15px 0px 6px;width:150px;height:65px;;">
+	
+	
+
+	<script>
+	
+		
+		
+			var headerSpon = DynamicOAS.addPosition('HeaderSpon');
+		
+	
+	</script>
+	
+</div></center>
+			
+		
+		</div>
+
+	
+
+
+
+
+
+<script src="http://j.espanol.imwx.com/global/js/utilityBar.js" type="text/javascript"></script>
+
+
+	
+	
+		
+			
+			
+	
+
+
+
+	<div id="header_links_right_basic">
+		<div id="header_links_right_right_basic"><a href="javascript:void(0)" 
+		onclick="convertCtoF('true','espanol.weather.com/about/optout','E','Para cambiar la unidad de medida, debe modificar la opci??n de exclusi??n de cookies y aceptarlas. Actualice esta preferencia en la siguiente pol??tica de privacidad.' );"><b>&deg;C</b> <font size="-2">a &deg;F</font></a>
+		</div>
+	</div>
+ 
+
+
+          
+		  
+	
+	<div id="header_nav">
+	<a href="/local" id="header_nav_local">LOCAL</a>
+	<a href="/national" id="header_nav_local">AMERICA DEL NORTE</a>
+	<a href="/regional" id="header_nav_local">AMERICA DEL SUR</a>
+	<a href="/global" id="header_nav_local">MUNDO</a>
+	<a href="/mapRoom/mapRoom" id="header_nav_local">MAPAS</a>
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+
+	
+	
+		<div id="pageCounter" style="margin:0px;padding: 0px 0px 0px 0px;width:0px;height:0px;">
+	
+
+	<script>
+	
+		
+		
+			var pageCounter = DynamicOAS.addPosition('PageCounter');
+		
+	
+	</script>
+	
+</div></center>
+	
+
+  </div>
+</div>
+
+	<div id="content">
+	
+
+		<div id="content_left">		
+			<h1>El tiempo hoy en d??a</h1>
+			<div id="outlook">
+				<h2>Perspectivas en los Estados Unidos</h2>
+
+
+<div id="mapContainer">
+<div id="mapTopContainer" style="" >
+	<div id="mapImage" style="width:351px;">
+		<img src="http://ima.weather.com/images/maps/351/map_hitmpwx_day1_4namus_es_351x237.jpg" width="351" height="240" border="0" id="outlookMap" usemap="#m_imagemap"/>
+		<map name="m_imagemap" id="m_imagemap">
+			<area shape="poly" alt="Anchorage, Alaska" coords="61,14,55,32,71,29,90,30,97,28,100,27,99,24,93,7,75,5,67,8,62,11" href="/weather/today-Anchorage-USAK0012" title="Anchorage, Alaska" /><area shape="rect" alt="Yellowknife, Canada" coords="126,24,171,49" href="/weather/today-Yellowknife-CAXX0557" title="Yellowknife, Canada" /><area shape="poly" alt="Iqaluit, Canada" coords="212,8,215,14,217,20,212,25,219,26,224,32,224,35,244,36,246,31,243,28,235,23,254,20,250,14,240,12,231,12" href="/weather/today-Iqaluit-CAXX0202" title="Iqaluit, Canada" /><area shape="poly" alt="Churchill, Canada" coords="173,43,171,68,175,68,206,68,202,65,204,58,186,60,182,53,183,40" href="/weather/today-Churchill-CAXX0078" title="Churchill, Canada" /><area shape="rect" alt="Schefferville, Canada" coords="225,47,268,71" href="/weather/today-Schefferville-CAXX0446" title="Schefferville, Canada" /><area shape="rect" alt="St. John's, Canada" coords="276,57,316,81" href="/weather/today-St.-John's-CAXX0420" title="St. John's, Canada" /><area shape="rect" alt="Seattle, Washington" coords="83,67,123,97" href="/weather/today-Seattle-USWA0395" title="Seattle, Washington" /><area shape="rect" alt="Edmonton, Canada" coords="125,53,165,84" href="/weather/today-Edmonton-CAXX0126" title="Edmonton, Canada" /><area shape="rect" alt="Winnipeg, Canada" coords="167,76,204,101" href="/weather/today-Winnipeg-CAXX0547" title="Winnipeg, Canada" /><area shape="rect" alt="Montreal, Canada" coords="220,76,254,101" href="/weather/today-Montreal-CAXX0301" title="Montreal, Canada" /><area shape="rect" alt="Salt Lake City" coords="99,107,149,130" href="/weather/today-Salt-Lake-City-USUT0225" title="Salt Lake City" /><area shape="rect" alt="Denver, Colorado" coords="152,120,184,144" href="/weather/today-Denver-USCO0105" title="Denver, Colorado" /><area shape="rect" alt="Chicago, Illinois" coords="188,110,227,134" href="/weather/today-Chicago-USIL0225" title="Chicago, Illinois" /><area shape="rect" alt="Nueva York, New York" coords="231,105,272,127" href="/weather/today-Nueva-York-USNY0996" title="Nueva York, New York" /><area shape="poly" alt="Los Angeles, California" coords="95,132,120,136,117,154,111,155,76,155,76,150" href="/weather/today-Los-Angeles-USCA0638" title="Los Angeles, California" /><area shape="rect" alt="Phoenix, Arizona" coords="120,150,153,170" href="/weather/today-Phoenix-USAZ0166" title="Phoenix, Arizona" /><area shape="rect" alt="Dallas, Texas" coords="163,146,193,170" href="/weather/today-Dallas-USTX0327" title="Dallas, Texas" /><area shape="rect" alt="Atlanta, Georgia" coords="203,139,232,162" href="/weather/today-Atlanta-USGA0028" title="Atlanta, Georgia" /><area shape="rect" alt="Mazatlan, Mexico" coords="115,182,154,212" href="/weather/today-Mazatlan-MXSA0084" title="Mazatlan, Mexico" /><area shape="rect" alt="Monterrey, Mexico" coords="158,176,191,199" href="/weather/today-Monterrey-MXNL0068" title="Monterrey, Mexico" /><area shape="rect" alt="Orlando, Florida" coords="223,165,255,186" href="/weather/today-Orlando-USFL0372" title="Orlando, Florida" /><area shape="poly" alt="Ciudad de Mexico, Mexico" coords="149,216,171,226,207,228,210,217,200,215,187,205,170,203,158,202,158,210,157,214" href="/weather/today-Ciudad-de-Mexico-MXDF0132" title="Ciudad de Mexico, Mexico" /><area shape="poly" alt="Cancun, Mexico" coords="209,199,205,209,209,214,234,215,231,197" href="/weather/today-Cancun-MXQR0138" title="Cancun, Mexico" /><area shape="rect" alt="Kingston, Jamaica" coords="242,193,275,221" href="/weather/today-Kingston-JMXX0002" title="Kingston, Jamaica" /><area shape="rect" alt="San Juan, Puerto Rico" coords="277,177,306,202" href="/weather/today-San-Juan-USPR0087" title="San Juan, Puerto Rico" /><area shape="rect" alt="Halifax, Canada" coords="258,82,286,103" href="/weather/today-Halifax-CAXX0183" title="Halifax, Canada" /><area shape="default" nohref="nohref" alt="" />
+		</map>
+          </div>
+	<div id="satMap" style="display:none;visibility:hidden;width:350px;height:240px;">
+		<script type="text/javascript">
+			    	MapPane.draw(39.83,
+			    		 -98.58,
+			    		 mapWidthArray[browserIndex], mapHeightArray[browserIndex],
+			    		 3,
+			    		 'a', 'sat', 50);
+		</script>
+	</div>
+          
+    <div id="video_player" style="display:none;visibility:hidden;height:264px;width:351px;">
+	<!-- Start of Brightcove Player 3.0 -->
+	
+	<!--
+	By use of this code snippet, I agree to the Brightcove Publisher T and C 
+	found at http://corp.brightcove.com/legal/terms_publisher.cfm. 
+	-->
+	
+	<script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+	
+	<script language="JavaScript">createVideoPlayer();</script>
+	
+	<!-- End of Brightcove Player 3.0 -->
+    </div>
+</div> 	
+	<div id="mapLinkContainer">
+            <div id="outlook_links_forecast">
+              <img src="http://i.espanol.imwx.com/global/images/spacer.gif" width="12"  alt=">" class="aroRight" style="margin-bottom:-2px;"> <a href="/mapRoom/mapRoom" onclick="zoomHome('2309','/mapRoom/mapRoom');" id="todayMapLink">Agrandar mapa</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="http://i.espanol.imwx.com/global/images/spacer.gif" width="12" alt=">" class="aroRight" style="margin-bottom:-2px;"> <a href="/mapRoom/mapRoom">M?°s mapas</a>
+            </div>
+            <div id="outlook_links_map" style="display:none;">
+              <img src="http://i.espanol.imwx.com/global/images/spacer.gif" width="12"  alt=">" class="aroRight" style="margin-bottom:-2px;"> <a href="/mapRoom/mapRoom" onclick="zoomHome('sat','/mapRoom/mapRoom');" id="todaySatLink" >Interacci??n (panor?°mica y zoom)</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="http://i.espanol.imwx.com/global/images/spacer.gif" width="12"  alt=">" class="aroRight" style="margin-bottom:-2px;"> <a href="/mapRoom/mapRoom">M?°s mapas</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="http://i.espanol.imwx.com/global/images/Icongraphy/icon_questionMark.gif" width="12"  alt="" class="aroRight" style="margin-bottom:-2px;">&nbsp;<a href="javascript:popup('/helptext?id=26')" >¬øQu?© es esto?</a>
+            </div>
+            <!--Edit out the height of outlook_links_video once links are available-->
+            <div id="outlook_links_video" style="display:none;"></div>
+	</div>
+
+		  
+	
+          <div class="mapTabContainer">
+            <div id="forecast" class="mapTabOn" style="padding:6px 4px 7px 7px;">
+              <a href="javascript:void(0);" onclick="switchTabs('aTabOutlookMaps', 'forecast'); "><strong>M?°xima/M??nima</strong></a><br>
+              <a href="javascript:void(0);" onclick="switchTabs('aTabOutlookMaps', 'forecast'); "><img style="margin-top:2px;" src="http://i.espanol.imwx.com/images/Icongraphy/thumbnail-outlook.gif" width="103" height="72" border="0"></a>
+            </div>
+            <div id="sat" class="mapTab" style="padding:6px 4px 7px 6px; border:solid #003399; border-width:0 1px 0 1px;">
+              <a href="javascript:void(0);" onclick="switchTabs('aTabOutlookMaps', 'sat'); "><strong>Sat?©lite</strong></a><br>
+              <a href="javascript:void(0);" onclick="switchTabs('aTabOutlookMaps', 'sat');"><img style="margin-top:2px;" src="http://i.espanol.imwx.com/images/Icongraphy/thumbnail_satellite.gif" width="103" height="72" border="0"></a>
+            </div>
+            <div id="videoForecast" class="mapTab" style="padding:6px 6px 7px 7px;">
+              <a href="javascript:void(0);" onclick="switchTabs('aTabOutlookMaps', 'videoForecast');"><strong>Video</strong></a><br>
+              <a href="javascript:void(0);" onclick="switchTabs('aTabOutlookMaps', 'videoForecast');"><img style="margin-top:2px;" src="http://i.espanol.imwx.com/global/images/Icongraphy/thumbnail_video.gif" width="103" height="72" border="0"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+			<form style="margin:0px; padding:0px;" action="" method="get" name="homeSearch" onSubmit="return validate(this);" >
+			
+			
+			<div id="local">
+			<h2>B??squeda</h2>
+			
+				
+				<div id="local_container">
+				<table width="200px" cellspacing="1" cellpadding="1" border="0">
+						<tr>
+							<td class="partnerSearchLabelSmall">
+								<input name="rdoWebWeather" type="radio" class="rdo_header" value="Weather" id="weather" checked="checked" onclick="if(document.getElementById('header_nav_search_box_input_local_weather').value=='' ||  document.getElementById('header_nav_search_box_input_local_weather').value=='B??squeda'){document.getElementById('header_nav_search_box_input_local_weather').value= 'C??digo postal';}"/>
+								<label for="weather">Weather</label>
+							</td>
+							<td class="partnerSearchLabelSmall" >
+								<input name="rdoWebWeather" type="radio" class="rdo_header" value="Web" id="web" onclick="if(document.getElementById('header_nav_search_box_input_local_weather').value=='' ||  document.getElementById('header_nav_search_box_input_local_weather').value=='C??digo postal'){document.getElementById('header_nav_search_box_input_local_weather').value= 'B??squeda';}"/>  
+								<label for="web">Web</label>
+							</td>
+							<td class="partnerSearchLabelSmall" width="73px">								 
+								<img src="http://i.espanol.imwx.com/images/Logos/googleLogoSmall.png" alt="Google" width="81" height="28" border="0" />
+							</td>
+						</tr>
+				</table>
+					<div id="local_textbox">
+						<div><input 	type="text" id="header_nav_search_box_input_local_weather" value='C??digo postal' class="txtboxmedium" 
+								onfocus="initialize(this.id,'es_US','autocomplete','homeSearch');clearform(this,'C??digo postal','B??squeda');"
+								onkeyup="getQuery(this.id,this.value,event);"
+								onblur="if(document.getElementsByName('rdoWebWeather')[0].checked && this.value=='') {this.value='C??digo postal';}else if(document.getElementsByName('rdoWebWeather')[1].checked && this.value=='') {this.value='B??squeda';}hidePopup();"
+				 				onkeypress="return disableEnterKeyForSearch(event, 'homeSearch');" 
+								name="searchText" 
+								autocomplete="off"
+								/></div>
+							<div align="left" id="autocomplete"
+								style="position:absolute;WIDTH:170px;visibility:hidden;BACKGROUND-COLOR:#ffffff;z-index:100">
+							</div>
+					</div>
+					<div id="local_button" style="margin-left:20px;_margin-left:8px;">
+            			<a href="javascript:void(0);" onclick="if(document.forms['homeSearch'].elements['searchText'].value!='C??digo postal' && validate(document.forms['homeSearch']) ){setAction('homeSearch');document.forms['homeSearch'].submit();}return false;">
+            			<div class="ltBtnGry"></div>
+            			<div class="txtBtnGry">
+            			IR
+            			</div>
+            			<div class="rtBtnGry"></div></a>
+          			</div>
+					<div id="local_text">Elecci??n del editor</div>
+					<div id="local_links">
+						<a href="/search/cityListTopTwenty">Las 20 ciudades principales</a><br><a href="/search/cityListTopTenHottest">Los 10 lugares m?°s calurosos</a><br><a href="/search/cityListTopTenColdest">Los 10 lugares m?°s fr??os</a><br><a href="/search/cityListTopTenTravel">Los 10 destinos m?°s visitados</a>
+					</div>
+				</div>
+
+			</div>
+			
+
+
+
+
+
+<input type="hidden" id="search_source_id" name="searchSourceType" value="1" /> 
+<input type="hidden" id="search_page_id" name="sourcePageId" value="1" />
+<input type="hidden" id="locale_id" name="localeCode" value="es_US" />
+<input type="hidden" id="search_type_id" name="searchType" value="0" />
+<input type="hidden" id="search_location_id" name="locationId" value=" " />
+
+			</form>
+			<div id="specialty">
+				<h2>Intereses</h2>
+				<div id="specialty_container">
+					
+					<a href="/travel/index"><div id="specialty_travel"><div class="specialty_header">Viajes</div><div class="specialty_link">Planifique su pr??ximo viaje y prep?°rese.</div></div></a>
+					<a href="/health/index"><div id="specialty_health"><div class="specialty_header">Salud</div><div class="specialty_link">Siente algun malestar? Cuide su salud aqu??...</div></div></a>
+					
+						
+						
+							<a href="/climate/climate"><div id="specialty_climate"><div class="specialty_header">Clima</div><div class="specialty_link">¬øEn qu?© zona clim?°tica vive usted?</div></div></a>
+						
+					
+						
+				</div>
+			</div>
+			<div id="cities">
+				<div class="cities_cell">
+					<h2>Tiempo en el pa??s</h2>
+					<div class="cities_divider"><img src="http://i.espanol.imwx.com/global/images/bg_divider_blue.gif" width="181" height="1" alt=""></div>
+					<div class="cities_table">						
+						
+
+
+
+
+
+
+
+
+
+ 
+<table cellpadding="0" cellspacing="0">
+<tbody valign="top">
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Chicago-USIL0225">Chicago</a></td>
+<td width="70">
+Nieve y cellisca d?©biles
+</td>
+<td width="40" align="right">
+1&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Ciudad-de-Mexico-MXDF0132">Ciudad de Mexico</a></td>
+<td width="70">
+Despejado
+</td>
+<td width="40" align="right">
+15&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Colorado-Springs-USCO0078">Colorado Springs</a></td>
+<td width="70">
+Mayormente nublado
+</td>
+<td width="40" align="right">
+-7&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Daytona-Beach-USFL0106">Daytona Beach</a></td>
+<td width="70">
+Parcialmente nublado
+</td>
+<td width="40" align="right">
+19&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Death-Valley-USCA0286">Death Valley</a></td>
+<td width="70">
+Mayormente nublado
+</td>
+<td width="40" align="right">
+7&deg;C
+
+</td>
+</tr>
+
+<tbody>
+</table>							
+					</div>
+					<div class="cities_footer">
+						<div class="link_arrow"><img src="http://i.espanol.imwx.com/global/images/spacer.gif" width="12" height="11" alt=">" class="aroRight"></div>
+						<div class="link_text"><a href="javascript:void(0);" onclick="document.forms['moreUKCities'].submit();return false;">M?°s ciudades de los Estados Unidos</a></div><br clear="all">
+						<div class="link_arrow"><img src="http://i.espanol.imwx.com/global/images/spacer.gif" width="12" height="11" alt=">" class="aroRight"></div>
+						<div class="link_text"><a href="/national">Ver mapas de los Estados Unidos</a></div>
+					</div>
+				</div>
+				<div class="cities_cell_divider" style="height: 137px;"><img src="http://i.espanol.imwx.com/global/images/bg_divider_grey.gif" width="2" height="135" alt=""></div>
+				<div class="cities_cell">
+					<h2>Tiempo en la regi??n</h2>
+					<div class="cities_divider"><img src="http://i.espanol.imwx.com/global/images/bg_divider_blue.gif" width="181" height="1" alt=""></div>
+					<div class="cities_table">
+						
+
+
+
+
+
+
+
+
+
+ 
+<table cellpadding="0" cellspacing="0">
+<tbody valign="top">
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Brasilia-BRXX0043">Brasilia</a></td>
+<td width="70">
+Despejado
+</td>
+<td width="40" align="right">
+18&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Bridgetown-BBXX0001">Bridgetown</a></td>
+<td width="70">
+Parcialmente nublado
+</td>
+<td width="40" align="right">
+26&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Buenos-Aires-ARBA0009">Buenos Aires</a></td>
+<td width="70">
+Despejado
+</td>
+<td width="40" align="right">
+22&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Caracas-VEXX0008">Caracas</a></td>
+<td width="70">
+Parcialmente nublado
+</td>
+<td width="40" align="right">
+26&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Castries-STXX0001">Castries</a></td>
+<td width="70">
+Mayormente nublado
+</td>
+<td width="40" align="right">
+24&deg;C
+
+</td>
+</tr>
+
+<tbody>
+</table>
+					</div>
+					<div class="cities_footer">
+						<div class="link_arrow"><img src="http://i.espanol.imwx.com/global/images/spacer.gif" width="12" height="11" alt=">" class="aroRight"></div>
+						<div class="link_text"><a href="javascript:void(0);" onclick="document.forms['moreEuropeanCities'].submit();return false;">M?°s ciudades suramericanas</a></div><br clear="all">
+						<div class="link_arrow"><img src="http://i.espanol.imwx.com/global/images/spacer.gif" width="12" height="11" alt=">" class="aroRight"></div>
+						<div class="link_text"><a href="/regional">Ver mapas regionales</a></div>
+					</div>
+				</div>
+				<div class="cities_cell_divider" style="height: 137px;"><img src="http://i.espanol.imwx.com/global/images/bg_divider_grey.gif" width="2" height="135" alt=""></div>
+				<div class="cities_cell">
+					<h2>El tiempo en el mundo</h2>
+					<div class="cities_divider"><img src="http://i.espanol.imwx.com/global/images/bg_divider_blue.gif" width="181" height="1" alt=""></div>
+					<div class="cities_table">
+						
+
+
+
+
+
+
+
+
+
+ 
+<table cellpadding="0" cellspacing="0">
+<tbody valign="top">
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Bagdad-IZXX0008">Bagdad</a></td>
+<td width="70">
+Mayormente nublado
+</td>
+<td width="40" align="right">
+14&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Bangkok-THXX0002">Bangkok</a></td>
+<td width="70">
+Soleado
+</td>
+<td width="40" align="right">
+26&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Barcelona-SPXX0015">Barcelona</a></td>
+<td width="70">
+Despejado
+</td>
+<td width="40" align="right">
+5&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Belfast-UKXX0015">Belfast</a></td>
+<td width="70">
+Despejado
+</td>
+<td width="40" align="right">
+7&deg;C
+
+</td>
+</tr>
+
+
+
+
+<tr>
+<td width="71"><a href="/weather/today-
+
+
+
+
+
+
+
+
+
+
+
+Berlin-GMXX0007">Berlin</a></td>
+<td width="70">
+Llovizna d?©bil
+</td>
+<td width="40" align="right">
+3&deg;C
+
+</td>
+</tr>
+
+<tbody>
+</table>	
+					</div>
+					<div class="cities_footer">
+						<div class="link_arrow"><img src="http://i.espanol.imwx.com/global/images/spacer.gif" width="12" height="11" alt=">" class="aroRight"></div>
+						<div class="link_text"><a href="javascript:void(0);" onclick="document.forms['moreWorldCities'].submit();return false;">M?°s ciudades del mundo</a></div><br clear="all">
+						<div class="link_arrow"><img src="http://i.espanol.imwx.com/global/images/spacer.gif" width="12" height="11" alt=">" class="aroRight"></div>
+						<div class="link_text"><a href="/global">Ver mapas del mundo</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content_right">
+		<div id="content_right_header">Anuncio</div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+
+	
+	
+		<div id="pageSpon" style="margin:0px;padding: 0px 0px 0px 0px;width:300px;">
+	
+
+	<script>
+	
+		
+		
+			var pageSpon = DynamicOAS.addPosition('PageSpon');
+		
+	
+	</script>
+	
+</div></center>
+		
+
+
+
+<script>
+	var listener = {
+		onResize:function(width, height) {
+			if (height >= 600) {
+				hideObjById('house_unit');
+			} else if (height >= 110) {
+				showObjById('house_unit');					
+			} 
+			document.getElementById('pageSpon').style.height=height +'px';
+		}
+	};
+	pageSpon.addListener(listener);
+</script>
+
+	<div id="house_unit">
+		<!-- Currently the images are hard coded inside this div.. In actuality, it would come from CMS 
+		being cycled to a new image every day -->
+		
+		<br clear="all">
+		<div style="margin: 7px 0px 0px 0px;">
+			<a href="/travel/index"><img src="http://i.espanol.imwx.com/images/PromoTiles/travel landing_300x170.jpg" width="300"
+					height="170" alt="" border="0"> </a>
+		</div>
+		
+		
+		<br clear="all">
+		<div>
+			<a href="/mapRoom/mapRoom"><img src="http://i.espanol.imwx.com/images/PromoTiles/maps_300x170.jpg" width="300"
+					height="170" alt="" border="0"> </a>
+		</div>
+		
+	</div>
+
+		</div>
+		<br clear="all" />
+		<div id="horizontal_ad">
+		  <div class="adv">Anuncio</div>
+		  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+
+	
+	
+		<div id="leader2" style="margin:0px;padding: 0px 0px 0px 0px;width:728px;">
+	
+
+	<script>
+	
+		
+		
+			var leader2 = DynamicOAS.addPosition('Leader2');
+		
+	
+	</script>
+	
+</div></center>
+		</div>
+		
+
+
+
+
+
+
+<div id="footer">
+			<form action="/partnerSearch" name="partnerSearch_bottom">
+			
+			
+			
+			
+				
+			
+			<div id="footer_search">			
+			<TABLE align="center">
+				 <TR>
+				 	
+				 	<TD >
+				 		Buscar en la Web:
+					</TD>
+					
+					<div id="footer_search_box">
+					<TD >
+				 		<input name="searchText" type="text" class="txtboxlong" value="">
+					</TD>
+					</div>
+					<TD>
+						<div id="footer_search_button">
+			        		<a href="javascript:void(0);" onClick="document.forms['partnerSearch_bottom'].submit();return false;"><div class="ltBtnGry"></div>
+			        		<div class="txtBtnGry">IR</div>
+			        		<div class="rtBtnGry"></div></a>
+			        		</form>
+			        	</div>
+			        </TD>			        			        
+			        <TD >
+			        	<div id="footer_search_logo">
+				 		Busca con
+				 		</div>
+					</TD>
+					<TD >
+				 		<a href="http://www.google.com" target="_blank"><img src="http://i.espanol.imwx.com/global/images/Logos/Google.gif" alt="Google" border="0" /></a>
+					</TD>	
+					
+				</TR>
+			</TABLE>
+			</div>
+		<div id="footer_links">
+		<b>
+		
+		<a href="/">Inicio</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/about/about">Acerca de nosotros</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/about/advertise">Anunciar</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="javascript:void(0);" onclick="document.forms['citiesAtoZ'].submit();return false;">Ciudades de la A a la Z</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="/weatherTools">M??vil</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="/about/internationalSites">Sitios internacionales</a>
+       </b><br>
+				Copyright &copy; 2001-2008
+				The Weather Channel Interactive, Inc. <a href="/about/terms">Condiciones de uso</a> | <a href="/about/privacy">Pol??tica de privacidad</a> |  <a href="/sitemap">Mapa del sitio</a>
+			</div>
+		
+	
+		</div>
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+
+	
+	
+		<div id="hidden1" style="margin:0px;padding: 0px 0px 0px 0px;width:1px;height:1px;">
+	
+
+	<script>
+	
+		
+		
+			var hidden1 = DynamicOAS.addPosition('Hidden1');
+		
+	
+	</script>
+	
+</div></center>
+
+<form action="/search" method="get" name="citiesAtoZ" >
+	<input type="hidden" id="search_loc_id" name="searchText" class="txtbox" value="*"/>
+	
+
+
+
+
+
+<input type="hidden" id="search_source_id" name="searchSourceType" value="5" /> 
+<input type="hidden" id="search_page_id" name="sourcePageId" value="1" />
+<input type="hidden" id="locale_id" name="localeCode" value="es_US" />
+<input type="hidden" id="search_type_id" name="searchType" value="3" />
+<input type="hidden" id="search_location_id" name="locationId" value="" />
+
+</form>
+
+
+
+
+
+<!--BEGIN OMNITURE -->
+
+<!-- SiteCatalyst code version: H.14.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script language="JavaScript" src="http://j.espanol.imwx.com/global/js/omniture/s_code.js"></script>
+<script language="JavaScript"><!--
+/****** Custom variable declaration and assignment from the mx_hash to be used by Omniture SiteCatalyst code *****/
+s.pageName=mx_hash["pagename"].toLowerCase();
+s.channel=mx_hash["level1"].toUpperCase();
+s.prop8=mx_hash["rm_id"];
+s.prop14=s.channel+"-"+mx_hash["level2"].toUpperCase();
+s.prop15=s.prop14+"-"+mx_hash["level3"].toUpperCase();
+s.prop11=s.prop15+"-"+mx_hash["level4"].toUpperCase();
+s.prop22=mx_hash["loctype"]+":"+mx_hash["locid"]+":"+mx_hash["locname"];
+s.prop23=mx_hash["oas_spoof"];
+s.prop26=mx_hash["city"]+":"+mx_hash["state"].toUpperCase()+":"+mx_hash["country"].toUpperCase();
+s.prop27=mx_hash["dma"];
+s.prop28=mx_hash["zipcode"];
+s.hier1=s.prop11+"-"+mx_hash["level5"].toUpperCase()+"-"+mx_hash["level6"].toUpperCase();
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.14. -->
+
+<!-- RSI Code Here-->
+
+
+
+	</div> 
+	<form action="/search" method="get" name="moreUKCities" >
+		<input type="hidden" id="search_loc_id" name="searchText" class="txtbox" value="NAM"/>
+		
+
+
+
+
+
+<input type="hidden" id="search_source_id" name="searchSourceType" value="2" /> 
+<input type="hidden" id="search_page_id" name="sourcePageId" value="1" />
+<input type="hidden" id="locale_id" name="localeCode" value="es_US" />
+<input type="hidden" id="search_type_id" name="searchType" value="4" />
+<input type="hidden" id="search_location_id" name="locationId" value=" " />
+
+	</form>
+	<form action="/search" method="get" name="moreEuropeanCities" >
+		<input type="hidden" id="search_loc_id" name="searchText" class="txtbox" value="SAMER"/>
+		
+
+
+
+
+
+<input type="hidden" id="search_source_id" name="searchSourceType" value="2" /> 
+<input type="hidden" id="search_page_id" name="sourcePageId" value="1" />
+<input type="hidden" id="locale_id" name="localeCode" value="es_US" />
+<input type="hidden" id="search_type_id" name="searchType" value="4" />
+<input type="hidden" id="search_location_id" name="locationId" value="  " />
+
+	</form>
+	<form action="/search" method="get" name="moreWorldCities" >
+		<input type="hidden" id="search_loc_id" name="searchText" class="txtbox" value="*"/>
+		
+
+
+
+
+
+<input type="hidden" id="search_source_id" name="searchSourceType" value="5" /> 
+<input type="hidden" id="search_page_id" name="sourcePageId" value="1" />
+<input type="hidden" id="locale_id" name="localeCode" value="es_US" />
+<input type="hidden" id="search_type_id" name="searchType" value="4" />
+<input type="hidden" id="search_location_id" name="locationId" value=" " />
+
+	</form>
+</body>
+</html>

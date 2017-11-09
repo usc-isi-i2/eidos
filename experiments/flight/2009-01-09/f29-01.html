@@ -1,0 +1,801 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+  <head><title>Discount Airline Tickets, Affordable Flights, &amp; Low-Cost Airfare from Travelzoo SuperSearch</title><meta name="description" content="Find airline tickets through Travelzoo SuperSearch.  SuperSearch recommends the best airlines, airfare consolidators and travel sites for your itinerary." scheme=""/><meta name="keywords" content="flight, flights, airfare, airline, airline ticket, airline tickets, air travel" scheme=""/><link type="image/vnd.microsoft.icon" rel="shortcut icon" href="favicon.ico" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link href="web.css?268" type="text/css" rel="stylesheet" />
+    <script src="_OSGlobalJS.js?268" type="text/javascript" charset="UTF-8"></script>
+    <script src="/SuperSearch/Blocks/SearchFlow/SearchFlow.RatingSystem.js?268" type="text/javascript" charset="UTF-8"></script>
+    <script src="/SuperSearch/Blocks/SearchFlow/SearchFlow.ScreenState.js?268" type="text/javascript" charset="UTF-8"></script>
+    <script src="/SuperSearch/Blocks/WidgetLibrary2/WidgetLibrary2.Calendar.js?265" type="text/javascript" charset="UTF-8"></script>
+    <script src="/SuperSearch/Blocks/WidgetLibrary2/WidgetLibrary2.SetInputPrompt.js?265" type="text/javascript" charset="UTF-8"></script>
+    <script src="FlightsScreenAlt.js?268" type="text/javascript" charset="UTF-8"></script>
+    <script src="_osvalidators.js?4_1_3_64" type="text/javascript" charset="UTF-8"></script>
+  </head>
+  <body onchange="changeTravellersString('wtTravellersExpression', 'wtAdultsDropDown', 'wtChildrenDropDown', 'wtSeniorsDropDown', 'wtInfantsDropDown', 'wtTravelersDropDown', 'wtPassengerNumber', 'wtInfantNumber'); verifyDropDown();
+
+
+$$('a.Tabs_TabOn').each(function(link) {
+	link.onclick = function() { fireUnload = '0'; }
+});
+
+$$('a.Tabs_TabOff').each(function(link) {
+	link.onclick = function() { fireUnload = '0'; }
+});
+
+$('wtDestinationAirport').focus();
+
+showTop20ExitPop = false;
+
+" onunload="
+sendRankings($('wtOriginCode').value, $('wtDestinationCode').value, 'us');
+
+
+if(showTop20ExitPop) {
+	showTop20ExitPopup('', 'supsrep');
+}
+">
+    <form name="WebForm1" method="post" action="/SuperSearch/FlightsScreenAlt.aspx?ForceSearch=true&amp;wtDestinationAirport&amp;EndDate&amp;StartDate&amp;NumTravelers&amp;EndDateFlights&amp;StartDateFlights&amp;DestinationAirportCode&amp;wtOriginAirport=379&amp;source=1404&amp;ActiveTab=Flights&amp;OriginAirportCode=TRS&amp;NearbyAirports=true&amp;NonStopFlights=false&amp;catid=1404&amp;Flexible_Dates=false" id="WebForm1">
+<input type="hidden" name="__OSVSTATE" id="__OSVSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="
+__VIEWSTATE" value="" />
+
+
+<script src="/static/window.js" type="text/javascript"></script>
+<script src="/static/window_effects.js" type="text/javascript"></script>
+<script type="text/javascript" src="_osWebValidation.js" charset="UTF-8"></script>
+
+<div  class="NewHeader">
+	<div  style="width: 754px;">
+		<div  class="New_Header_BannerAlt">
+			<div  class="Header_Title">
+				<a id="wt_CompoundWebwidget326808_wt_Linkwidget306564" tabindex="1" href="http://www.travelzoo.com/"><img id="wt_CompoundWebwidget326808_wt_Imagewidget306565" src="/SuperSearch/img/travelzoo_logo.gif?268" style="border-width:0px;height:39px;width:170px;" /></a>
+			</div ><div  class="HeaderTextDivAlt">
+				<p>With over 14 million subscribers, we're the #1 information source!</p>
+			</div >
+		</div >
+	</div >
+
+</div ><p><span id="SuperSearchServices_wt_CompoundWebwidget326809_wtGoogle_Analytics">
+<script src='http://www.google-analytics.com/ga.js' type='text/javascript'></script>
+
+
+<script type='text/javascript'>
+	var pageTracker = _gat._getTracker('UA-3033653-1');
+
+	pageTracker._setCampSourceKey('source');
+	pageTracker._setCampNameKey('source');
+	pageTracker._setDomainName('travelzoo.com');
+	pageTracker._initData();
+	pageTracker._trackPageview();
+</script>
+</span></p><span id="SuperSearchServices_wt_CompoundWebwidget326809_wtCrazyEgg"><script type="text/javascript" src="http://cetrk.com/pages/scripts/0007/1763.js"></script></span>
+
+<script type='text/javascript'>
+
+var currentLocale = 'us';
+
+var monthFirst = true;
+var fadedLogo = false;
+var randomValue2 = false;
+var validateURL = 'http://supersearch.travelzoo.com/SuperSearchAjaxPages/ValidAirport.aspx';
+
+var ajaxPagesBase = 'http://supersearch.travelzoo.com/SuperSearchAjaxPages/';
+
+var useAdSense = false;
+var adSenseChannel = '';
+var adSenseNumberOfAds = 'w3';
+var adSenseClientId = '';
+var adSenseLanguage = '';
+var adSenseRealTracking = true;
+var adSenseSuffix = '';  
+
+var fireUnload = '0';   
+var currentLocaleId = 2; 
+var registeredSubcriber = false;
+
+var oldScreenState = new ScreenState();
+
+</script>
+
+<script>
+
+var scenarioNumber = 0;
+</script>
+<div  class="Tabs_Wrapper">
+	<div  class="Tabs_TabBody" title="Flights">
+		<div  id="wtTabContentContainer">
+			<div  id="wtTopDiv" class="TopDiv">
+				<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td class="LeftTableCellContentAltContainer_Top" valign="Bottom" width="377px" height="100%"><table cellspacing="0" cellpadding="0" border="0" width="377px"><tr><td class="LeftTableCellContentAlt_Top_Left" valign="Bottom" width="100px"><img id="wt_Imagewidget326822" src="/SuperSearch/img/supersearch.gif?268" border="0" height="45" width="91" /></td>
+				<td valign="Bottom"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td valign="Bottom"><ul class='Tabs_Header'><li  class='Tabs_TabOnAlt'><a class='Tabs_TabOnAlt' href='Search.aspx?catid=1404&source=1404&AlternativeDisplay=True&ActiveTab=Flights'>Flights</a></li><li  class='Tabs_TabOffAlt'><a class='Tabs_TabOffAlt' href='Search.aspx?catid=1404&source=1404&AlternativeDisplay=True&ActiveTab=Hotels'/>Hotels</a></li><li style='margin-right:0px;' class='Tabs_TabOffAlt'><a class='Tabs_TabOffAlt' href='Search.aspx?catid=1404&source=1404&AlternativeDisplay=True&ActiveTab=Car+Rentals'/>Car Rentals</a></li></ul>
+</td>
+				</tr><tr><td class="LeftTableCellContentAlt_Top" height="20px">&nbsp</td>
+				</tr></table></td>
+				</tr></table></td>
+				<td></td>
+				<td valign="Bottom"><div  id="wtHeader" class="NewSearchResults_ContainerAlt" style="margin-bottom:0px;">
+					<table cellspacing="0" cellpadding="0" border="0"><tr><td valign="Bottom"><table cellspacing="0" cellpadding="0" border="0" class="Top20Subscription_Header_Left" height="100%"><tr><td width="4px"><img id="wt_CompoundWebwidget326832_wt_Imagewidget302648" src="/SuperSearch/img/Top20_tab_left_border.gif?268" border="0" height="20" width="4" /></td>
+					<td class="Top20Subscription_Header_LeftTitle" height="20px">Travelzoo Top 20<sup>&reg;</sup>¬†</td>
+					<td width="4px"><img id="wt_CompoundWebwidget326832_wt_Imagewidget302652" src="/SuperSearch/img/Top20_tab_right_border.gif?268" border="0" height="20" width="4" /></td>
+					</tr><tr><td class="Top20Subscription_Header_Left_Bottom" colspan="3" height="20px">&nbsp</td>
+					</tr></table></td>
+					<td class="Top20Subscription_Header_Right"><img id="wt_CompoundWebwidget326832_wt_Imagewidget302656" src="/SuperSearch/img/top20_tm_logo.gif?268" border="0" height="45" width="115" /></td>
+					</tr></table>
+
+				</div ></td>
+				</tr><tr><td class="LeftTableCellContentAlt" valign="Top" width="377px"><table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%"><tr><td valign="Top"><div  class="paddingQuircks">
+					<p class="FlightSearch_AltTitle"><strong><strong>Compare multiple travel sit</strong>es in one search</strong></p><p>Intelligent travel search powered by¬†<span id="wtNumberUserRatings" style="color:#ff0000">2,591,848</span> ¬†worldwide user ratings - Used by over 15 million travelers</p><br /><table cellspacing="0" cellpadding="0" border="0"><tr><td valign="Middle"><input type="radio" name="-192625753" checked="checked" id="wtRoundTrip" tabindex="5" value="True" onclick="changeReturnVisibility('wtreturnContainer', true);
+if(searchTypeIsRoundTrip == 'false'){ searchChanged = 'true'; searchTypeIsRoundTrip = 'true';}
+" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" />¬†<strong>Round-trip</strong></td>
+					<td width="10px"></td>
+					<td valign="Middle"><input type="radio" name="-192625753" id="wtoneWay" tabindex="6" value="False" onclick="changeReturnVisibility('wtreturnContainer', false); if(searchTypeIsRoundTrip == 'true'){ searchChanged = 'true'; searchTypeIsRoundTrip = 'false';}" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" />¬†<strong>One-way</strong></td>
+					</tr></table><table id="wt_Tablewidget326846" cellspacing="0" cellpadding="1" border="0" width="360px" style="margin-top:6px; margin-bottom: 6px">
+						<tr>
+							<td id="wt_Cellwidget326847" style="background: transparent url(img/div_line.gif) repeat-x scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"></td>
+						</tr>
+					</table>
+					<strong>From:</strong>¬†(city name / airport code) <input name="wtDepartureAirport" type="text" value="Trieste, Italy - Dei Legionari (TRS)" maxlength="300" id="wtDepartureAirport" tabindex="9" class="CityTextInput" title="" onchange="javascript: $('wtOriginCode').value = this.value; searchChanged = true;" onfocus="javascript: this.select();" onkeydown="if(event.keyCode == 13) return false;return OsEnterKey('wt_Submitwidget326941', event)" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_wtDepartureAirport"></span><div id='departure_choices' tabindex='-1' class='autocomplete'></div><input name="wtOriginCode" type="text" value="TRS" maxlength="300" size="5" id="wtOriginCode" tabindex="10" class="Invisible" title="" onchange="searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_wtOriginCode"></span><table cellspacing="0" cellpadding="0" border="0" width="330px"><tr><td colspan="2"><p id="wtFromParagraph" class="Invisible">We could not find your "From" airport. Please try again.</p></td>
+					</tr><tr><td colspan="2"><p>¬†</p><p><strong>To:</strong> (city name / airport code)</p><p><input name="wtDestinationAirport" type="text" maxlength="300" id="wtDestinationAirport" tabindex="11" class="CityTextInput" title="" onchange="javascript: $('wtDestinationCode').value = this.value; searchChanged = true;" onfocus="javascript: this.select();" onkeydown="if(event.keyCode == 13) return false;return OsEnterKey('wt_Submitwidget326941', event)" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_wtDestinationAirport"></span><div id='destination_choices' tabindex='-1' class='autocomplete'></div><input name="wtDestinationCode" type="text" maxlength="300" size="5" id="wtDestinationCode" tabindex="12" class="Invisible" title="" onchange="searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_wtDestinationCode"></span></p><p id="wtToParagraph" class="Invisible">We could not find your "To" airport. Please try again.</p></td>
+					</tr><tr><td colspan="2" height="10px"></td>
+					</tr><tr><td colspan="2"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td id="wt_Cellwidget326869" valign="Top" nowrap="nowrap"><p><strong>Depart:</strong></p><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td id="wt_Cellwidget326872" nowrap="nowrap"><input name="wtdeparteDateWidget" type="text" maxlength="11" size="11" id="wtdeparteDateWidget" tabindex="13" title="" onclick="$('wtcalendarTd1').getElementsByTagName('img')[0].onclick();" onchange="searchChanged = true; WidgetLibrary_SetInputPrompt_OnChange(this.id); computeLaterDate('wtdeparteDateWidget', 'wtreturnDateWidget',1);" onkeyup="parseDate('wtdeparteDateWidget');" onkeypress="return checkForInt(event);" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_wtdeparteDateWidget"></span></td>
+					<td id="wtcalendarTd1" width="100%"><img id="ClonedWidgetLibrary_wt_CompoundWebwidget326875_wtCalendarButton" title="Date Selector" onmouseover="this.style.border='1px solid gray';" onmouseout="this.style.border='1px solid white';" src="/ClonedWidgetLibrary/img/Calendar.gif?265" border="0" height="14" width="16" style="cursor: pointer; border: 1px solid white;" /><script type="text/javascript">
+Calendar.setup(
+    {
+        inputField      :   "wtdeparteDateWidget",
+        ifFormat        :   "%m/%d/%Y",
+        button          :   "ClonedWidgetLibrary_wt_CompoundWebwidget326875_wtCalendarButton",
+        align           :   "Bl",           
+        singleClick     :   true,
+        weekNumbers     :   false,
+        showOthers      :   false,
+        timeFormat      :   24, 
+        showsTime       :   false,
+        firstDay        :   0, range          :   [2009,2009], minMonth		:	0,
+		 maxMonth		:	11,minDay		:	9,
+		 maxDay		:	5,
+        electric        :   false, 
+        cache           :   false
+    });
+</script>
+</td>
+					</tr></table><p id="wtdeparteDateParagraph" class="Invisible">Invalid Date!</p><p><select name="wtdepartTimeCombo" id="wtdepartTimeCombo" tabindex="14" onchange="searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" style="width:80px">
+						<option value="__ossli_1200">Anytime</option>
+						<option value="__ossli_0900">Morning</option>
+						<option value="__ossli_1400">Afternoon</option>
+						<option value="__ossli_1900">Evening</option>
+
+					</select></p></td>
+					<td width="10px"></td>
+					<td id="wtreturnContainer" style="visibility: visible"><strong>Return:</strong>¬†¬†¬† 
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td id="wt_Cellwidget326882" nowrap="nowrap"><input name="wtreturnDateWidget" type="text" maxlength="11" size="11" id="wtreturnDateWidget" tabindex="15" title="" onchange="searchChanged = true; WidgetLibrary_SetInputPrompt_OnChange(this.id); computeBeforeDate('wtdeparteDateWidget', 'wtreturnDateWidget');" onclick="$('wtcalendarTd2').getElementsByTagName('img')[0].onclick();" onkeypress="return checkForInt(event);" onkeyup="parseDate('wtreturnDateWidget');" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_wtreturnDateWidget"></span></td>
+					<td id="wtcalendarTd2" width="100%"><img id="ClonedWidgetLibrary_wt_CompoundWebwidget326885_wtCalendarButton" title="Date Selector" onmouseover="this.style.border='1px solid gray';" onmouseout="this.style.border='1px solid white';" src="/ClonedWidgetLibrary/img/Calendar.gif?265" border="0" height="14" width="16" style="cursor: pointer; border: 1px solid white;" /><script type="text/javascript">
+Calendar.setup(
+    {
+        inputField      :   "wtreturnDateWidget",
+        ifFormat        :   "%m/%d/%Y",
+        button          :   "ClonedWidgetLibrary_wt_CompoundWebwidget326885_wtCalendarButton",
+        align           :   "Bl",           
+        singleClick     :   true,
+        weekNumbers     :   false,
+        showOthers      :   false,
+        timeFormat      :   24, 
+        showsTime       :   false,
+        firstDay        :   0, range          :   [2009,2009], minMonth		:	0,
+		 maxMonth		:	11,minDay		:	9,
+		 maxDay		:	5,
+        electric        :   false, 
+        cache           :   false
+    });
+</script>
+</td>
+					</tr></table><p id="wtreturnDateParagraph" class="Invisible">Invalid Date!</p><p><select name="wtreturnTimeCombo" id="wtreturnTimeCombo" tabindex="16" onchange="searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" style="width:80px">
+						<option value="__ossli_1200">Anytime</option>
+						<option value="__ossli_0900">Morning</option>
+						<option value="__ossli_1400">Afternoon</option>
+						<option value="__ossli_1900">Evening</option>
+
+					</select></p></td>
+					</tr></table></td>
+					</tr></table><table id="wt_Tablewidget326889" cellspacing="0" cellpadding="1" border="0" width="330px" style="margin-top:6px; margin-bottom: 6px">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+					<table cellspacing="0" cellpadding="0" border="0" width="330px"><tr><td><p><strong>Travelers</strong> ¬†<select name="wtTravelersDropDown" id="wtTravelersDropDown" tabindex="17" onchange="changeTravelerNumber('wtTravellersExpression','wtAdultsDropDown','wtChildrenDropDown','wtSeniorsDropDown','wtInfantsDropDown', 'wtTravelersDropDown');
+searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" style="width:43px">
+						<option value="__ossli_1">1</option>
+						<option value="__ossli_2">2</option>
+						<option value="__ossli_3">3</option>
+						<option value="__ossli_4">4</option>
+						<option value="__ossli_5">5</option>
+						<option value="__ossli_6">6</option>
+						<option value="__ossli_7">7</option>
+						<option value="__ossli_8">8</option>
+						<option value="__ossli_9">9</option>
+
+					</select></p><p><span id="wtTravellersExpression">1 adult</span>¬†(<a id="wtNumberClosed" tabindex="18" onclick="javascript: $('wtPassangerSpecificationContainer').toggle(); expandTravelers('wtNumberClosed','wtNumberOpen',true);return false;" href="FlightsScreenAlt.aspx">Children and seniors?</a><a id="wtNumberOpen" tabindex="19" onclick="javascript: $('wtPassangerSpecificationContainer').toggle(); expandTravelers('wtNumberClosed','wtNumberOpen',false);return false;" href="FlightsScreenAlt.aspx" style="display:none;">Close</a>)</p></td>
+					</tr><tr><td><table id="wtPassangerSpecificationContainer" cellspacing="0" cellpadding="0" border="0" width="100%" style="display : none;">
+						<tr>
+							<td colspan="2"><p id="wtPassengerNumber">Please specify up to 9 passengers</p></td>
+						</tr>
+						<tr>
+							<td><strong>Adults</strong>¬†</td>
+							<td><select name="wtAdultsDropDown" id="wtAdultsDropDown" tabindex="20" onchange="changeTravellersString('wtTravellersExpression','wtAdultsDropDown','wtChildrenDropDown','wtSeniorsDropDown','wtInfantsDropDown', 'wtTravelersDropDown', 'wtAdultsDropDown', 'wtPassengerNumber', 'wtInfantNumber');
+searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" style="width:43px">
+								<option value="__ossli_0">0</option>
+								<option selected="selected" value="__ossli_1">1</option>
+								<option value="__ossli_2">2</option>
+								<option value="__ossli_3">3</option>
+								<option value="__ossli_4">4</option>
+								<option value="__ossli_5">5</option>
+								<option value="__ossli_6">6</option>
+								<option value="__ossli_7">7</option>
+								<option value="__ossli_8">8</option>
+								<option value="__ossli_9">9</option>
+
+							</select></td>
+						</tr>
+						<tr>
+							<td><strong>Seniors</strong>¬†</td>
+							<td><select name="wtSeniorsDropDown" id="wtSeniorsDropDown" tabindex="21" onchange="changeTravellersString('wtTravellersExpression','wtAdultsDropDown','wtChildrenDropDown','wtSeniorsDropDown','wtInfantsDropDown', 'wtTravelersDropDown', 'wtSeniorsDropDown', 'wtPassengerNumber', 'wtInfantNumber');
+searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" style="width:43px">
+								<option selected="selected" value="__ossli_0">0</option>
+								<option value="__ossli_1">1</option>
+								<option value="__ossli_2">2</option>
+								<option value="__ossli_3">3</option>
+								<option value="__ossli_4">4</option>
+								<option value="__ossli_5">5</option>
+								<option value="__ossli_6">6</option>
+								<option value="__ossli_7">7</option>
+								<option value="__ossli_8">8</option>
+								<option value="__ossli_9">9</option>
+
+							</select>¬†(65+ years)</td>
+						</tr>
+						<tr>
+							<td><strong>Children</strong>¬†</td>
+							<td><select name="wtChildrenDropDown" id="wtChildrenDropDown" tabindex="22" onchange="changeTravellersString('wtTravellersExpression','wtAdultsDropDown','wtChildrenDropDown','wtSeniorsDropDown','wtInfantsDropDown', 'wtTravelersDropDown', 'wtChildrenDropDown', 'wtPassengerNumber', 'wtInfantNumber');
+searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" style="width:43px">
+								<option selected="selected" value="__ossli_0">0</option>
+								<option value="__ossli_1">1</option>
+								<option value="__ossli_2">2</option>
+								<option value="__ossli_3">3</option>
+								<option value="__ossli_4">4</option>
+								<option value="__ossli_5">5</option>
+								<option value="__ossli_6">6</option>
+								<option value="__ossli_7">7</option>
+								<option value="__ossli_8">8</option>
+
+							</select>¬†(2 -11 years)</td>
+						</tr>
+						<tr>
+							<td><strong>Infants</strong>¬†¬†</td>
+							<td><select name="wtInfantsDropDown" id="wtInfantsDropDown" tabindex="23" onchange="changeTravellersString('wtTravellersExpression','wtAdultsDropDown','wtChildrenDropDown','wtSeniorsDropDown','wtInfantsDropDown', 'wtTravelersDropDown', 'wtInfantsDropDown', 'wtPassengerNumber', 'wtInfantNumber');
+searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" style="width:43px">
+								<option selected="selected" value="__ossli_0">0</option>
+								<option value="__ossli_1">1</option>
+								<option value="__ossli_2">2</option>
+								<option value="__ossli_3">3</option>
+								<option value="__ossli_4">4</option>
+
+							</select>¬†<span id="wtInfantNumber">(one infant per adult only)</span>¬†</td>
+						</tr>
+					</table>
+					</td>
+					</tr></table><script language=javascript>
+
+//DATE FORMATS TO BE USED IN PARSING AND VALIDATION
+//This is the original format in which the dates were inserted
+var originalFormat = 'M/d/y';
+//This is the destination format to convert to - using a Platform supplied constant
+var destinationFormat = _DATE_FORMAT;
+
+
+
+
+function getFlightParametersAsQueryString() {
+	
+	var pars = getFlightParameters();
+	
+	
+	return 		'&OriginCode=' + pars.originCode + 
+				'&DestinationCode=' + pars.destinationCode + 
+				'&UseNearby=' + pars.useNearby + 
+				'&StartDate=' + pars.departDate + 
+				'&EndDate=' + pars.returnDate + 
+				'&StartTime=' + pars.startTime + 
+				'&EndTime=' + pars.endTime + 
+				'&catid=' + pars.catid + 
+				'&source='+ pars.source + 
+				'&NumTravelers=' + pars.totalTravelers + 
+				'&NumAdults=' + pars.adultTravelers + 
+				'&NumChildren='+pars.childTravelers + 
+				'&NumSeniors=' + pars.seniorTravelers + 
+				'&NumInfants=' + pars.infantTravelers + 
+				'&FlexibleDates=' + pars.flexibleDates + 
+				'&RoundTrip=' + pars.roundTrip + 
+				'&PreferNonStop=' + pars.preferNonStop +
+				'&UserOriginAirport=' + pars.userOriginAirport + 
+				'&UserDestinationAirport=' + pars.userDestinationAirport + 
+				'&RandomValue=' + pars.usesDropDowns +
+				'&RandomValue2=' + randomValue2; 
+	}
+
+function getFlightParameters() {
+
+	var _catid = '1404';
+	var _source = '1404';
+
+	var _roundTrip = $('wtRoundTrip').checked; 
+	
+	//Performs the conversion from old format to the current one
+	var _departDate = formatDate(new Date(getDateFromFormat($('wtdeparteDateWidget').value,originalFormat)),destinationFormat);
+	var _returnDate = formatDate(new Date(getDateFromFormat($('wtreturnDateWidget').value,originalFormat)),destinationFormat);
+
+	var _originCode = $('wtOriginCode').value;
+	var _destinationCode = $('wtDestinationCode').value;
+
+	var _useNearby = $('wtUseNearby').checked;
+	var _preferNonStop = $('wtPreferNonStop').checked;
+
+	var _totalTravelers = $('wtTravelersDropDown').options[$('wtTravelersDropDown').selectedIndex].text;
+	var _adultTravelers = $('wtAdultsDropDown').options[$('wtAdultsDropDown').selectedIndex].text;
+	var _childTravelers = $('wtChildrenDropDown').options[$('wtChildrenDropDown').selectedIndex].text;
+	var _seniorTravelers = $('wtSeniorsDropDown').options[$('wtSeniorsDropDown').selectedIndex].text;
+	var _infantTravelers = $('wtInfantsDropDown').options[$('wtInfantsDropDown').selectedIndex].text;
+
+	var _flexibleDates = $('wtFlexibleDates').checked;
+	
+	var tmp = $('wtdepartTimeCombo').options[$('wtdepartTimeCombo').selectedIndex].value;
+	var _startTime = tmp.slice(tmp.lastIndexOf('_') + 1, tmp.length);
+	tmp = $('wtreturnTimeCombo').options[$('wtreturnTimeCombo').selectedIndex].value;
+	var _endTime = tmp.slice(tmp.lastIndexOf('_') + 1, tmp.length);
+
+	var _userOriginAirport;
+	if( $('wtDepartureAirport') != null )
+		_userOriginAirport = escape( $('wtDepartureAirport').value );
+	else
+		_userOriginAirport = $('wtdropDownCities').options[$('wtdropDownCities').selectedIndex].text;
+
+
+	var _userDestinationAirport = $('wtDestinationAirport').value;;
+
+	var _usesDropDowns = $('wtdropDownCities') != null;
+
+	return {
+		catid:_catid,
+		source:_source,
+		originCode:_originCode, 	
+		destinationCode:_destinationCode,
+		useNearby:_useNearby,
+		departDate:_departDate,
+		returnDate:_returnDate,
+		totalTravelers:_totalTravelers,
+		adultTravelers:_adultTravelers,
+		childTravelers:_childTravelers,
+		seniorTravelers:_seniorTravelers,
+		infantTravelers:_infantTravelers,
+		roundTrip:_roundTrip,
+		flexibleDates: _flexibleDates,
+		preferNonStop: _preferNonStop,
+		startTime: _startTime,
+		endTime: _endTime,
+		userOriginAirport: _userOriginAirport,
+		userDestinationAirport: _userDestinationAirport,
+		usesDropDowns: _usesDropDowns
+	};
+}
+
+function updateOrigin(text, li) {
+	$('wtOriginCode').value = li.id;
+	$('wtDestinationAirport').focus();
+	searchChanged = true;
+
+	//var elements = $('departure_choices').getElementsByTagName('li');
+	//var parentElement = $('departure_choices');
+	//for(i = 0; i < elements.length; i++) {
+	//	parentElement.removeChild(elements[i]);
+	//}
+	try {
+		$('departure_choices').removeChild( $('departure_choices').getElementsByTagName('ul')[0] );
+	} catch (e) {}
+}
+
+function updateDestination(text,li) {
+	$('wtDestinationCode').value = li.id;
+	$('wtdeparteDateWidget').focus();
+
+	searchChanged = true;
+	try {
+		$('destination_choices').removeChild( $('destination_choices').getElementsByTagName('ul')[0] );
+	} catch (e) {}
+}
+
+
+
+//new Ajax.Autocompleter('wtDestinationAirport', 'destination_choices', 'AjaxAirportsTo.aspx', {paramName:'str', afterUpdateElement : updateDestination, frequency : 0.05, minChars:3, scrollIntoView:false});
+
+
+
+var autocompleterURL = 'http://supersearch.travelzoo.com/SuperSearchAjaxPages/AjaxAirportsTo.aspx?AjaxId=AirportsTo&CurrentLocale=us&GeoCountry=US&AirFrom=True&AirTo=False&Geo=False';
+
+
+
+new Ajax.Autocompleter('wtDestinationAirport', 'destination_choices', autocompleterURL, {paramName:'str', afterUpdateElement : updateDestination, frequency : 0.05, minChars:3, scrollIntoView:false});
+
+
+
+</script>
+<script>
+
+//new Ajax.Autocompleter('wtDepartureAirport', 'departure_choices', 'AjaxAirportsFrom.aspx', {paramName:'str', afterUpdateElement : updateOrigin, frequency : 0.05, minChars:3, scrollIntoView:false});
+
+var autocompleterURL = 'http://supersearch.travelzoo.com/SuperSearchAjaxPages/AjaxAirportsFrom.aspx?AjaxId=AirportsFrom&CurrentLocale=us&GeoCountry=US&AirFrom=True&AirTo=False&Geo=False';
+
+new Ajax.Autocompleter('wtDepartureAirport', 'departure_choices', autocompleterURL, {paramName:'str', afterUpdateElement : updateOrigin, frequency : 0.05, minChars:3, scrollIntoView:false});
+
+</script>
+<p>¬†</p><p /><p id="wt_Paragraphwidget326923" style=" font-size:9px"></p><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td width="75%"><p><input type="checkbox" name="wtUseNearby" checked="checked" id="wtUseNearby" tabindex="24" onchange="searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" />Search nearby airports for lower fares</p><p><input type="checkbox" name="wtFlexibleDates" id="wtFlexibleDates" tabindex="25" onchange="searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" />My dates are flexible</p><p><input type="checkbox" name="wtPreferNonStop" id="wtPreferNonStop" tabindex="26" onchange="searchChanged = true;" onkeydown="return OsEnterKey('wt_Submitwidget326941', event)" />Prefer nonstop</p><p id="wt_Paragraphwidget326932" style=" font-size:9px">(Not all providers support these options)</p></td>
+					<td valign="Bottom"><table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td id="wt_Cellwidget326935" valign="Middle" nowrap="nowrap" style=" font-size:9px"></td>
+					<td class="RightAlign" valign="Middle"><a id="wtsearchLink" tabindex="27" onclick="trackPage(1); searchButton(); $('wtsearchSecondLink').focus(); isFirstSearch = false; return false;" href="javascript:__doPostBack('wtsearchLink','')"><img id="wtSearchFirst" src="/SuperSearch/img/search.gif?268" border="0" height="30" width="71" style="margin-top:5px;" /></a><a id="wtsearchSecondLink" tabindex="28" onclick="if( verifyChangedParameters() ) return false; trackPage(2); searchButton();  return false;" href="FlightsScreenAlt.aspx"><img id="wtSearchSecond" src="/SuperSearch/img/search_again_small2.gif?268" style="border-width:0px;height:20px;width:90px;margin-top: 5px; display: none;" /></a><input type="submit" name="wt_Submitwidget326941" value="DefaultSearchButton" onclick="trackPage(3); searchButton();  isFirstSearch = false; return false;" id="wt_Submitwidget326941" tabindex="29" class="Button Is_Default" style="display:none;" /></td>
+					</tr></table><script>
+function searchButton() {
+searchButtonClick('wtOriginCode', 'wtFromParagraph', 'wtDepartureAirport', 'wtDestinationCode', 'wtToParagraph', 'wtDestinationAirport', '', '', 'wtSearchFirst', 'wtSearchSecond', 'wtdeparteDateWidget', 'wtdeparteDateParagraph', 'wtreturnDateWidget', 'wtreturnDateParagraph', 'wtSearchResults_Loading', 'wtdestinationsDiv', 'wtflightsResultDiv', 'wtRoundTrip', 'us', '', '', 'us','wtFadedLogosDiv', 'wtHeader','wtNewHeader'); 
+}
+</script></td>
+					</tr></table><div  id="wtFadedLogosDiv">
+						<table id="wt_Tablewidget342018" cellspacing="0" cellpadding="1" border="0" width="360px" style="margin-top: 12px; margin-bottom: 12px">
+							<tr>
+								<td id="wt_Cellwidget342019" style="background: transparent url(img/div_line.gif) repeat-x scroll 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"></td>
+							</tr>
+						</table>
+						<p id="wt_Paragraphwidget326945" style="margin-bottom: 3px;">Just a few of the sites we search<span id="wtPagePixels"><IMG SRC="http://ad.doubleclick.net/ad/N447.TravelZoo/B2615458.23;sz=1x1;ord=0266516035?" WIDTH="1" HEIGHT="1"></span></p><p><img id="wt_Imagewidget326947" src="/SuperSearch/img/logos_flights_blue.gif?268" border="0" height="155" width="360" /></p>
+					</div >
+				</div ></td>
+				</tr></table></td>
+				<td valign="Top">¬†</td>
+				<td id="wt_Cellwidget326949" valign="Top" style="width: 377px;"><div  id="wtSearchResultsContainer" class="NewSearchResults_ContainerAlt">
+					<div id='FlightsContainer' style='height: 100%; vertical-align: middle;'><div  class="Top20Subscription_Body">
+						<p class="Top20Subscription_Body_Title"><strong>Get Travelzoo's Famous Top 20 Deals.</strong></p><p>Every week, our 50+ travel experts hand-pick the best<br />
+travel deals on the Internet from over 900 companies.</p><p>Don't miss out! Join over 14 million subscribers.</p><table cellspacing="0" cellpadding="0" border="0" class="Top20Subscription_Body_FormTable"><tr><td>Email:</td>
+						<td><input name="wt_CompoundWebwidget326953$wtEmail" type="text" maxlength="256" size="50" id="wt_CompoundWebwidget326953_wtEmail" tabindex="30" class="Top20Subscription_Body_Input" title="" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_wt_CompoundWebwidget326953_wtEmail"></span></td>
+						<td width="30%"></td>
+						</tr><tr><td id="wt_CompoundWebwidget326953_wt_Cellwidget301327" style="white-space:nowrap;">Zip Code:¬†</td>
+						<td id="wt_CompoundWebwidget326953_wt_Cellwidget301328" nowrap="nowrap"><input name="wt_CompoundWebwidget326953$wtZipCode" type="text" maxlength="5" size="5" id="wt_CompoundWebwidget326953_wtZipCode" tabindex="31" title="" /><span style="display: none;" class="ValidationMessage" id="ValidationMessage_wt_CompoundWebwidget326953_wtZipCode"></span>¬†Country:¬†<select name="wt_CompoundWebwidget326953$wtCountry" id="wt_CompoundWebwidget326953_wtCountry" tabindex="32" style="width:100px">
+							<option selected="selected" value="368">USA</option>
+							<option value="34">Australia</option>
+							<option value="18">Austria</option>
+							<option value="53">Brazil</option>
+							<option value="44">Belgium</option>
+							<option value="72">Canada</option>
+							<option value="98">China</option>
+							<option value="122">Denmark</option>
+							<option value="148">France</option>
+							<option value="109">Germany</option>
+							<option value="162">Hong Kong</option>
+							<option value="187">India</option>
+							<option value="175">Ireland</option>
+							<option value="201">Italy</option>
+							<option value="213">Japan</option>
+							<option value="227">Korea, South</option>
+							<option value="253">Malaysia</option>
+							<option value="238">Mexico</option>
+							<option value="264">Netherlands</option>
+							<option value="280">Norway</option>
+							<option value="290">Poland</option>
+							<option value="306">Russia</option>
+							<option value="332">Singapore</option>
+							<option value="134">Spain</option>
+							<option value="316">Sweden</option>
+							<option value="81">Switzerland</option>
+							<option value="343">Taiwan</option>
+							<option value="356">UK</option>
+							<option value="9">Other</option>
+
+						</select></td>
+						<td><a id="wt_CompoundWebwidget326953_wt_Linkwidget313157" tabindex="33" target="_blank" onclick="this.href='SignUp.aspx?SignupSource=ssfnwhp&amp;Email=' + encodeURIComponent($('wt_CompoundWebwidget326953_wtEmail').value) + '&amp;ZipCode=' + $('wt_CompoundWebwidget326953_wtZipCode').value + '&amp;Country=' + $('wt_CompoundWebwidget326953_wtCountry').options[$('wt_CompoundWebwidget326953_wtCountry').selectedIndex].value;" href="SignupClick.aspx?SignupSource=ssfnwhp"><img id="wt_CompoundWebwidget326953_wt_Imagewidget301332" src="/SuperSearch/img/Top20_signup.gif?268" style="border-width:0px;height:21px;width:66px;" /></a></td>
+						</tr></table>
+					</div >
+<div  class="Top20List_Body">
+						<p class="Top20List_Body_Title">Released¬†<span id="wt_CompoundWebwidget326954_wtReleasedDate">January 7, 2009</span>¬†- ¬© Travelzoo</p><img id="wt_CompoundWebwidget326954_wtImpressionTrackingDummyImage" src="http://data.travelzoo.com/Hit.ashx?515684|515770|514695|516440|515319|514285|514298|514196|510809|514143|515020|514108" style="border-width:0px;display: none;" /><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$39 &amp; up</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl00_wt_Linkwidget302618" tabindex="34" title="JetBlue Slashes Fares thru March (each way)" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=515684&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl00_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">JetBlue Slashes Fares thru March (each way)</span></a><br /><span Class="Top20List_Body_Company">JetBlue Airways</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$259</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl02_wt_Linkwidget302618" tabindex="35" title="Bahamas Beachfront Getaway incl. Air" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=515770&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl02_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">Bahamas Beachfront Getaway incl. Air</span></a><br /><span Class="Top20List_Body_Company">Bookit.com</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$129</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl04_wt_Linkwidget302618" tabindex="36" title="NYC: Hip Boutique Hotel at Lowest Rate We've Seen" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=514695&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl04_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">NYC: Hip Boutique Hotel at Lowest Rate We've Seen</span></a><br /><span Class="Top20List_Body_Company">Hudson Hotel</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$429</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl06_wt_Linkwidget302618" tabindex="37" title="Weeklong Caribbean Cruise; Kids Sail FREE" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=516440&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl06_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">Weeklong Caribbean Cruise; Kids Sail FREE</span></a><br /><span Class="Top20List_Body_Company">Cruises &amp; Tours by Brennco</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$599</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl08_wt_Linkwidget302618" tabindex="38" title="Rome: 6 Nights &amp; Air" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=515319&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl08_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">Rome: 6 Nights &amp; Air</span></a><br /><span Class="Top20List_Body_Company">Sceptre Tours</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$44 &amp; up</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl10_wt_Linkwidget302618" tabindex="39" title="Worldwide New Year's Fare Sale; Ends Today" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=514285&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl10_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">Worldwide New Year's Fare Sale; Ends Today</span></a><br /><span Class="Top20List_Body_Company">United Airlines</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$79.99</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl12_wt_Linkwidget302618" tabindex="40" title="Las Vegas 4-Diamond Hotel on The Strip" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=514298&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl12_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">Las Vegas 4-Diamond Hotel on The Strip</span></a><br /><span Class="Top20List_Body_Company">Mandalay Bay Resort and Casino</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$499</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl14_wt_Linkwidget302618" tabindex="41" title="Riviera Maya All-Inclusive Getaway w/Air" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=514196&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl14_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">Riviera Maya All-Inclusive Getaway w/Air</span></a><br /><span Class="Top20List_Body_Company">CheapCaribbean.com</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$18 &amp; up</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl16_wt_Linkwidget302618" tabindex="42" title="Amtrak Sale; 20% OFF Nationwide Routes" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=510809&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl16_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">Amtrak Sale; 20% OFF Nationwide Routes</span></a><br /><span Class="Top20List_Body_Company">Amtrak</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$139</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl18_wt_Linkwidget302618" tabindex="43" title="B&amp;B Package at 4-Diamond Connecticut Resort" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=514143&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl18_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">B&amp;B Package at 4-Diamond Connecticut Resort</span></a><br /><span Class="Top20List_Body_Company">Saybrook Point Inn &amp; Spa</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$878</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl20_wt_Linkwidget302618" tabindex="44" title="Fly to New Zealand w/FREE Australia Stopover (R/T)" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=515020&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl20_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">Fly to New Zealand w/FREE Australia Stopover (R/T)</span></a><br /><span Class="Top20List_Body_Company">Air New Zealand</span>
+						</div ><div  class="Top20List_Body_Item">
+							<span Class="Top20List_Body_Price">$58</span><a id="wt_CompoundWebwidget326954_wtDealsList_ctl22_wt_Linkwidget302618" tabindex="45" title="Niagara Falls 4-Diamond Hotel incl. Dinner Credit" target="_blank" href="http://top20.travelzoo.com/Top20.ashx?id=514108&amp;tz_sc=SS_us&amp;source=ssfnwhpln"><span id="wt_CompoundWebwidget326954_wtDealsList_ctl22_wt_Expressionwidget302612" Class="Top20List_Body_Headline" target="_blank">Niagara Falls 4-Diamond Hotel incl. Dinner Credit</span></a><br /><span Class="Top20List_Body_Company">Fallsview Plaza Hotel</span>
+						</div >
+					</div ><div  class="Top20List_Bottom">
+						<a id="wt_CompoundWebwidget326954_wt_Linkwidget325316" tabindex="46" title="Click to see all Top 20 deals" target="_blank" href="http://top20.travelzoo.com">All Top 20<sup>&reg;</sup> deals ¬ª</a>
+					</div >
+</div>
+				</div ><div  id="wtSearchResults_Loading" class="NewSearchResults_LoadingScreen">
+					<p align="center"><img id="wt_Imagewidget326958" src="/SuperSearch/img/supersearch_image_rotation.gif?268" border="0" height="90" width="80" /></p><p align="center"><strong>Please wait for your results</strong></p>
+				</div ><div  id="wtNewHeader" class="Invisible">
+					<table id="wt_Tablewidget326961" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin-bottom:10px; margin-top: 3px;">
+						<tr>
+							<td width="22px"><img id="wt_Imagewidget326963" src="/SuperSearch/img/ss_corner_5.png?268" border="0" height="20" width="22" /></td>
+							<td class="HeaderTableAlt" height="20px"><strong>Find fares from recommended sources</strong>¬†</td>
+							<td width="22px"><img id="wt_Imagewidget326966" src="/SuperSearch/img/ss_corner_6.png?268" border="0" height="20" width="22" /></td>
+						</tr>
+					</table>
+
+				</div ></td>
+				</tr></table>
+			</div ><div >
+				<div  id="wtTipsFrame" class="InnerLeft Invisible">
+					<div id='TipsContainer'>
+<!--[if IE 6]>
+
+<style type='text/css'>
+
+.Top20FirstLineTitle {
+	font-size: 16px;
+}
+
+.Top20FirstLineDescription {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.Top20EmailAndZipCode {
+	font-size: 10px;
+}
+
+.Top20EmailAndZipCode td {
+	font-size: 11px;
+}
+
+.Top20Email {
+	width: 105px;
+}
+
+.Top20ZipCode {
+	width: 55px;
+}
+
+</style>
+
+<![endif]-->
+<div >
+						<p><iframe src="http://top20.travelzoo.com/ss/Inline.aspx?source=ssfnwhpw" width="377" scrolling="no" height="210" frameborder="0" marginheight="0" marginwidth="0"></iframe></p>
+					</div ><p>
+<script type='text/javascript'>
+	tab = 'Flights/'; 
+	trackingWidgets(tab, 'widget/', '', 'show/', '');
+</script>
+</p><p></div></p>
+
+				</div ><div  id="wtHotDealsFrame" class="InnerRight Invisible">
+					<div id='HotDeals'><iframe id='HotDealsIframe' width='377' scrolling='no' height='210' frameborder='0' marginwidth='0' marginheight='0' src='http://oascentral.travelzoo.com/RealMedia/ads/adstream_sx.ads/travelzoo.com/supersearch/flights/form@BottomRight?O=&D=&G='></iframe></div>
+
+				</div >
+			</div >
+		</div >
+	</div >
+</div ><div  class="NewBody" style="clear: both;">
+	<div  id="wtdestinationsDiv" class="BottomDivs">
+		<table cellspacing="0" cellpadding="0" border="0" class="TableDestinations" width="100%"><tr><td id="wt_CompoundWebwidget326975_wt_Cellwidget278043" class="TableDestinationsHeader" style="border-top:1px solid #C9DFFC;"><strong>Or select your destination country or city:</strong>¬†</td>
+		</tr><tr><td><table cellspacing="0" cellpadding="0" border="0" class="TableDestinations" width="100%"><tr><td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278047" tabindex="51" href="http://flights.travelzoo.com/Air/Netherlands/Amsterdam_AMS/">Amsterdam Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278049" tabindex="52" href="http://flights.travelzoo.com/Air/USA_TX/Dallas+(Love)_DAL/">Dallas Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278051" tabindex="53" href="http://flights.travelzoo.com/Air/Spain/Madrid_MAD/">Madrid Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278053" tabindex="54" href="http://flights.travelzoo.com/Air/Mexico/Puerto+Vallarta_PVR/">Puerto Vallarta Flights</a>¬†</td>
+		</tr><tr><td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278055" tabindex="55" href="http://flights.travelzoo.com/Air/USA_GA/Atlanta_ATL/">Atlanta Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278057" tabindex="56" href="http://flights.travelzoo.com/Air/USA_CO/Denver+(DEN)_DEN/">Denver Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278059" tabindex="57" href="http://flights.travelzoo.com/Air/USA_FL/Miami+-+International+(MIA)_MIA/">Miami Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278061" tabindex="58" href="http://flights.travelzoo.com/Air/USA_CA/San+Diego_SAN/">San Diego Flights</a>¬†</td>
+		</tr><tr><td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278063" tabindex="59" href="http://flights.travelzoo.com/Air/Spain/Barcelona_BCN/">Barcelona Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278065" tabindex="60" href="http://flights.travelzoo.com/Air/USA_FL/Ft.+Lauderdale_FLL/">Ft. Lauderdale Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278067" tabindex="61" href="http://flights.travelzoo.com/Air/USA_LA/New+Orleans_MSY/">New Orleans Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278069" tabindex="62" href="http://flights.travelzoo.com/Air/USA_CA/San+Francisco_SFO/">San Francisco Flights</a>¬†</td>
+		</tr><tr><td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278071" tabindex="63" href="http://flights.travelzoo.com/Air/USA_MA/Boston_BOS/">Boston Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278073" tabindex="64" href="http://flights.travelzoo.com/Air/USA_HI/Honolulu_HNL/">Hawaii Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278075" tabindex="65" href="http://flights.travelzoo.com/Air/USA_NY/New+York_NYC/">New York Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278077" tabindex="66" href="http://flights.travelzoo.com/Air/USA_PR/San+Juan%2c+PR+(SJU)_SJU/">San Juan Flights</a>¬†</td>
+		</tr><tr><td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278079" tabindex="67" href="http://flights.travelzoo.com/Air/Mexico/Los+Cabos_SJD/">Cabo San Lucas Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278081" tabindex="68" href="http://flights.travelzoo.com/Air/USA_NV/Las+Vegas_LAS/">Las Vegas Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278083" tabindex="69" href="http://flights.travelzoo.com/Air/USA_FL/Orlando+(MCO)_MCO/">Orlando Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278085" tabindex="70" href="http://flights.travelzoo.com/Air/USA_WA/Seattle+-+Tacoma+Int'l+(SEA)_SEA/">Seattle Flights</a>¬†</td>
+		</tr><tr><td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278087" tabindex="71" href="http://flights.travelzoo.com/Air/Mexico/Cancun_CUN/">Cancun Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278089" tabindex="72" href="http://flights.travelzoo.com/Air/United+Kingdom/London_LON/">London Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278091" tabindex="73" href="http://flights.travelzoo.com/Air/France/Paris_PAR/">Paris Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278093" tabindex="74" href="http://flights.travelzoo.com/Air/USA_FL/Tampa_TPA/">Tampa Flights</a>¬†</td>
+		</tr><tr><td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278095" tabindex="75" href="http://flights.travelzoo.com/Air/USA_IL/Chicago_CHI/">Chicago Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278097" tabindex="76" href="http://flights.travelzoo.com/Air/USA_CA/Los+Angeles_LAX/">Los Angeles Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278099" tabindex="77" href="http://flights.travelzoo.com/Air/USA_AZ/Phoenix_PHX/">Phoenix Flights</a>¬†</td>
+		<td class="TableDestinationsCell"><a id="wt_CompoundWebwidget326975_wt_Linkwidget278101" tabindex="78" href="http://flights.travelzoo.com/Air/USA_DC/Washington%2c+DC+(all+airports)_WAS/">Washington, D.C. Flights</a>¬†</td>
+		</tr></table></td>
+		</tr></table>
+
+	</div ><div  id="wtflightsResultDiv" class="BottomDivs" style=" font-size:9px;display:none">
+		**SuperSearch directs users to the various providers that match their travel needs. The order in which recommended sites are displayed and whether they appear in the pull-down menu or above, is based on a proprietary algorithm. The algorithm incorporates detailed flight and hotel information, user feedback, and advertising agreements with travel Web sites that offer service for the particular route or destination that was searched.
+	</div ><p>¬†</p><div  class="footerS">
+		<a id="wt_CompoundWebwidget326978_wt_Linkwidget284848" tabindex="136" href="about.aspx">About SuperSearch</a> |¬†<a id="wt_CompoundWebwidget326978_wt_Linkwidget284849" tabindex="137" href="tips.aspx">Search Tips</a> |¬†<a id="wt_CompoundWebwidget326978_wt_Linkwidget284850" tabindex="138" href="feedback.aspx">Send Us Feedback</a> |¬†<a id="wt_CompoundWebwidget326978_wt_Linkwidget284851" tabindex="139" onclick="addToFavorites(); return false;" href="#">Add SuperSearch to Your Favorites</a>
+	</div ><p>
+
+  <div id="footer">
+  <table id="footer1">
+	<tr>
+		<td class="footer1" align="left"><a href="http://airfare.travelzoo.com/">Airfare</a> | <a href="http://hotels.travelzoo.com/">Hotels</a> | <a href="http://car-rental.travelzoo.com/">Car Rentals</a> | <a href="http://cruises.travelzoo.com/">Cruises</a> | <a href="http://vacations.travelzoo.com/">Vacations</a> | <a href="http://shows.travelzoo.com/">Shows &amp; Events</a> | <a href="http://last-minute.travelzoo.com/">Last Minute</a>
+ | <a href="http://supersearch.travelzoo.com/?catid=0099">Flight Search</a>
+ | <a href="http://supersearch.travelzoo.com/?catid=2&amp;source=99">Hotel Search</a>
+ | <a href="http://top20.travelzoo.com/">Top 20</a>
+ | <a	href="http://www.travelzoo.com/newsflash/">Newsflash</a>
+    </td></tr>
+  </table>	
+	
+  <table id="footer2a">	<tr>		<td class="footer2a" align="left">Travelzoo Editions:  <a href="http://au.travelzoo.com/" title="Travelzoo Australia: Airfare, Holiday Packages, Hotels, and More">Australia</a> |  <a href="http://ca.travelzoo.com/" title="Travelzoo Canada: Airfare, Hotels, Vacations, Cruises and More">Canada</a> |  <a href="http://cn.travelzoo.com/" title="Travelzoo ‰??Âõ?Â§ßÈôÜ - Êú?Á•®ÔºåÈÖíÂ?óÔºåÊóÖÊ??Âõ¢ÔºåËá™Âä©Ê??ÔºåÈÇÆË?ÆÂ?¶ÂÅá">China</a> |  <a href="http://fr.travelzoo.com/" title="Travelzoo France: Voyages, Vacances, Billets d'avion, H&ocirc;tels, S&eacute;jours pas chers">France</a> |  <a href="http://de.travelzoo.com/" title="Travelzoo Deutschland: Urlaub, Reisen, Kreuzfahrten und billige Fl&uuml;ge">Germany</a> |  <a href="http://hk.travelzoo.com/" title="Travelzoo È¶ôÊ?Ø - Ê©üÁ•®ÔºåÈÖíÂ?ó,Ëá™Áî±Ë°åÂ•óÁ•®ÔºåÊóÖË°åÂúò,ÈÉµËº™ÂÅáÊúü">Hong Kong</a> |  <a href="http://jp.travelzoo.com/">Japan</a> |  <a href="http://es.travelzoo.com/" title="Travelzoo Espa?±a: Vacaciones, Viajes, Hoteles, Cruceros y Vuelos Baratos">Spain</a> |  <a href="http://tw.travelzoo.com/" title="Travelzoo Âè?ÁÅ£ - Ê©üÁ•®„ÄÅË®ÇÊàø„ÄÅËá™Áî±Ë°å„ÄÅÊóÖË°åÂúò„ÄÅÈÉµËº™ÂÅáÊúü">Taiwan</a> |  <a href="http://www.travelzoo.com/?site=us" title="Travelzoo US: Airfare, Vacations, Cruises, and More">U.S.A.</a> |  <a href="http://uk.travelzoo.com/" title="Travelzoo UK: Holidays, Travel, Cruises and Cheap Flights">United Kingdom</a>       </td>  </tr>  </table>
+  <table id="footer2">
+	<tr>
+		<td class="footer2" align="left">
+				<a href="http://www.travelzoo.com/sales/contact/" rel="nofollow">Advertise with Us</a> | 
+				<a href="http://www.travelzoo.com/media/" rel="nofollow">Press</a> | 
+				<a href="http://www.travelzoo.com/sitemap/">Site Map</a> | 
+				<a href="http://www.travelzoo.com/privacy/" rel="nofollow">Privacy Policy</a> | 
+				<a href="http://www.travelzoo.com/disclaimer/" rel="nofollow">Disclaimer</a> | 
+		<span class="footer3">&copy;2009 Travelzoo Inc. - All Rights Reserved.</span>
+      </td>
+  </tr>
+  </table>
+  </div>
+
+</p><p>
+<style type='text/css'>
+#footer {
+	margin-top:0px;
+}
+</style>
+</p>
+<p><span id="wtaddBookmark">
+
+<script type='text/javascript'>
+
+if(typeof addToFavorites == 'undefined') {
+	favUrl = 'http://supersearch.travelzoo.com/';
+	favName = 'Travelzoo SuperSearch';
+	
+	addToFavorites = function() { 
+		// FireFox
+		if ( window.sidebar ) {
+			alert('Please press Ctrl+D to bookmark the SuperSearch page.');
+		}
+
+		// IE
+		else if( window.external ) {
+			window.external.AddFavorite( favUrl, favName );
+		} else {
+			alert('Sorry! Your browser doesn\'t support this function.');
+		}
+
+	}
+}
+
+</script>
+
+</span><span id="wtforceSearchJS"><script type='text/javascript'>
+if('true' == 'true' )
+	Event.observe(window,'load', function() {$('wtsearchLink').onclick()});
+</script></span><span id="wtoverlay" Class="Invisible" onclick="
+var scenarioOverlay = 0;
+var flightParsOverlay = getFlightParameters(); 
+
+//tracking
+trackingWidgets('NoTab/', 'overlay/', scenarioOverlay + '/', 'show/', '');
+
+//Set the overlay background div z-index
+setOverlayZIndex(scenarioOverlay);
+
+invokeOverlay(scenarioOverlay, ajaxPagesBase, flightParsOverlay.destinationCode, currentLocaleId, currentLocale);
+return false;
+"></span></p>
+</div ><p><span id="SuperSearchServices_wt_CompoundWebwidget326983_wtTrack_Inbound">
+<script type='text/javascript'>
+pageTracker._trackPageview('/SuperSearchTracking/Flights/scenario' + scenarioNumber + '/Inbound');
+</script>
+</span></p>
+<script type="text/javascript">
+WidgetLibrary_SetInputPrompt_bootstrap('wtreturnDateWidget', 'mm/dd/yyyy');
+</script>
+<script type="text/javascript">
+WidgetLibrary_SetInputPrompt_bootstrap('wtdeparteDateWidget', 'mm/dd/yyyy');
+</script>
+
+<script type='text/javascript'>
+
+function makePopUnder(newHref) {}
+
+</script>
+
+<!--[if IE 6]>
+
+<style type='text/css'>
+.OverlayUSTop20Image {
+	margin-right: 9px;
+}
+
+.OverlayUSHeader {
+	font-weight: bold;
+	font-size: 14px;
+	width: 355px;
+}
+
+.OverlayUSFirstLineHeader {
+	font-size: 12px;
+	width: 263px;
+	margin-top: 7px;
+}
+
+.OverlayUSFirstLineHeader p {
+	padding-left: 5px;
+	text-align: left;
+}
+
+.OverlayUSZipCode {
+	width: 55px;
+}
+
+.Top20FirstLineTitle {
+	font-size: 16px;
+}
+
+.Top20FirstLineDescription {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.Top20EmailAndZipCode {
+	font-size: 10px;
+}
+
+.Top20EmailAndZipCode td {
+	font-size: 11px;
+}
+
+.Top20Email {
+	width: 105px;
+}
+
+.Top20ZipCode {
+	width: 55px;
+}
+
+</style>
+
+<![endif]-->
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+var OsPage_ValidationActive = false;
+if(typeof(event) == 'undefined') {
+	event = new Object();
+	event.srcElement = new Object();
+	event.srcElement.Validators = new Array();
+}
+OsValidatorOnLoad();
+
+function OsValidatorOnSubmit() {
+  if (OsPage_ValidationActive) { return OsValidatorCommonOnSubmit(); }
+  return true;
+}
+// ]]>
+</script>
+</form>
+  </body>
+</html>

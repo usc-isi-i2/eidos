@@ -1,0 +1,1 @@
+java -classpath ".;./*" GenerateSIInputs %1 %2 %3 %4 

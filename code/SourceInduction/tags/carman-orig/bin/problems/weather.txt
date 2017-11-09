@@ -1,0 +1,34 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+import problems/types.txt
+
+## Relations: 
+
+import problems/relations.txt
+import problems/comparisons.txt
+
+## Sources: 
+
+import problems/sources_ragnarok.txt
+import problems/sources_local.txt
+
+source WeatherChannelConditions($c,s,cn,lt,ln,snr,sns,off,dt,f,sk,pr,dr,sp,hm,dw)	:- municipality(c,s,z,zo),country(cn,ab,_),northAmerica(ab),centroid(z,lt,ln),conditions(lt,ln,dt,f,sk,dw,hm,dr,sp,_,pr,snr,sns),timezone(zo,off,_).	{wrappers.WeatherChannel; CurrentConditions}
+source WeatherChannelForecast($c,s,cn,lt,ln,of,dy,dt,hi,lo,snr,sns,sk,dir,spd,hum)	:- municipality(c,s,z,_),country(cn,ab,_),northAmerica(ab),centroid(z,lt,ln),forecast(lt,ln,dt,hi,lo,sk,snr,sns,dir,spd,hum),time(_,_,dy,dt,_,_,of).	{wrappers.WeatherChannel; TwoDayForecast}
+
+## Target Predicate: 
+
+#target NOAAWeather($icao,airport,latitudeDMS,longitudeDMS,sky,temperatureF,humidity,direction,speedMph,speedMph,pressureMb,temperatureF,temperatureF,distanceMi)			{wrappers.NOAAWeather; current_obs}
+#target WunderGround($state,$city,temperatureF,temperatureC,humidity,pressureIn,pressureMb,sky,direction,speedMph,speedMph:gsts) 											{wrappers.Wunderground;wunderground}
+#target WeatherBugLive($zipcode,city,state,zipcode,temperatureF,distanceIn,speedMph,direction,speedMph,direction)															{wrappers.WeatherBug; getLiveCompactWeather}
+#target WeatherByICAO($icao,airport,countryAbbr,latitude,longitude,degrees,distanceM,percentage,sky,speedKmph,temperatureC,datetime,temperatureC) 							{wrappers.Geonames; weatherByICAO}
+target WeatherByLatLon($latitude,$longitude,icao,airport,countryAbbr,latitude,longitude,degrees,distanceM,percentage,sky,speedKmph,temperatureC,datetime,temperatureC) 		{wrappers.Geonames; weatherByLatLon}
+#target WeatherFeed($city,$stateName,temperatureF,temperatureC,sky,temperatureF,humidity,directionSpeed,pressureIn,latitude,longitude,time)									{wrappers.BoyGenius; WeatherFeed}
+                                         
+#target YahooWeather($zipcode,city,state,countryAbbr,latitude,longitude,day,date,temperatureF,temperatureF,sky)																{wrappers.YahooWeather; forecastrss}
+#target WeatherBugForecast($zipcode,city,state,zipcode,day,sky,temperatureF,temperatureF)																					{wrappers.WeatherBug; getFullForecast}
+
+
+
+##############################################################

@@ -1,0 +1,1 @@
+function feedback () {window.open('http://www.overstock.com/cgi-bin/d2.cgi?PAGE=STATICPOPUP&STA_ID=3935&TRACK=FOOT_OI_L7', 'Feedback' ,'height=400,width=325,status=yes,toolbar=no,menubar=no');}

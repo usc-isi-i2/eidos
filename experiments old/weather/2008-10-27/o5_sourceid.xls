@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <LastAuthor>Jose Luis Ambite</LastAuthor>
+  <LastSaved>2008-11-01T23:28:55Z</LastSaved>
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>1125</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Table1">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="11" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="88.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="203.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="110.25" ss:Span="4"/>
+   <Row>
+    <Cell><Data ss:Type="String">id</Data></Cell>
+    <Cell><Data ss:Type="String">domain</Data></Cell>
+    <Cell><Data ss:Type="String">url</Data></Cell>
+    <Cell><Data ss:Type="String">formname</Data></Cell>
+    <Cell><Data ss:Type="String">formmethod</Data></Cell>
+    <Cell><Data ss:Type="String">formurl</Data></Cell>
+    <Cell><Data ss:Type="String">tablename</Data></Cell>
+    <Cell><Data ss:Type="String">lastupdate</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather1</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-29 15:43:49</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/</Data></Cell>
+    <Cell><Data ss:Type="String">search</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/getForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather2</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-29 15:44:58</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-29 15:46:18</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather4</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-29 16:16:05</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/tropical/</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather5</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-29 16:17:18</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather6</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-29 16:25:38</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">wxsearch</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather7</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-29 16:39:08</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/radar/map.asp</Data></Cell>
+    <Cell><Data ss:Type="String">null</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</Data></Cell>
+    <Cell><Data ss:Type="String">weather8</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-29 16:40:05</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/index.html</Data></Cell>
+    <Cell><Data ss:Type="String">Forecast</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://weather.unisys.com/forecast.pl</Data></Cell>
+    <Cell><Data ss:Type="String">weather9</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-29 16:50:34</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">weather</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/</Data></Cell>
+    <Cell><Data ss:Type="String">JLA</Data></Cell>
+    <Cell><Data ss:Type="String">METHOD_GET</Data></Cell>
+    <Cell><Data ss:Type="String">http://www.wunderground.com/</Data></Cell>
+    <Cell><Data ss:Type="String">wunderground</Data></Cell>
+    <Cell><Data ss:Type="String">2008-10-29 15:41:00</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>6</ActiveRow>
+     <RangeSelection>R7</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

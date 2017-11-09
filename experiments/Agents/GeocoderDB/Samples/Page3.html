@@ -1,0 +1,220 @@
+<html>
+<head>
+    <title>geocoder.us: a free US geocoder</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<!-- this div is opened here, closed in the footer or somewhere else -->
+<div align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-1219510847949987";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel ="";
+google_color_border = ["336699","B4D0DC","DDB7BA","FDEFD2"];
+google_color_bg = ["FFFFFF","ECF8FF","FFF5F6","FDEFD2"];
+google_color_link = ["0000FF","0000CC","0000CC","0000CC"];
+google_color_url = "008000";
+google_color_text = ["000000","6F6F6F","6F6F6F","000000"];
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<!--
+<h2><a href="/blog">Read the Geocoder.US Blog</a></h2>
+-->
+
+  <a href="/"><h1>geocoder.us / geocoder.net</h1></a>
+  <h2>find the latitude &amp; longitude of any US address - for <em>free</em></h2>
+
+
+<script language="JavaScript">
+    function getOffsets (evt) {
+	var target = evt.target;
+	if (typeof target.offsetLeft == 'undefined') {
+	    target = target.parentNode;
+	}
+	var pageCoords = getPageCoords(target);
+	var eventCoords = { 
+	    x: window.pageXOffset + evt.clientX,
+	    y: window.pageYOffset + evt.clientY
+	};
+	var offsets = {
+	    offsetX: eventCoords.x - pageCoords.x,
+	    offsetY: eventCoords.y - pageCoords.y
+	}
+	return offsets;
+    }
+
+    function getPageCoords (element) {
+	var coords = {x : 0, y : 0};
+	while (element) {
+	    coords.x += element.offsetLeft;
+	    coords.y += element.offsetTop;
+	    element = element.offsetParent;
+	}
+	return coords;
+    }
+
+    var mapCenterLat = 27.902065, mapCenterLon = -82.506892,
+	mapPixels = 320, mapWid = 0.035;
+
+    var mapLat = mapCenterLat, mapLon = mapCenterLon, 
+	mapZoom = 3, mapMaxWid = 50, mapMinWid = .001;
+
+    function mapZoomOut (event) {
+	if (mapWid * mapZoom < mapMaxWid) 
+	    mapWid *= mapZoom;
+	else
+	    mapWid = mapMaxWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapZoomIn (event) {
+	if (mapWid / mapZoom > mapMinWid)
+	    mapWid /= mapZoom;
+	else
+	    mapWid = mapMinWid;
+	mapRedraw();
+	return false;
+    }
+
+    function mapCenter (event) {
+	var perPixel = mapWid / mapPixels,
+	    mapCenter = mapPixels / 2;
+	var off = getOffsets(event);
+	var x = off.offsetX,
+            y = off.offsetY;
+	mapLat += (mapCenter - y) * perPixel;
+	mapLon += (x - mapCenter) * perPixel / 
+		    Math.cos(mapLat * Math.PI / 180);
+	mapRedraw();
+	return false;
+    }
+
+    function mapRecenter (event) {
+	mapLat = mapCenterLat;
+	mapLon = mapCenterLon;
+	mapRedraw();
+	return false;
+    }
+	
+    function mapRedraw () {
+	document.mapLoading.src = "img/red-dot.png";
+	document.mapImage.src = 
+	    "http://tiger.census.gov/cgi-bin/mapgen?" +
+		"lon=" + mapLon + "&lat=" + mapLat + 
+		"&wid=" + mapWid + "&ht="  + mapWid +
+		"&iht=" + mapPixels + "&iwd=" + mapPixels +
+		"&mark=" + mapCenterLon + "," + mapCenterLat + ",redpin";
+    }
+</script>
+
+  <table width="90%" cellspacing="20%" border="0">
+  <tr valign="top">
+    <td>
+	<h3>Address</h3>
+    </td>
+    <td>
+	
+	    3823 N
+		Oak Dr 
+	
+	<br />Tampa FL 33611<br>
+        (27.902065, -82.506892)
+    </td>
+    <td width="320" rowspan="4">
+<div>(it can take a bit for the map to load-wait for the red circle to turn green.  Stay in your happy place.)</div>
+    <div onClick="return mapCenter(event)">
+<img
+	name="mapImage" src="http://tiger.census.gov/cgi-bin/mapgen?lon=-82.506892&lat=27.902065&wid=0.035&ht=0.035&iht=320&iwd=320&mark=-82.506892,27.902065,redpin"
+	width="320" height="320" border="2"
+	style="cursor: crosshair"
+	onLoad="document.mapLoading.src = 'img/green-dot.png';" /></div>
+    </td>
+    <td rowspan="4">
+	<a href="" onClick="return mapZoomIn()"><img
+	    src="img/zoom-in.png" width="32" height="32" border="0" /></a>
+	    <br />
+	<a href="" onClick="return mapZoomOut()"><img
+	    src="img/zoom-out.png" width="32" height="32" border="0" /></a>
+	    <br />
+	<a href="" onClick="return mapRecenter()"><img
+	    src="img/recenter.png" width="32" height="32" border="0" /></a>
+	    <br />
+	<img name="mapLoading"
+	    src="img/red-dot.png" width="32" height="32" border="0" />
+    </td>
+</tr>
+<tr>
+    <td><h3>Latitude</h3></td>
+    <td>27.902065 &deg;<br>
+        N 27 &deg; 54' 7.4" <br>
+        27 &deg; 54.1239' (degree m.mmmm)</td>
+</tr>
+<tr>
+    <td><h3>Longitude</h3></td>
+    <td>-82.506892 &deg;<br>
+        W 82 &deg; 30' 24.8" <br>
+        -82 &deg; 30.4135' (degree m.mmmm)</td>
+</tr>
+<tr>
+    <td colspan="2">
+	<h3>Search for another address:</h3>
+	<form>
+	    <input type="text" name="address" size="45" value="3823 N Oak Dr, Tampa, FL" />
+	    <input type="submit" value="Submit" />
+	</form>
+    </td>
+  </tr>
+<tr>
+<td colspan="2">
+
+
+And You might try
+	    adding a comma between the street and the city name,
+	    as this often helps to disambiguate complex addresses. 
+
+If
+ you'd like help, drop an e-mail to <a href="mailto:missing@geocoder.us">missing@geocoder.us</a>,
+and we'll try to help you find your location.
+
+<p>
+If you want a bunch of addresses geocoded you can send a file (text or Excel work fine) to the 
+same address.  They will be geocoded and sent back to you.  If you are happy the cost is $50 per
+20,000 records with a minimum cost of $50, which you can pay via paypal to billing@geocoder.us
+
+
+
+</td>
+</tr>
+  </table>
+<hr noshade="1" width="90%" />
+<div class="footer">
+    = <a href="/">geocoder.us</a> = &copy; 2004-8 <a
+href="http://locative.us/">Locative Technologies</a> = <a
+href="/terms.shtml">terms &amp; conditions</a> = <a
+href="mailto:contact@geocoder.us">contact us</a> = 
+</div>
+<div class="footer">
+
+<!-- Open Knowledge Link -->
+<a href="http://okd.okfn.org/"> <img alt="This material is Open Knowlege" border="0" src="http://m.okfn.org/images/ok_buttons/ok_80x23_blue.png" height="31" vspace="5" /></a> <!-- /Open Knowledge Link -->
+<a href="http://www.perl.org"><img src="/img/rectangle_power_perl.png" width="88" height="31" hspace="5" vspace="5" border="0" /></a>
+<a href="http://creativecommons.org/licenses/by-nc-sa/2.0/"><img src="/img/somerights20.png" width="88" height="31" hspace="5" vspace="5" border="0" /></a>
+<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center">
+
+<tr><td align="center"><a href="#" onclick="javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=no, width=400, height=350');"><img  src="https://www.paypal.com/en_US/i/logo/PayPal_mark_60x38.gif" border="0" alt="Acceptance Mark"></a></td></tr></table><!-- PayPal Logo -->
+
+</td></tr>
+</div>
+</div> 
+</body>
+
+</html>
+
+</html>

@@ -1,0 +1,28 @@
+weather3, http://www.wunderground.com/
+PR-ZipCode5Digit, PR-Humidity, PR-Sky, CT-TemperatureF, CT-VisibilityFeet, CT-PressureInches, PR-WindDirection
+
+weather4, http://www.wunderground.com/cgi-bin/findweather/getForecast?addfav=
+PR-ZipCode5Digit, PR-Humidity, PR-Sky, CT-TemperatureF, CT-VisibilityFeet, PR-WindDirection, CT-PressureInches
+
+weather5, http://www.wunderground.com/tropical/
+PR-ZipCode5Digit, PR-Humidity, PR-Sky, CT-TemperatureF, CT-VisibilityFeet, CT-PressureInches, PR-WindDirection
+
+weather6, http://www.wunderground.com/radar/map.asp
+PR-ZipCode5Digit, PR-Humidity, PR-Sky, CT-TemperatureF, CT-VisibilityFeet, CT-PressureInches, PR-WindDirection
+
+weather7, http://weather.unisys.com/
+PR-ZipCode5Digit, CT-TemperatureF, PR-Humidity, PR-WindDirection, CT-VisibilityMiles, PR-Sky
+
+weather8, http://www.timetemperature.com/
+PR-ZipCode5Digit, PR-Sky, PR-Humidity, CT-PressureInches, CT-TemperatureF, PR-WindDirection
+
+
+
+CT-PressureInches
+CT-TemperatureF
+CT-VisibilityFeet
+CT-VisibilityMiles
+PR-Humidity
+PR-Sky
+PR-WindDirection
+PR-ZipCode5Digit

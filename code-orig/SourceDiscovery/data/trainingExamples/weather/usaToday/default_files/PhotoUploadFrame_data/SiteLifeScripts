@@ -1,0 +1,458 @@
+var numUploads = 1;
+var maxUploads = 4;
+
+
+function VerifyTOS() {
+    if(!document.getElementById("plckTermsOfPhotoService").checked) {
+        alert("Please agree to the terms of service before submitting.");
+        return false;
+    }
+    return true;
+}
+
+// use to generate more photo submission divs
+function AddAnotherPhoto(parentDivID,uploadButtonID, parentFrame){
+    divNode = document.createElement('div');
+    divNode.id = 'PhotoUpload' + ++numUploads;
+    divNode.innerHTML = "<input type='file' name='image" + numUploads + "' value='Get' size=40/><br/><br/>"
+
+    document.getElementById(parentDivID).appendChild(divNode);
+    if(numUploads > maxUploads) document.getElementById(uploadButtonID).style.display = 'none';
+    setTimeout(function(){autofitIframe(parentFrame, true);}, 100);
+    return false;
+}
+
+
+// Returns the value of the radio button that is set in a group of buttons.
+function getCheckedValue(radioObj) {
+	var radioLength = radioObj.length;
+	if(radioLength == undefined) {
+		if(radioObj.checked) {
+			return radioObj.value;
+		}
+		else {
+			return "";
+		}
+	}
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+
+// this trim was suggested by Tobias Hinnerup
+String.prototype.trim = function() {
+    return(this.replace(/^\s+/,'').replace(/\s+$/,''));
+}
+
+function IsEnter(e)  {
+var kc = e.which;
+if(kc == null) kc = e.keyCode;
+if (e && kc == 13) return true;
+return false;
+}
+function TrimEnd(ct, c) {
+    while((ct.length > 0) && (ct.lastIndexOf(c) == (ct.length - 1))){
+        if(ct.length > 1 ) {
+            ct = ct.substring(0, ct.length - 1);
+        }else{ 
+            return "";
+        }
+    }
+    return ct;
+}
+function FixSearchString(str) {
+    var ct = str.replace(/[\%\&\*\/\:\<\>\?\\\|\"]+/g,"");
+    ct = ct.replace(/[\.]{2,}/g, ".");
+        
+    ct = TrimEnd(ct,".");
+    if( ct == "" ) return "";
+    ct = TrimEnd(ct," ");
+    if( ct == "") return "";
+
+    return escape(ct);
+
+}
+
+var nextGroupID = 1;
+
+function autofitIframe(id, heightOnly){
+    if(document.getElementById) {
+        if(this.document.body.scrollHeight == 0 || ( !heightOnly && this.document.body.scrollWidth == 0)) {
+            //Onload fired, DOM assembled, but scrollHeight/Width is zero. This should not be... Go to
+            //sleep and try again
+            setTimeout(function(){autofitIframe(id, heightOnly);}, 150);
+            return;
+        }
+        window.parent.document.getElementById(id).style.height=this.document.body.scrollHeight+"px";
+        if(!heightOnly)window.parent.document.getElementById(id).style.width=this.document.body.scrollWidth+"px";
+    }
+}
+        
+function MyNewsUpdateParentFrame() {
+ setTimeout(function(){autofitIframe('mynewsiframe');}, 100);
+}
+
+//Initilizes the drag and drop functionality for MyNews.
+function MyNewsRefresh() {
+    Sortable.create('myNews',{tag:'div',handle:'windowBar',onUpdate:function(){ MyNewsOnUpdate() }});
+}
+
+//Deletes a MyNewsGroup from the screen and updates the users profile on the server.
+function MyNewsDeleteGroup(groupId){
+    if (confirm("Are you sure you want to delete this group?") == true) {
+        $('myNews').removeChild($(groupId));
+        Sortable.destroy('myNews');
+        MyNewsRefresh();
+        gSiteLife.MyNewsUpdateOrder(Sortable.sequence('myNews'));
+    }
+}
+
+//Updates the profile on the server when the group order is changed.
+function MyNewsOnUpdate(obj) {
+    gSiteLife.MyNewsUpdateOrder(Sortable.sequence('myNews'));
+}
+
+//Creates a new MyNewsGroup
+function MyNewsCreateGroup() {
+
+    if(GroupCount() >= $("maxGroups").value) {
+        alert("MyNews supports a maximum of " + $("maxGroups").value + " groups.");
+        return false;
+    }
+    var groupId = "group_NewGroup" + nextGroupID;
+    
+    //Clone template and set ID
+    var oDiv = document.createElement("div"); 
+    oDiv.className = "MyNews_Block"; 
+    oDiv.id = groupId;
+    
+    //Replace ID's in template with new ID.
+    var template = $('template').innerHTML;
+    //oDiv.innerHTML =  template.replace(/group_MyGroup Title/g, groupId);
+    oDiv.innerHTML =  template.replace(/MyGroup Title/g, "NewGroup" + nextGroupID);
+    //Add new div to myNews container
+    if($('myNews').childNodes.length == 0) {
+        $('myNews').appendChild(oDiv);
+    }
+    else {
+        $('myNews').insertBefore(oDiv, $('myNews').childNodes[0]); 
+    }
+    
+    //Shutdown and restart sortable
+    Sortable.destroy('myNews');
+    MyNewsRefresh();
+    MyNewsOnUpdate(null);
+    MyNewsEditGroupOnClick(groupId)
+    //Display no feeds defined
+    $(groupId + "_NoFeeds").style.display = "block";
+    nextGroupID++;
+    MyNewsUpdateParentFrame();
+}
+
+//Changes the visibility of the edit panel in response to a edit click
+function MyNewsEditGroupOnClick(groupId) {
+    $(groupId + "_view").style.visibility = "hidden";
+    $(groupId + "_view").style.display = "none";
+    $(groupId + "_edit").style.visibility = "visible";
+    $(groupId + "_edit").style.display = "block";
+     MyNewsUpdateParentFrame();
+}
+
+//Saves a MyNewsGroup profile to the server.
+function MyNewsSaveGroupOnClick(groupId) {
+    var divId = "group_" + $(groupId + "_Title").value;
+    var oldTitle = groupId.substr(6);
+
+    if($(groupId + "_Title").value == '') {
+        $(groupId + "_TitleRequired").style.display = "block";
+        return false;
+    }
+    //If groupName has not changed no need to check if it allready exists.
+    if( oldTitle != $(groupId + "_Title").value)
+    {
+        // check if groupName allready exists.    
+        if( $(divId) != null )
+        {
+            $(groupId + "_TitleValidate").style.display = "block";
+             MyNewsUpdateParentFrame();
+            return false;
+        }
+    }
+    $(groupId).id = divId;
+    return true;
+}
+
+//Dynamicly sets which div Pork will update on the submit.
+function MyNewsFormOnSubmit(form, groupId) {
+    //Tell pork which group to replace
+    var divId = "group_" + $(groupId + "_Title").value;
+    new iframe(form, {update:divId, onComplete:MyNewsUpdateParentFrame});
+    return false;
+}
+
+
+//Deletes a feed from a MyNewsGroupProfile
+function MyNewsDeleteFeed(groupId, feedId) {
+    var empty = true;
+    var oFeeds = $(groupId);
+    oFeeds.removeChild($(feedId));
+    
+    for (var i = 0; i < oFeeds.childNodes.length; i++)
+    {
+        var oFeed = oFeeds.childNodes.item(i);
+        if(oFeed.nodeType == 1)
+        {
+            empty = false;
+        }
+    }
+    if(empty) {
+        var id = groupId.replace('_feeds','');
+        $(id + "_NoFeeds").style.display = "block";
+         MyNewsUpdateParentFrame();
+    }
+}
+
+//Validates that the Url being added is in Url format.
+//Than addes the Url.
+function MyNewsAddFeedWithValidate(groupId, name, url, baseUrl) {
+    if( $(groupId + "_AddUrl").value == "") {
+        alert("You must provide a URL");
+        return false;
+    }
+    if(!isUrl(url)) {
+        $(groupId + "_UrlValidate").style.display = "block";
+        MyNewsUpdateParentFrame();
+        return false;
+    }
+    $(groupId + "_AddUrl").value = "";
+    $(groupId + "_UrlValidate").style.display = "none";
+    MyNewsAddFeed(groupId, name, url, baseUrl)
+    MyNewsUpdateParentFrame();
+}
+
+//Adds  feed to a MyNewsGroupProfile
+function MyNewsAddFeed(groupId, name, url, baseUrl) {
+    if(IsFeedPresent(groupId, url)) {
+        return false;
+    }
+    if(FeedCount(groupId) >= $("maxFeedsPerGroup").value) {
+        alert("MyNews supports a maximum of " + $("maxFeedsPerGroup").value + " feeds per group.");
+        return false;
+    }
+    
+    var nextId = parseInt($(groupId + "_LastFeedId").value);
+    nextId++;
+    $(groupId + "_LastFeedId").value = nextId;
+    
+    var oDiv = document.createElement("div");  
+    oDiv.className = "MyNews_LineItem";
+    
+    var oName = document.createElement("input");
+    oName.type = "hidden";
+    oName.value = name;
+    oName.name="PlckFeed[" + nextId + "].Name"
+    oDiv.appendChild(oName);
+  
+    var oUrl = document.createElement("input");
+    oUrl.type = "hidden";
+    oUrl.value = url;
+    oUrl.name="PlckFeed[" + nextId + "].Url"
+    oDiv.appendChild(oUrl);
+     
+    var oPreview = document.createElement("a");
+    oPreview.className = "MyNews_Delete";
+    oPreview.innerHTML = "Preview";
+    oPreview.href="#none";
+    oPreview.onclick = function(){ Preview( baseUrl, url ); return false; } //IE Hack to support handler wireup
+    oDiv.appendChild(oPreview);
+    
+    var txtSpace = document.createTextNode(' | ' + name + ' | ')
+    oDiv.appendChild(txtSpace);
+        
+    var oDel = document.createElement("a");
+    oDel.className = "MyNews_Delete";
+    oDel.innerHTML = "Delete";
+    oDel.href="#none";
+    oDel.onclick = function(){ MyNewsDeleteFeed(groupId + '_feeds', this.parentNode ); return false; } //IE Hack to support handler wireup
+    oDiv.appendChild(oDel);
+    
+    $(groupId + "_feeds").appendChild(oDiv);
+    $(groupId + "_NoFeeds").style.display = "none";
+     MyNewsUpdateParentFrame();
+}
+
+function IsFeedPresent(groupId, url) {
+    var oFeeds = $(groupId + "_feeds").childNodes;
+    for (var i = 0; i < oFeeds.length; i++)
+    {
+        var oFeed = oFeeds.item(i);
+        if(oFeed.nodeType == 1 && oFeed.className != 'MyNews_Current')
+        {
+            var oUrl = oFeed.getElementsByTagName("input")[1];
+            if(oUrl.value == url) {
+                alert("Feed already added");
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+// Returns the count of feeds in a group.
+function FeedCount(groupId) {
+    var count =0;
+    var oFeeds = $(groupId + "_feeds").childNodes;
+    for (var i = 0; i < oFeeds.length; i++)
+    {
+        var oFeed = oFeeds.item(i);
+        if(oFeed.nodeType == 1)
+        {
+            count++;
+        }
+    }
+    return count - 1;
+}
+
+// Returns the count of groups defined.
+function GroupCount() {
+    var count =0;
+    var oGroups = $("myNews").childNodes;
+    for (var i = 0; i < oGroups.length; i++)
+    {
+        var oGroup = oGroups.item(i);
+        if(oGroup.nodeType == 1)
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+//Determines if the string being tested is a Url.
+function isUrl(s) {
+	var regexp = /(ftp|http|https|file):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+	return regexp.test(s);
+}
+
+
+function Preview(baseUrl, feedUrl) {
+    window.open(baseUrl + '/MyNews/MyNewsFeed?plckFeedUrl=' + feedUrl, '_blank', 'WIDTH=400,HEIGHT=450,SCROLLBARS=YES,MENUBAR=NO,STATUSBAR=NO')
+}
+
+function ValidateLogin() {
+    if($("plckUserName").value == '' && $("plckPassword").value == '') {
+        alert("You must provide a UserName and Password");
+        return false;
+    }
+    if($("plckUserName").value == '') {
+        alert("You must provide a UserName");
+        return false;
+    }
+    if($("plckPassword").value == '') {
+        alert("You must provide a Password");
+        return false;
+    }
+}   
+
+function onSearchSubmit(qroupID) {
+    if($(qroupID  + "_Search").value == '') {
+        alert("You must provide some query text");
+        return false;
+    }    
+}
+
+function LimitLength(control, limitToLength){
+    if(control.value.length > limitToLength) {
+        control.value = control.value.substring(0, limitToLength);
+    }
+    return false;
+}
+
+/* this document is for visual dhtml features */
+function mouseX(evt) {
+    if (evt.pageX) return evt.pageX;
+    else if (evt.clientX)
+       return evt.clientX + (document.documentElement.scrollLeft ?
+       document.documentElement.scrollLeft :
+       document.body.scrollLeft);
+    else return null;
+}
+function mouseY(evt) {
+    if (evt.pageY) return evt.pageY;
+    else if (evt.clientY)
+       return evt.clientY + (document.documentElement.scrollTop ?
+       document.documentElement.scrollTop :
+       document.body.scrollTop);
+    else return null;
+}
+function HideDiv(id){
+    document.getElementById(id).style.display = "none";
+}
+
+function ShowDivAtMouse(evt, id) {
+    posx = mouseX(evt) - 170;    
+    posy = mouseY(evt);
+    //normalize to make sure we at least appear on the screen
+    if(posx < 0) posx = 10;
+    if(posy < 0) posy = 10;
+    
+    document.getElementById(id).style.left = posx + "px";
+	document.getElementById(id).style.top = posy + "px";
+	document.getElementById(id).style.display = "block";
+}
+function ShowReportAbuse(evt, url, command) {
+    document.getElementById("ReportAbuse_Url").value = url; 
+    document.getElementById("ReportAbuse_Command").value = command;
+    document.getElementById("ReportAbuse_CommentText").value = "";
+    document.getElementById("ReportAbuse_Reason").selectedIndex = 0;
+    ShowDivAtMouse(evt, "ReportAbuse_Menu");
+}
+function ReportAbuse() {
+    var url = document.getElementById("ReportAbuse_Url").value; 
+    var command = document.getElementById("ReportAbuse_Command").value;
+    var text = document.getElementById("ReportAbuse_CommentText").value;
+    var reason = document.getElementById("ReportAbuse_Reason").value;
+    document.getElementById("ReportAbuse_Menu").style.display='none';
+    var sendUrl = command+'&plckReason='+gSiteLife.EscapeValue(reason)+'&plckURL=' + gSiteLife.EscapeValue(url)
+    if(text) sendUrl += "&plckAbuseDetail=" + gSiteLife.EscapeValue(text);
+    gSiteLife.__Send(sendUrl);
+}
+
+function SiteLifeShowHide(id1, id2){
+    document.getElementById(id1).style.display = "none";
+    document.getElementById(id2).style.display = "block";
+    return false;
+}
+
+function DebugShowInnerHTML(id, url) {
+    var el = document.getElementById(id);
+    var floatDiv = document.createElement("div");
+      
+    floatDiv.style.position = "absolute";    
+    floatDiv.style.zIndex='1000';
+    floatDiv.innerHTML = "<span style='background-color:red; color:white; cursor:pointer;' onclick='this.parentNode.parentNode.removeChild(this.parentNode);'>[close]</span>";    
+    floatDiv.innerHTML += "<div style='background-color:black; color:white;'>" + url + "</div><textarea rows='20' cols='80'>" + el.childNodes[0].childNodes[1].innerHTML + "</textarea>";
+    el.insertBefore(floatDiv, el.childNodes[0]);
+}
+
+
+function ToggleState() {
+    var radio1 = $("plckCommentApprovalEveryOne");
+    var radio2 = $("plckCommentApprovalNoBody");
+    var table = $("commentSettings"); 
+    if(radio1.disabled  == true) {
+        radio1.disabled  = false;
+        radio2.disabled  = false;
+        table.className = "";
+    }
+    else {
+        radio1.disabled  = true;
+        radio2.disabled  = true;
+        table.className = "BlogSettings_Disabled";
+    }
+}
+
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>GeoRSS | GeoRSS ::  Geographically Encoded Objects for RSS feeds</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/files/favicon.png" type="image/x-icon" />
+<style type="text/css" media="all">@import "/modules/aggregator/aggregator.css";</style>
+<style type="text/css" media="all">@import "/modules/location/location.css";</style>
+<style type="text/css" media="all">@import "/modules/node/node.css";</style>
+<style type="text/css" media="all">@import "/modules/poll/poll.css";</style>
+<style type="text/css" media="all">@import "/modules/system/defaults.css";</style>
+<style type="text/css" media="all">@import "/modules/system/system.css";</style>
+<style type="text/css" media="all">@import "/modules/user/user.css";</style>
+<style type="text/css" media="all">@import "/themes/chameleon/style.css";</style>
+<style type="text/css" media="all">@import "/themes/chameleon/common.css";</style>
+<style type="text/css" media="all">@import "/global.css";</style>
+</head><body>
+ <div id="header">  <h1 class="site-name title"><a href="/">GeoRSS ::  Geographically Encoded Objects for RSS feeds</a></h1></div>
+ <div class="navlinks"><ul class="links" id="navlist"><li class="first menu-1-1-2"><a href="/" class="menu-1-1-2">Home</a></li>
+<li class="menu-1-2-2"><a href="http://georss.org/blog" class="menu-1-2-2">Blog</a></li>
+<li class="last menu-1-3-2"><a href="http://lists.eogeo.org/mailman/listinfo/georss" class="menu-1-3-2">Mailing List</a></li>
+</ul> </div>
+ <table id="content">
+  <tr>
+   <td id="sidebar-left"><div class="block block-menu" id="block-menu-52">
+ <h2 class="title">Specification</h2>
+ <div class="content">
+<ul class="menu">
+<li class="expanded"><a href="/model">Encodings</a>
+<ul class="menu">
+<li class="leaf"><a href="/simple">Simple</a></li>
+<li class="leaf"><a href="/gml">GML</a></li>
+<li class="leaf"><a href="/w3c">W3C Geo</a></li>
+
+</ul>
+</li>
+<li class="expanded"><a href="/model">Usage</a>
+<ul class="menu">
+<li class="leaf"><a href="/examples">Examples</a></li>
+<li class="leaf"><a href="/atom">Atom</a></li>
+<li class="leaf"><a href="/rdf_rss1">RDF / RSS 1</a></li>
+
+</ul>
+</li>
+<li class="expanded"><a href="/roadmap">Versions</a>
+<ul class="menu">
+<li class="leaf"><a href="/1">1.0</a></li>
+
+</ul>
+</li>
+
+</ul>
+</div>
+</div>
+<div class="block block-menu" id="block-menu-87">
+ <h2 class="title">Development</h2>
+ <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="/roadmap">Roadmap</a></li>
+<li class="leaf"><a href="/proposals" title="Proposed modifications or extensions to the current GeoRSS standard">Proposals</a></li>
+
+</ul>
+</div>
+</div>
+<div class="block block-menu" id="block-menu-63">
+ <h2 class="title">Syndicate</h2>
+ <div class="content">
+<ul class="menu">
+<li class="leaf"><a href="http://georss.org/blog/?feed=rss2">GeoRSS Blog Feed</a></li>
+<li class="leaf"><a href="http://georss.org/drupal/rss.xml">Website Feed</a></li>
+
+</ul>
+</div>
+</div>
+</td>
+   <td id="main">
+<h2>GeoRSS</h2>
+<!-- begin content -->
+<div class="node">
+ <div class="content">
+<p>This site describes a number of ways to encode location in <a href="http://en.wikipedia.org/wiki/RSS_%28file_format%29" target="_blank" title="Wikipedia: RSS file format">RSS</a> feeds. As <abbr title="Rich Site Syndication">RSS</abbr> becomes more and more prevalent as a way to publish and share information, it becomes increasingly important that location is described in an interoperable manner so that applications can <strong>request</strong>, <strong>aggregate</strong>, <strong>share</strong> and <strong>map</strong> geographically tagged feeds.</p>
+<p> To avoid the fragmentation of language that has occurred in RSS and other Web information encoding efforts, we have created this site to promote a relatively small number of encodings that meet the needs of a wide range of communities. By building these encodings on a common information model, we hope to promote interoperability and &quot;upwards-compatibility&quot; across encodings. </p>
+<p>At this point we have completed work on two encodings which we are calling GeoRSS <abbr title="Geography Markup Language">GML</abbr> and GeoRSS Simple. GeoRSS GML is a formal <a href="http://www.opengeospatial.org/groups/?iid=31" target="_blank">GML</a> Application Profile, and supports a greater range of features than Simple, notably coordinate reference systems other than WGS84 latitude/longitude. It is designed for use with <a href="http://en.wikipedia.org/wiki/Atom_%28standard%29" target="_blank">Atom 1.0</a>, RSS 2.0 and RSS 1.0, although it can be used just as easily in non-RSS XML encodings.  GeoRSS Simple has greater brevity, but also has limited extensibility. It can be used in all the same ways and places as GeoRSS <abbr title="Geography Markup Language">GML</abbr>. </p>
+<p>Finally, if you've come here simply looking for a way to encode a point in XML, use either the 'GML' or 'Simple' version:</p>
+<p>Simple<br/></p>
+<pre><strong>&lt;georss:point&gt;45.256 -71.92&lt;/georss:point&gt;</strong></pre><p>
+GML<br/></p>
+<pre><strong>&lt;georss:where&gt;
+   &lt;gml:Point&gt;
+      &lt;gml:pos&gt;45.256 -71.92&lt;/gml:pos&gt;
+
+   &lt;/gml:Point&gt;</strong><strong>
+&lt;/georss:where&gt;</strong></pre><p>If you want to know why, read on! </p>
+<p><a href="overview">Next&gt;&gt;</a></p>
+ </div>
+<div class="links"><ul class="links inline"><li class="first last node_submitted"></li>
+</ul></div>
+</div>
+
+<!-- end content -->
+ <div id="footer">License</span><br>
+	<a href="http://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="license">
+	<img alt="Creative Commons License" border="0" src="http://creativecommons.org/images/public/somerights20.gif" /></a><br><br>
+
+	This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="license">
+	Creative Commons Attribution-ShareAlike 2.5 License</a>.</div>
+   </td>
+   <td id="sidebar-right"><div class="block block-search" id="block-search-0">
+ <h2 class="title">Search</h2>
+ <div class="content"><form action="/search/node"  method="post" id="search-block-form">
+<div><div class="container-inline"><div class="form-item">
+ <input type="text" maxlength="128" name="search_block_form_keys" id="edit-search-block-form-keys"  size="15" value="" title="Enter the terms you wish to search for." class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Search"  class="form-submit" />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+</div>
+</div></form>
+</div>
+</div>
+<div class="block block-aggregator" id="block-aggregator-feed-1">
+ <h2 class="title">GeoRSS Blog</h2>
+ <div class="content"><div class="item-list"><ul><li><a href="http://georss.org/blog/?p=59">GeoRSS at the Summer of Code</a>
+</li><li><a href="http://georss.org/blog/?p=58">GeoRSS tutorial - watching new construction</a>
+</li><li><a href="http://georss.org/blog/?p=57">Google supports GeoRSS!</a>
+</li></ul></div><div class="more-link"><a href="/aggregator/sources/1" title="View this feed&#039;s recent news.">more</a></div></div>
+</div>
+<div class="block block-aggregator" id="block-aggregator-feed-2">
+ <h2 class="title">GeoRSS Del.icio.us links</h2>
+ <div class="content"><div class="item-list"><ul><li><a href="http://www.addressfix.com/">Geotag your blog, site or feed | Address Fix</a>
+</li><li><a href="http://zcologia.com/news/">import cartography</a>
+</li><li><a href="http://korbinus.net/geotruc/">geo:truc</a>
+</li><li><a href="http://nabonidus.blogspot.com/2007/04/georss-feed.html">Nabonidus: GeoRSS Feed</a>
+</li><li><a href="http://www.web2expo.com/cs/webex2007/view/e_sess/10610">Adding Location to Web 2.0 Apps | Andrew Turner | Web 2.0 Expo 2007, April 15-18, 2007, San Francisco, California</a>
+</li><li><a href="http://www.geonames.org/export/#ws">Geo-Names webservice and data download</a>
+</li><li><a href="http://www.georss.org/1/">GeoRSS Home</a>
+</li><li><a href="http://www.webjax.eu/p/179-Yahoo.Maps-Yahoo-Ajax-API-ajax-api-YGeoRSS-RSS-GeoRSS-infoLocal-Local-YahooLocal-professionnels-entreprises-enterprises-companies-company">AjaxAPI, Affichage des informations locales professionnelles</a>
+</li></ul></div><div class="more-link"><a href="/aggregator/sources/2" title="View this feed&#039;s recent news.">more</a></div></div>
+</div>
+<div class="block block-user" id="block-user-0">
+ <h2 class="title">User login</h2>
+ <div class="content"><form action="/home?destination=node%2F10"  method="post" id="user-login-form">
+<div><div class="form-item">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name"  size="15" value="" class="form-text required" />
+</div>
+<div class="form-item">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li><a href="/user/register" title="Create a new user account.">Create new account</a></li><li><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li></ul></div><input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+</td>
+  </tr>
+ </table>
+ </body>
+</html>

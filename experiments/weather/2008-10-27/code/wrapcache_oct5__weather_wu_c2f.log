@@ -1,0 +1,379 @@
+
+c:\users\ambite\projects\source-modeling\experiments\weather\2008-10-27\code>java -classpath ".;./*" -Xmx1024m Tester wrapcache_oct5__weather2.txt 
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: wrapcache_oct5__weather2.txt
+
+## Semantic Types: 
+type PR_Forecast    [varchar(100)]  
+type PR_Zip         [varchar(100)]  {examples: examples.zipcode5digit.val}
+type PR_CityState   [varchar(100)]  {examples: source_model.citystate.val}
+type PR_Date        [varchar(100)]  {equality: Date = 1.0}
+type PR_TimeWZone   [varchar(100)]  
+type PR_TempF       [varchar(100)]  {numeric: -100.0, 150.0, 10.0%}
+type PR_TempC       [varchar(100)]  {numeric: -50.0, 70.0, 10.0%}
+type PR_Sky         [varchar(100)]  {examples: source_model.sky.val}
+type PR_Humidity    [varchar(100)]  {numeric: 0.0, 100.0, 15.0%}
+type PR_WindSpeedInMPH [varchar(100)] {numeric: 0.0, 200.0, 10.0%}
+type PR_WindDir     [varchar(100)]  {examples: source_model.winddir.val}
+type PR_Pressure    [varchar(100)]  {numeric: 26.0, 32.0, 10.0%}
+type PR_VisibilityInMi [varchar(100)] {numeric: 0.0, 100.0, 10.0%}
+
+## Domain Relations: 
+relation weather(PR_Forecast,PR_Zip,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeedInMPH,PR_WindDir,PR_VisibilityInMi)
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+## Comparison Predicates: 
+
+## Sources: 
+function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF).	{wrappers.Ragnarok; convertC2F}
+source wunderground($PR_Zip, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeedInMPH, PR_WindDir, PR_Pressure, PR_VisibilityInMi, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5)	:- weather("current", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeedInMPH, PR_WindDir, PR_VisibilityInMi), weather("current+1", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _), weather("current+2", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _), weather("current+3", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _), weather("current+4", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _), weather("current+5", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _).	{wrappers.DBService; http://www.wunderground.com/; JLA}
+
+## Target Predicates: 
+target weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi)	{wrappers.DBService; http://www.wunderground.com/; search}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.ConvertC2F
+DROP TABLE IF EXISTS cache.InvocationsOf_ConvertC2F
+CREATE TABLE cache.ConvertC2F ( PR_TempC0 varchar(100),PR_TempF1 varchar(100) )
+CREATE TABLE cache.InvocationsOf_ConvertC2F ( PR_TempC0 varchar(100) )
+DROP TABLE IF EXISTS cache.wunderground
+DROP TABLE IF EXISTS cache.InvocationsOf_wunderground
+CREATE TABLE cache.wunderground ( PR_Zip0 varchar(100),PR_CityState1 varchar(100),PR_TimeWZone2 varchar(100),PR_TempF3 varchar(100),PR_Sky4 varchar(100),PR_Humidity5 varchar(100),PR_WindSpeedInMPH6 varchar(100),PR_WindDir7 varchar(100),PR_Pressure8 varchar(100),PR_VisibilityInMi9 varchar(100),PR_TempF10 varchar(100),PR_TempF11 varchar(100),PR_Sky12 varchar(100),PR_TempF13 varchar(100),PR_TempF14 varchar(100),PR_Sky15 varchar(100),PR_TempF16 varchar(100),PR_TempF17 varchar(100),PR_Sky18 varchar(100),PR_TempF19 varchar(100),PR_TempF20 varchar(100),PR_Sky21 varchar(100),PR_TempF22 varchar(100),PR_TempF23 varchar(100),PR_Sky24 varchar(100) )
+CREATE TABLE cache.InvocationsOf_wunderground ( PR_Zip0 varchar(100) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.weather2
+DROP TABLE IF EXISTS cache.InvocationsOf_weather2
+CREATE TABLE cache.weather2 ( PR_Zip0 varchar(100),PR_WindSpeedInMPH1 varchar(100),PR_Humidity2 varchar(100),PR_TempC3 varchar(100),PR_Sky4 varchar(100),PR_TempC5 varchar(100),PR_TempC6 varchar(100),PR_TempF7 varchar(100),PR_TempF8 varchar(100),PR_TempF9 varchar(100),PR_VisibilityInMi10 varchar(100) )
+CREATE TABLE cache.InvocationsOf_weather2 ( PR_Zip0 varchar(100) )
+Invoking target: weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [06106]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [20502]
+Invoking target: weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [46208]
+Invoking target: weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [85007]
+Invoking target: weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [33040]
+Invoking target: weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [50319]
+Invoking target: weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [66612]
+Invoking target: weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [32399]
+Invoking target: weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [36130]
+Invoking target: weather2($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [90292]
+
+****************************************************************
+STARTING SEARCH: 
+*****************************************************************************************************
+PR_Zip0                                                                                              
+(PR_Zip)                                                                                             
+
+36130                                                                                                
+32399                                                                                                
+90292                                                                                                
+06106                                                                                                
+33040                                                                                                
+85007                                                                                                
+50319                                                                                                
+66612                                                                                                
+20502                                                                                                
+46208                                                                                                
+*****************************************************************************************************
+
+-12.061: weather2($_,_,_,_,_,_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+-12.061: weather2($_,_,_,PR_TempC3,_,_,_,_,_,_,_)	:- ConvertC2F(PR_TempC3,_).
+Terminate batch job (Y/N)? 
+
+c:\users\ambite\projects\source-modeling\experiments\weather\2008-10-27\code>java -classpath ".;./*" -Xmx1024m Tester wrapcache_oct5__weather3.txt 
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: wrapcache_oct5__weather3.txt
+
+## Semantic Types: 
+type PR_Forecast    [varchar(100)]  
+type PR_Zip         [varchar(100)]  {examples: examples.zipcode5digit.val}
+type PR_CityState   [varchar(100)]  {examples: source_model.citystate.val}
+type PR_Date        [varchar(100)]  {equality: Date = 1.0}
+type PR_TimeWZone   [varchar(100)]  
+type PR_TempF       [varchar(100)]  {numeric: -100.0, 150.0, 10.0%}
+type PR_TempC       [varchar(100)]  {numeric: -50.0, 70.0, 10.0%}
+type PR_Sky         [varchar(100)]  {examples: source_model.sky.val}
+type PR_Humidity    [varchar(100)]  {numeric: 0.0, 100.0, 15.0%}
+type PR_WindSpeedInMPH [varchar(100)] {numeric: 0.0, 200.0, 10.0%}
+type PR_WindDir     [varchar(100)]  {examples: source_model.winddir.val}
+type PR_Pressure    [varchar(100)]  {numeric: 26.0, 32.0, 10.0%}
+type PR_VisibilityInMi [varchar(100)] {numeric: 0.0, 100.0, 10.0%}
+
+## Domain Relations: 
+relation weather(PR_Forecast,PR_Zip,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeedInMPH,PR_WindDir,PR_VisibilityInMi)
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+## Comparison Predicates: 
+
+## Sources: 
+function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF).	{wrappers.Ragnarok; convertC2F}
+source wunderground($PR_Zip, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeedInMPH, PR_WindDir, PR_Pressure, PR_VisibilityInMi, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5)	:- weather("current", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeedInMPH, PR_WindDir, PR_VisibilityInMi), weather("current+1", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _), weather("current+2", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _), weather("current+3", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _), weather("current+4", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _), weather("current+5", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _).	{wrappers.DBService; http://www.wunderground.com/; JLA}
+
+## Target Predicates: 
+target weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi)	{wrappers.DBService; http://www.wunderground.com/; null}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.ConvertC2F
+DROP TABLE IF EXISTS cache.InvocationsOf_ConvertC2F
+CREATE TABLE cache.ConvertC2F ( PR_TempC0 varchar(100),PR_TempF1 varchar(100) )
+CREATE TABLE cache.InvocationsOf_ConvertC2F ( PR_TempC0 varchar(100) )
+DROP TABLE IF EXISTS cache.wunderground
+DROP TABLE IF EXISTS cache.InvocationsOf_wunderground
+CREATE TABLE cache.wunderground ( PR_Zip0 varchar(100),PR_CityState1 varchar(100),PR_TimeWZone2 varchar(100),PR_TempF3 varchar(100),PR_Sky4 varchar(100),PR_Humidity5 varchar(100),PR_WindSpeedInMPH6 varchar(100),PR_WindDir7 varchar(100),PR_Pressure8 varchar(100),PR_VisibilityInMi9 varchar(100),PR_TempF10 varchar(100),PR_TempF11 varchar(100),PR_Sky12 varchar(100),PR_TempF13 varchar(100),PR_TempF14 varchar(100),PR_Sky15 varchar(100),PR_TempF16 varchar(100),PR_TempF17 varchar(100),PR_Sky18 varchar(100),PR_TempF19 varchar(100),PR_TempF20 varchar(100),PR_Sky21 varchar(100),PR_TempF22 varchar(100),PR_TempF23 varchar(100),PR_Sky24 varchar(100) )
+CREATE TABLE cache.InvocationsOf_wunderground ( PR_Zip0 varchar(100) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.weather3
+DROP TABLE IF EXISTS cache.InvocationsOf_weather3
+CREATE TABLE cache.weather3 ( PR_Zip0 varchar(100),PR_WindSpeedInMPH1 varchar(100),PR_Humidity2 varchar(100),PR_TempC3 varchar(100),PR_Sky4 varchar(100),PR_TempC5 varchar(100),PR_TempC6 varchar(100),PR_TempF7 varchar(100),PR_TempF8 varchar(100),PR_TempF9 varchar(100),PR_VisibilityInMi10 varchar(100) )
+CREATE TABLE cache.InvocationsOf_weather3 ( PR_Zip0 varchar(100) )
+Invoking target: weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [33040]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [66612]
+Invoking target: weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [36130]
+Invoking target: weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [90292]
+Invoking target: weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [06106]
+Invoking target: weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [85007]
+Invoking target: weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [32399]
+Invoking target: weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [46208]
+Invoking target: weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [50319]
+Invoking target: weather3($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [20502]
+
+****************************************************************
+STARTING SEARCH: 
+*****************************************************************************************************
+PR_Zip0                                                                                              
+(PR_Zip)                                                                                             
+
+36130                                                                                                
+66612                                                                                                
+33040                                                                                                
+32399                                                                                                
+46208                                                                                                
+06106                                                                                                
+20502                                                                                                
+50319                                                                                                
+85007                                                                                                
+90292                                                                                                
+*****************************************************************************************************
+
+-12.061: weather3($_,_,_,_,_,_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+Terminate batch job (Y/N)? 
+
+c:\users\ambite\projects\source-modeling\experiments\weather\2008-10-27\code>java -classpath ".;./*" -Xmx1024m Tester wrapcache_oct5__weather4.txt 
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: wrapcache_oct5__weather4.txt
+
+## Semantic Types: 
+type PR_Forecast    [varchar(100)]  
+type PR_Zip         [varchar(100)]  {examples: examples.zipcode5digit.val}
+type PR_CityState   [varchar(100)]  {examples: source_model.citystate.val}
+type PR_Date        [varchar(100)]  {equality: Date = 1.0}
+type PR_TimeWZone   [varchar(100)]  
+type PR_TempF       [varchar(100)]  {numeric: -100.0, 150.0, 10.0%}
+type PR_TempC       [varchar(100)]  {numeric: -50.0, 70.0, 10.0%}
+type PR_Sky         [varchar(100)]  {examples: source_model.sky.val}
+type PR_Humidity    [varchar(100)]  {numeric: 0.0, 100.0, 15.0%}
+type PR_WindSpeedInMPH [varchar(100)] {numeric: 0.0, 200.0, 10.0%}
+type PR_WindDir     [varchar(100)]  {examples: source_model.winddir.val}
+type PR_Pressure    [varchar(100)]  {numeric: 26.0, 32.0, 10.0%}
+type PR_VisibilityInMi [varchar(100)] {numeric: 0.0, 100.0, 10.0%}
+
+## Domain Relations: 
+relation weather(PR_Forecast,PR_Zip,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeedInMPH,PR_WindDir,PR_VisibilityInMi)
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+## Comparison Predicates: 
+
+## Sources: 
+function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF).	{wrappers.Ragnarok; convertC2F}
+source wunderground($PR_Zip, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeedInMPH, PR_WindDir, PR_Pressure, PR_VisibilityInMi, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5)	:- weather("current", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeedInMPH, PR_WindDir, PR_VisibilityInMi), weather("current+1", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _), weather("current+2", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _), weather("current+3", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _), weather("current+4", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _), weather("current+5", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _).	{wrappers.DBService; http://www.wunderground.com/; JLA}
+
+## Target Predicates: 
+target weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi)	{wrappers.DBService; http://www.wunderground.com/tropical/; wxsearch}
+
+##############################################################
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+
+****************************************************************
+INITIALIZING CACHE TABLES: 
+DROP TABLE IF EXISTS cache.ConvertC2F
+DROP TABLE IF EXISTS cache.InvocationsOf_ConvertC2F
+CREATE TABLE cache.ConvertC2F ( PR_TempC0 varchar(100),PR_TempF1 varchar(100) )
+CREATE TABLE cache.InvocationsOf_ConvertC2F ( PR_TempC0 varchar(100) )
+DROP TABLE IF EXISTS cache.wunderground
+DROP TABLE IF EXISTS cache.InvocationsOf_wunderground
+CREATE TABLE cache.wunderground ( PR_Zip0 varchar(100),PR_CityState1 varchar(100),PR_TimeWZone2 varchar(100),PR_TempF3 varchar(100),PR_Sky4 varchar(100),PR_Humidity5 varchar(100),PR_WindSpeedInMPH6 varchar(100),PR_WindDir7 varchar(100),PR_Pressure8 varchar(100),PR_VisibilityInMi9 varchar(100),PR_TempF10 varchar(100),PR_TempF11 varchar(100),PR_Sky12 varchar(100),PR_TempF13 varchar(100),PR_TempF14 varchar(100),PR_Sky15 varchar(100),PR_TempF16 varchar(100),PR_TempF17 varchar(100),PR_Sky18 varchar(100),PR_TempF19 varchar(100),PR_TempF20 varchar(100),PR_Sky21 varchar(100),PR_TempF22 varchar(100),PR_TempF23 varchar(100),PR_Sky24 varchar(100) )
+CREATE TABLE cache.InvocationsOf_wunderground ( PR_Zip0 varchar(100) )
+
+****************************************************************
+INVOKING TARGET (NEW SOURCE) TO GENERATE REPRESENTATIVE DATA: 
+DROP TABLE IF EXISTS cache.weather4
+DROP TABLE IF EXISTS cache.InvocationsOf_weather4
+CREATE TABLE cache.weather4 ( PR_Zip0 varchar(100),PR_WindSpeedInMPH1 varchar(100),PR_Humidity2 varchar(100),PR_TempC3 varchar(100),PR_Sky4 varchar(100),PR_TempC5 varchar(100),PR_TempC6 varchar(100),PR_TempF7 varchar(100),PR_TempF8 varchar(100),PR_TempF9 varchar(100),PR_VisibilityInMi10 varchar(100) )
+CREATE TABLE cache.InvocationsOf_weather4 ( PR_Zip0 varchar(100) )
+Invoking target: weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [46208]
+CREATE DATABASE IF NOT EXISTS `cache`;
+CREATE DATABASE IF NOT EXISTS `output`;
+Invoking target: weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [33040]
+Invoking target: weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [20502]
+Invoking target: weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [66612]
+Invoking target: weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [85007]
+Invoking target: weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [90292]
+Invoking target: weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [36130]
+Invoking target: weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [50319]
+Invoking target: weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [32399]
+Invoking target: weather4($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi) with [06106]
+
+****************************************************************
+STARTING SEARCH: 
+*****************************************************************************************************
+PR_Zip0                                                                                              
+(PR_Zip)                                                                                             
+
+20502                                                                                                
+36130                                                                                                
+46208                                                                                                
+66612                                                                                                
+33040                                                                                                
+90292                                                                                                
+06106                                                                                                
+50319                                                                                                
+85007                                                                                                
+32399                                                                                                
+*****************************************************************************************************
+
+-12.061: weather4($_,_,_,_,_,_,_,_,_,_,_).
+class induction.Heuristic: Ordering predicates according to heuristic: random
+-12.061: weather4($_,_,_,PR_TempC3,_,_,_,_,_,_,_)	:- ConvertC2F(PR_TempC3,_).
+Terminate batch job (Y/N)? 
+
+c:\users\ambite\projects\source-modeling\experiments\weather\2008-10-27\code>java -classpath ".;./*" -Xmx1024m Tester wrapcache_oct5__weather5.txt 
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: wrapcache_oct5__weather5.txt
+
+## Semantic Types: 
+type PR_Forecast    [varchar(100)]  
+type PR_Zip         [varchar(100)]  {examples: examples.zipcode5digit.val}
+type PR_CityState   [varchar(100)]  {examples: source_model.citystate.val}
+type PR_Date        [varchar(100)]  {equality: Date = 1.0}
+type PR_TimeWZone   [varchar(100)]  
+type PR_TempF       [varchar(100)]  {numeric: -100.0, 150.0, 10.0%}
+type PR_TempC       [varchar(100)]  {numeric: -50.0, 70.0, 10.0%}
+type PR_Sky         [varchar(100)]  {examples: source_model.sky.val}
+type PR_Humidity    [varchar(100)]  {numeric: 0.0, 100.0, 15.0%}
+type PR_WindSpeedInMPH [varchar(100)] {numeric: 0.0, 200.0, 10.0%}
+type PR_WindDir     [varchar(100)]  {examples: source_model.winddir.val}
+type PR_Pressure    [varchar(100)]  {numeric: 26.0, 32.0, 10.0%}
+type PR_VisibilityInMi [varchar(100)] {numeric: 0.0, 100.0, 10.0%}
+
+## Domain Relations: 
+relation weather(PR_Forecast,PR_Zip,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeedInMPH,PR_WindDir,PR_VisibilityInMi)
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+## Comparison Predicates: 
+
+## Sources: 
+function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF).	{wrappers.Ragnarok; convertC2F}
+source wunderground($PR_Zip, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeedInMPH, PR_WindDir, PR_Pressure, PR_VisibilityInMi, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5)	:- weather("current", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeedInMPH, PR_WindDir, PR_VisibilityInMi), weather("current+1", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _), weather("current+2", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _), weather("current+3", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _), weather("current+4", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _), weather("current+5", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _).	{wrappers.DBService; http://www.wunderground.com/; JLA}
+
+## Target Predicates: 
+target weather5($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi)	{wrappers.DBService; http://www.wunderground.com/tropical/; null}
+
+##############################################################
+Terminate batch job (Y/N)? 
+
+c:\users\ambite\projects\source-modeling\experiments\weather\2008-10-27\code>java -classpath ".;./*" -Xmx1024m Tester wrapcache_oct5__weather6.txt 
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: wrapcache_oct5__weather6.txt
+
+## Semantic Types: 
+type PR_Forecast    [varchar(100)]  
+type PR_Zip         [varchar(100)]  {examples: examples.zipcode5digit.val}
+type PR_CityState   [varchar(100)]  {examples: source_model.citystate.val}
+type PR_Date        [varchar(100)]  {equality: Date = 1.0}
+type PR_TimeWZone   [varchar(100)]  
+type PR_TempF       [varchar(100)]  {numeric: -100.0, 150.0, 10.0%}
+type PR_TempC       [varchar(100)]  {numeric: -50.0, 70.0, 10.0%}
+type PR_Sky         [varchar(100)]  {examples: source_model.sky.val}
+type PR_Humidity    [varchar(100)]  {numeric: 0.0, 100.0, 15.0%}
+type PR_WindSpeedInMPH [varchar(100)] {numeric: 0.0, 200.0, 10.0%}
+type PR_WindDir     [varchar(100)]  {examples: source_model.winddir.val}
+type PR_Pressure    [varchar(100)]  {numeric: 26.0, 32.0, 10.0%}
+type PR_VisibilityInMi [varchar(100)] {numeric: 0.0, 100.0, 10.0%}
+
+## Domain Relations: 
+relation weather(PR_Forecast,PR_Zip,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeedInMPH,PR_WindDir,PR_VisibilityInMi)
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+## Comparison Predicates: 
+
+## Sources: 
+function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF).	{wrappers.Ragnarok; convertC2F}
+source wunderground($PR_Zip, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeedInMPH, PR_WindDir, PR_Pressure, PR_VisibilityInMi, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5)	:- weather("current", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeedInMPH, PR_WindDir, PR_VisibilityInMi), weather("current+1", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _), weather("current+2", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _), weather("current+3", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _), weather("current+4", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _), weather("current+5", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _).	{wrappers.DBService; http://www.wunderground.com/; JLA}
+
+## Target Predicates: 
+target weather6($PR_Zip,PR_WindSpeedInMPH,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky)	{wrappers.DBService; http://weather.unisys.com/; Forecast}
+
+##############################################################
+Terminate batch job (Y/N)? 
+
+c:\users\ambite\projects\source-modeling\experiments\weather\2008-10-27\code>java -classpath ".;./*" -Xmx1024m Tester wrapcache_oct5__weather7.txt 
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+## generated from file: wrapcache_oct5__weather7.txt
+
+## Semantic Types: 
+type PR_Forecast    [varchar(100)]  
+type PR_Zip         [varchar(100)]  {examples: examples.zipcode5digit.val}
+type PR_CityState   [varchar(100)]  {examples: source_model.citystate.val}
+type PR_Date        [varchar(100)]  {equality: Date = 1.0}
+type PR_TimeWZone   [varchar(100)]  
+type PR_TempF       [varchar(100)]  {numeric: -100.0, 150.0, 10.0%}
+type PR_TempC       [varchar(100)]  {numeric: -50.0, 70.0, 10.0%}
+type PR_Sky         [varchar(100)]  {examples: source_model.sky.val}
+type PR_Humidity    [varchar(100)]  {numeric: 0.0, 100.0, 15.0%}
+type PR_WindSpeedInMPH [varchar(100)] {numeric: 0.0, 200.0, 10.0%}
+type PR_WindDir     [varchar(100)]  {examples: source_model.winddir.val}
+type PR_Pressure    [varchar(100)]  {numeric: 26.0, 32.0, 10.0%}
+type PR_VisibilityInMi [varchar(100)] {numeric: 0.0, 100.0, 10.0%}
+
+## Domain Relations: 
+relation weather(PR_Forecast,PR_Zip,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeedInMPH,PR_WindDir,PR_VisibilityInMi)
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+## Comparison Predicates: 
+
+## Sources: 
+function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF).	{wrappers.Ragnarok; convertC2F}
+source wunderground($PR_Zip, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeedInMPH, PR_WindDir, PR_Pressure, PR_VisibilityInMi, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5)	:- weather("current", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeedInMPH, PR_WindDir, PR_VisibilityInMi), weather("current+1", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _), weather("current+2", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _), weather("current+3", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _), weather("current+4", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _), weather("current+5", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _).	{wrappers.DBService; http://www.wunderground.com/; JLA}
+
+## Target Predicates: 
+target weather7($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_TempC,PR_Sky,PR_TempC,PR_TempC,PR_TempF,PR_TempF,PR_TempF,PR_VisibilityInMi)	{wrappers.DBService; http://www.wunderground.com/radar/map.asp; wxsearch}
+
+##############################################################
+Terminate batch job (Y/N)? 
+
+c:\users\ambite\projects\source-modeling\experiments\weather\2008-10-27\code>

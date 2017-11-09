@@ -1,0 +1,35 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+import problems/types.txt
+
+## Relations: 
+
+import problems/relations.txt
+import problems/comparisons.txt
+
+## Sources: 
+
+import problems/sources_ragnarok.txt
+import problems/sources_local.txt
+
+source GoCurrency(currency,countryAbbr,rate)                				:- exchange("USD",currency,rate),currency(currency,_,c),country(c,countryAbbr,_).														{wrappers.GoCurrency; GetRates}
+source YahooFinance($tkr,ls,dt,tm,chg,op,mx,mn,vol)	 						:- trade(dt,tm,tkr,ls),market(dt,tkr,cl,op,mx,mn,vol),sum(cl,chg,ls). 																	{wrappers.YahooFinance; GetQuote}
+
+source USGeocoder($street,$zipcode,city,state,latitude,longitude)			:- address(street,_,zipcode,"US",latitude,longitude), municipality(city,state,zipcode,_).												{wrappers.USGeocoder; geocode}
+source Altitude($latitude,$longitude,distanceM)								:- elevation(latitude,longitude,distanceM).										 														{wrappers.Geonames; gtopo30}
+source CountryCode($latitude,$longitude,countryAbbr) 						:- address(_,_,_,country,latitude,longitude), country(country,countryAbbr,_). 															{wrappers.Geonames; countrycode}
+source USGSEarthquakes(decimal,timestamp,latitude,longitude) 				:- earthquake(decimal,timestamp,latitude,longitude).																					{wrappers.USGS; earthquakes7Days} #earthquakesToday}
+
+source WeatherConditions($c,s,cn,lt,ln,snr,sns,off,dt,f,sk,pr,dr,sp,hm,dw)	:- municipality(c,s,z,zo),country(cn,ab,_),northAmerica(ab),centroid(z,lt,ln),conditions(lt,ln,dt,f,sk,dw,hm,dr,sp,_,pr,snr,sns),timezone(zo,off,_).	{wrappers.WeatherChannel; CurrentConditions}
+source WeatherForecast($c,s,cn,lt,ln,of,dy,dt,hi,lo,snr,sns,sk,dir,spd,hum)	:- municipality(c,s,z,_),country(cn,ab,_),northAmerica(ab),centroid(z,lt,ln),forecast(lt,ln,dt,hi,lo,sk,snr,sns,dir,spd,hum),time(_,_,dy,dt,_,_,of).	{wrappers.WeatherChannel; TwoDayForecast}
+
+source GoogleBaseCars($zipcode,$make,datetime,model,price,trim,color,year) 	:- car(make,model,trim,year,vin), car_details(vin,datetime,zipcode,mileage,color,price)													{wrappers.GoogleBase; getCars}
+
+
+## Target Predicate: 
+
+target GetInfoByZip($zipcode,city,state,areacode,timezone) 											 																		{wrappers.USZip; GetInfoByZip}
+
+##############################################################

@@ -1,0 +1,236 @@
+package wrappers;
+
+import invocation.Wrapper;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
+import relational.Table;
+
+public class USGS implements Wrapper {
+
+	XPath xpath;
+
+	public USGS() {
+		xpath = XPathFactory.newInstance().newXPath();
+	}
+
+
+	public Table invoke(String[] endpoint, List<String> inputTuple) {
+
+		Table output = null;
+		String url = null;
+
+		if (endpoint[1].equalsIgnoreCase("earthquakesToday")) {
+
+			try {
+
+				url = "http://earthquake.usgs.gov/eqcenter/recenteqsww/catalogs/caprss1days2.5.xml";
+
+				/*
+				 * http://earthquake.usgs.gov/eqcenter/recenteqsww/catalogs/caprss1days2.5.xml
+				 *
+				 * <?xml version="1.0" encoding="UTF-8"?> ...
+				 * <rss xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+				 *   <channel>
+				 *       <title>USGS Earthquake M2.5+ CAP Messages</title>
+				 *       <description>Current list of earthquake CAP messages</description>
+				 *       ...
+				 *       <item>
+				 *       	<title>EQ 3.3 Anza, CA - PRELIMINARY REPORT</title>
+				 *       	<seconds>1146676969</seconds>
+				 *       	<geo:lat>33.519</geo:lat>
+				 *       	<geo:long>-116.590</geo:long>
+				 *       	...
+				 *       </item>
+				 *       ...
+				 */
+
+				// the metadata
+		    	String[] columns = new String[] {"Magnitude","Timestamp","Latitude","Longitude"};
+		    	output = new Table(columns);
+
+				// invoke source and parse xml output
+				NodeList itemElements = (NodeList) xpath.evaluate("//*[local-name()='channel']/*[local-name()='item']",new InputSource(url),XPathConstants.NODESET);
+
+		    	for (int i=0; i<itemElements.getLength(); i++) {
+		    		Node itemElement = itemElements.item(i);
+			    	ArrayList<String> tuple = new ArrayList<String>();
+			    	String title = (String) xpath.evaluate("./*[local-name()='title'][1]/text()",itemElement,XPathConstants.STRING);
+			    	title = title.substring("EQ".length()).trim();
+			    	tuple.add(title.substring(0,title.indexOf(" ")));
+			    	tuple.add((String) xpath.evaluate("./*[local-name()='seconds'][1]/text()",itemElement,XPathConstants.STRING));
+			    	tuple.add((String) xpath.evaluate("./*[local-name()='lat'][1]/text()",itemElement,XPathConstants.STRING));
+			    	tuple.add((String) xpath.evaluate("./*[local-name()='long'][1]/text()",itemElement,XPathConstants.STRING));
+			    	output.insertDistinct(tuple);
+		    	}
+
+			}
+			catch (Exception e) { return null; }
+
+		}
+		else if (endpoint[1].equalsIgnoreCase("earthquakes7Days")) {
+
+			try {
+
+				url = "http://earthquake.usgs.gov/eqcenter/recenteqsww/catalogs/caprss7days2.5.xml";
+
+				// the metadata
+		    	String[] columns = new String[] {"Magnitude","Timestamp","Latitude","Longitude"};
+		    	output = new Table(columns);
+
+				// invoke source and parse xml output
+				NodeList itemElements = (NodeList) xpath.evaluate("//*[local-name()='channel']/*[local-name()='item']",new InputSource(url),XPathConstants.NODESET);
+
+		    	for (int i=0; i<itemElements.getLength(); i++) {
+		    		Node itemElement = itemElements.item(i);
+			    	ArrayList<String> tuple = new ArrayList<String>();
+			    	String title = (String) xpath.evaluate("./*[local-name()='title'][1]/text()",itemElement,XPathConstants.STRING);
+			    	title = title.substring("EQ".length()).trim();
+			    	tuple.add(title.substring(0,title.indexOf(" ")));
+			    	tuple.add((String) xpath.evaluate("./*[local-name()='seconds'][1]/text()",itemElement,XPathConstants.STRING));
+			    	tuple.add((String) xpath.evaluate("./*[local-name()='lat'][1]/text()",itemElement,XPathConstants.STRING));
+			    	tuple.add((String) xpath.evaluate("./*[local-name()='long'][1]/text()",itemElement,XPathConstants.STRING));
+			    	output.insertDistinct(tuple);
+		    	}
+
+			}
+			catch (Exception e) { return null; }
+
+		}
+		else if (endpoint[1].equalsIgnoreCase("getElevation")) {
+
+
+			/*
+			 * http://gisdata.usgs.net/XMLWebServices/TNM_Elevation_Service.asmx/getElevation?Source_Layer=&Elevation_Only=&X_Value=118&Y_Value=41&Elevation_Units=feet
+			 *
+<?xml version="1.0" encoding="utf-8"?>
+<string xmlns="http://gisdata.usgs.gov/XMLWebServices/">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!-- Elevation Values of -1.79769313486231E+308 (Negative Exponential Value) may mean the data source does not have values at that point.  --&gt;
+&lt;USGS_Elevation_Web_Service_Query&gt;
+&lt;Elevation_Query x="118" y="41"&gt;
+&lt;Data_Source&gt;SRTM.C_20TO43_3&lt;/Data_Source&gt;
+&lt;Data_ID&gt;SRTM.C_20TO43_3&lt;/Data_ID&gt;
+&lt;Elevation&gt;1850.3937007874&lt;/Elevation&gt;
+&lt;Units&gt;FEET&lt;/Units&gt;&lt;/Elevation_Query&gt;
+</string>
+			 *
+			 *
+			 */
+
+
+			url = "http://gisdata.usgs.net/XMLWebServices/TNM_Elevation_Service.asmx/getElevation?Source_Layer=&Elevation_Only=&Elevation_Units=feet";
+
+			try {
+
+				url += "&Y_Value=" + java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8"); // latitude
+				url += "&X_Value=" + java.net.URLEncoder.encode(inputTuple.get(1),"UTF-8"); // longitude
+
+				// the metadata
+		    	String[] columns = new String[] {"Latitude","Longitude","Elevation"};
+		    	output = new Table(columns);
+
+				// invoke source
+		    	String doc = loadURL(url);
+		    	String startTag = "&lt;Elevation&gt;";
+		    	String endTag = "&lt;/Elevation&gt;";
+		    	int index = doc.indexOf(startTag);
+
+		    	if (index!= -1) {
+		    		ArrayList<String> tuple = new ArrayList<String>();
+			    	tuple.add(inputTuple.get(0));
+			    	tuple.add(inputTuple.get(1));
+			    	int start = index+startTag.length();
+			    	int end = doc.indexOf(endTag,start);
+			    	tuple.add(doc.substring(start,end));
+			    	output.insertDistinct(tuple);
+		    	}
+
+
+			}
+			catch (Exception e) { return null; }
+
+
+		}
+		else {
+    		System.err.println("Error: No method called " + endpoint[1] + " in wrapper: " + this.getClass().getName());
+    		System.exit(9);
+		}
+
+		return output;
+
+	}
+
+	private String loadURL(String url) {
+		// load the document
+		String doc = "";
+		try {
+			BufferedReader in = new BufferedReader(new InputStreamReader((new URL(url)).openStream()));
+			String line;
+			while ((line = in.readLine()) != null) {
+				//System.out.println(line);
+				doc += line;
+			}
+		}
+		catch (Exception e) {
+			System.err.println("Error invoking URL: "+url);
+		}
+		return doc;
+	}
+
+
+
+	public void testWrapper() {
+		USGS r = new USGS();
+		String[] endpoint;
+		ArrayList<String> input;
+
+		System.out.println("USGS.earthquakesToday");
+
+		endpoint = new String[2];
+		endpoint[1] = "earthquakesToday";
+		input = new ArrayList<String>();
+		r.invoke(endpoint,input).print();
+
+		//--------------------------------
+
+		System.out.println("USGS.earthquakes7Days");
+
+		endpoint = new String[2];
+		endpoint[1] = "earthquakes7Days";
+		input = new ArrayList<String>();
+		r.invoke(endpoint,input).print();
+
+		//--------------------------------
+
+		System.out.println("USGS.getElevation");
+
+		endpoint = new String[2];
+		endpoint[1] = "getElevation";
+		input = new ArrayList<String>();
+		input.add("34");
+		input.add("-118.2");
+		r.invoke(endpoint,input).print();
+
+		endpoint = new String[2];
+		endpoint[1] = "getElevation";
+		input = new ArrayList<String>();
+		input.add("22.56552748178902");
+		input.add("-63.959406672699615");
+		r.invoke(endpoint,input).print();
+
+	}
+
+}

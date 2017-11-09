@@ -1,0 +1,306 @@
+body{font-family:Arial,Helvetica,sans-serif; font-size:12px; margin-top:3px}
+div#container{margin-left:auto; margin-right:auto; width:942px; text-align:left}
+
+#njMastheadTop{height:31px; width:100%}
+#njMastheadTop h6{font-size:10px}
+#njMastheadTop h5{font-size:11px}
+#njMastheadTop h4{font-size:12px}
+
+#njMastheadTop #marketplaceLabel{position:relative; height:10px; width:87px; float:left; background-color:#7FA8CD; font-size:12px; font-weight:bold; color:#666; text-align:center}
+#njMastheadTop #njMarketplaceLabel .label{font-size:12px; color:#666; font-weight:bold; text-decoration:none}
+#njMastheadTop #njMarketplaceLabel .label a:hover{text-decoration:underline}
+#njMastheadTop #marketplaceLinks{height:30px; width:370px; float:left; background-color:#DFE9F2}
+#njMastheadTop #njMarketplaceLinks .label{color:#666; font-size:10px; font-weight:bold; text-indent:10px; text-decoration:none}
+#njMastheadTop #njMarketplaceLinks .label a:hover{text-decoration:underline}
+
+#njMastheadTop .njWeather{height:30px; width:442px; float:left; text-align:right}
+#njMastheadTop #njWeather .blkCopy11{font-size:11px; color:#666; text-decoration:none; font-weight:bold}
+
+#njMastheadMain{height:128px; width:748px; border-bottom:1px solid #FFF}
+#usatTimeStamp{font-size:10px; color:#FFF; font-weight:bold; position:relative; top:104px; left:20px}
+#njMastheadBottom{width:940px; margin-top:0; clear:both}
+#commentsFlash{padding-left:8px; padding-top:11px}
+
+#njSearch td{font-size:10px; font-weight:bold; color:#FFF; text-align:left}
+.makeus-hp{font-size:10px; font-weight:bold; color:#FFF; text-align:left; text-decoration:none}
+#njpullQuote{font-size:12px; font-weight:bold; color:#FFF; width:290px; float:left}
+#njUAS{font-size:12px; font-weight:bold; color:#FFF; width:192px; float:left; height:100%}
+
+#njColumnA{width:433px; clear:both; text-align:left; float:left; margin:0 20px 20px 0}
+
+#njColumnA .njContentFull{width:100%;float:left}
+#njColumnA .njContentIndent{clear:both; margin-left:94px}
+
+#njLeftPoster{font-size:10px; border-top:solid 1px #999; text-align:center; padding-top:16px; margin-bottom:19px}
+
+#njColumnA p{font-size:12px; font-weight:normal; color:#000; text-decoration:none; margin:0 0 10px 0; padding:0; line-height:13px}
+#njColumnA a:link{text-decoration:none}
+#njColumnA a:visited{text-decoration:none}
+#njColumnA a:hover{text-decoration:underline}
+#njColumnA a:active{text-decoration:none}
+#njColumnA h4{font-size:12px; font-weight:bold; color:#000; text-decoration:none; margin:0; padding:0}
+#njColumnA h5{font-size:13px; font-weight:bold; color:#000; text-decoration:none; padding:0; line-height:14px; margin:0}
+#njColumnA h6{font-size:12px; font-weight:bold; color:#666; text-decoration:none; margin:0 0 10px; padding:0}
+
+#njColumnB{width:487px; float:left}
+
+#njColumnB #njRightContent{margin:15px 0 15px 15px; width:93%}
+#njColumnB #subtabContentOne #verticalBanner{font-size:10px; text-align:center; padding:0 15px 0 10px; background-color:#FFF}
+#njColumnB #subtabContentOne #poster3{font-size:10px; text-align:center; margin-left:18px;  padding:14px 0 9px 0; width:450px}
+.showTopBorder{border-top:solid 1px #999}
+.hideTopBorder{border-top:none}
+#njBlogGraphic{float:left}
+#njBlogAd{float:left; font-size:10px; text-align:center}
+#njColumnB a:link{text-decoration:none}
+#njColumnB a:visited{text-decoration:none}
+#njColumnB a:hover{text-decoration:underline}
+#njColumnB a:active{text-decoration:none}
+.hideRect{display:none}
+.rect{border:1px solid #000}
+#njTopStoriesShort{width:450px; margin:0 15px 0 15px}
+#njPoster4{float:left; width:180px; text-align:right;  margin-top:-9}
+#njTopStoriesFull{width:auto; margin:0 15px 0 15px}
+#njTopStoriesFull img {margin-left:5px}
+#njNFPhoto{width:auto; margin-right:15px}
+#njMarketplace{width:940px; height:auto; clear:both; text-align:left}
+#njMarketplace p{font-size:12px; font-weight:normal; color:#000; text-decoration:none; margin:0; padding:0; line-height:14px}
+
+#njMarketplace h3{font-size:11px; font-weight:bold; color:#000; text-decoration:none; margin:0; padding:0}
+#njMarketplace h4{font-size:12px; font-weight:bold; color:#000; text-decoration:none; margin:0; padding:0}
+#njMarketplace h6{font-size:14px; font-weight:normal; color:#000; text-decoration:none; margin:0; padding:0}
+
+#njRightBottom3{margin:10px 0 0 0}
+
+#njSiteIndex{text-align:left; width:336px}
+#njSiteIndex p{color:#000; font-size:11px; font-weight:normal; margin:0; padding:0; line-height:14px}
+#njSiteIndex a{color:#666; text-decoration:underline; font-size:11px; margin-left:1px}
+#njSiteIndex h4{font-size:12px; font-weight:bold; color:#000; text-decoration:none; margin:0; padding:0}
+#njSiteIndex h6{font-size:12px; font-weight:bold; color:#666; text-decoration:none; margin:0 0 10px; padding:0}
+
+#njGutter10{width:10px; float:left}
+#njGutter17{width:17px; float:left}
+#njGutter20{width:20px; float:left}
+
+#njFooter{height:30px; width:940px; clear:both}
+
+#njHexSports{color:#fd1016}
+#njHexMoney{color:#258d50}
+#njHexOpinion{color:#3083df}
+
+.njNews{color:#0076CD}
+.njTravel{color:#00A6D3}
+.njMoney{color:#093}
+.njSports{color:#F00}
+.njLife{color:#906}
+.njTech{color:#E85801}
+.njWeather{color:#FDC004}
+
+#njBoxArea{margin-bottom:4px}
+#njBoxArea *{font-size:8pt; vertical-align:top}
+#njBoxLabel{width:336px; height:26px; margin:0 0 10px; padding:0; border:1px solid #60676d; border-bottom:1px solid #fff; text-align:left;  background-image:url(http://i.usatoday.net/_home/_images/h2bg.jpg); background-repeat:repeat-x}
+#njBoxLabelFull{width:940px; height:26px; margin:0; padding:0; border:1px solid #60676d; border-bottom:1px solid #fff; text-align:left;  background-image:url(img/h2bg.jpg); background-repeat:repeat-x}
+#njBoxLabel h2{width:336px; height:26px; font-size:11pt; margin:0; padding:0; margin-top:5px; text-align:left; text-indent:24px; background-image:url(http://i.usatoday.net/_home/_images/h2dot.jpg); background-repeat:no-repeat; background-position:7px 3px}
+#njBoxStory{width:326px; padding:0; margin:5px; text-align:center}
+#njBoxStory table{width:326px}
+#njBoxStory td{vertical-align:top}
+#njBoxStory a{color:#2379DE; text-decoration:none}
+#njBoxStory p{padding:0; margin:0}
+#njBoxStory h3{padding:0; margin:0; font-size:11pt; color:#5f5f5f}
+#njBoxStory h4{padding:0; margin:0; font-size:11pt}
+
+#njSponsoredLinks{margin-bottom:20px}
+#njPhotos p{text-align:center; padding-top:5px}
+#njOnlyin small{font-size:7pt; color:#707070}
+#njOnlyin small img{margin:0 0 0 3px; padding:0}
+#njOnlyin table{margin:0; padding:0}
+#njOnlyin table img{margin:0 0 7px 0; padding:0}
+#njOnlyin table td{margin:0; padding:0}
+#njText h3{font-size:9pt; margin-bottom:3px}
+#njArticleShort{font-size:10px}
+#njArticleFull{font-size:10px; border-top-width:1px; border-right-width:1px; border-bottom-width:1px; border-left-width:1px; border-bottom-style:solid; border-bottom-color:#999}
+
+#njGlobalNav{font-size:11px; font-weight:bold; color:#FFF; width:87px; float:left}
+#njGlobalNav #section{border-bottom:1px solid #FFF; height:15px}
+
+.njHomeBkg{background:#00529B}
+.njNewsBkg{background:#0076CD}
+.njTravelBkg{background:#00A6D3}
+.njMoneyBkg{background:#093}
+.njSportsBkg{background:#F00}
+.njLifeBkg{background:#906}
+.njTechBkg{background:#E85801}
+.njWeatherBkg{background:#FDC004}
+
+.njMore{font-size:11px; color:#00529b; text-decoration:none}
+.hr_gray{border-width:1px 1px 1px 1px; border-bottom-style:solid; border-bottom-color:#999; margin-bottom:10px}
+
+#njCarouselFrag{width:433px}
+.njNavBulletLg{height:16px; width:16px; border-right-width:1px; border-right-style:solid; border-top-color:#FFF; border-right-color:#FFF; border-bottom-color:#FFF; border-left-color:#FFF}
+
+.njGrayHrule{clear:both; background-color:#999; height:1px; margin:6px 0 8px 0}
+
+#njColumnA #njGrayHrule{background-color:#999; height:1px; margin:10px 0 8px 0; width:336px; clear:left}
+
+.njGrayBkg{background-color:#999}
+
+.common_hed{font-size:14px; font-weight:bold; margin:4px 0 8px 0; color:#000; text-decoration:none}
+.common_hed a:hover{text-decoration:underline}
+.common_hed16{font-size:16px; letter-spacing:-.018em; font-weight:bold; margin-top:1px; margin-bottom:6px; color:#000; text-decoration:none}
+.common_hed16 a:hover{text-decoration:underline}
+
+#njText h4{font-size:9pt}
+#njText  p{margin-bottom:10px}
+#njText ul{padding:4px; margin:8pt; margin:0; padding:0 0 12pt 0}
+#njText li{padding:0; margin:0; list-style-image:url(img/li.jpg)}
+#njText li a{color:#616556; text-decoration:underline; font-size:8pt}
+
+.vaText, .vaLink, .vaLink p{font-size:11px; font-weight:normal; text-align:left; color:#000; line-height:12px}
+.vaLink a{font-size:11px; font-weight:normal; color:#666; text-decoration:none; line-height:12px}
+.vaLink a:link{text-decoration:none}
+.vaLink a:visited{text-decoration:none}
+.vaLink a:hover{color:#000; text-decoration:underline}
+.vaLink a:active{color:#000; text-decoration:underline}
+
+.footerTitle{font-size:11px; font-weight:bold; color:#000; text-decoration:none}
+.footerTitle a:link{text-decoration:none; color:#000}
+.footerTitle a:visited{text-decoration:none; color:#000}
+.footerTitle a:hover{text-decoration:underline; color:#000}
+.footerTitle a:active{text-decoration:underline; color:#000}
+.footerLink{font-size:11px; font-weight:normal; color:#707D85; text-decoration:none}
+.footerLink a:link{color:#707D85; text-decoration:none}
+.footerLink a:visited{color:#707D85; text-decoration:none}
+.footerLink a:hover{color:#000; text-decoration:underline}
+.footerLink a:active{color:#000; text-decoration:underline}
+.njGrayTxtSm{color:#666; text-decoration:none; font-size:10px; font-weight:normal}
+.njGrayTxtSm a:hover{text-decoration:underline}
+.njBlackTxt{font-size:12px; font-weight:normal; color:#000; text-decoration:none; margin:5px 0 0 0; padding:0; line-height:14px}
+.njBlackTxtSm{color:#000; text-decoration:none; font-size:10px; font-weight:normal}
+.njBlackTxtSmBold{color:#000; text-decoration:none; font-size:10px; font-weight:bold}
+.count{color:#00529B; font-weight:bold; font-size:12px}
+.commentsIcon{background-image:url(http://i.usatoday.net/_common/_images/2006/comments_icon.gif); background-repeat:no-repeat; background-position:right; width:20px}
+.recommendsIcon{background-image:url(http://i.usatoday.net/_common/_images/2006/recommends_icon.gif); background-repeat:no-repeat; background-position:right; width:17px}
+.recommendedIcon{background-image:url(http://i.usatoday.net/_common/_images/2006/recommended_icon.gif); background-repeat:no-repeat; background-position:right; width:20px}
+.ssts_news{color:#0076CD; font-size:11px; text-decoration:none}
+.ssts_news a:hover{text-decoration:underline}
+.ssts_travel{color:#00A6D3; font-size:11px; text-decoration:none}
+.ssts_travel a:hover{text-decoration:underline}
+.ssts_money{color:#093; font-size:11px; text-decoration:none}
+.ssts_money a:hover{text-decoration:underline}
+.ssts_sports{color:#F00; font-size:11px; text-decoration:none}
+.ssts_sports a:hover{text-decoration:underline}
+.ssts_life{color:#906; font-size:11px; text-decoration:none}
+.ssts_life a:hover{text-decoration:underline}
+.ssts_tech{color:#E85801; font-size:11px; text-decoration:none}
+.ssts_tech a:hover{text-decoration:underline}
+.ssts_weather{color:#fb9e00; font-size:11px; text-decoration:none}
+.ssts_weather a:hover{text-decoration:underline}
+.ssts_test{color:#666; font-size:11px; text-decoration:none}
+.ssts_test a:hover{text-decoration:underline}
+#njArticleShort ul{margin-left:0}
+.feedChatter{    font-size:11px;     line-height:13px;     font-weight:bold;     color:#000;     text-align:left;     margin-bottom:15px}
+.entry{margin-bottom:15px}
+.entry-header{font-size:16px; line-height:20px; font-weight:bold; color:#000; letter-spacing:normal}
+.entry-content{}
+
+.inside-copy{margin:0; font-size:13px; font-weight:normal}
+.inside-copy p{margin-top:15px}
+.inside-copy a:link{text-decoration:none; color:#00529b}
+.inside-copy a:visited{text-decoration:none; color:#00529b}
+.inside-copy a:hover{text-decoration:none; color:#00529b}
+.inside-copy a:active{text-decoration:underline; color:#00529b}
+.postLink{font-size:11px; font-weight:normal; text-align:left; color:#666; line-height:13px; margin-bottom:14px; text-align:left}
+.postLink a:link{font-size:11px; font-weight:normal; color:#666; line-height:13px; text-decoration:none}
+.postLink a:hover{font-size:11px; font-weight:normal; color:#666; line-height:13px; text-decoration:underline}
+.postLink a:visited{font-size:11px; font-weight:normal; color:#666; line-height:13px; text-decoration:none}
+.postLink a:active{font-size:11px; font-weight:normal; color:#00C; line-height:13px; text-decoration:underline}
+.postdate{text-align:left; font-size:11px; color:#666; text-decoration:none}
+.post-footers{}
+.separator{}
+.permalink{}
+
+.njHeadlinesShow{visibility:visible; display:block}
+.njHeadlinesHide{visibility:hidden; display:none}
+
+.njContentShow{visibility:visible; display:block; float:left}
+.njContentHide{visibility:hidden; display:none}
+.njSubContentShow{visibility:visible; display:block}
+.njSubContentHide{visibility:hidden; display:none}
+.njSubTabShow{visibility:visible; display:block}
+.njSubTabHide{visibility:hidden; display:none}
+.njTwoTabTitle{cursor:pointer; height:20px; width:200px; overflow:hidden}
+.njThreeTabTitle{cursor:pointer; height:20px; width:120px; overflow:hidden}
+.chatter0{font-size:12px; font-weight:bold; color:#000; text-decoration:none; border-bottom:1px solid #999; padding:10px 0 10px 0}
+.chatter1{font-size:12px; font-weight:bold; color:#000; text-decoration:none}
+
+#mainTabTwo #mainTabTwoTop{width:94%; margin:15px 0 0 15px; overflow:hidden}
+#njColumnB #mainTabTwoContent{width:94%; margin:15px 0 0 15px; overflow:hidden}
+
+#njColumnB #mainTabThreeContent{width:94%; margin-left:15px; overflow:hidden}
+
+#njColumnB #subtabContentTwo{width:480px}
+
+#njSubTabB .uslArticleControl{font-size:12px; font-weight:bold; color:#000; text-decoration:none; border-bottom:1px solid #999; padding:10px 0 10px 0}
+#onDeadlineMain p{font-size:12px}
+.activeTabSm{border-width:1px 0 1px 1px; border-style:solid none solid solid; border-color:#b3b3b3 #b3b3b3 #FFF #b3b3b3; padding:2px 0 1px 0; font-size:11px; color:#000; text-decoration:none; margin:0; text-align:center}
+.inactiveTabSm{padding:2px 0 1px 6px; font-size:11px; color:#999; text-decoration:none; border-width:1px 0 1px 0; border-style:solid; border-color:#FFF #FFF #b3b3b3 #FFF}
+.tabAngleSm{background-image:url(http://i.usatoday.net/_common/_images/2006/tab-angle.gif); height:19px; width:17px; background-repeat:no-repeat}
+.active-subtab{background-image:url(http://i.usatoday.net/_fronts/_shared/_images/active-subtab.gif); background-repeat:no-repeat; float:left; height:19px; width:90px; font-size:11px; color:#999; padding-top:3px}
+.inactive-subtab{background-image:url(http://i.usatoday.net/_fronts/_shared/_images/inactive-subtab.gif); background-repeat:no-repeat; float:left; height:19px; width:90px; font-size:11px; color:#999; padding-top:3px}
+.inactive-tab-fill{background-image:url(http://i.usatoday.net/_fronts/_shared/_images/inactive-subtab.gif); background-repeat:repeat-x; float:left; height:19px}
+.grayText{color:#999; text-decoration:none}
+.blackText{color:#000; text-decoration:none; font-size:14px; font-weight:bold; line-height:25px}
+.lnAngleInactive{background-image:url(http://i.usatoday.net/_common/_images/2006/ln-angle-inactive.gif); background-repeat:no-repeat}
+.tabSm{color:#999; text-decoration:none; height:25px; padding:4px 6px 0 6px; border:1px solid #FFF}
+.tabAngleBlank{height:18px; background-color:#FFF; border-bottom-style:solid; border-width:1px 0 1px 0; border-color:#b3b3b3}
+.activeTabLg{border-style:solid none solid none; border-width:1px; border-color:#000 #000 #FFF #000; font-size:11px; color:#000; text-decoration:none}
+.outerBorderShow{border-style:none solid solid solid; border-width:1px; border-color:#999; visibility:visible}
+.outerBorderHide{display:none; visibility:hidden}
+.lnAngleActive{background-image:url(http://i.usatoday.net/_common/_images/2006/ln-angle-active.gif); background-repeat:no-repeat}
+.odAngleActive{background-image:url(http://i.usatoday.net/_common/_images/2006/od-angle-active.gif); background-repeat:no-repeat}
+.odAngleInactive{background-image:url(http://i.usatoday.net/_common/_images/2006/od-angle-inactive.gif); background-repeat:no-repeat}
+.activeBkg{background-image:url(http://i.usatoday.net/_common/_images/2006/active-fill.gif); background-repeat:repeat-x}
+.inactiveBkg{background-image:url(http://i.usatoday.net/_common/_images/2006/inactive-gradient.gif); background-repeat:repeat-x}
+.gray11reg{font-size:11px; color:#666; text-decoration:none}
+.njAgateSm{font-size:10px; color:#000}
+.maintab-baseline{background-image:url(http://i.usatoday.net/_fronts/_shared/_images/inactive-tab-fill.gif); background-repeat:repeat-x; float:left; background-position:right}
+
+*{font-family:Arial,Helvetica,sans-serif; margin:0; padding:0}
+
+.Home{color:#00529b}
+.News{color:#0076cd}
+.Travel{color:#00a6d3}
+.Money{color:#093}
+.Sports{color:#f00}
+.Life{color:#906}
+.Tech{color:#e85801}
+.Weather{color:#fdc004}
+
+#box-label{}
+#box-label-text{font-size:11pt; font-weight:bold; text-align:left; text-indent:24px; background-image:url(http://i.usatoday.net/_home/_images/h2dot.jpg); background-repeat:no-repeat; background-position:7px 3px}
+#box-label-text-margin{padding-top:5px}
+#box-label-background{height:26px; background-image:url(http://i.usatoday.net/_home/_images/h2bg.jpg); background-repeat:repeat-x; border:1px solid #60676d; border-bottom:1px solid #fff}
+#box-label-margin{padding-bottom:7px}
+
+#njMastheadTop{height:30px; width:940px; border-bottom:1px solid #FFF}
+#njMastheadMain #njGlobalNav{width:87px; float:left; height:128px}
+#njMastheadMain{width:940px}
+#njMastheadTop #njMarketplaceLabel{float:left; width:87px; height:31px; font-size:12px; font-weight:bold; color:#666; text-align:center}
+#njMastheadTop #njMarketplaceLinks{float:left; width:377px; height:31px}
+#njMastheadTop #njMarketplaceLinks #label{font-size:10px; font-weight:bold; margin-left:10px}
+#njMastheadTop #njWeather{float:left; width:475px; height:31px}
+#njMastheadMain #usatLogo{height:128px; width:206px; float:left}
+#njMastheadMain #njComments{float:left; height:128px; width:281px}
+#njMastheadMain #njSearch{float:left; height:128px; width:167px}
+#njMastheadMain #njUAS{float:left; height:128px; width:198px}
+.njWeatherIcn{background-image:url(http://i.usatoday.net/_common/_images/2007/njpcicon.gif); background-repeat:no-repeat}
+
+.shopboxTxt0{font-size:12px; text-decoration:none; color:#000}
+.shopboxTxt0 a:hover{text-decoration:underline}
+.shopbox0GrayTxt{font-size:11px; text-decoration:none; color:#666}
+
+.sprite6{background-position:-34px -1px; margin-right:-3px;padding-bottom:3px;}
+.sprite7{background-position:-63px -1px; margin-left:1px; margin-right:1px; padding-bottom:3px;}
+.sprite8{background-position:-95px -1px; margin-right:-2px; padding-bottom:3px;}
+.sprite9{background-position:-250px -1px; margin-right:-2px; padding-bottom:3px;}
+.spriteImage{padding-left:18px; background-image:url(http://i.usatoday.net/_common/_images/_bugs/sprites.gif)}
+.spriteImageFooter{padding-left:11px; background-image:url(http://i.usatoday.net/_common/_images/_bugs/sprites.gif)}

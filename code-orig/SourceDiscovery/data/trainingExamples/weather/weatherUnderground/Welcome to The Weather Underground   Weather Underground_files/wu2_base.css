@@ -1,0 +1,78 @@
+#titleBar { padding: 2px; background-color: #F5F5F5; color: #333; border-top: 1px solid #333; margin-bottom: 10px; }
+#titleBar A { color: #213F9A; text-decoration: none; border-bottom: 1px dotted #213F9A; }
+#titleBar A:hover { color: #213F9A; text-decoration: none; border-bottom: 1px solid #213F9A; }
+
+.i { font-style: italic; }
+.b { font-weight: bold; }
+.nb { font-weight: normal; }
+.p5 { padding: 5px; }
+.full { width: 100%; }
+.tm10 { margin-top: 10px; }
+.tm20 { margin-top: 20px; }
+.bm10 { margin-bottom: 10px; }
+.bm20 { margin-bottom: 20px; }
+.gap1 { height: 1px; line-height: 1px; clear: both; }
+.none { display: none; }
+.nobr { white-space: nobr; }
+.clear { clear: both; }
+.center { margin-left: auto; margin-right: auto; }
+.subG { background-color: #F5F5F5; border-bottom: 1px solid #CCC; padding: 2px; }
+.mainB { font-size: 14px; font-weight: bold; background-color: #CDD9FF; border-bottom: 1px solid #172C6C; padding: 2px; }
+
+.red { color: #F00; }
+.blue { color: #00F; }
+.green { color: #008000; }
+.orange { color: #FF8C00; }
+
+.pageTop { text-align: right; margin: 10px 0 10px 0; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 11px; }
+.pageTop A { color: #00F; text-decoration: none; }
+.pageTop A:hover { color: #00F; text-decoration: underline; }
+
+.blueTop { width: 100%; }
+.blueTop .hLeft { padding: 0; height: 20px; }
+.blueTop .hCenter { height: 20px; line-height: 20px; width: 100%; font-size: 14px; font-weight: bold; color: #FFF; background-color: #213F9A; }
+.blueTop .hRight { padding: 0; height: 20px; }
+.blueTop .sLeft { padding: 0; height: 6px; }
+.blueTop .sCenter { padding: 0; height: 6px; line-height: 6px; font-size: 6px; }
+.blueTop .sRight { padding: 0; height: 6px; }
+
+.blueBox { border-right: 1px solid #213F9A; border-left: 1px solid #213F9A; padding: 0 5px 0 5px; }
+.blueBox .noGap { height: 1px; line-height: 1px; }
+.blueBox .dataTable { width: 100%; }
+.blueBox .dataTable THEAD TR TD { border-bottom: 1px solid #999; font-weight: bold; }
+.blueBox .dataTable TBODY TR TD { border-bottom: 1px dotted #CCC; padding: 3px; }
+.blueBox .dataTable TBODY TR:hover TD { border-bottom: 1px dotted #CCC; padding: 3px; background-color: #F5F5F5; }
+
+.blueBottom { height: 10px; width: 100%; }
+.blueBottom .bLeft DIV { height: 10px; width: 10px; background-image: url(http://icons.wxug.com/graphics/wu2/botBlue-left.gif); background-repeat: no-repeat; }
+.blueBottom .bCenter DIV { height: 10px; background-image: url(http://icons.wxug.com/graphics/wu2/botBlue-center.gif); background-repeat: repeat-x; }
+.blueBottom .bRight DIV { height: 10px; width: 10px; background-image: url(http://icons.wxug.com/graphics/wu2/botBlue-right.gif); background-repeat: no-repeat; }
+
+.rightCol { margin-left: 10px; }
+.rightCol .contentBox { background-image: url(http://icons.wxug.com/graphics/wu2/bgBlue-300.gif); background-repeat: repeat-y; }
+.rightCol .contentBox .headerText { font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-weight: bold; color: #9A5121; margin: 0 5px 0 5px; border-bottom: 1px solid #CCC; padding-bottom: 3px; }
+.rightCol .contentBox A { color: #213F9A; }
+.rightCol .contentBox P { margin: 10px; }
+.rightCol .contentBox UL { margin: 10px 0 10px 30px; }
+
+.endBox { height: 0; line-height: 0; }
+
+A.subLink { display: inline; padding: 1px 10px 1px 10px; border: 1px solid #9A8221; background-color: #FFEB9B; color: #172C6C; margin: 10px 0 10px 0; text-decoration: none; }
+A.subLink:hover { border: 1px solid #6C5B17; background-color: #FFF5CD; }
+
+.wxStickerType { border-bottom: 1px solid #CCC; margin: 0 0 10px 0; padding: 2px; font-weight: bold; }
+TEXTAREA.stickerCode { width: 600px; height: 100px; margin: 10px; }
+
+TD.veriFlash { text-align: center; background-color: #666; }
+TR.veriType TD { padding: 1px; font-weight: bold; }
+TR.veriType TD.ours { background-color: #DEF; border-bottom: 1px solid #7B7DC6; }
+TR.veriType TD.paid { background-color: #CFC; border-bottom: 1px solid #9C9; }
+TR.veriType TD.internal { background-color: #F5F5F5; border-bottom: 1px solid #CCC; }
+TR.veriType TD.comp { background-color: #FFC; border-bottom: 1px solid #CC9; }
+TD.verifyCell TABLE { border-bottom: 1px solid #CCC; font-size: 11px; width: 100%; }
+
+#gMapSide { margin-top: 5px; width: 290px; height: 330px; border: 1px solid #CCC; overflow: hidden;  }
+
+#dlList { list-style-type: none; margin: 0; }
+#dlList LI { clear: both; border-bottom: 1px solid #CCC; min-height: 100px; list-style-type: none; padding: 5px; }
+#dlList LI .dlIcon { float: left; margin: 5px; }

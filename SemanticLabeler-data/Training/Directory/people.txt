@@ -1,0 +1,13 @@
+0:CT-PersonName:PR-FirstName	0:CT-PersonName:PR-LastName	1:PR-PersonTitle	2:CT-Phone:PR-AreaCode	2:CT-Phone:PR-7DigitPhoneNumber	3:PR-Email
+Jim	Carpenter	Sr. Software Engineer	650	859-4596	james.carpenter@sri.com
+James	Allen	NULL	850	426-2546	james@cs.rochester.edu
+Jim	Blythe	Computer Scientist	310	448 8251	blythe@isi.edu
+Eric	Yeh	Software Engineer	650	859-6134	eric.yeh@sri.com
+Craig	Knoblock	NULL	310	448-8786	knoblock@isi.edu
+Karen	Myers	Program Director	650	859-4833	myers@ai.sri.com
+Dave	Gunning	Program Manager	NULL	NULL	dgunning@DARPA.mil
+Melissa	Beers	Sr. Business Manager ICS	650	859-2534	melissa.beers@sri.com
+Julie	Fitzgerald	NULL	703	841-3500	jfitzgerald@iet.com@mail.iet.com
+Leslie	Pound	Research Engineer	650	859-5089	pound@AI.sri.com
+Vinay	Chaudhari	Program Director	650	859-3368	chaudhri@ai.sri.com
+Jack	Park	Consultant	650	859-4137	park@ai.sri.com

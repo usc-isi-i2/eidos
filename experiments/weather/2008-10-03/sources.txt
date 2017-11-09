@@ -1,0 +1,72 @@
+
+weather1(PR-ZipCode5Digit,PR-Humidity,CT-TemperatureF,CT-TemperatureF,CT-TemperatureF,PR-Sky,CT-VisibilityFeet,CT-PressureInches,PR-WindDirection)
+
+weather2(PR-ZipCode5Digit,PR-Sky,CT-TemperatureF,CT-TemperatureC,PR-Humidity,PR-WindDirection,CT-TemperatureF)
+
+weather3(PR-ZipCode5Digit,PR-WindDirection,PR-Sky,PR-Humidity,CT-PressureInches,CT-TemperatureF,CT-TemperatureF,CT-TemperatureF)
+
+weather4(PR-ZipCode5Digit,PR-Humidity,CT-TemperatureF,CT-TemperatureF,CT-TemperatureF,PR-Sky,CT-VisibilityFeet,CT-PressureInches,PR-WindDirection)
+
+weather5(PR-ZipCode5Digit,PR-Humidity,CT-TemperatureF,CT-TemperatureF,CT-TemperatureF,PR-Sky,CT-VisibilityFeet,CT-PressureInches,PR-WindDirection)
+
+weather6(PR-ZipCode5Digit,PR-Humidity,CT-TemperatureF,CT-TemperatureF,CT-TemperatureF,PR-Sky,CT-VisibilityFeet,CT-PressureInches,PR-WindDirection)
+
+
+----------------------------------------------------------------------
+
+weather1 query:PR-ZipCode5Digit
+weather1 column58:PR-Humidity
+weather1 column310:CT-TemperatureF
+weather1 column313:CT-TemperatureF
+weather1 column324:CT-TemperatureF
+weather1 column336:PR-Sky
+weather1 column494:CT-VisibilityFeet
+weather1 column1316:CT-PressureInches
+weather1 column2340:PR-WindDirection
+
+weather2 Name:PR-ZipCode5Digit
+weather2 column15:PR-Sky
+weather2 column16:CT-TemperatureF
+weather2 column19:CT-TemperatureC
+weather2 column25:PR-Humidity
+weather2 column26:PR-WindDirection
+weather2 column29:CT-TemperatureF
+
+weather3 pands:PR-ZipCode5Digit
+weather3 column33:PR-WindDirection
+weather3 column35:PR-Sky
+weather3 column39:PR-Humidity
+weather3 column41:CT-PressureInches
+weather3 column77:CT-TemperatureF
+weather3 column80:CT-TemperatureF
+weather3 column83:CT-TemperatureF
+
+weather4 query:PR-ZipCode5Digit
+weather4 column57:PR-Humidity
+weather4 column309:CT-TemperatureF
+weather4 column312:CT-TemperatureF
+weather4 column323:CT-TemperatureF
+weather4 column335:PR-Sky
+weather4 column493:CT-VisibilityFeet
+weather4 column1315:CT-PressureInches
+weather4 column2339:PR-WindDirection
+
+weather5 query:PR-ZipCode5Digit
+weather5 column58:PR-Humidity
+weather5 column310:CT-TemperatureF
+weather5 column313:CT-TemperatureF
+weather5 column324:CT-TemperatureF
+weather5 column336:PR-Sky
+weather5 column494:CT-VisibilityFeet
+weather5 column1316:CT-PressureInches
+weather5 column2340:PR-WindDirection
+
+weather6 query:PR-ZipCode5Digit
+weather6 column57:PR-Humidity
+weather6 column309:CT-TemperatureF
+weather6 column312:CT-TemperatureF
+weather6 column323:CT-TemperatureF
+weather6 column335:PR-Sky
+weather6 column493:CT-VisibilityFeet
+weather6 column1370:CT-PressureInches
+weather6 column2338:PR-WindDirection

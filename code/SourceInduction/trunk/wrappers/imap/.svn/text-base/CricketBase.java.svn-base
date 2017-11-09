@@ -1,0 +1,154 @@
+package wrappers.imap;
+
+import invocation.Wrapper;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import relational.Table;
+
+
+
+public class CricketBase implements Wrapper {
+
+	public Table invoke(String[] endpoint, List<String> inputTuple) {
+
+		Table output = null;
+		String url = null;
+
+		try {
+
+			if (endpoint[1].equalsIgnoreCase("getPlayers")) {
+
+				url = "http://www.cricketbase.com/search.sd";
+
+				url += "?search_cat=players&search_string="+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8");
+
+				output = new Table(new String[] {"last_name"});
+
+				// invoke source
+				String doc = loadURL(url);
+
+				int index;
+				int begin;
+				int end;
+				List<String> urls = new ArrayList<String>();
+				if ((index = doc.indexOf("window.location")) != -1) {
+					begin = doc.indexOf("\"",index)+1;
+					end   = doc.indexOf("\"",begin);
+					urls.add(doc.substring(begin,end));
+				}
+				else {
+					while ((index = doc.indexOf("#fffc9c",index+1)) !=-1) {
+						begin = doc.indexOf("href=",index)+5;
+						end   = doc.indexOf(">",begin);
+						urls.add(doc.substring(begin,end));
+					}
+				}
+
+				// invoke each url returned:
+				for (String url2: urls) {
+
+					// load the document
+					doc = loadURL(url2);
+
+					// parse the document
+			    	List<String> tuple = new ArrayList<String>();
+			    	tuple.add(inputTuple.get(0));
+
+					index = doc.indexOf("<td colspan=2 bgcolor=#87481b>");
+					if (index!=-1) {
+						begin = index;
+						if ((end = doc.indexOf("</td",index))!=-1) {
+							System.out.println(removeTags(doc.substring(begin,end)));
+							while ((index = doc.indexOf("<td bgcolor=#fffc9c",index+1))!=-1) {
+								begin = index;
+								if ((end = doc.indexOf("</td",index)) != -1) {
+									System.out.println(removeTags(doc.substring(begin,end)));
+									//tuple.add(removeTags(doc.substring(begin,end)));
+								}
+							}
+						}
+					}
+
+			    	output.insertDistinct(tuple);
+				}
+
+			}
+			else {
+	    		System.err.println("Error: No method called " + endpoint[1] + " in wrapper: " + this.getClass().getName());
+				System.err.println("Please update source definition and restart system .... exiting");
+	    		System.exit(9);
+			}
+
+	    }
+		catch (Exception e) { return null; }
+
+		return output;
+
+	}
+
+	public String removeTags(String input) {
+		String output;
+		int index;
+		while ((index = input.indexOf("<"))!=-1) {
+			output = input.substring(0,index);
+			if ((index = input.indexOf(">",index))!=-1) {
+				output += input.substring(index+1);
+			}
+			input = output;
+		}
+		return input;
+	}
+
+	private String loadURL(String url) {
+		// load the document
+		String doc = "";
+		try {
+			BufferedReader in = new BufferedReader(new InputStreamReader((new URL(url)).openStream()));
+			String line;
+			while ((line = in.readLine()) != null) {
+				doc += line;
+			}
+		}
+		catch (Exception e) {
+			System.err.println("Error invoking URL: "+url);
+		}
+		return doc;
+	}
+
+
+
+	public void testWrapper() {
+		CricketBase r = new CricketBase();
+		String[] endpoint;
+		List<String> input;
+
+		// test 0:
+		endpoint = new String[2];
+		endpoint[1] = "getPlayers";
+		input = new ArrayList<String>();
+		input.add("Michael Bevan");
+		r.invoke(endpoint,input).print();
+
+		// test 1:
+		endpoint = new String[2];
+		endpoint[1] = "getPlayers";
+		input = new ArrayList<String>();
+		input.add("waugh");
+		r.invoke(endpoint,input).print();
+
+		// test 2:
+		endpoint = new String[2];
+		endpoint[1] = "getPlayers";
+		input = new ArrayList<String>();
+		input.add("warne");
+		r.invoke(endpoint,input).print();
+
+	}
+
+
+}

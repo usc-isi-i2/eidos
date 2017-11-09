@@ -1,0 +1,13 @@
+function submitCJ9903798X403(formId, url) {
+   var s = "";
+   if (url != null) {
+      s = "<form id=\"" + formId + "\" method=\"post\" action=\"http://www.dpbolvw.net/click\" target=\"_blank\">\r\n<input type=\"hidden\" name=\"aid\" value=\"9903798\"/>\r\n<input type=\"hidden\" name=\"pid\" value=\"2545362\"/><input type=\"hidden\" name=\"url\" value=\"" + url + "\"/></form>";
+   } else {
+      s = "<form id=\"" + formId + "\" method=\"post\" action=\"http://www.dpbolvw.net/click\" target=\"_blank\">\r\n<input type=\"hidden\" name=\"aid\" value=\"9903798\"/>\r\n<input type=\"hidden\" name=\"pid\" value=\"2545362\"/></form>";
+   }
+   var x = document.createElement("div");
+   x.innerHTML = s;
+   document.getElementsByTagName("body")[0].appendChild(x);
+   document.getElementById(formId).submit();
+}
+document.write("<a href=\"javascript:submitCJ9903798X403(\'CJ9903798X403\',null);\"><img src=\"http://www.yceml.net/0694/9903798-10.gif\" width=\"300\" height=\"250\" alt=\"Click Here For The Wall Street Journal\" border=\"0\"/></a>");

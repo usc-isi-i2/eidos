@@ -1,0 +1,16 @@
+package evaluation;
+
+import java.util.ArrayList;
+import relational.Table;
+import domain.*;
+
+public class Evaluation {
+	
+	public Clause clause = null;
+	public double score;
+	
+	public ArrayList<Table> targetTables      = new ArrayList<Table>();
+	public ArrayList<Table> candidateTables   = new ArrayList<Table>();
+	
+	
+}

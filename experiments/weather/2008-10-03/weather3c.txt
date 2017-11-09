@@ -1,0 +1,79 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+type ZIP	        [varchar(200)]	{examples.zipcode5digit.val} # complete list: {uscensusbureau.zipnov99.zipcode}
+type TF		[varchar(100)]  {numeric: -100.0, +150.0, 3%}
+type TC		[varchar(100)]  {numeric: -50.0, +70.0, 3%}
+type HU		[varchar(100)]  {numeric: 0.0, 100.0, 15%}
+type WD		[varchar(100)]  {examples.wind_direction.val}
+type VF		[varchar(100)]
+type VM		[varchar(100)]
+type PI  	[varchar(100)]  {numeric: 26.0, 30.99, 0.02}
+type Sky			[varchar(100)]
+type PMb		[varchar(100)]	{numeric: 900.0, 1100, 1.0}
+
+## Domain Relations: 
+
+relation weather(ZIP,TF:high,TF:low,TF:highnextday,HU,Sky,PI,WD,VF)
+
+# relation convertDistMFt(distanceM,distanceFt)
+relation convertDistMFt(VM,VF)
+
+relation convertTemp(TC,TF)
+
+## Sources: 
+
+# function ConvertM2Ft($distM,distFt)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertM2Ft}
+
+function ConvertC2F($tempC,tempF)	 			:- convertTemp(tempC,tempF).  	  							{wrappers.Ragnarok; convertC2F}
+
+function ConvertFt2M($distFt,distM)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertFt2M}
+
+source weather1($ZIP,HU,TF:high,TF:low,TF:highnextday,Sky,VF,PI,WD) :- weather(ZIP,TF:high,TF:low,TF:highnextday,HU,Sky,PI,WD,VF).												{wrappers.DBService; http://www.wunderground.com/}
+
+
+## Target Predicate: 
+
+target weather3($ZIP,WD,Sky,HU,PI,TF,TF,TF) 					{wrappers.DBService; http://www.timetemperature.com/}
+
+
+######################################################################
+#
+# EXPERIMENTS
+# 
+# Analysis:
+# 
+# weather3($0,_,2,_,_,5,6,_)
+# 
+# ground truth: 
+# weather3(PR-ZIP, PR-WD, PR-Sky, PR-HU, CT-PI, CT-TF:lowtonight, CT-TF:highnextday, CT-TF:lownextday)
+# 
+# learned:
+# weather3($ZIP,_,Sky,_,_,TF:low,TF:highnextday,_)	:- weather(ZIP,_,TF:low,TF:highnextday,_,Sky,_,_,_).
+#
+# 2008-10-03 20:51:23
+#
+# correct: 3/4 (TF:low ~ CT-TF:lowtonight)
+# missing: 4
+# incorrect: 0
+#
+# timestmp = 1223092521627
+# target = weather3($ZIP,WD,Sky,HU,PI,TF,TF,TF)
+# definition = weather3($0,_,2,_,_,5,6,_)	:- weather1(0,_,_,5,6,2,_,_,_).
+# unfolding = weather3($0,_,2,_,_,5,6,_)	:- weather(0,_,5,6,_,2,_,_,_).
+# score = 7.684885537899295E-8
+# normalisedScore = -1.820158943749753
+# candidates = 38
+# totalCandidates = 52
+# accesses = 20
+# totalAccesses = 20
+# time = 1
+# totalTime = 1
+# timeout = 300
+# maxClauseLength = 7
+# maxPredRepitition = 2
+# maxVarLevel = 5
+# noVarRepetition = true
+# heuristic = random

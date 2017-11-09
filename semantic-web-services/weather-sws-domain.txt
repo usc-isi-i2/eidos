@@ -1,0 +1,172 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+type City         [varchar(100)]
+type CityState    [varchar(100)] {source_model.citystate.val}
+type Date         [varchar(100)] {equality: Date = 1.0}
+type Forecast     [varchar(100)]
+type Humidity     [varchar(100)] {numeric: 0.0, 100.0, 15%}
+type PlaceAbbr    [varchar(100)]
+type Pressure     [varchar(100)] {numeric: 26.0, 32.0, 10%}
+type PressureInInches [varchar(100)] {numeric: 26.0, 32.0, 10%}
+type Sky          [varchar(100)] {source_model.sky.val}
+type StateAbbr    [varchar(100)]
+type TempF	     [varchar(100)] {numeric: -100.0, +150.0, 10%}
+type TempC        [varchar(100)] {numeric: -50.0, +70.0, 10%}
+type TimeWZone    [varchar(100)] # {equality: TimeWZoneEq = 1.0}
+type VisibilityInMi   [varchar(100)] {numeric: 0.0, 100.0, 10%}
+type Visibility   [varchar(100)] {numeric: 0.0, 100.0, 10%}
+type WindDir      [varchar(100)] {source_model.winddir.val}
+type WindSpeedInMPH    [varchar(100)] {numeric: 0.0, +200.0, 10%}
+type Zip          [varchar(100)] {examples.zipcode5digit.val}
+
+
+## Domain Relations: 
+
+# relation weather(Forecast,Zip,CityState,Date,TimeWZone,TempF,TempF,TempF,Sky,Humidity,Pressure,WindSpeedInMPH,WindDir,VisibilityInMi)
+
+relation centigrade2farenheit(TempC,TempF)
+
+relation
+weatherForecast(OBJECT_TYPE)
+relation 
+hasForecastDay(OBJECT_TYPE, ForecastDay)
+relation
+hasZIP(OBJECT_TYPE, ZIP)
+relation 
+hasCityState(OBJECT_TYPE, CityState)
+relation 
+hasDate(OBJECT_TYPE, Date)
+relation 
+hasTimeWZone(OBJECT_TYPE, TimeWZone)
+relation 
+hasCurrentTemperatureFarenheit(OBJECT_TYPE, TempF)
+relation 
+hasHighTemperatureFarenheit(OBJECT_TYPE, TempF)
+relation 
+hasLowTemperatureFarenheit(OBJECT_TYPE, TempF)
+relation 
+hasCurrentTemperatureCelsius(OBJECT_TYPE, TempC)
+relation 
+hasHighTemperatureCelsius(OBJECT_TYPE, TempC)
+relation 
+hasLowTemperatureCelsius(OBJECT_TYPE, TempC)
+relation 
+hasSkyConditions(OBJECT_TYPE, Sky)
+relation 
+hasHumidity(OBJECT_TYPE, Humidity)
+relation 
+hasPressure(OBJECT_TYPE, Pressure)
+relation 
+hasWindSpeedInMPH(OBJECT_TYPE, WindSpeedInMPH)
+relation 
+hasWindDir(OBJECT_TYPE, WindDir)
+relation 
+hasVisibilityInMi(OBJECT_TYPE, VisibilityInMi)
+
+
+## Sources: 
+
+function 
+ConvertC2F($TempC,TempF)	:- 
+      centigrade2farenheit(TempC,TempF)
+#      hasTemperatureFarenheit(OBJECT_TYPE, TempF),
+#      hasTemperatureCelsius(OBJECT_TYPE, TempC)
+{wrappers.Ragnarok; convertC2F}
+
+source 
+wunderground( $zip, CityState, Date, TimeWZone,
+		      TempF:current, Sky, Humidity,
+		      WindSpeedInMPH, WindDir, Pressure,
+		      VisibilityInMi, 
+		      TempF:low1, TempF:high1, Sky:n1,
+		      TempF:low2, TempF:high2, Sky:n2,
+		      TempF:low3, TempF:high3, Sky:n3,
+		      TempF:low4, TempF:high4, Sky:n4, 
+		      TempF:low5, TempF:high5, Sky:n5,
+		      ) :-  
+weatherForecast("@o1"),
+hasForecastDay("@o1", "current")
+hasZIP("@o1", ZIP),
+hasCityState("@o1", CityState), 
+hasDate("@o1", Date), 
+hasTimeWZone("@o1", TimeWZone), 
+hasCurrentTemperatureFarenheit("@o1", TempF:current), 
+hasSkyConditions("@o1", Sky),
+hasHumidity("@o1", Humidity),
+hasPressure("@o1", Pressure),
+hasWindspeed("@o1","@ws1")
+Windspeed("@ws1"),
+hasWindSpeedInMPH("@ws1", WindSpeedInMPH),
+hasWindDir("@ws1", WindDir),
+hasVisibilityInMi("@o1", VisibilityInMi),
+
+weatherForecast("@o2"),
+hasForecastDay("@o2", "current+1")
+hasZIP("@o2", ZIP),
+hasCityState("@o2", CityState), 
+hasDate("@o2", Date), 
+hasTimeWZone("@o2", TimeWZone), 
+hasLowTemperatureFarenheit("@o2", TempF:low1), 
+hasHighTemperatureFarenheit("@o2", TempF:high1), 
+hasSkyConditions("@o2", Sky:n1),
+weatherForecast("@o2"),
+
+hasForecastDay("@o3", "current+2")
+hasZIP("@o3", ZIP),
+hasCityState("@o3", CityState), 
+hasDate("@o3", Date), 
+hasTimeWZone("@o3", TimeWZone), 
+hasLowTemperatureFarenheit("@o3", TempF:low2), 
+hasHighTemperatureFarenheit("@o3", TempF:high2), 
+hasSkyConditions("@o3", Sky:n2),
+weatherForecast("@o3"),
+
+hasForecastDay("@o4", "current+3")
+hasZIP("@o4", ZIP),
+hasCityState("@o4", CityState), 
+hasDate("@o4", Date), 
+hasTimeWZone("@o4", TimeWZone), 
+hasLowTemperatureFarenheit("@o4", TempF:low3), 
+hasHighTemperatureFarenheit("@o4", TempF:high3), 
+hasSkyConditions("@o4", Sky:n3),
+
+weatherForecast("@o5"),
+hasForecastDay("@o5", "current+4")
+hasZIP("@o5", ZIP),
+hasCityState("@o5", CityState), 
+hasDate("@o5", Date), 
+hasTimeWZone("@o5", TimeWZone), 
+hasLowTemperatureFarenheit("@o5", TempF:low4), 
+hasHighTemperatureFarenheit("@o5", TempF:high4), 
+hasSkyConditions("@o5", Sky:n4),
+
+weatherForecast("@o6"),
+hasForecastDay("@o6", "current+4")
+hasZIP("@o6", ZIP),
+hasCityState("@o6", CityState), 
+hasDate("@o6", Date), 
+hasTimeWZone("@o6", TimeWZone), 
+hasLowTemperatureFarenheit("@o6", TempF:low5), 
+hasHighTemperatureFarenheit("@o6", TempF:high5), 
+hasSkyConditions("@o6", Sky:n5).
+{wrappers.DBService; http://www.wunderground.com/; JLA:weather49; PR-Zip}
+
+
+
+
+
+## Target Predicate: 
+
+
+target weather49($Zip,Zip,Zip,WindSpeedInMPH,WindSpeedInMPH,Zip,Zip,Sky,WindSpeedInMPH,TempF,WindSpeedInMPH,TempC,WindSpeedInMPH,TempF,TempF,Humidity,WindDir,TempF,WindSpeedInMPH,WindSpeedInMPH,WindSpeedInMPH,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,Sky,Sky,Sky,Sky,Sky,Sky,Sky,Sky,Sky,Sky,Sky) {wrappers.DBService; http://weather.unisys.com/; Forecast; PR-Zip}
+
+
+target = weather49($Zip,Zip,Zip,WindSpeedInMPH,WindSpeedInMPH,Zip,Zip,Sky,WindSpeedInMPH,TempF,WindSpeedInMPH,TempC,WindSpeedInMPH,TempF,TempF,Humidity,WindDir,TempF,WindSpeedInMPH,WindSpeedInMPH,WindSpeedInMPH,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,WindSpeedInMPH,Sky,Sky,Sky,Sky,Sky,Sky,Sky,Sky,Sky,Sky,Sky,Sky)
+
+definition = weather49($_,_,Zip2,_,_,_,_,_,_,TempF9,_,TempC11,_,TempF13,TempF14,Humidity15,_,TempF17,_,_,_,_,Sky22,_,Sky24,_,_,_,_,_,_,_,_,_,_,Sky35,Sky36,_,_,_,_,_,_,_,_,_)	:- wunderground_weather49(Zip2,_,_,TempF9,_,Humidity15,_,_,_,_,TempF14,TempF17,Sky24,_,_,Sky22,_,_,Sky35,_,_,Sky36,TempF13,_,_), ConvertC2F(TempC11,TempF9).
+
+
+unfolding = weather49($_,_,Zip2,_,_,_,_,_,_,TempF9,_,TempC11,_,TempF13,TempF14,Humidity15,_,TempF17,_,_,_,_,Sky22,_,Sky24,_,_,_,_,_,_,_,_,_,_,Sky35,Sky36,_,_,_,_,_,_,_,_,_)	:- weather("current",Zip2,CityState2,Date3,TimeWZone4,TempF9,_,_,_,Humidity15,_,_,_,_), weather("current+1",Zip2,CityState2,Date3,TimeWZone4,_,TempF17,TempF14,Sky24,_,_,_,_,_), weather("current+2",Zip2,CityState2,Date3,TimeWZone4,_,_,_,Sky22,_,_,_,_,_), weather("current+3",Zip2,CityState2,Date3,TimeWZone4,_,_,_,Sky35,_,_,_,_,_), weather("current+4",Zip2,CityState2,Date3,TimeWZone4,_,_,_,Sky36,_,_,_,_,_), weather("current+5",Zip2,CityState2,Date3,TimeWZone4,_,_,TempF13,_,_,_,_,_,_), centigrade2farenheit(TempC11,TempF9).

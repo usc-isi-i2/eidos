@@ -1,0 +1,1038 @@
+/* Global & Shared CSS Properties */
+div.Persona_Main{color:#000000; font-family:verdana; font-size:11px; text-align:left;}
+	div.Persona_Main a{color:#000000; text-decoration:underline;}
+	div.Persona_Main a:hover{color:#000000; text-decoration:underline;}
+	div.Persona_Main img{border:0px;}
+	div.Persona_Main table{font-size:11px; }
+
+div.Blog_Main{color:#000000; font-family:verdana; font-size:11px; text-align:left;}
+	div.Blog_Main a{color:#000000; text-decoration:underline;}
+	div.Blog_Main a:hover{color:#000000; text-decoration:underline;}
+	div.Blog_Main img{border:0px;}
+	div.Blog_Main table{font-size:11px; }
+
+div.PersonaStyle_ItemContainer{border: 1px solid #E4E3E3; margin-top:10px; padding-bottom:5px;}
+div.PersonaStyle_SectionHead{font-size:12px; font-weight:bold; background-color:#e4e3E3; padding:3px 0px 3px 5px; text-align:left;}
+	div.PersonaStyle_SectionHead a{font-size:10px; font-weight:normal;}
+	
+div.Blog_RightSideContainer{overflow:hidden; padding-bottom:10px; margin-left:10px;}
+	div.Blog_RightSideContainer a{color:#00659A; text-decoration:none;}
+	div.Blog_RightSideContainer a:hover{text-decoration:underline;}
+div.Blog_RightSideSectionHead{font-size:11px; font-weight:bold;}
+
+div.Persona_NullContent{padding:10px;}
+
+a.Persona_TopPluckLink{float:right; top:0px; right:10px;}
+	a.Persona_TopPluckLink img{border:0px;}
+div.Sitelife_PluckLogo{text-align:right;}
+	div.Sitelife_PluckLogo img{border:0px;}
+	div.Sitelife_PluckLogo a{border:0px;}
+div.Pluck_FooterLink{text-align:right; padding:10px 10px 10px 0px; font-size:11px;}
+
+/* Bozo */
+div.Bozo{display:none; visibility: hidden;}
+table.Bozo{display:none; visibility: hidden;}
+tr.Bozo{display:none; visibility: hidden;}
+td.Bozo{display:none; visibility: hidden;}
+a.Bozo{display:none; visibility: hidden;}
+
+/*login prompts*/	
+div.Persona_LoginStatus{text-align:right; padding-top:7px; padding-bottom:7px;}/*login prompt above personas */	
+div.SiteLife_Login{padding:10px;}/*login prompt found in action areas of siteLife */	
+
+/************************************ Persona Styles *********************************/
+/* Persona Header */
+div.PersonaHeader_Container{clear:both; background-color:#E4E3E3; padding:10px 10px 0px 10px;}	
+div.PersonaHeader_Title{font-weight:bold; font-size:16px; text-align:left; display:inline;}	
+div.PersonaHeader_PublicContent{clear:both; margin-top:10px;}	
+	div.PersonaHeader_PublicContent a{border:2px solid #FC0511; background-color:#FFCC00; text-align:center; color:#000000; text-decoration:none; height:12px; float:left; margin-bottom:10px; padding:5px; width:90%;} 
+	div.PersonaHeader_PublicContent a:hover{text-decoration:underline;}
+div.PersonaHeader_PrivateContent{margin-top:10px; padding:5px; clear:both; width:96%;  height:100%}
+table.PersonaHeader_Table{width:100%; border:0px; padding:0px 0px 0px 0px; table-layout:fixed;}
+td.PersonaHeader_TableLeft{vertical-align:top; width:70px; overflow:hidden; padding-bottom:10px; text-align:center; }
+	td.PersonaHeader_TableLeft img{border:1px solid #000000; margin:10px 0px 8px 0px; }
+td.PersonaHeader_TableMiddle{vertical-align:top; width:100%; overflow:hidden; padding:10px 10px 0px 10px;}
+td.PersonaHeader_TableRight{vertical-align:top; width:174px; overflow:hidden;}
+div.PersonaHeader_Info{padding-bottom:10px; width:100%; overflow:hidden;}
+.PersonaHeader_InfoHeading{font-weight:bold;}
+div.PersonaHeader_RecommendUserProfile{padding-bottom:10px; display:inline; padding: 0px 0px 0px 20px;}
+
+/* Persona Tabs */
+div.PersonaTabs_Container{height:25px;  min-height:23px; border-bottom:0px solid #cccccc; background-color:#E4E3E3; }
+div.PersonaTabs_Container a.PersonaTabs_On{float:left;  padding:5px 10px 5px 10px; margin-left:5px; border:1px solid #cccccc; border-bottom:0px; background-color:#FFFFFF; color:#000000; text-decoration:none; font-family:verdana; font-size:10px; font-weight:bold;}
+div.PersonaTabs_Container a.PersonaTabs_On:hover{text-decoration:none;}
+div.PersonaTabs_Container a.PersonaTabs_Off{float:left;  padding:5px 10px 5px 10px; margin-left:5px; border:1px solid #cccccc; border-bottom:0px; background-color:#cccccc; color:#000000; text-decoration:none; font-family:verdana; font-size:10px;}
+div.PersonaTabs_Container a.PersonaTabs_Off:hover{text-decoration:none; background-color:#B7B7B7;}
+
+/* Persona Home Table */
+table.Persona_2ColumnTable{width:100%; border:0px; margin:0px; padding:0px; table-layout:fixed; clear:both;}
+td.Persona_2ColumnTableLeft{width:67%; vertical-align:top; padding:0px 5px 0px 0px;}
+td.Persona_2ColumnTableRight{width:33%; vertical-align:top; padding:0px 0px 0px 5px;}
+
+/* WatchList */
+div.WatchList_Title{padding:5px 0px 0px 5px; text-align: left; width:100%;}
+table.WatchList_List{width:100%; margin:auto; padding:0px 5px 5px 5px;}
+td.WatchList_ListLeft{width:100%; text-align:left; padding-top:5px; overflow:hidden;}
+td.WatchList_ListRight{width:13px; text-align:center; padding-top:5px;}
+div.WatchList_Page{text-align:center; padding:10px;}
+				
+/* Reactions */
+div.Reactions_Wrapper{padding:0px 5px 5px 5px;}
+table.Reactions_Table{width:100%; padding-bottom:7px; border-bottom:1px dotted #cccccc;}
+table.Reactions_Table img{ border:1px solid #000000;}	
+td.Reactions_TableContent{width:100%; vertical-align:top; padding-top:7px; overflow:hidden;}
+td.Reactions_TableImg{width:63px; vertical-align:top; padding-top:7px;}
+div.Reactions_Title{font-style:italic;}	
+	div.Reactions_Title a{font-style:italic;}
+div.Reactions_DateTime{color:#999999;}
+div.Reactions_Data{margin:5px 0px 5px 0px; overflow:hidden;}
+div.Reactions_Link{padding:0px 0px 0px 0px;}
+
+/* Friends */
+table.Friends_List{width:100%; margin:auto; padding:0px 5px 0px 5px;}
+td.Friends_ListLeft{width:100%; text-align:left; padding-top:5px; overflow:hidden;}
+td.Friends_ListRight{width:13px; text-align:center; padding-top:5px;}
+div.Friends_Page{text-align:center; padding-bottom:5px;}
+div.Friends_ShowAll{text-align:center; padding:5px;}
+/* Friends Connect */
+div.Friends_ConnectMessage{padding:5px;}
+td.Friends_PendingName{width:100%; overflow:hidden; padding-top:3px;}
+td.Friends_PendingAccept{padding-top:3px;}
+td.Friends_PendingReject{padding-left:5px; padding-top:3px;}
+
+/* MessagePreview */
+table.MessagePreview_Table{width:100%;}
+	table.MessagePreview_Table img{width:32px; height:32px; border: 1px solid #000000;}
+td.MessagePreview_TableLeft{vertical-align:top; width:34px; padding:5px 0px 5px 5px;}
+td.MessagePreview_TableRight{width:100%; padding:3px 0px 5px 5px; vertical-align:top; text-align:left; color:#000000; overflow:hidden;}
+div.MessagePreview_User{font-weight:bold;}
+div.MessagePreview_DateTime{color:#999999; padding-top:0px;}
+div.MessagePreview_ViewMessage{padding-top:0px;}
+div.MessagePreview_ViewAll{text-align:center; padding-bottom:5px;}
+
+/* RecentPhotoSlideShow */
+div.RecentPhotoSlideShow_ViewAll{padding:5px; text-align:center;}
+div.RecentPhotoSlideShow_Image{text-align:center; padding:5px 0px 5px 0px;}
+	div.RecentPhotoSlideShow_Image img{border: 1px solid #000000;}
+table.RecentPhotoSlideShow_Table{width:80%; table-layout:fixed; margin:auto;}
+td.RecentPhotoSlideShow_TableLeft{width:50%; text-align:left;}
+td.RecentPhotoSlideShow_TableRight{width:50%; text-align:right;}
+
+/* My Latest Discussions */
+div.MyLatestDiscussions_Item{padding:5px 5px 0px 5px; text-align:left; overflow:hidden;}
+.MyLatestDiscussions_Date{color:#999999;}
+div.MyLatestDiscussions_GoForumsLink{padding:10px; text-align:center;}
+
+/* My Groups */
+div.MyGroups_Item{padding:5px 5px 0px 5px; text-align:left; overflow:hidden;}
+div.MyGroups_GoForumsLink{padding:10px; text-align:center;}
+div.MyGroups_Count{padding:5px;}
+img.MyGroups_Image{float:left;padding:3px 10px 3px 3px;}
+
+/* UserComments */
+div.UserComments_Comment{margin:3px 0px 3px 0px;}
+table.UserComments_Table{width:95%; padding-bottom:10px; border-bottom:1px solid #000000; margin:auto; margin-top:7px;}
+	table.UserComments_Table img{border: 1px solid #000000; width:75px;}
+div.UserComments_Origin{font-style:italic; font-weight:bold;}
+	div.UserComments_Origin a{font-style:normal; font-weight:normal;}
+.UserComments_DateTime{font-weight:normal; font-style:normal; }
+div.UserComments_Recommended{text-align:left; padding-bottom:5px;}
+div.UserComments_Page{text-align:center; padding:5px;}
+tr.UserComments_TableRowColor{}
+
+/* Messages */
+table.Messages_MessageTable{width:100%; table-layout:fixed;}
+	table.Messages_MessageTable img{ border: 1px solid #000000;}
+td.Message_Remove{text-align:center; width:13px; padding:8px 0px 0px 5px; vertical-align:top;}
+	td.Message_Remove img{border:0px;}
+td.Messages_MessageTableLeft{vertical-align:top; width:63px; padding:8px 0px 9px 5px; text-align:center;}
+td.Messages_MessageTableRight{width:100%; padding:8px 5px 9px 5px; vertical-align:top; text-align:left; overflow:hidden;}
+div.Messages_MessageBody{}
+div.Messages_DateTime{color:#999999;}
+div.Messages_Page{text-align:center; padding:5px;}
+div.Messages_NewMessageContainer{text-align:center;margin-top:10px; }
+div.Messages_NewMessageHead{text-align:center;}
+.Messages_NewMessageTextBox{width:300px; height:100px; margin:10px 0px 0px 0px;}
+div.Messages_NewMessageSubmit{margin:10px 0px 10px 0px; text-align:center;}
+tr.Messages_MessagesTableRowColor{}
+tr.Messages_MessagesTableAltRowColor{background-color:#f3f3f3;}
+
+/* Add Message Frame */
+.Messages_Iframe{width:100%;}
+body.AddMessage_Body{margin:0px; padding:0px;}
+
+/* Message Approval Message */
+div.Messages_MustConnectMessage{padding:10px;}
+
+/* Photos_Home */
+table.Photos_HomeTable{table-layout:fixed; width:100%;}
+div.Photo_PhotoNotFoundText{color:#c00;padding:20px;}
+
+/* GallerySubmissions */
+div.GallerySumissions_Discription{padding:5px 0px 0px 5px;}
+div.GallerySubmissions_ActionLink{padding:3px; text-align:left; height:20px; text-align:right; padding:10px 0px 10px 0px;}
+	div.GallerySubmissions_ActionLink a{float:left; padding:5px; margin-right:10px; background-color:#ff8800; border:1px solid #ff3300; color:#ffffff; text-decoration:none;}
+	div.GallerySubmissions_ActionLink a:hover{text-decoration:underline; color:#ffffff;}
+table.GallerySubmissions_Table{width:100%; text-align:left; margin:auto; margin-top:5px;}
+td.GallerySubmissions_TableDate{padding-left:5px;}
+td.GallerySubmissions_TableName{width:100%; padding:0px 10px 0px 7px;}
+div.GallerySubmissions_Page{text-align:center;}
+
+/* UserGalleryList */
+div.UserGalleryList_ActionLink{padding:3px; text-align:right; padding:10px 0px 10px 0px;}
+	div.UserGalleryList_ActionLink a{float:right; padding:5px; background-color:#ff8800; border:1px solid #ff3300; color:#ffffff; text-decoration:none;}
+	div.UserGalleryList_ActionLink a:hover{text-decoration:underline;}
+table.UserGalleryList_Table{margin:auto;}
+div.UserGalleryList_Gallery{width:84px; float:left; margin:5px; }
+	div.UserGalleryList_Gallery img{width:60px; height:60px; margin:8px 0px 0px 8px; }
+div.UserGalleryList_GalleryDetails{text-align:center; padding:20px 0px 0px;}
+div.UserGalleryList_Page{text-align:center; padding:10px;}
+
+/* MyRecentPhotos */
+div.MyRecentPhotos_Details{text-align:left; padding:5px;}
+table.MyRecentPhotos_Table{margin:auto; text-align:left; width:90%;}
+	table.MyRecentPhotos_Table img{float:left; padding:5px 0px 0px 5px; border:0px; width:60px; height:60px;}
+div.MyRecentPhotos_Page{text-align:center; padding:5px;}
+a.MyRecentPhotos { }
+
+/* GalleryPhoto */
+div.GalleryPhoto_Container{text-align:center; margin:10px; font-size:11px;}
+	div.GalleryPhoto_Container a{color:#000000;}
+div.GalleryPhoto_Heading{text-align:left; font-size:14px; font-weight:bold;}
+	div.GalleryPhoto_Heading a{font-weight:normal;}
+div.GalleryPhoto_Image{text-align:center; margin-top:10px;}
+	div.GalleryPhoto_Image img{padding:5px; border:1px solid #000000;}
+table.GalleryPhoto_Table{width:100%; table-layout:fixed; padding:10px 0px 10px 0px; border-bottom: 1px solid #999999; margin:auto;}
+	table.GalleryPhoto_Table img{border:0px; margin-bottom:-3px;}
+div.GalleryPhoto_Title{font-weight:bold; text-align:left;}
+div.GalleryPhoto_ByLine{color:#999999; text-align:left;}
+	div.GalleryPhoto_ByLine a{font-style:italic;}
+div.GalleryPhoto_Description{}
+table.GalleryPhoto_GalleryPreview{width:193px; }
+	table.GalleryPhoto_GalleryPreview td{text-align:center;}
+	table.GalleryPhoto_GalleryPreview img{width:49px; height:50px; padding:3px; border:1px solid #999999;}
+	table.GalleryPhoto_GalleryPreview img.GalleryPhoto_CurrentImage{width:49px; height:50px; padding:3px; border:2px solid #000000;}
+div.GalleryPhoto_Tags{text-align:left;}
+div.GalleryPhoto_Statistics{width:75%; text-align:left; padding:5px 0px 0px 50px;}
+div.GalleryPhoto_Actions{width:75%; text-align:left; padding:5px 0px 0px 50px;}
+
+/* PersonaPhoto */
+div.PersonaPhoto_Image{text-align:center; margin-top:10px;}
+	div.PersonaPhoto_Image img{padding:5px; border:1px solid #000000;}
+table.PersonaPhoto_Table{width:95%; table-layout:fixed; padding:10px 0px 10px 0px; border-bottom: 1px solid #999999; margin:auto;}
+	table.PersonaPhoto_Table img{border:0px; margin-bottom:-3px;}
+div.PersonaPhoto_Title{font-weight:bold;}
+div.PersonaPhoto_ByLine{color:#999999;}
+	div.PersonaPhoto_ByLine a{font-style:italic;}
+div.PersonaPhoto_Description{}
+table.PersonaPhoto_GalleryPreview{width:193px; }
+	table.PersonaPhoto_GalleryPreview td{text-align:center;}
+	table.PersonaPhoto_GalleryPreview img{width:49px; height:50px; padding:3px; border:1px solid #999999;}
+	table.PersonaPhoto_GalleryPreview img.PersonaPhoto_CurrentImage{width:49px; height:50px; padding:3px; border:2px solid #000000;}
+div.PersonaPhoto_Tags{text-align:left;}
+div.PersonaPhoto_Statistics{width:75%; text-align:left; padding:5px 0px 0px 50px;}
+div.PersonaPhoto_Actions{width:75%; text-align:left; padding:5px 0px 0px 50px;}
+
+/* UserGallery */
+div.UserGallery_Description{padding:5px 0px 0px 5px;}
+div.UserGallery_Details{padding:5px;}
+div.UserGallery_Delete{text-align:center; padding:5px;}
+div.UserGallery_PhotosWraper{width:90%; margin:auto;}
+table.UserGallery_PhotosTable{margin:auto;}
+div.UserGallery_PrivatePhotoDiv{width:60px; height:80px; background-color:#cccccc; float:left; margin:5px 0px 0px 5px; text-align:center;}
+	div.UserGallery_PrivatePhotoDiv img{ border:0px; width:60px; height:60px;}
+img.UserGallery_PublicPhoto{float:left; padding:5px 0px 0px 5px; border:0px; width:60px; height:60px;}
+div.UserGallery_Page{clear:both; text-align:center; padding:10px;}
+div.UserGallery_Image{ }
+
+/* UserGalleryCreate */
+.UserGalleryCreate_ErrorText{font-size:12px; text-align:left; width:300px; color:#ff0000; font-weight:bold;}
+div.UserGalleryCreate_FieldCaption{padding:10px; text-align:left; width:300px;}
+div.UserGalleryCreate_Buttons{padding:10px; text-align:right; width:300px;}
+div.UserGalleryCreate_Example{padding:3px 0px 0px 10px; text-align:left; width:300px; font-size:9px; }
+.UserGalleryCreate_TextField{width:300px; margin-left:10px;}
+.UserGalleryCreate_TextArea{width:300px; margin-left:10px; height:60px;}
+
+/* UserGalleryConfirmation */
+table.UserGalleryConfirmation_Table{table-layout:fixed; width:90%; margin:20px 0px 0px 0px; font-size:12px;}
+td.UserGalleryConfirmation_TableLeft{width:100px; vertical-align:top; text-align:center;}
+td.UserGalleryConfirmation_TableMiddle{width:80px; text-align:right; vertical-align:top;}
+td.UserGalleryConfirmation_TableRight{text-align:left; vertical-align:top; width:100%; font-weight:bold;}
+div.UserGalleryConfirmation_AddImage{width:84px; height:87px; text-align:left; margin:auto; padding-bottom:7px; }
+	div.UserGalleryConfirmation_AddImage img{width:60px; height:60px; margin:8px 0px 0px 8px; border:0px;}
+	
+/* PersonaBlog Main Layout */
+table.PersonaBlog_Table{width:100%; table-layout:fixed;}
+td.PersonaBlog_TableLeft{vertical-align:top; width:70%; text-align:left; }
+td.PersonaBlog_TableRight{vertical-align:top; width:30%; border-left:dotted 2px #999999; text-align:left; }
+
+/* BloggerProfile */
+div.BloggerProfile_Container{background-color:#EEEEEE; border:1px solid #EEEEEE; margin:10px 0px 10px 0px;}
+table.BloggerProfile_Table{width:100%; table-layout:fixed; text-align:left; margin:0px; padding:0px;}
+td.BloggerProfile_TableImg{width:80px; vertical-align:top; text-align:center; padding-top:5px;}
+td.BloggerProfile_TableText{width:100%; vertical-align:top;}
+table.BloggerProfile_Table div.BloggerProfile_Title{margin:5px 10px 10px 0px; font-size:16px; font-weight:bold;}
+div.BloggerProfile_TagLine{margin:5px 0px 20px 0px; font-size:14px;}
+
+/* FOR MAB ONLY */
+table.BlogMain_MabAuthTable{table-layout:fixed; width:100%; vertical-align:top;table-layout:fixed;}
+td.BlogMain_MabAuthTableLeft{width:65px; text-align:left;  }
+td.BlogMain_MabAuthTableRight{width:100%; text-align:left; }
+
+/* BlogMain */
+div.BlogMain_EntryContainer{padding:0px 0px 10px 0px; margin:0px 10px 10px 0px; border-bottom:1px solid #999999; overflow:hidden;}
+div.BlogMain_EntryDate{color:#999999; padding-top:3px;}
+div.BlogMain_EntryTitle{font-size:12px; font-weight:bold;}
+div.BlogMain_EntryContent{padding-top:7px;}
+div.BlogMain_EntryDetails{padding-top:10px; padding-bottom:12px; font-size:9px;}
+table.BlogMain_EntryPost{width:100%; table-layout:fixed;}
+div.BlogMain_Page{text-align:center; padding:5px;}
+
+/* Blog Nav */
+div.BlogNav{padding:10px 0px 0px 0px; font-size:11px; text-align:right;  margin:auto;}
+a.BlogNav_On{text-decoration:none; font-weight:bold;}
+a.BlogNav_Off{font-size:11px;}
+
+/* Blog Add to Watchlist */
+div.Blog_AddToWatchlist{height:20px; font-size:11px; padding-left:10px;}
+div.Blog_AddToWatchlist a{border:2px solid #FC0511; background-color:#FFCC00; text-align:center; color:#000000; text-decoration:none; height:12px; float:left; margin-bottom:10px; padding:5px; width:90%;}
+div.Blog_AddToWatchlist a:hover{text-decoration:underline; }
+
+/* BlogEntryList */
+div.BlogEntryList_Entries{padding:10px 0px 0px 0px;}
+	div.BlogEntryList_Entries a{clear:both; float:left; padding-bottom:5px;}
+
+/* BlogArchiveList */
+div.BlogArchiveList_Entries{padding:10px 0px 0px 0px;}
+	div.BlogArchiveList_Entries a{clear:both; float:left; padding-bottom:5px;}
+	
+/* BlogEntryForm */
+iframe.BlogEntryForm_Iframe{width:100%; height:630px;}
+table.BlogEntryForm_Table{width:100%; table-layout:fixed; text-align:left; font-family:Verdana;}
+td.BlogEntryForm_TableLeft{vertical-align:top; width:90px; padding:15px 0px 0px 10px; font-weight:bold; font-size:11px;}
+td.BlogEntryForm_TableRight{vertical-align:top; width:100%; padding-top:10px;}
+div.BlogEntryForm_Submit{padding:10px; text-align:left;}
+.BlogEntry_InputFullField{width:400px;}
+.BlogEntry_SelectMonth{}
+.BlogEntry_SelectDay{}
+.BlogEntry_SelectYear{}
+.BlogEntry_Textarea{width:400px; height:200px;}
+.BlogEntry_Abstractarea{width:400px; height:100px;}
+.BlogEntry_AbstractNote{ font-size:10px }
+
+/* BlogEntry */
+div.BlogEntry_Container{padding:0px 0px 10px 0px; margin:0px 10px 0px 0px; text-align:left; overflow:hidden;}
+div.BlogEntry_Title{font-size:14px; font-weight:bold; }
+div.BlogEntry_PostDate{color:#cccccc; }
+div.BlogEntry_Text{padding-top:10px;}
+div.BlogEntry_Details{padding-top:10px; padding-bottom:10px;}
+table.BlogEntry_Actions{width:100%; table-layout:fixed; padding:5px; border-top:2px solid #cccccc; border-bottom:2px solid #cccccc; }
+td.BlogEntry_ActionItem{width:40%; text-align:left; padding-left:40px;}
+	td.BlogEntry_ActionItem{width:40%; text-align:left; padding-left:40px;}
+	td.BlogEntry_ActionItem img{margin-bottom:-3px;}
+div.BlogEntry_Tags{padding-top:3px;}
+	
+/* PendingComments */
+table.PendingComments_ActionsTable{width:100%; padding:10px;  font-size:12px;}
+	td.PendingComments_ActionsTableSort{width:40%; text-align:left;}
+	td.PendingComments_ActionsTableOption{width:60%; text-align:right;}
+div.PendingComments_PostContainer{border-bottom:1px solid #999999; margin:0px 10px 10px 10px; padding:10px 0px 10px 0px; font-size:12px;}
+	div.PendingComments_PostContainer a{font-weight:bold;}
+table.PendingComments_Table{margin:10px 0px 0px 10px; font-size:10px; }
+td.PendingComments_TableLeft{vertical-align:top; width:100px; text-align:center;}
+td.PendingComments_TableRight{vertical-align:top; width:100%;}
+div.PendingComments_Author{}
+	div.PendingComments_Author a{font-weight:bold;}
+div.PendingComments_Comment{padding-top:3px;}
+div.PendingComments_PostDate{color:#999999; padding-top:3px;}
+div.PendingComments_Page{text-align:center; padding:5px;}
+
+/* BlogSettings */
+table.BlogSettings_AboutTable{table-layout:fixed; text-align:left; margin:10px 0px 20px 20px; width:80%;}
+td.BlogSettings_AboutTableLeft{vertical-align:top; width:90px; padding:10px 0px 0px 10px; font-weight:bold; font-size:12px;}
+td.BlogSettings_AboutTableRight{vertical-align:top; width:100%; padding-top:10px;}
+table.BlogSettings_PreferencesTable{width:80%; table-layout:fixed; text-align:left; margin:10px 0px 20px 50px;}
+td.BlogSettings_PreferencesTableLeft{vertical-align:top; width:150px; padding:10px 0px 0px 10px;}
+td.BlogSettings_PreferencesTableRight{vertical-align:top; width:100%; padding-top:10px;}
+div.BlogSettings_Save{padding-top:10px; text-align:left;}
+.BlogSettings_InputField{width:300px; margin-top:3px;}
+.BlogSettings_SelectTime{width:120px;}
+.BlogSettings_SelectEntries{width:40px;}
+.BlogSettings_Disabled{color:#cccccc;}
+
+/* ViewEditList */
+div.ViewEditList_Options{padding:10px 0px 10px 0px; border-bottom:1px solid #cccccc;  margin:0px 10px 0px 10px; font-size:12px;}
+table.ViewEditList_Table{width:95%; table-layout:fixed; text-align:left; font-size:12px; margin-left:10px; }
+tr.ViewEditList_TableRowColor{}
+tr.ViewEditList_TableAltRowColor{background-color:#f3f3f3;}
+td.ViewEditList_TableLeft{width:70px; padding:5px;}
+td.ViewEditList_TableMiddle{width:100%; padding:5px;}
+td.ViewEditList_TableRight{width:115px; padding:5px; text-align:right;}
+.ViewEditList_TableHeading{font-weight:bold;}
+
+/*ProfileEdit*/
+body.PersonaProfile_Body{width:600px;}
+div.ProfileEdit_SectionDescription{text-align:left; padding:5px;}	
+	div.ProfileEdit_SectionDescription a{font-weight:bold;}	
+table.ProfileEdit_Table{width:100%; table-layout:fixed;}
+td.ProfileEdit_TableFieldName{width:30%; text-align:right; vertical-align:top; font-size:11px; padding: 10px 5px 0px 0px;}
+td.ProfileEdit_TableField{width:70%; text-align:left; vertical-align:top; font-size:9px; padding-top:5px; }
+div.ProfileEdit_Submit{padding:10px; text-align:center;}
+.ProfileEdit_BigInput{width:250px; }
+.ProfileEdit_SmallInput{width:80%;}
+.ProfileEdit_Textarea{width:250px; height:100px;}
+.ProfileEdit_Combobox{width:255px; }
+td.ProfileEdit_mm{width:25px; padding-right:2px; text-align:left;}
+td.ProfileEdit_dd{width:25px; padding-right:2px; text-align:left;}
+td.ProfileEdit_yyyy{width:35px; text-align:left;}
+td.ProfileEdit_Caption{color:#666666; vertical-align:top;}
+td.ProfileEdit_PublicPrivateRadio{padding-top:7px; vertical-align:top;}
+td.ProfileEdit_PublicPrivateText{padding:9px 5px 0px 0px; vertical-align:top;}
+div.ProfileEdit_SignaturePreview{ overflow:auto; height:130px; border: solid 1px #7F9DB9; }
+div.ProfileEdit_EditSignature{ float:right; padding-top:5px;}
+div.PersonaEdit_SignatureMain{margin:5px; }
+div.PersonaEdit_SignatureSave{padding:10px 0 0 0; text-align:center;}
+.ProfileEdit_SignatureEditArea{width:450px; height:200px;}
+.PersonaEdit_HelpImage{position:relative; top:5px;}
+div.PersonaEdit_SignatureHelp{padding-bottom:15px; font-size:10px;}
+
+/*Profile Summary*/
+table.ProfileSummary_Table{width:100%;table-layout:fixed }
+td.ProfileSummary_Caption {vertical-align:top;padding:7px; text-align:right;}
+td.ProfileSummary_Answer {vertical-align:top; padding:7px; text-align:left; width:425px;}
+
+/* PersonaPhotoUpload */
+div.PersonaPhotoUpload_TOS{padding:10px 0px 0px 10px;}
+div.PersonaPhotoUpload_Instructions{padding:10px 0px 0px 10px;}
+div.PersonaPhotoUpload_FileBrowse{padding:10px 0px 0px 10px;}
+div.PersonaPhotoUpload_AddSubmit{padding:10px 0px 10px 10px; text-align:left;}
+div.PersonaPhotoUpload_Error{padding:10px 0px 0px 10px; color:#ff0000;}
+
+/* PersonaPhotoAddDetail */
+table.PersonaPhotoAddDetail_ItemTable{width:95%; table-layout:fixed; margin:auto; text-align:left;}
+td.PersonaPhotoAddDetail_ItemTableImg{width:90px; vertical-align:top; padding-top:20px;}
+	td.PersonaPhotoAddDetail_ItemTableImg img{width:80px;}
+td.PersonaPhotoAddDetail_ItemTableDetails{Width:100%; vertical-align:top; padding-top:15px;}
+div.PersonaPhotoAddDetail_Delete{}
+table.PersonaPhotoAddDetail_DetailsTable{width:100%; table-layout:fixed; text-align:left;}
+td.PersonaPhotoAddDetail_DetailsTableFieldName{font-size:12px; font-weight:bold; width:95px; padding:8px 0px 0px 0px; vertical-align:top;}
+.PersonaPhotoAddDetail_Required{color:#ff0000; font-weight:normal; font-size:9px;}
+td.PersonaPhotoAddDetail_DetailsTableField{padding:3px 0px 0px 10px; vertical-align:top;}
+.PersonaPhotoAddDetail_DetailsField{width:250px;}
+.PersonaPhotoAddDetail_DetailsTextarea{width:250px; height:30px;}
+div.PersonaPhotoAddDetail_Submit{text-align:left; margin:auto; padding:10px 0px 10px 0px;}
+
+
+/* PersonaPhotoConfirmation */
+div.PersonaPhotoConfirmation_Content{margin:10px;}
+
+/********************************************* PHOTOS CSS *********************************************/
+/* PhotoConfirmation */
+div.PhotoConfirmation_Container{font-family:verdana; font-size:10px; text-align:left;}
+	div.PhotoConfirmation_Container a{color:#000000;}
+div.PhotoConfirmation_SectionHead{font-size:12px; font-weight:bold; background-color:#e4e3E3; padding:3px; text-align:left;}
+div.PhotoConfirmation_Content{margin:10px;}
+
+/* PhotoUpload */
+div.PhotoUpload_Container{font-family:verdana; font-size:10px; text-align:left;}
+	div.PhotoUpload_Container a{color:#000000;}
+	div.PhotoUpload_Container img{border:1px solid #000000;}
+div.PhotoUpload_SectionHead{font-size:12px; font-weight:bold; background-color:#e4e3E3; padding:3px; text-align:left;}
+div.PhotoUpload_TOS{padding:10px 0px 0px 10px;}
+div.PhotoUpload_Instructions{padding:10px 0px 0px 10px;}
+div.PhotoUpload_FileBrowse{padding:10px 0px 0px 10px;}
+/* Note: it is not possible to set the width on an <input type="file"> element - width must be set using size attribute */
+input.PhotoUpload_FileBrowseInput{} 
+div.PhotoUpload_AddSubmit{padding:10px 0px 10px 10px; text-align:left; }
+/* These are the classes on the actual "Add Another" and "Upload" buttons */
+input.PhotoUpload_AddAnotherButton {}
+input.PhotoUpload_AddSubmitButton {margin-left: 8px;}
+div.PhotoUpload_Error{padding:10px 0px 0px 10px; color:#ff0000;}
+
+/* PhotoAddDetail */
+div.PhotoAddDetail_Container{font-family:verdana; font-size:10px; text-align:left; }
+	div.PhotoAddDetail_Container a{color:#000000;}
+	div.PhotoAddDetail_Container img{border:1px solid #000000;}
+div.PhotoAddDetail_SectionHead{font-size:12px; font-weight:bold; background-color:#e4e3E3; padding:3px; text-align:left;}
+table.PhotoAddDetail_ItemTable{width:95%; table-layout:fixed; margin:auto; text-align:left;}
+td.PhotoAddDetail_ItemTableImg{width:90px; vertical-align:top; padding-top:20px;}
+	td.PhotoAddDetail_ItemTableImg img{width:80px;}
+td.PhotoAddDetail_ItemTableDetails{Width:100%; vertical-align:top; padding-top:15px;}
+div.PhotoAddDetail_Delete{}
+table.PhotoAddDetail_DetailsTable{width:100%; table-layout:fixed; text-align:left;}
+td.PhotoAddDetail_DetailsTableFieldName{font-size:12px; font-weight:bold; width:95px; padding:8px 0px 0px 0px; vertical-align:top;}
+.PhotoAddDetail_Required{color:#ff0000; font-weight:bold; font-size:9px;}
+td.PhotoAddDetail_DetailsTableField{padding:3px 0px 0px 10px; vertical-align:top;}
+.PhotoAddDetail_DetailsField{width:250px;}
+.PhotoAddDetail_DetailsTextarea{width:250px; height:30px;}
+div.PhotoAddDetail_Submit{text-align:left; margin:auto; padding:10px 0px 10px 0px;}
+input.PhotoAddDetail_SubmitButton{}
+
+/* SolicitPhoto */
+div.SolicitPhoto_Container{font-family:verdana; font-size:10px; text-align:center; border:1px solid #999999; background-color:#e4e3E3; margin-top:10px;}
+	div.SolicitPhoto_Container a{color:#000000;}
+div.SolicitPhoto_SectionHead{font-size:14px; font-weight:bold; background-color:#e4e3E3; padding:5px; text-align:left;}
+div.SolicitPhoto_Photo{margin:10px;}
+	div.SolicitPhoto_Photo img{border:0px;}
+div.SolicitPhoto_Subject{font-size:12px; font-weight:bold;}
+div.SolicitPhoto_Details{padding-top:5px; width:90%; margin:auto;}
+div.SolicitPhoto_Action{padding:10px;}
+	div.SolicitPhoto_Action a{color:#000000; font-size:12px; font-weight:bold;}
+div.SolicitPhoto_Link{padding-bottom:10px;}
+
+/* PublicGalleries */
+div.PublicGalleries_Container{font-size:11px; text-align:left;}
+	div.PublicGalleries_Container a{color:#000000;}
+div.PublicGalleries_SectionHead{font-size:30px; background-color:#CDDAEB; padding:7px;}
+table.PublicGalleries_Table{width:100%; table-layout:fixed; margin-top:5px;}
+td.PublicGalleries_TableImg{vertical-align:top; width:200px; padding:5px;}
+	td.PublicGalleries_TableImg img{ border:0px solid #000000;}
+td.PublicGalleries_TableDetails{width:100%; text-align:left; padding:5px 0px 0px 10px; vertical-align:top;}
+div.PublicGalleries_Title{font-size:16px; font-weight:bold;}
+div.PublicGalleries_Description{padding-top:3px;}
+div.PublicGalleries_ViewLink{padding:5px 0px 0px 20px; font-size:12px; font-weight:bold;}
+div.PublicGalleries_UploadLink{padding:0px 0px 0px 20px; font-size:12px; font-weight:bold;}
+a.PublicGalleryPhoto{visibility: visible;}
+
+/* PublicGallery */
+div.PublicGallery_Container{font-size:10px; font-family:Verdana; text-align:left; margin:auto;}
+	div.PublicGallery_Container a{color:#000000;}
+div.PublicGallery_Title{font-size:16px; font-weight:bold; padding:10px 0px 0px 0px;}
+div.PublicGallery_Description{font-size:11px; padding:10px 0px 0px 0px;}
+div.PublicGallery_Details{padding-top:10px; font-size:12px;}
+div.PublicGallery_PhotosContainer{margin:10px 0px 0px 0px; padding:5px; border:1px solid #000000; text-align:center;}
+table.PublicGallery_PhotosTable{margin:auto; text-align:left; }
+	table.PublicGallery_PhotosTable img{margin:5px; border:0px; width:60px; height:60px;}
+div.PublicGallery_Page{text-align:center;}
+div.PublicGallery_Actions{font-size:12px; padding-top:10px;}
+	div.PublicGallery_Actions img{margin-bottom:-3px;}
+table.PublicGallery_Table{width:100%; table-layout:fixed; padding-top:10px;}
+td.PublicGallery_About{vertical-align:top;}
+td.PublicGallery_Related{vertical-align:top;}
+div.PublicGallery_SubHeading{font-size:12px; font-weight:bold; padding-bottom:5px;}
+
+
+/************************* MISC ELEMENTS ***************************************/
+div.ReportAbuse_Container{background-color:#cccccc; width:170px; font-weight:bold; border:1px solid #000000; font-family:Verdana; font-size:10px; text-align:left; z-index:4; position:absolute;}
+div.ReportAbuse_SectionHead{padding:2px; height:15px;}
+	div.ReportAbuse_SectionHead a{float:right; border:1px solid #000000; color:#000000; background-color:#FFFFFF; padding:1px; text-decoration:none; }
+	div.ReportAbuse_SectionHead a:hover{background-color:#000000; color:#FFFFFF;}
+div.ReportAbuse_Interior{ width:170px; padding-bottom:3px; clear:both;}
+	div.ReportAbuse_Interior a{float:left; font-weight:bold; height:15px; border-bottom:1px solid #000000; color:#000000; padding:2px 0px 0px 10px; width:160px; background-color:#FFFFFF; text-decoration:none; }
+	div.ReportAbuse_Interior a:hover{background-color:#CCCCCC;}
+	div.ReportAbuse_Interior select{margin-left:5px; }
+div.ReportAbuse_Comment{width:170px;}
+div.ReportAbuse_Comment textarea{width:90%; height:70px; margin-left:5px;}
+div.ReportAbuse_Comment input{padding:1px; margin:3px 0px 3px 5px; }
+
+
+.NoDisplay{display:none;}
+.bold{font-weight:bold;}
+.SiteLife_Error{color:#ff0000;}
+div.SiteLife_Filtered{padding:5px 0px 5px  0px; font-size:11px; font-weight:normal; font-family:Verdana; color:#ff0000; }
+div.SiteLife_Filtered ul{margin-top:4px;}
+
+div#rpt_persona_abuse a.SiteLife_ReportAbuse{float:left; padding:1px 0px 1px 20px;  background:url(/ver1.0/Content/images/icons/icon_alert.gif) 0 50% no-repeat;}
+div#rpt_persona_abuse .SiteLife_Reported{float:left; padding:1px 0px 1px 20px; background:url(/ver1.0/Content/images/icons/icon_accept.gif) 0 50% no-repeat;}
+a.SiteLife_ReportAbuse{padding:1px 0px 1px 20px;  background:url(/ver1.0/Content/images/icons/icon_alert.gif) 0 50% no-repeat;}
+.SiteLife_Reported{padding:1px 0px 1px 20px; background:url(/ver1.0/Content/images/icons/icon_accept.gif) 0 50% no-repeat;}
+a.SiteLife_Recommend{padding:1px 0px 1px 20px; background:url(/ver1.0/Content/images/icons/arrow_up_rec.gif) 0 50% no-repeat;}
+.SiteLife_Recommended{padding:1px 0px 1px 20px; background:url(/ver1.0/Content/images/icons/icon_accept.gif) 0 50% no-repeat;}
+a.SiteLife_AddToWatchList{padding:1px 0px 1px 20px; background:url(/ver1.0/Content/images/icons/icon_favourites.gif) 0 50% no-repeat;}
+.SiteLife_Watched{padding:1px 0px 1px 20px; background:url(/ver1.0/Content/images/icons/icon_accept.gif) 0 50% no-repeat;}
+a.SiteLife_EmailThis{padding:1px 0px 1px 20px; background:url(/ver1.0/Content/images/icons/icon_email.gif) 0 50% no-repeat;}
+a.SiteLife_RSS{padding:1px 0px 3px 20px; height:20px; background:url(/ver1.0/Content/images/icons/feedIcon.gif) 0 50% no-repeat;}
+
+
+/********************************** Comments *************************/
+
+div.Comments_Container{text-align:left; padding-top:5px;  margin:auto; overflow:hidden;}
+	div.Comments_Container table {font-size:11px;}
+	div.Comments_Container img {border:1px solid #000000;}
+	div.Comments_Container table a {color:#000000;}
+div.Comments_SectionHead{font-size:12px; font-weight:bold; padding-bottom:10px;}
+div.Comments_Tabs{height:21px;  min-height:23px; border-bottom:1px solid #cccccc;}
+	div.Comments_Tabs a{float:left;  padding:5px 10px 5px 10px; margin-left:5px; border:1px solid #cccccc; border-bottom:0px; background-color:#cccccc; color:#000000; text-decoration:none; font-family:verdana; font-size:10px;}
+	div.Comments_Tabs a:hover{text-decoration:none; background-color:#B7B7B7;}
+.CommentsTab_On{float:left;  padding:5px 10px 5px 10px; margin-left:5px; border:1px solid #cccccc; border-bottom:0px; background-color:#FFFFFF; color:#000000; text-decoration:none; font-family:verdana; font-size:10px; font-weight:bold;}
+table.Comments_Table{width:100%; table-layout:fixed; margin:10px 0px 10px 0px;}
+tr.Comments_TableAltRowColor{background-color:#f6f6f6;}
+tr.Comments_TableRowColor{}
+td.Comments_UserImage{width:34px; vertical-align:top; padding:5px;}
+    td.Comments_UserImage img{width:32px; height:32px; padding:0px;}
+td.Comments_TableRight{vertical-align:top; padding:5px 5px 5px 0px; width:100%; }
+div.Comments_From{}
+    div.Comments_From a{font-weight:bold;}
+div.Comments_CommentText{padding-top:5px;}
+div.Comments_NestedDate{color:#999999; padding-top:3px; font-size:10px;}
+table.Comments_NestedTable{width:100%; table-layout:fixed; text-align:left; margin-top:3px;}
+	table.Comments_NestedTable img{margin-bottom:-5px; border:0px;}
+td.Comments_NestedRecommend{width:50%; }
+td.Comments_NestedReport{width:50%;}
+div.Comments_AddHeading{  padding-top:5px; font-weight:bold;}
+span.Comments_MaxLengthText{  padding-top:5px; font-weight:normal; font-style:italic;}
+div.Comments_AddTextarea{padding-top:5px;}
+	div.Comments_AddTextarea textarea{width:98%; height:100px;}
+div.Comments_AddWatchlist{padding-top:5px;}
+div.Comments_Submit{padding:5px 0px 5px 0px;}
+body.Comments_body{width:600px;}
+
+
+/********************* Reviews ************************/
+div.Reviews_MainContainer{text-align:left; padding-top:5px;  margin:auto; overflow:hidden; font-size:11px; width:800px;}
+	div.Reviews_MainContainer a{color:#000000; text-decoration:none;}
+	div.Reviews_MainContainer input{margin-top:5px;}
+	div.Reviews_MainContainer Textarea{margin-top:5px;}
+
+div.Reviews_SectionHead{font-size:14px; font-weight:bold;}
+table.Reviews_Table{width:100%; table-layout:fixed; margin:10px 0px 10px 0px; font-size:11px;}
+tr.Reviews_TableAltRowColor{background-color:#f6f6f6;}
+tr.Reviews_TableRowColor{}
+td.Reviews_UserImage{width:34px; vertical-align:top; padding:5px;}
+	 td.Reviews_UserImage img{width:32px; height:32px; border:0px;}
+td.Reviews_TableRight{vertical-align:top; padding:0px 5px 5px 0px; width:100%; }
+body.ReviewFrame_Body{width:800px;}
+div.Reviews_From{font-size:12px; padding-top:3px;}
+	div.Reviews_From a{font-style:italic; text-decoration:underline;}
+div.Reviews_Headline{font-weight:bold; font-size:14px; padding-top:5px; padding-bottom:10px;}          
+div.Reviews_ReviewText{padding-top:5px;}
+div.Reviews_Pros{padding-top:5px;}
+div.Reviews_Cons{padding-top:5px;}
+span.Reviews_FieldHead{font-weight:bold;}
+table.Reviews_NestedTable{width:100%; table-layout:fixed; text-align:left; margin-top:3px;}
+td.Reviews_NestedDate{color:#999999; padding-top:3px; font-size:10px; width:50%; vertical-align:top;}
+td.Reviews_NestedRecommend{width:25%; vertical-align:top;}
+td.Reviews_NestedReport{width:25%; vertical-align:top;}
+div.Reviews_AddHeading{border-top:2px solid #cccccc; padding:5px 0px 5px 0px; font-weight:bold; font-size:14px;}
+div.Reviews_AddTextarea{padding-top:5px;}
+div.Reviews_Submit{padding:5px 0px 5px 0px;}
+div.Reviews_Page{font-size:14px; padding:0 0 7px 0;}
+div.Reviews_Page a{font-size:14px; padding:0 2px 0 2px;}
+
+/*********************Recommend*******************/
+div.Recommend_Container{font-size:11px; display:inline;}
+div.Recommend_Container a{color:#000000;}
+div.Recommend_Container img{margin-bottom:-3px;}
+
+/*********************Ratings*******************/
+div.Ratings_Container{font-size:12px; padding-top:5px;}
+div.Ratings_YourRating{font-size:12px; padding-top:5px;}
+span.Ratings_Heading{font-weight:bold;}
+
+/******************Discovery Widgets*******************/
+/**** Shared Elements ****/
+div.Summary_Container{font-size:11px; font-family:Verdana; text-align:left;}
+	div.Summary_Container a{color:#000000;}
+div.Summary_Container table *{font-size:11px; font-family:Verdana;}
+	div.Summary_Container table a{color:#000000;}
+
+/***************** Profile Summary ******************/
+table.Summary_ProfileTable{}
+tr.Summary_ProfileAltTRColor{background-color:#f6f6f6;}
+td.Summary_ProfileTableLeft{padding:5px 0px 5px 5px; vertical-align:top;}
+	td.Summary_ProfileTableLeft img{border:1px solid #000000;}
+td.Summary_ProfileTableRight{width:100%; padding:5px 0px 5px 5px;  vertical-align:top;}
+div.Summary_ProfileName{padding:5px 0px 0px 0px;}
+	div.Summary_ProfileName a{font-size:12px; font-weight:bold;}
+div.Summary_ProfileTime{padding-top:3px;}
+
+/******** Article Summary ******/
+.Summary_ArticleAltColor{background-color:#f6f6f6;}
+div.Summary_ArticleTitle{padding:5px;}
+	div.Summary_ArticleTitle a{font-size:12px; font-weight:bold;}
+
+/******** Blog Summary ******/
+table.Summary_BlogTable{width:100%;}
+tr.Summary_BlogAltTRColor{background-color:#f6f6f6;}
+td.Summary_BlogTableLeft{padding:5px 0px 5px 5px; vertical-align:top;}
+	td.Summary_BlogTableLeft img{border:1px solid #000000;}
+td.Summary_BlogTableRight{width:100%; padding:5px 0px 5px 5px;  vertical-align:top;}
+div.Summary_BlogTitle{}
+	div.Summary_BlogTitle a{font-size:12px; font-weight:bold;}
+div.Summary_BlogBy{padding-top:3px;}
+div.Summary_BlogTime{padding-top:3px;}
+
+/******** Forums Summary ******/
+.Summary_ForumsAltColor{background-color:#f6f6f6;}
+div.Summary_ForumsContainer{padding:5px 0px 5px 5px;}
+div.Summary_ForumsTitle{}
+	div.Summary_ForumsTitle a{font-size:12px; font-weight:bold;}
+div.Summary_ForumsIn{padding-top:3px;}
+
+/******** Gallery Summary ******/
+table.Summary_GalleryTable{width:100%; }
+tr.Summary_GalleryAltTRColor{background-color:#f6f6f6;}
+td.Summary_GalleryTableLeft{padding:5px 0px 5px 5px; vertical-align:top;}
+	td.Summary_GalleryTableLeft img{border:1px solid #000000;}
+td.Summary_GalleryTableRight{width:100%; padding:5px 0px 5px 5px;  vertical-align:top;}
+	td.Summary_GalleryTableRight a{font-size:12px; font-weight:bold;}
+
+/******** Photo Summary ******/
+table.Summary_PhotoTable{width:100%; }
+tr.Summary_PhotoAltTRColor{background-color:#f6f6f6;}
+td.Summary_PhotoTableLeft{padding:5px 0px 5px 5px; vertical-align:top;}
+	td.Summary_PhotoTableLeft img{border:1px solid #000000;}
+td.Summary_PhotoTableRight{width:100%; padding:5px 0px 5px 5px;  vertical-align:top;}
+div.Summary_PhotoTitle{font-size:12px;}
+	div.Summary_PhotoTitle a{font-size:12px; font-weight:bold;}
+div.Summary_PhotoIn{padding-top:3px;}
+div.Summary_PhotoBy{padding-top:3px;}
+
+/******************************************Email Form**************************************/
+div.Sitelife_SendMailContainer{padding:10px; color:#000000; font-family:Verdana; font-size:11px; text-align:left;}
+	div.Sitelife_SendMailContainer textarea{margin-top:10px; width:80%;height:100px;}
+div.Sitelife_SendMailHeading{font-size:16px; font-weight:bold;}
+div.Sitelife_SendMailSubject{background-color:#f3f3f3; padding:5px; margin-top:10px;}
+	div.Sitelife_SendMailSubject a{color:#000000; font-weight:bold;}
+div.Sitelife_SendMailSection{padding:10px 0px 10px 0px; border-top:1px Dotted #cccccc;}
+div.Sitelife_SendMailSectionHeading{font-size:12px; font-weight:bold; color:#CC6633;}
+div.Sitelife_SendMailContent{padding-top:10px;}
+	div.Sitelife_SendMailContent input{width:80%; margin-bottom:3px;}
+div.Sitelife_SendMailCheck{padding-top:10px;}
+div.Sitelife_SendMailButton{padding-top:10px;}
+
+/***Email Sent Page**/
+div.Sitelife_SendMailConfirmation{text-align:center; padding: 20px; font-family:Verdana; font-size:11px;}
+div.Sitelife_SendMailConfirmation input{margin-top:10px;}
+
+/***Tag Auto Complete Popup**/
+div.tagscontainer {position:relative;bottom:4px;right:4px;border:1px solid #404040;background:#fff;font-size:85%;overflow:hidden;display:none;}
+div.tagscontainer ul {position:relative;width:100%;padding:5px 0;list-style:none;}
+div.tagscontainer li {padding:0 5px;cursor:default;white-space:nowrap;display:list-item;}
+div.tagscontainer li.highlight {background:#ff0;}
+div.tagsshadow {width:300px;margin:.3em;z-index:5;background:#a0a0a0;} 
+
+/*********ID's for turning sections off************/
+div#Personas_UserGalleryList{}/*use to turn off User Galleries - display:none;*/
+
+/* Multi-Author Blogs - This class is placed on a wrapping div for all multi-author blog pages.  To style the pages differently from personas,
+copy out any used style in personas and place the multi container class infront of the styel
+example:
+
+div.MultiBlog_Container div.BloggerProfile_Container{}
+div.MultiBlog_Container table.BloggerProfile_Table{}
+
+*/
+div.MultiBlog_Container{}
+
+span.DebugStrings{ border: solid 2px green;}
+/*  Globals  */
+div.Forums_MainContainer{font-family:Verdana; font-size:11px; width:100%; margin:auto; text-align:left;}
+	div.Forums_MainContainer a{color:#000000;}
+	div.Forums_MainContainer a.DiscussionList_NewContent{font-weight:bold; color:Green }
+	div.Forums_MainContainer img{border:0px;}
+	div.Forums_MainContainer table {font-size:11px; }
+div.Forums_LoginStatus{text-align:right; padding-top:7px;}
+
+tr.ForumsTable_HeadTR{font-size:10px; font-weight:bold; background-color:#C7D4E9;}/* top of table */
+
+/* Buttons*/
+div.ForumMain_CategoriesLink{padding:10px 0px 0px 0px; height:30px;}
+	div.ForumMain_CategoriesLink a{background-image:url(/ver1.0/Content/images/forums/viewAllCategories.jpg); background-position:top; background-repeat:no-repeat; height:30px; width:165px; float:left;}
+a.Forums_AddPost{background-image:url(/ver1.0/Content/images/forums/addNewPost.jpg); background-position:top; background-repeat:no-repeat; height:30px; width:134px; float:left; }
+a.Forums_StartDiscussion{background-image:url(/ver1.0/Content/images/forums/newDiscussion.jpg); background-position:top; background-repeat:no-repeat; height:30px; width:180px; float:left; margin-right:10px;}
+a.Forums_RegisterToJoinForums{background-image:url(/ver1.0/Content/images/forums/register_join_forums.gif); background-position:top; background-repeat:no-repeat; height:30px; width:205px; float:left; margin-right:10px;}
+/* Buttons on Member Forums */
+a.Forums_ViewGroupForum{background-image:url(/ver1.0/Content/images/forums/view_group_forum.gif); background-position:top; background-repeat:no-repeat; height:30px; width:165px; float:right; margin-left:10px;}
+a.Forums_JoinGroup{background-image:url(/ver1.0/Content/images/forums/join_group.gif); background-position:top; background-repeat:no-repeat; height:30px; width:98px; float:right; margin-right:10px;}
+a.Discussions_JoinGroup{background-image:url(/ver1.0/Content/images/forums/join_group.gif); background-position:top; background-repeat:no-repeat; height:30px; width:98px; float:left; margin-right:10px;}
+a.Forums_LeaveGroup{background-image:url(/ver1.0/Content/images/forums/leave_group.gif); background-position:top; background-repeat:no-repeat; height:29px; width:98px; float:right; margin-left:10px;}
+a.Forums_ViewGroupMembers{background-image:url(/ver1.0/Content/images/forums/view_group_members.gif); background-position:top; background-repeat:no-repeat; height:29px; width:157px; float:right; margin-left:10px;}
+a.Forums_InviteUserToGroup{background-image:url(/ver1.0/Content/images/forums/invite_user_to_group.gif); background-position:top; background-repeat:no-repeat; height:29px; width:159px; float:right; margin-left:10px;}
+a.Forums_RSS{background:url(/ver1.0/Content/images/icons/feedIcon.gif); background-position:left; background-repeat:no-repeat; width:20px; float:left;padding-left: 20px;margin-top: 12px;margin-left: 10px;}
+
+/* Alternating table row colors */
+tr.ForumsTable_TRcolor{background-color:#ECF1FA;}/* Regular background color */
+tr.ForumsTable_TRcolor-bozo{display: none;}
+tr.ForumsTable_AltTRcolor{background-color:#DEE7F7;}/* Alt background color */
+tr.ForumsTable_AltTRcolor-bozo{display: none;}
+tr.ForumsTable_UserTRcolor{background-color:#FDFBEF;}/* User-owned background color */
+tr.ForumsTable_UserTRcolor-bozo{display: none;}
+
+/* WelcomeSearchTable */
+table.Forums_WelcomeSearchTable{width:100%; table-layout:fixed;  }/* Three column table contains welcome and search box*/
+td.Forums_WelcomeSearchTableWelcome{width:100%; vertical-align:middle; height:46px; padding:0px 0px 0px 10px; font-size:14px; font-weight:bold; border-right:1px solid #ffffff; background-color:#ECF1FA; }/* Welcome */
+td.Forums_WelcomeSearchTableField{width:300px; vertical-align:middle; height:46px; padding:0px 0px 0px 0px; text-align:right; background-color:#E2EAF6;}/* search field */
+td.Forums_WelcomeSearchTableSearch{text-align:center; vertical-align:middle; height:46px; width:100px; padding:0px 0px 0px 0px; background-color:#E2EAF6;}/* SearchButton */
+
+/*  PageTable */
+table.Forums_PageTable{width:100%; table-layout:fixed; margin-top:0px; color:#000000;}
+td.Forums_PageTableData{font-size:10px; font-weight:bold; padding:0px; margin:0px; width:50%; vertical-align:middle; height:30px;}
+div.Forums_Paginator{margin:0px; padding-top:5px; margin-bottom:-2px; text-align:right;}
+	div.Forums_Paginator .bold{margin:0px 2px 0px 2px; padding:4px; border:1px solid #E8EDF4; background-color:#D5DEEA; }
+	div.Forums_Paginator a{margin-right:2px; padding:4px; text-decoration:none; border:1px solid #E8EDF4; background-color:#F0F5FA;}	
+	div.Forums_Paginator a:hover{text-decoration:underline;}
+	div.Forums_Paginator a.Forums_PageTableDataOn{border:1px solid #E8EDF4; background-color:#D5DEEA;}
+td.Forums_PageTableStart{text-align:left; width:40%; padding-top:10px; vertical-align:middle;}
+td.Forums_PageTableEnd{text-align:right; width:60%; padding-top:10px; vertical-align:middle;}
+
+td.Discussions_PageTableStart{text-align:left; width:55%; padding-top:10px; vertical-align:middle;}
+td.Discussions_PageTableEnd{text-align:right; width:45%; padding-top:10px; vertical-align:middle;}
+
+.Forums_TopPaginator{}
+.Forums_BottomPaginator{}
+	
+/* container items */
+div.Forums_BlockContainer{margin-top:7px; clear:both;}
+div.Forums_ContainerHead{height:23px; padding:7px 10px 0px 10px; color:#FFFFFF; font-size:14px; font-weight:bold; background-image:url(/ver1.0/Content/images/forums/groupheadBG.jpg); background-position:top left; background-repeat:repeat-x;}/* ex. entertainment */
+	div.Forums_ContainerHead a{color:#ffffff;}
+div.Forums_HeadFeedContainer{float:right; margin-top:-17px; text-align:right; font-size:10px; font-weight:normal;width:200px;}
+	div.Forums_HeadFeedContainer a{font-size:10px; font-weight:normal; color:#ffffff;}
+div.Forums_PersonaArea {background-color:#C7D4E9;text-align:center;overflow:hidden;}
+table.Forums_PersonaTable {padding:5px;}
+table.Forums_PersonaTable td {padding:5px;}
+table.Forums_PersonaTable td img {display:block;}
+/* closed */
+.Forums_ClosedItem{color:#ffcc00; }
+
+/* Forums - TitleSummary*/
+div.Forums_TitleText{font-size:12px; font-weight:bold;}
+div.Forums_DescriptionText{font-size:12px;}
+
+/* Forums_Breadcrumbs */
+div.Forums_Breadcrumbs{font-weight:bold; font-size:12px; padding-bottom:10px; overflow:hidden;}
+/* block head crumbs */
+.Forums_BaseCrumbArrows{}
+.Forums_BaseCrumbArrows{}
+.Forums_CatCrumb{}
+.Forums_CatCrumbArrows{}
+.Forums_ForumCrumb{}
+.Forums_CurrentPageCrumbArrows{}
+.Forums_CurrentPageCrumb{}
+/* bottom Breadcrumbs */
+div.Forums_BottomBreadcrumbs{font-weight:bold; font-size:12px; padding-top:10px; overflow:hidden;}
+
+/**************************************************************************************/
+
+/* FormsList Top */
+table.ForumList_TitleSearchTable{width:100%; margin-top:7px;}/* two column table contains forums title and search box*/
+td.ForumList_TitleTD{width:25%; vertical-align:bottom; font-size:18px; font-weight:bold;}/* "Forums" title */
+td.ForumList_ForumSearchTD{width:75%; vertical-align:bottom;}/* "Forums" search */
+table.ForumList_SearchTable{border:1px solid #C2D2EB; background-color:#ECF1FA; padding:0px 0px 0px 0px; height:50px; }/* 5 columns for search */
+td.ForumList_SearchTxtTD{text-align:right;  vertical-align:middle; width:120px;} /* "Search for: */
+td.ForumList_SearchFieldTD{text-align:right; vertical-align:middle; width:219px;}/* Text field */
+td.ForumList_SearchTxt2TD{text-align:right; vertical-align:middle; width:20px;}/* "in" */
+td.ForumList_SearchCatagoryTD{text-align:right; vertical-align:middle; width:173px;}/* Dropdown */
+td.ForumList_SearchButtonTD{text-align:center; vertical-align:middle; width:80px;}/* SearchButton */
+
+/* ForumListGroup*/
+div.ForumList_GroupHeading{height:23px; padding:7px 10px 0px 10px; color:#FFFFFF; font-size:14px; font-weight:bold; background-image:url(/ver1.0/Content/images/forums/groupheadBG.jpg); background-position:top left; background-repeat:repeat-x;}/* ex. entertainment */
+	div.ForumList_GroupHeading a{float:right; margin-top:-15px;}
+table.ForumList_GroupTable{width:100%; margin:0px; padding:0px; border:0px; border-top:1px solid #92A4C5; table-layout: fixed; overflow: hidden;}/* 5 column forum table*/
+td.ForumList_GroupTableFolder{width:28px; padding:5px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff; text-align:center;}/* contains folder image */
+td.ForumList_GroupTableName{width:45%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff; overflow:hidden;}/* Forum name and desc*/
+div.ForumList_ForumName{padding-bottom:5px; font-size:12px; font-weight:bold;}/* div for forum name link */
+div.ForumList_ForumDescription{width:100%; overflow:hidden;}
+td.ForumList_GroupTableDiscussions{width:10%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}/* count */
+td.ForumList_GroupTablePosts{width:10%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}/* count */
+td.ForumList_GroupTableLatest{width:35%; overflow:hidden; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff;}/* latest activity */
+td.ForumList_GroupTableLatest a{}
+div.ForumList_GroupTableLatestContent{width:100%; overflow:hidden;} /* table widths in CSS are merely suggestions... wrap content in div to enforce width */
+div.FourumList_GroupPage{text-align:right; padding:10px; font-weight:bold; background-color:#EEF1F7;}/* pagination div */
+	div.FourumList_GroupPage a{font-weight:normal;}
+
+/* DiscussionList Group*/
+table.DiscussionList_ListTable{table-layout:fixed; width:100%; margin:0px; padding:0px; border:0px; border-top:1px solid #92A4C5; border-bottom:12px solid #C7D4E9;}/* 5 column forum table*/
+td.DiscussionList_ListTableImg{width:32px; padding:5px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff; text-align:center;}/* contains folder image */
+td.DiscussionList_ListTableName{width:45%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff; overflow:hidden;}/* Forum name and desc*/
+a.DiscussionList_Sticky{font-weight:bold; color:#A80505;}
+a.DiscussionList_Sticky:visited{color:#A80505;}
+a.DiscussionList_Popular{font-weight:bold; color:#FF6600;}	
+td.DiscussionList_ListTableStarted{width:20%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}/* count */
+td.DiscussionList_ListTablePosts{width:10%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}/* count */
+td.DiscussionList_ListTableLatest{width:20%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff;}/* latest activity */
+
+/* DiscussionList_Moderator */
+td.DiscussionList_Moderator{padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff;}
+a.DiscussionList_ModeratorEdit{padding:1px 5px 3px 20px; background:url(/ver1.0/Content/images/forums/edit.gif) 0 50% no-repeat;}
+a.DiscussionList_ModeratorSticky{padding:1px 5px 3px 20px;  background:url(/ver1.0/Content/images/forums/tack.gif) 0 50% no-repeat;}
+a.DiscussionList_ModeratorClose{padding:1px 5px 3px 20px; background:url(/ver1.0/Content/images/forums/unlocked.gif) 0 50% no-repeat;}
+a.DiscussionList_ModeratorDelete{padding:1px 5px 3px 20px;  background:url(/ver1.0/Content/images/forums/close.gif) 0 50% no-repeat;}
+
+/* DiscussionList_Admin */
+div.DiscussionList_Admin{margin:0px; padding:7px 10px 7px 0px; background-color:#7BAE48;  border-bottom:1px solid #3E7E7B; text-align:right;}
+	div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminView{color:#FFFFFF; padding:3px 7px 3px 20px; background:url(/ver1.0/Content/images/forums/user.gif) 0 50% no-repeat; text-decoration:none;}
+	div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminView:hover{text-decoration:underline;}
+	div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminView:visited{color:#FFFFFF;}
+div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminEdit{color:#FFFFFF; padding:3px 7px 3px 20px; background:url(/ver1.0/Content/images/forums/edit.gif) 0 50% no-repeat; text-decoration:none;}
+	div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminEdit:hover{text-decoration:underline;}
+	div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminEdit:visited{color:#FFFFFF;}
+div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminOpen{color:#FFFFFF; padding:3px 7px 3px 20px; background:url(/ver1.0/Content/images/forums/unlocked.gif) 0 50% no-repeat; text-decoration:none;}
+	div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminOpen:hover{text-decoration:underline;}
+	div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminOpen:visited{color:#FFFFFF;}
+div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminDelete{color:#FFFFFF; padding:3px 7px 3px 20px; background:url(/ver1.0/Content/images/forums/close.gif) 0 50% no-repeat; text-decoration:none;}
+	div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminDelete:hover{text-decoration:underline;}
+	div.Forums_BlockContainer div.DiscussionList_Admin a.DiscussionList_AdminDelete:visited{color:#FFFFFF;}
+
+/* Discussion admin */
+div.Discussion_Admin{padding:7px 10px 7px 0px; background-color:#7BAE48; border-bottom:1px solid #3E7E7B; text-align:right;}
+div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminSticky{color:#FFFFFF; padding:3px 7px 3px 20px; background:url(/ver1.0/Content/images/forums/tack.gif) 0 50% no-repeat; text-decoration:none;}
+	div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminSticky:hover{text-decoration:underline;}
+	div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminSticky:visited{color:#FFFFFF;}
+div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminEdit{color:#FFFFFF; padding:3px 7px 3px 20px; background:url(/ver1.0/Content/images/forums/edit.gif) 0 50% no-repeat; text-decoration:none;}
+	div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminEdit:hover{text-decoration:underline;}
+	div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminEdit:visited{color:#FFFFFF;}
+div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminOpen{color:#FFFFFF; padding:3px 7px 3px 20px; background:url(/ver1.0/Content/images/forums/unlocked.gif) 0 50% no-repeat; text-decoration:none;}
+	div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminOpen:hover{text-decoration:underline;}
+	div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminOpen:visited{color:#FFFFFF;}
+div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminDelete{color:#FFFFFF; padding:3px 7px 3px 20px; background:url(/ver1.0/Content/images/forums/close.gif) 0 50% no-repeat; text-decoration:none;}
+	div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminDelete:hover{text-decoration:underline;}
+	div.Forums_BlockContainer div.Discussion_Admin a.Discussion_AdminDelete:visited{color:#FFFFFF;}
+
+/* Discussion post */
+div.Discussion_VisibilityContainer{}
+div.Discussion_VisibilityContainer-bozo{display: none;}
+div.Discussion_PostContainer{background-color:#ECF1FA; border-bottom:1px solid #ffffff; }/* First background color */
+div.Discussion_AltPostContainer{background-color:#DEE7F7; border-bottom:1px solid #ffffff; }/* Alternating background color */
+div.Discussion_UserPostContainer{background-color:#FDFBEF; border-bottom:1px solid #ffffff; }/* User's background color */
+div.Discussion_ModeratorPostContainer{background-color:#FDFBFF; border-bottom:1px solid #ffffff; }/* Moderator Staff background color */
+	table.Discussion_PostTitleTable{width:100%; table-layout:fixed; margin:0px; padding:0px;}
+	td.Discussion_PostTitleTableIcon{width:32px; vertical-align:top; padding:0px 5px 0px 5px;}
+	td.Discussion_PostTitleTableTitle{font-size:12px; font-weight:bold; vertical-align:top; padding-top:3px; overflow:hidden;}
+	div.Discussion_PostTitleTablePosted{font-size:9px; font-weight:normal; color:#666666;}
+	div.Discussion_PostQuote{border:inset 1px white; padding:5px; margin:3px 0 0 0;}
+	table.Discussion_PostTable{width:100%; table-layout:fixed; border-top:1px solid #ffffff; padding:0px;}
+	td.Discussion_PostTableUser{width:147px; vertical-align:top; padding-top:7px; border-right:1px solid #ffffff; text-align:center; overflow:hidden;}
+	div.Forums_Moderator{padding-bottom:5px; color:#0000ff; font-weight:bold;}
+	div.Discussion_UserName{font-size:12px; font-weight:bold; padding-top:5px;}
+	div.Discussion_UserInfo{padding:5px; font-size:9px;}
+	td.Discussion_PostTablePost{vertical-align:top; padding:7px 10px 7px 10px; overflow:hidden;}
+	td.Discussion_PostTablePost img{display:block; padding:7px;}
+	div.Discussion_UserSignature{padding-top:15px;}
+	/*new options div*/
+	div.Discussion_PostOptions{padding:5px; border-top:1px solid #FFFFFF; line-height:20px;}
+	a.Discussion_PostNew{padding:3px 5px 3px 20px; background:url(/ver1.0/Content/images/forums/newPost.gif) left no-repeat;}
+	a.Discussion_PostReply{padding:3px 5px 3px 20px; background:url(/ver1.0/Content/images/forums/reply.gif) left no-repeat;}
+	a.Discussion_PostEdit{padding:3px 5px 3px 20px; background:url(/ver1.0/Content/images/forums/edit.gif) left no-repeat;}
+	a.Discussion_PostContact{padding:3px 5px 3px 20px; background:url(/ver1.0/Content/images/forums/contact.gif) left no-repeat;}
+	a.Discussion_PostBlock{padding:3px 5px 3px 20px; background:url(/ver1.0/Content/images/forums/blockUser.gif) left no-repeat;}
+	a.Discussion_PostDelete{padding:3px 5px 3px 20px; background:url(/ver1.0/Content/images/forums/deletePost.gif) left no-repeat;}
+
+Div.QuickPost_Container{background-color:#E2EAF6; margin-top:7px; padding-bottom:10px;}
+Div.QuickPost_Field{padding:10px 0px 0px 20px; width:400px; font-size:12px; font-weight:bold;}
+
+/* Create Discussion */
+iframe.CreateItem_Iframe{width:100%;height:460px;}
+table.CreateItem_Table{width:100%; font-family:verdana; table-layout:fixed; margin:0px; padding:0px; border-top:1px solid #B7C5DF; background-color:#E2EAF6;}
+tr.CreateItem_TableHeadingTR{height:25px; vertical-align:bottom;}
+td.CreateItem_TableForm{padding-left:20px; width:60%; font-weight:bold; font-size:12px;}
+input.CreateItem_TableFormInput{width:95%;}
+textarea.CreateItem_TableFormTextarea{width:95%; height:200px;}
+textarea.CreateItem_TableFormTextarea img{border:0px;}
+td.CreateItem_TableText{vertical-align:top; width:40%; font-size:10px; padding-left:5px; color:#666666;}
+	div.CreateItem_MarkAsQuestion{}/* use display:none; here to make the question option go away*/
+.CreateItem_FieldCaption{font-weight:bold; font-size:12px;}
+.CreateItem_Required{color:#ff0000;}
+div.CreateItem_Header{font-size:16px; font-weight:bold; padding-top:10px;}
+div.CreateItem_Buttons{text-align:center; padding:10px;}
+table.CreateItem_DetailsTable{width:100%; table-layout:fixed; margin-top:5px;}
+td.CreateItem_DetailsTableHead{height:25px; width:68px; }
+td.CreateItem_DetailsTableData{height:25px; font-weight:normal; width:100%; padding-left:5px; }
+
+/* forumMain */
+
+/* ForumMainGroup*/
+	table.ForumMain_ListTable{width:100%; margin:0px; padding:0px; border:0px; border-top:1px solid #92A4C5;}/* 5 column forum table*/
+	td.ForumsTable_EmptySet{text-align:center; padding:10px;}/* Displays message stating no participation */
+	/* my discussions*/
+	td.ForumMain_MyTableImg{width:32px; padding:5px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff; text-align:center;}/* contains folder image */
+	td.ForumMain_MyTableDiscussion{width:30%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}/* Forum name and desc*/
+	td.ForumMain_MyTableCategory{width:20%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff; border-right:1px solid #ffffff; }
+	td.ForumMain_MyTableForum{width:20%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff; border-right:1px solid #ffffff; }
+	td.ForumMain_MyTablePosts{width:8%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}/* count */
+	td.ForumMain_MyTableLatest{width:22%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff;}/* latest activity */
+	/* most popular */
+	td.ForumMain_PopularTableImg{width:32px; padding:5px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff; text-align:center;}/* contains folder image */
+	td.ForumMain_PopularTableDiscussion{width:30%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}/* Forum name and desc*/
+	td.ForumMain_PopularTableCategory{width:20%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff; border-right:1px solid #ffffff; }
+	td.ForumMain_PopularTableForum{width:20%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff; border-right:1px solid #ffffff; }
+	td.ForumMain_PopularTablePosts{width:8%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}/* count */
+	td.ForumMain_PopularTableLatest{width:22%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff;}/* latest activity */
+	/* Most Recent */
+	td.ForumMain_RecentTableImg{width:32px; padding:5px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff; text-align:center;}/* contains folder image */
+	td.ForumMain_RecentTableTitle{width:30%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}
+	td.ForumMain_RecentTableDiscussion{width:25%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}/* Forum name and desc*/
+	td.ForumMain_RecentTableForum{width:25%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff; border-right:1px solid #ffffff; }
+	td.ForumMain_RecentTablePosted{width:20%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff;}
+	
+	/* forum main pagination */
+	div.FourumMain_MyPage{text-align:right; padding:10px; font-weight:bold; background-color:#F3F4EE;}/* pagination div */
+		div.FourumMain_MyPage a{font-weight:normal;}
+	div.FourumMain_Page{text-align:right; padding:10px; font-weight:bold; background-color:#EEF1F7;}/* pagination div */
+		div.FourumMain_Page a{font-weight:normal;}
+
+/* Search Results */
+td.ForumMain_SearchTableImg{width:32px; padding:5px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff; text-align:center;}/* contains folder image */
+td.ForumMain_SearchTableTitle{width:30%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}
+td.ForumMain_SearchTableDiscussion{width:25%; padding:5px 5px 5px 10px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}/* Forum name and desc*/
+td.ForumMain_SearchTableForum{width:25%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff; border-right:1px solid #ffffff; }
+td.ForumMain_SearchTablePosted{width:20%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff;}
+
+/* Edit Profile - for deployments without personas */
+div.Forums_EditProfileConfirmation{text-align:center; width:400px; padding:10px; font-weight:bold;}
+td.Forums_EditProfileFieldName{text-align:right; font-weight:bold;width:100px; padding-top:10px;}
+td.Forums_EditProfileField{width:200px; padding-left:10px; padding-top:10px;}
+td.Forums_EditProfileCaption{text-align:left; padding-left:10px; padding-top:10px;}
+
+/***Photo View***/
+div.Forums_PhotoContainer{background-color:#E2EAF6; padding:20px; text-align:center;}
+div.Forums_PhotoContainer img{padding-bottom:10px;}
+
+/*****PhotoUpload*****/
+div.Forums_PhotoUpload{padding:10px 10px 10px 10px; font-family:Verdana; font-size:11px;}
+	div.Forums_PhotoUpload input{}
+div.Forums_PhotoUploadError{padding:0px 10px 10px 10px; font-weight:bold; color:#ff0000;}
+
+/***********HIDDEN DIVS*******************/
+div.Forums_HiddenCatTopClass{display:none;}
+div.Forums_HiddenPageTopClass{display:none;}
+
+
+/******************************* Member Forums CSS ******************************/
+/* Buttons for the Member forums are listed under the buttons section near the top of this CSS file*/
+
+/* Member Forum Proprietary Classes - for elements that only exist for member forums */
+/* Recently Active Members */
+div.Forums_RecentGroupActivityContianer{padding:10px; background-color:#E2EAF6 }
+div.Forums_RecentGroupActivityBy{float:left; text-align:center; padding:10px; height:90px; width:70px; overflow:hidden;}
+div.Forums_RecentGroupActivityBy img{padding-bottom: 5px;}
+/* Group membership list */
+table.Forums_GroupMemberList_Table{table-layout:fixed; width:100%; margin:0px; padding:0px; border:0px; border-top:1px solid #92A4C5; border-bottom:12px solid #C7D4E9;}
+td.Forums_GroupMemberList_ListTableName{width:40%; padding:5px 5px 5px 10px; vertical-align:middle; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}
+	td.Forums_GroupMemberList_ListTableName table{table-layout:fixed; width:100%;}
+	td.Forums_GroupMemberList_ListTableName_Thumb{width:60px;}
+	td.Forums_GroupMemberList_ListTableName_User{width:100%; padding-left:5px; overflow:hidden;}
+td.Forums_GroupMemberList_ListTablePosts{width:45px; text-align:center; padding:5px 5px 5px 5px; vertical-align:top; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff;}
+td.Forums_GroupMemberList_ListTableLatest{width:60%; padding:5px 5px 5px 10px; vertical-align:top; border-bottom:1px solid #ffffff; overflow:hidden;}
+/* Group confirm join/leave */
+div.Groups_MessageContainer{width:50%;vertical-align:middle;margin-left:auto;margin-right:auto;padding-top:50px;text-align:center;}
+div.Groups_ConfirmMessage{padding:10px;font-weight:bold;}
+a.Groups_GoBackLink{margin:10px;}
+/* Group invite user */
+div.Groups_InviteUserContainer{width:400px;vertical-align:middle;margin-left:auto;margin-right:auto;padding-top:50px;}
+iframe.Forums_GroupsInviteUser_Iframe{}
+table.Groups_InviteUserTable{width:100%; table-layout:fixed;}
+tr.Groups_InviteUserTR{text-align:left;}
+td.Groups_InviteUserLabelTD{width:30%; text-align:right; font-weight:bold; width:120px;}
+td.Groups_InviteUserInputTD{width:70%;}
+input.Groups_InviteUserInput{width:100%;}
+
+div.Group_InviteUserError{margin:auto; border:1px solid #c00; background-color:#FFFAC0; color:#c00;width:80%; text-align:center; vertical-align:middle; font-weight:bold; padding:10px;}
+/* Member Forum inherited Classes - By redefining the classes above for common forum elements with a div.Forum_GroupWrapper, 
+	you are able to give member forums a different appearance. A sample of this code is below.*/
+/* 
+div.Forums_GroupWrapper div.Forums_ContainerHead{height:23px; padding:7px 10px 0px 10px; color:#FFFFFF; font-size:14px; font-weight:bold; background-image:url(/ver1.0/Content/images/forums/groupMemHeadBG.jpg); background-position:top left; background-repeat:repeat-x;} 
+*/
+div.Forums_GroupWrapper{}
+
+
+/********************************** Blog Announcement CSS **********************************/
+#Forums_BlogPostAuthorAvatar { border: solid 1px black; margin: 1px 1px 1px 1px; padding: 1px 1px 1px 1px; }
+span.Forums_BlogPostAuthor { display: block; color: #922222; font-weight: bold; margin-bottom: 10px; }
+span.Forums_BlogPostAuthorFullName { display: none; color: #922222; font-weight: bold; }
+span.Forums_BlogPostTitle { font-size: 11px; color: #0a4594; font-weight: bold; }
+span.Forums_BlogPostDate { color: #0a4594; }
+span.Forums_BlogPostAbstract { display: block; }
+
+
+

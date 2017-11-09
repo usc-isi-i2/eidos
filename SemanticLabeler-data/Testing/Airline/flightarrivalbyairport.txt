@@ -1,0 +1,962 @@
+Montego Bay	Northwest	1859	05:00 PM	inFlight	July 14 2005
+St. Louis MO	Trans States Airlines	5468	03:26 PM	landed	July 14 2005
+Atlanta GA	Delta	1277	03:44 PM	inFlight	July 14 2005
+Cincinnati	Comair	861	03:01 PM	landed	July 14 2005
+Detroit MI	Northwest	285	03:54 PM	inFlight	July 14 2005
+Dallas/Fort Worth	American	1534	03:59 PM	inFlight	July 14 2005
+Cleveland OH	Continental Express	2015	04:03 PM	inFlight	July 14 2005
+Cancun	Northwest	1969	04:31 PM	scheduled1	July 14 2005
+Cincinnati	Atlantic Southeast Airlines	237	04:34 PM	scheduled1	July 14 2005
+Chicago IL (O'Hare)	Mesa	7175	04:39 PM	inFlight	July 14 2005
+San Antonio TX	Northwest	1862	04:43 PM	inFlight	July 14 2005
+Orlando FL	Northwest	953	04:48 PM	inFlight	July 14 2005
+Amsterdam (Schiphol)	Northwest	57	04:53 PM	inFlight	July 14 2005
+New Orleans LA	Northwest	352	04:56 PM	scheduled1	July 14 2005
+Charlotte NC	Mesa	2604	04:58 PM	scheduled1	July 14 2005
+Fort Myers FL	LTU	900	04:34 PM	inFlight	July 14 2005
+Raleigh NC	American	2239	04:38 PM	inFlight	July 14 2005
+Paris Charles-de-Gaulle	American	63	04:40 PM	inFlight	July 14 2005
+Atlanta GA	American	531	04:41 PM	inFlight	July 14 2005
+Atlanta GA	Delta	913	04:42 PM	inFlight	July 14 2005
+Denver	United	458	04:43 PM	inFlight	July 14 2005
+San Pedro Sula	Taca Int l Airlines	390	04:45 PM	scheduled1	July 14 2005
+Tallahassee FL	Tallahassee	FL	04:46 PM	inFlight	July 14 2005
+Los Angeles CA	American	280	04:48 PM	inFlight	July 14 2005
+Houston	Continental	1790	04:51 PM	inFlight	July 14 2005
+Cancun	Mexicana	309	04:54 PM	inFlight	July 14 2005
+New Orleans LA	American	1510	04:56 PM	inFlight	July 14 2005
+Dallas/Fort Worth	American	1899	04:58 PM	inFlight	July 14 2005
+Tampa FL	American	308	05:01 PM	inFlight	July 14 2005
+Orlando FL	American	795	05:06 PM	scheduled1	July 14 2005
+"San Juan, Puerto Rico"	American	1236	05:07 PM	inFlight	July 14 2005
+Washington DC (Reagan National)	American	985	05:09 PM	inFlight	July 14 2005
+New York (JFK)	American	933	05:11 PM	inFlight	July 14 2005
+London Heathrow	British Airways	209	05:12 PM	inFlight	July 14 2005
+Jacksonville FL	American Eagle	960	05:13 PM	inFlight	July 14 2005
+Panama City	GTI	48	05:15 PM	inFlight	July 14 2005
+Barranquilla (E Cortissoz)	Avianca	2	05:16 PM	scheduled1	July 14 2005
+Baltimore MD	American	2169	05:17 PM	inFlight	July 14 2005
+New York (La Guardia)	American	1567	05:20 PM	inFlight	July 14 2005
+Cleveland OH	American Eagle	375	05:20 PM	inFlight	July 14 2005
+London Heathrow	British Airways	207	05:21 PM	landed	July 14 2005
+Nashville TN	American Eagle	335	05:21 PM	inFlight	July 14 2005
+Panama City	American	2132	05:27 PM	inFlight	July 14 2005
+Key West FL	Airline#92	FL	05:29 PM	scheduled1	July 14 2005
+Port au Prince	American	1908	05:29 PM	inFlight	July 14 2005
+Nassau Intl	American Eagle	992	05:34 PM	scheduled1	July 14 2005
+Guayaquil	Martinair	74	05:43 PM	sched4	July 14 2005
+Washington DC (Reagan National)	American	985	05:09 PM	inFlight	July 14 2005
+New York (JFK)	American	933	05:11 PM	inFlight	July 14 2005
+London Heathrow	British Airways	209	05:12 PM	inFlight	July 14 2005
+Jacksonville FL	American Eagle	960	05:13 PM	inFlight	July 14 2005
+Panama City	GTI	48	05:15 PM	inFlight	July 14 2005
+Barranquilla (E Cortissoz)	Avianca	2	05:16 PM	scheduled1	July 14 2005
+Baltimore MD	American	2169	05:17 PM	inFlight	July 14 2005
+New York (La Guardia)	American	1567	05:20 PM	inFlight	July 14 2005
+Cleveland OH	American Eagle	375	05:20 PM	inFlight	July 14 2005
+London Heathrow	British Airways	207	05:21 PM	landed	July 14 2005
+Nashville TN	American Eagle	335	05:21 PM	inFlight	July 14 2005
+Panama City	American	2132	05:27 PM	inFlight	July 14 2005
+Key West FL	Airline#99	FL	05:29 PM	scheduled1	July 14 2005
+Port au Prince	American	1908	05:29 PM	inFlight	July 14 2005
+Nassau Intl	American Eagle	992	05:34 PM	scheduled1	July 14 2005
+Guayaquil	Martinair	74	05:43 PM	sched4	July 14 2005
+San Salvador	American	926	05:43 PM	inFlight	July 14 2005
+San Salvador	Skippers Aviation	644	05:45 PM	scheduled1	July 14 2005
+Kingston	American	628	05:45 PM	scheduled1	July 14 2005
+Tegucigalpa	American	954	05:46 PM	scheduled1	July 14 2005
+Curacao (Aeropuerto Hato)	American	1880	05:48 PM	inFlight	July 14 2005
+Bogota (Eldorado)	Avianca	6	05:49 PM	scheduled1	July 14 2005
+Saint Maarten	American	2160	05:52 PM	inFlight	July 14 2005
+Puerto Plata	American	978	05:53 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	American	1556	05:54 PM	inFlight	July 14 2005
+Bogota (Eldorado)	American	916	06:00 PM	inFlight	July 14 2005
+Managua	Taca Int l Airlines	360	04:02 PM	scheduled1	July 14 2005
+Paris Charles-de-Gaulle	American	63	04:06 PM	scheduled1	July 14 2005
+Cancun	American	2186	04:09 PM	landed	July 14 2005
+San Jose	LACSA Costarricenses	626	04:10 PM	sched4	July 14 2005
+Aruba (Reina Beatrix)	American	1780	04:10 PM	landed	July 14 2005
+Mexico City	Aeromexico	454	04:11 PM	landed	July 14 2005
+San Jose	Ord Air Charter	124	04:12 PM	inFlight	July 14 2005
+Buenos Aires	Ord Air Charter	772	04:13 PM	landed	July 14 2005
+Cincinnati	Comair	304	04:15 PM	landed	July 14 2005
+Amsterdam (Schiphol)	Martinair	6712	04:16 PM	scheduled1	July 14 2005
+Grand Cayman	American	1018	04:16 PM	landed	July 14 2005
+Santo Domingo	American	882	04:17 PM	landed	July 14 2005
+San Jose	American	988	04:22 PM	landed	July 14 2005
+Belize City	American	2172	04:25 PM	landed	July 14 2005
+George Town (Exuma International)	American Eagle	952	04:30 PM	landed	July 14 2005
+Chicago IL (O'Hare)	American	1342	04:34 PM	inFlight	July 14 2005
+Houston	Continental Express	3238	03:47 PM	inFlight	July 14 2005
+Pellston MI	Executive Jet Aviation	383	03:18 PM	inFlight	July 14 2005
+Carlsbad CA	Skywest	6044	01:25 PM	inFlight	July 14 2005
+San Salvador	Taca Int l Airlines	530	01:32 PM	inFlight	July 14 2005
+Chicago IL (Midway)	Southwest	2197	01:34 PM	inFlight	July 14 2005
+San Jose CA	American Eagle	148	01:34 PM	inFlight	July 14 2005
+Baltimore MD	Southwest	71	01:36 PM	inFlight	July 14 2005
+Denver	Frontier	417	01:36 PM	inFlight	July 14 2005
+Oakland CA	Skywest	6515	01:36 PM	inFlight	July 14 2005
+San Diego CA	Skywest	6096	01:38 PM	inFlight	July 14 2005
+Nashville TN	Southwest	1112	01:39 PM	inFlight	July 14 2005
+Monterey CA	American Eagle	28	01:40 PM	inFlight	July 14 2005
+Washington DC (Dulles)	American	143	01:45 PM	inFlight	July 14 2005
+Kansas City MO	Midwest Express	100	01:47 PM	inFlight	July 14 2005
+Vancouver BC	Air Canada	552	01:47 PM	inFlight	July 14 2005
+New York (JFK)	American	19	01:51 PM	inFlight	July 14 2005
+San Francisco CA	United	888	01:51 PM	inFlight	July 14 2005
+Detroit MI	Northwest	433	01:55 PM	inFlight	July 14 2005
+Memphis TN	Delta	1903	01:56 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	American	1555	01:58 PM	inFlight	July 14 2005
+Phoenix AZ	Southwest	2357	01:58 PM	inFlight	July 14 2005
+St. Louis MO	American	421	01:58 PM	inFlight	July 14 2005
+Fresno CA	American Eagle	18	01:59 PM	inFlight	July 14 2005
+Oakland CA	Southwest	2226	02:00 PM	scheduled1	July 14 2005
+Salt Lake City UT	Skywest	4018	02:03 PM	inFlight	July 14 2005
+Tokyo Narita	Korean Air	223	02:06 PM	inFlight	July 14 2005
+Amsterdam (Schiphol)	KLM	601	02:06 PM	inFlight	July 14 2005
+San Jose CA	Southwest	593	02:06 PM	inFlight	July 14 2005
+Minneapolis MN	Northwest	585	02:07 PM	inFlight	July 14 2005
+Hong Kong	Cathay Pacific Airways	882	02:08 PM	inFlight	July 14 2005
+Guadalajara	Aeromexico	482	02:09 PM	inFlight	July 14 2005
+Santa Barbara CA	American Eagle	42	02:10 PM	scheduled1	July 14 2005
+Atlanta GA	Delta	242	02:11 PM	inFlight	July 14 2005
+San Jose Cabo	American	338	02:13 PM	inFlight	July 14 2005
+Seattle WA	United	495	02:14 PM	inFlight	July 14 2005
+Cincinnati	Delta	1019	02:17 PM	inFlight	July 14 2005
+Yuma AZ	Skywest	6140	02:17 PM	inFlight	July 14 2005
+San Diego CA	American Eagle	76	02:19 PM	scheduled1	July 14 2005
+Monterrey	Consorcio Aviaxsa	792	02:20 PM	inFlight	July 14 2005
+London Heathrow	United	935	02:22 PM	inFlight	July 14 2005
+New Orleans LA	Southwest	299	02:24 PM	inFlight	July 14 2005
+Calgary AB	Air Canada	570	02:29 PM	inFlight	July 14 2005
+Seoul	Asiana Airlines	204	02:29 PM	inFlight	July 14 2005
+Ontario CA	Skywest	6128	02:29 PM	scheduled1	July 14 2005
+Chicago IL (O'Hare)	United	115	02:29 PM	inFlight	July 14 2005
+Seattle WA	Alaska	568	02:30 PM	inFlight	July 14 2005
+New York (JFK)	United	19	02:30 PM	inFlight	July 14 2005
+Charlotte NC	US Airways	31	02:31 PM	inFlight	July 14 2005
+Munich	Lufthansa	452	02:32 PM	inFlight	July 14 2005
+Phoenix AZ	America West	29	02:33 PM	scheduled1	July 14 2005
+El Paso TX	Southwest	1777	02:34 PM	inFlight	July 14 2005
+Austin TX	American	813	02:34 PM	inFlight	July 14 2005
+Phoenix AZ	America West	706	02:37 PM	scheduled1	July 14 2005
+Monterey CA	Skywest	6091	02:38 PM	scheduled1	July 14 2005
+Apia (Faleolo)	Air New Zealand	26	02:39 PM	scheduled1	July 14 2005
+Sacramento	Southwest	1920	02:39 PM	scheduled1	July 14 2005
+Washington DC (Dulles)	United	193	02:41 PM	inFlight	July 14 2005
+Salt Lake City UT	Atlantic Southeast Airlines	833	02:42 PM	inFlight	July 14 2005
+Guadalajara	Mexicana	920	02:43 PM	inFlight	July 14 2005
+New York (JFK)	Delta	478	02:46 PM	inFlight	July 14 2005
+La Paz	Aero California	146	02:47 PM	inFlight	July 14 2005
+Dallas/Fort Worth	American	2431	02:49 PM	scheduled1	July 14 2005
+Fresno CA	Skywest	6056	02:49 PM	scheduled1	July 14 2005
+London Heathrow	American	137	02:50 PM	inFlight	July 14 2005
+Las Vegas NV	United	1487	02:51 PM	scheduled1	July 14 2005
+San Francisco CA	United	989	02:54 PM	scheduled1	July 14 2005
+New York (JFK)	American	3	02:55 PM	inFlight	July 14 2005
+Phoenix AZ	Skywest	6520	02:55 PM	scheduled1	July 14 2005
+Las Vegas NV	America West	110	02:56 PM	scheduled1	July 14 2005
+Denver	United	231	02:57 PM	inFlight	July 14 2005
+Oakland CA	Southwest	1473	02:58 PM	scheduled1	July 14 2005
+San Francisco CA	American	1923	01:47 PM	inFlight	July 14 2005
+Vancouver BC	Alaska	638	03:00 PM	inFlight	July 14 2005
+Atlanta GA	Delta	541	01:03 PM	landed	July 14 2005
+Paris Charles-de-Gaulle	Air France	62	01:04 PM	landed	July 14 2005
+San Salvador	American	798	01:05 PM	landed	July 14 2005
+San Diego CA	American Eagle	74	01:05 PM	landed	July 14 2005
+San Diego CA	Skywest	6070	01:07 PM	landed	July 14 2005
+Las Vegas NV	Japan Airlines	25	01:08 PM	landed	July 14 2005
+Santa Barbara CA	Skywest	6131	01:10 PM	landed	July 14 2005
+Inyokern CA	Skywest	6084	01:11 PM	landed	July 14 2005
+Chicago IL (O'Hare)	United	107	01:12 PM	landed	July 14 2005
+San Antonio TX	Southwest	341	01:12 PM	landed	July 14 2005
+Las Vegas NV	Southwest	2818	01:47 PM	inFlight	July 14 2005
+Kansas City MO	Southwest	1271	02:58 PM	inFlight	July 14 2005
+Sacramento	Skywest	6524	01:12 PM	landed	July 14 2005
+Fresno CA	American Eagle	102	01:14 PM	landed	July 14 2005
+Houston TX (Hobby)	Southwest	644	01:21 PM	landed	July 14 2005
+London Heathrow	British Airways	279	01:21 PM	landed	July 14 2005
+Philadelphia PA	US Airways	21	01:23 PM	landed	July 14 2005
+Salt Lake City UT	Southwest	2363	01:25 PM	inFlight	July 14 2005
+Houston	Continental	1695	02:38 PM	inFlight	July 14 2005
+Colorado Springs CO	Skywest	6514	02:19 PM	inFlight	July 14 2005
+Mansfield	Executive Jet Aviation	821	04:58 PM	scheduled1	July 14 2005
+Philadelphia PA	US Airways	1085	05:07 PM	scheduled1	July 14 2005
+Houston	Continental	1092	05:25 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	Chicago IL (O'Hare	)	05:25 PM	scheduled1	July 14 2005
+Memphis TN	Northwest Airlink/Express	5727	05:26 PM	inFlight	July 14 2005
+Orlando FL	Orlando	FL	05:29 PM	scheduled1	July 14 2005
+Charleston WV	Executive Jet Aviation	860	05:36 PM	scheduled1	July 14 2005
+New York (La Guardia)	Executive Jet Aviation	934	05:39 PM	scheduled1	July 14 2005
+Teterboro	Executive Jet Aviation	934	05:39 PM	scheduled1	July 14 2005
+Chicago IL (O'Hare)	American Eagle	321	05:40 PM	scheduled1	July 14 2005
+Minneapolis MN	Northwest	1494	05:40 PM	inFlight	July 14 2005
+Orlando FL	Southwest	491	05:54 PM	inFlight	July 14 2005
+Las Vegas NV	Southwest	366	05:56 PM	inFlight	July 14 2005
+Toronto	Air Canada -Jazz	7896	05:57 PM	scheduled1	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	04:05 PM	landed	July 14 2005
+Cincinnati	Delta	956	04:06 PM	landed	July 14 2005
+Washington DC (Reagan National)	Comair	163	04:14 PM	landed	July 14 2005
+Atlanta GA	Delta	668	04:18 PM	landed	July 14 2005
+Phoenix AZ	America West	749	04:19 PM	landed	July 14 2005
+Dallas/Fort Worth	American	1238	04:20 PM	landed	July 14 2005
+Newark	Continental	353	04:21 PM	landed	July 14 2005
+Detroit MI	Northwest	1845	04:21 PM	landed	July 14 2005
+Chicago IL (Midway)	Southwest	1225	04:22 PM	landed	July 14 2005
+Washington DC (Dulles)	Independence Air	1493	04:22 PM	landed	July 14 2005
+Cleveland OH	Continental Express	2025	04:26 PM	inFlight	July 14 2005
+Raleigh NC	American Eagle	711	04:34 PM	inFlight	July 14 2005
+Boston (Logan)	Airline#398	)	04:34 PM	inFlight	July 14 2005
+Terre Haute IN (Hulman Field)	Executive Jet Aviation	918	04:36 PM	scheduled1	July 14 2005
+Phoenix AZ	Southwest	272	04:51 PM	inFlight	July 14 2005
+Milwaukee WI	Skyway	2162	04:57 PM	inFlight	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	04:05 PM	landed	July 14 2005
+Cincinnati	Delta	956	04:06 PM	landed	July 14 2005
+Washington DC (Reagan National)	Comair	163	04:14 PM	landed	July 14 2005
+Atlanta GA	Delta	668	04:18 PM	landed	July 14 2005
+Phoenix AZ	America West	749	04:19 PM	landed	July 14 2005
+Dallas/Fort Worth	American	1238	04:20 PM	landed	July 14 2005
+Baltimore MD	Southwest	905	05:16 PM	scheduled1	July 14 2005
+Detroit MI	Northwest	1845	04:21 PM	landed	July 14 2005
+Chicago IL (Midway)	Southwest	1225	04:22 PM	landed	July 14 2005
+Washington DC (Dulles)	Independence Air	1493	04:22 PM	landed	July 14 2005
+Cleveland OH	Continental Express	2025	04:26 PM	inFlight	July 14 2005
+Raleigh NC	American Eagle	711	04:34 PM	inFlight	July 14 2005
+Boston (Logan)	Airline#405	)	04:34 PM	inFlight	July 14 2005
+Terre Haute IN (Hulman Field)	Executive Jet Aviation	918	04:36 PM	scheduled1	July 14 2005
+Phoenix AZ	Southwest	272	04:51 PM	inFlight	July 14 2005
+Milwaukee WI	Skyway	2162	04:57 PM	inFlight	July 14 2005
+Memphis TN	Northwest	879	04:13 PM	inFlight	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	04:20 PM	inFlight	July 14 2005
+Newark	Continental	621	04:23 PM	inFlight	July 14 2005
+Washington DC (Reagan National)	US Airways	480	04:25 PM	inFlight	July 14 2005
+Milwaukee WI	Skyway	2160	04:43 PM	scheduled1	July 14 2005
+Minneapolis MN	Northwest	502	04:47 PM	scheduled1	July 14 2005
+Memphis TN	Fedex	573	04:49 PM	scheduled1	July 14 2005
+Chicago IL (O'Hare)	United	138	04:50 PM	scheduled1	July 14 2005
+Fort Lauderdale FL	Northwest	637	04:51 PM	inFlight	July 14 2005
+Atlanta GA	AirTran	404	04:54 PM	scheduled1	July 14 2005
+Charlotte NC	Jetstream	2265	04:56 PM	scheduled1	July 14 2005
+Baltimore MD	Southwest	250	04:59 PM	scheduled1	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	03:05 PM	landed	July 14 2005
+Houston	Continental	300	03:09 PM	landed	July 14 2005
+Cleveland OH	Continental Express	3429	03:16 PM	landed	July 14 2005
+Charlotte NC	Jetstream	2260	05:02 PM	inFlight	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	05:34 PM	inFlight	July 14 2005
+Newark	Executive Jet Aviation	351	03:19 PM	landed	July 14 2005
+Las Vegas NV	Northwest	150	03:25 PM	landed	July 14 2005
+St. Louis MO	Trans States Airlines	5426	03:33 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	Chicago IL (O'Hare	)	03:48 PM	scheduled1	July 14 2005
+Dallas/Fort Worth	American	472	03:49 PM	inFlight	July 14 2005
+Philadelphia PA	Northwest Airlink/Express	4797	03:51 PM	inFlight	July 14 2005
+Akron/Canton	CSJ	915	04:03 PM	inFlight	July 14 2005
+Atlanta GA	Delta	543	04:07 PM	inFlight	July 14 2005
+Boston (Logan)	Airline#430	)	04:07 PM	inFlight	July 14 2005
+Washington DC (Dulles)	Independence Air	1591	04:09 PM	inFlight	July 14 2005
+Pittsburgh PA	Pittsburgh	PA	04:10 PM	inFlight	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	03:05 PM	landed	July 14 2005
+Houston	Continental	300	03:09 PM	landed	July 14 2005
+Cleveland OH	Continental Express	3429	03:16 PM	landed	July 14 2005
+Newark	Executive Jet Aviation	351	03:19 PM	landed	July 14 2005
+Las Vegas NV	Northwest	150	03:25 PM	landed	July 14 2005
+St. Louis MO	Trans States Airlines	5426	03:33 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	Chicago IL (O'Hare	)	03:48 PM	scheduled1	July 14 2005
+Dallas/Fort Worth	American	472	03:49 PM	inFlight	July 14 2005
+Philadelphia PA	Northwest Airlink/Express	4797	03:51 PM	inFlight	July 14 2005
+Detroit MI	Northwest	1515	03:51 PM	inFlight	July 14 2005
+Denver	United	1170	04:01 PM	inFlight	July 14 2005
+Akron/Canton	CSJ	915	04:03 PM	inFlight	July 14 2005
+Atlanta GA	Delta	543	04:07 PM	inFlight	July 14 2005
+Boston (Logan)	Airline#459	)	04:07 PM	inFlight	July 14 2005
+Washington DC (Dulles)	Independence Air	1591	04:09 PM	inFlight	July 14 2005
+Pittsburgh PA	Pittsburgh	PA	04:10 PM	inFlight	July 14 2005
+Tampa FL	Tampa	FL	05:17 PM	inFlight	July 14 2005
+Newark	Continental	353	04:21 PM	landed	July 14 2005
+Detroit MI	Northwest	1515	03:51 PM	inFlight	July 14 2005
+Denver	United	1170	04:01 PM	inFlight	July 14 2005
+Columbus MS	Atlantic Southeast Airlines	155	04:10 PM	landed	July 14 2005
+"San Juan, Puerto Rico"	Delta	952	04:12 PM	landed	July 14 2005
+Houston	Continental	1620	04:10 PM	landed	July 14 2005
+Gainesville FL (J R Alison Municipal)	Atlantic Southeast Airlines	110	04:13 PM	landed	July 14 2005
+Hartford CT	Delta	1219	04:14 PM	landed	July 14 2005
+Dayton	Atlantic Southeast Airlines	315	04:16 PM	landed	July 14 2005
+Nashville TN	Delta	493	04:15 PM	landed	July 14 2005
+Birmingham AL	Delta	1674	04:16 PM	landed	July 14 2005
+Baton Rouge LA	Delta	1855	04:16 PM	landed	July 14 2005
+New York (La Guardia)	Delta	1287	04:18 PM	landed	July 14 2005
+Shannon	World Airways	975	04:18 PM	landed	July 14 2005
+Hickory NC	Atlantic Southeast Airlines	758	04:20 PM	landed	July 14 2005
+Fort Lauderdale FL	Delta	1858	04:20 PM	landed	July 14 2005
+Wichita KS	AirTran	684	04:21 PM	landed	July 14 2005
+Omaha NE	Atlantic Southeast Airlines	182	04:21 PM	landed	July 14 2005
+Miami FL	Delta	575	04:23 PM	inFlight	July 14 2005
+Las Vegas NV	Delta	335	04:24 PM	inFlight	July 14 2005
+Sarasota FL	AirTran	522	04:26 PM	landed	July 14 2005
+Minneapolis MN	AirTran	853	04:26 PM	inFlight	July 14 2005
+Salt Lake City UT	Delta	387	04:26 PM	inFlight	July 14 2005
+Columbia SC	Delta	1851	04:26 PM	inFlight	July 14 2005
+Grand Cayman	Delta	906	04:28 PM	inFlight	July 14 2005
+Austin TX	Delta	490	04:29 PM	inFlight	July 14 2005
+Norfolk VA	Delta	1795	04:29 PM	inFlight	July 14 2005
+Charleston WV	Atlantic Southeast Airlines	353	04:30 PM	inFlight	July 14 2005
+Washington DC (Dulles)	Delta	836	04:30 PM	inFlight	July 14 2005
+Milwaukee WI	Midwest Express	107	04:30 PM	inFlight	July 14 2005
+Montgomery AL	Atlantic Southeast Airlines	120	04:30 PM	inFlight	July 14 2005
+Valparaiso FL	Atlantic Southeast Airlines	259	04:31 PM	inFlight	July 14 2005
+Fort Myers FL	Delta	483	04:31 PM	inFlight	July 14 2005
+Minneapolis MN	Northwest	1542	04:32 PM	inFlight	July 14 2005
+Tulsa OK	Delta	650	04:32 PM	inFlight	July 14 2005
+Cincinnati	Delta	1257	04:34 PM	inFlight	July 14 2005
+Dallas/Fort Worth	Delta	1748	04:35 PM	inFlight	July 14 2005
+Roanoke VA	Atlantic Southeast Airlines	513	04:37 PM	inFlight	July 14 2005
+Newark	Delta	1663	04:38 PM	inFlight	July 14 2005
+Jackson MS	Delta	584	04:38 PM	inFlight	July 14 2005
+Savannah GA	Delta	293	04:39 PM	scheduled1	July 14 2005
+Dallas/Fort Worth	AirTran	50	04:40 PM	inFlight	July 14 2005
+Seattle WA	Delta	706	04:40 PM	inFlight	July 14 2005
+Orlando FL	Miami Air	538	04:40 PM	inFlight	July 14 2005
+Nashville TN	OPT	425	04:42 PM	inFlight	July 14 2005
+Philadelphia PA	Delta	301	04:44 PM	inFlight	July 14 2005
+Minneapolis MN	Delta	1186	04:44 PM	inFlight	July 14 2005
+Nassau Intl	Delta	1269	04:44 PM	inFlight	July 14 2005
+Newark	AirTran	571	04:45 PM	inFlight	July 14 2005
+Phoenix AZ	America West	610	04:45 PM	inFlight	July 14 2005
+Milwaukee WI	AirTran	638	04:47 PM	inFlight	July 14 2005
+West Palm Beach FL	Delta	1199	04:48 PM	inFlight	July 14 2005
+Dothan AL (Arpt)	Atlantic Southeast Airlines	358	04:48 PM	inFlight	July 14 2005
+Portland ME	Delta	870	04:49 PM	inFlight	July 14 2005
+Memphis TN	AirTran	530	04:50 PM	inFlight	July 14 2005
+Charlotte NC	Delta	1538	04:51 PM	inFlight	July 14 2005
+Chattanooga TN (Lovell Field)	Atlantic Southeast Airlines	327	04:51 PM	inFlight	July 14 2005
+Tokyo Narita	Delta	56	04:52 PM	scheduled1	July 14 2005
+Washington DC (Dulles)	Independence Air	1204	04:52 PM	inFlight	July 14 2005
+Washington DC (Reagan National)	Delta	1657	04:52 PM	inFlight	July 14 2005
+San Antonio TX	Atlantic Southeast Airlines	611	04:52 PM	inFlight	July 14 2005
+Orlando FL	Delta	980	04:55 PM	inFlight	July 14 2005
+Charleston SC	Atlantic Southeast Airlines	486	04:55 PM	inFlight	July 14 2005
+Denver	Mesa	7136	04:56 PM	inFlight	July 14 2005
+Boston (Logan)	Delta	1584	04:57 PM	inFlight	July 14 2005
+Mobile AL	Atlantic Southeast Airlines	230	04:57 PM	inFlight	July 14 2005
+Salt Lake City UT	Delta	684	04:57 PM	inFlight	July 14 2005
+Huntsville AL	Atlantic Southeast Airlines	805	04:57 PM	inFlight	July 14 2005
+Jacksonville FL	Delta	909	04:57 PM	inFlight	July 14 2005
+Savannah GA	AirTran	1743	04:58 PM	scheduled1	July 14 2005
+San Antonio TX	Delta	1583	04:58 PM	inFlight	July 14 2005
+Sarasota FL	Delta	1703	04:58 PM	inFlight	July 14 2005
+Cancun	Delta	326	04:58 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	Delta	1175	04:58 PM	inFlight	July 14 2005
+Kansas City MO	Delta	262	04:58 PM	inFlight	July 14 2005
+Knoxville TN	Atlantic Southeast Airlines	632	04:59 PM	scheduled1	July 14 2005
+Columbus OH	Delta	931	05:00 PM	inFlight	July 14 2005
+Barcelona	Delta	115	05:01 PM	inFlight	July 14 2005
+Memphis TN	Fedex	572	05:02 PM	inFlight	July 14 2005
+Charlotte NC	Mesa	2948	05:02 PM	inFlight	July 14 2005
+New York (JFK)	Delta	171	05:03 PM	inFlight	July 14 2005
+New Orleans LA	Delta	355	05:03 PM	inFlight	July 14 2005
+El Paso TX	Delta	1041	05:03 PM	inFlight	July 14 2005
+Monroe LA	Atlantic Southeast Airlines	610	05:04 PM	inFlight	July 14 2005
+Dallas/Fort Worth	American	2422	05:05 PM	inFlight	July 14 2005
+Denver	Delta	1782	05:06 PM	inFlight	July 14 2005
+Philadelphia PA	Mesa	2629	05:06 PM	scheduled1	July 14 2005
+St. Louis MO	Delta	373	05:07 PM	inFlight	July 14 2005
+San Diego CA	Delta	228	05:07 PM	inFlight	July 14 2005
+Greensboro/High Point	Delta	985	05:07 PM	inFlight	July 14 2005
+Monroe LA	Atlantic Southeast Airlines	610	05:08 PM	scheduled1	July 14 2005
+Los Angeles CA	Delta	1488	05:08 PM	inFlight	July 14 2005
+Pensacola FL	AirTran	426	05:08 PM	inFlight	July 14 2005
+Houston TX (Hobby)	AirTran	292	05:08 PM	inFlight	July 14 2005
+Washington DC (Dulles)	AirTran	425	05:09 PM	inFlight	July 14 2005
+Jacksonville FL	AirTran	28	05:10 PM	inFlight	July 14 2005
+New York (La Guardia)	Delta	1414	05:11 PM	inFlight	July 14 2005
+Miami FL	AirTran	62	05:15 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	American	1969	05:15 PM	inFlight	July 14 2005
+Dallas/Fort Worth	Delta	205	05:17 PM	inFlight	July 14 2005
+Houston TX (Hobby)	Atlantic Southeast Airlines	765	05:17 PM	inFlight	July 14 2005
+Los Angeles CA	AirTran	56	05:18 PM	inFlight	July 14 2005
+Washington DC (Dulles)	Air Wisconsin	487	05:18 PM	inFlight	July 14 2005
+San Francisco CA	Delta	371	05:19 PM	inFlight	July 14 2005
+Tampa FL	Delta	558	05:20 PM	inFlight	July 14 2005
+Corpus Christi TX	Atlantic Southeast Airlines	350	05:21 PM	inFlight	July 14 2005
+Wilmington NC	Atlantic Southeast Airlines	428	05:21 PM	scheduled1	July 14 2005
+Chicago IL (O'Hare)	Delta	875	05:22 PM	inFlight	July 14 2005
+Pittsburgh PA	Delta	501	05:22 PM	inFlight	July 14 2005
+Little Rock AR	Atlantic Southeast Airlines	542	05:22 PM	inFlight	July 14 2005
+London Gatwick	British Airways	2227	04:13 PM	inFlight	July 14 2005
+Phoenix AZ	Delta	929	05:23 PM	inFlight	July 14 2005
+Toledo OH	Atlantic Southeast Airlines	548	05:23 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	Mesa	7175	04:42 PM	inFlight	July 14 2005
+San Antonio TX	Northwest	1862	04:43 PM	inFlight	July 14 2005
+Orlando FL	Northwest	953	04:48 PM	inFlight	July 14 2005
+Amsterdam (Schiphol)	Northwest	57	04:53 PM	inFlight	July 14 2005
+New Orleans LA	Northwest	352	04:56 PM	scheduled1	July 14 2005
+Charlotte NC	Mesa	2604	04:58 PM	scheduled1	July 14 2005
+Montego Bay	Northwest	1859	05:00 PM	inFlight	July 14 2005
+Raleigh NC	American	2239	04:38 PM	inFlight	July 14 2005
+Paris Charles-de-Gaulle	American	63	04:40 PM	inFlight	July 14 2005
+Atlanta GA	American	531	04:41 PM	inFlight	July 14 2005
+Atlanta GA	Delta	913	04:42 PM	inFlight	July 14 2005
+Denver	United	458	04:43 PM	inFlight	July 14 2005
+San Pedro Sula	Taca Int l Airlines	390	04:45 PM	scheduled1	July 14 2005
+Tallahassee FL	Tallahassee	FL	04:46 PM	inFlight	July 14 2005
+Los Angeles CA	American	280	04:48 PM	inFlight	July 14 2005
+Houston	Continental	1790	04:51 PM	inFlight	July 14 2005
+Fort Lauderdale FL	Airline#54	FL	04:52 PM	scheduled1	July 14 2005
+Cancun	Mexicana	309	04:54 PM	inFlight	July 14 2005
+Dallas/Fort Worth	American	1899	04:58 PM	inFlight	July 14 2005
+Tampa FL	American	308	05:01 PM	inFlight	July 14 2005
+Orlando FL	American	795	05:06 PM	scheduled1	July 14 2005
+Washington DC (Reagan National)	American	985	05:09 PM	inFlight	July 14 2005
+Jacksonville FL	American Eagle	960	05:10 PM	inFlight	July 14 2005
+Raleigh NC	American	2239	04:38 PM	inFlight	July 14 2005
+Paris Charles-de-Gaulle	American	63	04:40 PM	inFlight	July 14 2005
+Paris Charles-de-Gaulle	Delta	51	05:24 PM	inFlight	July 14 2005
+Myrtle Beach SC	Atlantic Southeast Airlines	124	05:25 PM	inFlight	July 14 2005
+Indianapolis IN	Delta	1014	05:25 PM	inFlight	July 14 2005
+Raleigh NC	AirTran	91	05:25 PM	inFlight	July 14 2005
+Hartford CT	Delta	1123	05:27 PM	inFlight	July 14 2005
+Salt Lake City UT	Delta	272	05:27 PM	inFlight	July 14 2005
+Newark	Delta	1731	05:28 PM	inFlight	July 14 2005
+Cleveland OH	Continental Express	2666	05:28 PM	inFlight	July 14 2005
+Richmond VA	Atlantic Southeast Airlines	799	05:29 PM	inFlight	July 14 2005
+Columbia SC	Delta	1722	05:30 PM	scheduled1	July 14 2005
+Detroit MI	Northwest	469	05:30 PM	inFlight	July 14 2005
+Pittsburgh PA	Trans States Airlines	3545	05:31 PM	inFlight	July 14 2005
+Westchester County NY	Atlantic Southeast Airlines	159	05:32 PM	inFlight	July 14 2005
+London Gatwick	Delta	9	05:34 PM	sched4	July 14 2005
+Shreveport LA	Atlantic Southeast Airlines	518	05:34 PM	inFlight	July 14 2005
+Cincinnati	Delta	692	05:34 PM	inFlight	July 14 2005
+Houston	Delta	1016	05:38 PM	inFlight	July 14 2005
+Omaha NE	Atlantic Southeast Airlines	492	05:39 PM	scheduled1	July 14 2005
+Lexington KY	Delta	1814	05:39 PM	scheduled1	July 14 2005
+Akron/Canton	Atlantic Southeast Airlines	810	04:19 PM	landed	July 14 2005
+Raleigh NC	Delta	1150	04:53 PM	inFlight	July 14 2005
+Houston TX (Hobby)	Delta	1672	04:11 PM	landed	July 14 2005
+Montego Bay	Delta	682	05:32 PM	inFlight	July 14 2005
+Atlanta GA	American	531	04:41 PM	inFlight	July 14 2005
+Atlanta GA	Delta	913	04:42 PM	inFlight	July 14 2005
+Denver	United	458	04:43 PM	inFlight	July 14 2005
+San Pedro Sula	Taca Int l Airlines	390	04:45 PM	scheduled1	July 14 2005
+Tallahassee FL	Tallahassee	FL	04:46 PM	inFlight	July 14 2005
+Los Angeles CA	American	280	04:48 PM	inFlight	July 14 2005
+Houston	Continental	1790	04:51 PM	inFlight	July 14 2005
+Fort Lauderdale FL	Airline#67	FL	04:52 PM	scheduled1	July 14 2005
+Cancun	Mexicana	309	04:54 PM	inFlight	July 14 2005
+Dallas/Fort Worth	American	1899	04:58 PM	inFlight	July 14 2005
+Tampa FL	American	308	05:01 PM	inFlight	July 14 2005
+Orlando FL	American	795	05:06 PM	scheduled1	July 14 2005
+Washington DC (Reagan National)	American	985	05:09 PM	inFlight	July 14 2005
+Jacksonville FL	American Eagle	960	05:10 PM	inFlight	July 14 2005
+New York (JFK)	American	933	05:11 PM	inFlight	July 14 2005
+"San Juan, Puerto Rico"	American	1236	05:11 PM	inFlight	July 14 2005
+London Heathrow	British Airways	209	05:12 PM	inFlight	July 14 2005
+Panama City	GTI	48	05:15 PM	inFlight	July 14 2005
+Barranquilla (E Cortissoz)	Avianca	2	05:16 PM	scheduled1	July 14 2005
+Baltimore MD	American	2169	05:17 PM	inFlight	July 14 2005
+New Orleans LA	American	1510	05:18 PM	inFlight	July 14 2005
+New York (La Guardia)	American	1567	05:20 PM	inFlight	July 14 2005
+Cleveland OH	American Eagle	375	05:20 PM	inFlight	July 14 2005
+London Heathrow	British Airways	207	05:21 PM	landed	July 14 2005
+Nashville TN	American Eagle	335	05:21 PM	inFlight	July 14 2005
+Panama City	American	2132	05:27 PM	inFlight	July 14 2005
+Key West FL	Airline#68	FL	05:29 PM	scheduled1	July 14 2005
+Port au Prince	American	1908	05:29 PM	inFlight	July 14 2005
+Nassau Intl	American Eagle	992	05:34 PM	scheduled1	July 14 2005
+Guayaquil	Martinair	74	05:43 PM	sched4	July 14 2005
+New York (JFK)	American	933	05:11 PM	inFlight	July 14 2005
+"San Juan, Puerto Rico"	American	1236	05:11 PM	inFlight	July 14 2005
+London Heathrow	British Airways	209	05:12 PM	inFlight	July 14 2005
+Panama City	GTI	48	05:15 PM	inFlight	July 14 2005
+Lafayette LA	Atlantic Southeast Airlines	446	05:40 PM	scheduled1	July 14 2005
+Asheville NC (Municipal)	Atlantic Southeast Airlines	267	05:41 PM	scheduled1	July 14 2005
+Boston (Logan)	AirTran	273	05:42 PM	inFlight	July 14 2005
+Bermuda (International)	Delta	606	05:43 PM	inFlight	July 14 2005
+Monterrey	Atlantic Southeast Airlines	173	05:43 PM	inFlight	July 14 2005
+Norfolk VA	Delta	353	05:44 PM	scheduled1	July 14 2005
+Boston (Logan)	Delta	336	05:44 PM	inFlight	July 14 2005
+Houston	Continental	720	05:44 PM	inFlight	July 14 2005
+Washington DC (Reagan National)	AirTran	190	05:45 PM	scheduled1	July 14 2005
+Augusta	Atlantic Southeast Airlines	88	05:46 PM	scheduled1	July 14 2005
+Minneapolis MN	Atlantic Southeast Airlines	834	05:47 PM	scheduled1	July 14 2005
+Memphis TN	Fedex	502	05:48 PM	scheduled1	July 14 2005
+Daytona Beach FL (Regional)	Delta	1081	05:42 PM	scheduled1	July 14 2005
+Philadelphia PA	Delta	439	05:49 PM	inFlight	July 14 2005
+Las Vegas NV	Delta	698	05:49 PM	inFlight	July 14 2005
+Newark	Continental	1151	05:51 PM	scheduled1	July 14 2005
+Washington DC (Reagan National)	Delta	1217	05:51 PM	scheduled1	July 14 2005
+Los Angeles CA	Delta	1746	05:51 PM	inFlight	July 14 2005
+Detroit MI	Delta	1427	05:52 PM	inFlight	July 14 2005
+West Palm Beach FL	Delta	475	05:55 PM	scheduled1	July 14 2005
+Indianapolis IN	AirTran	401	05:56 PM	scheduled1	July 14 2005
+Miami FL	Delta	1171	05:57 PM	scheduled1	July 14 2005
+Barranquilla (E Cortissoz)	Avianca	2	05:16 PM	scheduled1	July 14 2005
+Baltimore MD	American	2169	05:17 PM	inFlight	July 14 2005
+New Orleans LA	American	1510	05:18 PM	inFlight	July 14 2005
+New York (La Guardia)	American	1567	05:20 PM	inFlight	July 14 2005
+Cleveland OH	American Eagle	375	05:20 PM	inFlight	July 14 2005
+London Heathrow	British Airways	207	05:21 PM	landed	July 14 2005
+Nashville TN	American Eagle	335	05:21 PM	inFlight	July 14 2005
+Panama City	American	2132	05:27 PM	inFlight	July 14 2005
+Key West FL	Airline#95	FL	05:29 PM	scheduled1	July 14 2005
+Port au Prince	American	1908	05:29 PM	inFlight	July 14 2005
+Nassau Intl	American Eagle	992	05:34 PM	scheduled1	July 14 2005
+Guayaquil	Martinair	74	05:43 PM	sched4	July 14 2005
+San Salvador	American	926	05:43 PM	inFlight	July 14 2005
+Curacao (Aeropuerto Hato)	American	1880	05:44 PM	inFlight	July 14 2005
+San Salvador	Skippers Aviation	644	05:45 PM	scheduled1	July 14 2005
+Kingston	American	628	05:45 PM	scheduled1	July 14 2005
+Tegucigalpa	American	954	05:46 PM	scheduled1	July 14 2005
+Bogota (Eldorado)	Avianca	6	05:49 PM	scheduled1	July 14 2005
+Saint Maarten	American	2160	05:52 PM	inFlight	July 14 2005
+Puerto Plata	American	978	05:53 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	American	1556	05:55 PM	inFlight	July 14 2005
+Bogota (Eldorado)	American	916	06:00 PM	inFlight	July 14 2005
+Mexico City	Aeromexico	422	06:01 PM	inFlight	July 14 2005
+Baltimore MD	Delta	1593	05:57 PM	inFlight	July 14 2005
+Washington DC (Reagan National)	US Airways	1805	05:58 PM	scheduled1	July 14 2005
+Cleveland OH	Delta	1061	05:58 PM	scheduled1	July 14 2005
+Jackson MS	Atlantic Southeast Airlines	264	05:58 PM	scheduled1	July 14 2005
+St. Louis MO	Airline#784	MO	05:59 PM	scheduled1	July 14 2005
+San Antonio TX	Delta	1430	05:59 PM	inFlight	July 14 2005
+Huntsville AL	Atlantic Southeast Airlines	388	05:59 PM	scheduled1	July 14 2005
+Wichita KS	Atlantic Southeast Airlines	420	05:59 PM	inFlight	July 14 2005
+Toronto	Atlantic Southeast Airlines	594	06:00 PM	scheduled1	July 14 2005
+Washington DC (Reagan National)	US Airways	1805	05:58 PM	scheduled1	July 14 2005
+Cleveland OH	Delta	1061	05:58 PM	scheduled1	July 14 2005
+Jackson MS	Atlantic Southeast Airlines	264	05:58 PM	scheduled1	July 14 2005
+St. Louis MO	Airline#793	MO	05:59 PM	scheduled1	July 14 2005
+San Antonio TX	Delta	1430	05:59 PM	inFlight	July 14 2005
+Huntsville AL	Atlantic Southeast Airlines	388	05:59 PM	scheduled1	July 14 2005
+Wichita KS	Atlantic Southeast Airlines	420	05:59 PM	inFlight	July 14 2005
+Toronto	Atlantic Southeast Airlines	594	06:00 PM	scheduled1	July 14 2005
+Moscow Sheremetyevo	Delta	47	04:00 PM	landed	July 14 2005
+Rochester NY	Comair	351	04:00 PM	landed	July 14 2005
+Orlando FL	AirTran	848	04:00 PM	landed	July 14 2005
+Denver	AirTran	304	04:00 PM	landed	July 14 2005
+Miami FL	American	1882	04:00 PM	landed	July 14 2005
+Oklahoma City OK	Atlantic Southeast Airlines	281	04:01 PM	landed	July 14 2005
+Pensacola FL	Delta	226	04:02 PM	landed	July 14 2005
+Port of Spain	BWIA International Airways	790	06:02 PM	landed	July 14 2005
+Amsterdam (Schiphol)	Martinair	645	06:03 PM	inFlight	July 14 2005
+Orlando FL	Orlando	FL	06:04 PM	scheduled1	July 14 2005
+Guatemala City	American	2128	06:05 PM	scheduled1	July 14 2005
+Paris Charles-de-Gaulle	American	63	04:06 PM	scheduled1	July 14 2005
+Cancun	American	2186	04:09 PM	landed	July 14 2005
+San Jose	LACSA Costarricenses	626	04:10 PM	sched4	July 14 2005
+Aruba (Reina Beatrix)	American	1780	04:10 PM	landed	July 14 2005
+Mexico City	Aeromexico	454	04:11 PM	landed	July 14 2005
+San Jose	Ord Air Charter	124	04:12 PM	inFlight	July 14 2005
+Buenos Aires	Ord Air Charter	772	04:13 PM	landed	July 14 2005
+Cincinnati	Comair	304	04:15 PM	landed	July 14 2005
+Amsterdam (Schiphol)	Martinair	6712	04:16 PM	scheduled1	July 14 2005
+Grand Cayman	American	1018	04:16 PM	landed	July 14 2005
+Santo Domingo	American	882	04:17 PM	landed	July 14 2005
+San Jose	American	988	04:22 PM	landed	July 14 2005
+Belize City	American	2172	04:25 PM	landed	July 14 2005
+George Town (Exuma International)	American Eagle	952	04:30 PM	landed	July 14 2005
+Chicago IL (O'Hare)	American	1342	04:34 PM	inFlight	July 14 2005
+Fort Myers FL	LTU	900	04:34 PM	inFlight	July 14 2005
+Charlotte NC	Jetstream	2260	05:02 PM	inFlight	July 14 2005
+Philadelphia PA	US Airways	1085	05:07 PM	scheduled1	July 14 2005
+Terre Haute IN (Hulman Field)	Executive Jet Aviation	918	05:09 PM	inFlight	July 14 2005
+Harrisburgh Int'l PA	Atlantic Southeast Airlines	461	04:03 PM	landed	July 14 2005
+St. Louis MO	Trans States Airlines	5665	04:03 PM	landed	July 14 2005
+Bristol VA	Atlantic Southeast Airlines	550	04:04 PM	landed	July 14 2005
+Memphis TN	Mesaba	3417	04:06 PM	landed	July 14 2005
+Kansas City MO	AirTran	436	04:07 PM	landed	July 14 2005
+Richmond VA	Delta	797	04:08 PM	landed	July 14 2005
+Akron/Canton	AirTran	209	04:09 PM	landed	July 14 2005
+Orlando FL	AirTran	178	04:10 PM	scheduled1	July 14 2005
+Dallas/Fort Worth	American	1948	04:10 PM	landed	July 14 2005
+Providence RI	Delta	566	04:41 PM	inFlight	July 14 2005
+Baltimore MD	AirTran	485	04:41 PM	inFlight	July 14 2005
+New Orleans LA	AirTran	158	04:41 PM	landed	July 14 2005
+Chicago IL (O'Hare)	United	288	04:38 PM	inFlight	July 14 2005
+Little Rock AR	Northwest	966	05:02 PM	scheduled1	July 14 2005
+Pellston MI	Executive Jet Aviation	383	03:18 PM	landed	July 14 2005
+St. Louis MO	Trans States Airlines	5468	03:26 PM	landed	July 14 2005
+Atlanta GA	Delta	1277	03:44 PM	inFlight	July 14 2005
+Houston	Continental Express	3238	03:47 PM	inFlight	July 14 2005
+Detroit MI	Northwest	285	03:54 PM	inFlight	July 14 2005
+Dallas/Fort Worth	American	1534	03:59 PM	inFlight	July 14 2005
+Cleveland OH	Continental Express	2015	04:04 PM	inFlight	July 14 2005
+Cancun	Northwest	1969	04:31 PM	scheduled1	July 14 2005
+Cincinnati	Atlantic Southeast Airlines	237	04:34 PM	scheduled1	July 14 2005
+Baltimore MD	Southwest	905	05:17 PM	inFlight	July 14 2005
+Tampa FL	Tampa	FL	05:18 PM	inFlight	July 14 2005
+Houston	Continental	1092	05:25 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	Chicago IL (O'Hare	)	05:25 PM	scheduled1	July 14 2005
+Orlando FL	Orlando	FL	05:29 PM	scheduled1	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	05:34 PM	inFlight	July 14 2005
+Memphis TN	Northwest Airlink/Express	5727	05:35 PM	inFlight	July 14 2005
+Charleston WV	Executive Jet Aviation	860	05:36 PM	scheduled1	July 14 2005
+New York (La Guardia)	Executive Jet Aviation	934	05:39 PM	scheduled1	July 14 2005
+Teterboro	Executive Jet Aviation	934	05:39 PM	scheduled1	July 14 2005
+Chicago IL (O'Hare)	American Eagle	321	05:40 PM	scheduled1	July 14 2005
+Minneapolis MN	Northwest	1494	05:44 PM	inFlight	July 14 2005
+Orlando FL	Southwest	491	05:50 PM	inFlight	July 14 2005
+Las Vegas NV	Southwest	366	05:56 PM	inFlight	July 14 2005
+Toronto	Air Canada -Jazz	7896	05:57 PM	scheduled1	July 14 2005
+Atlanta GA	Delta	1664	06:03 PM	scheduled1	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	04:05 PM	landed	July 14 2005
+Cincinnati	Delta	956	04:06 PM	landed	July 14 2005
+Washington DC (Reagan National)	Comair	163	04:14 PM	landed	July 14 2005
+Atlanta GA	Delta	668	04:18 PM	landed	July 14 2005
+Phoenix AZ	America West	749	04:19 PM	landed	July 14 2005
+Dallas/Fort Worth	American	1238	04:20 PM	landed	July 14 2005
+Newark	Continental	353	04:21 PM	landed	July 14 2005
+Detroit MI	Northwest	1845	04:21 PM	landed	July 14 2005
+Chicago IL (Midway)	Southwest	1225	04:22 PM	landed	July 14 2005
+Washington DC (Dulles)	Independence Air	1493	04:22 PM	landed	July 14 2005
+Cleveland OH	Continental Express	2025	04:26 PM	landed	July 14 2005
+Raleigh NC	American Eagle	711	04:34 PM	inFlight	July 14 2005
+Boston (Logan)	Airline#228	)	04:34 PM	inFlight	July 14 2005
+Phoenix AZ	Southwest	272	04:51 PM	inFlight	July 14 2005
+Mansfield	Executive Jet Aviation	821	04:58 PM	scheduled1	July 14 2005
+Milwaukee WI	Skyway	2162	04:58 PM	inFlight	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	04:05 PM	landed	July 14 2005
+Cincinnati	Delta	956	04:06 PM	landed	July 14 2005
+Washington DC (Reagan National)	Comair	163	04:14 PM	landed	July 14 2005
+Atlanta GA	Delta	668	04:18 PM	landed	July 14 2005
+Phoenix AZ	America West	749	04:19 PM	landed	July 14 2005
+Dallas/Fort Worth	American	1238	04:20 PM	landed	July 14 2005
+Newark	Continental	353	04:21 PM	landed	July 14 2005
+Detroit MI	Northwest	1845	04:21 PM	landed	July 14 2005
+Chicago IL (Midway)	Southwest	1225	04:22 PM	landed	July 14 2005
+Washington DC (Dulles)	Independence Air	1493	04:22 PM	landed	July 14 2005
+Cleveland OH	Continental Express	2025	04:26 PM	landed	July 14 2005
+Raleigh NC	American Eagle	711	04:34 PM	inFlight	July 14 2005
+Boston (Logan)	Airline#235	)	04:34 PM	inFlight	July 14 2005
+Phoenix AZ	Southwest	272	04:51 PM	inFlight	July 14 2005
+Mansfield	Executive Jet Aviation	821	04:58 PM	scheduled1	July 14 2005
+Milwaukee WI	Skyway	2162	04:58 PM	inFlight	July 14 2005
+San Salvador	Taca Int l Airlines	530	01:32 PM	inFlight	July 14 2005
+Chicago IL (Midway)	Southwest	2197	01:34 PM	inFlight	July 14 2005
+San Jose CA	American Eagle	148	01:34 PM	inFlight	July 14 2005
+Baltimore MD	Southwest	71	01:36 PM	inFlight	July 14 2005
+Denver	Frontier	417	01:36 PM	inFlight	July 14 2005
+Oakland CA	Skywest	6515	01:36 PM	inFlight	July 14 2005
+San Diego CA	Skywest	6096	01:38 PM	inFlight	July 14 2005
+Nashville TN	Southwest	1112	01:39 PM	inFlight	July 14 2005
+Monterey CA	American Eagle	28	01:40 PM	inFlight	July 14 2005
+Washington DC (Dulles)	American	143	01:45 PM	inFlight	July 14 2005
+Kansas City MO	Midwest Express	100	01:47 PM	inFlight	July 14 2005
+San Francisco CA	American	1923	01:47 PM	inFlight	July 14 2005
+Las Vegas NV	Southwest	2818	01:47 PM	inFlight	July 14 2005
+Vancouver BC	Air Canada	552	01:47 PM	inFlight	July 14 2005
+New York (JFK)	American	19	01:51 PM	inFlight	July 14 2005
+San Francisco CA	United	888	01:51 PM	inFlight	July 14 2005
+Detroit MI	Northwest	433	01:55 PM	inFlight	July 14 2005
+Memphis TN	Delta	1903	01:56 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	American	1555	01:58 PM	inFlight	July 14 2005
+Phoenix AZ	Southwest	2357	01:58 PM	inFlight	July 14 2005
+St. Louis MO	American	421	01:58 PM	inFlight	July 14 2005
+Fresno CA	American Eagle	18	01:59 PM	inFlight	July 14 2005
+Hong Kong	Cathay Pacific Airways	882	02:02 PM	inFlight	July 14 2005
+Salt Lake City UT	Skywest	4018	02:03 PM	inFlight	July 14 2005
+Tokyo Narita	Korean Air	223	02:06 PM	inFlight	July 14 2005
+Amsterdam (Schiphol)	KLM	601	02:06 PM	inFlight	July 14 2005
+San Jose CA	Southwest	593	02:06 PM	inFlight	July 14 2005
+Minneapolis MN	Northwest	585	02:07 PM	inFlight	July 14 2005
+Guadalajara	Aeromexico	482	02:09 PM	inFlight	July 14 2005
+Santa Barbara CA	American Eagle	42	02:10 PM	scheduled1	July 14 2005
+San Jose Cabo	American	338	02:13 PM	inFlight	July 14 2005
+Atlanta GA	Delta	242	02:13 PM	inFlight	July 14 2005
+Seattle WA	United	495	02:14 PM	inFlight	July 14 2005
+Oakland CA	Southwest	2226	02:16 PM	inFlight	July 14 2005
+Cincinnati	Delta	1019	02:17 PM	inFlight	July 14 2005
+Yuma AZ	Skywest	6140	02:17 PM	inFlight	July 14 2005
+San Diego CA	American Eagle	76	02:19 PM	scheduled1	July 14 2005
+Colorado Springs CO	Skywest	6514	02:19 PM	inFlight	July 14 2005
+London Heathrow	United	935	02:19 PM	inFlight	July 14 2005
+Monterrey	Consorcio Aviaxsa	792	02:20 PM	inFlight	July 14 2005
+Phoenix AZ	America West	706	02:23 PM	inFlight	July 14 2005
+New Orleans LA	Southwest	299	02:24 PM	inFlight	July 14 2005
+Calgary AB	Air Canada	570	02:29 PM	inFlight	July 14 2005
+Seoul	Asiana Airlines	204	02:29 PM	inFlight	July 14 2005
+Ontario CA	Skywest	6128	02:29 PM	scheduled1	July 14 2005
+Chicago IL (O'Hare)	United	115	02:29 PM	inFlight	July 14 2005
+Seattle WA	Alaska	568	02:30 PM	inFlight	July 14 2005
+New York (JFK)	United	19	02:30 PM	inFlight	July 14 2005
+Charlotte NC	US Airways	31	02:31 PM	inFlight	July 14 2005
+Munich	Lufthansa	452	02:32 PM	inFlight	July 14 2005
+Phoenix AZ	America West	29	02:33 PM	scheduled1	July 14 2005
+El Paso TX	Southwest	1777	02:34 PM	inFlight	July 14 2005
+Austin TX	American	813	02:34 PM	inFlight	July 14 2005
+Salt Lake City UT	Atlantic Southeast Airlines	833	02:34 PM	inFlight	July 14 2005
+Monterey CA	Skywest	6091	02:38 PM	scheduled1	July 14 2005
+Houston	Continental	1695	02:38 PM	inFlight	July 14 2005
+London Heathrow	American	137	02:38 PM	inFlight	July 14 2005
+Apia (Faleolo)	Air New Zealand	26	02:39 PM	scheduled1	July 14 2005
+Sacramento	Southwest	1920	02:39 PM	scheduled1	July 14 2005
+Washington DC (Dulles)	United	193	02:41 PM	inFlight	July 14 2005
+Guadalajara	Mexicana	920	02:43 PM	inFlight	July 14 2005
+New York (JFK)	Delta	478	02:46 PM	inFlight	July 14 2005
+La Paz	Aero California	146	02:47 PM	inFlight	July 14 2005
+Dallas/Fort Worth	American	2431	02:49 PM	scheduled1	July 14 2005
+Fresno CA	Skywest	6056	02:49 PM	scheduled1	July 14 2005
+Las Vegas NV	United	1487	02:51 PM	scheduled1	July 14 2005
+San Francisco CA	United	989	02:54 PM	scheduled1	July 14 2005
+New York (JFK)	American	3	02:55 PM	inFlight	July 14 2005
+Phoenix AZ	Skywest	6520	02:55 PM	scheduled1	July 14 2005
+Las Vegas NV	America West	110	02:56 PM	scheduled1	July 14 2005
+Denver	United	231	02:57 PM	inFlight	July 14 2005
+Oakland CA	Southwest	1473	02:58 PM	scheduled1	July 14 2005
+Kansas City MO	Southwest	1271	02:58 PM	inFlight	July 14 2005
+Vancouver BC	Alaska	638	03:00 PM	inFlight	July 14 2005
+San Luis Obispo CA	American Eagle	8	03:03 PM	scheduled1	July 14 2005
+Palm Springs CA	Skywest	6118	03:04 PM	scheduled1	July 14 2005
+Paris Charles-de-Gaulle	Air France	62	01:04 PM	landed	July 14 2005
+San Salvador	American	798	01:05 PM	landed	July 14 2005
+San Diego CA	American Eagle	74	01:05 PM	landed	July 14 2005
+San Diego CA	Skywest	6070	01:07 PM	landed	July 14 2005
+Las Vegas NV	Japan Airlines	25	01:08 PM	landed	July 14 2005
+Santa Barbara CA	Skywest	6131	01:10 PM	landed	July 14 2005
+Inyokern CA	Skywest	6084	01:11 PM	landed	July 14 2005
+Chicago IL (O'Hare)	United	107	01:12 PM	landed	July 14 2005
+San Antonio TX	Southwest	341	01:12 PM	landed	July 14 2005
+Sacramento	Skywest	6524	01:12 PM	landed	July 14 2005
+Fresno CA	American Eagle	102	01:14 PM	landed	July 14 2005
+Houston TX (Hobby)	Southwest	644	01:21 PM	landed	July 14 2005
+London Heathrow	British Airways	279	01:21 PM	landed	July 14 2005
+Philadelphia PA	US Airways	21	01:23 PM	landed	July 14 2005
+Salt Lake City UT	Southwest	2363	01:25 PM	landed	July 14 2005
+Carlsbad CA	Skywest	6044	01:25 PM	inFlight	July 14 2005
+Newark	Continental	621	04:23 PM	inFlight	July 14 2005
+Washington DC (Reagan National)	US Airways	480	04:25 PM	inFlight	July 14 2005
+Milwaukee WI	Skyway	2160	04:43 PM	scheduled1	July 14 2005
+Minneapolis MN	Northwest	502	04:47 PM	scheduled1	July 14 2005
+Memphis TN	Fedex	573	04:49 PM	scheduled1	July 14 2005
+Fort Lauderdale FL	Northwest	637	04:53 PM	inFlight	July 14 2005
+Atlanta GA	AirTran	404	04:54 PM	scheduled1	July 14 2005
+Charlotte NC	Jetstream	2265	04:56 PM	scheduled1	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	03:05 PM	landed	July 14 2005
+Houston	Continental	300	03:09 PM	landed	July 14 2005
+Cleveland OH	Continental Express	3429	03:16 PM	landed	July 14 2005
+Newark	Executive Jet Aviation	351	03:19 PM	landed	July 14 2005
+Las Vegas NV	Northwest	150	03:25 PM	landed	July 14 2005
+St. Louis MO	Trans States Airlines	5426	03:33 PM	inFlight	July 14 2005
+Baltimore MD	Southwest	250	04:59 PM	scheduled1	July 14 2005
+Dallas/Fort Worth	American	472	03:49 PM	inFlight	July 14 2005
+Philadelphia PA	Northwest Airlink/Express	4797	03:51 PM	inFlight	July 14 2005
+Detroit MI	Northwest	1515	03:51 PM	inFlight	July 14 2005
+Denver	United	1170	04:01 PM	inFlight	July 14 2005
+Akron/Canton	CSJ	915	04:03 PM	inFlight	July 14 2005
+Pittsburgh PA	Pittsburgh	PA	04:06 PM	inFlight	July 14 2005
+Boston (Logan)	Airline#474	)	04:07 PM	inFlight	July 14 2005
+Atlanta GA	Delta	543	04:07 PM	inFlight	July 14 2005
+Washington DC (Dulles)	Independence Air	1591	04:08 PM	inFlight	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	03:05 PM	landed	July 14 2005
+Houston	Continental	300	03:09 PM	landed	July 14 2005
+Cleveland OH	Continental Express	3429	03:16 PM	landed	July 14 2005
+Newark	Executive Jet Aviation	351	03:19 PM	landed	July 14 2005
+Las Vegas NV	Northwest	150	03:25 PM	landed	July 14 2005
+St. Louis MO	Trans States Airlines	5426	03:33 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	Chicago IL (O'Hare	)	03:48 PM	scheduled1	July 14 2005
+Dallas/Fort Worth	American	472	03:49 PM	inFlight	July 14 2005
+Philadelphia PA	Northwest Airlink/Express	4797	03:51 PM	inFlight	July 14 2005
+Detroit MI	Northwest	1515	03:51 PM	inFlight	July 14 2005
+Denver	United	1170	04:01 PM	inFlight	July 14 2005
+Akron/Canton	CSJ	915	04:03 PM	inFlight	July 14 2005
+Pittsburgh PA	Pittsburgh	PA	04:06 PM	inFlight	July 14 2005
+Boston (Logan)	Airline#479	)	04:07 PM	inFlight	July 14 2005
+Atlanta GA	Delta	543	04:07 PM	inFlight	July 14 2005
+Washington DC (Dulles)	Independence Air	1591	04:08 PM	inFlight	July 14 2005
+Memphis TN	Northwest	879	04:13 PM	inFlight	July 14 2005
+New York (La Guardia)	New York (La Guardia	)	04:20 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	United	138	04:50 PM	scheduled1	July 14 2005
+Chicago IL (O'Hare)	Chicago IL (O'Hare	)	03:48 PM	scheduled1	July 14 2005
+Birmingham AL	Delta	1674	04:16 PM	landed	July 14 2005
+Akron/Canton	Atlantic Southeast Airlines	810	04:19 PM	landed	July 14 2005
+Hickory NC	Atlantic Southeast Airlines	758	04:20 PM	landed	July 14 2005
+Fort Lauderdale FL	Delta	1858	04:20 PM	landed	July 14 2005
+Wichita KS	AirTran	684	04:21 PM	landed	July 14 2005
+Miami FL	Delta	575	04:23 PM	landed	July 14 2005
+Sarasota FL	AirTran	522	04:26 PM	landed	July 14 2005
+Omaha NE	Atlantic Southeast Airlines	182	04:21 PM	landed	July 14 2005
+Minneapolis MN	AirTran	853	04:26 PM	inFlight	July 14 2005
+New York (La Guardia)	Delta	1287	04:18 PM	landed	July 14 2005
+Shannon	World Airways	975	04:18 PM	landed	July 14 2005
+Salt Lake City UT	Delta	387	04:26 PM	inFlight	July 14 2005
+Columbia SC	Delta	1851	04:26 PM	inFlight	July 14 2005
+Grand Cayman	Delta	906	04:28 PM	inFlight	July 14 2005
+Austin TX	Delta	490	04:29 PM	inFlight	July 14 2005
+Norfolk VA	Delta	1795	04:29 PM	inFlight	July 14 2005
+Charleston WV	Atlantic Southeast Airlines	353	04:30 PM	landed	July 14 2005
+Washington DC (Dulles)	Delta	836	04:30 PM	inFlight	July 14 2005
+Minneapolis MN	Northwest	1542	04:32 PM	inFlight	July 14 2005
+Tulsa OK	Delta	650	04:32 PM	inFlight	July 14 2005
+Cincinnati	Delta	1257	04:34 PM	inFlight	July 14 2005
+Dallas/Fort Worth	Delta	1748	04:35 PM	inFlight	July 14 2005
+Roanoke VA	Atlantic Southeast Airlines	513	04:37 PM	inFlight	July 14 2005
+Newark	Delta	1663	04:38 PM	inFlight	July 14 2005
+Jackson MS	Delta	584	04:38 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	United	288	04:38 PM	inFlight	July 14 2005
+Savannah GA	Delta	293	04:39 PM	scheduled1	July 14 2005
+Dallas/Fort Worth	AirTran	50	04:40 PM	inFlight	July 14 2005
+Seattle WA	Delta	706	04:40 PM	inFlight	July 14 2005
+Orlando FL	Miami Air	538	04:40 PM	inFlight	July 14 2005
+Baltimore MD	AirTran	485	04:41 PM	inFlight	July 14 2005
+New Orleans LA	AirTran	158	04:41 PM	landed	July 14 2005
+Providence RI	Delta	566	04:41 PM	inFlight	July 14 2005
+Philadelphia PA	Delta	301	04:44 PM	inFlight	July 14 2005
+Newark	AirTran	571	04:45 PM	inFlight	July 14 2005
+Nashville TN	OPT	425	04:42 PM	inFlight	July 14 2005
+Phoenix AZ	America West	610	04:45 PM	inFlight	July 14 2005
+Milwaukee WI	AirTran	638	04:47 PM	inFlight	July 14 2005
+West Palm Beach FL	Delta	1199	04:48 PM	inFlight	July 14 2005
+Dothan AL (Arpt)	Atlantic Southeast Airlines	358	04:48 PM	inFlight	July 14 2005
+Portland ME	Delta	870	04:49 PM	inFlight	July 14 2005
+Memphis TN	AirTran	530	04:50 PM	inFlight	July 14 2005
+Charlotte NC	Delta	1538	04:51 PM	inFlight	July 14 2005
+Chattanooga TN (Lovell Field)	Atlantic Southeast Airlines	327	04:51 PM	inFlight	July 14 2005
+Tokyo Narita	Delta	56	04:52 PM	scheduled1	July 14 2005
+Washington DC (Dulles)	Independence Air	1204	04:52 PM	inFlight	July 14 2005
+Washington DC (Reagan National)	Delta	1657	04:52 PM	inFlight	July 14 2005
+San Antonio TX	Atlantic Southeast Airlines	611	04:52 PM	inFlight	July 14 2005
+Raleigh NC	Delta	1150	04:53 PM	inFlight	July 14 2005
+Orlando FL	Delta	980	04:55 PM	inFlight	July 14 2005
+Boston (Logan)	Delta	1584	04:57 PM	inFlight	July 14 2005
+Mobile AL	Atlantic Southeast Airlines	230	04:57 PM	inFlight	July 14 2005
+Salt Lake City UT	Delta	684	04:57 PM	inFlight	July 14 2005
+Huntsville AL	Atlantic Southeast Airlines	805	04:57 PM	inFlight	July 14 2005
+Jacksonville FL	Delta	909	04:57 PM	inFlight	July 14 2005
+San Antonio TX	Delta	1583	04:58 PM	inFlight	July 14 2005
+Sarasota FL	Delta	1703	04:58 PM	inFlight	July 14 2005
+Cancun	Delta	326	04:58 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	Delta	1175	04:58 PM	inFlight	July 14 2005
+Kansas City MO	Delta	262	04:58 PM	inFlight	July 14 2005
+Denver	Mesa	7136	04:58 PM	inFlight	July 14 2005
+Knoxville TN	Atlantic Southeast Airlines	632	04:59 PM	scheduled1	July 14 2005
+Columbus OH	Delta	931	05:00 PM	inFlight	July 14 2005
+Memphis TN	Fedex	572	05:00 PM	inFlight	July 14 2005
+Barcelona	Delta	115	05:01 PM	inFlight	July 14 2005
+Charlotte NC	Mesa	2948	05:02 PM	inFlight	July 14 2005
+New York (JFK)	Delta	171	05:03 PM	inFlight	July 14 2005
+New Orleans LA	Delta	355	05:03 PM	inFlight	July 14 2005
+El Paso TX	Delta	1041	05:03 PM	inFlight	July 14 2005
+Monroe LA	Atlantic Southeast Airlines	610	05:04 PM	inFlight	July 14 2005
+Dallas/Fort Worth	American	2422	05:05 PM	inFlight	July 14 2005
+St. Louis MO	Delta	373	05:05 PM	inFlight	July 14 2005
+Denver	Delta	1782	05:06 PM	inFlight	July 14 2005
+Philadelphia PA	Mesa	2629	05:06 PM	scheduled1	July 14 2005
+Charleston SC	Atlantic Southeast Airlines	486	05:06 PM	inFlight	July 14 2005
+Monroe LA	Atlantic Southeast Airlines	610	05:08 PM	scheduled1	July 14 2005
+Los Angeles CA	Delta	1488	05:08 PM	inFlight	July 14 2005
+Pensacola FL	AirTran	426	05:08 PM	inFlight	July 14 2005
+Houston TX (Hobby)	AirTran	292	05:08 PM	inFlight	July 14 2005
+Jacksonville FL	AirTran	28	05:10 PM	inFlight	July 14 2005
+Greensboro/High Point	Delta	985	05:10 PM	inFlight	July 14 2005
+Washington DC (Dulles)	AirTran	425	05:10 PM	inFlight	July 14 2005
+New York (La Guardia)	Delta	1414	05:11 PM	inFlight	July 14 2005
+San Diego CA	Delta	228	05:12 PM	inFlight	July 14 2005
+Minneapolis MN	Delta	1186	04:44 PM	inFlight	July 14 2005
+Nassau Intl	Delta	1269	04:44 PM	inFlight	July 14 2005
+Milwaukee WI	Midwest Express	107	04:30 PM	inFlight	July 14 2005
+Miami FL	AirTran	62	05:14 PM	inFlight	July 14 2005
+Chicago IL (O'Hare)	American	1969	05:15 PM	inFlight	July 14 2005
+Los Angeles CA	AirTran	56	05:16 PM	inFlight	July 14 2005
+Dallas/Fort Worth	Delta	205	05:17 PM	inFlight	July 14 2005
+Washington DC (Dulles)	Air Wisconsin	487	05:18 PM	inFlight	July 14 2005
+San Francisco CA	Delta	371	05:19 PM	inFlight	July 14 2005
+Savannah GA	AirTran	1743	05:19 PM	inFlight	July 14 2005
+Tampa FL	Delta	558	05:20 PM	inFlight	July 14 2005
+Corpus Christi TX	Atlantic Southeast Airlines	350	05:21 PM	inFlight	July 14 2005
+Wilmington NC	Atlantic Southeast Airlines	428	05:21 PM	scheduled1	July 14 2005
+Chicago IL (O'Hare)	Delta	875	05:21 PM	inFlight	July 14 2005
+Houston TX (Hobby)	Atlantic Southeast Airlines	765	05:21 PM	inFlight	July 14 2005
+Pittsburgh PA	Delta	501	05:21 PM	inFlight	July 14 2005
+Little Rock AR	Atlantic Southeast Airlines	542	05:22 PM	inFlight	July 14 2005
+Phoenix AZ	Delta	929	05:23 PM	inFlight	July 14 2005
+Toledo OH	Atlantic Southeast Airlines	548	05:23 PM	inFlight	July 14 2005
+Paris Charles-de-Gaulle	Delta	51	05:24 PM	inFlight	July 14 2005
+Indianapolis IN	Delta	1014	05:25 PM	inFlight	July 14 2005
+Myrtle Beach SC	Atlantic Southeast Airlines	124	05:25 PM	inFlight	July 14 2005
+Raleigh NC	AirTran	91	05:25 PM	inFlight	July 14 2005
+Salt Lake City UT	Delta	272	05:27 PM	inFlight	July 14 2005
+Richmond VA	Atlantic Southeast Airlines	799	05:27 PM	inFlight	July 14 2005
+Hartford CT	Delta	1123	05:27 PM	inFlight	July 14 2005
+Newark	Delta	1731	05:28 PM	inFlight	July 14 2005
+Cleveland OH	Continental Express	2666	05:28 PM	inFlight	July 14 2005
+Columbia SC	Delta	1722	05:30 PM	scheduled1	July 14 2005
+Pittsburgh PA	Trans States Airlines	3545	05:31 PM	inFlight	July 14 2005
+Westchester County NY	Atlantic Southeast Airlines	159	05:32 PM	inFlight	July 14 2005
+Detroit MI	Northwest	469	05:33 PM	inFlight	July 14 2005
+Cincinnati	Delta	692	05:33 PM	inFlight	July 14 2005
+London Gatwick	Delta	9	05:34 PM	sched4	July 14 2005
+Shreveport LA	Atlantic Southeast Airlines	518	05:34 PM	inFlight	July 14 2005
+Montego Bay	Delta	682	05:34 PM	inFlight	July 14 2005
+Houston	Delta	1016	05:38 PM	inFlight	July 14 2005
+Lexington KY	Delta	1814	05:39 PM	scheduled1	July 14 2005
+Lafayette LA	Atlantic Southeast Airlines	446	05:40 PM	scheduled1	July 14 2005
+Asheville NC (Municipal)	Atlantic Southeast Airlines	267	05:41 PM	scheduled1	July 14 2005
+Daytona Beach FL (Regional)	Delta	1081	05:42 PM	scheduled1	July 14 2005
+Boston (Logan)	AirTran	273	05:42 PM	inFlight	July 14 2005
+Bermuda (International)	Delta	606	05:43 PM	inFlight	July 14 2005
+Monterrey	Atlantic Southeast Airlines	173	05:43 PM	inFlight	July 14 2005
+Boston (Logan)	Delta	336	05:44 PM	inFlight	July 14 2005
+Houston	Continental	720	05:44 PM	inFlight	July 14 2005
+Philadelphia PA	Delta	439	05:44 PM	inFlight	July 14 2005
+Washington DC (Reagan National)	AirTran	190	05:45 PM	scheduled1	July 14 2005
+Augusta	Atlantic Southeast Airlines	88	05:46 PM	scheduled1	July 14 2005
+Minneapolis MN	Atlantic Southeast Airlines	834	05:47 PM	scheduled1	July 14 2005
+Memphis TN	Fedex	502	05:48 PM	scheduled1	July 14 2005
+Las Vegas NV	Delta	698	05:48 PM	inFlight	July 14 2005
+Minneapolis MN	Northwest	1542	05:49 PM	inFlight	July 14 2005
+Newark	Continental	1151	05:51 PM	scheduled1	July 14 2005
+Washington DC (Reagan National)	Delta	1217	05:51 PM	scheduled1	July 14 2005
+Los Angeles CA	Delta	1746	05:51 PM	inFlight	July 14 2005
+Detroit MI	Delta	1427	05:52 PM	inFlight	July 14 2005
+West Palm Beach FL	Delta	475	05:55 PM	scheduled1	July 14 2005
+Indianapolis IN	AirTran	401	05:56 PM	scheduled1	July 14 2005
+Savannah GA	Delta	1422	05:56 PM	scheduled1	July 14 2005
+Baltimore MD	Delta	1593	05:57 PM	inFlight	July 14 2005
+Washington DC (Reagan National)	US Airways	1805	05:58 PM	scheduled1	July 14 2005
+Cleveland OH	Delta	1061	05:58 PM	scheduled1	July 14 2005
+Jackson MS	Atlantic Southeast Airlines	264	05:58 PM	scheduled1	July 14 2005
+Miami FL	Delta	1171	05:58 PM	scheduled1	July 14 2005
+St. Louis MO	Airline#788	MO	05:59 PM	scheduled1	July 14 2005
+San Antonio TX	Delta	1430	05:59 PM	inFlight	July 14 2005
+Huntsville AL	Atlantic Southeast Airlines	388	05:59 PM	scheduled1	July 14 2005
+Toronto	Atlantic Southeast Airlines	594	06:00 PM	scheduled1	July 14 2005
+Norfolk VA	Delta	353	06:00 PM	inFlight	July 14 2005
+Amsterdam (Schiphol)	Martinair	5112	06:01 PM	scheduled1	July 14 2005
+Washington DC (Dulles)	Delta	1465	06:01 PM	scheduled1	July 14 2005
+Montgomery AL	Atlantic Southeast Airlines	120	04:30 PM	inFlight	July 14 2005
+West Palm Beach FL	Delta	475	05:55 PM	scheduled1	July 14 2005
+Indianapolis IN	AirTran	401	05:56 PM	scheduled1	July 14 2005
+Savannah GA	Delta	1422	05:56 PM	scheduled1	July 14 2005
+Baltimore MD	Delta	1593	05:57 PM	inFlight	July 14 2005
+Washington DC (Reagan National)	US Airways	1805	05:58 PM	scheduled1	July 14 2005
+Cleveland OH	Delta	1061	05:58 PM	scheduled1	July 14 2005
+Jackson MS	Atlantic Southeast Airlines	264	05:58 PM	scheduled1	July 14 2005
+Miami FL	Delta	1171	05:58 PM	scheduled1	July 14 2005
+St. Louis MO	Airline#801	MO	05:59 PM	scheduled1	July 14 2005
+San Antonio TX	Delta	1430	05:59 PM	inFlight	July 14 2005
+Huntsville AL	Atlantic Southeast Airlines	388	05:59 PM	scheduled1	July 14 2005
+Toronto	Atlantic Southeast Airlines	594	06:00 PM	scheduled1	July 14 2005
+Norfolk VA	Delta	353	06:00 PM	inFlight	July 14 2005
+Amsterdam (Schiphol)	Martinair	5112	06:01 PM	scheduled1	July 14 2005
+Washington DC (Dulles)	Delta	1465	06:01 PM	scheduled1	July 14 2005
+New York (JFK)	Atlantic Southeast Airlines	437	06:01 PM	inFlight	July 14 2005
+Wichita KS	Atlantic Southeast Airlines	420	06:01 PM	inFlight	July 14 2005
+Nashville TN	Delta	1757	06:05 PM	scheduled1	July 14 2005
+Memphis TN	Mesaba	3417	04:06 PM	landed	July 14 2005
+Kansas City MO	AirTran	436	04:07 PM	landed	July 14 2005
+Richmond VA	Delta	797	04:08 PM	landed	July 14 2005
+Akron/Canton	AirTran	209	04:09 PM	landed	July 14 2005
+Orlando FL	AirTran	178	04:10 PM	scheduled1	July 14 2005
+Dallas/Fort Worth	American	1948	04:10 PM	landed	July 14 2005
+Columbus MS	Atlantic Southeast Airlines	155	04:10 PM	landed	July 14 2005
+Houston	Continental	1620	04:10 PM	landed	July 14 2005
+Houston TX (Hobby)	Delta	1672	04:11 PM	landed	July 14 2005
+"San Juan, Puerto Rico"	Delta	952	04:12 PM	landed	July 14 2005
+London Gatwick	British Airways	2227	04:13 PM	landed	July 14 2005
+Gainesville FL (J R Alison Municipal)	Atlantic Southeast Airlines	110	04:13 PM	landed	July 14 2005
+Hartford CT	Delta	1219	04:14 PM	landed	July 14 2005
+Nashville TN	Delta	493	04:15 PM	landed	July 14 2005
+Dayton	Atlantic Southeast Airlines	315	04:16 PM	landed	July 14 2005
+Baton Rouge LA	Delta	1855	04:16 PM	landed	July 14 2005
+Valparaiso FL	Atlantic Southeast Airlines	259	04:31 PM	landed	July 14 2005
+Las Vegas NV	Delta	335	04:24 PM	landed	July 14 2005
+Fort Myers FL	Delta	483	04:31 PM	inFlight	July 14 2005
+Detroit MI	Delta	1427	05:52 PM	inFlight	July 14 2005

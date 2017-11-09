@@ -1,0 +1,181 @@
+0:PR-Product	1:PR-ModelName	2:PR-Price
+DVD Camcorder	Sony Handycam® DCR-DVD108 DVD Camcorder	$336
+DVD Camcorder	Panasonic VDR-D300 DVD Camcorder	$430
+DVD Camcorder	Sony Handycam® HDR-UX5 DVD Camcorder	$699
+DVD Camcorder	Sony Handycam® DCR-DVD308 DVD Camcorder	$321
+DVD Camcorder	Sony Handycam® DCR-DVD408 DVD Camcorder	$492
+DVD Camcorder	Canon DC50 DVD Camcorder	$534
+DVD Camcorder	Panasonic VDR-D230 DVD Camcorder	$290
+DVD Camcorder	Sony Handycam® DCR-DVD105 DVD Camcorder	$299
+DVD Camcorder	Canon DC230 DVD Camcorder	$332
+DVD Camcorder	Sony Handycam® DCR-DVD508 DVD Camcorder	$627
+DVD Camcorder	Panasonic HDC-DX1 DVD Camcorder	$75
+DVD Camcorder	Sony Handycam® HDR-UX1 DVD Camcorder	$699
+DVD Camcorder	Hitachi DZ-HS300A DVD Camcorder	$357
+DVD Camcorder	Panasonic VDR-D310 DVD Camcorder	$450
+DVD Camcorder	Canon DC100 DVD Camcorder	$259
+DVD Camcorder	Canon DC220 DVD Camcorder	$310
+DVD Camcorder	Canon DC40 DVD Camcorder	$530
+DVD Camcorder	Sony Handycam® DCR-DVD505 DVD Camcorder	$659
+DVD Camcorder	Hitachi UltraVision DZGX5020A DVD Camcorder	$253
+DVD Camcorder	Sony Handycam® DCR-DVD405 DVD Camcorder	$505
+DVD Camcorder	Canon DC210 DVD Camcorder	$290
+DVD Camcorder	Samsung SC-DC164 DVD Camcorder	$230
+DVD Camcorder	Sony Handycam® DCR-DVD305 DVD Camcorder	$344
+DVD Camcorder	Canon DC22 DVD Camcorder	$379
+DVD Camcorder	Sony Handycam® DCR-DVD205 DVD Camcorder	$330
+DVD Camcorder	Sony Handycam DCR-DVD7 DVD Camcorder	$400
+DVD Camcorder	Sony Handycam® DCR-DVD403 DVD Camcorder	$490
+DVD Camcorder	Sony DCR-DVD608E DVD Camcorder	$386
+DVD Camcorder	Panasonic VDR-D100 DVD Camcorder	$308
+DVD Camcorder	Hitachi DZ-MV550 DVD Camcorder	$240
+Printer	Hewlett Packard LaserJet 2600n Printer	$139
+Printer	Hewlett Packard Photosmart C3180 All-In-One InkJet Printer	$38
+Printer	Hewlett Packard LaserJet 1020 Printer	$57
+Printer	Hewlett Packard LaserJet 1018 Printer	$65
+Printer	Hewlett Packard Photosmart C6180 All-In-One InkJet Printer	$240
+Printer	Hewlett Packard Officejet 6310 All-In-One InkJet Printer	$150
+Printer	Hewlett Packard LaserJet 3050 All-In-One Printer	$180
+Printer	Lexmark C534N Printer	$349
+Printer	Hewlett Packard Officejet 7310 All-In-One InkJet Printer	$82
+Printer	Canon PIXMA™ iP90 InkJet Printer	$244
+Printer	Hewlett Packard LaserJet 3055 All-In-One Printer	$320
+Printer	Canon PIXMA™ iP6700D InkJet Photo Printer	$131
+Printer	Hewlett Packard Officejet 5610 All-In-One InkJet Printer	$77
+Printer	Brother Multi-Function Center® MFC-8860DN All-In-One Laser Printer	$366
+Printer	Hewlett Packard LaserJet 4250n Printer	$414
+Printer	Brother DCP-7020 All-In-One Laser Printer	$135
+Printer	Epson Stylus Photo® R260 InkJet Printer	$48
+Printer	Canon PIXMA™ MP160 All-In-One InkJet Printer	$50
+Printer	Canon PIXMA™ MP600 All-In-One InkJet Printer	$130
+Printer	Hewlett Packard Photosmart C5180 All-In-One InkJet Printer	$140
+Printer	Hewlett Packard OfficeJet Pro L7580 All-In-One InkJet Printer	$250
+Printer	Canon PIXMA™ Pro9000 InkJet Photo Printer	$380
+Printer	Canon imageCLASS® MF5770 All-In-One Laser Printer	$175
+Printer	Hewlett Packard LaserJet 1320 Printer	$280
+Printer	Hewlett Packard OfficeJet 7410 All-In-One InkJet Printer	$340
+Printer	Hewlett Packard OfficeJet 6210 All-In-One InkJet Printer	$70
+Printer	Canon PIXMA™ MP780 All-In-One InkJet Printer	$186
+Printer	SiPix Pocket Printer A6	$29
+Printer	Hewlett Packard LaserJet P2015 Printer	$262
+Printer	Epson Stylus Photo® R1800 InkJet Printer	$349
+Flatbed Scanner	Canon CanoScan® CS4400F Flatbed Scanner	$80
+Flatbed Scanner	Epson Perfection® 4490 Film Scanner (35 mm), Flatbed Scanner	$98
+Flatbed Scanner	Epson Perfection® 4990 Flatbed Scanner	$279
+Flatbed Scanner	Epson Perfection® V700 PHOTO Flatbed Scanner	$415
+Flatbed Scanner	Hewlett Packard Scanjet 8270 Flatbed Scanner	$521
+Flatbed Scanner	Canon CanoScan® LiDE 70 Flatbed Scanner	$70
+Flatbed Scanner	Epson Perfection® V750-M PRO Film Scanner (35 mm), Flatbed Scanner	$700
+Flatbed Scanner	Microtek ScanMaker 9800XL Flatbed Scanner	$12
+Flatbed Scanner	Hewlett Packard Scanjet 8350 Flatbed Scanner	$974
+Flatbed Scanner	Hewlett Packard Scanjet 4370 Flatbed Scanner	$87
+Flatbed Scanner	Canon CanoScan LiDE 25 Flatbed Scanner	$44
+Flatbed Scanner	Epson Perfection® V100 Flatbed Scanner	$74
+Flatbed Scanner	Epson Expression® 1680 Special Edition Flatbed Scanner	$135
+Flatbed Scanner	Visioneer OneTouch 9420 Film Scanner (35 mm), Flatbed Scanner	$112
+Flatbed Scanner	Hewlett Packard Scanjet 5590 Flatbed Scanner	$250
+Flatbed Scanner	Microtek ScanMaker i800 Film Scanner (35 mm), Flatbed Scanner	$280
+Flatbed Scanner	Epson GT-2500 Flatbed Scanner	$510
+Flatbed Scanner	Epson Expression® 10000XL Film Scanner (35 mm), Flatbed Scanner	$2,158
+Flatbed Scanner	Ricoh IS760D Flatbed Scanner	$2,920
+Flatbed Scanner	Hewlett Packard Scanjet 8390 Flatbed Scanner	$1,198
+Flatbed Scanner	Hewlett Packard Scanjet 4890 Film Scanner (35 mm), Flatbed Scanner	$137
+Flatbed Scanner	Canon CanoScan Flatbed Scanner with Charge-Coupled Device (CCD) - 8600F Flatbed Scanner	$140
+Flatbed Scanner	Epson Perfection® 3590 PHOTO Flatbed Scanner	$130
+Flatbed Scanner	Epson Perfection® V350 Flatbed Scanner	$112
+Flatbed Scanner	Epson GT-15000 Flatbed Scanner	$769
+Flatbed Scanner	Kodak i80 Flatbed Scanner	$390
+Flatbed Scanner	Hewlett Packard Scanjet 4850 Flatbed Scanner	$85
+Flatbed Scanner	Hewlett Packard Scanjet G3010 Flatbed Scanner	$98
+Flatbed Scanner	Microtek ScanMaker 5950 Flatbed Scanner	$174
+Flatbed Scanner	Visioneer One Touch 9450 Flatbed Scanner	$57
+Digital Camera	Canon PowerShot® SD800 IS / IXUS 850 IS Digital Camera	$278
+Digital Camera	Canon PowerShot S3 IS Digital Camera	$284
+Digital Camera	Sony Cyber-shot® DSC-T100 Digital Camera	$331
+Digital Camera	Panasonic Lumix DMC-TZ3 Digital Camera	$274
+Digital Camera	Canon Digital Rebel XT / EOS 350D Digital Camera with EF-S 18-55mm Lens	$465
+Digital Camera	Canon PowerShot SD750 / IXUS 75 Digital Camera	$244
+Digital Camera	Canon EOS 400D / Rebel XTi Body Only Digital Camera	$580
+Digital Camera	Canon PowerShot A710 IS Digital Camera	$220
+Digital Camera	Nikon D80 Digital Camera with 18-135mm Lens	$934
+Digital Camera	Sony Cyber-shot® DSC-W55 Digital Camera	$180
+Digital Camera	Canon EOS 30D Body Only Digital Camera	$805
+Digital Camera	Nikon D40x Digital Camera	$510
+Digital Camera	Nikon D80 Body Only Digital Camera	$749
+Digital Camera	Canon PowerShot A630 Digital Camera	$173
+Digital Camera	Panasonic Lumix DMC-FZ8 Digital Camera	$269
+Digital Camera	Nikon D200 Body Only Digital Camera	NULL
+Digital Camera	Nikon D80 Digital Camera with 18-200mm Lens	$1,359
+Digital Camera	Canon EOS-5D Body Only Digital Camera	NULL
+Digital Camera	Olympus FE-230 Digital Camera	$115
+Digital Camera	Pentax K100D Digital Camera	$338
+Digital Camera	Olympus Stylus 770 SW Digital Camera	$295
+Digital Camera	Canon PowerShot A640 Digital Camera	$225
+Digital Camera	Casio Exilim EXZ75 Digital Camera	$157
+Digital Camera	Casio EXILIM® Card EX-S770 Digital Camera	$195
+Digital Camera	Panasonic Lumix DMC-LZ7 Digital Camera	$162
+Digital Camera	Panasonic Lumix® DMC-FZ50K Digital Camera	$404
+IPod	Apple iPod™ nano Second Gen. Silver (2GB, MA477LL/A) MP3 Player	$130
+IPod	Apple iPod Video (80GB) Black Digital Media Player	$320
+IPod	Apple iPod nano Black (2 GB) MP3 Player (MA099LL/A)	$130
+IPod	Apple iPod nano Black (4 GB) MP3 Player (MA107LL/A)	$170
+IPod	Apple iPod™ nano Second Gen. Black (8 GB, MA497LL/A) MP3 Player	$190
+IPod	Apple iPod Video Black (30 GB, MA146LL/A) Digital Media Player	$227
+IPod	Apple iPod™ Nano Second Gen. Pink (4 GB, MA489LLA) MP3 Player	$150
+IPod	Apple iPod™ shuffle Second Gen. Silver (1 GB, MA564LL/A) MP3 Player	$66
+IPod	Apple iPod Video White (30 GB, MA002LL/A) Digital Media Player	$238
+IPod	Apple iPod nano White (2 GB, MA004LL/A) MP3 Player	$130
+IPod	Apple iPod Fourth Gen (40 GB, MAC/PC - M9268LL/A) MP3 Player	$184
+IPod	Apple iPod nano Black (1 GB, MA352LL/A) MP3 Player	$120
+IPod	Apple iPod nano White (4 GB, MA005LL/A) MP3 Player	$150
+IPod	Apple iPod nano White (1 GB, MA350LL/A) MP3 Player	$100
+IPod	Apple iPod™ Nano Second Gen. Blue (4 GB, MA428LLA) MP3 Player	$153
+IPod	Apple iPod (30 GB, MAC/PC - M8948LL/A) MP3 Player	$200
+IPod	Apple iPod™ nano Second Gen. Silver (4 GB, MA426LL/A) MP3 Player	$145
+IPod	Apple iPod mini Blue Second Gen. (4 GB - M9802LL/A) MP3 Player	$103
+IPod	Apple iPod™ Nano Second Gen. Green (4 GB, MA487LLA) MP3 Player	$170
+IPod	Apple iPod Third Gen. (20 GB, MAC/PC - M9244LL/A) MP3 Player	$339
+IPod	Apple iPod Fourth Gen. (20 GB, MAC/PC - M9282LL/A) MP3 Player	$166
+IPod	Apple iPod™ shuffle Second Gen. Pink (1 GB, MA947LL/A) MP3 Player	$65
+IPod	Apple iPod video (80GB) White Digital Media Player	$320
+IPod	Apple iPod Video Black (60 GB, MA147LL/A) Digital Media Player	$300
+IPod	Apple iPod® Video U2 Special Edition Black (30 GB, MAC/PC - MA664FB/A) 31 GB Digital Media Player	$266
+IPod	Apple iPod shuffle (512 MB M9724LL/A) MP3 Player	$53
+IPod	Apple iPod shuffle (1 GB, M9725LL/A) MP3 Player	$60
+IPod	Apple iPod Photo (60 GB, M9586LL/A) MP3 Player	$250
+IPod	Apple iPod™ Nano Second Gen. Black (8 GB, MA497LLA) MP3 Player	$225
+IPod	Apple iPod Photo (20 GB, MA079LL/A) MP3 Player	$349
+Nokia 9300	NULL	NULL
+Playstation 2	Sony PlayStation® 2 Console	$128
+Playstation 2	Sony PlayStation 2 Slimline Console	$22
+Playstation 2	Sony PlayStation® 2 Console	$129
+Playstation 2	Sony PlayStation® 3 (60 GB) Console	$538
+Playstation 2	Sony PlayStation® 3 (20 GB) Console	NULL
+Playstation 2	Sony PlayStation Console	NULL
+Playstation 2	Sony PlayStation Portable (PSP) Console	$40
+LCD Monitor	Samsung SyncMaster™ 244T (Silver) 24 inch LCD Monitor	$680
+LCD Monitor	Dell UltraSharp 2407WFP (Black) 24 inch LCD Monitor	NULL
+LCD Monitor	Acer AL1916W (Black) 19 inch LCD Monitor	$165
+LCD Monitor	ViewSonic VG2230WM (Black, Gray) LCD Monitor	$289
+LCD Monitor	Samsung 226BW (Black) LCD Monitor	$310
+LCD Monitor	Hewlett Packard L1906 (Carbon, Silver) 19 inch LCD Monitor	$177
+LCD Monitor	ViewSonic VX922 19 inch LCD Monitor	$239
+LCD Monitor	Acer AL1706AB (Black) LCD Monitor	$147
+LCD Monitor	ViewSonic VP930b (Black) LCD Monitor	$308
+LCD Monitor	Hewlett Packard f2105 (Black, Silver) 21 inch LCD Monitor	$240
+LCD Monitor	Samsung SyncMaster™ 740N (Silver) 17 inch LCD Monitor	$175
+LCD Monitor	Hewlett Packard L1706 (Carbon, Silver) 17 inch LCD Monitor	$154
+LCD Monitor	Samsung SyncMaster™ 204B (Black) 20.1 inch LCD Monitor	$219
+LCD Monitor	Samsung 225BW (Black) LCD Monitor	$249
+LCD Monitor	ViewSonic Optiquest Q19wb (Black) LCD Monitor	$170
+LCD Monitor	Hannspree HANNS·G JC199DP (Black) LCD Monitor	$160
+LCD Monitor	Samsung SyncMaster™ 731B (Black) 17 inch LCD Monitor	$154
+LCD Monitor	Samsung SyncMaster™ 215TW (Black) 21 inch LCD Monitor	$369
+LCD Monitor	Tyco Electronics Entuitive 3000 1547L (Black) 15 inch LCD Monitor	$91
+LCD Monitor	ViewSonic VX2245WM (Black\Silver) LCD Monitor	$269
+LCD Monitor	ViewSonic VX2035WM (Black, Gray) LCD Monitor	$200
+LCD Monitor	Acer AL2223WD (Black, Silver) LCD Monitor	$250
+LCD Monitor	Samsung Syncmaster™ 940BW (Silver, Black) LCD Monitor	$220
+LCD Monitor	Hannspree HC-194D (Black) 19 inch LCD Monitor	$165
+LCD Monitor	Samsung SM400P (Black, Silver) 40 inch LCD Monitor	NULL
+LCD Monitor	Dell UltraSharp™ 2007WFP (Black) 20.1 inch LCD Monitor	$359

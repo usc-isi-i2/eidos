@@ -1,0 +1,84 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## $ ./run.bat wrapcache_081223b_no ../flight/2008-12-24/flight_flytecomm_domain.txt ../flight/2008-12-24/ flight
+
+## Types: 
+
+type PR_AircraftType   [varchar(100)] {source_model.aircraft.val}
+type PR_Airline	       [varchar(100)] {source_model.airline.val}
+type PR_AirlineCode    [varchar(100)] {source_model.airlinecode.val}
+type PR_AirportCode    [varchar(100)] {source_model.airlinecode.val}
+type PR_Altitude       [varchar(100)] {source_model.altitude.val}
+type PR_BaggageClaim   [varchar(100)] {source_model.baggageclaim.val}
+type PR_City	       [varchar(100)] {source_model.city.val}
+type PR_Date	       [varchar(100)] {source_model.date.val}
+type PR_FlightNumber   [varchar(100)] {source_model.flightnumber.val}
+type PR_FlightStatus   [varchar(100)] {source_model.flightstatus.val}
+type PR_RemainingTime  [varchar(100)] {source_model.remainingtime.val}
+type PR_SpeedMPH       [varchar(100)] 
+type PR_Time	       [varchar(100)] {source_model.time.val}
+
+airline should be airline_code instead of airline
+
+INSERT INTO wrapcache_nov1_no.sourceschema VALUES
+('flytecomm_flight_102', 0, 'airline', 'PR-Airline', -1, 'IN'),
+('flytecomm_flight_102', 1, 'flightnumber', 'PR-FlightNumber', -1, 'IN'),
+('flytecomm_flight_102', 2, 'departurecity', 'PR-City', 1, 'OUT'),
+('flytecomm_flight_102', 3, 'departureairport', 'PR-AirportCode', 1, 'OUT'),
+('flytecomm_flight_102', 4, 'departuredate', 'PR-Date', 1, 'OUT'), 
+('flytecomm_flight_102', 5, 'departuretime', 'PR-Time', 1, 'OUT'), 
+('flytecomm_flight_102', 6, 'arrivalcity', 'PR-City', 1, 'OUT'),
+('flytecomm_flight_102', 7, 'arrivalairport', 'PR-AirportCode', 1, 'OUT'),
+('flytecomm_flight_102', 8, 'arrivaldate', 'PR-Date', 1, 'OUT'),
+('flytecomm_flight_102', 9, 'arrivaltime', 'PR-Time', 1, 'OUT'),
+('flytecomm_flight_102', 10, 'remainingflighttime', 'PR-RemainingTime', 1, 'OUT'),
+('flytecomm_flight_102', 11, 'aircrafttype', 'PR-AircraftType', 1, 'OUT'),
+('flytecomm_flight_102', 12, 'altitude', 'PR-Altitude', 1, 'OUT'),
+('flytecomm_flight_102', 13, 'groundspeed', 'PR-SpeedMPH', 1, 'OUT'),
+('flytecomm_flight_102', 14, 'flightstatus', 'PR-FlightStatus', 1, 'OUT');
+
+## Domain Relations: 
+
+relation weather(PR_Forecast,PR_Zip,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeedInMPH,PR_WindDir,PR_VisibilityInMi)
+
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+## Sources: 
+
+function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF).  	  							{wrappers.Ragnarok; convertC2F}
+
+
+# source wunderground ( $PR_Zip, PR_CityState, PR_TimeWZone,
+# 		      PR_TempF:current, PR_Sky, PR_Humidity,
+# 		      PR_WindSpeedInMPH, PR_WindDir, PR_Pressure,
+# 		      PR_VisibilityInMi, 
+# 		      PR_TempF:low1, PR_TempF:high1, PR_Sky:n1,
+# 		      PR_TempF:low2, PR_TempF:high2, PR_Sky:n2,
+# 		      PR_TempF:low3, PR_TempF:high3, PR_Sky:n3,
+# 		      PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, 
+# 		      PR_TempF:low5, PR_TempF:high5, PR_Sky:n5,
+# 		      ) :-  
+#   weather( "current", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure,
+# 	   PR_WindSpeedInMPH, PR_WindDir, PR_VisibilityInMi), 
+#   weather( "current+1", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _,), 
+#   weather( "current+2", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _,), 
+#   weather( "current+3", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _,), 
+#   weather( "current+4", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _,), 
+#   weather( "current+5", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _,).
+# {wrappers.DBService; http://www.wunderground.com/}
+
+
+source wunderground_weather179($PR_Zip, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeedInMPH, PR_WindDir, PR_Pressure, PR_VisibilityInMi, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5) :- weather("current", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeedInMPH, PR_WindDir, PR_VisibilityInMi), weather("current+1", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _,), weather("current+2", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _,), weather("current+3", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _,), weather("current+4", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _,), weather("current+5", PR_Zip, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _,). {wrappers.DBService; http://www.wunderground.com/; JLA:weather179; PR-Zip}
+
+
+## Target Predicate: 
+
+
+target flytecomm_flight230($PR_Airline,$PR_FlightNumber,PR_City,PR_AirportCode,PR_Date,PR_Time,PR_City,PR_AirportCode,PR_Date,PR_Time,PR_RemainingTime,PR_AircraftType,PR_Altitude,PR_SpeedMPH,PR_FlightStatus) {wrappers.DBService; http://www.flytecomm.com/; JLA:flight230; PR-Airline;PR-FlightNumber}

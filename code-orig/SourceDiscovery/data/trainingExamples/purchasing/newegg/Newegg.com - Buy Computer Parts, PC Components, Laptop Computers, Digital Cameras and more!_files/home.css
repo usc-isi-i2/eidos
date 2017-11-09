@@ -1,0 +1,102 @@
+﻿#bodyArea .bodyArea{border:0 !important;}
+#bodyCenterArea{padding:0 1px !important;}
+body #footerArea,#container{width:984px !important;margin:0 auto !important;}
+body #haTabStoreMenu{background:#EEE7D6 !important;}
+
+#promoTop { height: 130px; border-bottom: 1px solid #fff; width: 100%; font-size: 1.2em; overflow:hidden; }
+#promoTop img{border:0;}
+
+.bnrTopLeft { float: left; position: relative; width: 620px; height: 130px; background: #D5D5D5; }
+.bnrTopMid { float: left; position: relative; width: 215px; height: 130px; border-right: 1px solid #FFF; background: #aaa; }
+.bnrTopRight { float: left; position: relative; width: 361px; height: 130px; background: #aaa; overflow: hidden; }
+
+.bnrTopLeft #lb{position:absolute;right:118px;bottom:0px;cursor:pointer;}
+.bnrTopLeft #rb{position:absolute;right:80px;bottom:0px;cursor:pointer;}
+
+#frmSubscribe { float: right;width: 30%; padding: 15px 0 10px 0; margin-right: 15px; font-size: 1.2em; line-height: 1.4em; }
+#frmSubscribe input { vertical-align: middle; }
+#LoginName { width: 180px; }
+
+.bnrPromo{float:left;display:inline;width:270px;height:120px;margin:20px;padding:5px;background:#FFF;border:1px solid #aaa;}
+
+.clear{clear:both;font-size:0;line-height:0;}	
+#promoMid{background:#f2f2e8;height:180px;padding:5px;border:1px solid #aaa;border-width:1px 0;clear:both;}
+#promoMid img {margin:0;padding:0;}
+.shadeTop{position:relative;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/blueBG.gif") repeat-x #FFF;height:1%;}
+.attnMsg { float: left; padding: 15px 0 10px 0; margin: 0 15px; font-size: 1.2em; width: 62%; }
+.attnMsg h2,.attnMsg h2 a{margin:0;padding:0;font-size:1.1em;font-weight:bold;color:#33425A !important;}
+#attnReview { text-align: right; }
+#attnReview img { vertical-align: bottom; }
+
+.categories {margin:0;padding:0 0 0 15px;text-align:left;font-size:1.2em;line-height:1.3em;border-top:1px solid #e3e3e3;height:1%;clear:both;}
+.categories .title{font-weight:bold;font-size:1.1em;color:#33425A !important;line-height:1.6em;}
+
+.categories ul.normal{position:relative;width:100%;clear:both;list-style-type:none;margin:24px 0;padding:0;}
+.categories ul.normal li.cell img{vertical-align:middle;}
+.categories ul.normal li.cell .titg{float:left;width:100px;height:75px;}
+.categories ul.normal li.cell{float:left;width:300px;margin:12px 15px 24px 0;}
+.categories ul.normal li.cell div{margin:0 0 0 110px;padding:0;line-height:1.4em;position:relative;}
+.categories ul.normal li.cell .cList{margin:0;padding:0;}
+.categories ul.normal li.cell .cList li{margin:0 0 0 16px;padding:0 0 2px 0;list-style:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/n2_cat_arrow.gif") outside none;}
+
+.deals {font-size:1.2em;padding-bottom:25px; }
+.dealsHdr {margin:0;padding:35px 15px 15px 15px; border-bottom: 1px solid #aaa; background: #FFF; text-align: right; }
+.dealsHdr h2{float: left; font: bold 1.5em verdana,arial,helvetica,sans-serif; color: #F90; margin: 0; padding: 0; }
+.dealsHdr h2 span{font: normal 0.6em verdana,arial,helvetica,sans-serif; color: #3a3a3a; }
+.dealsHdr h2 span a{color: #3a3a3a !important; }
+.dealBlk {float: left; width: 48%;height:80px;}
+.dealBlk dl{margin: 5px 25px; padding: 10px; border-top: 1px solid #E3E3E3; background: #FFF; }
+.dealBlk .firstRow{border: none; }
+.dealBlk .left{float: left; width: 75%; }
+.dealBlk img{float: left; }
+.dealBlk p{margin: 5px 5px 0 70px; padding: 0; }
+.dealBlk .right{float: right; width: 25%; text-align: right; padding-top: 5px; }
+.dealBlk .b4price{text-decoration: line-through; color: #AAA; margin: 0; padding: 0; }
+.dealBlk .price{font-size: 1.2em; color: #348936; margin: 0; padding: 0; }
+.dealBlk .map{margin:0;padding:0;white-space:nowrap;}
+.dealBlk .map a{line-height:1.3em;}
+
+.modules{clear:both;}
+.modules .modBlk{height:1%;width:50%;float:left;margin-right:-1px;}
+.modules .modBlk div{height:1%;margin:15px;padding:10px;background:#fff;font-size:1.1em;}
+.modules .modBlk div ul li a{line-height:1.6em;}
+.modules .modBlk div .prodRow{font-size:1.1em;}
+.modules .modBlk div .testimonial{font-size:1.1em;}
+
+.modules .modBlk h2{font:bold 1.2em verdana,arial,helvetica,sans-serif;color:#3a3a3a;margin:0 0 10px 0;padding:3px 0;border-bottom:1px solid #aaa;}
+.modules .modBlk h2 span{font:normal 1em verdana,arial,helvetica,sans-serif;color:#3a3a3a;}
+.modules .modBlk h2 span a{color:#3a3a3a !important;}
+.modules .modBlk ul.prodRow{list-style-type:none;float:left;width:100%;margin:0 0 5px 0;padding:0 0 5px 0;border-bottom:1px solid #e3e3e3;clear:both;}
+.modules .modBlk .prodRow li.left{float:left;text-align:left;width:78%;padding:0;margin:5px 0;}
+.modules .modBlk .prodRow li.right{float:right;text-align:right;width:20%;padding:0;margin:5px 0;}
+.modules .modBlk .prodRow img{float:left;}
+.modules .modBlk .prodRow p{margin:0 0 0 70px;padding:0;}
+
+.modules .modBlk div.halfClm{width:45%;float:left;display:inline;margin:0 -1% 0 3%;padding:0;}
+.modules .modBlk .halfClm ul{list-style-type:none;margin:0;padding:0;}
+.modules .modBlk .halfClm li{padding:0 0 0 20px;margin:.5em 0;}
+.modules .modBlk ul.searchList li{background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/icn_search.gif") no-repeat 0 .2em;}
+.modules .modBlk ul.rssList li{list-style-type:none;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/rss_icon_for_homepage.gif") no-repeat 0 .2em;}
+
+.modules .modBlk form{}
+.modules .modBlk ul.poll{list-style-type:none;margin:.5em 0 .5em 1em;padding:0;font-size:1.1em;}
+.modules .modBlk .poll li{margin:0;padding:5px 0;}
+.modules .modBlk .poll input{float:left;}
+.modules .modBlk .poll p{margin:0 0 0 25px;padding:0;}
+.modules .modBlk .poll a{padding:2px 6px;font-size:1.1em;font-weight:normal;clear:both;}
+
+.testimonial dd{line-height:1.4em;}
+.testimonial .title{font-weight:bold;}
+.testimonial .infos{margin:2px 0 15px 0;}
+.youTellUs .title{font-size:1.1em;}
+
+#messageBlk{width:400px;height:220px;position:absolute;right:10px;top:10px;z-index:2000;border:1px solid #AAA;background:transparent url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/warmBG.gif") repeat scroll 0%;margin:0;padding:10px;font-size:1.2em;}
+#messageBlk span{cursor:pointer;}
+#messageBlk iframe{margin:20px 20px 10px 20px;border:1px solid #AAA;}
+
+@media print{
+	#container{width:650px !important;}
+	#centerArea5{width:640px !important;background:none;}
+	#infoMenu,#promoTop,#promoMid{display:none;}
+	#infoContent{width:635px !important;}
+}

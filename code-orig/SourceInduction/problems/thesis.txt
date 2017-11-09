@@ -1,0 +1,71 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+import problems/types.txt
+
+## Relations: 
+
+import problems/relations.txt
+import problems/comparisons.txt
+
+## Sources: 
+
+import problems/sources_ragnarok.txt
+import problems/sources_local.txt
+
+
+source GoCurrency(currency,countryAbbr,rate)                				:- exchange("USD",currency,rate),currency(currency,_,c),country(c,countryAbbr,_).														{wrappers.GoCurrency; GetRates}
+source YahooFinance($tkr,ls,dt,tm,chg,op,mx,mn,vol)	 						:- trade(dt,tm,tkr,ls),market(dt,tkr,cl,op,mx,mn,vol),sum(cl,chg,ls). 																	{wrappers.YahooFinance; GetQuote}
+
+source USGeocoder($street,$zipcode,city,state,latitude,longitude)			:- address(street,_,zipcode,"US",latitude,longitude), municipality(city,state,zipcode,_).												{wrappers.USGeocoder; geocode}
+source Altitude($latitude,$longitude,distanceM)								:- elevation(latitude,longitude,distanceM).										 														{wrappers.Geonames; gtopo30}
+source CountryCode($latitude,$longitude,countryAbbr) 						:- address(_,_,_,country,latitude,longitude), country(country,countryAbbr,_). 															{wrappers.Geonames; countrycode}
+source USGSEarthquakes(decimal,timestamp,latitude,longitude) 				:- earthquake(decimal,timestamp,latitude,longitude).																					{wrappers.USGS; earthquakes7Days} #earthquakesToday}
+
+source WeatherConditions($c,s,cn,lt,ln,snr,sns,off,dt,f,sk,pr,dr,sp,hm,dw)	:- municipality(c,s,z,zo),country(cn,ab,_),northAmerica(ab),centroid(z,lt,ln),conditions(lt,ln,dt,f,sk,dw,hm,dr,sp,_,pr,snr,sns),timezone(zo,off,_).	{wrappers.WeatherChannel; CurrentConditions}
+source WeatherForecast($c,s,cn,lt,ln,of,dy,dt,hi,lo,snr,sns,sk,dir,spd,hum)	:- municipality(c,s,z,_),country(cn,ab,_),northAmerica(ab),centroid(z,lt,ln),forecast(lt,ln,dt,hi,lo,sk,snr,sns,dir,spd,hum),time(_,_,dy,dt,_,_,of).	{wrappers.WeatherChannel; TwoDayForecast}
+
+source GoogleBaseCars($zipcode,$make,datetime,model,price,trim,color,year) 	:- car(make,model,trim,year,vin), car_details(vin,datetime,zipcode,mileage,color,price)													{wrappers.GoogleBase; getCars}
+
+# 
+# source GetDistanceBetweenZipCodes($zip0,$zip1,dis2) :-   GetCentroid(zip0,lat1,lon2), GetCentroid(zip1,lat4,lon5), GetDistance(lat1,lon2,lat4,lon5,dis10), ConvertKm2Mi(dis10,dis2).								{wrappers.Codebump; GetDistanceBetweenZipCodes}
+# function Divide($price1,$price2,price3) :- product(price3,price2,price1).  {invocation.Local; divide}
+
+
+## Target Predicate: 
+
+target GetInfoByZip($zipcode,city,state,areacode,timezone) 											 																		{wrappers.USZip; GetInfoByZip}
+target GetInfoByState($state,city,zipcode,areacode,timezone) 										 																		{wrappers.USZip; GetInfoByState}
+target GetDistanceBetweenZipCodes($zipcode,$zipcode,distanceMi) 											 																{wrappers.Codebump; GetDistanceBetweenZipCodes}
+target GetZipCodesWithin($zipcode,$distanceMi,zipcode,distanceMi) 												 															{wrappers.Codebump; GetZipCodesWithin}
+target YahooGeocoder($street,$zipcode,city,state,country,latitude,longitude)											 													{wrappers.YahooMaps; geocode}
+target GetCenter($zipcode,latitude,longitude,city,state)																													{wrappers.USGeocoder; centroid} 
+target Earthquakes($latitude:n,$longitude:e,$latitude:s,$longitude:w,latitude,longitude,distanceKm,decimal,datetime) 														{wrappers.Geonames; earthquakes}
+target USGSElevation($latitude,$longitude,distanceFt)      			 																										{wrappers.USGS; getElevation}
+target CountryInfo($countryAbbr,country,city:cap,areaSqKm,count:pop,currency,longitude:bbW,latitude:bbN,longitude:bbE,latitude:bbS) 										{wrappers.Geonames; countryInfo}
+
+target GetQuote($ticker,price,date,time,price,price,price,price,count,price,price,percentage,priceRange,price,ratio,company) 												{wrappers.WebServiceX; GetQuote}
+target YahooExchangeRate($currency,$currency,price,date,time,price,price)																									{wrappers.YahooFinance; GetExchangeRate}
+
+target NOAAWeather($icao,airport,latitudeDMS,longitudeDMS,sky,temperatureF,humidity,direction,speedMph,speedMph,pressureMb,temperatureF,temperatureF,distanceMi)			{wrappers.NOAAWeather; current_obs}
+target WunderGround($state,$city,temperatureF,temperatureC,humidity,pressureIn,pressureMb,sky,direction,speedMph,speedMph:gsts) 											{wrappers.Wunderground;wunderground}
+target WeatherBugLive($zipcode,city,state,zipcode,temperatureF,distanceIn,speedMph,direction,speedMph,direction)															{wrappers.WeatherBug; getLiveCompactWeather}
+target WeatherFeed($city,$stateName,temperatureF,temperatureC,sky,temperatureF,humidity,directionSpeed,pressureIn,latitude,longitude,time)									{wrappers.BoyGenius; WeatherFeed}
+target WeatherByICAO($icao,airport,countryAbbr,latitude,longitude,degrees,distanceM,percentage,sky,speedKmph,temperatureC,datetime,temperatureC) 							{wrappers.Geonames; weatherByICAO}
+target WeatherByLatLon($latitude,$longitude,icao,airport,countryAbbr,latitude,longitude,degrees,distanceM,percentage,sky,speedKmph,temperatureC,datetime,temperatureC) 	{wrappers.Geonames; weatherByLatLon}
+                                         
+target YahooWeather($zipcode,city,state,countryAbbr,latitude,longitude,day,date,temperatureF,temperatureF,sky)																{wrappers.YahooWeather; forecastrss}
+target WeatherBugForecast($zipcode,city,state,zipcode,day,sky,temperatureF,temperatureF)																					{wrappers.WeatherBug; getFullForecast}
+
+target USFireHotelsByCity($city,hotel,street,state,zipcode,count,phone) 											 														{wrappers.USFireAdmin; HotelsByCity}
+target USFireHotelsByZip($zipcode,hotel,street,city,state,count,phone)			 																							{wrappers.USFireAdmin; HotelsByZip}
+target YahooHotel($zipcode,$distanceMi,hotel,street,city,state,phone,latitude,longitude,distanceMi,url) 																	{wrappers.YahooLocal; hotelsByZipRadius}                         
+target GoogleBaseHotels($zipcode,hotel,city,state,datetime,price,latitude,longitude,rating)													 							{wrappers.GoogleBase; getHotels}
+
+target YahooTraffic($zipcode,$distanceMi,unknown,latitude,longitude,timestamp,timestamp,timestamp)																			{wrappers.YahooTraffic; TrafficByZipAndRadius}
+target YahooAutos($zipcode,$make,datetime,year,model,vin,mileage,price,distanceMi)																							{wrappers.YahooAutos; usedCars}
+
+
+
+##############################################################

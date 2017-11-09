@@ -1,0 +1,23 @@
+geospatial1, 
+CT-Address, CT-Street, CT-Address, PR-Latitude, PR-Longitude, CT-CityState
+
+geospatial2, 
+CT-Address, CT-CityState, PR-State-Abbr, CT-Address, CT-Street, PR-Latitude, PR-Longitude
+
+weather3, 
+PR-ZipCode5Digit, PR-Humidity, PR-Sky, CT-TemperatureF, CT-VisibilityFeet, CT-PressureInches, PR-WindDirection
+
+weather4, 
+PR-ZipCode5Digit, PR-Humidity, PR-Sky, CT-TemperatureF, CT-VisibilityFeet, PR-WindDirection, CT-PressureInches
+
+weather5, 
+PR-ZipCode5Digit, PR-Humidity, PR-Sky, CT-TemperatureF, CT-VisibilityFeet, CT-PressureInches, PR-WindDirection
+
+weather6, 
+PR-ZipCode5Digit, PR-Humidity, PR-Sky, CT-TemperatureF, CT-VisibilityFeet, CT-PressureInches, PR-WindDirection
+
+weather7, 
+PR-ZipCode5Digit, CT-TemperatureF, PR-Humidity, PR-WindDirection, CT-VisibilityMiles, PR-Sky
+
+weather8, 
+PR-ZipCode5Digit, PR-Sky, PR-Humidity, CT-PressureInches, CT-TemperatureF, PR-WindDirection

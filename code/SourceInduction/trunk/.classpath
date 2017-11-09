@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="old/|invocation/WSDLService.java|wsdl/TestServlet.java|wsdl/Browser.java|invocation/wrappers/WSDLClient.java|relational/Table_untyped.java|invocation/wrappers/XQueryWrapper.java|invocation/wrappers/Google.java|invocation/wrappers/WSDLService.java|induction/EnumerateDomainPreds0.java|induction/EnumerateDomainPreds1.java|induction/EnumerateSourcePreds0.java|induction/EnumerateSourcePreds1.java|induction/EnumerateSourcePreds2.java|induction/old/EnumerateDomainPreds0.java|induction/old/EnumerateDomainPreds1.java|induction/old/EnumerateSourcePreds0.java|induction/old/EnumerateSourcePreds1.java|induction/old/EnumerateSourcePreds2.java|induction/old/Generator.java|evaluation/EvaluatorImpl1.java|metrics/Metrics_old.java|xquery/|reformulation/|evaluation/EvaluatorImpl_beta.java" kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/json.jar"/>
+	<classpathentry kind="lib" path="lib/msbase.jar"/>
+	<classpathentry kind="lib" path="lib/mssqlserver.jar"/>
+	<classpathentry kind="lib" path="lib/msutil.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-3.1.11-bin.jar"/>
+	<classpathentry kind="lib" path="lib/secondstring-20040722.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,4 @@
+#define count_width 1
+#define count_height 1
+static char count_bits[] = {0x00};
+

@@ -1,0 +1,181 @@
+package induction;
+
+import java.util.Vector;
+import domain.*;
+import reformulation.Reformulator;
+
+
+// FOIL like generation of candidates - redundant search!
+
+public class EnumerateSourcePreds0 extends Generator {
+	
+	public EnumerateSourcePreds0(Domain domain) {
+		super(domain);
+	}
+
+	public EnumerateSourcePreds0(Domain domain,
+			  			int maxClauseLength,
+			  			int maxPredRepitition,
+			  			int maxVarLevel,
+			  			int maxConstantCount) {
+		super(domain, maxClauseLength, maxPredRepitition, maxVarLevel, maxConstantCount);
+	}
+
+	public Clause firstClause(Domain d) {
+		Vector<Predicate> preds = new Vector<Predicate>();
+		preds.add(d.target);
+		Vector<Term[]> terms = new Vector<Term[]>();
+		terms.add(new Term[d.target.arity]);
+		return new Clause(preds, terms);
+	}
+	
+	public Vector<Clause> expandNode(Clause node) {
+		Vector<Clause> filteredOutput = new Vector<Clause>();
+		Vector<Clause> output = generateNodes(node);
+		for (Clause c: output) {
+			Clause unfolding = Reformulator.unfold(c);
+			int maxLevel = unfolding.maxLevel();
+			if (!filteredOutput.contains(c)
+				&& maxLevel <= maxVarLevel 
+				&& maxLevel <= c.preds.size() 
+				&& c.isExecutable() 
+				&& unfolding.isExecutable()) {
+				filteredOutput.add(c);
+			}
+		}
+		return filteredOutput;
+	}
+	
+	
+	private Vector<Clause> generateNodes(Clause node) {
+		
+		System.out.println("Expanding: "+node.toString());
+		
+		Vector<Clause> tested = new Vector<Clause>();
+		Vector<Clause> output = new Vector<Clause>();
+		
+		Term[] t1 = node.terms.lastElement();
+		// cycle over variables in the term:
+		for (int pos=0; pos<t1.length; pos++) {
+			// check variable is not already equated to previous variable
+			if (t1[pos] == null) {
+				SemanticType type = node.preds.lastElement().types[pos];
+				// equate with a previous variable
+				for (int i=0; i<node.terms.size(); i++) {
+					Term[] t2 = node.terms.elementAt(i);
+					int max2 = t2.length;
+					if (i==node.terms.size()-1) { max2 = pos; }
+					for (int j=0; j<max2; j++) {
+						if (type == node.preds.elementAt(i).types[j] && (t2[j] == null || t2[j].isConstant)) {
+							Clause copyOfClause = node.copy();
+							copyOfClause.terms.lastElement()[pos] = new Term(i,j);
+							if (!copyOfClause.isSymmetric() && !tested.contains(copyOfClause)) {
+								tested.add(copyOfClause);
+								Clause unfolding = Reformulator.unfold(copyOfClause);
+								if (unfolding.makesSense()) {
+									output.add(copyOfClause);
+								}
+							}
+						}	
+					}
+				}
+				// or add a new constant
+				if (node.countConstants() < this.maxConstantCount && t1[pos] == null) {
+					Clause copyOfClause = node.copy();
+					copyOfClause.terms.lastElement()[pos] = new Term(null);
+					if (!copyOfClause.isSymmetric() && !tested.contains(copyOfClause)) {
+						tested.add(copyOfClause);
+						Clause unfolding = Reformulator.unfold(copyOfClause);
+						if (unfolding.makesSense()) {
+							output.add(copyOfClause);
+						}
+					}
+				}
+			}
+		}
+		
+		// add a new predicate
+		if (node.preds.size() - 1 < maxClauseLength) {
+			// cycle over source predicates
+			for (int i=0; i<domain.sources.size(); i++) {
+				Predicate pred = domain.sources.elementAt(i);
+				if (node.occurs(pred) < maxPredRepitition) {
+					// find first input attribute for the predicate
+					int firstInput = 0;
+					for (int j=0; j<pred.arity; j++) {
+						if (pred.bindings[j]) {
+							firstInput = j;
+							break;
+						}
+					}	
+					SemanticType type = pred.types[firstInput];
+					// over all previous literals (head and body)
+					for (int j=0; j<node.preds.size(); j++) {
+						Predicate pred2 = node.preds.elementAt(j);
+						Term[] t2 = node.terms.elementAt(j);
+						// over all variables in each literal
+						for (int k=0; k<pred2.arity; k++) {
+							// check that they are the same type 
+							if (pred2.types[k] == type) {
+								// and that the variable hasn't already been equated
+								if (t2[k]==null || t2[k].isConstant) {
+									Term[] t3 = new Term[pred.arity];
+									t3[firstInput] = new Term(j,k);
+									Clause copyOfClause = node.copy();
+									copyOfClause.preds.add(pred);
+									copyOfClause.terms.add(t3);
+									if (!copyOfClause.isSymmetric()) {
+										Clause unfolding = Reformulator.unfold(copyOfClause);
+										if (unfolding.makesSense()) {
+											output.add(copyOfClause);
+										}	
+									}
+								}
+							}
+						}
+					}	
+				}	
+			}
+			if (node.isOutputSafe()) {
+				// do same for comparison predicates 
+				for (int i=0; i<domain.comparisons.size(); i++) {
+					Predicate pred = domain.comparisons.elementAt(i);
+					if (node.occurs(pred) < maxPredRepitition) {
+						// over each position in the predicate
+						for (int j=0; j<pred.arity; j++) {
+							SemanticType type = pred.types[j];
+							// over all previous literals (head and body)
+							for (int k=0; k<node.terms.size(); k++) {
+								Predicate pred2 = node.preds.elementAt(k);
+								Term[] t2 = node.terms.elementAt(k);
+								// over all variables in each literal
+								for (int l=0; l<pred2.arity; l++) {
+									// check that they are the same type 
+									if (pred2.types[l] == type) {
+										// and that the variable hasn't already been equated
+										if (t2[l]==null || t2[l].isConstant) {
+											Term[] t3 = new Term[pred.arity];
+											t3[j] = new Term(k,l);
+											Clause copyOfClause = node.copy();
+											copyOfClause.preds.add(pred);
+											copyOfClause.terms.add(t3);
+											if (!copyOfClause.isSymmetric()) {
+												Clause unfolding = Reformulator.unfold(copyOfClause);
+												if (unfolding.makesSense()) {
+													output.add(copyOfClause);
+												}	
+											}
+										}
+									}	
+								}
+							}
+						}	
+					}	
+				}
+			}
+		}
+		return output;
+	}
+
+
+}	

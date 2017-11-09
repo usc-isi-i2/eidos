@@ -1,0 +1,50 @@
+import problems/types.txt
+
+## Domain Relations: 
+
+relation centroid(zipcode,latitude,longitude)
+relation distance(latitude,longitude,latitude,longitude,distanceKm)
+
+relation municipality(city,state,zipcode,timezone)
+relation phoneprefix(zipcode,areacode)
+
+relation state(state,stateName,city:capital)
+relation country(country,countryAbbr,city:capital)
+
+relation northAmerica(countryAbbr) # this is a hack, will become: continent(countryAbbr,"North America")
+
+relation address(street,apartment,zipcode,country,latitude,longitude) 
+relation building(street,zipcode,country,count:floors)
+relation hotel(hotel,poBox,street,zipcode,country,phone)
+relation airport(icao,iata,airport,city,stateName,country,latitude,longitude)
+relation airline(airline,airlinecode)
+relation hotelInfo(hotel,count:rooms)    #NOTE: this relation assumes that hotel name is a unique key!
+
+relation timezone(timezone,timeoffset,boolean:daylightSavings)
+relation currentTime(timestamp)
+relation time(timestamp,datetime,day,date,time,timezone,timeoffset)
+
+relation listing(exchange,company,ticker,industry)
+relation trade(date,time,ticker,price)
+relation market(date,ticker,price:cls,price:opn,price:max,price:min,count:vol)
+relation currency(currency,currencyName,country)
+relation exchange($currency,$currency,price)
+
+relation conditions(latitude,longitude,datetime,temperatureF,sky,temperatureF:dp,humidity,direction,speedMph:ws,speedMph:wg,pressureIn,time:snr,time:sns)
+relation forecast(latitude,longitude,date,temperatureF:hi,temperatureF:lo,sky,time:sunrise,time:sunset,direction,speedMph,humidity)
+relation earthquake(decimal,timestamp,latitude,longitude)
+relation elevation(latitude,longitude,distanceM)
+
+relation convertDist(distanceKm,distanceMi)
+relation convertDistMFt(distanceM,distanceFt)
+relation convertTemp(temperatureC,temperatureF)
+relation convertCoord(latitudeDMS,longitudeDMS,latitude,longitude)
+relation convertPress(pressureIn,pressureMb)
+relation convertSpeed(speedKmph,speedMph)
+
+relation concat(direction,speedMph,directionSpeed)
+relation sum(price,price,price)
+relation product(price,price,price)
+
+relation car(make,model,trim,year,vin)
+relation car_details(vin,datetime,zipcode,mileage,color,price)

@@ -1,0 +1,150 @@
+time,location,temperature,tempinf,sky,windspeed,windspeedinmph,winddir,visibility,visibilityinmi,zipin
+03:25 p.m.,"Linden, NJ",90°F,90,Partly Cloudy,14 mph,14,SSE,8.0 miles,8,7036
+12:25 p.m.,"North Bend, OR",58°F,58,Partly Cloudy,12 mph,12,W,10.0 miles,10,97459
+02:25 p.m.,"Gadsden, AL",77°F,77,Thunder,11 mph,11,W,10.0 miles,10,35903
+03:25 p.m.,"Boston, MA",68°F,68,Sunny,9 mph,9,ESE,10.0 miles,10,2120
+01:25 p.m.,"Salt Lake City, UT",45°F,45,Rain Shower,8 mph,8,NW,8.0 miles,8,84102
+03:25 p.m.,"Salem, VA",88°F,88,Partly Cloudy,7 mph,7,SW,10.0 miles,10,24153
+03:25 p.m.,"Manchester, CT",84°F,84,Sunny,20 mph,20,S,8.0 miles,8,6040
+02:25 p.m.,"Adrian, MN",85°F,85,Sunny,15 mph,15,SSW,10.0 miles,10,56110
+12:25 p.m.,"Coeur d' Alene, ID",57°F,57,Sunny,4 mph,4,WNW,10.0 miles,10,83814
+03:25 p.m.,"Washington, DC",86°F,86,Partly Cloudy,13 mph,13,S,8.0 miles,8,20007
+02:25 p.m.,"Evanston, IL",75°F,75,Fair,17 mph,17,W,10.0 miles,10,60201
+12:25 p.m.,"Milton, WA",58°F,58,Mostly Cloudy,6 mph,6,NNW,10.0 miles,10,98354
+08:56 a.m.,"Kailua, HI",80°F,80,Mostly Cloudy,9 mph,9,E,7.0 miles,7,96734
+02:25 p.m.,"Merna, NE",84°F,84,Sunny and Windy,30 mph,30,SSE,10.0 miles,10,68856
+02:25 p.m.,"Jackson, MS",75°F,75,Cloudy,1 mph,1,SE,6.0 miles,6,39212
+02:25 p.m.,"Rock Rapids, IA",87°F,87,Sunny,18 mph,18,SSW,10.0 miles,10,51246
+03:25 p.m.,"Liberty, KY",90°F,90,Sunny,5 mph,5,W,10.0 miles,10,42539
+02:25 p.m.,"Opelika, AL",80°F,80,Thunder in the Vicinity,5 mph,5,ESE,10.0 miles,10,36801
+02:25 p.m.,"Houston, TX",93°F,93,Partly Cloudy,17 mph,17,SSE,10.0 miles,10,77041
+01:25 p.m.,"Rapid City, SD",85°F,85,Partly Cloudy,19 mph,19,SSE,10.0 miles,10,57701
+02:25 p.m.,"Shawnee Mission, KS",84°F,84,Partly Cloudy,14 mph,14,S,9.0 miles,9,66216
+03:25 p.m.,"Palmyra, NY",86°F,86,Mostly Cloudy,14 mph,14,SW,8.0 miles,8,14522
+03:25 p.m.,"Arlington, VA",86°F,86,Partly Cloudy,13 mph,13,S,8.0 miles,8,22204
+03:25 p.m.,"Miami Beach, FL",79°F,79,Cloudy,2 mph,2,ESE,10.0 miles,10,33160
+03:25 p.m.,"Middle River, MD",85°F,85,Fair,11 mph,11,SE,5.0 miles,5,21220
+02:25 p.m.,"Nashville, TN",75°F,75,Thunder,6 mph,6,E,10.0 miles,10,37201
+03:25 p.m.,"Charlotte, NC",88°F,88,Partly Cloudy,6 mph,6,SSW,7.0 miles,7,28202
+02:25 p.m.,"Alexandria, LA",90°F,90,Partly Cloudy,6 mph,6,S,10.0 miles,10,71302
+12:25 p.m.,"Benton City, WA",64°F,64,Partly Cloudy,6 mph,6,WSW,10.0 miles,10,99320
+12:25 p.m.,"Dayton, NV",56°F,56,Cloudy,27 mph,27,W,10.0 miles,10,89403
+02:25 p.m.,"Oklahoma City, OK",88°F,88,Partly Cloudy,19 mph,19,S,9.0 miles,9,73116
+01:25 p.m.,"Evanston, WY",40°F,40,Cloudy,16 mph,16,W,10.0 miles,10,82930
+02:25 p.m.,"Southaven, MS",75°F,75,Cloudy,10 mph,10,E,10.0 miles,10,38671
+03:25 p.m.,"Greenwood, DE",97°F,97,Sunny,5 mph,5,SSW,7.0 miles,7,19950
+03:25 p.m.,"Plantsville, CT",83°F,83,Sunny,20 mph,20,SSW,8.0 miles,8,6479
+12:25 p.m.,"Tucson, AZ",89°F,89,Sunny,8 mph,8,W,10.0 miles,10,85741
+02:25 p.m.,"Cottonwood Falls, KS",75°F,75,Sunny,13 mph,13,SSE,10.0 miles,10,66845
+01:25 p.m.,"Whitefish, MT",54°F,54,Cloudy,10 mph,10,NW,10.0 miles,10,59937
+03:45 p.m.,"Chauncey, GA",86°F,86,Mostly Cloudy,6 mph,6,SSW,8.0 miles,8,31011
+02:25 p.m.,"Rushmore, MN",85°F,85,Sunny,15 mph,15,SW,10.0 miles,10,56168
+02:25 p.m.,"Dallas, TX",92°F,92,Mostly Cloudy,19 mph,19,SSW,10.0 miles,10,75204
+12:25 p.m.,"Redmond, WA",58°F,58,Mostly Cloudy,6 mph,6,WNW,10.0 miles,10,98052
+03:25 p.m.,"Atlanta, GA",88°F,88,Partly Cloudy,2 mph,2,SE,9.0 miles,9,30302
+12:25 p.m.,"Flagstaff, AZ",66°F,66,Sunny and Windy,31 mph,31,SW,10.0 miles,10,86001
+02:45 p.m.,"Fremont, NE",88°F,88,Partly Cloudy,21 mph,21,SSE,10.0 miles,10,68025
+02:45 p.m.,"Linden, TN",69°F,69,Rain Shower,3 mph,3,N,9.0 miles,9,37096
+02:45 p.m.,"Milton, FL",75°F,75,Mostly Cloudy,1 mph,1,SSW,7.0 miles,7,32570
+03:25 p.m.,"Laurel, DE",89°F,89,Partly Cloudy,7 mph,7,S,8.0 miles,8,19956
+03:45 p.m.,"Hyde Park, VT",71°F,71,Sunny,12 mph,12,S,6.0 miles,6,5655
+02:45 p.m.,"La Fontaine, IN",85°F,85,Partly Cloudy,11 mph,11,W,10.0 miles,10,46940
+01:45 p.m.,"Rapid City, SD",86°F,86,Partly Cloudy and Windy,20 mph,20,SSE,10.0 miles,10,57702
+02:45 p.m.,"Stanley, ND",71°F,71,Mostly Cloudy,20 mph,20,E,9.0 miles,9,58784
+02:45 p.m.,"Guthrie, OK",90°F,90,Sunny,19 mph,19,SSW,10.0 miles,10,73044
+02:25 p.m.,"Bismarck, ND",80°F,80,Sunny and Windy,26 mph,26,ESE,10.0 miles,10,58501
+02:45 p.m.,"Saint Louis, MO",79°F,79,Cloudy,3 mph,3,ESE,10.0 miles,10,63138
+11:16 a.m.,"Petersburg, AK",61°F,61,Fair,6 mph,6,W,10.0 miles,10,99833
+03:45 p.m.,"Columbia, SC",89°F,89,Partly Cloudy,7 mph,7,SSE,10.0 miles,10,29201
+02:25 p.m.,"Bellevue, NE",87°F,87,Fair,19 mph,19,SSE,7.0 miles,7,68005
+03:45 p.m.,"Fraser, MI",85°F,85,Fair,26 mph,26,W,10.0 miles,10,48026
+02:45 p.m.,"Troy, MO",82°F,82,Cloudy,3 mph,3,SE,10.0 miles,10,63379
+03:45 p.m.,"Hubert, NC",82°F,82,Cloudy,14 mph,14,S,8.0 miles,8,28539
+08:53 a.m.,"Honolulu, HI",83°F,83,Partly Cloudy,12 mph,12,E,10.0 miles,10,96801
+03:45 p.m.,"Great Barrington, MA",83°F,83,Fair,20 mph,20,SSW,8.0 miles,8,1230
+02:45 p.m.,"Sturtevant, WI",93°F,93,Fair and Windy,32 mph,32,W,10.0 miles,10,53177
+03:25 p.m.,"Yarmouth, ME",50°F,50,Fog,4 mph,4,E,1.2 miles,1.2,4096
+02:45 p.m.,"Florissant, MO",77°F,77,Cloudy,2 mph,2,SSE,10.0 miles,10,63033
+03:45 p.m.,"Manchester, NH",65°F,65,Cloudy,8 mph,8,SE,7.0 miles,7,3101
+12:45 p.m.,"Los Angeles, CA",73°F,73,Fair,11 mph,11,WSW,10.0 miles,10,90001
+02:45 p.m.,"Denham Springs, LA",81°F,81,Mostly Cloudy,10 mph,10,ENE,10.0 miles,10,70726
+03:45 p.m.,"Fairfield, CT",76°F,76,Sunny,13 mph,13,SE,6.0 miles,6,6824
+02:45 p.m.,"Milwaukee, WI",89°F,89,Partly Cloudy,24 mph,24,W,10.0 miles,10,53228
+03:45 p.m.,"Belleview, FL",88°F,88,Partly Cloudy,4 mph,4,SE,10.0 miles,10,34420
+02:45 p.m.,"Winner, SD",87°F,87,Sunny and Windy,20 mph,20,SSE,10.0 miles,10,57580
+12:45 p.m.,"Laughlin, NV",88°F,88,Sunny and Windy,20 mph,20,SSW,10.0 miles,10,89029
+03:45 p.m.,"Dover Foxcroft, ME",53°F,53,Cloudy,10 mph,10,SSE,8.0 miles,8,4426
+02:45 p.m.,"Mount Prospect, IL",89°F,89,Fair,24 mph,24,W,10.0 miles,10,60056
+02:45 p.m.,"Quincy, IL",85°F,85,Mostly Cloudy,12 mph,12,SSW,10.0 miles,10,62301
+03:45 p.m.,"Tampa, FL",87°F,87,Cloudy,6 mph,6,SW,10.0 miles,10,33602
+02:45 p.m.,"Tinley Park, IL",92°F,92,Partly Cloudy,24 mph,24,W,10.0 miles,10,60477
+02:45 p.m.,"Milwaukee, WI",79°F,79,Partly Cloudy,10 mph,10,W,10.0 miles,10,53202
+01:45 p.m.,"Glenwood, NM",82°F,82,Sunny,23 mph,23,SW,10.0 miles,10,88039
+02:45 p.m.,"Duluth, MN",70°F,70,Partly Cloudy,26 mph,26,WNW,10.0 miles,10,55803
+03:45 p.m.,"Utica, MI",83°F,83,Partly Cloudy,28 mph,28,W,10.0 miles,10,48317
+03:45 p.m.,"Hillsborough, NJ",90°F,90,Thunder,8 mph,8,SSW,8.0 miles,8,8844
+03:45 p.m.,"Warner, NH",70°F,70,Mostly Cloudy,12 mph,12,SSE,10.0 miles,10,3278
+02:45 p.m.,"Mena, AR",84°F,84,Partly Cloudy,6 mph,6,SW,10.0 miles,10,71953
+12:45 p.m.,"Tacoma, WA",57°F,57,Cloudy,6 mph,6,WNW,10.0 miles,10,98466
+03:45 p.m.,"Lawrenceville, GA",71°F,71,Partly Cloudy,2 mph,2,WSW,7.0 miles,7,30044
+01:45 p.m.,"Garden Valley, ID",57°F,57,Partly Cloudy,26 mph,26,WNW,10.0 miles,10,83622
+02:45 p.m.,"Victoria, TX",90°F,90,Fair,16 mph,16,SSE,10.0 miles,10,77904
+02:45 p.m.,"Emporia, KS",82°F,82,Fair,15 mph,15,SSE,10.0 miles,10,66801
+02:45 p.m.,"Madison, MS",78°F,78,Cloudy,4 mph,4,SSE,8.0 miles,8,39110
+02:45 p.m.,"Lester, IA",87°F,87,Fair,22 mph,22,SSW,10.0 miles,10,51242
+02:45 p.m.,"Waupaca, WI",79°F,79,Fair,24 mph,24,W,10.0 miles,10,54981
+02:45 p.m.,"Indianapolis, IN",86°F,86,Partly Cloudy,8 mph,8,WSW,10.0 miles,10,46201
+03:45 p.m.,"Louisville, KY",90°F,90,Partly Cloudy,12 mph,12,W,10.0 miles,10,40207
+01:45 p.m.,"Boise, ID",61°F,61,Partly Cloudy,22 mph,22,NW,10.0 miles,10,83702
+03:45 p.m.,"Detroit, MI",85°F,85,Fair and Windy,27 mph,27,W,10.0 miles,10,48202
+01:45 p.m.,"Longmont, CO",82°F,82,Sunny,12 mph,12,SSE,10.0 miles,10,80501
+03:45 p.m.,"Pacolet, SC",93°F,93,Partly Cloudy,12 mph,12,SSE,9.0 miles,9,29372
+03:45 p.m.,"Waynesville, NC",84°F,84,Partly Cloudy,6 mph,6,SSW,10.0 miles,10,28785
+02:45 p.m.,"Dardanelle, AR",88°F,88,Partly Cloudy,5 mph,5,WSW,8.0 miles,8,72834
+02:45 p.m.,"Saint Louis, MO",76°F,76,Cloudy,6 mph,6,ENE,10.0 miles,10,63101
+03:45 p.m.,"Cambridge, MA",69°F,69,Sunny,10 mph,10,ESE,10.0 miles,10,2138
+03:45 p.m.,"Bowling Green, OH",87°F,87,Fair,15 mph,15,W,10.0 miles,10,43402
+03:45 p.m.,"Columbus, OH",88°F,88,Partly Cloudy,19 mph,19,WSW,10.0 miles,10,43085
+03:45 p.m.,"Winsted, CT",83°F,83,Sunny,18 mph,18,SSW,9.0 miles,9,6098
+03:45 p.m.,"Bethesda, MD",89°F,89,Mostly Cloudy,10 mph,10,SSW,8.0 miles,8,20814
+01:45 p.m.,"Clovis, NM",85°F,85,Fair,23 mph,23,S,9.0 miles,9,88101
+01:45 p.m.,"Orem, UT",51°F,51,Cloudy,13 mph,13,NW,9.0 miles,9,84057
+02:45 p.m.,"Memphis, TN",75°F,75,Cloudy,9 mph,9,E,10.0 miles,10,38117
+03:45 p.m.,"Cresskill, NJ",85°F,85,Sunny,22 mph,22,S,6.0 miles,6,7626
+03:45 p.m.,"Boston, MA",62°F,62,Fair,10 mph,10,E,10.0 miles,10,2101
+01:45 p.m.,"Edgewood, NM",83°F,83,Fair,21 mph,21,SSW,10.0 miles,10,87015
+02:45 p.m.,"Fishers, IN",85°F,85,Sunny,8 mph,8,W,10.0 miles,10,46038
+03:45 p.m.,"Charlotte, NC",89°F,89,Partly Cloudy,5 mph,5,S,7.0 miles,7,28277
+10:56 a.m.,"Anchorage, AK",59°F,59,Partly Cloudy,5 mph,5,,Unlimited,Unlimited ,
+,,,,,,,,   ,,
+,,,,,,,,   ,,
+,,,,,,"            """,99504,,,
+03:45 p.m.,"Travelers Rest, SC",87°F,87,Thunder,11 mph,11,S,9.0 miles,9,29690
+03:53 p.m.,"Morgantown, WV",68°F,68,Mostly Cloudy,9 mph,9,S,10.0 miles,10,26508
+12:45 p.m.,"Dallas, OR",56°F,56,Cloudy,19 mph,19,SSW,9.0 miles,9,97338
+03:45 p.m.,"Johnston, RI",72°F,72,Partly Cloudy,15 mph,15,S,6.0 miles,6,2919
+03:45 p.m.,"Newtown, PA",89°F,89,Sunny,10 mph,10,SSW,8.0 miles,8,18940
+03:45 p.m.,"New York, NY",85°F,85,Sunny,18 mph,18,SSE,8.0 miles,8,10001
+03:45 p.m.,"Kinde, MI",79°F,79,Partly Cloudy,34 mph,34,WSW,10.0 miles,10,48445
+03:45 p.m.,"Winchester, KY",90°F,90,Partly Cloudy,10 mph,10,WNW,10.0 miles,10,40391
+02:45 p.m.,"Indianapolis, IN",85°F,85,Sunny,8 mph,8,W,10.0 miles,10,46260
+02:45 p.m.,"Jonesboro, AR",96°F,96,Partly Cloudy,12 mph,12,SSE,10.0 miles,10,72401
+01:45 p.m.,"Montrose, CO",79°F,79,Partly Cloudy and Windy,31 mph,31,WSW,10.0 miles,10,81401
+08:56 a.m.,"Kaneohe, HI",80°F,80,Mostly Cloudy,9 mph,9,E,7.0 miles,7,96744
+01:45 p.m.,"Conifer, CO",74°F,74,Sunny and Windy,32 mph,32,SSW,10.0 miles,10,80433
+03:45 p.m.,"Laconia, NH",59°F,59,Cloudy,9 mph,9,NE,9.0 miles,9,3246
+02:45 p.m.,"Walker, LA",81°F,81,Cloudy,9 mph,9,ENE,10.0 miles,10,70785
+02:45 p.m.,"Ankeny, IA",86°F,86,Fair,20 mph,20,SW,10.0 miles,10,50021
+03:45 p.m.,"Dayton, OH",87°F,87,Partly Cloudy,10 mph,10,WSW,9.0 miles,9,45429
+03:45 p.m.,"Edgewater, NJ",85°F,85,Sunny,18 mph,18,SSE,8.0 miles,8,7020
+03:45 p.m.,"Holden, WV",88°F,88,Cloudy,3 mph,3,NW,10.0 miles,10,25625
+03:45 p.m.,"Stowe, VT",70°F,70,Sunny,12 mph,12,S,7.0 miles,7,5672
+02:45 p.m.,"Milwaukee, WI",86°F,86,Partly Cloudy,20 mph,20,W,10.0 miles,10,53215
+02:45 p.m.,"Marinette, WI",79°F,79,Partly Cloudy,27 mph,27,WSW,7.0 miles,7,54143
+03:45 p.m.,"Cumberland Center, ME",50°F,50,Fog,3 mph,3,ENE,1.3 miles,1.3,4021
+03:45 p.m.,"Springfield, MA",85°F,85,Sunny,18 mph,18,S,8.0 miles,8,1101
+03:45 p.m.,"Buffalo, NY",80°F,80,Partly Cloudy and Windy,29 mph,29,WSW,10.0 miles,10,14204
+12:45 p.m.,"Mesa, AZ",88°F,88,Sunny,10 mph,10,S,10.0 miles,10,85206
+03:45 p.m.,"Baltimore, MD",89°F,89,Partly Cloudy,10 mph,10,SE,5.0 miles,5,21230
+03:45 p.m.,"Exton, PA",87°F,87,Partly Cloudy,11 mph,11,SSE,8.0 miles,8,19341
+03:45 p.m.,"Newark, NJ",90°F,90,Partly Cloudy,14 mph,14,SSE,8.0 miles,8,7102

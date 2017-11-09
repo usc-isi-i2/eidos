@@ -1,0 +1,7 @@
+Source	#total	#labeled	Top1	Top2	Top3	Top4	#samples	P1	R1	F1	P4	R4	F4
+accuweather.txt	11	10	3	3	5	6	366	=D2/C2	=D2/B2	=2*I2*J2/(I2+J2)	=G2/C2	=G2/B2	=2*L2*M2/(L2+M2)
+DOTSweather.txt	15	15	1	6	8	8	6	=D3/C3	=D3/B3	=2*I3*J3/(I3+J3)	=G3/C3	=G3/B3	=2*L3*M3/(L3+M3)
+FastWeatherForecast.txt	21	18	7	12	14	15	6	=D4/C4	=D4/B4	=2*I4*J4/(I4+J4)	=G4/C4	=G4/B4	=2*L4*M4/(L4+M4)
+Unisys.txt	13	11	3	7	7	7	7	=D5/C5	=D5/B5	=2*I5*J5/(I5+J5)	=G5/C5	=G5/B5	=2*L5*M5/(L5+M5)
+WeatherNetwork.txt	13	11	2	4	5	6	9	=D6/C6	=D6/B6	=2*I6*J6/(I6+J6)	=G6/C6	=G6/B6	=2*L6*M6/(L6+M6)
+yahooweather.txt	16	15	3	6	8	9	14	=D7/C7	=D7/B7	=2*I7*J7/(I7+J7)	=G7/C7	=G7/B7	=2*L7*M7/(L7+M7)

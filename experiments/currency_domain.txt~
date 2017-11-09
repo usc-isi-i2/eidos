@@ -1,0 +1,27 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types:
+
+type PR_CurrencyAmount    [varchar(100)] {datasamples.currency_samples.AMOUNT }
+type PR_CurrencyCodeFrom  [varchar(100)] {datasamples.currency_samples.FROM_CURRENCY}
+type PR_CurrencyCodeTo    [varchar(100)] {datasamples.currency_samples.TO_CURRENCY}
+type PR_CurrencyName      [varchar(100)] {source_model.currencyname.val}
+
+## Domain Relations:
+
+relation currency(PR_CurrencyAmount, PR_CurrencyCodeFrom, PR_CurrencyName, PR_CurrencyAmount, PR_CurrencyCodeTo, PR_CurrencyName)
+
+## Sources
+
+source xe_currency11($PR_CurrencyAmount:in, $PR_CurrencyCodeFrom, $PR_CurrencyCodeTo, PR_CurrencyAmount:out) :- currency(PR_CurrencyAmount:in, PR_CurrencyCodeFrom, _, PR_CurrencyAmount:out, PR_CurrencyCodeTo, _,). {wrappers.DBService; http://www.xe.com/; JLA:currency11; amount;fromCurrency;toCurrency}
+
+#source tuple($PR_CurrencyAmount:in, $PR_CurrencyCode:from, $PR_CurrencyCode:to) :- currency(PR_CurrencyAmount:in, PR_CurrencyCode:from, _, PR_CurrencyAmount:out, PR_CurrencyCode:to, _,). {wrappers.DBService; http://www.ratesfx.com/rates/rate-converter.html; converter_form; amount;fromCurrency;toCurrency}
+
+## Target Predicate:
+
+
+
+
+
+target currency11($PR_CurrencyCodeTo,$PR_CurrencyAmount,$PR_CurrencyCodeFrom,PR_CurrencyAmount,PR_CurrencyAmount) {wrappers.DBService; http://www.ratesfx.com/rates/rate-converter.html; converter_form; toCurrency;amount;fromCurrency}

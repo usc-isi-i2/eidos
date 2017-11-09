@@ -1,0 +1,1336 @@
+0:PR-Airline	1:PR-FlightNumber	2:CT-Airport:PR-City	2:CT-Airport:PR-State-Abbr	2:CT-Airport:PR-Country	2:CT-Airport:PR-Airport-IataCode	3:CT-Date:PR-MonthNumber	3:CT-Date:PR-Day	3:CT-Date:PR-Year	4:CT-Time:PR-Hours	4:CT-Time:PR-Minutes	4:CT-Time:PR-TimeMeridian	5:CT-Duration:PR-Hours	5:CT-Duration:PR-Minutes	6:PR-Aircraft	7:CT-Altitude:PR-QuantitativeValue	7:CT-Altitude:PR-UnitFeet	8:PR-FlightStatus	NULL
+American	1033	Nashville	TN	NULL	BNA	06	13	2005	07	01	AM	00	00	Boeing 737-800	0	feet	Arrived	NULL	NULL
+American Eagle	335	Nashville	TN	NULL	BNA	06	13	2005	02	06	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+Alaska	562	Seattle	WA	NULL	SEA	06	12	2005	09	20	PM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	550	Seattle	WA	NULL	SEA	06	13	2005	08	07	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	520	Seattle	WA	NULL	SEA	06	13	2005	09	33	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+Alaska	590	Seattle	WA	NULL	SEA	06	13	2005	06	53	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Alaska	558	Seattle	WA	NULL	SEA	06	12	2005	09	39	PM	00	00	MD83	0	feet	Arrived	NULL	NULL
+Alaska	580	Seattle	WA	NULL	SEA	06	13	2005	11	50	AM	00	00	MD83	0	feet	Arrived	NULL	NULL
+Alaska	140	Fairbanks	AK	NULL	FAI	06	12	2005	09	27	PM	00	00	Boeing 737 Stage 3	0	feet	Arrived	NULL	NULL
+Alaska	146	Barrow	AK	NULL	BRW	06	12	2005	09	09	PM	00	00	Boeing 737 Stage 3	0	feet	Arrived	NULL	NULL
+Alaska	884	Anchorage	AK	NULL	ANC	06	13	2005	10	26	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	884	Fairbanks	AK	NULL	FAI	06	13	2005	08	45	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	104	Portland	OR	NULL	PDX	06	13	2005	01	42	PM	00	07	Boeing 737-400	33,000	feet	In Flight	NULL	NULL
+Alaska	104	Anchorage	AK	NULL	ANC	06	13	2005	08	08	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	104	Fairbanks	AK	NULL	FAI	06	13	2005	06	13	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	102	Anchorage	AK	NULL	ANC	06	13	2005	12	50	PM	02	14	Boeing 737-400	31,000	feet	In Flight	NULL	NULL
+Alaska	102	Fairbanks	AK	NULL	FAI	06	13	2005	11	07	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	144	Fairbanks	AK	NULL	FAI	06	13	2005	12	03	PM	00	00	Boeing 737 Stage 3	0	feet	Arrived	NULL	NULL
+Alaska	144	Barrow	AK	NULL	BRW	06	13	2005	10	25	AM	00	00	Boeing 737 Stage 3	0	feet	Arrived	NULL	NULL
+Alaska	822	Fairbanks	AK	NULL	FAI	06	13	2005	02	59	PM	NULL	NULL	Boeing 737-400	0	feet	Planned	NULL	NULL
+Alaska	112	Anchorage	AK	NULL	ANC	06	13	2005	09	42	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Alaska	112	Fairbanks	AK	NULL	FAI	06	13	2005	07	48	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Alaska Central Express	12	Fairbanks	AK	NULL	FAI	06	13	2005	10	15	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Empire Airlines	663	Fairbanks	AK	NULL	FAI	06	13	2005	12	59	PM	00	00	Fokker F27 Friendship/Fairchild Industries F-27	0	feet	Arrived	NULL	NULL
+Empire Airlines	663	Fairbanks	AK	NULL	FAI	06	13	2005	12	59	PM	00	00	Fokker F27 Friendship/Fairchild Industries F-27	0	feet	Arrived	NULL	NULL
+Frontier Flying Service	592	Fairbanks	AK	NULL	FAI	06	13	2005	06	24	AM	00	00	Beech 1900	0	feet	Arrived	NULL	NULL
+Frontier Flying Service	598	Fairbanks	AK	NULL	FAI	06	13	2005	11	02	AM	00	00	Beech 1900	0	feet	Arrived	NULL	NULL
+Northern Air Cargo	20	Nome	AK	NULL	OME	06	14	2005	08	05	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Northern Air Cargo	20	Nome	AK	NULL	OME	06	14	2005	08	05	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Alaska	146	Fairbanks	AK	NULL	FAI	06	12	2005	10	49	PM	00	00	Boeing 737 Stage 3	0	feet	Arrived	NULL	NULL
+Alaska	9005	Fairbanks	AK	NULL	FAI	06	13	2005	04	52	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+Alaska	884	Seattle	WA	NULL	SEA	06	13	2005	03	40	PM	NULL	NULL	Boeing 737-400	0	feet	Scheduled	NULL	NULL
+Alaska	498	San Francisco	CA	NULL	SFO	06	13	2005	10	37	PM	00	00	Boeing 737-400	0	feet	Landed	NULL	NULL
+Alaska	202	San Francisco	CA	NULL	SFO	06	13	2005	11	51	AM	00	00	Boeing 737-400	0	feet	Landed	NULL	NULL
+Alaska	202	Seattle	WA	NULL	SEA	06	13	2005	08	56	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	596	Seattle	WA	NULL	SEA	06	12	2005	09	01	PM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	884	Anchorage	AK	NULL	ANC	06	13	2005	10	26	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	884	Fairbanks	AK	NULL	FAI	06	13	2005	08	45	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+United	198	San Francisco	CA	NULL	SFO	06	13	2005	09	10	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+United	198	Seattle	WA	NULL	SEA	06	13	2005	06	11	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+United	729	Seattle	WA	NULL	SEA	06	13	2005	10	15	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+United	239	San Francisco	CA	NULL	SFO	06	13	2005	10	17	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+United	239	Seattle	WA	NULL	SEA	06	12	2005	09	14	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	9918	Seattle	WA	NULL	SEA	06	13	2005	07	15	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+United	8135	Seattle	WA	NULL	SEA	06	13	2005	07	26	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+United	791	Seattle	WA	NULL	SEA	06	13	2005	06	44	PM	NULL	NULL	Boeing 737-300	0	feet	Planned	NULL	NULL
+United	993	Seattle	WA	NULL	SEA	06	13	2005	11	55	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+Alaska	116	Seattle	WA	NULL	SEA	06	13	2005	12	19	PM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	116	Fairbanks	AK	NULL	FAI	06	13	2005	06	35	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+United	1237	Seattle	WA	NULL	SEA	06	13	2005	01	44	PM	00	00	Boeing 737-300	0	feet	Landed	NULL	NULL
+United	156	Seattle	WA	NULL	SEA	06	13	2005	03	36	PM	NULL	NULL	Airbus A319	0	feet	Scheduled	NULL	NULL
+United	156	Seattle	WA	NULL	SEA	06	13	2005	03	36	PM	NULL	NULL	Airbus A319	0	feet	Scheduled	NULL	NULL
+Alaska	498	Seattle	WA	NULL	SEA	06	12	2005	08	06	PM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	316	Seattle	WA	NULL	SEA	06	13	2005	01	48	PM	00	00	MD83	7,200	feet	In Flight	NULL	NULL
+United	785	Seattle	WA	NULL	SEA	06	13	2005	05	45	PM	NULL	NULL	Boeing 737-300	0	feet	Scheduled	NULL	NULL
+United	791	Seattle	WA	NULL	SEA	06	12	2005	07	47	PM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Alaska	816	Seattle	WA	NULL	SEA	06	13	2005	06	25	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	884	Seattle	WA	NULL	SEA	06	13	2005	03	40	PM	NULL	NULL	Boeing 737-400	0	feet	Scheduled	NULL	NULL
+United	993	San Francisco	CA	NULL	SFO	06	13	2005	02	54	PM	00	15	Boeing 737-500	30,500	feet	In Flight	NULL	NULL
+Skyway Airlines	2054	Columbus	OH	NULL	CMH	06	13	2005	08	25	AM	00	00	J328	0	feet	Arrived	NULL	NULL
+Skyway Airlines	2343	Columbus	OH	NULL	CMH	06	13	2005	05	50	PM	00	18	J328	28,000	feet	In Flight	NULL	NULL
+Skyway Airlines	1514	Columbus	OH	NULL	CMH	06	13	2005	02	32	PM	00	00	Beech 1900	0	feet	Arrived	NULL	NULL
+Northwest	1123	Buffalo	NY	NULL	BUF	06	13	2005	03	35	PM	00	00	DC95	0	feet	Arrived	NULL	NULL
+Northwest	1980	Detroit	MI	NULL	DTW	06	13	2005	09	23	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	1980	Buffalo	NY	NULL	BUF	06	13	2005	07	11	AM	00	00	DC95	0	feet	Arrived	NULL	NULL
+Northwest	1125	Detroit	MI	NULL	DTW	06	13	2005	04	32	PM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	1125	Buffalo	NY	NULL	BUF	06	13	2005	01	07	PM	00	00	DC95	0	feet	Arrived	NULL	NULL
+Northwest	1129	Detroit	MI	NULL	DTW	06	13	2005	12	24	PM	00	00	DC95	0	feet	Arrived	NULL	NULL
+Northwest	1129	Buffalo	NY	NULL	BUF	06	13	2005	09	42	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	1119	Detroit	MI	NULL	DTW	06	13	2005	07	40	PM	NULL	NULL	DC93	0	feet	Planned	NULL	NULL
+Northwest	1119	Buffalo	NY	NULL	BUF	06	13	2005	05	42	PM	00	00	DC93	0	feet	Landed	NULL	NULL
+Northwest	1121	Buffalo	NY	NULL	BUF	06	13	2005	07	20	PM	NULL	NULL	DC93	0	feet	Scheduled	NULL	NULL
+Champion Air	103	Las Vegas	NV	NULL	LAS	06	13	2005	12	25	PM	00	14	Boeing 727-200	21,000	feet	In Flight	NULL	NULL
+America West	96	Las Vegas	NV	NULL	LAS	06	13	2005	01	58	PM	02	08	Airbus A319	0	feet	Arrived	NULL	NULL
+America West	96	Las Vegas	NV	NULL	LAS	06	13	2005	01	58	PM	02	08	Airbus A319	0	feet	Arrived	NULL	NULL
+America West	98	Las Vegas	NV	NULL	LAS	06	12	2005	11	23	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Northwest	1200	Las Vegas	NV	NULL	LAS	06	13	2005	01	13	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+America West	98	Las Vegas	NV	NULL	LAS	06	12	2005	11	23	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Champion Air	101	Las Vegas	NV	NULL	LAS	06	12	2005	06	59	PM	00	00	Boeing 727-200	0	feet	Arrived	NULL	NULL
+Northwest	1194	Detroit	MI	NULL	DTW	06	13	2005	07	20	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	1194	Las Vegas	NV	NULL	LAS	06	12	2005	10	47	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	1196	Las Vegas	NV	NULL	LAS	06	13	2005	10	58	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	1192	Las Vegas	NV	NULL	LAS	06	13	2005	02	53	PM	02	49	Boeing 757-200	37,000	feet	In Flight	NULL	NULL
+Spirit Airlines	788	Las Vegas	NV	NULL	LAS	06	12	2005	10	51	PM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+American Eagle	317	Chicago	IL	NULL	ORD	06	13	2005	02	11	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	904	Chicago	IL	NULL	ORD	06	13	2005	04	41	PM	NULL	NULL	Embraer EMB-145	0	feet	Scheduled	NULL	NULL
+American Eagle	217	Chicago	IL	NULL	ORD	06	13	2005	06	44	PM	00	27	Embraer EMB-145	0	feet	Landed	NULL	NULL
+American Eagle	217	Chicago	IL	NULL	ORD	06	13	2005	06	44	PM	00	27	Embraer EMB-145	0	feet	Landed	NULL	NULL
+American Eagle	400	Chicago	IL	NULL	ORD	06	13	2005	10	08	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+American Eagle	400	Chicago	IL	NULL	ORD	06	13	2005	10	08	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Continental	552	Columbus	OH	NULL	CMH	06	13	2005	05	35	PM	NULL	NULL	Boeing 737-500	0	feet	Scheduled	NULL	NULL
+Continental	652	Columbus	OH	NULL	CMH	06	13	2005	07	14	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	2477	Newark	NJ	NULL	EWR	06	13	2005	01	46	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	2477	Newark	NJ	NULL	EWR	06	13	2005	01	46	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	3202	Columbus	OH	NULL	CMH	06	13	2005	09	12	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	3072	Columbus	OH	NULL	CMH	06	13	2005	01	43	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	3074	Columbus	OH	NULL	CMH	06	13	2005	08	08	PM	NULL	NULL	E45X	0	feet	Scheduled	NULL	NULL
+American	657	Dallas	TX	NULL	DFW	06	13	2005	09	15	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	657	New Orleans	LA	NULL	MSY	06	13	2005	06	48	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1630	Dallas	TX	NULL	DFW	06	13	2005	01	36	PM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1630	San Jose	NULL	Mexico	SJD	06	13	2005	07	31	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	592	Dallas	TX	NULL	DFW	06	13	2005	05	32	PM	NULL	NULL	MD82	0	feet	Scheduled	NULL	NULL
+American Eagle	457	Chicago	IL	NULL	ORD	06	13	2005	01	07	PM	00	00	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+American Eagle	457	Chicago	IL	NULL	ORD	06	13	2005	01	07	PM	00	00	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+American	1726	Dallas	TX	NULL	DFW	06	13	2005	11	27	AM	00	00	Boeing 737-800	0	feet	Landed	NULL	NULL
+American	1726	Fort Lauderdale	FL	NULL	FLL	06	13	2005	08	46	AM	00	00	Boeing 737-800	0	feet	Arrived	NULL	NULL
+American Eagle	729	Dallas	TX	NULL	DFW	06	13	2005	04	26	PM	01	04	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+American Eagle	729	Dallas	TX	NULL	DFW	06	13	2005	04	26	PM	01	04	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Mesaba Aviation	3650	Dallas	TX	NULL	DFW	06	13	2005	03	18	PM	00	00	AVRO/BAe RJ85	2,700	feet	In Flight	NULL	NULL
+Northwest	402	Minneapolis	MN	NULL	MSP	06	13	2005	11	55	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	402	Dallas	TX	NULL	DFW	06	13	2005	08	11	AM	00	00	DC93	0	feet	Landed	NULL	NULL
+Northwest	406	Dallas	TX	NULL	DFW	06	13	2005	01	19	PM	00	00	DC93	0	feet	Landed	NULL	NULL
+Northwest	1509	Minneapolis	MN	NULL	MSP	06	13	2005	09	43	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+Northwest	1509	Dallas	TX	NULL	DFW	06	13	2005	06	20	AM	00	00	Airbus A319	0	feet	Landed	NULL	NULL
+Northwest	414	Dallas	TX	NULL	DFW	06	13	2005	11	09	AM	00	00	DC93	0	feet	Landed	NULL	NULL
+Northwest	408	Dallas	TX	NULL	DFW	06	13	2005	05	04	PM	NULL	NULL	Airbus A320	0	feet	Scheduled	NULL	NULL
+Sun Country	502	Dallas	TX	NULL	DFW	06	13	2005	02	52	PM	00	00	Boeing 737-800	0	feet	Landed	NULL	NULL
+Sun Country	504	Dallas	TX	NULL	DFW	06	13	2005	05	55	PM	02	01	Boeing 737-800	0	feet	Arrived	NULL	NULL
+Sun Country	504	Dallas	TX	NULL	DFW	06	13	2005	05	55	PM	02	01	Boeing 737-800	0	feet	Arrived	NULL	NULL
+Southwest	1617	Phoenix	AZ	NULL	PHX	06	13	2005	09	15	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	1617	Oakland	CA	NULL	OAK	06	13	2005	06	57	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Jetblue Airways	482	Long Beach	CA	NULL	LGB	06	13	2005	07	10	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Jetblue Airways	488	Long Beach	CA	NULL	LGB	06	12	2005	09	11	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Jetblue Airways	486	Long Beach	CA	NULL	LGB	06	13	2005	11	06	AM	00	34	Airbus A320	35,000	feet	In Flight	NULL	NULL
+Southwest	1720	Las Vegas	NV	NULL	LAS	06	13	2005	04	29	PM	NULL	NULL	Boeing 737-700	0	feet	Planned	NULL	NULL
+Southwest	1720	Ontario	CA	NULL	ONT	06	13	2005	03	14	PM	00	28	Boeing 737-700	22,900	feet	In Flight	NULL	NULL
+Southwest	1720	Oakland	CA	NULL	OAK	06	13	2005	01	41	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	3290	New York	NY	NULL	LGA	06	13	2005	03	33	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	3039	New York	NY	NULL	LGA	06	13	2005	08	17	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	3222	New York	NY	NULL	LGA	06	13	2005	12	35	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	3222	New York	NY	NULL	LGA	06	13	2005	12	35	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Piedmont Airlines	4310	New York	NY	NULL	LGA	06	13	2005	11	48	AM	00	00	Dehavilland Dash 8 + DHC8-100	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	3057	New York	NY	NULL	LGA	06	13	2005	10	53	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Piedmont Airlines	4341	New York	NY	NULL	LGA	06	13	2005	07	16	AM	00	00	Dehavilland Dash 8 + DHC8-100	0	feet	Arrived	NULL	NULL
+Piedmont Airlines	4041	New York	NY	NULL	LGA	06	13	2005	04	59	PM	00	00	Dehavilland Dash 8 + DHC8-100	0	feet	Arrived	NULL	NULL
+American	1098	Saint Louis	MO	NULL	STL	06	13	2005	07	23	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+Southwest	1368	Saint Louis	MO	NULL	STL	06	13	2005	08	03	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	1368	Kansas City	MO	NULL	MCI	06	13	2005	06	37	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	775	Saint Louis	MO	NULL	STL	06	13	2005	10	18	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	775	Chicago	IL	NULL	MDW	06	13	2005	08	54	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+American	452	Saint Louis	MO	NULL	STL	06	13	2005	12	59	PM	00	00	MD83	0	feet	Arrived	NULL	NULL
+American	452	San Diego	CA	NULL	SAN	06	13	2005	06	42	AM	00	00	MD83	0	feet	Arrived	NULL	NULL
+Southwest	2655	Saint Louis	MO	NULL	STL	06	13	2005	02	22	PM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2655	Salt Lake City	UT	NULL	SLC	06	13	2005	10	07	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2655	Oakland	CA	NULL	OAK	06	13	2005	07	07	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2323	Saint Louis	MO	NULL	STL	06	13	2005	04	00	PM	00	43	Boeing 737-300	31,000	feet	In Flight	NULL	NULL
+Southwest	2323	Chicago	IL	NULL	MDW	06	13	2005	02	33	PM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2323	Baltimore	MD	NULL	BWI	06	13	2005	01	14	PM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2323	NULL	NULL	NULL	UL	06	13	2005	11	44	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2175	Saint Louis	MO	NULL	STL	06	13	2005	05	21	PM	01	53	Boeing 737-300	9,300	feet	In Flight	NULL	NULL
+Southwest	2175	Omaha	NE	NULL	OMA	06	13	2005	03	47	PM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2175	Las Vegas	NV	NULL	LAS	06	13	2005	10	40	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2175	San Jose	CA	NULL	SJC	06	13	2005	08	54	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+America West	558	Phoenix	AZ	NULL	PHX	06	13	2005	12	16	PM	00	46	Airbus A319	39,000	feet	In Flight	NULL	NULL
+Delta Air Lines	1590	Atlanta	GA	NULL	ATL	06	13	2005	09	37	AM	00	00	Current Altitude	0	feet	Arrived	NULL	NULL
+Delta Air Lines	1590	Atlanta	GA	NULL	ATL	06	13	2005	09	37	AM	00	00	Current Altitude	0	feet	Arrived	NULL	NULL
+Atlantic Southeast Airlines	437	New York	NY	NULL	JFK	06	13	2005	04	13	PM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Atlantic Southeast Airlines	437	New York	NY	NULL	JFK	06	13	2005	04	13	PM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Delta Air Lines	194	Atlanta	GA	NULL	ATL	06	13	2005	02	10	PM	00	00	Boeing 767-300	0	feet	Arrived	NULL	NULL
+Delta Air Lines	172	Atlanta	GA	NULL	ATL	06	13	2005	03	58	PM	00	00	Boeing 767-300	0	feet	Arrived	NULL	NULL
+Atlantic Southeast Airlines	785	New York	NY	NULL	JFK	06	13	2005	11	23	AM	00	00	Bombardier CRJ 200	0	feet	NULL	Atlantic Southeast Airlines	NULL
+Atlantic Southeast Airlines	785	New York	NY	NULL	JFK	06	13	2005	11	23	AM	00	00	Bombardier CRJ 200	0	feet	NULL	Atlantic Southeast Airlines	NULL
+Alaska	25	Boston	MA	NULL	BOS	06	14	2005	08	43	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Alaska	25	Boston	MA	NULL	BOS	06	13	2005	08	47	AM	00	00	B739	0	feet	Arrived	NULL	NULL
+Alaska	15	Boston	MA	NULL	BOS	06	13	2005	06	28	PM	NULL	NULL	B739	0	feet	Scheduled	NULL	NULL
+American	657	Dallas	TX	NULL	DFW	06	13	2005	09	15	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	657	New Orleans	LA	NULL	MSY	06	13	2005	06	48	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1726	Dallas	TX	NULL	DFW	06	13	2005	11	27	AM	00	00	Boeing 737-800	0	feet	Landed	NULL	NULL
+American	1726	Fort Lauderdale	FL	NULL	FLL	06	13	2005	08	46	AM	00	00	Boeing 737-800	0	feet	Arrived	NULL	NULL
+American	1630	Dallas	TX	NULL	DFW	06	13	2005	01	36	PM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1630	San Jose	NULL	Mexico	SJD	06	13	2005	07	31	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	592	Dallas	TX	NULL	DFW	06	13	2005	05	32	PM	NULL	NULL	MD82	0	feet	Scheduled	NULL	NULL
+Mesaba Aviation	3650	Dallas	TX	NULL	DFW	06	13	2005	03	18	PM	00	00	AVRO/BAe RJ85	1,900	feet	In Flight	NULL	NULL
+American Eagle	729	Dallas	TX	NULL	DFW	06	13	2005	04	26	PM	01	03	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+American Eagle	729	Dallas	TX	NULL	DFW	06	13	2005	04	26	PM	01	03	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+American Eagle	457	Chicago	IL	NULL	ORD	06	13	2005	01	07	PM	00	00	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+American Eagle	457	Chicago	IL	NULL	ORD	06	13	2005	01	07	PM	00	00	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+Northwest	402	Minneapolis	MN	NULL	MSP	06	13	2005	11	55	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	402	Dallas	TX	NULL	DFW	06	13	2005	08	11	AM	00	00	DC93	0	feet	Landed	NULL	NULL
+Northwest	1509	Minneapolis	MN	NULL	MSP	06	13	2005	09	43	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+Northwest	1509	Dallas	TX	NULL	DFW	06	13	2005	06	20	AM	00	00	Airbus A319	0	feet	Landed	NULL	NULL
+Northwest	408	Dallas	TX	NULL	DFW	06	13	2005	05	04	PM	NULL	NULL	Airbus A320	0	feet	Scheduled	NULL	NULL
+Northwest	414	Dallas	TX	NULL	DFW	06	13	2005	11	09	AM	00	00	DC93	0	feet	Landed	NULL	NULL
+Sun Country	502	Dallas	TX	NULL	DFW	06	13	2005	02	52	PM	00	00	Boeing 737-800	0	feet	Landed	NULL	NULL
+Sun Country	504	Dallas	TX	NULL	DFW	06	13	2005	05	55	PM	01	50	Boeing 737-800	0	feet	Arrived	NULL	NULL
+Sun Country	504	Dallas	TX	NULL	DFW	06	13	2005	05	55	PM	01	50	Boeing 737-800	0	feet	Arrived	NULL	NULL
+Northwest	406	Dallas	TX	NULL	DFW	06	13	2005	01	19	PM	00	00	DC93	0	feet	Landed	NULL	NULL
+Skyway Airlines	2162	Milwaukee	WI	NULL	MKE	06	13	2005	03	22	PM	00	00	J328	0	feet	Arrived	NULL	NULL
+Skyway Airlines	2181	Milwaukee	WI	NULL	MKE	06	13	2005	08	25	AM	00	00	J328	0	feet	Arrived	NULL	NULL
+Skyway Airlines	1908	Des Moines	IA	NULL	DSM	06	13	2005	07	50	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Skyway Airlines	1906	Des Moines	IA	NULL	DSM	06	13	2005	04	51	PM	NULL	NULL	Beech 1900	0	feet	Scheduled	NULL	NULL
+Skyway Airlines	2162	Milwaukee	WI	NULL	MKE	06	13	2005	03	22	PM	00	00	J328	0	feet	Arrived	NULL	NULL
+Skyway Airlines	2181	Milwaukee	WI	NULL	MKE	06	13	2005	08	25	AM	00	00	J328	0	feet	Arrived	NULL	NULL
+Comair Inc.	1586	Milwaukee	WI	NULL	MKE	06	13	2005	03	43	PM	00	00	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+Comair Inc.	1979	Milwaukee	WI	NULL	MKE	06	13	2005	12	29	PM	00	00	Bombardier CRJ 100	0	feet	Arrived	NULL	NULL
+Delta Air Lines	1223	Cincinnati	OH	NULL	CVG	06	13	2005	09	30	AM	00	00	Boeing 737-200	0	feet	Arrived	NULL	NULL
+Delta Air Lines	1223	Cincinnati	OH	NULL	CVG	06	13	2005	09	30	AM	00	00	Boeing 737-200	0	feet	Arrived	NULL	NULL
+Comair Inc.	1855	Milwaukee	WI	NULL	MKE	06	13	2005	09	45	AM	00	00	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+Comair Inc.	1980	Milwaukee	WI	NULL	MKE	06	13	2005	05	18	PM	00	51	Bombardier CRJ 100	12,400	feet	In Flight	NULL	NULL
+Northwest	784	Minneapolis	MN	NULL	MSP	06	13	2005	04	10	PM	01	20	Boeing 757-200	29,000	feet	In Flight	NULL	NULL
+Northwest	784	Las Vegas	NV	NULL	LAS	06	13	2005	09	31	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	156	Minneapolis	MN	NULL	MSP	06	13	2005	01	43	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	156	Seattle	WA	NULL	SEA	06	13	2005	07	18	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	724	Minneapolis	MN	NULL	MSP	06	13	2005	05	02	PM	02	00	Airbus A319	38,600	feet	In Flight	NULL	NULL
+Northwest	724	Rapid City	SD	NULL	RAP	06	13	2005	01	06	PM	00	00	Airbus A319	0	feet	Landed	NULL	NULL
+Northwest	846	Minneapolis	MN	NULL	MSP	06	13	2005	07	04	PM	NULL	NULL	Boeing 757-300	0	feet	Planned	NULL	NULL
+Northwest	846	Anchorage	AK	NULL	ANC	06	13	2005	08	59	AM	00	00	Boeing 757-300	4,700	feet	In Flight	NULL	NULL
+Northwest	1268	Bozeman	MT	NULL	BZN	06	14	2005	06	25	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Northwest	1268	Minneapolis	MN	NULL	MSP	06	13	2005	11	31	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+Northwest	1268	Bozeman	MT	NULL	BZN	06	13	2005	06	13	AM	00	00	Airbus A319	0	feet	Landed	NULL	NULL
+Northwest	588	Minneapolis	MN	NULL	MSP	06	13	2005	07	34	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	588	Portland	OR	NULL	PDX	06	13	2005	01	12	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Air Wisconsin	558	Des Moines	IA	NULL	DSM	06	13	2005	10	37	AM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Air Wisconsin	948	Des Moines	IA	NULL	DSM	06	13	2005	02	25	PM	00	00	B463	0	feet	Arrived	NULL	NULL
+Air Wisconsin	944	Des Moines	IA	NULL	DSM	06	13	2005	06	23	AM	00	00	B462	0	feet	Arrived	NULL	NULL
+American Eagle	243	Dallas	TX	NULL	DFW	06	13	2005	12	16	PM	00	00	SAAB SF-340	0	feet	Arrived	NULL	NULL
+American Eagle	243	Dallas	TX	NULL	DFW	06	13	2005	12	16	PM	00	00	SAAB SF-340	0	feet	Arrived	NULL	NULL
+American Eagle	466	Des Moines	IA	NULL	DSM	06	13	2005	02	13	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	466	Des Moines	IA	NULL	DSM	06	13	2005	02	13	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	244	Des Moines	IA	NULL	DSM	06	13	2005	03	11	PM	00	00	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+American Eagle	227	Dallas	TX	NULL	DFW	06	13	2005	04	46	PM	00	00	SAAB SF-340	0	feet	Arrived	NULL	NULL
+American Eagle	227	Dallas	TX	NULL	DFW	06	13	2005	04	46	PM	00	00	SAAB SF-340	0	feet	Arrived	NULL	NULL
+Sky West	6954	Des Moines	IA	NULL	DSM	06	13	2005	08	13	AM	00	00	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+American Eagle	115	Des Moines	IA	NULL	DSM	06	13	2005	04	52	PM	00	15	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+American Eagle	115	Des Moines	IA	NULL	DSM	06	13	2005	04	52	PM	00	15	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+Sky West	6826	Des Moines	IA	NULL	DSM	06	13	2005	06	54	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+United	456	Chicago	IL	NULL	ORD	06	13	2005	06	02	PM	NULL	NULL	Boeing 737-300	0	feet	Scheduled	NULL	NULL
+United	456	Des Moines	IA	NULL	DSM	06	13	2005	03	44	PM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Alaska	498	San Francisco	CA	NULL	SFO	06	13	2005	10	37	PM	00	00	Boeing 737-400	0	feet	Landed	NULL	NULL
+Alaska	498	Seattle	WA	NULL	SEA	06	12	2005	08	06	PM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	816	Seattle	WA	NULL	SEA	06	13	2005	06	25	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	596	Seattle	WA	NULL	SEA	06	12	2005	09	01	PM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	316	Seattle	WA	NULL	SEA	06	13	2005	01	48	PM	00	00	MD83	0	feet	Landed	NULL	NULL
+Alaska	202	San Francisco	CA	NULL	SFO	06	13	2005	11	51	AM	00	00	Boeing 737-400	0	feet	Landed	NULL	NULL
+Alaska	202	Seattle	WA	NULL	SEA	06	13	2005	08	56	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	116	Seattle	WA	NULL	SEA	06	13	2005	12	19	PM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	116	Fairbanks	AK	NULL	FAI	06	13	2005	06	35	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+United	791	Seattle	WA	NULL	SEA	06	13	2005	06	44	PM	NULL	NULL	Boeing 737-300	0	feet	Planned	NULL	NULL
+United	791	Seattle	WA	NULL	SEA	06	12	2005	07	47	PM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Alaska	884	Seattle	WA	NULL	SEA	06	13	2005	03	40	PM	NULL	NULL	Boeing 737-400	0	feet	Scheduled	NULL	NULL
+Alaska	884	Anchorage	AK	NULL	ANC	06	13	2005	10	26	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	884	Fairbanks	AK	NULL	FAI	06	13	2005	08	45	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+United	198	San Francisco	CA	NULL	SFO	06	13	2005	09	10	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+United	198	Seattle	WA	NULL	SEA	06	13	2005	06	11	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+United	239	San Francisco	CA	NULL	SFO	06	13	2005	10	17	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+United	239	Seattle	WA	NULL	SEA	06	12	2005	09	14	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	9918	Seattle	WA	NULL	SEA	06	13	2005	07	15	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+United	8135	Seattle	WA	NULL	SEA	06	13	2005	07	26	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+United	993	San Francisco	CA	NULL	SFO	06	13	2005	02	54	PM	00	12	Boeing 737-500	28,400	feet	In Flight	NULL	NULL
+United	993	Seattle	WA	NULL	SEA	06	13	2005	11	55	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+United	785	Seattle	WA	NULL	SEA	06	13	2005	05	45	PM	NULL	NULL	Boeing 737-300	0	feet	Scheduled	NULL	NULL
+United	1237	Seattle	WA	NULL	SEA	06	13	2005	01	44	PM	00	00	Boeing 737-300	0	feet	Landed	NULL	NULL
+United	156	Seattle	WA	NULL	SEA	06	13	2005	03	36	PM	NULL	NULL	Airbus A319	0	feet	Scheduled	NULL	NULL
+United	156	Seattle	WA	NULL	SEA	06	13	2005	03	36	PM	NULL	NULL	Airbus A319	0	feet	Scheduled	NULL	NULL
+United	729	Seattle	WA	NULL	SEA	06	13	2005	10	15	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+America West	196	Phoenix	AZ	NULL	PHX	06	13	2005	01	38	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+America West	196	Phoenix	AZ	NULL	PHX	06	13	2005	01	38	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+America West	702	Phoenix	AZ	NULL	PHX	06	13	2005	10	33	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+America West	702	Phoenix	AZ	NULL	PHX	06	13	2005	10	33	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+Southwest	2231	Phoenix	AZ	NULL	PHX	06	13	2005	03	59	PM	NULL	NULL	Boeing 737-700	0	feet	Planned	NULL	NULL
+Southwest	2231	Baltimore	MD	NULL	BWI	06	13	2005	01	53	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	2231	Islip	NY	NULL	ISP	06	13	2005	12	15	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	2135	Phoenix	AZ	NULL	PHX	06	13	2005	11	15	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2135	Baltimore	MD	NULL	BWI	06	13	2005	08	29	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	2135	Islip	NY	NULL	ISP	06	13	2005	06	54	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+America West	86	Baltimore	MD	NULL	BWI	06	13	2005	06	05	PM	NULL	NULL	Airbus A320	0	feet	Scheduled	NULL	NULL
+Southwest	94	Baltimore	MD	NULL	BWI	06	12	2005	09	37	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	713	Baltimore	MD	NULL	BWI	06	13	2005	06	20	PM	04	07	Boeing 737-700	11,600	feet	In Flight	NULL	NULL
+Southwest	741	Baltimore	MD	NULL	BWI	06	13	2005	07	30	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	369	Baltimore	MD	NULL	BWI	06	13	2005	11	41	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	369	Hartford	CT	NULL	BDL	06	13	2005	10	10	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	280	Baltimore	MD	NULL	BWI	06	13	2005	10	06	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	280	Hartford	CT	NULL	BDL	06	13	2005	08	35	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	278	Norfolk	VA	NULL	ORF	06	13	2005	07	34	PM	NULL	NULL	Boeing 737-300	0	feet	Scheduled	NULL	NULL
+Southwest	278	Baltimore	MD	NULL	BWI	06	13	2005	06	00	PM	NULL	NULL	Boeing 737-300	0	feet	Scheduled	NULL	NULL
+Southwest	278	Hartford	CT	NULL	BDL	06	13	2005	04	25	PM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2623	Albuquerque	NM	NULL	ABQ	06	13	2005	04	44	PM	NULL	NULL	Boeing 737-700	0	feet	Planned	NULL	NULL
+Southwest	2623	Baltimore	MD	NULL	BWI	06	13	2005	02	18	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	2623	Hartford	CT	NULL	BDL	06	13	2005	12	38	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	821	Chicago	IL	NULL	MDW	06	13	2005	04	50	PM	02	33	Boeing 737-700	40,000	feet	In Flight	NULL	NULL
+Southwest	821	Baltimore	MD	NULL	BWI	06	13	2005	03	25	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	821	Hartford	CT	NULL	BDL	06	13	2005	01	50	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	2563	Jacksonville	FL	NULL	JAX	06	13	2005	11	02	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2563	Baltimore	MD	NULL	BWI	06	13	2005	08	46	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Southwest	2563	Hartford	CT	NULL	BDL	06	13	2005	06	55	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	486	Baltimore	MD	NULL	BWI	06	13	2005	07	52	PM	NULL	NULL	Boeing 737-300	0	feet	Planned	NULL	NULL
+Southwest	486	Hartford	CT	NULL	BDL	06	13	2005	07	16	PM	NULL	NULL	Boeing 737-300	0	feet	Scheduled	NULL	NULL
+Southwest	670	Hartford	CT	NULL	BDL	06	13	2005	07	16	PM	NULL	NULL	Boeing 737-700	0	feet	Scheduled	NULL	NULL
+Frontier	738	Denver	CO	NULL	DEN	06	13	2005	10	57	AM	00	00	Airbus A318	0	feet	Arrived	NULL	NULL
+United	1434	Denver	CO	NULL	DEN	06	12	2005	08	23	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	1430	Denver	CO	NULL	DEN	06	13	2005	10	31	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	1430	Ontario	CA	NULL	ONT	06	13	2005	06	22	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	1432	Denver	CO	NULL	DEN	06	13	2005	12	39	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	1432	Las Vegas	NV	NULL	LAS	06	13	2005	08	54	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	1432	San Francisco	CA	NULL	SFO	06	13	2005	06	48	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Comair Inc.	669	Atlanta	GA	NULL	ATL	06	12	2005	11	34	PM	00	00	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+Delta Air Lines	287	Atlanta	GA	NULL	ATL	06	13	2005	01	16	PM	00	00	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	5283	Atlanta	GA	NULL	ATL	06	13	2005	06	55	PM	NULL	NULL	Embraer EMB-145	0	feet	Planned	NULL	NULL
+Delta Air Lines	287	Atlanta	GA	NULL	ATL	06	13	2005	01	16	PM	00	00	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Atlantic Southeast Airlines	249	Saint Louis	MO	NULL	STL	06	13	2005	09	31	AM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Atlantic Southeast Airlines	249	Saint Louis	MO	NULL	STL	06	13	2005	09	31	AM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	5281	Atlanta	GA	NULL	ATL	06	13	2005	04	07	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Comair Inc.	653	Atlanta	GA	NULL	ATL	06	13	2005	12	25	PM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Delta Air Lines	839	Atlanta	GA	NULL	ATL	06	13	2005	04	17	PM	00	00	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Delta Air Lines	839	Atlanta	GA	NULL	ATL	06	13	2005	04	17	PM	00	00	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Trans States Airlines	5500	Atlanta	GA	NULL	ATL	06	13	2005	11	32	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Delta Air Lines	836	Atlanta	GA	NULL	ATL	06	13	2005	05	47	PM	00	25	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Delta Air Lines	836	Atlanta	GA	NULL	ATL	06	13	2005	05	47	PM	00	25	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Trans States Airlines	5490	Atlanta	GA	NULL	ATL	06	13	2005	09	51	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Trans States Airlines	5652	Atlanta	GA	NULL	ATL	06	13	2005	05	21	PM	00	02	Embraer EMB-145	15,100	feet	In Flight	NULL	NULL
+Trans States Airlines	5650	Atlanta	GA	NULL	ATL	06	13	2005	01	52	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Frontier	505	New York	NY	NULL	LGA	06	13	2005	09	09	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+United	591	New York	NY	NULL	LGA	06	13	2005	08	20	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Frontier	511	New York	NY	NULL	LGA	06	13	2005	05	55	PM	NULL	NULL	Airbus A319	0	feet	Scheduled	NULL	NULL
+United	731	New York	NY	NULL	LGA	06	13	2005	06	09	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	255	Denver	CO	NULL	DEN	06	13	2005	02	42	PM	00	03	Boeing 757-200	9,800	feet	In Flight	NULL	NULL
+United	255	New York	NY	NULL	LGA	06	13	2005	11	23	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+United	579	Denver	CO	NULL	DEN	06	13	2005	05	30	PM	NULL	NULL	Boeing 757-200	0	feet	Scheduled	NULL	NULL
+United	579	New York	NY	NULL	LGA	06	13	2005	02	16	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+United	479	New York	NY	NULL	LGA	06	13	2005	05	47	PM	02	49	Boeing 757-200	36,000	feet	In Flight	NULL	NULL
+Chautauqua Airlines	3016	Detroit	MI	NULL	DTW	06	13	2005	03	17	PM	00	00	Embraer EMB-145	0	feet	NULL	Chautauqua Airlines	NULL
+Mesa Airlines	2742	Detroit	MI	NULL	DTW	06	13	2005	08	39	AM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2850	Philadelphia	PA	NULL	PHL	06	13	2005	02	57	PM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2915	Philadelphia	PA	NULL	PHL	06	13	2005	09	35	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2850	Philadelphia	PA	NULL	PHL	06	13	2005	02	57	PM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2915	Philadelphia	PA	NULL	PHL	06	13	2005	09	35	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Mesaba Aviation	3570	Detroit	MI	NULL	DTW	06	13	2005	05	19	PM	00	03	AVRO/BAe RJ85	0	feet	Arrived	NULL	NULL
+Mesaba Aviation	3570	Detroit	MI	NULL	DTW	06	13	2005	05	19	PM	00	03	AVRO/BAe RJ85	0	feet	Arrived	NULL	NULL
+Northwest	1778	Detroit	MI	NULL	DTW	06	13	2005	07	27	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+Northwest	1776	Detroit	MI	NULL	DTW	06	13	2005	12	25	PM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	1776	Lexington	KY	NULL	LEX	06	13	2005	10	01	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	1780	Traverse City	MI	NULL	TVC	06	14	2005	08	21	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Northwest	1780	Detroit	MI	NULL	DTW	06	13	2005	11	32	AM	00	00	DC95	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2981	Philadelphia	PA	NULL	PHL	06	13	2005	07	05	PM	01	29	Embraer EMB-145	0	feet	Landed	NULL	NULL
+Mesa Airlines	2981	Philadelphia	PA	NULL	PHL	06	13	2005	07	05	PM	01	29	Embraer EMB-145	0	feet	Landed	NULL	NULL
+Northwest	1772	Detroit	MI	NULL	DTW	06	13	2005	09	00	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	1772	Flint	MI	NULL	FNT	06	13	2005	06	54	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	1788	Detroit	MI	NULL	DTW	06	13	2005	05	13	PM	NULL	NULL	DC93	0	feet	Scheduled	NULL	NULL
+Northwest	1788	Chicago	IL	NULL	ORD	06	13	2005	02	15	PM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	1782	Detroit	MI	NULL	DTW	06	13	2005	07	33	PM	NULL	NULL	DC93	0	feet	Scheduled	NULL	NULL
+Us Airways	271	Charlotte	NC	NULL	CLT	06	13	2005	11	07	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+Us Airways	271	Charlotte	NC	NULL	CLT	06	13	2005	11	07	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+Us Airways	164	New Orleans	LA	NULL	MSY	06	14	2005	06	09	AM	01	32	Current Altitude	0	feet	Arrived	NULL	NULL
+Us Airways	164	New Orleans	LA	NULL	MSY	06	14	2005	06	09	AM	01	32	Current Altitude	0	feet	Arrived	NULL	NULL
+Us Airways	348	Charlotte	NC	NULL	CLT	06	13	2005	02	18	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Us Airways	348	Charlotte	NC	NULL	CLT	06	13	2005	02	18	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Us Airways	1122	Charlotte	NC	NULL	CLT	06	13	2005	07	31	PM	01	13	Airbus A319	0	feet	Arrived	NULL	NULL
+Us Airways	1122	Charlotte	NC	NULL	CLT	06	13	2005	07	31	PM	01	13	Airbus A319	0	feet	Arrived	NULL	NULL
+United	1432	Denver	CO	NULL	DEN	06	13	2005	12	39	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	1432	Las Vegas	NV	NULL	LAS	06	13	2005	08	54	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	1432	San Francisco	CA	NULL	SFO	06	13	2005	06	48	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Frontier	738	Denver	CO	NULL	DEN	06	13	2005	10	57	AM	00	00	Airbus A318	0	feet	Arrived	NULL	NULL
+United	1430	Denver	CO	NULL	DEN	06	13	2005	10	31	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	1430	Ontario	CA	NULL	ONT	06	13	2005	06	22	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+United	1434	Denver	CO	NULL	DEN	06	12	2005	08	23	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Express Airlines	3796	Charlotte	NC	NULL	CLT	06	13	2005	11	49	AM	00	00	Bombardier CRJ 200	0	feet	Landed	NULL	NULL
+Northwest	1673	Charlotte	NC	NULL	CLT	06	13	2005	05	50	PM	01	28	DC93	31,700	feet	In Flight	NULL	NULL
+Northwest	1669	Minneapolis	MN	NULL	MSP	06	13	2005	11	41	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	1669	Charlotte	NC	NULL	CLT	06	13	2005	08	37	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Us Airways	910	Charlotte	NC	NULL	CLT	06	13	2005	04	34	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Us Airways	910	Charlotte	NC	NULL	CLT	06	13	2005	04	34	PM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Northwest	1671	Minneapolis	MN	NULL	MSP	06	13	2005	05	18	PM	00	57	DC93	17,500	feet	In Flight	NULL	NULL
+Northwest	1671	Charlotte	NC	NULL	CLT	06	13	2005	02	39	PM	00	00	DC93	0	feet	Landed	NULL	NULL
+American	1456	Long Beach	CA	NULL	LGB	06	13	2005	12	38	PM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	384	Dallas	TX	NULL	DFW	06	13	2005	01	02	PM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	384	Long Beach	CA	NULL	LGB	06	13	2005	07	05	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1126	Dallas	TX	NULL	DFW	06	13	2005	04	21	PM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1126	Long Beach	CA	NULL	LGB	06	13	2005	10	23	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1134	Long Beach	CA	NULL	LGB	06	13	2005	03	05	PM	02	15	MD82	33,700	feet	In Flight	NULL	NULL
+American	872	Long Beach	CA	NULL	LGB	06	13	2005	08	09	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American Eagle	407	Dallas	TX	NULL	DFW	06	13	2005	11	54	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+American Eagle	407	Dallas	TX	NULL	DFW	06	13	2005	11	54	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+American Eagle	286	Shreveport	LA	NULL	SHV	06	13	2005	05	56	PM	00	50	SAAB SF-340	0	feet	Arrived	NULL	NULL
+American Eagle	286	Shreveport	LA	NULL	SHV	06	13	2005	05	56	PM	00	50	SAAB SF-340	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	2275	Cleveland	OH	NULL	CLE	06	14	2005	03	45	PM	01	26	Current Altitude	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	2275	Cleveland	OH	NULL	CLE	06	14	2005	03	45	PM	01	26	Current Altitude	0	feet	Arrived	NULL	NULL
+Jetblue Airways	289	New York	NY	NULL	JFK	06	13	2005	07	09	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Jetblue Airways	295	New York	NY	NULL	JFK	06	13	2005	04	57	PM	03	45	Airbus A320	34,000	feet	In Flight	NULL	NULL
+Jetblue Airways	293	New York	NY	NULL	JFK	06	13	2005	06	45	PM	NULL	NULL	Airbus A320	0	feet	Scheduled	NULL	NULL
+American	43	Newark	NJ	NULL	EWR	06	13	2005	09	24	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+American	297	Newark	NJ	NULL	EWR	06	13	2005	12	12	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+American	297	Los Angeles	CA	NULL	LAX	06	12	2005	06	38	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Continental	1502	Newark	NJ	NULL	EWR	06	12	2005	07	52	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Continental	1002	Newark	NJ	NULL	EWR	06	13	2005	07	26	AM	00	00	Boeing 737-800	0	feet	Arrived	NULL	NULL
+Continental	1402	Newark	NJ	NULL	EWR	06	13	2005	09	04	AM	00	00	Boeing 757-300	0	feet	Arrived	NULL	NULL
+American	119	Newark	NJ	NULL	EWR	06	13	2005	06	04	PM	04	42	Boeing 757-200	32,900	feet	In Flight	NULL	NULL
+Continental	17	Newark	NJ	NULL	EWR	06	13	2005	01	06	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Continental	17	Glasgow Scotland	NULL	Great Britain	EGPF	06	13	2005	09	46	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Continental	17	Newark	NJ	NULL	EWR	06	13	2005	01	06	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Continental	17	Glasgow Scotland	NULL	Great Britain	(EGPF)	06	13	2005	09	09	AM	06	18	Boeing 757-200	0	feet	NULL	NULL	NULL
+Continental	17	Glasgow Scotland	NULL	Great Britain	EGPF	06	13	2005	09	46	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Continental	1602	Newark	NJ	NULL	EWR	06	13	2005	06	14	PM	04	53	Boeing 757-200	23,000	feet	In Flight	NULL	NULL
+United	81	Newark	NJ	NULL	EWR	06	13	2005	07	09	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Continental	65	Newark	NJ	NULL	EWR	06	13	2005	03	34	PM	02	08	Boeing 757-200	36,000	feet	In Flight	NULL	NULL
+Continental	65	Lisbon	NULL	Portugal	LPPT	06	13	2005	10	40	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	6284	Orlando	FL	NULL	MCO	06	13	2005	06	51	PM	NULL	NULL	E135	0	feet	Planned	NULL	NULL
+Chautauqua Airlines	6285	Orlando	FL	NULL	MCO	06	13	2005	07	00	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	6286	Orlando	FL	NULL	MCO	06	13	2005	01	53	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	6286	Orlando	FL	NULL	MCO	06	13	2005	01	53	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	6287	Orlando	FL	NULL	MCO	06	13	2005	03	46	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Southwest	491	Chicago	IL	NULL	MDW	06	13	2005	06	14	PM	NULL	NULL	Boeing 737-700	0	feet	Planned	NULL	NULL
+Southwest	491	Columbus	OH	NULL	CMH	06	13	2005	05	34	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	491	Orlando	FL	NULL	MCO	06	13	2005	03	01	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	491	Fort Lauderdale	FL	NULL	FLL	06	13	2005	01	38	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	491	San Diego	CA	NULL	SAN	06	12	2005	08	55	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Alaska	558	Seattle	WA	NULL	SEA	06	12	2005	09	39	PM	00	00	MD83	0	feet	Arrived	NULL	NULL
+Alaska	562	Seattle	WA	NULL	SEA	06	12	2005	09	20	PM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	580	Seattle	WA	NULL	SEA	06	13	2005	11	50	AM	00	00	MD83	0	feet	Arrived	NULL	NULL
+Alaska	590	Seattle	WA	NULL	SEA	06	13	2005	06	53	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Alaska	520	Seattle	WA	NULL	SEA	06	13	2005	09	33	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+Alaska	550	Seattle	WA	NULL	SEA	06	13	2005	08	07	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Delta Air Lines	170	Cincinnati	OH	NULL	CVG	06	13	2005	04	20	PM	00	00	Boeing 767-300	0	feet	Arrived	NULL	NULL
+Comair Inc.	947	Cincinnati	OH	NULL	CVG	06	12	2005	11	12	PM	00	00	Bombardier CRJ 100	0	feet	Arrived	NULL	NULL
+Comair Inc.	673	Cincinnati	OH	NULL	CVG	06	13	2005	09	49	AM	00	00	Bombardier CRJ 100	0	feet	Arrived	NULL	NULL
+Dhl Airways	552	Cincinnati	OH	NULL	CVG	06	14	2005	05	05	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Dhl Airways	522	Cincinnati	OH	NULL	CVG	06	14	2005	06	17	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Delta Air Lines	822	Cincinnati	OH	NULL	CVG	06	13	2005	03	13	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Alaska	140	Fairbanks	AK	NULL	FAI	06	12	2005	09	27	PM	00	00	Boeing 737 Stage 3	0	feet	Arrived	NULL	NULL
+Alaska	9005	Fairbanks	AK	NULL	FAI	06	13	2005	04	52	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+Alaska	146	Fairbanks	AK	NULL	FAI	06	12	2005	10	49	PM	00	00	Boeing 737 Stage 3	0	feet	Arrived	NULL	NULL
+Alaska	146	Barrow	AK	NULL	BRW	06	12	2005	09	09	PM	00	00	Boeing 737 Stage 3	0	feet	Arrived	NULL	NULL
+Alaska	104	Portland	OR	NULL	PDX	06	13	2005	01	42	PM	00	02	Boeing 737-400	11,000	feet	In Flight	NULL	NULL
+Alaska	104	Anchorage	AK	NULL	ANC	06	13	2005	08	08	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	104	Fairbanks	AK	NULL	FAI	06	13	2005	06	13	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	102	Anchorage	AK	NULL	ANC	06	13	2005	12	50	PM	02	18	Boeing 737-400	31,000	feet	In Flight	NULL	NULL
+Alaska	102	Fairbanks	AK	NULL	FAI	06	13	2005	11	07	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	884	Seattle	WA	NULL	SEA	06	13	2005	03	40	PM	NULL	NULL	Boeing 737-400	0	feet	Scheduled	NULL	NULL
+Alaska	884	Anchorage	AK	NULL	ANC	06	13	2005	10	26	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	884	Fairbanks	AK	NULL	FAI	06	13	2005	08	45	AM	00	00	Boeing 737-400	0	feet	Arrived	NULL	NULL
+Alaska	144	Fairbanks	AK	NULL	FAI	06	13	2005	12	03	PM	00	00	Boeing 737 Stage 3	0	feet	Arrived	NULL	NULL
+Alaska	144	Barrow	AK	NULL	BRW	06	13	2005	10	25	AM	00	00	Boeing 737 Stage 3	0	feet	Arrived	NULL	NULL
+Alaska	149	Fairbanks	AK	NULL	FAI	06	14	2005	02	23	PM	00	31	Boeing 737-400	20,800	feet	In Flight	NULL	NULL
+Alaska	822	Fairbanks	AK	NULL	FAI	06	13	2005	02	59	PM	NULL	NULL	Boeing 737-400	0	feet	Planned	NULL	NULL
+Alaska	112	Anchorage	AK	NULL	ANC	06	13	2005	09	42	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Alaska	112	Fairbanks	AK	NULL	FAI	06	13	2005	07	48	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Frontier Flying Service	592	Fairbanks	AK	NULL	FAI	06	13	2005	06	24	AM	00	00	Beech 1900	0	feet	Arrived	NULL	NULL
+Alaska Central Express	12	Fairbanks	AK	NULL	FAI	06	13	2005	10	15	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Empire Airlines	663	Fairbanks	AK	NULL	FAI	06	13	2005	12	59	PM	00	00	Fokker F27 Friendship/Fairchild Industries F-27	0	feet	Arrived	NULL	NULL
+Empire Airlines	663	Fairbanks	AK	NULL	FAI	06	13	2005	12	59	PM	00	00	Fokker F27 Friendship/Fairchild Industries F-27	0	feet	Arrived	NULL	NULL
+Frontier Flying Service	598	Fairbanks	AK	NULL	FAI	06	13	2005	11	02	AM	00	00	Beech 1900	0	feet	Arrived	NULL	NULL
+Northern Air Cargo	20	Nome	AK	NULL	OME	06	14	2005	08	05	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Northern Air Cargo	20	Nome	AK	NULL	OME	06	14	2005	08	05	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Northwest	995	Detroit	MI	NULL	DTW	06	13	2005	09	16	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+Northwest	995	Milwaukee	WI	NULL	MKE	06	13	2005	06	17	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+American	1345	Detroit	MI	NULL	DTW	06	13	2005	12	27	PM	00	00	Boeing 737-800	0	feet	Arrived	NULL	NULL
+Northwest	997	Detroit	MI	NULL	DTW	06	13	2005	03	58	PM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+Northwest	997	Columbus	OH	NULL	CMH	06	13	2005	01	42	PM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+American	2187	Miami	FL	NULL	MIA	06	13	2005	12	02	PM	00	00	Boeing 737-800	0	feet	Landed	NULL	NULL
+American	2187	Detroit	MI	NULL	DTW	06	13	2005	07	49	AM	00	00	Boeing 737-800	0	feet	Arrived	NULL	NULL
+American	1033	Nashville	TN	NULL	BNA	06	13	2005	07	01	AM	00	00	Boeing 737-800	0	feet	Arrived	NULL	NULL
+American Eagle	983	Nashville	TN	NULL	BNA	06	13	2005	06	56	PM	01	57	E135	0	feet	Landed	NULL	NULL
+American Eagle	983	Nashville	TN	NULL	BNA	06	13	2005	06	56	PM	01	57	E135	0	feet	Landed	NULL	NULL
+American Eagle	335	Nashville	TN	NULL	BNA	06	13	2005	02	06	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+Southwest	1928	Philadelphia	PA	NULL	PHL	06	13	2005	07	04	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Airtran Airways	770	Philadelphia	PA	NULL	PHL	06	13	2005	07	09	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	2772	Philadelphia	PA	NULL	PHL	06	13	2005	05	36	PM	NULL	NULL	Boeing 737-700	0	feet	Scheduled	NULL	NULL
+Southwest	317	Philadelphia	PA	NULL	PHL	06	13	2005	03	37	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	317	Hartford	CT	NULL	BDL	06	13	2005	01	49	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Airtran Airways	765	Philadelphia	PA	NULL	PHL	06	13	2005	09	43	AM	00	00	Boeing 717-200	0	feet	Arrived	NULL	NULL
+Airtran Airways	765	Philadelphia	PA	NULL	PHL	06	13	2005	09	43	AM	00	00	Boeing 717-200	0	feet	Arrived	NULL	NULL
+Airtran Airways	797	Philadelphia	PA	NULL	PHL	06	13	2005	01	36	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	2174	Philadelphia	PA	NULL	PHL	06	13	2005	06	49	PM	NULL	NULL	Boeing 737-700	0	feet	Planned	NULL	NULL
+Southwest	2174	Pittsburgh	PA	NULL	PIT	06	13	2005	05	05	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	2698	Philadelphia	PA	NULL	PHL	06	13	2005	11	15	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+Us Airways	523	Philadelphia	PA	NULL	PHL	06	13	2005	09	29	AM	00	00	Airbus A321	0	feet	Arrived	NULL	NULL
+Us Airways	523	Philadelphia	PA	NULL	PHL	06	13	2005	09	29	AM	00	00	Airbus A321	0	feet	Arrived	NULL	NULL
+Us Airways	1097	Philadelphia	PA	NULL	PHL	06	12	2005	11	36	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	639	Philadelphia	PA	NULL	PHL	06	13	2005	06	55	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	987	Philadelphia	PA	NULL	PHL	06	13	2005	08	16	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	185	Philadelphia	PA	NULL	PHL	06	13	2005	12	15	PM	00	00	Airbus A321	0	feet	Arrived	NULL	NULL
+Us Airways	185	Philadelphia	PA	NULL	PHL	06	13	2005	12	15	PM	00	00	Airbus A321	0	feet	Arrived	NULL	NULL
+Us Airways	222	Albany	NY	NULL	ALB	06	14	2005	12	17	PM	00	53	Current Altitude	0	feet	Arrived	NULL	NULL
+Us Airways	222	Albany	NY	NULL	ALB	06	14	2005	12	17	PM	00	53	Current Altitude	0	feet	Arrived	NULL	NULL
+Us Airways	197	Philadelphia	PA	NULL	PHL	06	13	2005	05	48	PM	01	08	Airbus A320	0	feet	Arrived	NULL	NULL
+Us Airways	197	Philadelphia	PA	NULL	PHL	06	13	2005	05	48	PM	01	08	Airbus A320	0	feet	Arrived	NULL	NULL
+Us Airways	565	Philadelphia	PA	NULL	PHL	06	13	2005	06	30	PM	NULL	NULL	Boeing 757-200	0	feet	Scheduled	NULL	NULL
+Us Airways	1471	Philadelphia	PA	NULL	PHL	06	13	2005	08	18	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+Us Airways	1471	Philadelphia	PA	NULL	PHL	06	13	2005	08	18	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+United	733	Washington	DC	NULL	IAD	06	13	2005	09	37	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+United	915	Washington	DC	NULL	IAD	06	13	2005	06	15	PM	NULL	NULL	Boeing 737-300	0	feet	Scheduled	NULL	NULL
+United	915	Paris	NULL	France	LFPG	06	13	2005	01	09	PM	00	00	Boeing 777-200	0	feet	Arrived	NULL	NULL
+American	1647	Miami	FL	NULL	MIA	06	14	2005	10	05	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+American	1647	Washington	DC	NULL	IAD	06	13	2005	10	41	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+American	1647	Miami	FL	NULL	MIA	06	14	2005	10	05	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+American	1647	Washington	DC	NULL	IAD	06	13	2005	10	41	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Hawaiian Air	8	Honolulu	HI	NULL	HNL	06	12	2005	10	08	PM	00	00	Boeing 767-300	0	feet	Arrived	NULL	NULL
+Omni Air International	103	Honolulu	HI	NULL	HNL	06	13	2005	01	13	PM	NULL	NULL	McDonnell Douglas DC-10 (all series)	0	feet	Planned	NULL	NULL
+Hawaiian Air	18	Honolulu	HI	NULL	HNL	06	13	2005	02	37	PM	05	11	Boeing 767-300	0	feet	Arrived	NULL	NULL
+Hawaiian Air	18	Honolulu	HI	NULL	HNL	06	13	2005	02	37	PM	05	11	Boeing 767-300	0	feet	Arrived	NULL	NULL
+American Trans Air	4406	Las Vegas	NV	NULL	LAS	06	13	2005	09	25	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+American Trans Air	4406	Las Vegas	NV	NULL	LAS	06	13	2005	09	25	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	443	Charlotte	NC	NULL	CLT	06	13	2005	10	02	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	443	Charlotte	NC	NULL	CLT	06	13	2005	10	02	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	1485	Charlotte	NC	NULL	CLT	06	13	2005	02	26	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	1121	Charlotte	NC	NULL	CLT	06	13	2005	07	58	AM	00	00	Current Altitude	0	feet	Arrived	NULL	NULL
+Us Airways	329	Charlotte	NC	NULL	CLT	06	13	2005	11	13	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	310	Charlotte	NC	NULL	CLT	06	13	2005	12	53	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	1121	Charlotte	NC	NULL	CLT	06	13	2005	07	58	AM	00	00	Current Altitude	0	feet	Arrived	NULL	NULL
+Us Airways	329	Charlotte	NC	NULL	CLT	06	13	2005	11	13	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	310	Charlotte	NC	NULL	CLT	06	13	2005	12	53	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Us Airways	95	London	NULL	Great Britain	EGKK	06	14	2005	10	55	AM	08	24	Current Altitude	0	feet	Arrived	NULL	NULL
+Us Airways	95	London	NULL	Great Britain	EGKK	06	14	2005	10	55	AM	08	24	Current Altitude	0	feet	Arrived	NULL	NULL
+Us Airways	309	Charlotte	NC	NULL	CLT	06	13	2005	05	46	PM	00	20	Boeing 757-200	29,900	feet	In Flight	NULL	NULL
+Executive Jet Aviation	224	San Francisco	CA	NULL	SFO	06	13	2005	01	53	PM	01	31	Dassault Falcon 2000	0	feet	Arrived	NULL	NULL
+Northwest	362	Minneapolis	MN	NULL	MSP	06	13	2005	07	41	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	362	San Francisco	CA	NULL	SFO	06	13	2005	12	49	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Executive Jet Aviation	224	San Francisco	CA	NULL	SFO	06	13	2005	01	53	PM	01	31	Dassault Falcon 2000	0	feet	Arrived	NULL	NULL
+Delta Air Lines	9815	Minneapolis	MN	NULL	MSP	06	13	2005	04	44	PM	01	18	Boeing 737-800	0	feet	Arrived	NULL	NULL
+Delta Air Lines	9815	Minneapolis	MN	NULL	MSP	06	13	2005	04	44	PM	01	18	Boeing 737-800	0	feet	Arrived	NULL	NULL
+Northwest	368	San Francisco	CA	NULL	SFO	06	13	2005	06	45	AM	00	00	Airbus A320	0	feet	Arrived	NULL	NULL
+Northwest	360	San Francisco	CA	NULL	SFO	06	13	2005	12	41	PM	00	14	Boeing 757-200	28,700	feet	In Flight	NULL	NULL
+Northwest	356	San Francisco	CA	NULL	SFO	06	13	2005	10	15	AM	00	00	Airbus A320	0	feet	Landed	NULL	NULL
+Sun Country	398	San Francisco	CA	NULL	SFO	06	12	2005	11	59	PM	00	00	Boeing 737-800	0	feet	Arrived	NULL	NULL
+Northwest	364	San Francisco	CA	NULL	SFO	06	13	2005	08	44	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	354	San Francisco	CA	NULL	SFO	06	13	2005	04	00	PM	NULL	NULL	Boeing 757-200	0	feet	Planned	NULL	NULL
+United	306	Los Angeles	CA	NULL	LAX	06	13	2005	09	09	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+United	306	Oakland	CA	NULL	OAK	06	13	2005	06	38	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Southwest	1136	Baltimore	MD	NULL	BWI	06	13	2005	05	21	PM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	1136	Los Angeles	CA	NULL	LAX	06	13	2005	08	43	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	72	Los Angeles	CA	NULL	LAX	06	13	2005	12	18	PM	01	35	Boeing 737-700	39,000	feet	In Flight	NULL	NULL
+United	308	Los Angeles	CA	NULL	LAX	06	12	2005	11	42	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	2274	Cleveland	OH	NULL	CLE	06	13	2005	08	45	AM	00	00	E45X	0	feet	Arrived	NULL	NULL
+American Eagle	912	Cleveland	OH	NULL	CLE	06	13	2005	07	22	AM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	375	Cleveland	OH	NULL	CLE	06	13	2005	02	52	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	375	Cleveland	OH	NULL	CLE	06	13	2005	02	52	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+Continental	840	Newark	NJ	NULL	EWR	06	13	2005	06	44	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+American Eagle	514	Newark	NJ	NULL	EWR	06	13	2005	12	17	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	514	Newark	NJ	NULL	EWR	06	13	2005	12	17	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	501	Dallas	TX	NULL	DFW	06	13	2005	10	49	AM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	501	Dallas	TX	NULL	DFW	06	13	2005	10	49	AM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	503	Newark	NJ	NULL	EWR	06	13	2005	09	25	AM	00	00	E135	0	feet	Arrived	NULL	NULL
+Continental	844	Newark	NJ	NULL	EWR	06	13	2005	08	51	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+American Eagle	513	Newark	NJ	NULL	EWR	06	13	2005	07	41	PM	00	49	E135	0	feet	Arrived	NULL	NULL
+American Eagle	513	Newark	NJ	NULL	EWR	06	13	2005	07	41	PM	00	49	E135	0	feet	Arrived	NULL	NULL
+Continental	850	Newark	NJ	NULL	EWR	06	13	2005	12	11	PM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+Continental	846	Newark	NJ	NULL	EWR	06	13	2005	09	46	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+American Eagle	509	Dallas	TX	NULL	DFW	06	13	2005	05	00	PM	00	25	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+American Eagle	509	Dallas	TX	NULL	DFW	06	13	2005	05	00	PM	00	25	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Continental	842	Newark	NJ	NULL	EWR	06	13	2005	08	08	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+Continental	862	Newark	NJ	NULL	EWR	06	13	2005	07	06	PM	NULL	NULL	Boeing 737-500	0	feet	Scheduled	NULL	NULL
+Continental	856	Newark	NJ	NULL	EWR	06	13	2005	02	46	PM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+Continental	836	Newark	NJ	NULL	EWR	06	13	2005	04	38	PM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+Continental	21	Newark	NJ	NULL	EWR	06	13	2005	01	39	PM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+Continental	21	Manchester	NULL	England	EGCC	06	13	2005	09	43	AM	00	00	Boeing 767-200	0	feet	Arrived	NULL	NULL
+Continental	858	Newark	NJ	NULL	EWR	06	13	2005	06	27	PM	00	31	Boeing 737-500	6,000	feet	In Flight	NULL	NULL
+Continental	8	Newark	NJ	NULL	EWR	06	13	2005	06	02	PM	00	05	Boeing 737-500	11,000	feet	In Flight	NULL	NULL
+Continental	8	Tokyo	NULL	Japan	RJAA	06	13	2005	04	37	PM	00	00	Boeing 777-200	0	feet	Arrived	NULL	NULL
+Southwest	1765	Baltimore	MD	NULL	BWI	06	13	2005	11	11	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Southwest	1765	New Orleans	LA	NULL	MSY	06	13	2005	07	20	AM	00	00	Boeing 737-700	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	2514	Cleveland	OH	NULL	CLE	06	13	2005	07	55	AM	00	00	E135	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2828	Philadelphia	PA	NULL	PHL	06	13	2005	09	23	AM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2828	Philadelphia	PA	NULL	PHL	06	13	2005	09	23	AM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Continental	1599	Cleveland	OH	NULL	CLE	06	13	2005	06	05	PM	00	21	Boeing 737-800	21,500	feet	In Flight	NULL	NULL
+Continental	1599	Phoenix	AZ	NULL	PHX	06	13	2005	08	05	AM	00	00	Boeing 737-800	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	2986	Cleveland	OH	NULL	CLE	06	13	2005	07	26	PM	NULL	NULL	Embraer EMB-145	0	feet	Scheduled	NULL	NULL
+Continental Express/ExpressJet Airlines	3237	Cleveland	OH	NULL	CLE	06	13	2005	06	26	PM	00	47	E135	7,300	feet	In Flight	NULL	NULL
+Continental Express/ExpressJet Airlines	3222	San Antonio	TX	NULL	SAT	06	14	2005	10	39	AM	02	37	Current Altitude	0	feet	Arrived	NULL	NULL
+Continental Express/ExpressJet Airlines	3222	San Antonio	TX	NULL	SAT	06	14	2005	10	39	AM	02	37	Current Altitude	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2664	Philadelphia	PA	NULL	PHL	06	13	2005	12	46	PM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2664	Philadelphia	PA	NULL	PHL	06	13	2005	12	46	PM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2746	Cleveland	OH	NULL	CLE	06	13	2005	02	12	PM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2817	Cleveland	OH	NULL	CLE	06	13	2005	04	55	PM	00	00	Bombardier CRJ 100	0	feet	Arrived	NULL	NULL
+Mesa Airlines	2791	Cleveland	OH	NULL	CLE	06	13	2005	07	27	PM	NULL	NULL	Bombardier CRJ 200	0	feet	Planned	NULL	NULL
+Mesa Airlines	2724	Cleveland	OH	NULL	CLE	06	13	2005	05	31	PM	NULL	NULL	Bombardier CRJ 200	0	feet	Scheduled	NULL	NULL
+American	382	Chicago	IL	NULL	ORD	06	13	2005	10	12	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	382	Minneapolis	MN	NULL	MSP	06	13	2005	08	32	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	370	Chicago	IL	NULL	ORD	06	13	2005	01	30	PM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	370	Minneapolis	MN	NULL	MSP	06	13	2005	11	19	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1292	Chicago	IL	NULL	ORD	06	13	2005	08	10	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1292	Minneapolis	MN	NULL	MSP	06	13	2005	06	06	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1929	Chicago	IL	NULL	ORD	06	13	2005	09	22	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	1929	Minneapolis	MN	NULL	MSP	06	13	2005	07	15	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	427	Chicago	IL	NULL	ORD	06	13	2005	01	13	PM	00	00	MD82	0	feet	Arrived	NULL	NULL
+American	427	Minneapolis	MN	NULL	MSP	06	13	2005	09	23	AM	00	00	MD82	0	feet	Arrived	NULL	NULL
+Federal Express	1021	Minneapolis	MN	NULL	MSP	06	13	2005	10	32	PM	NULL	NULL	Airbus A300B4-600	0	feet	Planned	NULL	NULL
+American	1137	Minneapolis	MN	NULL	MSP	06	13	2005	05	23	PM	NULL	NULL	MD83	0	feet	Scheduled	NULL	NULL
+American	1137	Chicago	IL	NULL	ORD	06	12	2005	08	32	PM	00	00	MD82	0	feet	Arrived	NULL	NULL
+Mesaba Aviation	3638	Minneapolis	MN	NULL	MSP	06	13	2005	09	14	AM	00	00	AVRO/BAe RJ85	0	feet	Arrived	NULL	NULL
+Mesaba Aviation	3434	Minneapolis	MN	NULL	MSP	06	13	2005	05	26	PM	00	45	AVRO/BAe RJ85	6,600	feet	In Flight	NULL	NULL
+American	772	Chicago	IL	NULL	ORD	06	14	2005	05	33	PM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+American	772	Minneapolis	MN	NULL	MSP	06	13	2005	04	46	PM	00	01	MD82	8,800	feet	In Flight	NULL	NULL
+American	1846	Minneapolis	MN	NULL	MSP	06	13	2005	02	00	PM	00	00	MD83	0	feet	Arrived	NULL	NULL
+Northwest	128	Minneapolis	MN	NULL	MSP	06	13	2005	11	46	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	122	Minneapolis	MN	NULL	MSP	06	13	2005	07	09	AM	00	00	Airbus A319	0	feet	Arrived	NULL	NULL
+Northwest	1042	Minneapolis	MN	NULL	MSP	06	13	2005	10	37	AM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	1042	Billings	MT	NULL	BIL	06	13	2005	06	34	AM	00	00	DC93	0	feet	Landed	NULL	NULL
+Northwest	302	Minneapolis	MN	NULL	MSP	06	13	2005	02	39	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	302	Los Angeles	CA	NULL	LAX	06	13	2005	07	00	AM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+Northwest	138	Minneapolis	MN	NULL	MSP	06	13	2005	03	14	PM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	132	Minneapolis	MN	NULL	MSP	06	13	2005	04	01	PM	00	00	DC93	0	feet	Arrived	NULL	NULL
+Northwest	136	Minneapolis	MN	NULL	MSP	06	13	2005	05	23	PM	NULL	NULL	DC93	0	feet	Scheduled	NULL	NULL
+United	429	Chicago	IL	NULL	ORD	06	13	2005	08	17	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+United	429	Minneapolis	MN	NULL	MSP	06	13	2005	06	06	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+Northwest	140	Minneapolis	MN	NULL	MSP	06	13	2005	07	49	PM	NULL	NULL	DC95	0	feet	Planned	NULL	NULL
+Northwest	140	Bismarck	ND	NULL	BIS	06	13	2005	04	36	PM	00	00	DC93	6,600	feet	In Flight	NULL	NULL
+United	674	Chicago	IL	NULL	ORD	06	13	2005	09	08	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+United	674	Minneapolis	MN	NULL	MSP	06	13	2005	07	07	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+United	288	Chicago	IL	NULL	ORD	06	13	2005	02	13	PM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+United	288	Minneapolis	MN	NULL	MSP	06	13	2005	11	26	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+United	690	Chicago	IL	NULL	ORD	06	13	2005	04	14	PM	NULL	NULL	Boeing 737-500	0	feet	Scheduled	NULL	NULL
+United	690	Minneapolis	MN	NULL	MSP	06	13	2005	02	55	PM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+United	1242	Minneapolis	MN	NULL	MSP	06	13	2005	09	48	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+United	730	Chicago	IL	NULL	ORD	06	13	2005	06	22	PM	NULL	NULL	Boeing 757-200	0	feet	Scheduled	NULL	NULL
+United	730	Minneapolis	MN	NULL	MSP	06	13	2005	03	58	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+United	398	Chicago	IL	NULL	ORD	06	13	2005	11	08	AM	00	00	Boeing 737-300	0	feet	Arrived	NULL	NULL
+United	398	Minneapolis	MN	NULL	MSP	06	13	2005	08	37	AM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+United	1182	Minneapolis	MN	NULL	MSP	06	13	2005	04	52	PM	00	07	Boeing 737-300	19,700	feet	In Flight	NULL	NULL
+United	395	Chicago	IL	NULL	ORD	06	13	2005	04	02	PM	03	47	Boeing 757-200	36,000	feet	In Flight	NULL	NULL
+United	395	Minneapolis	MN	NULL	MSP	06	13	2005	02	06	PM	00	00	Boeing 757-200	0	feet	Arrived	NULL	NULL
+United	1146	Minneapolis	MN	NULL	MSP	06	13	2005	07	57	PM	NULL	NULL	Boeing 737-300	0	feet	Scheduled	NULL	NULL
+United	1179	Chicago	IL	NULL	ORD	06	13	2005	08	05	PM	NULL	NULL	Boeing 737-500	0	feet	Scheduled	NULL	NULL
+United	1179	Minneapolis	MN	NULL	MSP	06	13	2005	05	47	PM	NULL	NULL	Boeing 737-500	0	feet	Scheduled	NULL	NULL
+United	1179	Chicago	IL	NULL	ORD	06	12	2005	08	22	PM	00	00	Boeing 737-500	0	feet	Arrived	NULL	NULL
+Comair Inc.	655	Orlando	FL	NULL	MCO	06	13	2005	11	59	AM	01	52	Current Altitude	0	feet	Arrived	NULL	NULL
+Comair Inc.	655	Orlando	FL	NULL	MCO	06	13	2005	11	59	AM	01	52	Current Altitude	0	feet	Arrived	NULL	NULL
+Comair Inc.	9754	Cincinnati	OH	NULL	CVG	06	13	2005	01	49	PM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Comair Inc.	414	Cincinnati	OH	NULL	CVG	06	13	2005	02	52	PM	00	00	Bombardier CRJ 100	0	feet	Arrived	NULL	NULL
+Delta Air Lines	851	Cincinnati	OH	NULL	CVG	06	13	2005	12	59	PM	00	00	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Comair Inc.	654	Orlando	FL	NULL	MCO	06	13	2005	10	50	AM	01	52	Current Altitude	0	feet	Arrived	NULL	NULL
+Comair Inc.	654	Orlando	FL	NULL	MCO	06	13	2005	10	50	AM	01	52	Current Altitude	0	feet	Arrived	NULL	NULL
+Delta Air Lines	935	Cincinnati	OH	NULL	CVG	06	13	2005	04	45	PM	00	07	McDonnell Douglas MD-80 Series	16,100	feet	In Flight	NULL	NULL
+Delta Air Lines	1652	Cincinnati	OH	NULL	CVG	06	13	2005	09	10	AM	00	00	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Delta Air Lines	1652	Cincinnati	OH	NULL	CVG	06	13	2005	09	10	AM	00	00	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Dhl Airways	512	Cincinnati	OH	NULL	CVG	06	14	2005	04	38	AM	NULL	NULL	Current Altitude	0	feet	Scheduled	NULL	NULL
+American Eagle	533	NULL	NULL	NULL	UL	06	13	2005	11	40	AM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	567	Puerto Plata	NULL	Dominican Republic	MDPP	06	13	2005	12	54	PM	00	00	ATR-72	0	feet	Arrived	NULL	NULL
+American Eagle	567	Puerto Plata	NULL	Dominican Republic	MDPP	06	13	2005	12	54	PM	00	00	ATR-72	0	feet	Arrived	NULL	NULL
+American Eagle	570	Cedar Rapids	IA	NULL	CID	06	13	2005	06	47	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+American Eagle	570	Cedar Rapids	IA	NULL	CID	06	13	2005	06	47	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+American Eagle	543	Puerto Plata	NULL	Dominican Republic	MDPP	06	13	2005	06	37	PM	00	39	ATR-72	0	feet	Arrived	NULL	NULL
+American Eagle	579	NULL	NULL	NULL	UL	06	13	2005	04	51	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	562	San Juan	PR	Puerto Rico	SJU	06	13	2005	05	00	PM	00	00	ATR-72	0	feet	Arrived	NULL	NULL
+American Eagle	562	San Juan	PR	Puerto Rico	SJU	06	13	2005	05	00	PM	00	00	ATR-72	0	feet	Arrived	NULL	NULL
+Comair Inc.	487	NULL	NULL	NULL	UL	06	13	2005	06	37	AM	00	00	Bombardier CRJ 100	0	feet	Arrived	NULL	NULL
+American Eagle	533	NULL	NULL	NULL	UL	06	13	2005	11	40	AM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	543	Puerto Plata	NULL	Dominican Republic	MDPP	06	13	2005	06	37	PM	00	39	ATR-72	0	feet	Arrived	NULL	NULL
+American Eagle	579	NULL	NULL	NULL	UL	06	13	2005	04	51	PM	00	00	E135	0	feet	Arrived	NULL	NULL
+American Eagle	512	NULL	NULL	NULL	UL	06	13	2005	06	39	PM	01	34	E135	0	feet	Landed	NULL	NULL
+American Eagle	512	NULL	NULL	NULL	UL	06	13	2005	06	39	PM	01	34	E135	0	feet	Landed	NULL	NULL
+Executive Jet Aviation	396	Boston	MA	NULL	BOS	06	13	2005	05	57	PM	00	10	Cessna Citation 5	0	feet	Arrived	NULL	NULL
+Comair Inc.	1444	NULL	NULL	NULL	UL	06	13	2005	09	56	AM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Comair Inc.	569	NULL	NULL	NULL	UL	06	13	2005	06	58	PM	NULL	NULL	Bombardier CRJ 200	0	feet	Planned	NULL	NULL
+Comair Inc.	497	NULL	NULL	NULL	UL	06	13	2005	03	22	PM	00	00	Bombardier CRJ 100	0	feet	Arrived	NULL	NULL
+Executive Jet Aviation	396	Boston	MA	NULL	BOS	06	13	2005	05	57	PM	00	10	Cessna Citation 5	0	feet	Arrived	NULL	NULL
+Atlantic Southeast Airlines	249	Saint Louis	MO	NULL	STL	06	13	2005	09	31	AM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	5282	Saint Louis	MO	NULL	STL	06	13	2005	03	51	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Atlantic Southeast Airlines	249	Saint Louis	MO	NULL	STL	06	13	2005	09	31	AM	00	00	Bombardier CRJ 200	0	feet	Arrived	NULL	NULL
+Comair Inc.	671	Saint Louis	MO	NULL	STL	06	13	2005	05	34	AM	00	00	Bombardier CRJ 700	0	feet	Arrived	NULL	NULL
+Delta Air Lines	1184	Atlanta	GA	NULL	ATL	06	13	2005	10	52	AM	00	00	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	5280	Saint Louis	MO	NULL	STL	06	13	2005	01	00	PM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Delta Air Lines	1184	Atlanta	GA	NULL	ATL	06	13	2005	10	52	AM	00	00	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Trans States Airlines	5663	Saint Louis	MO	NULL	STL	06	13	2005	10	49	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Delta Air Lines	373	Atlanta	GA	NULL	ATL	06	13	2005	06	32	PM	01	28	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Trans States Airlines	5665	Saint Louis	MO	NULL	STL	06	13	2005	01	53	PM	00	00	Current Altitude	0	feet	Arrived	NULL	NULL
+Trans States Airlines	5501	Saint Louis	MO	NULL	STL	06	13	2005	08	19	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Trans States Airlines	5665	Saint Louis	MO	NULL	STL	06	13	2005	01	53	PM	00	00	Current Altitude	0	feet	Arrived	NULL	NULL
+Chautauqua Airlines	5284	Saint Louis	MO	NULL	STL	06	13	2005	05	38	PM	NULL	NULL	Embraer EMB-145	0	feet	Scheduled	NULL	NULL
+Delta Air Lines	373	Atlanta	GA	NULL	ATL	06	13	2005	06	32	PM	01	28	McDonnell Douglas MD-80 Series	0	feet	Arrived	NULL	NULL
+Trans States Airlines	5489	Saint Louis	MO	NULL	STL	06	13	2005	06	13	AM	00	00	Embraer EMB-145	0	feet	Arrived	NULL	NULL
+Delta Air Lines	699	Saint Louis	MO	NULL	STL	06	13	2005	05	36	PM	NULL	NULL	McDonnell Douglas MD-80 Series	0	feet	Scheduled	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	09	46	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	05	01	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	11	28	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	10	20	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	11	42	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	09	06	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	11	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	01	59	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	10	17	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Nome	AK	NULL	OME	NULL	NULL	NULL	01	20	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	10	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Fairbanks	AK	NULL	FAI	NULL	NULL	NULL	10	29	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	09	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	02	43	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	09	32	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	03	34	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Portland	OR	NULL	PDX	NULL	NULL	NULL	12	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	07	01	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Vancouver	BC	Canada	YVR	NULL	NULL	NULL	05	42	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	12	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	12	52	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Fairbanks	AK	NULL	FAI	NULL	NULL	NULL	11	40	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	03	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	02	04	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	08	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	11	15	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	11	04	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	11	04	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	07	34	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	12	15	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Kotzebue	AK	NULL	OTZ	NULL	NULL	NULL	12	59	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Kotzebue	AK	NULL	OTZ	NULL	NULL	NULL	12	59	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	10	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Nome	AK	NULL	OME	NULL	NULL	NULL	01	20	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	11	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	05	41	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	05	28	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	09	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Palm Springs	CA	NULL	PSP	NULL	NULL	NULL	11	34	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Puerto Vallarta	NULL	Mexico	PVR	NULL	NULL	NULL	04	06	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	10	30	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	10	37	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	02	43	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	09	32	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Washington	DC	NULL	IAD	NULL	NULL	NULL	04	48	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	07	46	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	11	56	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	11	30	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	10	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	08	49	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	09	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	08	33	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	01	31	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	01	54	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	10	58	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	03	21	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	05	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	05	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	09	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	03	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	07	34	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	09	42	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	08	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	05	28	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	03	42	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Milwaukee	WI	NULL	MKE	NULL	NULL	NULL	08	22	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Milwaukee	WI	NULL	MKE	NULL	NULL	NULL	05	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Milwaukee	WI	NULL	MKE	NULL	NULL	NULL	02	57	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	04	13	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Myrtle Beach	SC	NULL	MYR	NULL	NULL	NULL	10	54	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	07	51	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Milwaukee	WI	NULL	MKE	NULL	NULL	NULL	04	19	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	01	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	12	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	10	21	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Louisville	KY	NULL	SDF	NULL	NULL	NULL	08	32	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	06	18	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	08	06	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	06	43	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	12	55	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	12	55	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	09	34	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	07	34	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	09	34	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	01	12	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	LGA	NULL	NULL	NULL	08	27	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	05	15	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	05	20	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	09	18	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	05	17	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Champaign	IL	NULL	CMI	NULL	NULL	NULL	02	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Champaign	IL	NULL	CMI	NULL	NULL	NULL	05	12	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Champaign	IL	NULL	CMI	NULL	NULL	NULL	10	48	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Champaign	IL	NULL	CMI	NULL	NULL	NULL	10	48	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Champaign	IL	NULL	CMI	NULL	NULL	NULL	07	34	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Champaign	IL	NULL	CMI	NULL	NULL	NULL	07	34	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	06	51	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Syracuse	NY	NULL	SYR	NULL	NULL	NULL	12	44	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Syracuse	NY	NULL	SYR	NULL	NULL	NULL	12	44	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	10	21	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	08	14	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	02	53	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	09	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	11	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	07	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	03	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	11	49	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	07	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Colorado Springs	CO	NULL	COS	NULL	NULL	NULL	08	43	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Colorado Springs	CO	NULL	COS	NULL	NULL	NULL	08	43	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	01	12	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	10	09	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	01	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	01	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	05	25	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Grand Forks	ND	NULL	GFK	NULL	NULL	NULL	12	44	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	10	03	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	03	16	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Reno	NV	NULL	RNO	NULL	NULL	NULL	10	42	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	08	14	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	12	53	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	07	14	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	04	53	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	04	03	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	04	03	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Buffalo	NY	NULL	BUF	NULL	NULL	NULL	03	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Phoenix	AZ	NULL	PHX	NULL	NULL	NULL	08	17	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	03	04	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	05	14	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	07	04	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Buffalo	NY	NULL	BUF	NULL	NULL	NULL	11	12	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Las Vegas	NV	NULL	LAS	NULL	NULL	NULL	03	58	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Ontario	CA	NULL	ONT	NULL	NULL	NULL	02	38	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Buffalo	NY	NULL	BUF	NULL	NULL	NULL	04	20	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Buffalo	NY	NULL	BUF	NULL	NULL	NULL	09	07	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Buffalo	NY	NULL	BUF	NULL	NULL	NULL	11	39	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Buffalo	NY	NULL	BUF	NULL	NULL	NULL	11	39	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Buffalo	NY	NULL	BUF	NULL	NULL	NULL	01	03	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Buffalo	NY	NULL	BUF	NULL	NULL	NULL	11	40	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Buffalo	NY	NULL	BUF	NULL	NULL	NULL	08	31	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Buffalo	NY	NULL	BUF	NULL	NULL	NULL	06	16	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	10	23	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	11	03	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	07	13	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	01	17	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	09	43	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	04	03	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	11	34	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	05	31	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	01	22	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Salt Lake City	UT	NULL	SLC	NULL	NULL	NULL	09	26	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	07	13	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	03	15	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	MDW	NULL	NULL	NULL	01	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	12	23	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	08	23	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	04	37	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Omaha	NE	NULL	OMA	NULL	NULL	NULL	02	57	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Las Vegas	NV	NULL	LAS	NULL	NULL	NULL	10	00	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	07	16	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	02	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	02	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	JFK	NULL	NULL	NULL	03	57	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	JFK	NULL	NULL	NULL	05	49	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	10	17	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	10	17	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	11	06	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	11	04	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	08	50	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	11	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	07	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	01	12	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	10	09	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	03	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	11	49	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	07	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	05	25	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	01	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	01	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Colorado Springs	CO	NULL	COS	NULL	NULL	NULL	08	43	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Colorado Springs	CO	NULL	COS	NULL	NULL	NULL	08	43	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Grand Forks	ND	NULL	GFK	NULL	NULL	NULL	12	44	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	10	03	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Reno	NV	NULL	RNO	NULL	NULL	NULL	10	42	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	08	14	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	07	14	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	12	53	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	04	53	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	04	03	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	04	03	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	03	16	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Columbus	OH	NULL	CMH	NULL	NULL	NULL	02	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cleveland	OH	NULL	CLE	NULL	NULL	NULL	06	57	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Milwaukee	WI	NULL	MKE	NULL	NULL	NULL	09	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Milwaukee	WI	NULL	MKE	NULL	NULL	NULL	06	01	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Columbus	OH	NULL	CMH	NULL	NULL	NULL	02	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cleveland	OH	NULL	CLE	NULL	NULL	NULL	06	57	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cincinnati	OH	NULL	CVG	NULL	NULL	NULL	05	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cincinnati	OH	NULL	CVG	NULL	NULL	NULL	02	21	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Jacksonville	FL	NULL	JAX	NULL	NULL	NULL	07	58	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Jacksonville	FL	NULL	JAX	NULL	NULL	NULL	07	58	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cincinnati	OH	NULL	CVG	NULL	NULL	NULL	11	37	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cincinnati	OH	NULL	CVG	NULL	NULL	NULL	07	22	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	07	51	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	02	29	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	05	11	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	12	20	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	08	31	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	03	14	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	10	23	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	05	26	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	09	35	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	02	51	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	09	11	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	10	52	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	06	04	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	11	26	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	03	23	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	07	16	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Shreveport	LA	NULL	SHV	NULL	NULL	NULL	12	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Shreveport	LA	NULL	SHV	NULL	NULL	NULL	12	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	09	23	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	09	23	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	04	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Lawton	OK	NULL	LAW	NULL	NULL	NULL	11	19	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Lawton	OK	NULL	LAW	NULL	NULL	NULL	11	19	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	09	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	10	21	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	10	21	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	07	49	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Richmond	VA	NULL	RIC	NULL	NULL	NULL	08	32	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	04	32	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Palm Springs	CA	NULL	PSP	NULL	NULL	NULL	11	34	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	09	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	08	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	10	37	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	03	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Puerto Vallarta	NULL	Mexico	PVR	NULL	NULL	NULL	04	06	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	10	30	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	01	54	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	10	58	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	08	33	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	09	42	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	05	28	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	02	43	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	09	32	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Washington	DC	NULL	IAD	NULL	NULL	NULL	04	48	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	07	46	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	11	30	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	10	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	08	49	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	09	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	03	42	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	01	31	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	07	34	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	03	21	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	05	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	05	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	11	56	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	11	48	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	11	48	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	08	56	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	08	56	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Jose	CA	NULL	SJC	NULL	NULL	NULL	05	31	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Phoenix	AZ	NULL	PHX	NULL	NULL	NULL	03	10	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	01	01	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	12	01	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Phoenix	AZ	NULL	PHX	NULL	NULL	NULL	09	41	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	07	35	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Phoenix	AZ	NULL	PHX	NULL	NULL	NULL	07	32	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Phoenix	AZ	NULL	PHX	NULL	NULL	NULL	10	53	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Phoenix	AZ	NULL	PHX	NULL	NULL	NULL	07	38	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Phoenix	AZ	NULL	PHX	NULL	NULL	NULL	08	43	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Tampa	FL	NULL	TPA	NULL	NULL	NULL	01	28	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	10	51	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	12	04	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	09	14	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Jacksonville	FL	NULL	JAX	NULL	NULL	NULL	08	49	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Norfolk	VA	NULL	ORF	NULL	NULL	NULL	06	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	05	05	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	05	08	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Albuquerque	NM	NULL	ABQ	NULL	NULL	NULL	03	56	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	01	18	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Phoenix	AZ	NULL	PHX	NULL	NULL	NULL	06	04	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	MDW	NULL	NULL	NULL	04	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	02	31	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Fort Lauderdale	FL	NULL	FLL	NULL	NULL	NULL	11	58	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Jacksonville	FL	NULL	JAX	NULL	NULL	NULL	10	28	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	07	46	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	09	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	07	59	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	07	58	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New Orleans	LA	NULL	MSY	NULL	NULL	NULL	02	15	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New Orleans	LA	NULL	MSY	NULL	NULL	NULL	11	34	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New Orleans	LA	NULL	MSY	NULL	NULL	NULL	01	42	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	09	17	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New Orleans	LA	NULL	MSY	NULL	NULL	NULL	03	45	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	11	23	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Las Vegas	NV	NULL	LAS	NULL	NULL	NULL	07	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	11	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	11	30	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	07	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	11	30	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	08	35	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	08	35	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	04	15	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	12	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	02	51	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	02	51	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	11	45	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	04	14	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	04	14	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	10	03	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	05	33	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Saint Louis	MO	NULL	STL	NULL	NULL	NULL	02	09	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	10	44	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	09	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	07	32	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	07	47	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	03	35	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	01	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	07	01	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	03	55	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	07	21	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	04	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	09	56	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Montreal	QC	Canada	YUL	NULL	NULL	NULL	01	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Greenville	SC	NULL	GSP	NULL	NULL	NULL	08	10	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Montreal	QC	Canada	YUL	NULL	NULL	NULL	01	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Greenville	SC	NULL	GSP	NULL	NULL	NULL	08	10	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	02	21	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	02	21	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	08	45	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	01	37	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	10	49	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	09	03	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	12	45	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Columbia	SC	NULL	CAE	NULL	NULL	NULL	06	23	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Columbia	SC	NULL	CAE	NULL	NULL	NULL	06	23	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	10	17	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	07	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	06	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	03	59	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	08	49	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	07	20	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	07	20	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Myrtle Beach	SC	NULL	MYR	NULL	NULL	NULL	09	41	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Myrtle Beach	SC	NULL	MYR	NULL	NULL	NULL	09	41	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Charlotte	NC	NULL	CLT	NULL	NULL	NULL	08	21	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Charlotte	NC	NULL	CLT	NULL	NULL	NULL	08	21	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	LGA	NULL	NULL	NULL	12	57	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	LGA	NULL	NULL	NULL	12	57	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Allentown	PA	NULL	ABE	NULL	NULL	NULL	05	58	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Allentown	PA	NULL	ABE	NULL	NULL	NULL	05	58	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New Orleans	LA	NULL	MSY	NULL	NULL	NULL	03	45	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	11	23	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Las Vegas	NV	NULL	LAS	NULL	NULL	NULL	07	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New Orleans	LA	NULL	MSY	NULL	NULL	NULL	02	15	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New Orleans	LA	NULL	MSY	NULL	NULL	NULL	01	42	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Denver	CO	NULL	DEN	NULL	NULL	NULL	09	17	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New Orleans	LA	NULL	MSY	NULL	NULL	NULL	11	34	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	01	10	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	07	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	02	12	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	02	12	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	La Crosse	WI	NULL	LSE	NULL	NULL	NULL	12	01	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	09	52	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	02	52	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	02	52	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Rapid City	SD	NULL	RAP	NULL	NULL	NULL	05	30	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	03	48	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	05	07	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Houston	TX	NULL	IAH	NULL	NULL	NULL	01	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	11	35	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Antonio	TX	NULL	SAT	NULL	NULL	NULL	04	58	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	03	01	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	07	48	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	12	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Lubbock	TX	NULL	LBB	NULL	NULL	NULL	01	47	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Lubbock	TX	NULL	LBB	NULL	NULL	NULL	01	47	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	01	53	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	01	53	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Providence	RI	NULL	PVD	NULL	NULL	NULL	02	29	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Providence	RI	NULL	PVD	NULL	NULL	NULL	02	29	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Burbank	CA	NULL	BUR	NULL	NULL	NULL	09	23	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Burbank	CA	NULL	BUR	NULL	NULL	NULL	07	17	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Burbank	CA	NULL	BUR	NULL	NULL	NULL	09	08	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	11	38	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	02	31	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Honolulu	HI	NULL	HNL	NULL	NULL	NULL	08	45	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	10	08	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	09	40	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	11	07	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	08	14	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	03	14	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	12	26	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	11	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	03	14	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	12	26	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	11	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	08	26	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	09	20	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	05	41	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	12	31	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Columbus	OH	NULL	CMH	NULL	NULL	NULL	08	44	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Columbus	OH	NULL	CMH	NULL	NULL	NULL	08	42	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Columbus	OH	NULL	CMH	NULL	NULL	NULL	01	10	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Columbus	OH	NULL	CMH	NULL	NULL	NULL	01	10	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Columbus	OH	NULL	CMH	NULL	NULL	NULL	05	35	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	07	59	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	MDW	NULL	NULL	NULL	05	26	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Columbus	OH	NULL	CMH	NULL	NULL	NULL	04	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	02	07	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Jose	CA	NULL	SJC	NULL	NULL	NULL	09	58	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	11	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	11	28	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	01	59	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	09	06	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	11	42	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	10	20	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	JFK	NULL	NULL	NULL	05	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	JFK	NULL	NULL	NULL	12	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	JFK	NULL	NULL	NULL	11	09	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	JFK	NULL	NULL	NULL	06	35	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	JFK	NULL	NULL	NULL	07	47	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	JFK	NULL	NULL	NULL	04	28	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Nome	AK	NULL	OME	NULL	NULL	NULL	01	20	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Nome	AK	NULL	OME	NULL	NULL	NULL	01	20	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	09	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	09	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	10	17	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	10	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	10	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	05	41	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	11	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Fairbanks	AK	NULL	FAI	NULL	NULL	NULL	10	29	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	03	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Portland	OR	NULL	PDX	NULL	NULL	NULL	12	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	07	01	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Vancouver	BC	Canada	YVR	NULL	NULL	NULL	05	52	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	12	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Francisco	CA	NULL	SFO	NULL	NULL	NULL	05	28	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	02	43	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	09	32	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	12	52	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Fairbanks	AK	NULL	FAI	NULL	NULL	NULL	11	40	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	03	05	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	03	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Seattle	WA	NULL	SEA	NULL	NULL	NULL	02	04	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	08	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	07	34	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	11	15	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	11	04	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	11	04	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	12	15	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Kotzebue	AK	NULL	OTZ	NULL	NULL	NULL	12	59	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Kotzebue	AK	NULL	OTZ	NULL	NULL	NULL	12	59	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	11	47	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	07	51	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	03	04	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	06	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Detroit	MI	NULL	DTW	NULL	NULL	NULL	02	09	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cancun	NULL	Mexico	CUN	NULL	NULL	NULL	11	15	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	10	19	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	09	46	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	02	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	02	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	05	01	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	09	04	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	09	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	07	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	05	33	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	02	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	08	39	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	08	39	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	03	32	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	08	38	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	06	20	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	01	13	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	07	59	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	07	59	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	01	26	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	08	47	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	10	18	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	10	53	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	10	53	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	12	48	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	12	48	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	02	35	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	02	35	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	08	28	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	06	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	06	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	11	58	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	08	34	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Washington	DC	NULL	IAD	NULL	NULL	NULL	02	33	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	NULL	NULL	NULL	UL	NULL	NULL	NULL	10	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	12	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	NULL	NULL	NULL	UL	NULL	NULL	NULL	10	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	12	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Las Vegas	NV	NULL	LAS	NULL	NULL	NULL	06	10	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Las Vegas	NV	NULL	LAS	NULL	NULL	NULL	09	14	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Las Vegas	NV	NULL	LAS	NULL	NULL	NULL	10	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Las Vegas	NV	NULL	LAS	NULL	NULL	NULL	10	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Indianapolis	IN	NULL	IND	NULL	NULL	NULL	07	36	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Indianapolis	IN	NULL	IND	NULL	NULL	NULL	07	36	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	08	18	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	08	18	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	03	31	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	09	10	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	10	02	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	11	10	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	09	10	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	10	02	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	11	10	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Charlotte	NC	NULL	CLT	NULL	NULL	NULL	01	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Charlotte	NC	NULL	CLT	NULL	NULL	NULL	01	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	06	54	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	08	45	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Washington	DC	NULL	DCA	NULL	NULL	NULL	10	32	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	06	14	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	08	45	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Salt Lake City	UT	NULL	SLC	NULL	NULL	NULL	03	41	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Salt Lake City	UT	NULL	SLC	NULL	NULL	NULL	03	41	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	12	12	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	05	47	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	03	22	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	05	10	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	01	58	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	09	08	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	04	41	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Los Angeles	CA	NULL	LAX	NULL	NULL	NULL	07	37	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Islip	NY	NULL	ISP	NULL	NULL	NULL	06	10	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	04	07	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	08	10	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	06	59	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	11	18	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	09	49	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	03	49	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Miami	FL	NULL	MIA	NULL	NULL	NULL	03	49	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	07	26	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	06	31	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	06	31	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Huntsville	AL	NULL	HSV	NULL	NULL	NULL	07	08	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Huntsville	AL	NULL	HSV	NULL	NULL	NULL	07	08	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	10	08	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	09	34	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	04	21	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	04	21	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	12	53	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	10	28	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Jackson	MS	NULL	JAN	NULL	NULL	NULL	05	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Jackson	MS	NULL	JAN	NULL	NULL	NULL	05	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	08	50	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	07	45	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	03	29	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	05	12	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	02	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	11	15	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	07	06	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	06	39	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	03	41	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Hartford	CT	NULL	BDL	NULL	NULL	NULL	11	53	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	10	23	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	08	58	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Allentown	PA	NULL	ABE	NULL	NULL	NULL	08	28	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Allentown	PA	NULL	ABE	NULL	NULL	NULL	08	28	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	06	55	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cleveland	OH	NULL	CLE	NULL	NULL	NULL	02	19	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	08	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	07	22	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cleveland	OH	NULL	CLE	NULL	NULL	NULL	10	15	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cleveland	OH	NULL	CLE	NULL	NULL	NULL	10	15	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Burlington	VT	NULL	BTV	NULL	NULL	NULL	11	38	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Burlington	VT	NULL	BTV	NULL	NULL	NULL	11	38	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	03	07	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	06	03	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	08	35	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Philadelphia	PA	NULL	PHL	NULL	NULL	NULL	06	32	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	LGA	NULL	NULL	NULL	12	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	09	25	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	LGA	NULL	NULL	NULL	04	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	12	20	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Newark	NJ	NULL	EWR	NULL	NULL	NULL	10	37	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	07	03	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New Orleans	LA	NULL	MSY	NULL	NULL	NULL	11	18	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	08	08	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	El Paso	TX	NULL	ELP	NULL	NULL	NULL	03	01	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	10	17	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	11	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	06	24	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Diego	CA	NULL	SAN	NULL	NULL	NULL	10	13	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	10	11	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	06	20	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	08	30	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	05	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	02	54	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	12	49	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	08	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	11	33	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	09	17	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	03	43	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	12	22	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	04	10	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	04	57	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	06	22	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Houston	TX	NULL	IAH	NULL	NULL	NULL	10	31	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	07	02	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	08	32	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Minneapolis	MN	NULL	MSP	NULL	NULL	NULL	05	36	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	LGA	NULL	NULL	NULL	11	44	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	08	03	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	04	52	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	12	30	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	New York	NY	NULL	LGA	NULL	NULL	NULL	06	55	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	03	51	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	10	41	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Baltimore	MD	NULL	BWI	NULL	NULL	NULL	09	11	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	04	55	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Hartford	CT	NULL	BDL	NULL	NULL	NULL	01	42	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	09	32	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	05	43	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Anchorage	AK	NULL	ANC	NULL	NULL	NULL	06	22	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	03	00	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	08	51	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Spokane	WA	NULL	GEG	NULL	NULL	NULL	09	31	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Chicago	IL	NULL	ORD	NULL	NULL	NULL	06	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Spokane	WA	NULL	GEG	NULL	NULL	NULL	09	40	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cincinnati	OH	NULL	CVG	NULL	NULL	NULL	11	11	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cincinnati	OH	NULL	CVG	NULL	NULL	NULL	11	11	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	03	38	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	04	44	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	02	44	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cincinnati	OH	NULL	CVG	NULL	NULL	NULL	10	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Cincinnati	OH	NULL	CVG	NULL	NULL	NULL	10	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	06	43	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	07	33	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	07	33	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Orlando	FL	NULL	MCO	NULL	NULL	NULL	06	26	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	08	13	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Juan	PR	Puerto Rico	SJU	NULL	NULL	NULL	10	22	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Juan	PR	Puerto Rico	SJU	NULL	NULL	NULL	10	22	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	07	49	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Dallas	TX	NULL	DFW	NULL	NULL	NULL	07	49	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Juan	PR	Puerto Rico	SJU	NULL	NULL	NULL	11	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	04	49	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Santo Domingo	NULL	Dominican Republic	MDSD	NULL	NULL	NULL	11	46	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Santo Domingo	NULL	Dominican Republic	MDSD	NULL	NULL	NULL	11	46	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	08	12	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	08	13	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	San Juan	PR	Puerto Rico	SJU	NULL	NULL	NULL	11	05	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	04	49	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	02	03	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	02	03	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Morristown	NJ	NULL	MMU	NULL	NULL	NULL	07	24	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	11	28	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	08	27	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Boston	MA	NULL	BOS	NULL	NULL	NULL	04	46	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Morristown	NJ	NULL	MMU	NULL	NULL	NULL	07	24	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	08	35	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	06	08	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	08	35	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	07	44	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Washington	DC	NULL	DCA	NULL	NULL	NULL	09	25	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	03	17	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Washington	DC	NULL	DCA	NULL	NULL	NULL	09	25	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	01	09	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Washington	DC	NULL	IAD	NULL	NULL	NULL	04	59	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	04	18	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	10	36	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	04	18	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	08	01	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Washington	DC	NULL	IAD	NULL	NULL	NULL	04	59	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	08	35	AM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL
+NULL	NULL	Atlanta	GA	NULL	ATL	NULL	NULL	NULL	07	58	PM	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL

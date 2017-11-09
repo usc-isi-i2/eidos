@@ -1,0 +1,32 @@
+####################################################### 
+## Parameters for accessing database!
+## 
+#######################################################
+
+## jdbcDriver: java driver for JDBC
+## dbURL: URL of server and name of database (note encoding of : and = as \: and \=)
+## dbUser: login for database server 
+## dbPassword
+
+#jdbcDriver=com.microsoft.jdbc.sqlserver.SQLServerDriver
+#dbURL=jdbc\:microsoft\:sqlserver\://prometheus\:1433;DatabaseName\=Mark_Carman_GenericDomain
+#dbUser=sa
+#dbPassword=sqlprmadmin
+
+#jdbcDriver=com.mysql.jdbc.Driver
+#dbURL=jdbc\:mysql\://localhost/examples
+#dbUser=root
+#dbPassword=isi4676
+
+jdbcDriver=com.mysql.jdbc.Driver
+dbURL=jdbc\:mysql\://ragnarok.isi.edu/wrapcache_081223b_no
+dbUser=root
+dbPassword=taipei
+
+cacheDbName=cache
+outputDbName=output
+
+##  OLD:
+## alternative driver and URL (uses ODBC)
+## jdbcDriver=sun.jdbc.odbc.JdbcOdbcDriver
+## dbURL=jdbc\:odbc\:PrometheusSQLServer

@@ -1,0 +1,394 @@
+package wrappers;
+
+import invocation.Wrapper;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathFactory;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
+import relational.Table;
+
+
+public class Geonames implements Wrapper {
+
+	XPath xpath;
+
+	public Geonames() {
+		xpath = XPathFactory.newInstance().newXPath();
+	}
+
+	/*
+	 * Description of available sources:
+	 * http://www.geonames.org/export/
+	 *
+	 */
+
+	public Table invoke(String[] endpoint, List<String> inputTuple) {
+
+		Table output = null;
+		String url = null;
+
+		if (endpoint[1].equalsIgnoreCase("countrycode")) {
+
+			try {
+
+				url = "http://ws.geonames.org/countrycode";
+				url += "?lat="+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8");
+				url += "&lng="+java.net.URLEncoder.encode(inputTuple.get(1),"UTF-8");
+
+				/*
+				 * url:
+				 *   http://ws.geonames.org/countrycode?lat=47.03&lng=10.2
+				 * returns:
+				 *   AT
+				 */
+
+				// the metadata
+		    	String[] columns = new String[] {"Latitude","Longitude","Country"};
+		    	output = new Table(columns);
+
+				// invoke source
+		    	BufferedReader in = new BufferedReader(new InputStreamReader((new URL(url)).openStream()));
+				String data = in.readLine();
+				if (data != null && data.trim().length()>0) {
+					// the data
+					ArrayList<String> tuple = new ArrayList<String>();
+
+					tuple.add(inputTuple.get(0));
+					tuple.add(inputTuple.get(1));
+					tuple.add(data.trim());
+
+					output.insertDistinct(tuple);
+				}
+
+		    }
+			catch (Exception e) {
+				return null;
+	    	}
+
+		}
+		else if (endpoint[1].equalsIgnoreCase("gtopo30")) {
+
+			try {
+
+				url = "http://ws.geonames.org/gtopo30";
+				url += "?lat="+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8");
+				url += "&lng="+java.net.URLEncoder.encode(inputTuple.get(1),"UTF-8");
+
+				/*
+				 * url:
+				 *   http://ws.geonames.org/gtopo30?lat=47.03&lng=10.2
+				 * returns:
+				 *   1561
+				 */
+
+				// the metadata
+		    	String[] columns = new String[] {"Latitude","Longitude","Altitude"};
+		    	output = new Table(columns);
+
+				// invoke source
+		    	BufferedReader in = new BufferedReader(new InputStreamReader((new URL(url)).openStream()));
+				String data = in.readLine();
+				if (data != null) {
+					// the data
+					ArrayList<String> tuple = new ArrayList<String>();
+
+					tuple.add(inputTuple.get(0));
+					tuple.add(inputTuple.get(1));
+
+					data = data.trim();
+					//hack:
+					if (data.equals("-9999")) { data = "0"; }
+					tuple.add(data);
+
+					output.insertDistinct(tuple);
+				}
+
+		    }
+			catch (Exception e) {
+				return null;
+	    	}
+
+		}
+		else if (endpoint[1].equalsIgnoreCase("countryInfo")) {
+
+			try {
+
+				url = "http://ws.geonames.org/countryInfo";
+				url += "?country="+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8");
+
+				/*
+				 * url:
+				 *   http://ws.geonames.org/countryInfo?country=at
+				 * returns:
+				 *
+<?xml version="1.0" encoding="UTF-8"?>
+<geonames>
+	<country>
+		<countryCode>AT</countryCode>
+		<countryName>Austria</countryName>
+		<capital>Wien</capital>
+		<areaInSqKm>83858.0</areaInSqKm>
+		<population>8184691</population>
+		<currencyCode>EUR</currencyCode>
+		<languages>de-AT,hu</languages>
+		<bBoxWest>17.166386</bBoxWest>
+		<bBoxNorth>49.018883</bBoxNorth>
+		<bBoxEast>9.533569</bBoxEast>
+		<bBoxSouth>46.407494</bBoxSouth>
+    </country>
+</geonames>
+				 */
+
+				// the metadata
+		    	String[] columns = new String[] {"countryCode","countryName","capital","areaInSqKm","population","currencyCode",/*"languages",*/"bBoxWest","bBoxNorth","bBoxEast","bBoxSouth"};
+		    	output = new Table(columns);
+
+				// invoke source and parse xml output
+				NodeList countryElements = (NodeList) xpath.evaluate("//*[local-name()='country']",new InputSource(url),XPathConstants.NODESET);
+
+				if (countryElements.getLength()>0) {
+					// the data
+			    	ArrayList<String> tuple = new ArrayList<String>();
+				    for (String col: columns) {
+				    	tuple.add((String) xpath.evaluate("./*[local-name()='"+col+"'][1]/text()",countryElements.item(0),XPathConstants.STRING));
+				    }
+				    output.insertDistinct(tuple);
+
+				}
+
+		    }
+			catch (Exception e) {
+				return null;
+	    	}
+
+		}
+		else if (endpoint[1].equalsIgnoreCase("earthquakes")) {
+
+			try {
+
+				url = "http://ws.geonames.org/earthquakesJSON";
+				url += "?north="+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8");
+				url += "&east=" +java.net.URLEncoder.encode(inputTuple.get(1),"UTF-8");
+				url += "&south="+java.net.URLEncoder.encode(inputTuple.get(2),"UTF-8");
+				url += "&west=" +java.net.URLEncoder.encode(inputTuple.get(3),"UTF-8");
+
+				/*
+				 * url:
+				 *   http://ws.geonames.org/earthquakesJSON?north=50&east=0&south=40&west=30
+				 * returns:
+				 * 	 {"earthquakes":[{"lat":44.083,"eqid":"kpam","magnitude":4.7,"datetime":"2006-03-22 11:26:19","depth":10,"src":"us","lng":20.048},{"lat":41.7077,"eqid":"jjbg","magnitude":4.6,"datetime":"2006-02-20 17:20:09","depth":10,"src":"us","lng":25.5442},{"lat":45.686,"eqid":"jyam","magnitude":4.6,"datetime":"2006-03-06 10:40:46","depth":139.9,"src":"us","lng":26.4514},{"lat":45.711,"eqid":"jfae","magnitude":4.1,"datetime":"2006-02-16 02:49:40","depth":130,"src":"us","lng":26.663}]}
+				 */
+
+				// the metadata
+		    	output = new Table(new String[] {"north","east","south","west","lat","lng","depth","magnitude","datetime"});
+
+				// invoke source and parse JSON output
+		    	BufferedReader in = new BufferedReader(new InputStreamReader((new URL(url)).openStream()));
+				String data = in.readLine();
+				if (data.indexOf("{") != -1) {
+					JSONObject j = new JSONObject(data);
+			    	JSONArray ja = j.getJSONArray("earthquakes");
+			    	for (int i=0; i<ja.length(); i++) {
+			    		JSONObject o = ja.getJSONObject(i);
+				    	ArrayList<String> tuple = new ArrayList<String>();
+					    tuple.addAll(inputTuple);
+					    for (String col: output.colNames.subList(4,output.arity())) {
+				    		String val = "";
+				    		try {val = o.getString(col);}
+				    		catch (Exception e) {
+				    			//Ignore
+				    		}
+				    		tuple.add(val);
+				    	}
+					    output.insertDistinct(tuple);
+					}
+				}
+
+
+		    }
+			catch (Exception e) {
+				return null;
+			}
+
+		}
+		else if (endpoint[1].equalsIgnoreCase("weatherByICAO")) {
+
+			try {
+
+				url = "http://ws.geonames.org/weatherIcaoJSON";
+				url += "?ICAO="+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8");
+
+				/*
+				 * url:
+				 *   http://ws.geonames.org/weatherIcaoJSON?ICAO=LSZH
+				 * returns:
+				 * 	 {"weatherObservation":{"lat":47.4666666666667,"observation":"LSZH 041920Z 24003KT 9999 FEW070 17/08 Q1016 NOSIG","windDirection":240,"countryCode":"CH","weatherCondition":"n/a","elevation":432,"humidity":55,"clouds":"few clouds","windSpeed":"03","temperature":"17","datetime":"2006-05-04 21:20:00","dewPoint":"8","ICAO":"LSZH","hectoPascAltimeter":1016,"lng":8.51666666666667,"stationName":"ZURICH-KLOTEN (A"}}
+				 */
+
+				// the metadata
+		    	output = new Table(new String[] {"ICAO","stationName","countryCode","lat","lng","windDirection","elevation","humidity","clouds","windSpeed","temperature","datetime","dewPoint"});
+
+				// invoke source and parse JSON output
+		    	BufferedReader in = new BufferedReader(new InputStreamReader((new URL(url)).openStream()));
+				String data = in.readLine();
+				if (data.indexOf("{") != -1) {
+					JSONObject j = (new JSONObject(data)).getJSONObject("weatherObservation");
+					ArrayList<String> tuple = new ArrayList<String>();
+				    for (String col: output.colNames) {
+			    		String val = "";
+			    		try {val = j.getString(col);}
+			    		catch (Exception e) {
+			    			//Ignore
+			    		}
+			    		tuple.add(val);
+			    	}
+				    output.insertDistinct(tuple);
+				}
+
+		    }
+			catch (Exception e) {
+				return null;
+			}
+
+		}
+		else if (endpoint[1].equalsIgnoreCase("weatherByLatLon")) {
+
+			try {
+
+				url = "http://ws.geonames.org/findNearByWeatherJSON";
+				url += "?lat="+java.net.URLEncoder.encode(inputTuple.get(0),"UTF-8");
+				url += "&lng="+java.net.URLEncoder.encode(inputTuple.get(1),"UTF-8");
+
+				/*
+				 * url:
+				 *   http://ws.geonames.org/findNearByWeatherJSON?lat=43&lng=-2
+				 * returns:
+				 * 	 {"weatherObservation":{"lat":43.35,"observation":"LESO 041930Z VRB02KT 6000 SCT004 OVC012 15/12 Q1019","countryCode":"ES","weatherCondition":"n/a","elevation":8,"humidity":82,"clouds":"scattered clouds","windSpeed":"02","temperature":"15","datetime":"2006-05-04 21:30:00","dewPoint":"12","ICAO":"LESO","hectoPascAltimeter":1019,"lng":-1.8,"stationName":"SAN SEBASTIAN/FU"}}
+				 */
+
+				// the metadata
+		    	output = new Table(new String[] {"in_lat","in_lng","ICAO","stationName","countryCode","lat","lng","windDirection","elevation","humidity","clouds","windSpeed","temperature","datetime","dewPoint"});
+
+				// invoke source and parse JSON output
+		    	BufferedReader in = new BufferedReader(new InputStreamReader((new URL(url)).openStream()));
+				String data = in.readLine();
+				if (data.indexOf("{") != -1) {
+					JSONObject j = (new JSONObject(data)).getJSONObject("weatherObservation");
+					ArrayList<String> tuple = new ArrayList<String>();
+					tuple.addAll(inputTuple);
+				    for (String col: output.colNames.subList(2,output.arity())) {
+			    		String val = "";
+			    		try {val = j.getString(col);}
+			    		catch (Exception e) {
+			    			//Ignore
+			    		}
+			    		tuple.add(val);
+			    	}
+				    output.insertDistinct(tuple);
+				}
+
+		    }
+			catch (Exception e) {
+				return null;
+			}
+
+		}
+
+		else {
+			System.err.println("Error: No method called " + endpoint[1] + " in wrapper: " + this.getClass().getName());
+			System.err.println("Please update source definition and restart system .... exiting");
+    		System.exit(9);
+		}
+
+		return output;
+
+	}
+
+
+	public void testWrapper() {
+		Geonames r = new Geonames();
+		String[] endpoint;
+		ArrayList<String> input;
+
+		//-----------------------------
+
+		System.out.println("Geonames.countrycode");
+
+		endpoint = new String[2];
+		endpoint[1] = "countrycode";
+		input = new ArrayList<String>();
+		input.add("33.98");
+		input.add("-118.45");
+		r.invoke(endpoint,input).print();
+
+		//-----------------------------
+
+		System.out.println("Geonames.gtopo30");
+
+		endpoint = new String[2];
+		endpoint[1] = "gtopo30";
+		input = new ArrayList<String>();
+		input.add("33.98");
+		input.add("-118.45");
+		r.invoke(endpoint,input).print();
+
+		//-----------------------------
+
+		System.out.println("Geonames.countryInfo");
+
+		endpoint = new String[2];
+		endpoint[1] = "countryInfo";
+		input = new ArrayList<String>();
+		input.add("US");
+		r.invoke(endpoint,input).print();
+
+		//-----------------------------
+
+		System.out.println("Geonames.earthquakes");
+
+		endpoint = new String[2];
+		endpoint[1] = "earthquakes";
+		input = new ArrayList<String>();
+		input.add("40");
+		input.add("-120");
+		input.add("30");
+		input.add("-100");
+		r.invoke(endpoint,input).print();
+
+		//-----------------------------
+
+		System.out.println("Geonames.weatherByICAO");
+
+		endpoint = new String[2];
+		endpoint[1] = "weatherByICAO";
+		input = new ArrayList<String>();
+		input.add("KLAX");
+		r.invoke(endpoint,input).print();
+
+		//-----------------------------
+
+		System.out.println("Geonames.weatherByLatLon");
+
+		endpoint = new String[2];
+		endpoint[1] = "weatherByLatLon";
+		input = new ArrayList<String>();
+		input.add("33.98");
+		input.add("-118.45");
+		r.invoke(endpoint,input).print();
+
+
+	}
+
+}

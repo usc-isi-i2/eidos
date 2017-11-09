@@ -1,0 +1,134 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+### Types: 
+
+type PR_Forecast     [varchar(100)]
+type PR_ZIP          [varchar(100)] {examples.zipcode5digit.val} #{source_model.zip.val}
+type PR_CityState    [varchar(100)] {source_model.citystate.val}
+
+type PR_Date         [varchar(100)] {equality: Date = 1.0}
+# type PR_TimeWZone    [varchar(100)] {source_model.timewzone.val}
+# Function TimeWZoneEq to be defined along the lines of Date in Date.java
+type PR_TimeWZone    [varchar(100)] # {equality: TimeWZoneEq = 1.0}
+
+# type TempF	     [varchar(100)] {numeric: -100.0, +150.0, 3%}
+# type PR_TempFdeg   [varchar(100)] {source_model.timewzone.val}
+# NumericStringDiffPercent to be defined starting in Metric.java
+
+type PR_TempF	     [varchar(100)] {numeric: -100.0, +150.0, 10%}
+type PR_TempC        [varchar(100)]  {numeric: -50.0, +70.0, 10%}
+#type PR_TempF        [varchar(100)] {source_model.tempf.val; equality: NumericStringDiffPercent < 40} 
+# type PR_TempC        [varchar(100)] {source_model.tempc.val; equality: NumericStringDiffPercent < 40}
+
+type PR_Sky          [varchar(100)] {source_model.sky.val}
+
+# type PR_Humidity     [varchar(100)] {source_model.timewzone.val}
+# type PR_Humidity     [varchar(100)] {equality: NumericStringDiffPercent < 40} 
+type PR_Humidity     [varchar(100)] {numeric: 0.0, 100.0, 15%}
+
+# type PR_WindSpeed    [varchar(100)] {source_model.windspeed.val}
+type PR_WindSpeed    [varchar(100)] {equality: NumericStringDiffPercent < 40}
+
+type PR_WindDir      [varchar(100)] {source_model.winddir.val}
+
+# type PR_Pressure     [varchar(100)] {source_model.pressure.val}
+type PR_Pressure     [varchar(100)] {equality: NumericStringDiffPercent < 40}
+
+# type PR_Visibility   [varchar(100)] {source_model.visibility.val}
+type PR_Visibility   [varchar(100)] {equality: NumericStringDiffPercent < 40}
+
+
+### Domain Relations: 
+
+relation weather(PR_Forecast,PR_ZIP,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeed,PR_WindDir,PR_Visibility)
+
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+# relation convertDistMFt(distanceM,distanceFt)
+# relation convertDistMFt(VisMiles,VisFeet)
+
+
+## Sources: 
+
+# function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF).  	  							{wrappers.Ragnarok; convertC2F}
+
+## function ConvertFt2M($distFt,distM)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertFt2M}
+
+# DROP TABLE IF EXISTS `agentrunner`.`wundergrounddb_wrapper2`;
+# CREATE TABLE  `agentrunner`.`wundergrounddb_wrapper2` (
+#   `combinedId` varchar(50) default NULL,
+#   `agentExecutionId` int(11) default NULL,
+#   `connectorExecutionId` int(11) default NULL,
+#   `flattenedRowId` int(11) default NULL,
+#   `place` longtext,   ### may exclude from model
+#   `time` longtext,
+#   `tempf` longtext,
+#   `sky` longtext,
+#   `humidity` longtext,
+#   `windspeed` longtext,
+#   `winddirection` longtext,
+#   `pressurein` longtext,
+#   `visibilitymi` longtext,
+#   `lowtempf1` longtext,
+#   `hightempf1` longtext,
+#   `sky1` longtext,
+#   `lowtempf2` longtext,
+#   `hightempf2` longtext,
+#   `sky2` longtext,
+#   `lowtempf3` longtext,
+#   `hightempf3` longtext,
+#   `sky3` longtext,
+#   `lowtempf4` longtext,
+#   `hightempf4` longtext,
+#   `sky4` longtext,
+#   `lowtempf5` longtext,
+#   `hightempf5` longtext,
+#   `sky5` longtext,
+#   `zip` longtext
+# ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+# source wunderground (PR_CityState, PR_TimeWZone, PR_TempFdeg:current, PR_Sky, PR_Humidity, PR_WindSpeed, PR_WindDir, PR_Pressure, PR_Visibility, PR_TempFdeg:low1, PR_TempFdeg:high1, PR_Sky:n1, PR_TempFdeg:low2, PR_TempFdeg:high2, PR_Sky:n2, PR_TempFdeg:low3, PR_TempFdeg:high3, PR_Sky:n3, PR_TempFdeg:low4, PR_TempFdeg:high4, PR_Sky:n4, PR_TempFdeg:low5, PR_TempFdeg:high5, PR_Sky:n5, $PR_ZIP)
+
+# source wunderground ( PR_CityState, PR_TimeWZone,
+# 		      PR_TempF:current, PR_Sky, PR_Humidity,
+# 		      PR_WindSpeed, PR_WindDir, PR_Pressure,
+# 		      PR_Visibility, 
+# 		      PR_TempF:low1, PR_TempF:high1, PR_Sky:n1,
+# 		      PR_TempF:low2, PR_TempF:high2, PR_Sky:n2,
+# 		      PR_TempF:low3, PR_TempF:high3, PR_Sky:n3,
+# 		      PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, 
+# 		      PR_TempF:low5, PR_TempF:high5, PR_Sky:n5,
+# 		      $PR_ZIP) :-  
+#   weather( "current", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure,
+# 	   PR_WindSpeed, PR_WindDir, PR_Visibility), 
+#   weather( "current+1", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _,), 
+#   weather( "current+2", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _,), 
+#   weather( "current+3", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _,), 
+#   weather( "current+4", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _,), 
+#   weather( "current+5", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _,).
+# {wrappers.DBService; http://www.wunderground.com/}
+
+
+source wunderground($PR_ZIP, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeed, PR_WindDir, PR_Pressure, PR_Visibility, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5) :- weather("current", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeed, PR_WindDir, PR_Visibility), weather("current+1", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _,), weather("current+2", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _,), weather("current+3", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _,), weather("current+4", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _,), weather("current+5", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _,). {wrappers.DBService; http://www.wunderground.com/; JLA}
+
+
+## Target Predicate: 
+
+target weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) 					{wrappers.DBService; http://weather.unisys.com/; Forecast}
+
+
+######################################################################
+#
+# EXPERIMENTS
+# 
+# TODO:
+# - test NumericStringDiffPercent
+# - modify wrappers.DBService to tablename
+# - batch runs

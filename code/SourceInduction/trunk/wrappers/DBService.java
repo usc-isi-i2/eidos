@@ -1,0 +1,214 @@
+// $Id: DBService.java 28 2009-02-06 23:56:42Z ambite $
+
+package wrappers;
+
+import invocation.Wrapper;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import relational.DBConnection;
+import relational.Table;
+
+/**
+ * Implements a service that uses database tables to lookup information. The
+ * database tables use information from the database schema to decide how to
+ * build up the query and answer the questions.
+ *
+ * Note: There is an implicit assumption that the order of values will always be
+ * the same in the outputs of the queries with respect to the table information
+ * in the database and that this order is known to the caller.
+ *
+ * Alternate design: Establish a separate instance for each table and specify
+ * either the column names or the types and let the code handle the mapping to
+ * specific columns. This involves more setup, since a new instance is needed
+ * for each source, but it has the advantage of making the mappings more robust
+ * if the source descriptions and column mappings in the database change.
+ *
+ * @author University of Southern California
+ * @date $Date: 2009-02-06 15:56:42 -0800 (Fri, 06 Feb 2009) $
+ * @version $Revision: 28 $
+ */
+public class DBService implements Wrapper {
+
+	DBConnection DB;
+	
+	public DBService() {
+		//MariaM
+		//this("dbProperties.txt");
+		//take the dbProperties file stored in DBConnection
+		DB = new DBConnection(null);
+	}
+
+	/** Create a DBService instance, and establish a database connection
+	 *  from the properties in the dbProperties file.
+	 *
+	 * @param dbPropertiesFile
+	 */
+	public DBService(String dbPropertiesFile) {
+		DB = new DBConnection(dbPropertiesFile);
+	}
+
+	/* wrong:
+	private List<String> getColumnNames (String tablename, String direction) {
+    	String inputQuery = "SELECT argumentname FROM sourceSchema "
+    		+ "WHERE tablename='" + tablename + "' "
+    		+ "AND direction='" + direction + "'"
+    		+ "ORDER BY argumentno"; // JLA, otherwise it messes up the arguments!!!
+    	return DB.runQuery(inputQuery).getColumnValues(0);
+    }
+	 */
+	
+	private List<String> getColumnNames (String tablename, String direction) {
+		String inputQuery = "";
+		
+		if (direction.equals("ALL")) {
+			inputQuery = "SELECT argumentname FROM sourceSchema "
+	    		+ "WHERE tablename='" + tablename + "' "
+	    		+ "ORDER BY argumentno"; 
+		} else {
+	    	inputQuery = "SELECT argumentname FROM sourceSchema "
+	    		+ "WHERE tablename='" + tablename + "' "
+	    		+ "AND direction='" + direction + "' "
+	    		+ "ORDER BY argumentno"; // JLA, otherwise it messes up the arguments!!!
+		}
+		//System.out.println("inputQuery =" + inputQuery);
+    	return DB.runQuery(inputQuery).getColumnValues(0);
+	}
+    	
+	private String getTableName (String url, String formName, String formTypes) {
+		String query =  "SELECT tablename FROM sourceid WHERE url='" + url 
+							+ "' and formname='" + formName
+							+ "' and formtypes='" + formTypes + "'";
+		//System.out.println("getTableName =" + query);
+		List<String> results = DB.runQuery(query).getColumnValues(0);
+		if (results == null || results.size() == 0) {
+			return null;
+		} else {
+			return results.get(0);
+		}
+	}
+
+	/** Invokes a service that reads values from cached database tables.
+	 *  The service is identified by its URL, which is then used to
+	 *  lookup from the database the database table implementing the
+	 *  service and the input and output columns for that service.
+	 *
+	 * Overrides @see invocation.Wrapper#invoke(java.lang.String[], java.util.List)
+	 *
+	 * @param endpoint Contains a single element.  The URL of the service.
+	 * @param inputTuple Input values in order or DB return value.
+	 * @return Output values in order of DB return value.
+	 */
+	public Table invoke(String[] endpoint, List<String> inputTuple) {
+		String url = endpoint[1];
+		String formName = endpoint[2];
+		String formTypes = endpoint[3];
+		String tablename = getTableName(url,formName,formTypes);
+		
+		//System.out.println(url + " " + formName + " " + formTypes + " " + tablename);
+		
+		List<String> inputColumnNames = getColumnNames(tablename, "IN");
+		//List<String> outputColumnNames = getColumnNames(tablename, "OUT");
+		List<String> allColumnNames = getColumnNames(tablename, "ALL"); 
+
+		
+		/* wrong! columns names need to be ordered
+		String dataQuery = "SELECT `" 
+			+ DB.delimitedList(inputColumnNames, "`,`") // JLA
+			+ "`,`" //JLA
+			+ DB.delimitedList(outputColumnNames, "`,`")
+			+ "` FROM " + tablename
+			+ " WHERE " + DB.andSeparated(inputColumnNames, inputTuple);
+		 */
+		// columns names need to be ordered!!!
+		String dataQuery = "SELECT `" 
+			+ DB.delimitedList(allColumnNames, "`,`") // JLA
+			+ "` FROM " + tablename
+			+ " WHERE " + DB.andSeparated(inputColumnNames, inputTuple);
+
+		//JLA
+		// System.out.println("dataQuery= " + dataQuery);
+		// System.out.println("result = ");
+		// Table result = DB.runQuery(dataQuery);
+		// result.print();
+		// return result;
+		return DB.runQuery(dataQuery);
+	}
+
+
+	public void testWrapper() {
+		String [] endpoint = new String[2];
+		List<String> inputs;
+		endpoint[0] = "wrappers.DBService";
+
+		endpoint[1] = "http://geocoder.us/";
+		System.out.println("*** For " + endpoint[0]);
+		inputs = new ArrayList<String>(1);
+		inputs.add("1600 Pennsylvania Ave NW, Washington, DC, 20502");
+		invoke(endpoint, inputs).print();
+
+		inputs.clear();
+		inputs.add("601 Whitehead St, Key West, FL, 33040");
+		invoke(endpoint, inputs).print();
+
+		inputs.clear();
+		inputs.add("4676 Admiralty Way, Marina del Rey, CA, 90292");
+		invoke(endpoint, inputs).print();
+
+		System.out.println();
+		endpoint[1] = "http://www.ontok.com/geocode/index.php";
+		System.out.println("*** For " + endpoint[0]);
+		inputs.clear();
+		inputs.add("1600 Pennsylvania Ave NW, Washington, DC, 20502");
+		invoke(endpoint, inputs).print();
+
+		inputs.clear();
+		inputs.add("601 Whitehead St, Key West, FL, 33040");
+		invoke(endpoint, inputs).print();
+
+		inputs.clear();
+		inputs.add("4676 Admiralty Way, Marina del Rey, CA, 90292");
+		invoke(endpoint, inputs).print();
+
+		System.out.println();
+		endpoint[1] = "http://atlas.mapquest.com/maps/latlong.adp";
+		System.out.println("*** For " + endpoint[0]);
+		inputs = new ArrayList<String>(2);
+		inputs.add("-77.037684");
+		inputs.add("38.898748");
+		invoke(endpoint, inputs).print();
+
+		inputs.clear();
+		inputs.add("-81.803260");
+		inputs.add("24.553922");
+		invoke(endpoint, inputs).print();
+
+		inputs.clear();
+		inputs.add("-118.440470");
+		inputs.add("33.980305");
+		invoke(endpoint, inputs).print();
+
+	}
+
+	/** Close the underlying database connection.
+	 *
+	 */
+	public void close () {
+		DB.close();
+	}
+
+	static public void main(String[] args) {
+		String propFilename = "dbProperties.txt";
+		if (args.length > 0) {
+			propFilename = args[0];
+		}
+		DBService s = new DBService(propFilename);
+		try {
+			s.testWrapper();
+		} finally {
+			s.close();
+		}
+	}
+
+}

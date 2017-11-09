@@ -1,0 +1,114 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+### Types: 
+
+type PR_Forecast     [varchar(100)]
+type PR_ZIP          [varchar(100)] {examples.zipcode5digit.val}
+type PR_CityState    [varchar(100)] {source_model.citystate.val}
+type PR_Date         [varchar(100)] {equality: Date = 1.0}
+type PR_TimeWZone    [varchar(100)] # {equality: TimeWZoneEq = 1.0}
+type PR_TempF	     [varchar(100)] {numeric: -100.0, +150.0, 5%}
+type PR_TempC        [varchar(100)] {numeric: -50.0, +70.0, 5%}
+type PR_Sky          [varchar(100)] {source_model.sky.val}
+type PR_Humidity     [varchar(100)] {numeric: 0.0, 100.0, 10%}
+type PR_WindSpeed    [varchar(100)] {numeric: 0.0, +200.0, 10%}
+type PR_WindDir      [varchar(100)] {source_model.winddir.val}
+type PR_Pressure     [varchar(100)] {numeric: 26.0, 32.0, 10%}
+type PR_Visibility   [varchar(100)] {numeric: 0.0, 100.0, 10%}
+
+
+### Domain Relations: 
+
+relation weather(PR_Forecast,PR_ZIP,PR_CityState,PR_Date,PR_TimeWZone,PR_TempF,PR_TempF,PR_TempF,PR_Sky,PR_Humidity,PR_Pressure,PR_WindSpeed,PR_WindDir,PR_Visibility)
+
+relation centigrade2farenheit(PR_TempC,PR_TempF)
+
+## Sources: 
+
+# function ConvertC2F($PR_TempC,PR_TempF)	:- centigrade2farenheit(PR_TempC,PR_TempF).  	  							{wrappers.Ragnarok; convertC2F}
+
+
+# source wunderground ( $PR_ZIP, PR_CityState, PR_TimeWZone,
+# 		      PR_TempF:current, PR_Sky, PR_Humidity,
+# 		      PR_WindSpeed, PR_WindDir, PR_Pressure,
+# 		      PR_Visibility, 
+# 		      PR_TempF:low1, PR_TempF:high1, PR_Sky:n1,
+# 		      PR_TempF:low2, PR_TempF:high2, PR_Sky:n2,
+# 		      PR_TempF:low3, PR_TempF:high3, PR_Sky:n3,
+# 		      PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, 
+# 		      PR_TempF:low5, PR_TempF:high5, PR_Sky:n5,
+# 		      ) :-  
+#   weather( "current", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure,
+# 	   PR_WindSpeed, PR_WindDir, PR_Visibility), 
+#   weather( "current+1", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _,), 
+#   weather( "current+2", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _,), 
+#   weather( "current+3", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _,), 
+#   weather( "current+4", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _,), 
+#   weather( "current+5", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, 
+# 	   _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _,).
+# {wrappers.DBService; http://www.wunderground.com/}
+
+
+source wunderground($PR_ZIP, PR_CityState, PR_TimeWZone, PR_TempF:current, PR_Sky, PR_Humidity, PR_WindSpeed, PR_WindDir, PR_Pressure, PR_Visibility, PR_TempF:low1, PR_TempF:high1, PR_Sky:n1, PR_TempF:low2, PR_TempF:high2, PR_Sky:n2, PR_TempF:low3, PR_TempF:high3, PR_Sky:n3, PR_TempF:low4, PR_TempF:high4, PR_Sky:n4, PR_TempF:low5, PR_TempF:high5, PR_Sky:n5) :- weather("current", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, PR_TempF:current, _, _, PR_Sky, PR_Humidity, PR_Pressure, PR_WindSpeed, PR_WindDir, PR_Visibility), weather("current+1", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high1, PR_TempF:low1, PR_Sky:n1, _, _, _, _, _,), weather("current+2", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high2, PR_TempF:low2, PR_Sky:n2, _, _, _, _, _,), weather("current+3", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high3, PR_TempF:low3, PR_Sky:n3, _, _, _, _, _,), weather("current+4", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high4, PR_TempF:low4, PR_Sky:n4, _, _, _, _, _,), weather("current+5", PR_ZIP, PR_CityState, PR_Date, PR_TimeWZone, _, PR_TempF:high5, PR_TempF:low5, PR_Sky:n5, _, _, _, _, _,). {wrappers.DBService; http://www.wunderground.com/; JLA}
+
+
+## Target Predicate: 
+
+target weather6_5($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky) 					{wrappers.DBService; http://weather.unisys.com/; Forecast}
+
+
+######################################################################
+#
+# EXPERIMENTS
+# 
+# 2008-10-30 19:43:12
+# with ConvertC2F
+#
+# timestmp = 1225420805013
+# target = weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky)
+# definition = weather6($PR_ZIP0,_,PR_TempF2,_,PR_TempC4,PR_Humid5,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,PR_Humid5,_,_,_,_,_,_,PR_Sky8,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_), ConvertC2F(PR_TempC4,PR_TempF2).
+# unfolding = weather6($PR_ZIP0,_,PR_TempF2,_,PR_TempC4,PR_Humid5,PR_TempF6,PR_TempF7,PR_Sky8)	:- weather("current",PR_ZIP0,PR_CityS2,PR_Date3,PR_TimeW4,PR_TempF2,_,_,_,PR_Humid5,_,_,_,_), weather("current+1",PR_ZIP0,PR_CityS2,PR_Date3,PR_TimeW4,_,_,_,PR_Sky8,_,_,_,_,_), weather("current+2",PR_ZIP0,PR_CityS2,PR_Date3,PR_TimeW4,_,_,_,_,_,_,_,_,_), weather("current+3",PR_ZIP0,PR_CityS2,PR_Date3,PR_TimeW4,_,PR_TempF7,PR_TempF6,_,_,_,_,_,_), weather("current+4",PR_ZIP0,PR_CityS2,PR_Date3,PR_TimeW4,_,_,_,_,_,_,_,_,_), weather("current+5",PR_ZIP0,PR_CityS2,PR_Date3,PR_TimeW4,_,_,_,_,_,_,_,_,_), centigrade2farenheit(PR_TempC4,PR_TempF2).
+# score = 5.0625E-4
+# normalisedScore = -2.107841016201534
+# candidates = 131
+# totalCandidates = 277
+# accesses = 154
+# totalAccesses = 154
+# time = 33
+# totalTime = 145
+# timeout = 300
+# maxClauseLength = 7
+# maxPredRepitition = 2
+# maxVarLevel = 5
+# noVarRepetition = true
+# heuristic = random
+#
+#
+# 2008-10-30 19:56:45
+# without ConvertC2F
+# timestmp = 1225421799513
+# target = weather6($PR_ZIP,PR_WindSpeed,PR_TempF,PR_TempC,PR_TempC,PR_Humidity,PR_TempF,PR_TempF,PR_Sky)
+# definition = weather6($PR_ZIP0,_,PR_TempF2,_,_,PR_Humidity5,PR_TempF6,PR_TempF7,PR_Sky8)	:- wunderground(PR_ZIP0,_,_,PR_TempF2,_,PR_Humidity5,_,_,_,_,_,_,PR_Sky8,_,_,_,PR_TempF6,PR_TempF7,_,_,_,_,_,_,_).
+# unfolding = weather6($PR_ZIP0,_,PR_TempF2,_,_,PR_Humidity5,PR_TempF6,PR_TempF7,PR_Sky8)	:- weather("current",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,PR_TempF2,_,_,_,PR_Humidity5,_,_,_,_), weather("current+1",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,_,_,_,PR_Sky8,_,_,_,_,_), weather("current+2",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,_,_,_,_,_,_,_,_,_), weather("current+3",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,_,PR_TempF7,PR_TempF6,_,_,_,_,_,_), weather("current+4",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,_,_,_,_,_,_,_,_,_), weather("current+5",PR_ZIP0,PR_CityState2,PR_Date3,PR_TimeWZone4,_,_,_,_,_,_,_,_,_).
+# score = 2.8125000000000003E-5
+# normalisedScore = -2.513306124309698
+# candidates = 99
+# totalCandidates = 99
+# accesses = 20
+# totalAccesses = 20
+# time = 4
+# totalTime = 4
+# timeout = 300
+# maxClauseLength = 7
+# maxPredRepitition = 2
+# maxVarLevel = 5
+# noVarRepetition = true
+# heuristic = random
+
+

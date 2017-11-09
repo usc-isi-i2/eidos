@@ -1,0 +1,66 @@
+0:PR-Authors	1:PR-ArticleName	2:PR-Conference
+Yoav Freund and Robert E. Schapire	Experiments with a New Boosting Algorithm	International Conference on Machine Learning
+A. Chavez and P. Maes	Kasbah: An agent marketplace for buying and selling goods	First International Conference on the Practical Application of Intelligent Agents and Multi-Agent Technology (PAAM'96)
+Ron Kohavi and George H. John	Wrappers for feature subset selection	Artificial Intelligence
+D. Embley and S. Jiang and Y. Ng	Record-boundary discovery in Web documents	Proc. 1999 ACM SIGMOD International Conference on Management of Data
+D. W. Embley and Y. Jiang and Y.-K. Ng	Record-boundary discovery in Web documents	NULL
+Mike Uschold	Building Ontologies: Towards a Unified Methodology	16th Annual Conf. of the British Computer Society Specialist Group on Expert Systems
+A. Doan and J. Madhaven and R. Dhamankar and P. Domingos and A. Helevy	Learning to match ontologies on the semantic web	VLDB Journal (Special Issue on the Semantic Web)
+P. Bouquet and L. Serafini and S. Zanobini	Semantic coordination: a new approach and an application	In Proc. of the 2nd International Semantic Web Conference (ISWO'03)
+Marc Ehrig and Peter Haase and Ronny Siebes and Steffen Staab and Heiner Stuckenschmidt and Rudi Studer and Christoph Tempich	The SWAP Data and Metadata Model for Semantics-Based Peer-to-Peer Systems	NULL
+J. Broekstra	A metadata model for semantics-based peer-to-peer systems	Semantics in Peer-toPeer and Grid Computing
+A. Doan	Learning to map between structured representations of Data	NULL
+A. Doan and J. Madhavan and P. Domingos and A. Halevy	Ontology matching: A machine learning approach	Handbook on Ontologies in Information Systems. Springer
+A. Halevy and J. Madhavan	Corpus-based knowledge representation	In Proceedings of the International Joint Conference on Artificial Intelligence
+C. Zhou and L. Chia and B. Lee	Service Discovery and Measurement based on DAML-QoS Ontology	In Special Interest Tracks and Posters of 14th World Wide Web Conference
+V. Agarwal and K. Dasgupta and N. Karnik and A. Kumar and A. Kundu and S. Mittal and B. Srivastava	A service creation environment based on end to end composition of web services	NULL
+Composition Of Web	A Service Creation Environment Based on End to End	NULL
+Alignment Coordinator Jrme	D2.2.3: State of the art on ontology	NULL
+Benchmarking Methodology For	D2.2.2: Specification of a	NULL
+P. Bouquet and L. Serafini and S. Zanobini	Coordinating Semantic Peers	NULL
+P. Bouquet and L. Serafini and S. Zanobini	Semantic Coordination In Systems Of Autonomous Agents: The Approach And An Implementation	NULL
+Leslie Pack Kaelbling and Michael L. Littman and Andrew P. Moore	Reinforcement Learning: A Survey	Journal of Artificial Intelligence Research
+George H. John and Ron Kohavi and Karl Pfleger	Irrelevant Features and the Subset Selection Problem	International Conference on Machine Learning
+Sebastian Thrun and Wolfram Burgard and Dieter Fox	A Probabilistic Approach to Concurrent Mapping and Localization for Mobile Robots	Machine Learning
+Thomas G. Dietterich	An Experimental Comparison of Three Methods for Constructing Ensembles of Decision Trees: Bagging, Boosting, and Randomization	Machine Learning
+Sreerama K. Murthy and Simon Kasif and Steven Salzberg	A System for Induction of Oblique Decision Trees	Journal of Artificial Intelligence Research
+Kamal Nigam and Andrew K. McCallum and Sebastian Thrun and Tom M. Mitchell	Text Classification from Labeled and Unlabeled Documents using EM	Machine Learning
+Pedro Domingos and Michael J. Pazzani	On the Optimality of the Simple Bayesian Classifier under Zero-One Loss	Machine Learning
+Ming-Syan Chen and Jiawei Han and Philip S. Yu	Data mining: an overview from a database perspective	Ieee Trans. On Knowledge And Data Engineering
+Andrew W. Moore	The Parti-Game Algorithm for Variable Resolution Reinforcement Learning in Multidimensional State-Spaces	Advances in Neural Information Processing Systems
+Manish Mehta and Rakesh Agrawal and Jorma Rissanen	SLIQ: A Fast Scalable Classifier for Data Mining	Extending Database Technology
+Peter Stone and Manuela M. Veloso	Multiagent Systems: A Survey from a Machine Learning Perspective	Autonomous Robots
+Geoffrey G. Towell and Jude W. Shavlik	Knowledge-Based Artificial Neural Networks	Artificial Intelligence
+Leemon C. Baird III	Residual Algorithms: Reinforcement Learning with Function Approximation	International Conference on Machine Learning
+George H. John and Pat Langley	Estimating Continuous Distributions in Bayesian Classifiers	NULL
+Wenke Lee and Salvatore Stolfo	Data mining approaches for intrusion detection	Proceedings of the 7th USENIX Security Symposium
+Ion Muslea and Steve Minton and Craig Knoblock	A hierarchical approach to wrapper induction	Proceedings of the Third International Conference on Autonomous Agents (Agents'99)
+M. E. Califf and R. J. Mooney	Relational Learning of Pattern-Match Rules for Information Extraction	Working Notes of AAAI Spring Symposium on Applying Machine Learning to Discourse Processing
+M. Veloso and J. Carbonell and A. P\'erez and D. Borrajo and E. Fink and J. Blythe	Integrating Planning and Learning: The PRODIGY Architecture	Journal of Experimental and Theoretical Artificial Intelligence
+Ramakrishnan Srikant and Rakesh Agrawal	Mining generalized association rules	Future Generation Computer Systems
+Christos Faloutsos and M. Ranganathan and Yannis Manolopoulos	Fast subsequence matching in time-series databases	NULL
+J. Friedman and T. Hastie and R. Tibshirani	Additive logistic regression: a statistical view of boosting	NULL
+Ramakrishnan Srikant and Rakesh Agrawal	Mining Sequential Patterns: Generalizations and Performance Improvements	Proc. 5th Int. Conf. Extending Database Technology, EDBT
+John C. Shafer and Rakesh Agrawal and Manish Mehta	SPRINT: A Scalable Parallel Classifier for Data Mining	Proc. 22nd Int. Conf. Very Large Databases
+Sudipto Guha and Rajeev Rastogi and Kyuseok Shim	CURE: an efficient clustering algorithm for large databases	ACM SIGMOD International Conference on Management of Data
+Ian T. Foster and Carl Kesselman and Gene Tsudik and Steven Tuecke	A Security Architecture for Computational Grids	ACM Conference on Computer and Communications Security
+Ramakrishnan Srikant and Quoc Vu and Rakesh Agrawal	Mining Association Rules with Item Constraints	Proc. 3rd Int. Conf. Knowledge Discovery and Data Mining, KDD
+Avrim Blum and Pat Langley	Selection of Relevant Features and Examples in Machine Learning	Artificial Intelligence
+Heikki Mannila and Hannu Toivonen and A. Inkeri Verkamo	Efficient algorithms for discovering association rules	AAAI Workshop on Knowledge Discovery in Databases
+Eui-Hong Han and George Karypis and Vipin Kumar	Scalable parallel data mining for association rules	NULL
+Kamal Jain and Vijay V. Vazirani	Primal-Dual Approximation Algorithms for Metric Facility Location and k-Median Problems	IEEE Symposium on Foundations of Computer Science
+R. J. Bayardo, Jr. and W. Bohrer and R. Brice and A. Cichocki and J. Fowler and A. Helal and V. Kashyap and T. Ksiezyk and G. Martin and M. Nodine and M. Rashid and M. Rusinkiewicz and R. Shea and C. Unnikrishnan and A. Unruh and D. Woelk	InfoSleuth: Agent-Based Semantic Integration of Information in Open and Dynamic Environments	Proceedings of the ACM SIGMOD International Conference on Management of Data
+Sergey Brin	Near Neighbor Search in Large Metric Spaces	The VLDB Journal
+Mohammed Javeed Zaki and Srinivasan Parthasarathy and Mitsunori Ogihara and Wei Li	New Algorithms for Fast Discovery of Association Rules	NULL
+R. Cooley and J. Srivastava and B. Mobasher	Web Mining: Information and Pattern Discovery on the World Wide Web	roceedings of the 9th IEEE International Conference on Tools with Artificial Intelligence (ICTAI'97)
+Paul Barford and Azer Bestavros and Adam Bradley and Mark Crovella	Changes in Web Client Access Patterns: Characteristics and Caching Implications	NULL
+Haifeng Yu and Amin Vahdat	Design and Evaluation of a Continuous Consistency Model for Replicated Services	NULL
+Chad Yoshikawa and Brent Chun and Paul Eastham and Amin Vahdat and Thomas Anderson and David Culler	Using smart clients to build scalable services	Proceedings of the USENIX 1997 Annual Technical Conference
+Jia Wang	A Survey of Web Caching Schemes for the Internet	ACM Computer Communication Review
+Amin Vahdat and Tom Anderson and Mike Dahlin and Eshwar Belani and David Culler and Paul Eastham and Chad Yoshikawa	WebOS: Operating System Services For Wide Area Applications	Proceedings of the Seventh Symposium on High Performance Distributed Computing
+Craig Labovitz and Abha Ahuja and Roger Wattenhofer and Venkatachary Srinivasan	The Impact of Internet Policy and Topology on Delayed Routing Convergence	NULL
+Dejan S. Milojicic and Vana Kalogeraki and Rajan Lukose and Kiran Nagaraja and Jim Pruyne and Bruno Richard and Sami Rollins and Zhichen Xu	Peer-to-Peer Computing	NULL
+Am\'elie Marian and Serge Abiteboul and Gr\'egory Cob\'ena and Laurent Mignet	Change-Centric Management of Versions in an XML Warehouse	The VLDB Journal
+Bharat Chandra and Mike Dahlin and Lei Gao and Amol Nayate	End-to-End WAN Service Availability	NULL
+Jian Yin and Lorenzo Alvisi and Mike Dahlin and Calvin Lin	Hierarchical Cache Consistency in a WAN	USENIX Symposium on Internet Technologies and Systems
+Tarek F. Abdelzaher and Kang G. Shin and Nina Bhatti	Performance Guarantees for Web Server End-Systems: A Control-Theoretical Approach	IEEE Transactions on Parallel and Distributed Systems

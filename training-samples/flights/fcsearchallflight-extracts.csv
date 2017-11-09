@@ -1,0 +1,1339 @@
+flight:airline,flight:flightnumber,flight:airport,datetime:date,datetime:time,flight:remainingtime,flight:aircraft,flight:altitude,flight:status,NULL
+American,1033,"Nashville, TN (BNA)",6/13/2005,7:01 AM,0:00,Boeing 737-800,0 feet,Arrived,NULL
+American Eagle,335,"Nashville, TN (BNA)",6/13/2005,2:06 PM,0:00,E135,0 feet,Arrived,NULL
+Alaska,562,"Seattle, WA (SEA)",6/12/2005,9:20 PM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,550,"Seattle, WA (SEA)",6/13/2005,8:07 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,520,"Seattle, WA (SEA)",6/13/2005,9:33 AM,0:00,MD82,0 feet,Arrived,NULL
+Alaska,590,"Seattle, WA (SEA)",6/13/2005,6:53 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Alaska,558,"Seattle, WA (SEA)",6/12/2005,9:39 PM,0:00,MD83,0 feet,Arrived,NULL
+Alaska,580,"Seattle, WA (SEA)",6/13/2005,11:50 AM,0:00,MD83,0 feet,Arrived,NULL
+Alaska,140,"Fairbanks, AK (FAI)",6/12/2005,9:27 PM,0:00,Boeing 737 Stage 3,0 feet,Arrived,NULL
+Alaska,146,"Barrow, AK (BRW)",6/12/2005,9:09 PM,0:00,Boeing 737 Stage 3,0 feet,Arrived,NULL
+Alaska,884,"Anchorage, AK (ANC)",6/13/2005,10:26 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,884,"Fairbanks, AK (FAI)",6/13/2005,8:45 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,104,"Portland, OR (PDX)",6/13/2005,1:42 PM,0:07,Boeing 737-400,"33,000 feet",In Flight,NULL
+Alaska,104,"Anchorage, AK (ANC)",6/13/2005,8:08 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,104,"Fairbanks, AK (FAI)",6/13/2005,6:13 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,102,"Anchorage, AK (ANC)",6/13/2005,12:50 PM,2:14,Boeing 737-400,"31,000 feet",In Flight,NULL
+Alaska,102,"Fairbanks, AK (FAI)",6/13/2005,11:07 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,144,"Fairbanks, AK (FAI)",6/13/2005,12:03 PM,0:00,Boeing 737 Stage 3,0 feet,Arrived,NULL
+Alaska,144,"Barrow, AK (BRW)",6/13/2005,10:25 AM,0:00,Boeing 737 Stage 3,0 feet,Arrived,NULL
+Alaska,822,"Fairbanks, AK (FAI)",6/13/2005,2:59 PM,NULL,Boeing 737-400,0 feet,Planned,NULL
+Alaska,112,"Anchorage, AK (ANC)",6/13/2005,9:42 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Alaska,112,"Fairbanks, AK (FAI)",6/13/2005,7:48 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Alaska Central Express,12,"Fairbanks, AK (FAI)",6/13/2005,10:15 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Empire Airlines,663,"Fairbanks, AK (FAI)",6/13/2005,12:59 PM,0:00,Fokker F27 Friendship/Fairchild Industries F-27,0 feet,Arrived,NULL
+Empire Airlines,663,"Fairbanks, AK (FAI)",6/13/2005,12:59 PM,0:00,Fokker F27 Friendship/Fairchild Industries F-27,0 feet,Arrived,NULL
+Frontier Flying Service,592,"Fairbanks, AK (FAI)",6/13/2005,6:24 AM,0:00,Beech 1900,0 feet,Arrived,NULL
+Frontier Flying Service,598,"Fairbanks, AK (FAI)",6/13/2005,11:02 AM,0:00,Beech 1900,0 feet,Arrived,NULL
+Northern Air Cargo,20,"Nome, AK (OME)",6/14/2005,8:05 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Northern Air Cargo,20,"Nome, AK (OME)",6/14/2005,8:05 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Alaska,146,"Fairbanks, AK (FAI)",6/12/2005,10:49 PM,0:00,Boeing 737 Stage 3,0 feet,Arrived,NULL
+Alaska,9005,"Fairbanks, AK (FAI)",6/13/2005,4:52 AM,0:00,MD82,0 feet,Arrived,NULL
+Alaska,884,"Seattle, WA (SEA)",6/13/2005,3:40 PM,NULL,Boeing 737-400,0 feet,Scheduled,NULL
+Alaska,498,"San Francisco, CA (SFO)",6/13/2005,10:37 PM,0:00,Boeing 737-400,0 feet,Landed,NULL
+Alaska,202,"San Francisco, CA (SFO)",6/13/2005,11:51 AM,0:00,Boeing 737-400,0 feet,Landed,NULL
+Alaska,202,"Seattle, WA (SEA)",6/13/2005,8:56 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,596,"Seattle, WA (SEA)",6/12/2005,9:01 PM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,884,"Anchorage, AK (ANC)",6/13/2005,10:26 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,884,"Fairbanks, AK (FAI)",6/13/2005,8:45 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+United,198,"San Francisco, CA (SFO)",6/13/2005,9:10 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+United,198,"Seattle, WA (SEA)",6/13/2005,6:11 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+United,729,"Seattle, WA (SEA)",6/13/2005,10:15 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+United,239,"San Francisco, CA (SFO)",6/13/2005,10:17 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+United,239,"Seattle, WA (SEA)",6/12/2005,9:14 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,9918,"Seattle, WA (SEA)",6/13/2005,7:15 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+United,8135,"Seattle, WA (SEA)",6/13/2005,7:26 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+United,791,"Seattle, WA (SEA)",6/13/2005,6:44 PM,NULL,Boeing 737-300,0 feet,Planned,NULL
+United,993,"Seattle, WA (SEA)",6/13/2005,11:55 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+Alaska,116,"Seattle, WA (SEA)",6/13/2005,12:19 PM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,116,"Fairbanks, AK (FAI)",6/13/2005,6:35 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+United,1237,"Seattle, WA (SEA)",6/13/2005,1:44 PM,0:00,Boeing 737-300,0 feet,Landed,NULL
+United,156,"Seattle, WA (SEA)",6/13/2005,3:36 PM,NULL,Airbus A319,0 feet,Scheduled,NULL
+United,156,"Seattle, WA (SEA)",6/13/2005,3:36 PM,NULL,Airbus A319,0 feet,Scheduled,NULL
+Alaska,498,"Seattle, WA (SEA)",6/12/2005,8:06 PM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,316,"Seattle, WA (SEA)",6/13/2005,1:48 PM,0:00,MD83,"7,200 feet",In Flight,NULL
+United,785,"Seattle, WA (SEA)",6/13/2005,5:45 PM,NULL,Boeing 737-300,0 feet,Scheduled,NULL
+United,791,"Seattle, WA (SEA)",6/12/2005,7:47 PM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Alaska,816,"Seattle, WA (SEA)",6/13/2005,6:25 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,884,"Seattle, WA (SEA)",6/13/2005,3:40 PM,NULL,Boeing 737-400,0 feet,Scheduled,NULL
+United,993,"San Francisco, CA (SFO)",6/13/2005,2:54 PM,0:15,Boeing 737-500,"30,500 feet",In Flight,NULL
+Skyway Airlines,2054,"Columbus, OH (CMH)",6/13/2005,8:25 AM,0:00,J328,0 feet,Arrived,NULL
+Skyway Airlines,2343,"Columbus, OH (CMH)",6/13/2005,5:50 PM,0:18,J328,"28,000 feet",In Flight,NULL
+Skyway Airlines,1514,"Columbus, OH (CMH)",6/13/2005,2:32 PM,0:00,Beech 1900,0 feet,Arrived,NULL
+Northwest,1123,"Buffalo, NY (BUF)",6/13/2005,3:35 PM,0:00,DC95,0 feet,Arrived,NULL
+Northwest,1980,"Detroit, MI (DTW)",6/13/2005,9:23 AM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,1980,"Buffalo, NY (BUF)",6/13/2005,7:11 AM,0:00,DC95,0 feet,Arrived,NULL
+Northwest,1125,"Detroit, MI (DTW)",6/13/2005,4:32 PM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,1125,"Buffalo, NY (BUF)",6/13/2005,1:07 PM,0:00,DC95,0 feet,Arrived,NULL
+Northwest,1129,"Detroit, MI (DTW)",6/13/2005,12:24 PM,0:00,DC95,0 feet,Arrived,NULL
+Northwest,1129,"Buffalo, NY (BUF)",6/13/2005,9:42 AM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,1119,"Detroit, MI (DTW)",6/13/2005,7:40 PM,NULL,DC93,0 feet,Planned,NULL
+Northwest,1119,"Buffalo, NY (BUF)",6/13/2005,5:42 PM,0:00,DC93,0 feet,Landed,NULL
+Northwest,1121,"Buffalo, NY (BUF)",6/13/2005,7:20 PM,NULL,DC93,0 feet,Scheduled,NULL
+Champion Air,103,"Las Vegas, NV (LAS)",6/13/2005,12:25 PM,0:14,Boeing 727-200,"21,000 feet",In Flight,NULL
+America West,96,"Las Vegas, NV (LAS)",6/13/2005,1:58 PM,2:08,Airbus A319,0 feet,Arrived,NULL
+America West,96,"Las Vegas, NV (LAS)",6/13/2005,1:58 PM,2:08,Airbus A319,0 feet,Arrived,NULL
+America West,98,"Las Vegas, NV (LAS)",6/12/2005,11:23 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+Northwest,1200,"Las Vegas, NV (LAS)",6/13/2005,1:13 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+America West,98,"Las Vegas, NV (LAS)",6/12/2005,11:23 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+Champion Air,101,"Las Vegas, NV (LAS)",6/12/2005,6:59 PM,0:00,Boeing 727-200,0 feet,Arrived,NULL
+Northwest,1194,"Detroit, MI (DTW)",6/13/2005,7:20 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,1194,"Las Vegas, NV (LAS)",6/12/2005,10:47 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,1196,"Las Vegas, NV (LAS)",6/13/2005,10:58 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,1192,"Las Vegas, NV (LAS)",6/13/2005,2:53 PM,2:49,Boeing 757-200,"37,000 feet",In Flight,NULL
+Spirit Airlines,788,"Las Vegas, NV (LAS)",6/12/2005,10:51 PM,0:00,Airbus A319,0 feet,Arrived,NULL
+American Eagle,317,"Chicago, IL (ORD)",6/13/2005,2:11 PM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,904,"Chicago, IL (ORD)",6/13/2005,4:41 PM,NULL,Embraer EMB-145,0 feet,Scheduled,NULL
+American Eagle,217,"Chicago, IL (ORD)",6/13/2005,6:44 PM,00:27 (planned),Embraer EMB-145,0 feet,Landed,NULL
+American Eagle,217,"Chicago, IL (ORD)",6/13/2005,6:44 PM,00:27 (planned),Embraer EMB-145,0 feet,Landed,NULL
+American Eagle,400,"Chicago, IL (ORD)",6/13/2005,10:08 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+American Eagle,400,"Chicago, IL (ORD)",6/13/2005,10:08 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Continental,552,"Columbus, OH (CMH)",6/13/2005,5:35 PM,NULL,Boeing 737-500,0 feet,Scheduled,NULL
+Continental Express/ExpressJet Airlines,2477,"Newark, NJ (EWR)",6/13/2005,1:46 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Continental Express/ExpressJet Airlines,2477,"Newark, NJ (EWR)",6/13/2005,1:46 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Continental Express/ExpressJet Airlines,3202,"Columbus, OH (CMH)",6/13/2005,9:12 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Continental,652,"Columbus, OH (CMH)",6/13/2005,7:14 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+Continental Express/ExpressJet Airlines,3072,"Columbus, OH (CMH)",6/13/2005,1:43 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Continental Express/ExpressJet Airlines,3074,"Columbus, OH (CMH)",6/13/2005,8:08 PM,NULL,E45X,0 feet,Scheduled,NULL
+American,657,"Dallas, TX (DFW)",6/13/2005,9:15 AM,0:00,MD82,0 feet,Arrived,NULL
+American,657,"New Orleans, LA (MSY)",6/13/2005,6:48 AM,0:00,MD82,0 feet,Arrived,NULL
+American,1630,"Dallas, TX (DFW)",6/13/2005,1:36 PM,0:00,MD82,0 feet,Arrived,NULL
+American,1630,"San Jose del Cabo, Mexico (SJD)",6/13/2005,7:31 AM,0:00,MD82,0 feet,Arrived,NULL
+American,592,"Dallas, TX (DFW)",6/13/2005,5:32 PM,NULL,MD82,0 feet,Scheduled,NULL
+American Eagle,457,"Chicago, IL (ORD)",6/13/2005,1:07 PM,0:00,Bombardier CRJ 700,0 feet,Arrived,NULL
+American Eagle,457,"Chicago, IL (ORD)",6/13/2005,1:07 PM,0:00,Bombardier CRJ 700,0 feet,Arrived,NULL
+American,1726,"Dallas, TX (DFW)",6/13/2005,11:27 AM,0:00,Boeing 737-800,0 feet,Landed,NULL
+American,1726,"Fort Lauderdale, FL (FLL)",6/13/2005,8:46 AM,0:00,Boeing 737-800,0 feet,Arrived,NULL
+American Eagle,729,"Dallas, TX (DFW)",6/13/2005,4:26 PM,1:04,Embraer EMB-145,0 feet,Arrived,NULL
+American Eagle,729,"Dallas, TX (DFW)",6/13/2005,4:26 PM,1:04,Embraer EMB-145,0 feet,Arrived,NULL
+Mesaba Aviation,3650,"Dallas, TX (DFW)",6/13/2005,3:18 PM,0:00,AVRO/BAe RJ85,"2,700 feet",In Flight,NULL
+Northwest,402,"Minneapolis, MN (MSP)",6/13/2005,11:55 AM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,402,"Dallas, TX (DFW)",6/13/2005,8:11 AM,0:00,DC93,0 feet,Landed,NULL
+Northwest,406,"Dallas, TX (DFW)",6/13/2005,1:19 PM,0:00,DC93,0 feet,Landed,NULL
+Northwest,1509,"Minneapolis, MN (MSP)",6/13/2005,9:43 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+Northwest,1509,"Dallas, TX (DFW)",6/13/2005,6:20 AM,0:00,Airbus A319,0 feet,Landed,NULL
+Northwest,414,"Dallas, TX (DFW)",6/13/2005,11:09 AM,0:00,DC93,0 feet,Landed,NULL
+Northwest,408,"Dallas, TX (DFW)",6/13/2005,5:04 PM,NULL,Airbus A320,0 feet,Scheduled,NULL
+Sun Country,502,"Dallas, TX (DFW)",6/13/2005,2:52 PM,0:00,Boeing 737-800,0 feet,Landed,NULL
+Sun Country,504,"Dallas, TX (DFW)",6/13/2005,5:55 PM,02:01 (planned),Boeing 737-800,0 feet,Arrived,NULL
+Sun Country,504,"Dallas, TX (DFW)",6/13/2005,5:55 PM,02:01 (planned),Boeing 737-800,0 feet,Arrived,NULL
+Southwest,1617,"Phoenix, AZ (PHX)",6/13/2005,9:15 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,1617,"Oakland, CA (OAK)",6/13/2005,6:57 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Jetblue Airways,482,"Long Beach, CA (LGB)",6/13/2005,7:10 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+Jetblue Airways,488,"Long Beach, CA (LGB)",6/12/2005,9:11 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+Jetblue Airways,486,"Long Beach, CA (LGB)",6/13/2005,11:06 AM,0:34,Airbus A320,"35,000 feet",In Flight,NULL
+Southwest,1720,"Las Vegas, NV (LAS)",6/13/2005,4:29 PM,NULL,Boeing 737-700,0 feet,Planned,NULL
+Southwest,1720,"Ontario, CA (ONT)",6/13/2005,3:14 PM,0:28,Boeing 737-700,"22,900 feet",In Flight,NULL
+Southwest,1720,"Oakland, CA (OAK)",6/13/2005,1:41 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Chautauqua Airlines,3290,"New York, NY (LGA)",6/13/2005,3:33 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Chautauqua Airlines,3039,"New York, NY (LGA)",6/13/2005,8:17 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Chautauqua Airlines,3222,"New York, NY (LGA)",6/13/2005,12:35 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Chautauqua Airlines,3222,"New York, NY (LGA)",6/13/2005,12:35 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Piedmont Airlines,4310,"New York, NY (LGA)",6/13/2005,11:48 AM,0:00,Dehavilland Dash 8 + DHC8-100,0 feet,Arrived,NULL
+Chautauqua Airlines,3057,"New York, NY (LGA)",6/13/2005,10:53 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Piedmont Airlines,4341,"New York, NY (LGA)",6/13/2005,7:16 AM,0:00,Dehavilland Dash 8 + DHC8-100,0 feet,Arrived,NULL
+Piedmont Airlines,4041,"New York, NY (LGA)",6/13/2005,4:59 PM,0:00,Dehavilland Dash 8 + DHC8-100,0 feet,Arrived,NULL
+American,1098,"Saint Louis, MO (STL)",6/13/2005,7:23 AM,0:00,MD82,0 feet,Arrived,NULL
+Southwest,1368,"Saint Louis, MO (STL)",6/13/2005,8:03 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,1368,"Kansas City, MO (MCI)",6/13/2005,6:37 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,775,"Saint Louis, MO (STL)",6/13/2005,10:18 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,775,"Chicago, IL (MDW)",6/13/2005,8:54 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+American,452,"Saint Louis, MO (STL)",6/13/2005,12:59 PM,0:00,MD83,0 feet,Arrived,NULL
+American,452,"San Diego, CA (SAN)",6/13/2005,6:42 AM,0:00,MD83,0 feet,Arrived,NULL
+Southwest,2655,"Saint Louis, MO (STL)",6/13/2005,2:22 PM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2655,"Salt Lake City, UT (SLC)",6/13/2005,10:07 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2655,"Oakland, CA (OAK)",6/13/2005,7:07 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2323,"Saint Louis, MO (STL)",6/13/2005,4:00 PM,0:43,Boeing 737-300,"31,000 feet",In Flight,NULL
+Southwest,2323,"Chicago, IL (MDW)",6/13/2005,2:33 PM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2323,"Baltimore, MD (BWI)",6/13/2005,1:14 PM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2323,,6/13/2005,11:44 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2175,"Saint Louis, MO (STL)",6/13/2005,5:21 PM,1:53,Boeing 737-300,"9,300 feet",In Flight,NULL
+Southwest,2175,"Omaha, NE (OMA)",6/13/2005,3:47 PM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2175,"Las Vegas, NV (LAS)",6/13/2005,10:40 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2175,"San Jose, CA (SJC)",6/13/2005,8:54 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+America West,558,"Phoenix, AZ (PHX)",6/13/2005,12:16 PM,0:46,Airbus A319,"39,000 feet",In Flight,NULL
+Delta Air Lines,1590,"Atlanta, GA (ATL)",6/13/2005,9:37 AM,0:00,Current Altitude,0 feet,Arrived,NULL
+Delta Air Lines,1590,"Atlanta, GA (ATL)",6/13/2005,9:37 AM,0:00,Current Altitude,0 feet,Arrived,NULL
+Atlantic Southeast Airlines,437,"New York, NY (JFK)",6/13/2005,4:13 PM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Atlantic Southeast Airlines,437,"New York, NY (JFK)",6/13/2005,4:13 PM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Delta Air Lines,194,"Atlanta, GA (ATL)",6/13/2005,2:10 PM,0:00,Boeing 767-300,0 feet,Arrived,NULL
+Delta Air Lines,172,"Atlanta, GA (ATL)",6/13/2005,3:58 PM,0:00,Boeing 767-300,0 feet,Arrived,NULL
+Atlantic Southeast Airlines,785,"New York, NY (JFK)",6/13/2005,11:23 AM,0:00,Bombardier CRJ 200,0 feet,Atlantic Southeast Airlines,NULL
+Atlantic Southeast Airlines,785,"New York, NY (JFK)",6/13/2005,11:23 AM,0:00,Bombardier CRJ 200,0 feet,Atlantic Southeast Airlines,NULL
+Alaska,25,"Boston, MA (BOS)",6/14/2005,8:43 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Alaska,25,"Boston, MA (BOS)",6/13/2005,8:47 AM,0:00,B739,0 feet,Arrived,NULL
+Alaska,15,"Boston, MA (BOS)",6/13/2005,6:28 PM,NULL,B739,0 feet,Scheduled,NULL
+American,657,"Dallas, TX (DFW)",6/13/2005,9:15 AM,0:00,MD82,0 feet,Arrived,NULL
+American,657,"New Orleans, LA (MSY)",6/13/2005,6:48 AM,0:00,MD82,0 feet,Arrived,NULL
+American,1726,"Dallas, TX (DFW)",6/13/2005,11:27 AM,0:00,Boeing 737-800,0 feet,Landed,NULL
+American,1726,"Fort Lauderdale, FL (FLL)",6/13/2005,8:46 AM,0:00,Boeing 737-800,0 feet,Arrived,NULL
+American,1630,"Dallas, TX (DFW)",6/13/2005,1:36 PM,0:00,MD82,0 feet,Arrived,NULL
+American,1630,"San Jose del Cabo, Mexico (SJD)",6/13/2005,7:31 AM,0:00,MD82,0 feet,Arrived,NULL
+American,592,"Dallas, TX (DFW)",6/13/2005,5:32 PM,NULL,MD82,0 feet,Scheduled,NULL
+Mesaba Aviation,3650,"Dallas, TX (DFW)",6/13/2005,3:18 PM,0:00,AVRO/BAe RJ85,"1,900 feet",In Flight,NULL
+American Eagle,729,"Dallas, TX (DFW)",6/13/2005,4:26 PM,1:03,Embraer EMB-145,0 feet,Arrived,NULL
+American Eagle,729,"Dallas, TX (DFW)",6/13/2005,4:26 PM,1:03,Embraer EMB-145,0 feet,Arrived,NULL
+American Eagle,457,"Chicago, IL (ORD)",6/13/2005,1:07 PM,0:00,Bombardier CRJ 700,0 feet,Arrived,NULL
+American Eagle,457,"Chicago, IL (ORD)",6/13/2005,1:07 PM,0:00,Bombardier CRJ 700,0 feet,Arrived,NULL
+Northwest,402,"Minneapolis, MN (MSP)",6/13/2005,11:55 AM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,402,"Dallas, TX (DFW)",6/13/2005,8:11 AM,0:00,DC93,0 feet,Landed,NULL
+Northwest,1509,"Minneapolis, MN (MSP)",6/13/2005,9:43 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+Northwest,1509,"Dallas, TX (DFW)",6/13/2005,6:20 AM,0:00,Airbus A319,0 feet,Landed,NULL
+Northwest,408,"Dallas, TX (DFW)",6/13/2005,5:04 PM,NULL,Airbus A320,0 feet,Scheduled,NULL
+Northwest,414,"Dallas, TX (DFW)",6/13/2005,11:09 AM,0:00,DC93,0 feet,Landed,NULL
+Sun Country,502,"Dallas, TX (DFW)",6/13/2005,2:52 PM,0:00,Boeing 737-800,0 feet,Landed,NULL
+Sun Country,504,"Dallas, TX (DFW)",6/13/2005,5:55 PM,01:50 (scheduled),Boeing 737-800,0 feet,Arrived,NULL
+Sun Country,504,"Dallas, TX (DFW)",6/13/2005,5:55 PM,01:50 (scheduled),Boeing 737-800,0 feet,Arrived,NULL
+Northwest,406,"Dallas, TX (DFW)",6/13/2005,1:19 PM,0:00,DC93,0 feet,Landed,NULL
+Skyway Airlines,2162,"Milwaukee, WI (MKE)",6/13/2005,3:22 PM,0:00,J328,0 feet,Arrived,NULL
+Skyway Airlines,2181,"Milwaukee, WI (MKE)",6/13/2005,8:25 AM,0:00,J328,0 feet,Arrived,NULL
+Skyway Airlines,1908,"Des Moines, IA (DSM)",6/13/2005,7:50 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Skyway Airlines,1906,"Des Moines, IA (DSM)",6/13/2005,4:51 PM,NULL,Beech 1900,0 feet,Scheduled,NULL
+Skyway Airlines,2162,"Milwaukee, WI (MKE)",6/13/2005,3:22 PM,0:00,J328,0 feet,Arrived,NULL
+Skyway Airlines,2181,"Milwaukee, WI (MKE)",6/13/2005,8:25 AM,0:00,J328,0 feet,Arrived,NULL
+Comair Inc.,1586,"Milwaukee, WI (MKE)",6/13/2005,3:43 PM,0:00,Bombardier CRJ 700,0 feet,Arrived,NULL
+Comair Inc.,1979,"Milwaukee, WI (MKE)",6/13/2005,12:29 PM,0:00,Bombardier CRJ 100,0 feet,Arrived,NULL
+Delta Air Lines,1223,"Cincinnati, OH (CVG)",6/13/2005,9:30 AM,0:00,Boeing 737-200,0 feet,Arrived,NULL
+Delta Air Lines,1223,"Cincinnati, OH (CVG)",6/13/2005,9:30 AM,0:00,Boeing 737-200,0 feet,Arrived,NULL
+Comair Inc.,1855,"Milwaukee, WI (MKE)",6/13/2005,9:45 AM,0:00,Bombardier CRJ 700,0 feet,Arrived,NULL
+Comair Inc.,1980,"Milwaukee, WI (MKE)",6/13/2005,5:18 PM,0:51,Bombardier CRJ 100,"12,400 feet",In Flight,NULL
+Northwest,784,"Minneapolis, MN (MSP)",6/13/2005,4:10 PM,1:20,Boeing 757-200,"29,000 feet",In Flight,NULL
+Northwest,784,"Las Vegas, NV (LAS)",6/13/2005,9:31 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,156,"Minneapolis, MN (MSP)",6/13/2005,1:43 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,156,"Seattle, WA (SEA)",6/13/2005,7:18 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,724,"Minneapolis, MN (MSP)",6/13/2005,5:02 PM,2:00,Airbus A319,"38,600 feet",In Flight,NULL
+Northwest,724,"Rapid City, SD (RAP)",6/13/2005,1:06 PM,0:00,Airbus A319,0 feet,Landed,NULL
+Northwest,846,"Minneapolis, MN (MSP)",6/13/2005,7:04 PM,NULL,Boeing 757-300,0 feet,Planned,NULL
+Northwest,846,"Anchorage, AK (ANC)",6/13/2005,8:59 AM,0:00,Boeing 757-300,"4,700 feet",In Flight,NULL
+Northwest,1268,"Bozeman, MT (BZN)",6/14/2005,6:25 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Northwest,1268,"Minneapolis, MN (MSP)",6/13/2005,11:31 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+Northwest,1268,"Bozeman, MT (BZN)",6/13/2005,6:13 AM,0:00,Airbus A319,0 feet,Landed,NULL
+Northwest,588,"Minneapolis, MN (MSP)",6/13/2005,7:34 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,588,"Portland, OR (PDX)",6/13/2005,1:12 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Air Wisconsin,558,"Des Moines, IA (DSM)",6/13/2005,10:37 AM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Air Wisconsin,948,"Des Moines, IA (DSM)",6/13/2005,2:25 PM,0:00,B463,0 feet,Arrived,NULL
+Air Wisconsin,944,"Des Moines, IA (DSM)",6/13/2005,6:23 AM,0:00,B462,0 feet,Arrived,NULL
+American Eagle,243,"Dallas, TX (DFW)",6/13/2005,12:16 PM,0:00,SAAB SF-340,0 feet,Arrived,NULL
+American Eagle,243,"Dallas, TX (DFW)",6/13/2005,12:16 PM,0:00,SAAB SF-340,0 feet,Arrived,NULL
+American Eagle,466,"Des Moines, IA (DSM)",6/13/2005,2:13 PM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,466,"Des Moines, IA (DSM)",6/13/2005,2:13 PM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,244,"Des Moines, IA (DSM)",6/13/2005,3:11 PM,0:00,Bombardier CRJ 700,0 feet,Arrived,NULL
+American Eagle,227,"Dallas, TX (DFW)",6/13/2005,4:46 PM,0:00,SAAB SF-340,0 feet,Arrived,NULL
+American Eagle,227,"Dallas, TX (DFW)",6/13/2005,4:46 PM,0:00,SAAB SF-340,0 feet,Arrived,NULL
+Sky West,6954,"Des Moines, IA (DSM)",6/13/2005,8:13 AM,0:00,Bombardier CRJ 700,0 feet,Arrived,NULL
+American Eagle,115,"Des Moines, IA (DSM)",6/13/2005,4:52 PM,0:15,Bombardier CRJ 700,0 feet,Arrived,NULL
+American Eagle,115,"Des Moines, IA (DSM)",6/13/2005,4:52 PM,0:15,Bombardier CRJ 700,0 feet,Arrived,NULL
+Sky West,6826,"Des Moines, IA (DSM)",6/13/2005,6:54 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+United,456,"Chicago, IL (ORD)",6/13/2005,6:02 PM,NULL,Boeing 737-300,0 feet,Scheduled,NULL
+United,456,"Des Moines, IA (DSM)",6/13/2005,3:44 PM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Alaska,498,"San Francisco, CA (SFO)",6/13/2005,10:37 PM,0:00,Boeing 737-400,0 feet,Landed,NULL
+Alaska,498,"Seattle, WA (SEA)",6/12/2005,8:06 PM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,816,"Seattle, WA (SEA)",6/13/2005,6:25 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,596,"Seattle, WA (SEA)",6/12/2005,9:01 PM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,316,"Seattle, WA (SEA)",6/13/2005,1:48 PM,0:00,MD83,0 feet,Landed,NULL
+Alaska,202,"San Francisco, CA (SFO)",6/13/2005,11:51 AM,0:00,Boeing 737-400,0 feet,Landed,NULL
+Alaska,202,"Seattle, WA (SEA)",6/13/2005,8:56 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,116,"Seattle, WA (SEA)",6/13/2005,12:19 PM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,116,"Fairbanks, AK (FAI)",6/13/2005,6:35 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+United,791,"Seattle, WA (SEA)",6/13/2005,6:44 PM,NULL,Boeing 737-300,0 feet,Planned,NULL
+United,791,"Seattle, WA (SEA)",6/12/2005,7:47 PM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Alaska,884,"Seattle, WA (SEA)",6/13/2005,3:40 PM,NULL,Boeing 737-400,0 feet,Scheduled,NULL
+Alaska,884,"Anchorage, AK (ANC)",6/13/2005,10:26 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,884,"Fairbanks, AK (FAI)",6/13/2005,8:45 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+United,198,"San Francisco, CA (SFO)",6/13/2005,9:10 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+United,198,"Seattle, WA (SEA)",6/13/2005,6:11 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+United,239,"San Francisco, CA (SFO)",6/13/2005,10:17 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+United,239,"Seattle, WA (SEA)",6/12/2005,9:14 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,9918,"Seattle, WA (SEA)",6/13/2005,7:15 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+United,8135,"Seattle, WA (SEA)",6/13/2005,7:26 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+United,993,"San Francisco, CA (SFO)",6/13/2005,2:54 PM,0:12,Boeing 737-500,"28,400 feet",In Flight,NULL
+United,993,"Seattle, WA (SEA)",6/13/2005,11:55 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+United,785,"Seattle, WA (SEA)",6/13/2005,5:45 PM,NULL,Boeing 737-300,0 feet,Scheduled,NULL
+United,1237,"Seattle, WA (SEA)",6/13/2005,1:44 PM,0:00,Boeing 737-300,0 feet,Landed,NULL
+United,156,"Seattle, WA (SEA)",6/13/2005,3:36 PM,NULL,Airbus A319,0 feet,Scheduled,NULL
+United,156,"Seattle, WA (SEA)",6/13/2005,3:36 PM,NULL,Airbus A319,0 feet,Scheduled,NULL
+United,729,"Seattle, WA (SEA)",6/13/2005,10:15 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+America West,196,"Phoenix, AZ (PHX)",6/13/2005,1:38 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+America West,196,"Phoenix, AZ (PHX)",6/13/2005,1:38 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+America West,702,"Phoenix, AZ (PHX)",6/13/2005,10:33 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+America West,702,"Phoenix, AZ (PHX)",6/13/2005,10:33 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+Southwest,2231,"Phoenix, AZ (PHX)",6/13/2005,3:59 PM,NULL,Boeing 737-700,0 feet,Planned,NULL
+Southwest,2231,"Baltimore, MD (BWI)",6/13/2005,1:53 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,2231,"Islip, NY (ISP)",6/13/2005,12:15 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,2135,"Phoenix, AZ (PHX)",6/13/2005,11:15 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2135,"Baltimore, MD (BWI)",6/13/2005,8:29 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,2135,"Islip, NY (ISP)",6/13/2005,6:54 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+America West,86,"Baltimore, MD (BWI)",6/13/2005,6:05 PM,NULL,Airbus A320,0 feet,Scheduled,NULL
+Southwest,94,"Baltimore, MD (BWI)",6/12/2005,9:37 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,713,"Baltimore, MD (BWI)",6/13/2005,6:20 PM,4:07,Boeing 737-700,"11,600 feet",In Flight,NULL
+Southwest,741,"Baltimore, MD (BWI)",6/13/2005,7:30 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,369,"Baltimore, MD (BWI)",6/13/2005,11:41 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,369,"Hartford, CT (BDL)",6/13/2005,10:10 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,280,"Baltimore, MD (BWI)",6/13/2005,10:06 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,280,"Hartford, CT (BDL)",6/13/2005,8:35 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,278,"Norfolk, VA (ORF)",6/13/2005,7:34 PM,NULL,Boeing 737-300,0 feet,Scheduled,NULL
+Southwest,278,"Baltimore, MD (BWI)",6/13/2005,6:00 PM,NULL,Boeing 737-300,0 feet,Scheduled,NULL
+Southwest,278,"Hartford, CT (BDL)",6/13/2005,4:25 PM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2623,"Albuquerque, NM (ABQ)",6/13/2005,4:44 PM,NULL,Boeing 737-700,0 feet,Planned,NULL
+Southwest,2623,"Baltimore, MD (BWI)",6/13/2005,2:18 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,2623,"Hartford, CT (BDL)",6/13/2005,12:38 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,821,"Chicago, IL (MDW)",6/13/2005,4:50 PM,2:33,Boeing 737-700,"40,000 feet",In Flight,NULL
+Southwest,821,"Baltimore, MD (BWI)",6/13/2005,3:25 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,821,"Hartford, CT (BDL)",6/13/2005,1:50 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,2563,"Jacksonville, FL (JAX)",6/13/2005,11:02 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2563,"Baltimore, MD (BWI)",6/13/2005,8:46 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Southwest,2563,"Hartford, CT (BDL)",6/13/2005,6:55 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,486,"Baltimore, MD (BWI)",6/13/2005,7:52 PM,NULL,Boeing 737-300,0 feet,Planned,NULL
+Southwest,486,"Hartford, CT (BDL)",6/13/2005,7:16 PM,NULL,Boeing 737-300,0 feet,Scheduled,NULL
+Southwest,670,"Hartford, CT (BDL)",6/13/2005,7:16 PM,NULL,Boeing 737-700,0 feet,Scheduled,NULL
+Frontier,738,"Denver, CO (DEN)",6/13/2005,10:57 AM,0:00,Airbus A318,0 feet,Arrived,NULL
+United,1434,"Denver, CO (DEN)",6/12/2005,8:23 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,1430,"Denver, CO (DEN)",6/13/2005,10:31 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,1430,"Ontario, CA (ONT)",6/13/2005,6:22 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,1432,"Denver, CO (DEN)",6/13/2005,12:39 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,1432,"Las Vegas, NV (LAS)",6/13/2005,8:54 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,1432,"San Francisco, CA (SFO)",6/13/2005,6:48 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+Comair Inc.,669,"Atlanta, GA (ATL)",6/12/2005,11:34 PM,0:00,Bombardier CRJ 700,0 feet,Arrived,NULL
+Delta Air Lines,287,"Atlanta, GA (ATL)",6/13/2005,1:16 PM,0:00,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Chautauqua Airlines,5283,"Atlanta, GA (ATL)",6/13/2005,6:55 PM,NULL,Embraer EMB-145,0 feet,Planned,NULL
+Delta Air Lines,287,"Atlanta, GA (ATL)",6/13/2005,1:16 PM,0:00,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Atlantic Southeast Airlines,249,"Saint Louis, MO (STL)",6/13/2005,9:31 AM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Atlantic Southeast Airlines,249,"Saint Louis, MO (STL)",6/13/2005,9:31 AM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Chautauqua Airlines,5281,"Atlanta, GA (ATL)",6/13/2005,4:07 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Comair Inc.,653,"Atlanta, GA (ATL)",6/13/2005,12:25 PM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Delta Air Lines,839,"Atlanta, GA (ATL)",6/13/2005,4:17 PM,0:00,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Delta Air Lines,839,"Atlanta, GA (ATL)",6/13/2005,4:17 PM,0:00,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Trans States Airlines,5500,"Atlanta, GA (ATL)",6/13/2005,11:32 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Delta Air Lines,836,"Atlanta, GA (ATL)",6/13/2005,5:47 PM,0:25,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Delta Air Lines,836,"Atlanta, GA (ATL)",6/13/2005,5:47 PM,0:25,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Trans States Airlines,5490,"Atlanta, GA (ATL)",6/13/2005,9:51 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Trans States Airlines,5652,"Atlanta, GA (ATL)",6/13/2005,5:21 PM,0:02,Embraer EMB-145,"15,100 feet",In Flight,NULL
+Trans States Airlines,5650,"Atlanta, GA (ATL)",6/13/2005,1:52 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Frontier,505,"New York, NY (LGA)",6/13/2005,9:09 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+United,591,"New York, NY (LGA)",6/13/2005,8:20 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Frontier,511,"New York, NY (LGA)",6/13/2005,5:55 PM,NULL,Airbus A319,0 feet,Scheduled,NULL
+United,731,"New York, NY (LGA)",6/13/2005,6:09 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,255,"Denver, CO (DEN)",6/13/2005,2:42 PM,0:03,Boeing 757-200,"9,800 feet",In Flight,NULL
+United,255,"New York, NY (LGA)",6/13/2005,11:23 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+United,579,"Denver, CO (DEN)",6/13/2005,5:30 PM,NULL,Boeing 757-200,0 feet,Scheduled,NULL
+United,579,"New York, NY (LGA)",6/13/2005,2:16 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+United,479,"New York, NY (LGA)",6/13/2005,5:47 PM,2:49,Boeing 757-200,"36,000 feet",In Flight,NULL
+Chautauqua Airlines,3016,"Detroit, MI (DTW)",6/13/2005,3:17 PM,0:00,Embraer EMB-145,0 feet,Chautauqua Airlines,NULL
+Mesa Airlines,2742,"Detroit, MI (DTW)",6/13/2005,8:39 AM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Mesa Airlines,2850,"Philadelphia, PA (PHL)",6/13/2005,2:57 PM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Mesa Airlines,2915,"Philadelphia, PA (PHL)",6/13/2005,9:35 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Mesa Airlines,2850,"Philadelphia, PA (PHL)",6/13/2005,2:57 PM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Mesa Airlines,2915,"Philadelphia, PA (PHL)",6/13/2005,9:35 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Mesaba Aviation,3570,"Detroit, MI (DTW)",6/13/2005,5:19 PM,0:03,AVRO/BAe RJ85,0 feet,Arrived,NULL
+Mesaba Aviation,3570,"Detroit, MI (DTW)",6/13/2005,5:19 PM,0:03,AVRO/BAe RJ85,0 feet,Arrived,NULL
+Northwest,1778,"Detroit, MI (DTW)",6/13/2005,7:27 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+Northwest,1776,"Detroit, MI (DTW)",6/13/2005,12:25 PM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,1776,"Lexington, KY (LEX)",6/13/2005,10:01 AM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,1780,"Traverse City, MI (TVC)",6/14/2005,8:21 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Northwest,1780,"Detroit, MI (DTW)",6/13/2005,11:32 AM,0:00,DC95,0 feet,Arrived,NULL
+Mesa Airlines,2981,"Philadelphia, PA (PHL)",6/13/2005,7:05 PM,01:29 (planned),Embraer EMB-145,0 feet,Landed,NULL
+Mesa Airlines,2981,"Philadelphia, PA (PHL)",6/13/2005,7:05 PM,01:29 (planned),Embraer EMB-145,0 feet,Landed,NULL
+Northwest,1772,"Detroit, MI (DTW)",6/13/2005,9:00 AM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,1772,"Flint, MI (FNT)",6/13/2005,6:54 AM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,1788,"Detroit, MI (DTW)",6/13/2005,5:13 PM,NULL,DC93,0 feet,Scheduled,NULL
+Northwest,1788,"Chicago, IL (ORD)",6/13/2005,2:15 PM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,1782,"Detroit, MI (DTW)",6/13/2005,7:33 PM,NULL,DC93,0 feet,Scheduled,NULL
+Us Airways,271,"Charlotte, NC (CLT)",6/13/2005,11:07 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+Us Airways,271,"Charlotte, NC (CLT)",6/13/2005,11:07 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+Us Airways,164,"New Orleans, LA (MSY)",6/14/2005,6:09 AM,01:32 (scheduled),Current Altitude,0 feet,Arrived,NULL
+Us Airways,164,"New Orleans, LA (MSY)",6/14/2005,6:09 AM,01:32 (scheduled),Current Altitude,0 feet,Arrived,NULL
+Us Airways,348,"Charlotte, NC (CLT)",6/13/2005,2:18 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+Us Airways,348,"Charlotte, NC (CLT)",6/13/2005,2:18 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+Us Airways,1122,"Charlotte, NC (CLT)",6/13/2005,7:31 PM,01:13 (scheduled),Airbus A319,0 feet,Arrived,NULL
+Us Airways,1122,"Charlotte, NC (CLT)",6/13/2005,7:31 PM,01:13 (scheduled),Airbus A319,0 feet,Arrived,NULL
+United,1432,"Denver, CO (DEN)",6/13/2005,12:39 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,1432,"Las Vegas, NV (LAS)",6/13/2005,8:54 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,1432,"San Francisco, CA (SFO)",6/13/2005,6:48 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+Frontier,738,"Denver, CO (DEN)",6/13/2005,10:57 AM,0:00,Airbus A318,0 feet,Arrived,NULL
+United,1430,"Denver, CO (DEN)",6/13/2005,10:31 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,1430,"Ontario, CA (ONT)",6/13/2005,6:22 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+United,1434,"Denver, CO (DEN)",6/12/2005,8:23 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+Express Airlines,3796,"Charlotte, NC (CLT)",6/13/2005,11:49 AM,0:00,Bombardier CRJ 200,0 feet,Landed,NULL
+Northwest,1673,"Charlotte, NC (CLT)",6/13/2005,5:50 PM,1:28,DC93,"31,700 feet",In Flight,NULL
+Northwest,1669,"Minneapolis, MN (MSP)",6/13/2005,11:41 AM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,1669,"Charlotte, NC (CLT)",6/13/2005,8:37 AM,0:00,DC93,0 feet,Arrived,NULL
+Us Airways,910,"Charlotte, NC (CLT)",6/13/2005,4:34 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+Us Airways,910,"Charlotte, NC (CLT)",6/13/2005,4:34 PM,0:00,Airbus A320,0 feet,Arrived,NULL
+Northwest,1671,"Minneapolis, MN (MSP)",6/13/2005,5:18 PM,0:57,DC93,"17,500 feet",In Flight,NULL
+Northwest,1671,"Charlotte, NC (CLT)",6/13/2005,2:39 PM,0:00,DC93,0 feet,Landed,NULL
+American,1456,"Long Beach, CA (LGB)",6/13/2005,12:38 PM,0:00,MD82,0 feet,Arrived,NULL
+American,384,"Dallas, TX (DFW)",6/13/2005,1:02 PM,0:00,MD82,0 feet,Arrived,NULL
+American,384,"Long Beach, CA (LGB)",6/13/2005,7:05 AM,0:00,MD82,0 feet,Arrived,NULL
+American,1126,"Dallas, TX (DFW)",6/13/2005,4:21 PM,0:00,MD82,0 feet,Arrived,NULL
+American,1126,"Long Beach, CA (LGB)",6/13/2005,10:23 AM,0:00,MD82,0 feet,Arrived,NULL
+American,1134,"Long Beach, CA (LGB)",6/13/2005,3:05 PM,2:15,MD82,"33,700 feet",In Flight,NULL
+American,872,"Long Beach, CA (LGB)",6/13/2005,8:09 AM,0:00,MD82,0 feet,Arrived,NULL
+American Eagle,407,"Dallas, TX (DFW)",6/13/2005,11:54 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+American Eagle,407,"Dallas, TX (DFW)",6/13/2005,11:54 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+American Eagle,286,"Shreveport, LA (SHV)",6/13/2005,5:56 PM,00:50 (scheduled),SAAB SF-340,0 feet,Arrived,NULL
+American Eagle,286,"Shreveport, LA (SHV)",6/13/2005,5:56 PM,00:50 (scheduled),SAAB SF-340,0 feet,Arrived,NULL
+Continental Express/ExpressJet Airlines,2275,"Cleveland, OH (CLE)",6/14/2005,3:45 PM,01:26 (scheduled),Current Altitude,0 feet,Arrived,NULL
+Continental Express/ExpressJet Airlines,2275,"Cleveland, OH (CLE)",6/14/2005,3:45 PM,01:26 (scheduled),Current Altitude,0 feet,Arrived,NULL
+Jetblue Airways,289,"New York, NY (JFK)",6/13/2005,7:09 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+Jetblue Airways,295,"New York, NY (JFK)",6/13/2005,4:57 PM,3:45,Airbus A320,"34,000 feet",In Flight,NULL
+Jetblue Airways,293,"New York, NY (JFK)",6/13/2005,6:45 PM,NULL,Airbus A320,0 feet,Scheduled,NULL
+American,43,"Newark, NJ (EWR)",6/13/2005,9:24 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+American,297,"Newark, NJ (EWR)",6/13/2005,12:12 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+American,297,"Los Angeles, CA (LAX)",6/12/2005,6:38 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Continental,1502,"Newark, NJ (EWR)",6/12/2005,7:52 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Continental,1002,"Newark, NJ (EWR)",6/13/2005,7:26 AM,0:00,Boeing 737-800,0 feet,Arrived,NULL
+Continental,1402,"Newark, NJ (EWR)",6/13/2005,9:04 AM,0:00,Boeing 757-300,0 feet,Arrived,NULL
+American,119,"Newark, NJ (EWR)",6/13/2005,6:04 PM,4:42,Boeing 757-200,"32,900 feet",In Flight,NULL
+Continental,17,"Newark, NJ (EWR)",6/13/2005,1:06 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Continental,17,"Glasgow, Scotland, Great Britain (EGPF)",6/13/2005,9:09 AM,6:18,Boeing 757-200,0 feet,Airline</b></font></td>,
+,,"<td ALIGN=""""left"""" WIDTH=""""200""""><font FACE=""""arial, helvetica, sans serif"""" SIZE=""""1"""">""",NULL,,,,,,
+Continental,17,"Glasgow, Scotland, Great Britain (EGPF)",6/13/2005,9:46 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Continental,17,"Newark, NJ (EWR)",6/13/2005,1:06 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Continental,17,"Glasgow, Scotland, Great Britain (EGPF)",6/13/2005,9:09 AM,6:18,Boeing 757-200,0 feet,Airline</b></font></td>,
+,,"<td ALIGN=""""left"""" WIDTH=""""200""""><font FACE=""""arial, helvetica, sans serif"""" SIZE=""""1"""">""",NULL,,,,,,
+Continental,17,"Glasgow, Scotland, Great Britain (EGPF)",6/13/2005,9:46 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Continental,1602,"Newark, NJ (EWR)",6/13/2005,6:14 PM,4:53,Boeing 757-200,"23,000 feet",In Flight,NULL
+United,81,"Newark, NJ (EWR)",6/13/2005,7:09 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Continental,65,"Newark, NJ (EWR)",6/13/2005,3:34 PM,2:08,Boeing 757-200,"36,000 feet",In Flight,NULL
+Continental,65,"Lisbon, Portugal (LPPT)",6/13/2005,10:40 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Chautauqua Airlines,6284,"Orlando, FL (MCO)",6/13/2005,6:51 PM,NULL,E135,0 feet,Planned,NULL
+Chautauqua Airlines,6285,"Orlando, FL (MCO)",6/13/2005,7:00 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Chautauqua Airlines,6286,"Orlando, FL (MCO)",6/13/2005,1:53 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Chautauqua Airlines,6286,"Orlando, FL (MCO)",6/13/2005,1:53 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Chautauqua Airlines,6287,"Orlando, FL (MCO)",6/13/2005,3:46 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Southwest,491,"Chicago, IL (MDW)",6/13/2005,6:14 PM,NULL,Boeing 737-700,0 feet,Planned,NULL
+Southwest,491,"Columbus, OH (CMH)",6/13/2005,5:34 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,491,"Orlando, FL (MCO)",6/13/2005,3:01 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,491,"Fort Lauderdale, FL (FLL)",6/13/2005,1:38 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,491,"San Diego, CA (SAN)",6/12/2005,8:55 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Alaska,558,"Seattle, WA (SEA)",6/12/2005,9:39 PM,0:00,MD83,0 feet,Arrived,NULL
+Alaska,562,"Seattle, WA (SEA)",6/12/2005,9:20 PM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,580,"Seattle, WA (SEA)",6/13/2005,11:50 AM,0:00,MD83,0 feet,Arrived,NULL
+Alaska,590,"Seattle, WA (SEA)",6/13/2005,6:53 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Alaska,520,"Seattle, WA (SEA)",6/13/2005,9:33 AM,0:00,MD82,0 feet,Arrived,NULL
+Alaska,550,"Seattle, WA (SEA)",6/13/2005,8:07 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Delta Air Lines,170,"Cincinnati, OH (CVG)",6/13/2005,4:20 PM,0:00,Boeing 767-300,0 feet,Arrived,NULL
+Comair Inc.,947,"Cincinnati, OH (CVG)",6/12/2005,11:12 PM,0:00,Bombardier CRJ 100,0 feet,Arrived,NULL
+Comair Inc.,673,"Cincinnati, OH (CVG)",6/13/2005,9:49 AM,0:00,Bombardier CRJ 100,0 feet,Arrived,NULL
+Dhl Airways,552,"Cincinnati, OH (CVG)",6/14/2005,5:05 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Dhl Airways,522,"Cincinnati, OH (CVG)",6/14/2005,6:17 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Delta Air Lines,822,"Cincinnati, OH (CVG)",6/13/2005,3:13 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Alaska,140,"Fairbanks, AK (FAI)",6/12/2005,9:27 PM,0:00,Boeing 737 Stage 3,0 feet,Arrived,NULL
+Alaska,9005,"Fairbanks, AK (FAI)",6/13/2005,4:52 AM,0:00,MD82,0 feet,Arrived,NULL
+Alaska,146,"Fairbanks, AK (FAI)",6/12/2005,10:49 PM,0:00,Boeing 737 Stage 3,0 feet,Arrived,NULL
+Alaska,146,"Barrow, AK (BRW)",6/12/2005,9:09 PM,0:00,Boeing 737 Stage 3,0 feet,Arrived,NULL
+Alaska,104,"Portland, OR (PDX)",6/13/2005,1:42 PM,0:02,Boeing 737-400,"11,000 feet",In Flight,NULL
+Alaska,104,"Anchorage, AK (ANC)",6/13/2005,8:08 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,104,"Fairbanks, AK (FAI)",6/13/2005,6:13 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,102,"Anchorage, AK (ANC)",6/13/2005,12:50 PM,2:18,Boeing 737-400,"31,000 feet",In Flight,NULL
+Alaska,102,"Fairbanks, AK (FAI)",6/13/2005,11:07 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,884,"Seattle, WA (SEA)",6/13/2005,3:40 PM,NULL,Boeing 737-400,0 feet,Scheduled,NULL
+Alaska,884,"Anchorage, AK (ANC)",6/13/2005,10:26 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,884,"Fairbanks, AK (FAI)",6/13/2005,8:45 AM,0:00,Boeing 737-400,0 feet,Arrived,NULL
+Alaska,144,"Fairbanks, AK (FAI)",6/13/2005,12:03 PM,0:00,Boeing 737 Stage 3,0 feet,Arrived,NULL
+Alaska,144,"Barrow, AK (BRW)",6/13/2005,10:25 AM,0:00,Boeing 737 Stage 3,0 feet,Arrived,NULL
+Alaska,149,"Fairbanks, AK (FAI)",6/14/2005,2:23 PM,0:31,Boeing 737-400,"20,800 feet",In Flight,NULL
+Alaska,822,"Fairbanks, AK (FAI)",6/13/2005,2:59 PM,NULL,Boeing 737-400,0 feet,Planned,NULL
+Alaska,112,"Anchorage, AK (ANC)",6/13/2005,9:42 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Alaska,112,"Fairbanks, AK (FAI)",6/13/2005,7:48 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Frontier Flying Service,592,"Fairbanks, AK (FAI)",6/13/2005,6:24 AM,0:00,Beech 1900,0 feet,Arrived,NULL
+Alaska Central Express,12,"Fairbanks, AK (FAI)",6/13/2005,10:15 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Empire Airlines,663,"Fairbanks, AK (FAI)",6/13/2005,12:59 PM,0:00,Fokker F27 Friendship/Fairchild Industries F-27,0 feet,Arrived,NULL
+Empire Airlines,663,"Fairbanks, AK (FAI)",6/13/2005,12:59 PM,0:00,Fokker F27 Friendship/Fairchild Industries F-27,0 feet,Arrived,NULL
+Frontier Flying Service,598,"Fairbanks, AK (FAI)",6/13/2005,11:02 AM,0:00,Beech 1900,0 feet,Arrived,NULL
+Northern Air Cargo,20,"Nome, AK (OME)",6/14/2005,8:05 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Northern Air Cargo,20,"Nome, AK (OME)",6/14/2005,8:05 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Northwest,995,"Detroit, MI (DTW)",6/13/2005,9:16 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+Northwest,995,"Milwaukee, WI (MKE)",6/13/2005,6:17 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+American,1345,"Detroit, MI (DTW)",6/13/2005,12:27 PM,0:00,Boeing 737-800,0 feet,Arrived,NULL
+Northwest,997,"Detroit, MI (DTW)",6/13/2005,3:58 PM,0:00,Airbus A319,0 feet,Arrived,NULL
+Northwest,997,"Columbus, OH (CMH)",6/13/2005,1:42 PM,0:00,Airbus A319,0 feet,Arrived,NULL
+American,2187,"Miami, FL (MIA)",6/13/2005,12:02 PM,0:00,Boeing 737-800,0 feet,Landed,NULL
+American,2187,"Detroit, MI (DTW)",6/13/2005,7:49 AM,0:00,Boeing 737-800,0 feet,Arrived,NULL
+American,1033,"Nashville, TN (BNA)",6/13/2005,7:01 AM,0:00,Boeing 737-800,0 feet,Arrived,NULL
+American Eagle,983,"Nashville, TN (BNA)",6/13/2005,6:56 PM,01:57 (planned),E135,0 feet,Landed,NULL
+American Eagle,983,"Nashville, TN (BNA)",6/13/2005,6:56 PM,01:57 (planned),E135,0 feet,Landed,NULL
+American Eagle,335,"Nashville, TN (BNA)",6/13/2005,2:06 PM,0:00,E135,0 feet,Arrived,NULL
+Southwest,1928,"Philadelphia, PA (PHL)",6/13/2005,7:04 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Airtran Airways,770,"Philadelphia, PA (PHL)",6/13/2005,7:09 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,2772,"Philadelphia, PA (PHL)",6/13/2005,5:36 PM,NULL,Boeing 737-700,0 feet,Scheduled,NULL
+Southwest,317,"Philadelphia, PA (PHL)",6/13/2005,3:37 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,317,"Hartford, CT (BDL)",6/13/2005,1:49 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Airtran Airways,765,"Philadelphia, PA (PHL)",6/13/2005,9:43 AM,0:00,Boeing 717-200,0 feet,Arrived,NULL
+Airtran Airways,765,"Philadelphia, PA (PHL)",6/13/2005,9:43 AM,0:00,Boeing 717-200,0 feet,Arrived,NULL
+Airtran Airways,797,"Philadelphia, PA (PHL)",6/13/2005,1:36 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,2174,"Philadelphia, PA (PHL)",6/13/2005,6:49 PM,NULL,Boeing 737-700,0 feet,Planned,NULL
+Southwest,2174,"Pittsburgh, PA (PIT)",6/13/2005,5:05 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,2698,"Philadelphia, PA (PHL)",6/13/2005,11:15 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+Us Airways,523,"Philadelphia, PA (PHL)",6/13/2005,9:29 AM,0:00,Airbus A321,0 feet,Arrived,NULL
+Us Airways,523,"Philadelphia, PA (PHL)",6/13/2005,9:29 AM,0:00,Airbus A321,0 feet,Arrived,NULL
+Us Airways,1097,"Philadelphia, PA (PHL)",6/12/2005,11:36 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,639,"Philadelphia, PA (PHL)",6/13/2005,6:55 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,987,"Philadelphia, PA (PHL)",6/13/2005,8:16 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,185,"Philadelphia, PA (PHL)",6/13/2005,12:15 PM,0:00,Airbus A321,0 feet,Arrived,NULL
+Us Airways,185,"Philadelphia, PA (PHL)",6/13/2005,12:15 PM,0:00,Airbus A321,0 feet,Arrived,NULL
+Us Airways,222,"Albany, NY (ALB)",6/14/2005,12:17 PM,00:53 (scheduled),Current Altitude,0 feet,Arrived,NULL
+Us Airways,222,"Albany, NY (ALB)",6/14/2005,12:17 PM,00:53 (scheduled),Current Altitude,0 feet,Arrived,NULL
+Us Airways,197,"Philadelphia, PA (PHL)",6/13/2005,5:48 PM,1:08,Airbus A320,0 feet,Arrived,NULL
+Us Airways,197,"Philadelphia, PA (PHL)",6/13/2005,5:48 PM,1:08,Airbus A320,0 feet,Arrived,NULL
+Us Airways,565,"Philadelphia, PA (PHL)",6/13/2005,6:30 PM,NULL,Boeing 757-200,0 feet,Scheduled,NULL
+Us Airways,1471,"Philadelphia, PA (PHL)",6/13/2005,8:18 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+Us Airways,1471,"Philadelphia, PA (PHL)",6/13/2005,8:18 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+United,733,"Washington, DC (IAD)",6/13/2005,9:37 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+United,915,"Washington, DC (IAD)",6/13/2005,6:15 PM,NULL,Boeing 737-300,0 feet,Scheduled,NULL
+United,915,"Paris, France (LFPG)",6/13/2005,1:09 PM,0:00,Boeing 777-200,0 feet,Arrived,NULL
+American,1647,"Miami, FL (MIA)",6/14/2005,10:05 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+American,1647,"Washington, DC (IAD)",6/13/2005,10:41 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+American,1647,"Miami, FL (MIA)",6/14/2005,10:05 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+American,1647,"Washington, DC (IAD)",6/13/2005,10:41 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Hawaiian Air,8,"Honolulu, HI (HNL)",6/12/2005,10:08 PM,0:00,Boeing 767-300,0 feet,Arrived,NULL
+Omni Air International,103,"Honolulu, HI (HNL)",6/13/2005,1:13 PM,NULL,McDonnell Douglas DC-10 (all series),0 feet,Planned,NULL
+Hawaiian Air,18,"Honolulu, HI (HNL)",6/13/2005,2:37 PM,05:11 (scheduled),Boeing 767-300,0 feet,Arrived,NULL
+Hawaiian Air,18,"Honolulu, HI (HNL)",6/13/2005,2:37 PM,05:11 (scheduled),Boeing 767-300,0 feet,Arrived,NULL
+American Trans Air,4406,"Las Vegas, NV (LAS)",6/13/2005,9:25 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+American Trans Air,4406,"Las Vegas, NV (LAS)",6/13/2005,9:25 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,443,"Charlotte, NC (CLT)",6/13/2005,10:02 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,443,"Charlotte, NC (CLT)",6/13/2005,10:02 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,1485,"Charlotte, NC (CLT)",6/13/2005,2:26 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,1121,"Charlotte, NC (CLT)",6/13/2005,7:58 AM,0:00,Current Altitude,0 feet,Arrived,NULL
+Us Airways,329,"Charlotte, NC (CLT)",6/13/2005,11:13 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,310,"Charlotte, NC (CLT)",6/13/2005,12:53 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,1121,"Charlotte, NC (CLT)",6/13/2005,7:58 AM,0:00,Current Altitude,0 feet,Arrived,NULL
+Us Airways,329,"Charlotte, NC (CLT)",6/13/2005,11:13 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,310,"Charlotte, NC (CLT)",6/13/2005,12:53 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Us Airways,95,"London, England, Great Britain (EGKK)",6/14/2005,10:55 AM,08:24 (scheduled),Current Altitude,0 feet,Arrived,NULL
+Us Airways,95,"London, England, Great Britain (EGKK)",6/14/2005,10:55 AM,08:24 (scheduled),Current Altitude,0 feet,Arrived,NULL
+Us Airways,309,"Charlotte, NC (CLT)",6/13/2005,5:46 PM,0:20,Boeing 757-200,"29,900 feet",In Flight,NULL
+Executive Jet Aviation,224,"San Francisco, CA (SFO)",6/13/2005,1:53 PM,1:31,Dassault Falcon 2000,0 feet,Arrived,NULL
+Northwest,362,"Minneapolis, MN (MSP)",6/13/2005,7:41 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,362,"San Francisco, CA (SFO)",6/13/2005,12:49 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Executive Jet Aviation,224,"San Francisco, CA (SFO)",6/13/2005,1:53 PM,1:31,Dassault Falcon 2000,0 feet,Arrived,NULL
+Delta Air Lines,9815,"Minneapolis, MN (MSP)",6/13/2005,4:44 PM,1:18,Boeing 737-800,0 feet,Arrived,NULL
+Delta Air Lines,9815,"Minneapolis, MN (MSP)",6/13/2005,4:44 PM,1:18,Boeing 737-800,0 feet,Arrived,NULL
+Northwest,368,"San Francisco, CA (SFO)",6/13/2005,6:45 AM,0:00,Airbus A320,0 feet,Arrived,NULL
+Northwest,360,"San Francisco, CA (SFO)",6/13/2005,12:41 PM,0:14,Boeing 757-200,"28,700 feet",In Flight,NULL
+Northwest,356,"San Francisco, CA (SFO)",6/13/2005,10:15 AM,0:00,Airbus A320,0 feet,Landed,NULL
+Sun Country,398,"San Francisco, CA (SFO)",6/12/2005,11:59 PM,0:00,Boeing 737-800,0 feet,Arrived,NULL
+Northwest,364,"San Francisco, CA (SFO)",6/13/2005,8:44 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,354,"San Francisco, CA (SFO)",6/13/2005,4:00 PM,NULL,Boeing 757-200,0 feet,Planned,NULL
+United,306,"Los Angeles, CA (LAX)",6/13/2005,9:09 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+United,306,"Oakland, CA (OAK)",6/13/2005,6:38 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Southwest,1136,"Baltimore, MD (BWI)",6/13/2005,5:21 PM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,1136,"Los Angeles, CA (LAX)",6/13/2005,8:43 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,72,"Los Angeles, CA (LAX)",6/13/2005,12:18 PM,1:35,Boeing 737-700,"39,000 feet",In Flight,NULL
+United,308,"Los Angeles, CA (LAX)",6/12/2005,11:42 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Continental Express/ExpressJet Airlines,2274,"Cleveland, OH (CLE)",6/13/2005,8:45 AM,0:00,E45X,0 feet,Arrived,NULL
+American Eagle,912,"Cleveland, OH (CLE)",6/13/2005,7:22 AM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,375,"Cleveland, OH (CLE)",6/13/2005,2:52 PM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,375,"Cleveland, OH (CLE)",6/13/2005,2:52 PM,0:00,E135,0 feet,Arrived,NULL
+Continental,840,"Newark, NJ (EWR)",6/13/2005,6:44 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+American Eagle,514,"Newark, NJ (EWR)",6/13/2005,12:17 PM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,514,"Newark, NJ (EWR)",6/13/2005,12:17 PM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,501,"Dallas, TX (DFW)",6/13/2005,10:49 AM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,501,"Dallas, TX (DFW)",6/13/2005,10:49 AM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,503,"Newark, NJ (EWR)",6/13/2005,9:25 AM,0:00,E135,0 feet,Arrived,NULL
+Continental,844,"Newark, NJ (EWR)",6/13/2005,8:51 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+American Eagle,513,"Newark, NJ (EWR)",6/13/2005,7:41 PM,00:49 (scheduled),E135,0 feet,Arrived,NULL
+American Eagle,513,"Newark, NJ (EWR)",6/13/2005,7:41 PM,00:49 (scheduled),E135,0 feet,Arrived,NULL
+Continental,850,"Newark, NJ (EWR)",6/13/2005,12:11 PM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+Continental,846,"Newark, NJ (EWR)",6/13/2005,9:46 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+American Eagle,509,"Dallas, TX (DFW)",6/13/2005,5:00 PM,0:25,Embraer EMB-145,0 feet,Arrived,NULL
+American Eagle,509,"Dallas, TX (DFW)",6/13/2005,5:00 PM,0:25,Embraer EMB-145,0 feet,Arrived,NULL
+Continental,842,"Newark, NJ (EWR)",6/13/2005,8:08 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+Continental,862,"Newark, NJ (EWR)",6/13/2005,7:06 PM,NULL,Boeing 737-500,0 feet,Scheduled,NULL
+Continental,856,"Newark, NJ (EWR)",6/13/2005,2:46 PM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+Continental,836,"Newark, NJ (EWR)",6/13/2005,4:38 PM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+Continental,21,"Newark, NJ (EWR)",6/13/2005,1:39 PM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+Continental,21,"Manchester, England, Great Britain (EGCC)",6/13/2005,9:43 AM,0:00,Boeing 767-200,0 feet,Arrived,NULL
+Continental,858,"Newark, NJ (EWR)",6/13/2005,6:27 PM,0:31,Boeing 737-500,"6,000 feet",In Flight,NULL
+Continental,8,"Newark, NJ (EWR)",6/13/2005,6:02 PM,0:05,Boeing 737-500,"11,000 feet",In Flight,NULL
+Continental,8,"Tokyo, Japan (RJAA)",6/13/2005,4:37 PM,0:00,Boeing 777-200,0 feet,Arrived,NULL
+Southwest,1765,"Baltimore, MD (BWI)",6/13/2005,11:11 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Southwest,1765,"New Orleans, LA (MSY)",6/13/2005,7:20 AM,0:00,Boeing 737-700,0 feet,Arrived,NULL
+Continental Express/ExpressJet Airlines,2514,"Cleveland, OH (CLE)",6/13/2005,7:55 AM,0:00,E135,0 feet,Arrived,NULL
+Mesa Airlines,2828,"Philadelphia, PA (PHL)",6/13/2005,9:23 AM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Mesa Airlines,2828,"Philadelphia, PA (PHL)",6/13/2005,9:23 AM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Continental,1599,"Cleveland, OH (CLE)",6/13/2005,6:05 PM,0:21,Boeing 737-800,"21,500 feet",In Flight,NULL
+Continental,1599,"Phoenix, AZ (PHX)",6/13/2005,8:05 AM,0:00,Boeing 737-800,0 feet,Arrived,NULL
+Continental Express/ExpressJet Airlines,2986,"Cleveland, OH (CLE)",6/13/2005,7:26 PM,NULL,Embraer EMB-145,0 feet,Scheduled,NULL
+Continental Express/ExpressJet Airlines,3237,"Cleveland, OH (CLE)",6/13/2005,6:26 PM,0:47,E135,"7,300 feet",In Flight,NULL
+Continental Express/ExpressJet Airlines,3222,"San Antonio, TX (SAT)",6/14/2005,10:39 AM,02:37 (scheduled),Current Altitude,0 feet,Arrived,NULL
+Continental Express/ExpressJet Airlines,3222,"San Antonio, TX (SAT)",6/14/2005,10:39 AM,02:37 (scheduled),Current Altitude,0 feet,Arrived,NULL
+Mesa Airlines,2664,"Philadelphia, PA (PHL)",6/13/2005,12:46 PM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Mesa Airlines,2664,"Philadelphia, PA (PHL)",6/13/2005,12:46 PM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Mesa Airlines,2746,"Cleveland, OH (CLE)",6/13/2005,2:12 PM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Mesa Airlines,2817,"Cleveland, OH (CLE)",6/13/2005,4:55 PM,0:00,Bombardier CRJ 100,0 feet,Arrived,NULL
+Mesa Airlines,2791,"Cleveland, OH (CLE)",6/13/2005,7:27 PM,NULL,Bombardier CRJ 200,0 feet,Planned,NULL
+Mesa Airlines,2724,"Cleveland, OH (CLE)",6/13/2005,5:31 PM,NULL,Bombardier CRJ 200,0 feet,Scheduled,NULL
+American,382,"Chicago, IL (ORD)",6/13/2005,10:12 AM,0:00,MD82,0 feet,Arrived,NULL
+American,382,"Minneapolis, MN (MSP)",6/13/2005,8:32 AM,0:00,MD82,0 feet,Arrived,NULL
+American,370,"Chicago, IL (ORD)",6/13/2005,1:30 PM,0:00,MD82,0 feet,Arrived,NULL
+American,370,"Minneapolis, MN (MSP)",6/13/2005,11:19 AM,0:00,MD82,0 feet,Arrived,NULL
+American,1292,"Chicago, IL (ORD)",6/13/2005,8:10 AM,0:00,MD82,0 feet,Arrived,NULL
+American,1292,"Minneapolis, MN (MSP)",6/13/2005,6:06 AM,0:00,MD82,0 feet,Arrived,NULL
+American,1929,"Chicago, IL (ORD)",6/13/2005,9:22 AM,0:00,MD82,0 feet,Arrived,NULL
+American,1929,"Minneapolis, MN (MSP)",6/13/2005,7:15 AM,0:00,MD82,0 feet,Arrived,NULL
+American,427,"Chicago, IL (ORD)",6/13/2005,1:13 PM,0:00,MD82,0 feet,Arrived,NULL
+American,427,"Minneapolis, MN (MSP)",6/13/2005,9:23 AM,0:00,MD82,0 feet,Arrived,NULL
+Federal Express,1021,"Minneapolis, MN (MSP)",6/13/2005,10:32 PM,NULL,Airbus A300B4-600,0 feet,Planned,NULL
+American,1137,"Minneapolis, MN (MSP)",6/13/2005,5:23 PM,NULL,MD83,0 feet,Scheduled,NULL
+American,1137,"Chicago, IL (ORD)",6/12/2005,8:32 PM,0:00,MD82,0 feet,Arrived,NULL
+Mesaba Aviation,3638,"Minneapolis, MN (MSP)",6/13/2005,9:14 AM,0:00,AVRO/BAe RJ85,0 feet,Arrived,NULL
+Mesaba Aviation,3434,"Minneapolis, MN (MSP)",6/13/2005,5:26 PM,0:45,AVRO/BAe RJ85,"6,600 feet",In Flight,NULL
+American,772,"Chicago, IL (ORD)",6/14/2005,5:33 PM,NULL,Current Altitude,0 feet,Scheduled,NULL
+American,772,"Minneapolis, MN (MSP)",6/13/2005,4:46 PM,0:01,MD82,"8,800 feet",In Flight,NULL
+American,1846,"Minneapolis, MN (MSP)",6/13/2005,2:00 PM,0:00,MD83,0 feet,Arrived,NULL
+Northwest,128,"Minneapolis, MN (MSP)",6/13/2005,11:46 AM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,122,"Minneapolis, MN (MSP)",6/13/2005,7:09 AM,0:00,Airbus A319,0 feet,Arrived,NULL
+Northwest,1042,"Minneapolis, MN (MSP)",6/13/2005,10:37 AM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,1042,"Billings, MT (BIL)",6/13/2005,6:34 AM,0:00,DC93,0 feet,Landed,NULL
+Northwest,302,"Minneapolis, MN (MSP)",6/13/2005,2:39 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,302,"Los Angeles, CA (LAX)",6/13/2005,7:00 AM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+Northwest,138,"Minneapolis, MN (MSP)",6/13/2005,3:14 PM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,132,"Minneapolis, MN (MSP)",6/13/2005,4:01 PM,0:00,DC93,0 feet,Arrived,NULL
+Northwest,136,"Minneapolis, MN (MSP)",6/13/2005,5:23 PM,NULL,DC93,0 feet,Scheduled,NULL
+United,429,"Chicago, IL (ORD)",6/13/2005,8:17 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+United,429,"Minneapolis, MN (MSP)",6/13/2005,6:06 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+Northwest,140,"Minneapolis, MN (MSP)",6/13/2005,7:49 PM,NULL,DC95,0 feet,Planned,NULL
+Northwest,140,"Bismarck, ND (BIS)",6/13/2005,4:36 PM,0:00,DC93,"6,600 feet",In Flight,NULL
+United,674,"Chicago, IL (ORD)",6/13/2005,9:08 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+United,674,"Minneapolis, MN (MSP)",6/13/2005,7:07 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+United,288,"Chicago, IL (ORD)",6/13/2005,2:13 PM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+United,288,"Minneapolis, MN (MSP)",6/13/2005,11:26 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+United,690,"Chicago, IL (ORD)",6/13/2005,4:14 PM,NULL,Boeing 737-500,0 feet,Scheduled,NULL
+United,690,"Minneapolis, MN (MSP)",6/13/2005,2:55 PM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+United,1242,"Minneapolis, MN (MSP)",6/13/2005,9:48 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+United,730,"Chicago, IL (ORD)",6/13/2005,6:22 PM,NULL,Boeing 757-200,0 feet,Scheduled,NULL
+United,730,"Minneapolis, MN (MSP)",6/13/2005,3:58 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+United,398,"Chicago, IL (ORD)",6/13/2005,11:08 AM,0:00,Boeing 737-300,0 feet,Arrived,NULL
+United,398,"Minneapolis, MN (MSP)",6/13/2005,8:37 AM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+United,1182,"Minneapolis, MN (MSP)",6/13/2005,4:52 PM,0:07,Boeing 737-300,"19,700 feet",In Flight,NULL
+United,395,"Chicago, IL (ORD)",6/13/2005,4:02 PM,3:47,Boeing 757-200,"36,000 feet",In Flight,NULL
+United,395,"Minneapolis, MN (MSP)",6/13/2005,2:06 PM,0:00,Boeing 757-200,0 feet,Arrived,NULL
+United,1146,"Minneapolis, MN (MSP)",6/13/2005,7:57 PM,NULL,Boeing 737-300,0 feet,Scheduled,NULL
+United,1179,"Chicago, IL (ORD)",6/13/2005,8:05 PM,NULL,Boeing 737-500,0 feet,Scheduled,NULL
+United,1179,"Minneapolis, MN (MSP)",6/13/2005,5:47 PM,NULL,Boeing 737-500,0 feet,Scheduled,NULL
+United,1179,"Chicago, IL (ORD)",6/12/2005,8:22 PM,0:00,Boeing 737-500,0 feet,Arrived,NULL
+Comair Inc.,655,"Orlando, FL (MCO)",6/13/2005,11:59 AM,1:52,Current Altitude,0 feet,Arrived,NULL
+Comair Inc.,655,"Orlando, FL (MCO)",6/13/2005,11:59 AM,1:52,Current Altitude,0 feet,Arrived,NULL
+Comair Inc.,9754,"Cincinnati, OH (CVG)",6/13/2005,1:49 PM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Comair Inc.,414,"Cincinnati, OH (CVG)",6/13/2005,2:52 PM,0:00,Bombardier CRJ 100,0 feet,Arrived,NULL
+Delta Air Lines,851,"Cincinnati, OH (CVG)",6/13/2005,12:59 PM,0:00,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Comair Inc.,654,"Orlando, FL (MCO)",6/13/2005,10:50 AM,1:52,Current Altitude,0 feet,Arrived,NULL
+Comair Inc.,654,"Orlando, FL (MCO)",6/13/2005,10:50 AM,1:52,Current Altitude,0 feet,Arrived,NULL
+Delta Air Lines,935,"Cincinnati, OH (CVG)",6/13/2005,4:45 PM,0:07,McDonnell Douglas MD-80 Series,"16,100 feet",In Flight,NULL
+Delta Air Lines,1652,"Cincinnati, OH (CVG)",6/13/2005,9:10 AM,0:00,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Delta Air Lines,1652,"Cincinnati, OH (CVG)",6/13/2005,9:10 AM,0:00,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Dhl Airways,512,"Cincinnati, OH (CVG)",6/14/2005,4:38 AM,NULL,Current Altitude,0 feet,Scheduled,NULL
+American Eagle,533,,6/13/2005,11:40 AM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,567,"Puerto Plata, Dominican Republic (MDPP)",6/13/2005,12:54 PM,0:00,ATR-72,0 feet,Arrived,NULL
+American Eagle,567,"Puerto Plata, Dominican Republic (MDPP)",6/13/2005,12:54 PM,0:00,ATR-72,0 feet,Arrived,NULL
+American Eagle,570,"Cedar Rapids, IA (CID)",6/13/2005,6:47 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+American Eagle,570,"Cedar Rapids, IA (CID)",6/13/2005,6:47 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+American Eagle,543,"Puerto Plata, Dominican Republic (MDPP)",6/13/2005,6:37 PM,00:39 (planned),ATR-72,0 feet,Arrived,NULL
+American Eagle,579,,6/13/2005,4:51 PM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,562,"San Juan, PR, Puerto Rico (SJU)",6/13/2005,5:00 PM,0:00,ATR-72,0 feet,Arrived,NULL
+American Eagle,562,"San Juan, PR, Puerto Rico (SJU)",6/13/2005,5:00 PM,0:00,ATR-72,0 feet,Arrived,NULL
+Comair Inc.,487,,6/13/2005,6:37 AM,0:00,Bombardier CRJ 100,0 feet,Arrived,NULL
+American Eagle,533,,6/13/2005,11:40 AM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,543,"Puerto Plata, Dominican Republic (MDPP)",6/13/2005,6:37 PM,00:39 (planned),ATR-72,0 feet,Arrived,NULL
+American Eagle,579,,6/13/2005,4:51 PM,0:00,E135,0 feet,Arrived,NULL
+American Eagle,512,,6/13/2005,6:39 PM,01:34 (scheduled),E135,0 feet,Landed,NULL
+American Eagle,512,,6/13/2005,6:39 PM,01:34 (scheduled),E135,0 feet,Landed,NULL
+Executive Jet Aviation,396,"Boston, MA (BOS)",6/13/2005,5:57 PM,0:10,Cessna Citation 5,0 feet,Arrived,NULL
+Comair Inc.,1444,,6/13/2005,9:56 AM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Comair Inc.,569,,6/13/2005,6:58 PM,NULL,Bombardier CRJ 200,0 feet,Planned,NULL
+Comair Inc.,497,,6/13/2005,3:22 PM,0:00,Bombardier CRJ 100,0 feet,Arrived,NULL
+Executive Jet Aviation,396,"Boston, MA (BOS)",6/13/2005,5:57 PM,0:10,Cessna Citation 5,0 feet,Arrived,NULL
+Atlantic Southeast Airlines,249,"Saint Louis, MO (STL)",6/13/2005,9:31 AM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Chautauqua Airlines,5282,"Saint Louis, MO (STL)",6/13/2005,3:51 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Atlantic Southeast Airlines,249,"Saint Louis, MO (STL)",6/13/2005,9:31 AM,0:00,Bombardier CRJ 200,0 feet,Arrived,NULL
+Comair Inc.,671,"Saint Louis, MO (STL)",6/13/2005,5:34 AM,0:00,Bombardier CRJ 700,0 feet,Arrived,NULL
+Delta Air Lines,1184,"Atlanta, GA (ATL)",6/13/2005,10:52 AM,0:00,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Chautauqua Airlines,5280,"Saint Louis, MO (STL)",6/13/2005,1:00 PM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Delta Air Lines,1184,"Atlanta, GA (ATL)",6/13/2005,10:52 AM,0:00,McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Trans States Airlines,5663,"Saint Louis, MO (STL)",6/13/2005,10:49 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Delta Air Lines,373,"Atlanta, GA (ATL)",6/13/2005,6:32 PM,01:28 (scheduled),McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Trans States Airlines,5665,"Saint Louis, MO (STL)",6/13/2005,1:53 PM,0:00,Current Altitude,0 feet,Arrived,NULL
+Trans States Airlines,5501,"Saint Louis, MO (STL)",6/13/2005,8:19 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Trans States Airlines,5665,"Saint Louis, MO (STL)",6/13/2005,1:53 PM,0:00,Current Altitude,0 feet,Arrived,NULL
+Chautauqua Airlines,5284,"Saint Louis, MO (STL)",6/13/2005,5:38 PM,NULL,Embraer EMB-145,0 feet,Scheduled,NULL
+Delta Air Lines,373,"Atlanta, GA (ATL)",6/13/2005,6:32 PM,01:28 (scheduled),McDonnell Douglas MD-80 Series,0 feet,Arrived,NULL
+Trans States Airlines,5489,"Saint Louis, MO (STL)",6/13/2005,6:13 AM,0:00,Embraer EMB-145,0 feet,Arrived,NULL
+Delta Air Lines,699,"Saint Louis, MO (STL)",6/13/2005,5:36 PM,NULL,McDonnell Douglas MD-80 Series,0 feet,Scheduled,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,9:46 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,5:01 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,11:28 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,10:20 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,11:42 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,9:06 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,11:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,1:59 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,10:17 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Nome, AK (OME)",NULL,1:20 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,10:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Fairbanks, AK (FAI)",NULL,10:29 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,9:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,2:43 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,9:32 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,3:34 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Portland, OR (PDX)",NULL,12:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,7:01 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Vancouver, BC, Canada (YVR)",NULL,5:42 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,12:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,12:52 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Fairbanks, AK (FAI)",NULL,11:40 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,3:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,2:04 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,8:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,11:15 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,11:04 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,11:04 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,7:34 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,12:15 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Kotzebue, AK (OTZ)",NULL,12:59 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Kotzebue, AK (OTZ)",NULL,12:59 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,10:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Nome, AK (OME)",NULL,1:20 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,11:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,5:41 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,5:28 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,9:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Palm Springs, CA (PSP)",NULL,11:34 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Puerto Vallarta, Mexico (PVR)",NULL,4:06 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,10:30 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,10:37 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,2:43 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,9:32 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Washington, DC (IAD)",NULL,4:48 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,7:46 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,11:56 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,11:30 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,10:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,8:49 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,9:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,8:33 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,1:31 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,1:54 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,10:58 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,3:21 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,5:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,5:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,9:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,3:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,7:34 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,9:42 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,8:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,5:28 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,3:42 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Milwaukee, WI (MKE)",NULL,8:22 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Milwaukee, WI (MKE)",NULL,5:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Milwaukee, WI (MKE)",NULL,2:57 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,4:13 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Myrtle Beach, SC (MYR)",NULL,10:54 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,7:51 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Milwaukee, WI (MKE)",NULL,4:19 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,1:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,12:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,10:21 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Louisville, KY (SDF)",NULL,8:32 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,6:18 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,8:06 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,6:43 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,12:55 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,12:55 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,9:34 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,7:34 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,9:34 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,1:12 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (LGA)",NULL,8:27 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,5:15 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,5:20 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,9:18 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,5:17 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Champaign, IL (CMI)",NULL,2:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Champaign, IL (CMI)",NULL,5:12 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Champaign, IL (CMI)",NULL,10:48 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Champaign, IL (CMI)",NULL,10:48 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Champaign, IL (CMI)",NULL,7:34 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Champaign, IL (CMI)",NULL,7:34 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,6:51 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Syracuse, NY (SYR)",NULL,12:44 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Syracuse, NY (SYR)",NULL,12:44 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,10:21 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,8:14 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,2:53 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,9:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,11:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,7:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,3:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,11:49 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,7:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Colorado Springs, CO (COS)",NULL,8:43 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Colorado Springs, CO (COS)",NULL,8:43 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,1:12 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,10:09 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,1:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,1:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,5:25 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Grand Forks, ND (GFK)",NULL,12:44 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,10:03 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,3:16 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Reno, NV (RNO)",NULL,10:42 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,8:14 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,12:53 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,7:14 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,4:53 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,4:03 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,4:03 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Buffalo, NY (BUF)",NULL,3:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Phoenix, AZ (PHX)",NULL,8:17 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,3:04 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,5:14 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,7:04 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Buffalo, NY (BUF)",NULL,11:12 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Las Vegas, NV (LAS)",NULL,3:58 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Ontario, CA (ONT)",NULL,2:38 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Buffalo, NY (BUF)",NULL,4:20 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Buffalo, NY (BUF)",NULL,9:07 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Buffalo, NY (BUF)",NULL,11:39 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Buffalo, NY (BUF)",NULL,11:39 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Buffalo, NY (BUF)",NULL,1:03 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Buffalo, NY (BUF)",NULL,11:40 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Buffalo, NY (BUF)",NULL,8:31 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Buffalo, NY (BUF)",NULL,6:16 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,10:23 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,11:03 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,7:13 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,1:17 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,9:43 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,4:03 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,11:34 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,5:31 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,1:22 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Salt Lake City, UT (SLC)",NULL,9:26 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,7:13 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,3:15 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (MDW)",NULL,1:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,12:23 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,8:23 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,4:37 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Omaha, NE (OMA)",NULL,2:57 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Las Vegas, NV (LAS)",NULL,10:00 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,7:16 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,2:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,2:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (JFK)",NULL,3:57 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (JFK)",NULL,5:49 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,10:17 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,10:17 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,11:06 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,11:04 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,8:50 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,11:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,7:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,1:12 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,10:09 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,3:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,11:49 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,7:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,5:25 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,1:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,1:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Colorado Springs, CO (COS)",NULL,8:43 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Colorado Springs, CO (COS)",NULL,8:43 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Grand Forks, ND (GFK)",NULL,12:44 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,10:03 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Reno, NV (RNO)",NULL,10:42 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,8:14 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,7:14 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,12:53 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,4:53 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,4:03 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,4:03 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,3:16 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Columbus, OH (CMH)",NULL,2:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cleveland, OH (CLE)",NULL,6:57 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Milwaukee, WI (MKE)",NULL,9:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Milwaukee, WI (MKE)",NULL,6:01 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Columbus, OH (CMH)",NULL,2:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cleveland, OH (CLE)",NULL,6:57 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cincinnati, OH (CVG)",NULL,5:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cincinnati, OH (CVG)",NULL,2:21 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Jacksonville, FL (JAX)",NULL,7:58 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Jacksonville, FL (JAX)",NULL,7:58 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cincinnati, OH (CVG)",NULL,11:37 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cincinnati, OH (CVG)",NULL,7:22 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,7:51 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,2:29 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,5:11 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,12:20 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,8:31 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,3:14 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,10:23 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,5:26 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,9:35 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,2:51 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,9:11 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,10:52 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,6:04 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,11:26 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,3:23 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,7:16 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Shreveport, LA (SHV)",NULL,12:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Shreveport, LA (SHV)",NULL,12:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,9:23 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,9:23 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,4:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Lawton, OK (LAW)",NULL,11:19 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Lawton, OK (LAW)",NULL,11:19 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,9:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,10:21 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,10:21 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,7:49 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Richmond, VA (RIC)",NULL,8:32 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,4:32 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Palm Springs, CA (PSP)",NULL,11:34 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,9:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,8:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,10:37 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,3:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Puerto Vallarta, Mexico (PVR)",NULL,4:06 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,10:30 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,1:54 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,10:58 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,8:33 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,9:42 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,5:28 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,2:43 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,9:32 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Washington, DC (IAD)",NULL,4:48 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,7:46 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,11:30 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,10:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,8:49 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,9:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,3:42 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,1:31 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,7:34 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,3:21 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,5:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,5:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,11:56 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,11:48 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,11:48 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,8:56 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,8:56 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Jose, CA (SJC)",NULL,5:31 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Phoenix, AZ (PHX)",NULL,3:10 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,1:01 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,12:01 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Phoenix, AZ (PHX)",NULL,9:41 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,7:35 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Phoenix, AZ (PHX)",NULL,7:32 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Phoenix, AZ (PHX)",NULL,10:53 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Phoenix, AZ (PHX)",NULL,7:38 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Phoenix, AZ (PHX)",NULL,8:43 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Tampa, FL (TPA)",NULL,1:28 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,10:51 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,12:04 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,9:14 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Jacksonville, FL (JAX)",NULL,8:49 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Norfolk, VA (ORF)",NULL,6:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,5:05 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,5:08 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Albuquerque, NM (ABQ)",NULL,3:56 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,1:18 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Phoenix, AZ (PHX)",NULL,6:04 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (MDW)",NULL,4:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,2:31 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Fort Lauderdale, FL (FLL)",NULL,11:58 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Jacksonville, FL (JAX)",NULL,10:28 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,7:46 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,9:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,7:59 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,7:58 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New Orleans, LA (MSY)",NULL,2:15 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New Orleans, LA (MSY)",NULL,11:34 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New Orleans, LA (MSY)",NULL,1:42 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,9:17 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New Orleans, LA (MSY)",NULL,3:45 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,11:23 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Las Vegas, NV (LAS)",NULL,7:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,11:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,11:30 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,7:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,11:30 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,8:35 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,8:35 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,4:15 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,12:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,2:51 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,2:51 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,11:45 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,4:14 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,4:14 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,10:03 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,5:33 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Saint Louis, MO (STL)",NULL,2:09 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,10:44 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,9:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,7:32 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,7:47 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,3:35 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,1:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,7:01 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,3:55 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,7:21 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,4:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,9:56 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Montreal, QC, Canada (YUL)",NULL,1:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Greenville, SC (GSP)",NULL,8:10 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Montreal, QC, Canada (YUL)",NULL,1:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Greenville, SC (GSP)",NULL,8:10 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,2:21 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,2:21 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,8:45 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,1:37 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,10:49 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,9:03 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,12:45 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Columbia, SC (CAE)",NULL,6:23 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Columbia, SC (CAE)",NULL,6:23 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,10:17 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,7:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,6:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,3:59 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,8:49 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,7:20 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,7:20 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Myrtle Beach, SC (MYR)",NULL,9:41 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Myrtle Beach, SC (MYR)",NULL,9:41 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Charlotte, NC (CLT)",NULL,8:21 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Charlotte, NC (CLT)",NULL,8:21 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (LGA)",NULL,12:57 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (LGA)",NULL,12:57 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Allentown, PA (ABE)",NULL,5:58 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Allentown, PA (ABE)",NULL,5:58 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New Orleans, LA (MSY)",NULL,3:45 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,11:23 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Las Vegas, NV (LAS)",NULL,7:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New Orleans, LA (MSY)",NULL,2:15 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New Orleans, LA (MSY)",NULL,1:42 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Denver, CO (DEN)",NULL,9:17 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New Orleans, LA (MSY)",NULL,11:34 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,1:10 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,7:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,2:12 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,2:12 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"La Crosse, WI (LSE)",NULL,12:01 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,9:52 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,2:52 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,2:52 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Rapid City, SD (RAP)",NULL,5:30 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,3:48 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,5:07 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Houston, TX (IAH)",NULL,1:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,11:35 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Antonio, TX (SAT)",NULL,4:58 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,3:01 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,7:48 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,12:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Lubbock, TX (LBB)",NULL,1:47 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Lubbock, TX (LBB)",NULL,1:47 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,1:53 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,1:53 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Providence, RI (PVD)",NULL,2:29 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Providence, RI (PVD)",NULL,2:29 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Burbank, CA (BUR)",NULL,9:23 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Burbank, CA (BUR)",NULL,7:17 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Burbank, CA (BUR)",NULL,9:08 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,11:38 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,2:31 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Honolulu, HI (HNL)",NULL,8:45 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,10:08 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,9:40 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,11:07 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,8:14 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,3:14 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,12:26 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,11:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,3:14 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,12:26 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,11:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,8:26 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,9:20 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,5:41 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,12:31 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Columbus, OH (CMH)",NULL,8:44 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Columbus, OH (CMH)",NULL,8:42 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Columbus, OH (CMH)",NULL,1:10 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Columbus, OH (CMH)",NULL,1:10 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Columbus, OH (CMH)",NULL,5:35 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,7:59 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (MDW)",NULL,5:26 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Columbus, OH (CMH)",NULL,4:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,2:07 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Jose, CA (SJC)",NULL,9:58 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,11:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,11:28 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,1:59 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,9:06 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,11:42 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,10:20 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (JFK)",NULL,5:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (JFK)",NULL,12:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (JFK)",NULL,11:09 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (JFK)",NULL,6:35 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (JFK)",NULL,7:47 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (JFK)",NULL,4:28 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Nome, AK (OME)",NULL,1:20 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Nome, AK (OME)",NULL,1:20 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,9:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,9:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,10:17 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,10:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,10:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,5:41 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,11:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Fairbanks, AK (FAI)",NULL,10:29 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,3:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Portland, OR (PDX)",NULL,12:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,7:01 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Vancouver, BC, Canada (YVR)",NULL,5:52 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,12:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Francisco, CA (SFO)",NULL,5:28 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,2:43 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,9:32 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,12:52 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Fairbanks, AK (FAI)",NULL,11:40 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,3:05 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,3:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Seattle, WA (SEA)",NULL,2:04 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,8:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,7:34 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,11:15 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,11:04 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,11:04 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,12:15 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Kotzebue, AK (OTZ)",NULL,12:59 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Kotzebue, AK (OTZ)",NULL,12:59 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,11:47 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,7:51 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,3:04 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,6:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Detroit, MI (DTW)",NULL,2:09 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cancun, Mexico (CUN)",NULL,11:15 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,10:19 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,9:46 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,2:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,2:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,5:01 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,9:04 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,9:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,7:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,5:33 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,2:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,8:39 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,8:39 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,3:32 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,8:38 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,6:20 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,1:13 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,7:59 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,7:59 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,1:26 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,8:47 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,10:18 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,10:53 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,10:53 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,12:48 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,12:48 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,2:35 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,2:35 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,8:28 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,6:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,6:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,11:58 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,8:34 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Washington, DC (IAD)",NULL,2:33 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,10:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,12:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,NULL,NULL,10:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,12:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Las Vegas, NV (LAS)",NULL,6:10 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Las Vegas, NV (LAS)",NULL,9:14 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Las Vegas, NV (LAS)",NULL,10:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Las Vegas, NV (LAS)",NULL,10:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Indianapolis, IN (IND)",NULL,7:36 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Indianapolis, IN (IND)",NULL,7:36 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,8:18 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,8:18 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,3:31 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,9:10 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,10:02 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,11:10 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,9:10 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,10:02 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,11:10 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Charlotte, NC (CLT)",NULL,1:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Charlotte, NC (CLT)",NULL,1:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,6:54 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,8:45 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Washington, DC (DCA)",NULL,10:32 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,6:14 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,8:45 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Salt Lake City, UT (SLC)",NULL,3:41 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Salt Lake City, UT (SLC)",NULL,3:41 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,12:12 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,5:47 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,3:22 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,5:10 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,1:58 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,9:08 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,4:41 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Los Angeles, CA (LAX)",NULL,7:37 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Islip, NY (ISP)",NULL,6:10 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,4:07 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,8:10 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,6:59 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,11:18 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,9:49 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,3:49 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Miami, FL (MIA)",NULL,3:49 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,7:26 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,6:31 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,6:31 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Huntsville, AL (HSV)",NULL,7:08 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Huntsville, AL (HSV)",NULL,7:08 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,10:08 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,9:34 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,4:21 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,4:21 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,12:53 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,10:28 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Jackson, MS (JAN)",NULL,5:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Jackson, MS (JAN)",NULL,5:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,8:50 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,7:45 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,3:29 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,5:12 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,2:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,11:15 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,7:06 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,6:39 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,3:41 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Hartford, CT (BDL)",NULL,11:53 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,10:23 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,8:58 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Allentown, PA (ABE)",NULL,8:28 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Allentown, PA (ABE)",NULL,8:28 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,6:55 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cleveland, OH (CLE)",NULL,2:19 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,8:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,7:22 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cleveland, OH (CLE)",NULL,10:15 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cleveland, OH (CLE)",NULL,10:15 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Burlington, VT (BTV)",NULL,11:38 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Burlington, VT (BTV)",NULL,11:38 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,3:07 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,6:03 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,8:35 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Philadelphia, PA (PHL)",NULL,6:32 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (LGA)",NULL,12:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,9:25 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (LGA)",NULL,4:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,12:20 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Newark, NJ (EWR)",NULL,10:37 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,7:03 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New Orleans, LA (MSY)",NULL,11:18 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,8:08 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"El Paso, TX (ELP)",NULL,3:01 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,10:17 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,11:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,6:24 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Diego, CA (SAN)",NULL,10:13 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,10:11 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,6:20 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,8:30 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,5:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,2:54 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,12:49 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,8:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,11:33 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,9:17 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,3:43 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,12:22 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,4:10 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,4:57 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,6:22 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Houston, TX (IAH)",NULL,10:31 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,7:02 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,8:32 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Minneapolis, MN (MSP)",NULL,5:36 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (LGA)",NULL,11:44 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,8:03 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,4:52 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,12:30 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"New York, NY (LGA)",NULL,6:55 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,3:51 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,10:41 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Baltimore, MD (BWI)",NULL,9:11 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,4:55 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Hartford, CT (BDL)",NULL,1:42 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,9:32 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,5:43 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Anchorage, AK (ANC)",NULL,6:22 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,3:00 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,8:51 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Spokane, WA (GEG)",NULL,9:31 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Chicago, IL (ORD)",NULL,6:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Spokane, WA (GEG)",NULL,9:40 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cincinnati, OH (CVG)",NULL,11:11 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cincinnati, OH (CVG)",NULL,11:11 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,3:38 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,4:44 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,2:44 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cincinnati, OH (CVG)",NULL,10:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Cincinnati, OH (CVG)",NULL,10:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,6:43 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,7:33 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,7:33 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Orlando, FL (MCO)",NULL,6:26 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,8:13 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Juan, PR, Puerto Rico (SJU)",NULL,10:22 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Juan, PR, Puerto Rico (SJU)",NULL,10:22 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,7:49 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Dallas, TX (DFW)",NULL,7:49 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Juan, PR, Puerto Rico (SJU)",NULL,11:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,4:49 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Santo Domingo, Dominican Republic (MDSD)",NULL,11:46 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Santo Domingo, Dominican Republic (MDSD)",NULL,11:46 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,8:12 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,8:13 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"San Juan, PR, Puerto Rico (SJU)",NULL,11:05 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,4:49 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,2:03 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,2:03 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Morristown, NJ (MMU)",NULL,7:24 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,11:28 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,8:27 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Boston, MA (BOS)",NULL,4:46 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Morristown, NJ (MMU)",NULL,7:24 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,8:35 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,6:08 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,8:35 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,7:44 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Washington, DC (DCA)",NULL,9:25 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,3:17 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Washington, DC (DCA)",NULL,9:25 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,1:09 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Washington, DC (IAD)",NULL,4:59 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,4:18 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,10:36 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,4:18 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,8:01 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Washington, DC (IAD)",NULL,4:59 PM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,8:35 AM,NULL,NULL,NULL,NULL,NULL
+NULL,NULL,"Atlanta, GA (ATL)",NULL,7:58 PM,NULL,NULL,NULL,NULL,NULL

@@ -1,0 +1,72 @@
+
+
+geospatial1( // http://geocoder.us/
+  address:CT-Address:IN       // GOOD: street, city, state, zip
+  column2:CT-Street:OUT	      // GOOD: street
+  column4:CT-CityStateZip:OUT // GOOD: City State Zip
+  column30:PR-Latitude:OUT    // BAD: decimal minute instead of decimal lat
+  column34:PR-Longitude:OUT   // GOOD: long
+  column49:CT-Address:OUT     // GOOD: = address
+)
+
+( '1600 Pennsylvania Ave NW, Washington, DC, 20502', 
+  '1600 Pennsylvania Ave NW', 
+  'Washington DC 20502', 
+  '53.9249'', 
+  '-77.037684 &deg;', 
+  '1600 Pennsylvania Ave NW, Washington, DC, 20502' )
+
+geospatial2( // http://atlas.mapquest.com/maps/latlong.adp
+  longitude:PR-Longitude:IN   // GOOD: long
+  latitude:PR-Latitude:IN     // GOOD: lat
+  column1:CT-Street:OUT	      // BAD: "Map of Latitude: 38.898748 Longitude: -77.037684, by MapQuest"
+  column2:PR-Latitude:OUT     // GOOD: lat
+  column22:PR-Longitude:OUT   // BAD: lat
+  column58:CT-CityState:OUT   // BAD: "Outlet Mall Prices"
+  column59:CT-Address:OUT     // BAD: "New Dodge &amp; Chrysler Vehicles At"
+)
+
+( '-77.037684', 
+  '38.898748', 
+  'Map of Latitude: 38.898748 Longitude: -77.037684, by MapQuest', 
+  '38.898748', 
+  '38.898748', 
+  'Outlet Mall Prices', 
+  'New Dodge &amp; Chrysler Vehicles At' )
+
+
+geospatial3( // http://www.ontok.com/geocode/index.php
+  addr:CT-Address:IN           // GOOD: 	   	
+  column11:CT-Address:OUT      // GOOD but sometimes NULL
+  column13:PR-State-Abbr:OUT   // GOOD but sometimes NULL
+  column14:CT-CityStateZip:OUT // BAD: null, '601 Whitehead St, Key West, FL, 33040'
+  column17:CT-Street:OUT       // BAD: 'NULL', '1600 Pennsylvania Ave NW, Washington, DC, 20502'
+  column27:PR-Longitude:OUT    // GOOD
+  column28:PR-Latitude:OUT     // GOOD
+)
+
+( '1600 Pennsylvania Ave NW, Washington, DC, 20502', 
+  '1600 Pennsylvania Ave NW, Washington, DC, 20502', 
+  'NULL', 
+  'NULL', 
+  '1600 Pennsylvania Ave NW, Washington, DC, 20502', 
+  '-77.036828', 
+  '38.898646')
+
+geospatial4( // http://geocoder.ca/
+  locate:CT-Address:IN         // 
+  column0:CT-Address:OUT       // GOOD
+  column5:CT-CityState:OUT     // BAD: 'NULL', 'Admiralty Way'
+  column8:PR-State-Abbr:OUT    // GOOD
+  column12:CT-Street:OUT       // GOOD
+  column19:PR-Latitude:OUT     // GOOD
+  column23:PR-Longitude:OUT    // BAD: no sign
+)
+
+( '1600 Pennsylvania Ave NW, Washington, DC, 20502', 
+  '1600 Pennsylvania Ave NW WASHINGTON DC 20502', 
+  'NULL', 
+  'DC', 
+  '1600 Pennsylvania Ave', 
+  '38.898748', 
+  '77.037684')

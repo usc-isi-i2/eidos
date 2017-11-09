@@ -1,0 +1,20 @@
+tablename	argumentno	argumentname	semantictype	score	direction
+geospatial2	0	query	CT-Address	-1	IN
+geospatial2	1	column0	CT-Address	12.45555556	OUT
+geospatial2	2	column18	CT-Street	8.710726056	OUT
+geospatial2	3	column27	PR-LatitudeDMS-D	12	OUT
+geospatial2	4	column39	CT-CityState	12	OUT
+geospatial2	5	column56	PR-State-Abbr	22	OUT
+
+
+"query","column0","column18","column27","column39","column56"
+"1600 Pennsylvania Ave NW, Washington, DC, 20502","1600 Pennsylvania Ave NW, Washington, DC, 20502","1600 Pennsylvania Ave NW, Washington, DC, 20502","Pennsylvania","NW","NULL"
+"601 Whitehead St, Key West, FL, 33040","601 Whitehead St, Key West, FL, 33040","601 Whitehead St, Key West, FL, 33040","Whitehead","Key West","NULL"
+"4676 Admiralty Way, Marina del Rey, CA, 90292","4676 Admiralty Way, Marina del Rey, CA, 90292","4676 Admiralty Way, Marina del Rey, CA, 90292","Admiralty","Marina","NULL"
+"600 Dexter Avenue, Montgomery, AL 36130","600 Dexter Avenue, Montgomery, AL 36130","600 Dexter Avenue, Montgomery, AL 36130","Dexter","Montgomery","NULL"
+"1700 West Washington, Phoenix, AZ 85007","1700 West Washington, Phoenix, AZ 85007","1700 West Washington, Phoenix, AZ 85007","West","Phoenix","NULL"
+"210 Capitol Avenue, Hartford, CT 06106","210 Capitol Avenue, Hartford, CT 06106","210 Capitol Avenue, Hartford, CT 06106","Capitol","Hartford","NULL"
+"400 S. Monroe St., Tallahassee, FL 32399","400 S. Monroe St., Tallahassee, FL 32399","400 S. Monroe St., Tallahassee, FL 32399","NULL","Monroe","FL"
+"4750 N. Meridian St., Indianapolis, IN 46208","4750 N. Meridian St., Indianapolis, IN 46208","4750 N. Meridian St., Indianapolis, IN 46208","N","St","NULL"
+"1007 East Grand Ave., Des Moines, IA 50319","1007 East Grand Ave., Des Moines, IA 50319","1007 East Grand Ave., Des Moines, IA 50319","East","Ave","NULL"
+"300 SW 10th Ave., Topeka, KS 66612","300 SW 10th Ave., Topeka, KS 66612","300 SW 10th Ave., Topeka, KS 66612","SW","Topeka","NULL"

@@ -1,0 +1,144 @@
+time,place,temperature,tempinf,sky,windspeed,windspeedinmph,winddir,visibility,visibilityinmi,zipin
+NULL,Los Angeles Downtown/Usc,72&deg;F,72,A Few Clouds,7 MPH,7,Vrbl,10.00 mi.,10,90404
+2:51 PM,Newark International Airport,89&deg;F,89,Partly Cloudy,13 MPH,13,S,8.00 mi.,8,7036
+NULL,NULL,57&deg;F,57,Overcast,10 MPH,10,S,10.00 mi.,10,97459
+2:35 PM,Gadsden Municipal Automatic Weather Observing,86&deg;F,86,A Few Clouds,9 MPH,9,W,10.00 mi.,10,35903
+2:54 PM,"Boston, Logan International Airport",61&deg;F,61,A Few Clouds,9 MPH,9,E,10.00 mi.,10,2120
+12:56 PM,NULL,46&deg;F,46,Rain,3 MPH,3,S,5.00 mi.,5,84102
+2:54 PM,Roanoke Regional Airport,90&deg;F,90,Partly Cloudy,8 MPH,8,SW,10.00 mi.,10,24153
+2:53 PM,Hartford-Brainard Airport,83&deg;F,83,Fair,21 MPH,21,NULL,9.00 mi.,9,6040
+2:35 PM,Worthington Automatic Weather Observing/Reporting,84&deg;F,84,Fair,17 MPH,17,NULL,10.00 mi.,10,56110
+1:29 PM,Sandpoint Airport,52&deg;F,52,Overcast,3 MPH,3,E,7.00 mi.,7,83814
+1:56 PM,Chicago/Ohare,86&deg;F,86,Partly Cloudy and Breezy,28 MPH,28,NULL,10.00 mi.,10,60201
+2:51 PM,"Washington DC, Reagan National Airport",88&deg;F,88,Partly Cloudy,13 MPH,13,S,8.00 mi.,8,20007
+NULL,NULL,57&deg;F,57,Mostly Cloudy,5 MPH,5,N,10.00 mi.,10,98354
+NULL,Lihue Airport,82&deg;F,82,Partly Cloudy,18 MPH,18,NE,10.00 mi.,10,96734
+1:53 PM,Broken Bow Municipal Airport,83&deg;F,83,Fair and Breezy,26 MPH,26,NULL,10.00 mi.,10,68856
+1:53 PM,"Jackson, Hawkins Field Airport",73&deg;F,73,Light Rain Fog/Mist,Calm,NULL,NULL,6.00 mi.,6,39212
+2:35 PM,Sheldon,86&deg;F,86,Partly Cloudy,14 MPH,14,SW,10.00 mi.,10,51246
+3:16 PM,Somerset-Pulaski County-J.T. Wilson Field Airport,91&deg;F,91,Fair,3 MPH,3,W,10.00 mi.,10,42539
+2:35 PM,Auburn-Opelika Airport,79&deg;F,79,Thunderstorm in Vicinity,6 MPH,6,E,10.00 mi.,10,36801
+12:53 PM,Houston Hobby Airport,90&deg;F,90,Mostly Cloudy,9 MPH,9,S,10.00 mi.,10,77041
+12:52 PM,Rapid City Regional Airport,81&deg;F,81,Fair,16 MPH,16,S,10.00 mi.,10,57701
+1:53 PM,"Olathe, Johnson County Executive Airport",80&deg;F,80,Mostly Cloudy,14 MPH,14,S,7.00 mi.,7,66216
+2:54 PM,Greater Rochester International Airport,84&deg;F,84,Mostly Cloudy,17 MPH,17,SW,7.00 mi.,7,14522
+2:51 PM,"Washington DC, Reagan National Airport",88&deg;F,88,Partly Cloudy,13 MPH,13,S,8.00 mi.,8,22204
+2:53 PM,Miami International Airport,76&deg;F,76,Light Rain,Calm,NULL,NULL,7.00 mi.,7,33160
+2:45 PM,Baltimore / Martin,84&deg;F,84,A Few Clouds with Haze,12 MPH,12,SE,5.00 mi.,5,21220
+1:53 PM,Nashville International Airport,84&deg;F,84,Thunderstorm,5 MPH,5,E,10.00 mi.,10,37201
+2:51 PM,Charlotte/Douglas International Airport,88&deg;F,88,Partly Cloudy with Haze,6 MPH,6,SW,6.00 mi.,6,28202
+1:53 PM,Alexandria International Airport,90&deg;F,90,Partly Cloudy,8 MPH,8,S,10.00 mi.,10,71302
+NULL,NULL,63&deg;F,63,Fair,7 MPH,7,W,10.00 mi.,10,99320
+NULL,Reno/Cannon Intl Airport,59&deg;F,59,Partly Cloudy,17 MPH,17,W,10.00 mi.,10,89403
+1:52 PM,"Oklahoma City, Will Rogers World Airport",87&deg;F,87,Partly Cloudy,15 MPH,15,SW,10.00 mi.,10,73116
+12:53 PM,NULL,39&deg;F,39,Light Rain,10 MPH,10,W,10.00 mi.,10,82930
+1:53 PM,Memphis International Airport,74&deg;F,74,Overcast,10 MPH,10,E,10.00 mi.,10,38671
+2:54 PM,"Georgetown, Sussex County Airport",89&deg;F,89,Fair,8 MPH,8,S,10.00 mi.,10,19950
+2:53 PM,Meriden Markham Municipal Airport,80&deg;F,80,Fair,20 MPH,20,NULL,7.00 mi.,7,6479
+NULL,Tucson Intl Airport,87&deg;F,87,Fair,8 MPH,8,W,10.00 mi.,10,85741
+1:53 PM,Emporia Kansas,83&deg;F,83,A Few Clouds,14 MPH,14,SE,10.00 mi.,10,66845
+12:55 PM,NULL,54&deg;F,54,Mostly Cloudy,3 MPH,3,Vrbl,10.00 mi.,10,59937
+3:20 PM,Vidalia Municipal Airport,90&deg;F,90,Partly Cloudy,Calm,NULL,NULL,10.00 mi.,10,31011
+2:35 PM,Worthington Automatic Weather Observing/Reporting,84&deg;F,84,Fair,17 MPH,17,NULL,10.00 mi.,10,56168
+1:53 PM,Dallas Love Field,91&deg;F,91,Mostly Cloudy,18 MPH,18,NULL,10.00 mi.,10,75204
+NULL,NULL,57&deg;F,57,Mostly Cloudy,5 MPH,5,N,10.00 mi.,10,98052
+2:53 PM,"Atlanta, Fulton County Airport-Brown Field",90&deg;F,90,A Few Clouds,Calm,NULL,NULL,10.00 mi.,10,30302
+NULL,Page Muni (amos),79&deg;F,79,Fair,18 MPH,18,NULL,www.wrh.noaa.gov</u></a><br>,,
+,"<a href=""""http://weather.gov/privacy.php"""">Privacy Policy</a><br>",,,,,,,,,
+,"<a href=""""http://www.nws.noaa.gov/disclaimer.html"""">Disclaimer</a>""",,86001,,,,,,,
+2:30 PM,Fremont Municipal Airport,88&deg;F,88,Partly Cloudy,21 MPH,21,NULL,10.00 mi.,10,68025
+1:53 PM,"Muscle Shoals, North West Alabama Regional Airport",75&deg;F,75,Mostly Cloudy,10 MPH,10,NW,10.00 mi.,10,37096
+2:55 PM,"Milton, Whiting Field North",75&deg;F,75,Mostly Cloudy,Calm,NULL,NULL,7.00 mi.,7,32570
+2:54 PM,Salisbury-Wicomico County Regional Airport,85&deg;F,85,Mostly Cloudy,9 MPH,9,SE,8.00 mi.,8,19956
+2:54 PM,Morrisville-Stowe State Airport,71&deg;F,71,Fair with Haze,5 MPH,5,Vrbl,6.00 mi.,6,5655
+1:53 PM,"Muncie, Delaware County-Johnson Field",84&deg;F,84,Fair,8 MPH,8,W,10.00 mi.,10,46940
+12:52 PM,Rapid City Regional Airport,81&deg;F,81,Fair,16 MPH,16,S,10.00 mi.,10,57702
+1:54 PM,Minot International Airport,71&deg;F,71,Partly Cloudy,17 MPH,17,NULL,10.00 mi.,10,58784
+1:53 PM,Guthrie Municipal Airport,88&deg;F,88,Fair,22 MPH,22,NULL,NULL,NULL,73044
+1:52 PM,Bismarck Municipal Airport,79&deg;F,79,Fair,24 MPH,24,NULL,10.00 mi.,10,58501
+1:51 PM,Lambert-St. Louis International Airport,75&deg;F,75,Overcast,Calm,NULL,NULL,10.00 mi.,10,63138
+NULL,Juneau International Airport,61&deg;F,61,Mostly Cloudy,5 MPH,5,Vrbl,10.00 mi.,10,99833
+2:53 PM,Columbia Owens Downtown Airport,89&deg;F,89,Partly Cloudy,3 MPH,3,Vrbl,10.00 mi.,10,29201
+1:55 PM,Omaha / Offutt Air Force Base,86&deg;F,86,A Few Clouds,17 MPH,17,S,7.00 mi.,7,68005
+2:53 PM,Detroit City Airport,84&deg;F,84,A Few Clouds,25 MPH,25,NULL,10.00 mi.,10,48026
+1:54 PM,Spirit Of St. Louis Airport,76&deg;F,76,Overcast,6 MPH,6,E,10.00 mi.,10,63379
+2:56 PM,"Jacksonville, New River, Marine Corps Air Station",86&deg;F,86,Partly Cloudy,13 MPH,13,S,7.00 mi.,7,28539
+NULL,Lihue Airport,82&deg;F,82,Partly Cloudy,18 MPH,18,NE,10.00 mi.,10,96801
+2:54 PM,Pittsfield Municipal Airport,83&deg;F,83,A Few Clouds,23 MPH,23,NULL,9.00 mi.,9,1230
+1:53 PM,"Racine, Batten International Airport",84&deg;F,84,A Few Clouds,26 MPH,26,NULL,10.00 mi.,10,53177
+2:51 PM,Portland International Jetport,50&deg;F,50,Fog,7 MPH,7,E,0.50 mi.,NULL,4096
+2:53 PM,Manchester Airport,62&deg;F,62,Overcast,7 MPH,7,SE,7.00 mi.,7,3101
+12:47 PM,Los Angeles Downtown/Usc,72&deg;F,72,Fair,6 MPH,6,Vrbl,10.00 mi.,10,90001
+1:53 PM,"Baton Rouge Metropolitan, Ryan Field",79&deg;F,79,Thunderstorm,10 MPH,10,SE,10.00 mi.,10,70726
+1:52 PM,"Milwaukee, General Mitchell International Airport",84&deg;F,84,Partly Cloudy,24 MPH,24,NULL,10.00 mi.,10,53228
+3:45 PM,The Villages,88&deg;F,88,NA,Calm,NULL,NULL,10.00 mi.,10,34420
+1:53 PM,"Winner, Bob Wiley Field Airport",86&deg;F,86,Fair,16 MPH,16,SE,10.00 mi.,10,57580
+NULL,Las Vegas/Mccarran,81&deg;F,81,Fair,6 MPH,6,Vrbl,10.00 mi.,10,89029
+2:58 PM,Millinocket Municipal Airport,54&deg;F,54,Overcast,9 MPH,9,S,10.00 mi.,10,4426
+1:56 PM,Chicago/Ohare,86&deg;F,86,Partly Cloudy and Breezy,28 MPH,28,NULL,10.00 mi.,10,60056
+1:54 PM,Quincy Regional-Baldwin Field Airport,83&deg;F,83,Fair,13 MPH,13,SW,10.00 mi.,10,62301
+2:53 PM,Tampa International Airport,88&deg;F,88,Mostly Cloudy,6 MPH,6,Vrbl,10.00 mi.,10,33602
+1:56 PM,Chicago/Ohare,86&deg;F,86,Partly Cloudy and Breezy,28 MPH,28,NULL,10.00 mi.,10,60477
+1:52 PM,"Milwaukee, General Mitchell International Airport",84&deg;F,84,Partly Cloudy,24 MPH,24,NULL,10.00 mi.,10,53202
+NULL,Safford Municipal,89&deg;F,89,Fair,10 MPH,10,SW,10.00 mi.,10,88039
+1:55 PM,Duluth International Airport,68&deg;F,68,Partly Cloudy,25 MPH,25,NULL,10.00 mi.,10,55803
+2:53 PM,Detroit City Airport,84&deg;F,84,A Few Clouds,25 MPH,25,NULL,10.00 mi.,10,48317
+2:51 PM,Concord Municipal Airport,63&deg;F,63,Overcast,7 MPH,7,Vrbl,10.00 mi.,10,3278
+2:46 PM,Mena Intermountain Municipal Airport,88&deg;F,88,Fair,3 MPH,3,S,10.00 mi.,10,71953
+NULL,NULL,57&deg;F,57,Mostly Cloudy,5 MPH,5,N,10.00 mi.,10,98466
+2:53 PM,"Somerville, Somerset Airport",89&deg;F,89,A Few Clouds,8 MPH,8,S,8.00 mi.,8,8844
+12:53 PM,NULL,59&deg;F,59,Fair,18 MPH,18,NULL,10.00 mi.,10,83622
+1:51 PM,Victoria Regional Airport,89&deg;F,89,A Few Clouds,15 MPH,15,S,10.00 mi.,10,77904
+1:53 PM,Emporia Kansas,83&deg;F,83,A Few Clouds,14 MPH,14,SE,10.00 mi.,10,66801
+1:54 PM,Jackson International Airport,74&deg;F,74,Light Rain,5 MPH,5,S,10.00 mi.,10,39110
+1:56 PM,"Sioux Falls, Foss Field",83&deg;F,83,Fair,15 MPH,15,S,10.00 mi.,10,51242
+2:35 PM,Waupaca Municipal Airport,79&deg;F,79,Fair,23 MPH,23,NULL,10.00 mi.,10,54981
+1:55 PM,Indianapolis International Airport,85&deg;F,85,Partly Cloudy,8 MPH,8,SW,10.00 mi.,10,46201
+2:53 PM,"Louisville, Bowman Field Airport",90&deg;F,90,Partly Cloudy,7 MPH,7,Vrbl,10.00 mi.,10,40207
+12:53 PM,NULL,59&deg;F,59,Fair,18 MPH,18,NULL,10.00 mi.,10,83702
+2:53 PM,Detroit City Airport,84&deg;F,84,A Few Clouds,25 MPH,25,NULL,10.00 mi.,10,48202
+12:53 PM,Broomfield/Jeffco,81&deg;F,81,A Few Clouds,17 MPH,17,NULL,35.00 mi.,35,80501
+2:53 PM,"Greer, Greenville-Spartanburg Airport",90&deg;F,90,Fair,6 MPH,6,Vrbl,9.00 mi.,9,29372
+NULL,Russellville Municipal Airport,85&deg;F,85,Fair,3 MPH,3,Vrbl,10.00 mi.,10,72834
+2:51 PM,Lambert-St. Louis International Airport,81&deg;F,81,Mostly Cloudy,8 MPH,8,S,10.00 mi.,10,63101
+2:54 PM,"Boston, Logan International Airport",61&deg;F,61,A Few Clouds,9 MPH,9,E,10.00 mi.,10,2138
+2:52 PM,Toledo Express Airport,85&deg;F,85,Partly Cloudy,18 MPH,18,W,10.00 mi.,10,43402
+3:51 PM,Port Columbus International Airport,88&deg;F,88,Partly Cloudy,16 MPH,16,W,10.00 mi.,10,43085
+3:51 PM,"Windsor Locks, Bradley International Airport",83&deg;F,83,Mostly Cloudy,20 MPH,20,S,8.00 mi.,8,6098
+3:51 PM,"Washington DC, Reagan National Airport",87&deg;F,87,Mostly Cloudy with Haze,14 MPH,14,S,5.00 mi.,5,20814
+12:55 PM,Cannon AFB/Clovis,84&deg;F,84,Partly Cloudy,15 MPH,15,SW,7.00 mi.,7,88101
+1:35 PM,NULL,52&deg;F,52,Fair,22 MPH,22,NULL,10.00 mi.,10,84057
+1:53 PM,Memphis International Airport,74&deg;F,74,Overcast,10 MPH,10,E,10.00 mi.,10,38117
+3:51 PM,Teterboro Airport,89&deg;F,89,Fair,20 MPH,20,NULL,10.00 mi.,10,7626
+2:54 PM,"Boston, Logan International Airport",61&deg;F,61,A Few Clouds,9 MPH,9,E,10.00 mi.,10,2101
+NULL,Moriarty,46&deg;F,46,Clear,Calm,NULL,NULL,25.00 mi.,25,87015
+1:53 PM,"Indianapolis, Eagle Creek Airpark",84&deg;F,84,Fair,7 MPH,7,W,10.00 mi.,10,46038
+3:51 PM,Charlotte/Douglas International Airport,86&deg;F,86,Mostly Cloudy,6 MPH,6,S,7.00 mi.,7,28277
+NULL,NULL,54&deg;F,54,Partly Cloudy,7 MPH,7,NW,10.00 mi.,10,99504
+3:53 PM,Greenville Downtown Airport,89&deg;F,89,Partly Cloudy,8 MPH,8,SE,8.00 mi.,8,29690
+3:53 PM,Morgantown Municipal-Hart Field,68&deg;F,68,Mostly Cloudy,9 MPH,9,S,10.00 mi.,10,26508
+NULL,NULL,55&deg;F,55,Mostly Cloudy,12 MPH,12,S,10.00 mi.,10,97338
+3:53 PM,"Trenton, Mercer County Airport",90&deg;F,90,Fair,8 MPH,8,S,8.00 mi.,8,18940
+3:51 PM,"New York, La Guardia Airport",84&deg;F,84,Partly Cloudy,17 MPH,17,S,9.00 mi.,9,10001
+3:55 PM,"Bad Axe, Huron County Memorial Airport",79&deg;F,79,Partly Cloudy,26 MPH,26,NULL,10.00 mi.,10,48445
+3:54 PM,"Lexington, Blue Grass Airport",89&deg;F,89,A Few Clouds,9 MPH,9,W,10.00 mi.,10,40391
+2:55 PM,Indianapolis International Airport,87&deg;F,87,Partly Cloudy,14 MPH,14,W,10.00 mi.,10,46260
+2:53 PM,Jonesboro Municipal Airport,91&deg;F,91,Partly Cloudy,14 MPH,14,SE,10.00 mi.,10,72401
+1:53 PM,Montrose Co. Arpt,79&deg;F,79,Fair and Breezy,29 MPH,29,NULL,10.00 mi.,10,81401
+NULL,Lihue Airport,84&deg;F,84,Partly Cloudy,18 MPH,18,NE,10.00 mi.,10,96744
+1:53 PM,Denver/Centennial,82&deg;F,82,Partly Cloudy,16 MPH,16,S,10.00 mi.,10,80433
+3:55 PM,Laconia Municipal Automatic Weather Observing,57&deg;F,57,Overcast,9 MPH,9,NE,9.00 mi.,9,3246
+2:53 PM,"Baton Rouge Metropolitan, Ryan Field",81&deg;F,81,Partly Cloudy,12 MPH,12,E,10.00 mi.,10,70785
+2:35 PM,Ankeny Regional Airport,86&deg;F,86,Fair,20 MPH,20,NULL,10.00 mi.,10,50021
+2:56 PM,Cox Dayton International Airport,85&deg;F,85,Partly Cloudy,17 MPH,17,NULL,10.00 mi.,10,45429
+3:51 PM,Teterboro Airport,89&deg;F,89,Fair,20 MPH,20,NULL,10.00 mi.,10,7020
+3:51 PM,"Huntington, Tri-State Airport",92&deg;F,92,A Few Clouds,8 MPH,8,SW,10.00 mi.,10,25625
+3:54 PM,Morrisville-Stowe State Airport,75&deg;F,75,Fair,8 MPH,8,SW,9.00 mi.,9,5672
+2:52 PM,"Milwaukee, General Mitchell International Airport",85&deg;F,85,A Few Clouds,28 MPH,28,NULL,10.00 mi.,10,53215
+2:55 PM,Menominee Automatic Weather Observing / Reporting,77&deg;F,77,A Few Clouds,24 MPH,24,NULL,7.00 mi.,7,54143
+3:51 PM,Portland International Jetport,50&deg;F,50,Fog/Mist,5 MPH,5,E,0.75 mi.,NULL,4021
+2:55 PM,Chicopee Falls / Westover Air Force Base,82&deg;F,82,A Few Clouds with Haze,17 MPH,17,NULL,6.00 mi.,6,1101
+3:54 PM,Greater Buffalo International Airport,78&deg;F,78,Partly Cloudy,29 MPH,29,NULL,10.00 mi.,10,14204
+3:54 PM,"Baltimore, Inner Harbor",90&deg;F,90,NA,NA,NULL,NULL,NULL,NULL,21230
+3:54 PM,Pottstown Limerick Airport,86&deg;F,86,Fair,6 MPH,6,S,8.00 mi.,8,19341
+3:51 PM,Newark International Airport,88&deg;F,88,Mostly Cloudy,17 MPH,17,NULL,10.00 mi.,10,7102

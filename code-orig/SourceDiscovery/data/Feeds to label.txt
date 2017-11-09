@@ -1,0 +1,11 @@
+http://ws.geonames.org/postalCodeSearch?placename=los+angeles&country=US
+http://ws.geonames.org/findNearbyPostalCodes?lat=33&lng=-118
+
+http://www.webservicex.net/uszip.asmx/GetInfoByState?USState=CA
+
+http://www.codebump.com/services/PlaceLookup.asmx/GetPlacesWithin?AuthenticationHeader=jHmoTUBgoLILuuhrR02%2BVVE/rPWJLZ/mIt54pih0DWAQcm%2BuNFzomO80NXKI3ta3zy%2BseCZpLrjrRfbgGyDfNU3Ko3LqQYf6&place=90292&state=&distance=100&placeTypeToFind=ZipCode
+http://www.codebump.com/services/ZipCodeLookup.asmx/GetZipCodesWithin?AuthenticationHeader=jHmoTUBgoLILuuhrR02%2BVVE/rPWJLZ/mIt54pih0DWAQcm%2BuNFzomO80NXKI3ta3zy%2BseCZpLrjrRfbgGyDfNU3Ko3LqQYf6&zip=90292&distance=10
+http://www.codebump.com/services/PlaceLookup.asmx/GetPlacesInside?AuthenticationHeader=jHmoTUBgoLILuuhrR02%2BVVE/rPWJLZ/mIt54pih0DWAQcm%2BuNFzomO80NXKI3ta3zy%2BseCZpLrjrRfbgGyDfNU3Ko3LqQYf6&place=Los+Angeles&state=CA
+http://www.codebump.com/services/PlaceLookup.asmx/GetPlaceDetails?AuthenticationHeader=jHmoTUBgoLILuuhrR02%2BVVE/rPWJLZ/mIt54pih0DWAQcm%2BuNFzomO80NXKI3ta3zy%2BseCZpLrjrRfbgGyDfNU3Ko3LqQYf6&place=Los+Angeles&state=CA
+
+jHmoTUBgoLILuuhrR02%2BVVE/rPWJLZ/mIt54pih0DWAQcm%2BuNFzomO80NXKI3ta3zy%2BseCZpLrjrRfbgGyDfNU3Ko3LqQYf6

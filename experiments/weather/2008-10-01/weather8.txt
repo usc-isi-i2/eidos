@@ -1,0 +1,43 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+type PR_ZipCode5Digit	        [varchar(200)]	{examples.zipcode5digit.val} # complete list: {uscensusbureau.zipnov99.zipcode}
+type CT_TemperatureF		[varchar(100)]  {numeric: -100.0, +200.0, 1%}
+type PR_Humidity		[varchar(100)]  {numeric: 0.0, 100.0, 1}
+type PR_WindDirection		[varchar(100)]  {examples.wind_direction.val}
+type CT_VisibilityFeet		[varchar(100)]
+type CT_VisibilityMiles		[varchar(100)]
+type CT_PressureInches  	[varchar(100)] {numeric: 26.0, 30.99, 0.02}
+type PR_Sky			[varchar(100)]
+type CT_PressureMb		[varchar(100)]	{numeric: 1016.0, 1025.9, 1.0}
+
+## Domain Relations: 
+
+relation weather(PR_ZipCode5Digit, CT_TemperatureF, PR_Humidity, PR_Sky, CT_PressureInches, PR_WindDirection, CT_VisibilityFeet)
+
+# relation convertDistMFt(distanceM,distanceFt)
+relation convertDistMFt(CT_VisibilityMiles,CT_VisibilityFeet)
+
+## Sources: 
+
+# function ConvertM2Ft($distM,distFt)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertM2Ft}
+
+#function ConvertFt2M($distFt,distM)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertFt2M}
+
+source weather3($PR_ZipCode5Digit, PR_Humidity, PR_Sky, CT_TemperatureF, CT_VisibilityFeet, CT_PressureInches, PR_WindDirection) :- weather(PR_ZipCode5Digit, CT_TemperatureF, PR_Humidity, PR_Sky, CT_PressureInches, PR_WindDirection, CT_VisibilityFeet).												{wrappers.DBService; http://www.wunderground.com/}
+
+
+## Target Predicate: 
+
+target weather8($PR_ZipCode5Digit, PR_Sky, PR_Humidity, CT_PressureInches, CT_TemperatureF, PR_WindDirection) 					{wrappers.DBService; http://www.timetemperature.com/}
+
+
+######################################################################
+
+# definition = weather8($PR_0,PR_1,_,_,_,_)	:- weather3(PR_0,_,PR_1,_,_,_,_).
+# unfolding = weather8($PR_0,PR_1,_,_,_,_)	:- weather(PR_0,_,_,PR_1,_,_,_).
+
+# Nothing matches
+SELECT w3.column527, w8.column68 FROM weather3 w3, weather8 w8 where w3.query = w8.pands;

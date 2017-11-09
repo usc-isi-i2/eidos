@@ -1,0 +1,17 @@
+# !/bin/csh -f 
+#
+setenv CLASS edu.isi.sourceDiscovery.Main
+setenv JAVA java16
+setenv CLASSPATH bin
+foreach f (`find lib -name "*.jar"`)
+  setenv CLASSPATH ${CLASSPATH}:$f
+end
+echo "Done"
+echo $CLASSPATH
+$JAVA -classpath $CLASSPATH -Xmx900m $CLASS config/DomainConfig-geospatial.xml GEOSPATIAL >&! geospatial.txt &
+$JAVA -classpath $CLASSPATH -Xmx900m $CLASS config/DomainConfig-geospatial-NO.xml GEOSPATIAL  >&! geospatial-no.txt &
+$JAVA -classpath $CLASSPATH -Xmx900m $CLASS config/DomainConfig-weather.xml WEATHER >&! weather.txt &
+$JAVA -classpath $CLASSPATH -Xmx900m $CLASS config/DomainConfig-weather-NO.xml WEATHER >&! weather-no.txt &
+$JAVA -classpath $CLASSPATH -Xmx900m $CLASS config/DomainConfig-directory.xml DIRECTORY >&! directory.txt &
+$JAVA -classpath $CLASSPATH -Xmx900m $CLASS config/DomainConfig-directory-NO.xml DIRECTORY >&! directory-no.txt &
+

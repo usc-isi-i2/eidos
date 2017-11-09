@@ -1,0 +1,1605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+		<head>
+			<title>Track Flight Status for (FL) AirTran Airways 379</title>
+			<meta name="keywords" content="flight status, flight tracker, FL 379, flight alert'>
+			<meta name="description" content="Track flight status, flight departures, flight arrivals, airport delays and other flight and airport information in real time">
+	
+					
+	<script type="text/javascript">
+		var prefix = "ROS_";
+	</script>
+		<link rel='stylesheet' type='text/css' href='/go/NewCommon/MainStyle.css'>
+		<link rel='stylesheet' type='text/css' href='/go/NewCommon/layoutstyle.css'>
+		<link rel='stylesheet' type='text/css' href='../Widgets/Widget.css'>		
+		<script type='text/javascript' src='/go/NewCommon/lib/x/x_all_non_drag.js'></script>
+		<script type='text/javascript' src="/go/NewCommon/DateFunctions.js"></script>
+		<script type='text/javascript' src='/go/NewCommon/JavascriptFunctions.js'></script>
+		<script type="text/javascript">
+			var onloadListeners = new Array();
+			addOurOnLoadListeners = function(listener)
+			{
+				onloadListeners[onloadListeners.length] = listener;
+			}
+			
+			ourLoad = function()
+			{
+				for (var i = 0; i < onloadListeners.length; i++)
+				{
+					var func = onloadListeners[i];
+					func.call();
+				}
+			}
+			doOurLoad = function()
+			{
+				ourLoad();
+			}
+
+		</script>
+		<script type='text/javascript' src='/go/NewCommon/layout.js'></script>
+		
+			<link rel='stylesheet' type='text/css' href='../NewCommon/TableListing.css'>			
+			
+			<script src="../NewCommon/lib/yui/build/yahoo/yahoo-min.js"></script>
+			<script src="../NewCommon/lib/yui/build/dom/dom-min.js"></script>
+			<script src="../NewCommon/lib/yui/build/event/event-min.js"></script>
+			<script type="text/javascript" src="../NewCommon/lib/yui/build/calendar/calendar-min.js"></script>
+			<link type="text/css" rel="stylesheet" href="../NewCommon/lib/yui/build/calendar/assets/calendar.css">
+			<style>
+div.popupCalendar
+{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: absolute;   
+	z-index: 101;
+	overflow: auto;
+	color: black;
+ 	font-family: Arial, Verdana, sans-serif;
+	font-size: 9pt;
+  background: #FFFFFF;
+}
+
+div.popupCalendar div 
+{
+	cursor: default;
+	padding: 0px 0px;
+}
+
+iframe.popupCalendar 
+{
+	position: absolute;   
+	z-index: 100;
+}
+</style>
+
+<script language="JavaScript">
+// container
+// text field,
+// button
+// date format to use
+function PopupCalendar(containerId, fieldId, buttonId, dateFormat, minDate, maxDate, popUp) 
+{
+	var me = 
+	{
+		//Constructor
+		init : function(containerId, fieldId, buttonId) 
+		{
+			this.popUp = popUp;
+			this.ignoreClick = false;
+			this.textbox = YAHOO.util.Dom.get(fieldId);
+			this.buttonId = buttonId;
+			this.dateFormat = dateFormat;
+			if (null == this.dateFormat)
+				dateFormat = "MM/dd/yyyy";
+
+			this.container = document.createElement("div");
+			this.container.style.visibility = "hidden";	
+//			if (xIE4Up)
+//				this.container.style.width = this.textbox.offsetWidth;
+			this.container.id = containerId;
+			this.container.className = "popupCalendar";
+			this.container.style.left = this.getLeft() + "px";
+			this.container.style.top = (this.getTop() + this.textbox.offsetHeight) + "px";
+
+			this.iframe = null;
+			if (xIE4Up)
+			{
+				this.iframe = document.createElement("iframe");
+//				this.iframe.src = "/go/NewCommon/blank.html";		
+				this.iframe.className = "popupCalendar";
+				this.iframe.style.visibility = this.container.style.visibility;		
+				this.iframe.style.width = this.container.style.width;		
+				this.iframe.style.left = this.container.style.left;		
+				this.iframe.style.top = this.container.style.top;
+				document.body.appendChild(this.iframe);		
+			}
+
+			document.body.appendChild(this.container);
+
+			this.calendar = new YAHOO.widget.Calendar(this.id, this.container.id,
+																								{mindate: minDate, 
+																								 maxdate: maxDate,
+																								 hide_blank_weeks: true}
+																								);
+			var temp = this;
+			this.calendar.selectEvent.subscribe(temp.onSelect , this.calendar, true);  
+//			this.calendar.onSelect = function() {temp.onSelect( )};
+
+			this.calendar.render();
+
+//			YAHOO.util.Event.addListener(this.textbox.id, 'focus', function() {temp.showCal();});
+			YAHOO.util.Event.addListener(this.textbox.id, 'blur', function() {temp.hideCal();});
+			YAHOO.util.Event.addListener(this.buttonId, 'focus', function() {temp.showCal();});
+			YAHOO.util.Event.addListener(this.buttonId, 'blur', function() {temp.hideCal();});
+			YAHOO.util.Event.addListener(this.container.id , 'mouseover', function() {temp.overCal();});
+			YAHOO.util.Event.addListener(this.container.id, 'mouseout', function() {temp.outCal();});
+			YAHOO.util.Event.addListener(document.body, 'click', temp.bodyClick);
+		},
+
+		showCal : function() 
+		{
+			me.ignoreClick = true;
+			if (me.textbox.value != null && me.textbox.value.length > 0) 
+			{
+				me.selectingValue = true;
+				var dateValue = me.textbox.value;
+				var parsedDate = getDateFromFormat(dateValue, dateFormat);
+				if (null != parsedDate)
+				{
+					me.calendar.select(formatDate(parsedDate, 'MM/dd/yyyy'));
+					var selectedDates = me.calendar.getSelectedDates();   
+					if (selectedDates.length > 0) 
+					{   
+						var firstDate = selectedDates[0];   
+						me.calendar.cfg.setProperty("pagedate", (firstDate.getMonth()+1) + "/" + firstDate.getFullYear());   
+					} 
+				}
+				me.selectingValue = false;
+			} 
+			
+			me.calendar.render();
+
+			me.container.style.left = me.getLeft() + "px";
+
+			if (me.popUp)
+				me.container.style.top = (me.getTop() - me.container.offsetHeight) + "px";
+			else
+				me.container.style.top = (me.getTop() + me.textbox.offsetHeight) + "px";
+			me.container.style.visibility = "visible";
+					
+			if (null != me.iframe)
+			{
+				me.iframe.style.width = me.container.style.width;
+				me.iframe.style.left = me.container.style.left;
+				me.iframe.style.top = me.container.style.top;
+				me.iframe.style.visibility = me.container.style.visibility;
+				me.iframe.style.width = me.container.offsetWidth;
+				me.iframe.style.height = me.container.offsetHeight;
+			}
+		},
+
+		overCal : function() 
+		{
+			me.over_cal = true;
+			me.textbox.focus( );
+		},
+
+		outCal : function() 
+		{
+			me.over_cal = false;
+		},
+
+		onSelect : function(type, args, obj) 
+		{
+			if (me.selectingValue)
+				return;
+			var selected = args[0];   
+			var selDate = this.toDate(selected[0]); 
+//			var selDate = this.calendar.getSelectedDates()[0];
+			me.textbox.value = formatDate(selDate, dateFormat);
+			me.over_cal = false;
+			me.hideCal( );
+		},
+
+		hideCal : function() 
+		{
+			if (!me.over_cal) 
+			{
+				me.container.style.visibility = "hidden";;
+				if (null != me.iframe)
+					me.iframe.style.visibility = "hidden";;
+			}
+		},
+        
+		getLeft : function ()
+		{
+			var oNode = me.textbox;
+			var iLeft = 0;
+				
+			while ((null != oNode) && (oNode.tagName != "BODY"))
+			{
+				iLeft += oNode.offsetLeft;
+				oNode = oNode.offsetParent;
+			}
+				
+			return iLeft;
+		},
+
+		getTop : function ()
+		{
+			var oNode = me.textbox;
+			var iTop = 0;
+				
+			while((null != oNode) && (oNode.tagName != "BODY"))
+			{
+				iTop += oNode.offsetTop;
+				oNode = oNode.offsetParent;
+			}
+				
+			return iTop;
+		},
+		
+		bodyClick : function ()
+		{
+			if (me.ignoreClick)
+				me.ignoreClick = false;
+			else if (me.container.style.visibility == "visible")
+			{
+				me.hideCal( );
+			}
+		}
+	};
+
+	me.init(containerId, fieldId, buttonId, dateFormat);
+	return me;
+}
+</script>
+			<script language="JavaScript" type="text/javascript" src="../NewCommon/DateControl.js"></script>
+			
+			
+			
+			<script type="text/javascript">
+				prefix = "FlightStatus_";
+			</script>
+			
+
+
+
+<script type='text/javascript' src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+<script type='text/javascript'>
+  GS_googleAddAdSenseService("ca-pub-8281740535083873");
+  GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+	var googleAdTest = "off";
+	var userCountry = "US";
+	var flightStatsURL = "www.flightstats.com";
+	var googleKeyWords = "ATL, Hartsfield-Jackson Atlanta International Airport, Atlanta, frequent flyer, business travel, travel";
+	var altUrl = "http://" + flightStatsURL + "/go/ReplacementAds/replaceAd.do?adServer=Google&countryCode=" + userCountry; 
+	GA_googleAddAdSensePageAttr("google_color_link", "1833FF");
+	GA_googleAddAdSensePageAttr("google_ad_region", "test");
+
+	
+		    GA_googleAddAttr("airport", "ATL");
+	
+		    GA_googleAddAttr("airCountry", "US");
+	
+		    GA_googleAddAttr("depCountry", "US");
+	
+		    GA_googleAddAttr("arrCountry", "US");
+	
+		    GA_googleAddAttr("depAirport", "PHL");
+	
+		    GA_googleAddAttr("arrAirport", "ATL");
+				
+				var top728x90GoogleAdChannel = "5788149013+9908792090+8285193773+3610317267";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "top_728x90");
+				GA_googleAddAdSenseSlotAttr(prefix + "top_728x90", "google_ad_channel", top728x90GoogleAdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "top_728x90", "google_alternate_ad_url", altUrl + "&adSize=728x90");
+				if (googleKeyWords && (googleKeyWords != ''))
+				{
+					GA_googleAddAdSenseSlotAttr(prefix + "top_728x90", "google_kw", googleKeyWords);
+					GA_googleAddAdSenseSlotAttr(prefix + "top_728x90", "google_kw_type", "broad");
+				}
+				
+				var topRight300x250AdChannel = "5788149013+9908792090+0874867488";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "top_right_300x250");
+				GA_googleAddAdSenseSlotAttr(prefix + "top_right_300x250", "google_ad_channel", topRight300x250AdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "top_right_300x250", "google_alternate_ad_url", altUrl + "&adSize=300x250");
+				if (googleKeyWords && (googleKeyWords != ''))
+				{
+					GA_googleAddAdSenseSlotAttr(prefix + "top_right_300x250", "google_kw", googleKeyWords);
+					GA_googleAddAdSenseSlotAttr(prefix + "top_right_300x250", "google_kw_type", "broad");
+				}
+				
+				var second300x250AdChannel = "5788149013+9908792090+8730803874";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "second_300x250");
+				GA_googleAddAdSenseSlotAttr(prefix + "second_300x250", "google_ad_channel", second300x250AdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "second_300x250", "google_alternate_ad_url", altUrl + "&adSize=300x250");
+				
+				var topRight160x600GoogleAdChannel = "5788149013+9908792090+7022709619";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "top_right_160x600");
+				GA_googleAddAdSenseSlotAttr(prefix + "top_right_160x600", "google_ad_channel", topRight160x600GoogleAdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "top_right_160x600", "google_alternate_ad_url", altUrl + "&adSize=160x600");
+				if (googleKeyWords && (googleKeyWords != ''))
+				{
+					GA_googleAddAdSenseSlotAttr(prefix + "top_right_160x600", "google_kw", googleKeyWords);
+					GA_googleAddAdSenseSlotAttr(prefix + "top_right_160x600", "google_kw_type", "broad");
+				}
+				
+				var secondRight160x600AdChannel = "5788149013+9908792090+7190993123";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "second_right_160x600");
+				GA_googleAddAdSenseSlotAttr(prefix + "second_right_160x600", "google_ad_channel",secondRight160x600AdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "second_right_160x600","google_alternate_ad_url", altUrl + "&adSize=160x600");
+				
+				var bottom728x90AdChannel = "5788149013+9908792090+6529040748";
+				GA_googleAddSlot("ca-pub-8281740535083873", prefix + "bottom_728x90");
+				GA_googleAddAdSenseSlotAttr(prefix + "bottom_728x90", "google_ad_channel", bottom728x90AdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "bottom_728x90",  "google_alternate_ad_url", altUrl + "&adSize=728x90");
+				
+				var top468x60AdChannel = "5788149013+9908792090+3371409277";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "top_468x60");
+				GA_googleAddAdSenseSlotAttr(prefix + "top_468x60", "google_ad_channel", top468x60AdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "top_468x60", "google_alternate_ad_url", altUrl + "&adSize=468x60");
+			
+</script>
+<script type='text/javascript'>
+  GA_googleFetchAds();
+</script>
+		</head>
+		<body>
+			<div id="subheaderBlock">
+				<div id="subheaderImage"></div>
+				<div id="subheaderLabel">
+					<h1>
+						Flight Status for FL 379
+					</h1>
+				</div>
+			</div>
+
+			<div id="resultsBlock">
+				<hr class="grayHR">
+				<table>
+					<tr>
+						<td width="674" valign="top" >
+							<div class="uiComponent674">
+								<h2>
+									FL 379 Flight Status
+								</h2>
+								<div class="uiComponentBody">
+									<table>
+										<tr>
+											<td valign="top">
+												<table width="450">
+													<tr>
+														<td width="100" class="label">
+															Flight:
+														</td>
+														<td width="10">&nbsp;</td>
+														<td width="340">
+															(<a href="/go/Airline/airlineDetails.do?airlineCode=FL">FL</a>)
+															AirTran Airways
+															379
+														</td>
+													</tr>
+													
+													<tr>
+														<td class="label">
+															Date:
+														</td>
+														<td>&nbsp;</td>
+														<td>
+															
+																Jan 09, 2009													
+															
+														</td>
+													</tr>
+													<tr>
+														<td class="label">
+															Status:
+														</td>
+														<td>&nbsp;</td>
+														<td>
+															<b>
+																Scheduled 
+																
+																<span class="iconDelayLessThan15">&nbsp;</span> On-time
+															</b>
+														</td>
+													</tr>
+													
+														<tr>
+															<td>
+																&nbsp;
+															</td>
+															<td>&nbsp;</td>
+															<td>
+																Last Updated 138 minutes ago
+															</td>
+														</tr>
+													
+													<tr>
+														<td colspan="4">
+														&nbsp;
+														</td>
+													</tr>
+													<tr>
+														<td colspan="4">
+														See below for <a href="#flightInformation">departure and arrival details</a> including Flight Notes.
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td width="184" valign="top">
+												<table>
+													<tr>
+														<td valign="middle">
+															<a href="/go/FlightMonitor/flightRuleCreate.do?airline=FL&flightNumber=379&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_lg_off.gif"/></a>
+														</td>
+														<td width="10">&nbsp;</td>
+														<td valign="middle">
+															<a href="/go/FlightMonitor/flightRuleCreate.do?airline=FL&flightNumber=379&departureDate=2009-01-09">Set Flight Alert</a>
+														</td>
+													</tr>
+													
+														<tr>
+															<td valign="middle">
+																<a href="/go/FlightTracker/flightTracker.do?id=148991785&airlineCode=FL&flightNumber=379"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_lg_off.gif"/></a>
+															</td>
+															<td>&nbsp;</td>
+															<td valign="middle">
+																<a href="/go/FlightTracker/flightTracker.do?id=148991785&airlineCode=FL&flightNumber=379">Track Flight on Map</a>
+															</td>
+														</tr>
+													
+													<tr>
+														<td colspan="3">
+															On the Go? Checkout
+														</td>
+													</tr>
+													<tr>
+														<td colspan="3">
+															<a href="/Downloads/mobile.do">FlightStats Mobile!</a>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+
+															<div class="adArea674x60">
+									<table width="100%"
+										<tr>
+											<td width="468">
+														<script language="JavaScript">
+			GA_googleFillSlot(prefix + "top_468x60");
+		</script>										
+											</td>
+											<td width="10">
+											</td>
+											<td width="196">
+																		
+														<a href="/go/Downloads/mobile.do"><img src="../images/PageSponsorship/Ad_fs_196x60_mobile.gif" /></td>
+															
+												
+												
+																
+											</td>
+										</tr>
+									</table>
+								</div>
+												
+
+							<table width="100%">
+								<tr>
+									<td width="50%" align="left">
+										
+										
+											<div class="uiComponent332x250">
+												<h2>
+													PHL Traffic Conditions
+												</h2>
+												<div class="uiComponentBody" style="padding:0px; max-width:330px; height:232px; max-height:231px;">
+													<script src="http://maps.google.com/maps?file=api&v=2.x&key=ABQIAAAA31afTsgdPhZvd_zN_hEjVRRphnSQZ0svqHhcf3nYItWIS19fbxSzoLpLn5j4dydwaZn5tulvd-JbpQ" type="text/javascript"></script>
+
+													<script language="JavaScript">
+														var airportLatitude = 999.0;
+														var airportLongitude = 999.0;
+														var zoom = 11;
+														var map = null;
+														var pngs_to_correct = ['map_pan_control', 'map_zoom_in', 'map_zoom_out'];
+								
+														
+															
+																airportLatitude = 39.871666;
+															
+														
+														
+															
+																airportLongitude = -75.242226;
+															
+														
+
+														function createIcon(url, width, height)
+														{
+															var icon = new GIcon();
+															icon.image = url;
+															icon.iconSize = new GSize(width, height);
+															icon.iconAnchor = new GPoint(width / 2, height / 2);
+															icon.infoWindowAnchor = new GPoint(width / 2, height / 2);
+															return icon;
+														}
+													
+														function setupGoogleMap()
+														{
+													    //<![CDATA[
+													    if (GBrowserIsCompatible())
+													    {
+																if (999.0 == airportLatitude)
+																	return;
+													      map = new GMap2(document.getElementById("map"));
+													      var trafficInfo = new GTrafficOverlay();
+																map.addControl(new GSmallMapControl());
+													      map.setCenter(new GLatLng(airportLatitude, airportLongitude), zoom);
+													      map.addOverlay(trafficInfo);
+										
+														  	if ((airportLatitude != 999.0) || (airportLongitude != 999.0))
+														  	{
+														      var iconAirport = createIcon("../images/icon_airport_depart.png", 36, 36);
+														      var airportGPoint = new GPoint(airportLongitude, airportLatitude);
+														     	var airportMarker = new GMarker(airportGPoint, iconAirport);
+														     	map.addOverlay(airportMarker);
+													      }
+													    }
+										
+													    //]]>
+													  }
+														xAddEventListener(window, 'load', setupGoogleMap, false);
+														xAddEventListener(window, 'unLoad', GUnload, false);
+													</script>
+													
+													<div id="map" style="width: 330px; height: 190px"></div>
+													<div style="padding:0px;position:relative;" class="legendTraffic">
+														<div class="legendTrafficLink">
+															<a href="/go/Airport/airportTrafficConditions.do?airportCode=PHL">View Detailed Traffic Report</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										
+									</td>
+									<td width="50%" align="right" valign="top">
+												<script language="JavaScript">
+			GA_googleFillSlot(prefix + "second_300x250");
+		</script>
+									</td>
+								</tr>
+							</table>
+							<br/>
+
+							<a name="flightInformation"></a>
+														<a name="flightInformation"></a>
+							<div class="uiComponent674">
+								<h2>
+									FL 379 Flight Information
+								</h2>
+								<div class="uiComponentBody">
+									<table width="100%">
+										<tr>
+											<td style="width: 100px;" class="label">
+												Route:
+											</td>
+											<td style="width: 10px;">&nbsp;</td>
+											<td style="width: 500px;">
+												From (<a href="/go/Airport/airportDetails.do?airportCode=PHL">PHL</a>) 
+												Philadelphia,
+												
+													PA,
+												
+												<a href="/go/TravelPlanning/countryInformation.do?countryCode=US">US</a>
+												to 
+												(<a href="/go/Airport/airportDetails.do?airportCode=ATL">ATL</a>)
+												Atlanta,
+												
+													GA,
+												
+												<a href="/go/TravelPlanning/countryInformation.do?countryCode=US">US</a>
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										
+											<tr>
+												<td class="label">
+													Duration:
+												</td>
+												<td>&nbsp;</td>
+												<td>
+													
+														2h 26m
+													
+													
+												</td>
+												<td>&nbsp;</td>
+											</tr>
+										
+										
+											<tr>
+												<td class="label">
+													Equipment:
+												</td>
+												<td>&nbsp;</td>
+												<td>
+													Boeing 717-200 (Scheduled)
+												</td>
+												<td>
+													&nbsp;
+												</td>
+											</tr>
+										
+										
+										<tr>
+											<td class="label">
+												On-Time Rating:
+											</td>
+											<td>&nbsp;</td>
+											<td valign="middle">
+												
+													<img src="/go/images/RatingStars/16Point/WhiteBkgd/rating_star_00.gif"/> 
+													0.1 of 5
+													<a href="/go/FlightRating/flightRatingByFlight.do?airline=FL&flightNumber=379&departureAirportCode=PHL&arrivalAirportCode=ATL">What this?</a>
+												
+												
+											</td>
+											<td>&nbsp;</td>
+										</tr>
+										
+										
+										
+										
+									</table>
+									
+									<br/>
+									To see all the data we have for this flight <a href="/go/FlightStatus/flightStatusByFlightExtendedDetails.do?id=148991785&airlineCode=FL&flightNumber=379">view Extended Details</a>
+								</div>
+							</div>
+
+
+							<br/>
+														<div class="uiComponent674">
+								<h2>
+									Departure
+								</h2>
+								<div class="uiComponentBody">
+									<table>
+										<tr>
+											<td style="width: 100px;" class="label">
+												Airport:
+											</td>
+											<td style="width: 10px;">&nbsp;</td>
+											<td style="width: 340px;">
+												(<a href="/go/Airport/airportDetails.do?airportCode=PHL">PHL</a>)
+												Philadelphia International Airport<br />
+											</td>
+										</tr>
+										<tr>
+											<td class="label">
+												City:
+											</td>
+											<td>&nbsp;</td>
+											<td>
+												Philadelphia,
+												
+													PA,
+												
+												<a href="/go/TravelPlanning/countryInformation.do?countryCode=US">US</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="label">
+												Scheduled:
+											</td>
+											<td>&nbsp;</td>
+											<td>
+												
+													Fri - Jan 09, 2009 5:40 PM																								
+													
+												
+											</td>
+										</tr>
+										
+											<tr>
+												
+												
+												
+													<td class="label">
+														Estimated:
+													</td>
+													<td>&nbsp;</td>
+													<td>
+														Fri - Jan 09, 2009 5:49 PM														
+													</td>
+												
+												
+											</tr>
+										
+										
+											
+												<tr>
+													<td>
+														&nbsp;
+													</td>
+													<td>&nbsp;</td>
+													<td>
+														
+															
+																Estimated to depart gate 9 min later than scheduled
+															
+															
+														
+														
+													</td>
+												</tr>
+											
+										
+										
+											<tr>
+												<td class="label">
+													Gate:
+												</td>
+												<td>&nbsp;</td>
+												<td>
+													D14
+													
+														(Terminal D)
+													
+												</td>
+											</tr>
+										
+										
+										<tr>
+											<td class="label">Local Time:</td>
+											<td>&nbsp;</td>
+											<td>
+												Fri - Jan 09, 2009 4:12 PM
+												
+													(-5:00 hours from GMT/UTC)
+												
+											</td>
+										</tr>
+										
+											<tr>
+												<td class="label" valign="top">
+													Weather:
+												</td>
+												<td>&nbsp;</td>
+												<td>
+													<table>
+														<tr>
+															
+																
+																	<td width="40">
+																		<img src="../images/Weather/partly_cloudy_33by35.jpg"/>
+																	</td>
+																
+															
+															<td>
+																35 &deg;F (1 &deg;C)<br/>
+																<a href="/go/Airport/weather.do?airportCode=PHL">Details</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										
+									</table>
+									
+								</div>
+							</div>
+
+
+							<br/>
+														<div class="uiComponent674">
+								<h2>
+									Arrival
+								</h2>
+								<div class="uiComponentBody">
+									<table>
+										<tr>
+											<td style="width:100px;" class="label">
+												Airport:
+											</td>
+											<td style="width:10px;">&nbsp;</td>
+											<td style="width:340px;">
+												(<a href="/go/Airport/airportDetails.do?airportCode=ATL">ATL</a>)
+												Hartsfield-Jackson Atlanta International Airport<br />
+											</td>
+										</tr>
+										<tr>
+											<td class="label">
+												City:
+											</td>
+											<td>&nbsp;</td>
+											<td>
+												Atlanta,
+												
+													GA,
+												
+												<a href="/go/TravelPlanning/countryInformation.do?countryCode=US">US</a>
+											</td>
+										</tr>
+										<tr>
+											<td class="label">
+												Scheduled:
+											</td>
+											<td>&nbsp;</td>
+											<td>
+												
+													Fri - Jan 09, 2009 8:06 PM
+													
+												
+											</td>
+										</tr>
+										
+											<tr>
+												
+												
+												
+													<td class="label">
+														Estimated:
+													</td>
+													<td>&nbsp;</td>
+													<td>
+														Fri - Jan 09, 2009 8:15 PM
+													</td>
+												
+												
+											</tr>
+										
+										
+										
+											
+												
+													<tr>
+														<td>
+															&nbsp;
+														</td>
+														<td>&nbsp;</td>
+														<td>
+															
+																
+																	Estimated to arrive at gate 9 min later than scheduled
+																
+																
+																
+															
+															
+														</td>
+													</tr>
+												
+											
+										
+										
+											<tr>
+												<td class="label">
+													Gate:
+												</td>
+												<td>&nbsp;</td>
+												<td>
+													C12
+													
+														(Terminal N)
+													
+												</td>
+											</tr>
+										
+										
+										<tr>
+											<td class="label">Local Time:</td>
+											<td>&nbsp;</td>
+											<td>
+												Fri - Jan 09, 2009 4:12 PM
+												
+													(-5:00 hours from GMT/UTC)
+												
+											</td>
+										</tr>
+										
+											<tr>
+												<td class="label" valign="top">
+													Weather:
+												</td>
+												<td>&nbsp;</td>
+												<td>
+													<table>
+														<tr>
+															
+																
+																	<td width="40">
+																		<img src="../images/Weather/clear_33by35.jpg"/>
+																	</td>
+																
+															
+															<td>
+																57 &deg;F (13 &deg;C)<br/>
+																<a href="/go/Airport/weather.do?airportCode=ATL">Details</a>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										
+									</table>
+									
+								</div>
+							</div>
+
+
+							<br/>
+							<div class="uiComponent674">
+								<h2>
+									Travel Checklist
+								</h2>
+								<div class="uiComponentBody">
+									
+										
+									
+									
+										<p>
+											<strong>Pack for the Weather</strong> - Check the <a href="/go/Airport/weather.do?airportCode=ATL"</a>Weather Forecast</a> for Atlanta.
+										</p>
+									
+									<p>
+										<strong>Stay Informed on the Road</strong> - Sign up for <a href="/go/FlightMonitor/flightRuleCreate.do?airline=FL&flightNumber=379&departureDate=2009-01-09">Flight Alerts</a> to be sent straight to your mobile phone. 
+										Or check the latest information using <a href="http://mobile.flightstats.com">FlightStats Mobile</a>.
+									</p>
+									
+										<p>
+											<strong>Traffic Conditions</strong> - Before you leave, see a <a href="/go/Airport/airportTrafficConditions.do?airportCode=PHL">Detailed Traffic Report</a>.
+										</p>
+									
+									
+										<p>
+											<strong>Airport Parking</strong> - Why chance it, <a href="/go/Airport/airportParking.do?airportCode=PHL">Reserve Parking</a> now.
+										</p>
+									
+									
+										<p>
+											<strong>Security Wait Times</strong> - Check the <a href="/go/Airport/securityWaitTimes.do?airportCode=PHL"</a>Average Security Wait Times</a> for PHL.
+										</p>
+									
+								</div>
+							</div>
+						</td>
+						<td width="10">&nbsp;</td>
+						<td width="300" valign="top" align="center">
+									<script language="JavaScript">
+			GA_googleFillSlot(prefix + "top_right_160x600");
+		</script>
+							<br/>
+							<br/>
+									<script language="JavaScript">
+			
+					GA_googleFillSlot(prefix + "second_right_160x600");
+			
+		</script>
+						</td>
+					</tr>
+				</table>
+				<br/>
+						<script language="JavaScript">
+			GA_googleFillSlot(prefix + "bottom_728x90");
+		</script>										
+			</div>
+
+						<div id="applicationBlock">
+				<div id="appInputBlock">
+							
+
+		<script type="text/javascript">
+			var flightStatusWidgetTabPanelGroup1;
+			var fsDefaultDateFormat = "yyyy-MM-dd";
+			var fsByFlightDepartureDateControl = null;
+			var fsByFlightDepartureDateCalendar = null;
+			
+			flightStatusWidgetLoad = function()
+			{
+			  var fsTextbox1 = new AutoSuggestControl(document.getElementById("fsAirline"), new RemoteAirlineSuggestions(), null, null, 2, 20, 233, document.getElementById("fsTabPanelGroup"), 10);
+			  var fsTextbox2 = new AutoSuggestControl(document.getElementById("fsDepartureAirport"), new RemoteAirportSuggestions(), null, null, 2, 20, 233, document.getElementById("fsTabPanelGroup"), 10);
+			  var fsTextbox3 = new AutoSuggestControl(document.getElementById("fsArrivalAirport"), new RemoteAirportSuggestions(), null, null, 2, 60, 233, document.getElementById("fsTabPanelGroup"), 10);
+			  var fsTextbox4 = new AutoSuggestControl(document.getElementById("fsAirport"), new RemoteAirportSuggestions(), null, null, 2, 18, 233, document.getElementById("fsTabPanelGroup"), 10);
+			  var fsTextbox5 = new AutoSuggestControl(document.getElementById("fsAirportAirline"), new RemoteAirlineSuggestions(), null, null, 2, 90, 233, document.getElementById("fsTabPanelGroup"), 10);
+
+				fsByFlightDepartureDateControl = new DateControl(document.getElementById("fsByFlightDepartureDateTextField"), document.getElementById("fsByFlight_dateError"), fsDefaultDateFormat, getDateFormats(), "Invalid date");
+				if (null == fsByFlightDepartureDateControl.getDate())
+					fsByFlightDepartureDateControl.setDate(new Date());
+
+				var maxDate = new Date();
+				maxDate.setDate(maxDate.getDate() + 2);
+				var maxDateString = formatDate(maxDate, 'MM/dd/yyyy');
+			
+					fsByFlightDepartureDateCalendar = new PopupCalendar("fsByFlightDepartureDateCalContainerId", "fsByFlightDepartureDateTextField", null, fsDefaultDateFormat, "1/1/2005", maxDateString, false);
+
+				//                                     xTabPanelGroup(w, h, th, tgId, tpgId, clsTP, clsTG, clsTD, clsTS, posTabs, tabBorderHeight, panelBorderWidth, selectedTab)
+			  flightStatusWidgetTabPanelGroup1 = new xTabPanelGroup(244, 153, 22, "fsTabGroup", "fsTabPanelGroup", "widgetTabPanel", "widgetTabGroup", "widgetTabDefault", "widgetTabSelected", false, 0, 0, 0, false);
+
+//				form = xGetElementById("widgetFlightStatusByFlightForm");
+//				setDefaultDates(form.flightQueryDate, 1, 1, "NNN-dd-yyyy");
+				form = xGetElementById("widgetFlightStatusByRouteForm");
+				setDefaultDates(form.routeQueryDate, 1, 1, "NNN-dd-yyyy");
+				form = xGetElementById("widgetFlightStatusByAirportForm");
+				setDefaultDates(form.airportQueryDate, 1, 1, "NNN-dd-yyyy");
+			}
+
+			flightStatusWidgetUnLoad = function()
+			{
+			  if (flightStatusWidgetTabPanelGroup1)
+			  	flightStatusWidgetTabPanelGroup1.onUnload();
+			}
+
+			// We need to load here instead of after the widget load because of some weird crash IE was having with the Yahoo calendar
+			addOurOnLoadListeners(flightStatusWidgetLoad);
+			xAddEventListener(window, "unload", flightStatusWidgetUnLoad, false);
+		</script>
+
+		<div class="widget">
+			<div class="widgetIcon" style="background-position: -112px -48px;"></div>
+			<div class="widgetLabel">Flight Status</div>
+			<a href="http://www.flightstats.com" target="_self"><div class="widgetPoweredBy"></div></a>
+			<div id="fsTabGroup" class="widgetTabGroup">
+				<table height="25" border=0 cellpadding=0 cellspacing=0  bgcolor="#EDECEA">
+					<tr>
+						<td width="63" class="widgetTabDefault">By Flight</td>
+				    <td width="63" class="widgetTabDefault">By Airport</td>
+						<td width="63" class="widgetTabDefault">By Route</td>
+				  </tr>
+				</table>
+			</div>
+			<div id="fsTabPanelGroup" class="widgetTabPanelGroup">
+			  <div id="tpg11" class="widgetTabPanel">
+			  	<form name="flightStatusByFlightForm" method="get" action="/go/FlightStatus/flightStatusByFlight.do;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" id="widgetFlightStatusByFlightForm" target="_self">
+						
+						<div class="fsByFlight_airlineLabel">
+							Airline
+						</div>
+						
+						<div class="fsByFlight_airline">
+							
+								<input type="text" name="airline" value="(FL) AirTran Airways" id="fsAirline" style="width:229px;" class="content">
+							
+							
+						</div>
+		        <div class="fsByFlight_flightLabel">
+		        	Flight
+		        </div>
+						
+						
+		        <div class="fsByFlight_flightNumber">
+		        	<input type="text" name="flightNumber" maxlength="4" value="379" onkeypress="return submitenter(this,event)" style="width:40px;" class="content">
+		        </div>
+		        <div class="fsByFlight_dateLabel">
+				    	Departure Date
+				    </div>
+				    
+		        <div class="fsByFlight_date">
+							<input type="text" name="departureDate" maxlength="11" value="2009-01-09" onkeypress="return submitenter(this,event)" id="fsByFlightDepartureDateTextField" style="width:133px;" class="content" title="yyyy-MM-dd">&nbsp;<a href="javascript: void (0);"  onclick="fsByFlightDepartureDateCalendar.showCal()"><img src="/go/NewCommon/Ads/AirportParkingReservations/img/ico_calendar.gif" title="Click to Select Date" width="16" height="13" border="0" alt=""></a>
+						</div>
+						
+					  <div class="submit">
+					  	<input type="image" name="" src="../Widgets/images/Btn_en_widget_search_off.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;" title="Search Flights">
+					  </div>
+					</form>
+			  </div>
+
+			  <div id="tpg12" class="widgetTabPanel">
+			    <form name="flightStatusByAirportForm" method="get" action="/go/FlightStatus/flightStatusByAirport.do;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" id="widgetFlightStatusByAirportForm" target="_self">
+						
+						<div class="fsByAirport_airportLabel">
+							Airport
+						</div>
+						
+						<div class="fsByAirport_airport">
+							
+							
+								<input type="text" name="airport" value="Enter an airport name or code" id="fsAirport" style="width:229px;" class="content">
+							
+						</div>
+		        <div class="fsByAirport_dateLabel">
+				    	Date
+				    </div>
+		        <div class="fsByAirport_date">
+							
+							
+								<select name="airportQueryDate" size="1" id="airportQueryDate" style="width:100px;" class="content"><option value="2006-01-08">Tue January 8, 2006</option>
+							    <option value="2006-01-09">Wed January 9, 2006</option>
+							    <option value="2006-01-10">Thu January 10, 2006</option></select>
+							
+						</div>
+		        <div class="fsByAirport_timePeriodLabel">
+				    	Time Period
+				    </div>
+				    <div class="fsByAirport_timePeriod">
+							<select name="airportQueryTime" size="1" style="width:130px;" class="content"><option value="-1">Current Time Period</option>
+								<option value="0">Mid - 6am</option>
+								<option value="6">6am - Noon</option>
+								<option value="12">Noon - 6pm</option>
+								<option value="18">6pm - Mid</option></select>
+						</div>
+						<div class="fsByAirport_airlineLabel">
+							Airline (Optional)
+						</div>
+						
+						<div class="fsByAirport_airline">
+							<input type="text" name="airlineToFilter" value="" id="fsAirportAirline" style="width:229px;" class="content">
+						</div>
+						<div class="fsByAirport_queryTypeDepartures">
+							<input type="radio" name="airportQueryType" value="0" checked="checked"> Departures
+						</div>
+						<div class="fsByAirport_queryTypeArrivals">
+							<input type="radio" name="airportQueryType" value="1"> Arrivals
+						</div>
+					  <div class="submit">
+					  	<input type="image" name="" src="../Widgets/images/Btn_en_widget_search_off.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;" title="Search Flights">
+					  </div>
+					</form>
+				</div>
+
+			  <div id="tpg13" class="widgetTabPanel">
+			  	<form name="flightStatusByRouteForm" method="get" action="/go/FlightStatus/flightStatusByRoute.do;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" id="widgetFlightStatusByRouteForm" target="_self">
+						
+						<div class="fsByRoute_departureAirportLabel">
+							Departure
+						</div>
+						
+						<div class="fsByRoute_departureAirport">
+							
+							
+								<input type="text" name="departure" value="Enter an airport name or code" id="fsDepartureAirport" style="width:229px;" class="content">
+							
+						</div>
+						<div class="fsByRoute_arrivalAirportLabel">
+							Arrival
+						</div>
+						
+						<div class="fsByRoute_arrivalAirport">
+							
+							
+								<input type="text" name="arrival" value="Enter an airport name or code" id="fsArrivalAirport" style="width:229px;" class="content">
+							
+						</div>
+		        <div class="fsByRoute_dateLabel">
+				    	Departure Date
+				    </div>
+				    
+		        <div class="fsByRoute_date">
+							
+							
+								<select name="departureDate" size="1" id="routeQueryDate" style="width:100px;" class="content"><option value="2006-01-08">Tue January 8, 2006</option>
+							    <option value="2006-01-09">Wed January 9, 2006</option>
+							    <option value="2006-01-10">Thu January 10, 2006</option></select>
+							
+						</div>
+					  <div class="submit">
+					  	<input type="image" name="" src="../Widgets/images/Btn_en_widget_search_off.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;" title="Search Flights">
+					  </div>
+					</form>
+			  </div>
+
+			</div>
+		</div>
+				</div>
+				<div id="moreAppsBlock">
+										<div id="moreAppsPhotoBlock">
+						<table>
+							<tr>
+								<td valign="top">
+									<script language="JavaScript">
+	index = Math.floor(Math.random() * 107);
+	if (0 == index)
+		index = 1;
+	if (index < 10)
+		imgSrc = "<img src='/go/images/AirportPhotos/airport_photo_00" + index + ".gif'/>";
+	else if (index < 100)
+		imgSrc = "<img src='/go/images/AirportPhotos/airport_photo_0" + index + ".gif'/>";
+	else
+		imgSrc = "<img src='/go/images/AirportPhotos/airport_photo_" + index + ".gif'/>";
+	document.write(imgSrc);
+</script>
+
+								</td>
+								<td valign="top">
+									<table style="background-image: url(../images/gfx_common_elements.gif); background-position: -550px -250px; width:185px; height:75px;">
+										<tr>
+											<td style="font-size:8pt; font-weight:bold; color:#000000; padding-top:12px; padding-left: 30px;">
+												Did You Know?
+											</td>
+										</tr>
+										<tr>
+											<td style="width: 100%; height: 2px;"><img src="../images/spacer.gif"></td>
+										</tr>
+										<tr>
+											<td valign="top" style="font-size:8pt; color:#000000; height: 76px; padding-left: 7px; padding-right: 5px;">
+											
+												Flight cancelled? Our <a href="/go/FlightAvailability/flightAvailabilityByRoute.do">Flight Availability</a> app shows you where to find seats on the next flights out.
+											
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div id="moreAppsContentBlock">
+						<strong>Related Applications</strong>
+						<div class="orangeLine360"></div>
+						<div class="twoPixelBreak"></div>
+						<table width="100%">
+							<tr>
+								<td width="50%">
+									<a href="/go/FlightTracker/trackFlight.do">Real-time Flight Tracker</a><br/>
+									<a href="/go/AirportTracker/trackAirport.do">Airport Flight Tracker</a><br/>
+									<a href="/go/FlightRating/flightRatingByRoute.do">On-time Performance Ratings</a><br/>
+								</td>
+								<td width="50%">
+									<a href="/go/FlightMonitor/flightRules.do">Flight Alerts</a><br/>
+									<a href="/go/FlightAvailability/flightAvailabilityByRoute.do">Flight Availability</a><br/>
+								</td>
+							</tr>
+						</table>
+						<div class="tenPixelBreak"></div>
+						<table width="100%">
+							<tr>
+								<td width="50%">
+									<strong>Get This Widget</strong>
+								</td>
+								<td width="50%">
+									<strong>Personal Tools</strong>
+								</td>
+							</tr>
+						</table>
+						<div class="orangeLine360"></div>
+						<div class="twoPixelBreak"></div>
+						<table width="100%">
+							<tr>
+								<td width="50%">
+									<a href="https://www.flightstats.com/developers/bin/view/Syndication/downloads_gallery">For Your Website</a><br/>
+									<a href="/go/Syndication/widgets.do">For iGoogle or Windows Live!</a><br/>
+								</td>
+								<td width="50%">
+									<a href="/go/Syndication/widgets.do">Other FlightStats Widgets</a><br/>
+									<a href="/go/Syndication/widgets.do">Toolbar Buttons</a><br/>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="topRightBlockAdSense">
+						<script language="JavaScript">
+			GA_googleFillSlot(prefix + "top_right_300x250");
+		</script>
+			</div>
+
+			<div id="topRightBlockResults">
+			</div>
+
+			<link rel='stylesheet' type='text/css' href='../NewCommon/MainMenus.css'>
+<link rel='stylesheet' type='text/css' href='../NewCommon/RegionsDropdown.css'>
+<div style="position: absolute; top: 0px; width: 994px; background-color: #fff; border-bottom: 4px solid #cecece; z-index: 2000;">	
+	<!-- Header Logo and Top Margin Ad -->
+	<div style="width: 100%; height: 100px;">
+		<table style="width: 100%; height: 100%; border: 0px solid;">
+			<tr>
+				<td style="width: 262px; height: 100%; padding-right: 4px;" valign="top">
+					<a href="/go/Home/home.do">
+						<div style="width: 262px; height: 90px; background-image: url(../images/gfx_header_footer.gif); background-position: -0px -250px;"></div>
+					</a>
+				</td>
+				<td style="width: 728px; height: 90px; padding-top: 5px; padding-bottom: 5px;">
+					<div style="width: 728px; height: 90px; background-color: #cecece;">
+						
+								<script language="JavaScript">
+			GA_googleFillSlot(prefix + "top_728x90");
+		</script>
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!-- Navigation Area -->
+	<div style="width: 100%; height: 29px; background-image: url(../images/gfx_header_footer.gif); background-position: -0px -100px; z-index: 100;">
+		<div style="position: absolute; width: 700px; height: 29px; z-index: 100;">
+			<div style="position: absolute; height: 29px; padding-left: 14px; z-index: 100;">
+				<ul class="fsmenu">
+					<li class="top"><a href="javascript:;" class="top_link"><span class="down">Flights</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="flights">
+							<li><a href="/go/FlightStatus/flightStatusByFlight.do">Flight Status</a></li>
+							<li><a href="/go/FlightTracker/trackFlight.do">Flight Tracker</a></li>
+							<li><a href="/go/FlightAvailability/flightAvailabilityByRoute.do">Flight Availability</a></li>
+							<li><a href="/go/FlightRating/flightRatingByRoute.do">Flight Rating</a></li>
+							<li><a href="/go/FlightMonitor/flightRuleCreate.do">Flight Alert</a></li>
+							<li><a href="/go/FlightMonitor/flightRules.do">My Flight Alerts</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+					<li class="top"><a href="javascript:;" class="top_link"><span class="down">Airports</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="airports">
+							<li><a href="/go/Airport/airportDetails.do">Airport Information</a></li>
+							<li><a href="/go/Airport/delays.do">Delays By Airport</a></li>
+							<li><a href="/go/Airport/currentAirportDelays.do">FAA Airport Delays</a></li>
+							<li><a href="/go/AirportTracker/trackAirport.do">Airport Tracker</a></li>
+							<li><a href="/go/Airport/airportChatter.do">Airport Chatter</a></li>
+							<li><a href="/go/Airport/airportUserRatingsByAirport.do">Airport User Ratings</a></li>
+							<li><a href="/go/Airport/airportScorecard.do">Airport Scorecard</a></li>
+							<li><a href="/go/Airport/securityWaitTimes.do">Security Wait Times</a></li>
+							<li><a href="/go/Airport/airportParking.do">Airport Parking</a></li>
+							<li><a href="/go/Airport/airportTrafficConditions.do">Traffic Conditions</a></li>
+							<li><a href="/go/Airport/weather.do">Weather</a></li>
+							<li><a href="/go/Airport/airportsOfTheWorld.do">Airports of the World</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+				   	</li>
+				    <li class="top"><a href="javascript:;" class="top_link"><span class="down">Airlines</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="airlines">
+							<li><a href="/go/Airline/airlineDetails.do">Airline Information</a></li>
+							<li><a href="/go/Airline/airlineScorecard.do">Airline Scorecard</a></li>
+							<li><a href="/go/Airline/airlinesOfTheWorld.do">Airlines of the World</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+				    <li class="top"><a href="javascript:;" class="top_link"><span class="down">Travel Planning</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="travel">
+							<li><a href="/go/FlightAvailability/flightAvailabilityByRoute.do">Flight Availability</a></li>
+							<li><a href="/go/TravelPlanning/travelDeals.do">Travel Deals</a></li>
+							<li><a href="/go/FrequentFlyer/frequentFlyerByRoute.do">Frequent Flyer</a></li>
+							<li><a href="/go/PublishedFares/publishedFaresByRoute.do">Published Fares</a></li>
+							<li><a href="/go/TravelPlanning/countryInformation.do">Country Information</a></li>
+							<li><a href="/go/TravelPlanning/travelWarnings.do">Travel Warnings</a></li>
+							<li><a href="/go/TravelPlanning/travelAdvisories.do">Travel Advisories</a></li>
+							<li><a href="/go/TravelPlanning/consularInformationSheet.do">Consular Information Sheets</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+					<li class="top"><a href="javascript:;" class="top_link"><span class="down">Downloads</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="downloads">
+							<li><a href="/go/Syndication/widgets.do">Personal Tools</a></li>
+							<li><a href="/developers/bin/view/Syndication/">For Your Website</a></li>
+							<li><a href="/developers/bin/view/Main/">For Developers</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+					<li class="top"><a href="javascript:;" class="top_link"><span class="down">Community</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="community">
+							<li><a href="/go/Forum/forumViewCategory.do?">Forums</a></li>
+							<li><a href="/go/Forum/forumViewForum.do?forumNntpName=support">Support</a></li>
+							<li><a href="/go/Links/displayCategory.do">Travel Directory</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+					
+					<li class="top_right"><a href="javascript:;" class="top_link"><span class="down">About</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="about">
+							<li><a href="/go/About/company.do">Company</a></li>
+							<li><a href="/go/Home/spotlight.do">News</a></li>
+							<li><a href="/go/About/businessSolutions.do">Business Solutions</a></li>
+							<li><a href="/go/About/advertise-with-us.do">Advertise With Us</a></li>
+							<li><a href="/go/About/requestInfo.do">Request Info</a></li>
+							<li><a href="/go/About/contact.do">Contact Us</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+				</ul>			
+			</div>
+		</div>
+		<div style="position: absolute; left: 700px; height: 28px;">
+			<div style="height: 28px; border: 0px solid;">
+				<!-- Google CSE Search Box Begins -->
+				<form action="http://www.flightstats.com/go/Search/FlightStatusSearchEngine.do" id="cse-search-box">
+				  <div>
+				    <input type="hidden" name="cx" value="009381639728882060958:9zd2amlzqha" />
+				    <input type="hidden" name="cof" value="FORID:9" />
+				    <input type="hidden" name="ie" value="UTF-8" />
+				    <div style="position: absolute; left: 5px; width: 180px; padding-right: 14px; top: 4px;">
+							<input id="headerGoogleCustomSearchBox" type="text" size="23" name="q"/>
+						</div>
+				  </div>
+					<div style="position: absolute; left: 200px; width: 70; float: right; padding-right: 25px; top: 4px;">
+						<input id="headerGoogleCustomSearchButton" title="Search Site" type="image" name="sa" src="../images/Buttons/Btn_en_search_bar_off.gif" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"/>
+					</div>
+				</form>
+				<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+				<!-- Google CSE Search Box Ends -->
+				<script type="text/javascript">
+					var headerGoogleCustomSearchBoxElement = document.getElementById('headerGoogleCustomSearchBox');
+					headerGoogleCustomSearchBoxElement.style.border = '1px solid #cecece';
+				</script>
+			</div>
+		</div>
+	</div>
+	<div style="width: 100%; height: 16px; background: #ececec;">
+		<div style="height: 16px; padding-right: 25px;" align="right">
+			<table style="height: 100%;">
+				<tr>
+					<td valign="middle"><a class="header_footer_link_solid" href="/go/Syndication/widgets.do">Downloads</a></td>
+					<td style="height: 9px; padding-top: 3px; padding-bottom: 3px;">
+						<div style="width: 14px; height: 9px; background-image: url(../images/gfx_header_footer.gif); background-position: -240px -140px;"><img src="../images/spacer.gif"/></div>
+					</td>
+					<td valign="middle"><a class="header_footer_link_solid" href="/developers">Developer Center</a></td>
+					<td style="height: 9px; padding-top: 3px; padding-bottom: 3px;">
+						<div style="width: 14px; height: 9px; background-image: url(../images/gfx_header_footer.gif); background-position: -240px -140px;"><img src="../images/spacer.gif"/></div>
+					</td>
+					<td valign="middle"><a class="header_footer_link_solid" href="/go/Forum/forumViewCategory.do">Forums</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div style="width: 100%; height: 20px;">
+		<div style="position: absolute; padding-left: 25px; height: 20px; z-index: 0;">
+			<table style="height: 100%; border: 0px solid;"><tr>
+				<td style="font-size: 8pt;" valign="middle"><a href="/go">FlightStats Home</a> > <a href="/go/FlightStatus/flightStatusByRoute.do">Flight Status</a> > <a href="/go/FlightStatus/flightStatusByFlight.do?airlineCode=FL&airlineCode=FL&flightNumber=379&departureDate=2009-01-09">FL 379</a></td>
+			</tr></table>
+		</div>
+		<div style="height: 20px; padding-top: 0px; padding-bottom: 0px; padding-right: 25px;" align="right">
+			<table style="height: 100%;">
+				<tr>
+					<td valign="middle" style="padding-left: 6px; padding-right: 7px; border-right: 0px solid #b3b3b3; font-size: 8pt;">
+						<font color="#1d2030">Welcome
+							
+								Guest</font> - <a class="header_link" href="/go/Login/login.do">Login</a>
+							
+					</td>
+					<td style="height: 16px; padding-top: 2px; padding-bottom: 2px;"><table><tr><td style="height: 16px; border-left: 1px solid #b3b3b3;"></td></tr></table></td>
+					<td valign="middle" style="padding-left: 7px; padding-right: 7px;"><a class="header_link" href="/go/Account/accountEditProfile.do">My Account</a></td>
+					<td style="height: 16px; padding-top: 2px; padding-bottom: 2px;"><table><tr><td style="height: 16px; border-left: 1px solid #b3b3b3;"></td></tr></table></td>
+					<td valign="middle" style="font-size: 8pt; padding-left: 7px; padding-right: 0px;">REGIONAL SITES:</td>
+					<td valign="middle" style="font-size: 8pt; padding-right: 0px; padding-top: 2px; width: 30px;" align="right">
+						<div style="width: 25px; z-index: 1;" align="left">
+							<div style="z-index: 1;">
+								<ul class="regionsdropdown">
+									<li class="top"><a href="javascript:;" class="top_link"><span class="down">
+										<div>
+											<img src="../images/spacer.gif" style="width: 16px; height: 11px; background-image: url(../images/gfx_common_elements.gif); background-position: -0px -200px;"/>
+											<div style="position: absolute; padding-left: 2px; padding-top: 2px; padding-bottom: 4px; width: 8px; height: 8px; left: 16px; top: 0px;"><img src="../images/spacer.gif" style="width: 10px; height: 10px; background-image: url(../images/gfx_common_elements.gif); background-position: -800px -220px;"/></div>
+										</div>
+										</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+										<!--[if lte IE 6]><table><tr><td><![endif]-->
+										<ul class="regions">
+											<li><a href="/go">
+												<div>
+													<img src="../images/spacer.gif" style="width: 16px; height: 11px; background-image: url(../images/gfx_common_elements.gif); background-position: -0px -200px;"/>&nbsp;United States
+												</div>
+											</a></li>
+											<li><a href="http://www.flightstats.co.uk">
+												<div>
+													<img src="../images/spacer.gif" style="width: 16px; height: 11px; background-image: url(../images/gfx_common_elements.gif); background-position: -20px -200px;"/>&nbsp;United Kingdom
+												</div>
+											</a></li>
+										</ul>
+										<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+									</li>
+								</ul>
+							</div>
+						</div>
+					</td>
+					<!-- td valign="middle"><a href="http://www.addthis.com/bookmark.php" onclick="addthis_url   = location.href; addthis_title = document.title; return addthis_click(this);" target="_blank"><img src="http://s9.addthis.com/addthis16.gif" width="16" height="16" border="0" alt="Bookmark and Share" /></a> <script type="text/javascript">var addthis_pub = 'FlightStats';</script><script type="text/javascript" src="http://s9.addthis.com/js/widget.php?v=10"></script></td-->
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>	
+					<div id="footer">
+				<div style="width: 994px; height: 4px; background: #cecece;"><img src="../images/spacer.gif"/></div>
+	<div style="width: 994px; height: 112px; padding-left: 0px; background-color: #fff;">
+		<table>
+			<tr>
+				<td>
+					<div style="width: 199px; height: 70px; background-image: url(../images/gfx_header_footer.gif); background-position: -300px -250px;">
+				</td>
+				<td style="padding-top: 31px; padding-bottom: 4px;">
+					<table>
+						<tr>
+							<td>
+								<table style="border: 0px solid;"><tr>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/Syndication/widgets.do">Downloads</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/Downloads/mobile.do">FlightStats Mobile</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/Syndication/widgets.do#RSS">RSS Feeds</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="http://www.flightstats.com/developers/bin/view/Syndication/link_to_us ">Link to Us</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/contact.do">Contact</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/company.do">About</a></td>
+								</tr></table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table style="border: 0px solid;"><tr>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/advertise-with-us.do">Advertise With Us</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/termsOfUse.do">Terms of Use</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/privacyPolicy.do">Privacy</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/sitemap.do">Sitemap</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/copyright.do">Copyright</a></td>
+								</tr></table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-left: 25px;" colspan="2"><div style="border-top: 1px solid #cecece;"></div></td>
+			</tr>
+			<tr>
+				<td>
+					<div style="width: 184px; height: 41px; background-image: url(../images/gfx_header_footer.gif); background-position: -300px -320px;">
+				</td>
+			</tr>
+		</table>
+	</div>
+
+		</div>
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">
+_qacct="p-22S-T-z5RimQg";quantserve();</script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-22S-T-z5RimQg.gif" style="display: none" height="1" width="1" alt="Quantcast"/></noscript>
+<!-- End Quantcast tag -->
+<script type="text/javascript">
+doOurLoad();
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write("\<script src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'>\<\/script>" );
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-382334-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+	
+	
+		</body>
+	</html>

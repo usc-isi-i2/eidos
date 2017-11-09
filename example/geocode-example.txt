@@ -1,0 +1,192 @@
+
+1. Source Discovery
+
+- user provides seed URL (ex: http://geocoder.us/)
+- system learns unsupervised (Anon P), predefined numnber of topics
+- experiment evaluation: 
+  1 seed  5572 sites, top 100 labelled, 21 "same signature"
+
+0	       	http://geocoder.us/
+0.060262	http://geocoder.ca/
+0.064521	http://www.geocoder.us/
+0.072413	http://www.gpsvisualizer.com/convert?form=address
+0.076293	http://www.mapquest.com/maps/latlong.adp
+0.083388	http://www.ontok.com/geocode/
+0.086864	http://www.multimap.com/map/home.cgi?db=US&amp;client=public&amp;advanced=
+0.088321	http://www.travelgis.com/geocode/Default.aspx
+0.088665	http://worldkit.org/geocoder/
+0.095565	http://www.geocodeamerica.com/
+0.096658	http://stevemorse.org/jcal/latlon.php
+0.099822	http://www.batchgeocode.com/
+0.11238		http://www.active-value.de/geocoder
+0.11459		http://www.dnsstuff.com/pages/geocoder.htm
+0.11556		http://ejohn.org/apps/gaddress/
+0.11975		http://www.nearby.org.uk/
+0.13428		http://www.travelgis.com/geocode/
+0.13739		http://www.ontok.com/geocode/index.php
+0.17137		http://maps.huge.info/geocoder
+0.25325		http://mapper.acme.com/
+0.33269		http://www.mapbuilder.net/
+0.33549		http://www.mapbuilder.net/index.php
+
+
+2. Automatic Extraction
+
+- system needs service signature 
+
+- system needs abstract input types and collection of sample values for these types
+  - ex: location: could be just a city, an street address, a airport code, a zip
+
+  - Any type in the domain, or from a list of possible input
+    types. For example, the system would try a date as input to a
+    location.  We/K. tried to predict/recognized the right types
+    (supervised) but failed.
+
+2.1 Recognize form calling parameters
+   (Fetch code, from Sorin)
+   recognizes forms, form fields, request types (POST, GET)
+
+- example from http://www.ontok.com/geocode/index.php
+  <form action="index.php" method="POST">
+    <textarea rows=12 cols=50  id='addr' name='addr'>
+       55 Grove St Somerville MA 02144
+    </textarea><br>
+    <input type=submit name='Geocodeyv' value="Geocode">
+  </form>
+
+- example from http://geocoder.us/
+  <form action="demo.cgi">
+    <input type="text" name="address" size="40" /> 
+    <input type="submit" value="Search" />
+  </form>
+
+2.2 Invoke Service
+
+- input parameters: addr, address
+
+- There exist a database of sample value DBs for the types in the
+domain, for example, addresses.
+
+2.3 Extract result tables
+
+- parse output: Autowrap extracts tables from output pages of form response
+
+- handle error pages
+
+
+3. Semantic Labeler 
+
+- Label each column from autowrap output
+  - Example:
+Source: http://geocoder.us/   Domain: geospatial
+Form: null formMethod: METHOD_GET formActionURL: http://geocoder.us/demo.cgi
+Inputs: 
+     address : CT-Address
+Domain Outputs: 
+     column 16 : PR-Longitude:16.0
+     column 49 : CT-Address:16.777779
+     column 2 : CT-Street:20.147867
+     column 3 : CT-CityState:4.80467
+     column 7 : PR-Latitude:54.0
+
+geocoderus(xi: CT-Address, x49:CT-Address, x2:CT-Street, x3:CT-CityState,
+           x7:PR-Latitude, x16:PR-Longitude)
+
+- Autowrap returns a bunch of columns. Choices: 
+  1. keep only typed attributtes 
+  2. keep all attributes
+
+We choose 1.
+
+- We already know the inputs since we choose them from the input value
+  DB from a given type. This could be generalized. For example, for a
+  Location type we could have sample values from different subtypes like
+  address, or partial address (ZIP), lat/long, etc.
+
+- Needs a pattern file learned from examples of each expected type. 
+  - Examples: 
+
+CT-Address (0) {
+{}
+<source: whitepages2-all, geospatial-all, YahooLocalRestaurants, yahoocheckflight, weather-all, fcsearchallflight, OnlineReservationz>
+	PR-Zipcode Abstract 1.0(0)	(PR-Zipcode5Plus4Digit PR-ZipCode5Digit )
+	PR-StreetNumberDirection Concrete 1.0(0)	()
+	PR-StreetDirection Concrete 1.0(0)	()
+	PR-Apartment Concrete 1.0(0)	()
+	PR-Country Concrete 1.0(0)	()
+	PR-StreetNumber Concrete 1.0(0)	()
+	PR-State Abstract 1.0(0)	(PR-State-Abbr PR-StateName )
+	PR-StreetName Concrete 1.0(0)	()
+	PR-StreetType Concrete 1.0(0)	()
+	PR-City Concrete 1.0(0)	()
+}
+
+PR-StreetName
+<source: whitepages2-all, YahooLocalRestaurants, geospatial-all, OnlineReservationz>
+<1.414762741652021+-0.590920495994331>
+{}
+[Michigan]
+[|TTN|CAPS]
+[|TTN|2DIGIT, rd]
+[|TTN|2DIGIT, st]
+[|TTN|2DIGIT, nd]
+[|TTN|2DIGIT, th]
+
+
+PR-StreetType
+<source: whitepages2-all, YahooLocalRestaurants, geospatial-all, OnlineReservationz>
+<1.000269978401728+-0.016428801337603126>
+{}
+[Drive]
+[Avenue]
+[Boulevard]
+[Street]
+[Way]
+[Cir]
+[St]
+[Rd]
+[Blvd]
+[Ln]
+[Pl]
+[Ct]
+[Ave]
+[Dr]
+[|TTN|CAPS]
+
+
+4. Source Induction
+
+4.1 Need to add type characterization to domain
+- Examples: 
+type longitude	  [varchar(20)]  {numeric: -180.0, +180.0, 0.002}
+type longitudeDMS [varchar(20)]  {examples.longitudedms.val} <- this
+comes from a databases with a enumeration of values.
+
+4.2 Semantic relations that describe the domain
+- Examples: 
+relation centroid(zipcode,latitude,longitude)
+relation address(street,apartment,zipcode,country,latitude,longitude) 
+
+4.3 Comparison functions for domain types
+- Examples: 
+comparison <($latitude,$latitude)
+comparison <($longitude,$longitude)
+
+4.4 Known sources and functions
+- Examples: 
+source GetCentroid($zip,lat,long) :- centroid(zip,lat,long). 
+  {wrappers.Ragnarok; getCentroid}
+
+source GetCityState($zip,city,state) :- municipality(city,state,zip,_). 
+  {wrappers.Ragnarok; getCityState}
+
+function ConvertDMS($latDMS,$lonDMS,lat,lon) :- convertCoord(latDMS,lonDMS,lat,lon). {wrappers.Ragnarok; convertDMS}
+
+source USGeocoder($street,$zipcode,city,state,latitude,longitude) :- address(street,_,zipcode,"US",latitude,longitude), municipality(city,state,zipcode,_).												{wrappers.USGeocoder; geocode}
+
+4.5 Define a typed target predicate and callable service for each
+source
+- This is the output of phases 1 through 3. 
+- Need to turn the input + autowrap code into a callable service 
+
+target GetInfoByZip($zipcode,city,state,areacode,timezone) 				

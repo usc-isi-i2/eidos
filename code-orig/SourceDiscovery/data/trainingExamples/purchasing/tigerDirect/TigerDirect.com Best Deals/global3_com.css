@@ -1,0 +1,9 @@
+table.maintbl {
+	 /* Add following css to center the site with Firefox and Netscape */
+	 /* margin: 0 auto; */
+}
+
+body {
+	 /* Add following css to center the site with IE */
+	 /* text-align: center; */
+}

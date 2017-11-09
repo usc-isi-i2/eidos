@@ -1,0 +1,102 @@
+package wrappers;
+
+import invocation.Wrapper;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
+import relational.Table;
+
+public class GoCurrency implements Wrapper {
+
+	public Table invoke(String[] endpoint, List<String> inputTuple) {
+
+		String url = "";
+		Table output = null;
+
+		if (endpoint[1].equalsIgnoreCase("GetRates")) { // input: NONE
+
+			/*
+			 * ex. call:	http://www.gocurrency.com/v2/gocurrcalcS.php?id=39
+			 *
+			 * var currency = new Array("AFA","DZD","USD","AOA","ANG","ARS","AMD","AWG","AUD","ATS","AZM","BSD","BHD","BBD","XOF","XAF","BYR","BEF","BZD","BMD","BTN","BOB","BAM","BWP","BRL","GBP","BND","BGN","BIF","KHR","CAD","KYD","XPF","CLP","CNY","COP","KMF","CDF","CRC","HRK","CUP","CYP","CZK","DKK","DJF","DOP","NLG","XCD","EGP","SVC","ERN","EEK","ETB","EUR","FKP","FJD","FIM","FRF","GMD","GEL","DEM","GHC","GIP","GRD","GTQ","GNF","GYD","HTG","HNL","HKD","HUF","ISK","INR","IDR","IQD","IEP","IRR","ILS","ITL","JMD","JPY","JOD","KZT","KES","KGS","KWD","LAK","LVL","LBP","LSL","LRD","LYD","LTL","LUF","MOP","MKD","MGA","MWK","MYR","MVR","MTL","MRO","MUR","MXN","MDL","MNT","MAD","MZM","MMK","NAD","NPR","NZD","NIO","NGN","KPW","NOK","OMR","PKR","PAB","PGK","PYG","PEN","PHP","PLN","CVE","PTE","QAR","ROL","RUB","RWF","SHP","STD","SAR","CSD","SCR","SLL","SGD","SKK","SIT","SBD","SOS","WST","ZAR","KRW","ESP","LKR","SDD","SRD","SZL","SEK","CHF","SYP","TWD","BDT","TZS","THB","TOP","TTD","TND","TRY","TRL","TMM","UGX","UAH","UYU","AED","UZS","VUV","VEB","VND","YER","ZMK","ZWD");
+			 * var country = new Array("AF","DZ","US","AO","AN","AR","AM","AW","AU","AT","AZ","BS","BH","BB","XO","XA","BY","BE","BZ","BM","BT","BO","BA","BW","BR","GB","BN","BG","BI","KH","CA","KY","XP","CL","CN","CO","KM","CD","CR","HR","CU","CY","CZ","DK","DJ","DO","NL","XC","EG","SV","ER","EE","ET","EU","FK","FJ","FI","FR","GM","GE","DE","GH","GI","GR","GT","GN","GY","HT","HN","HK","HU","IS","IN","ID","IQ","IE","IR","IL","IT","JM","JP","JO","KZ","KE","KG","KW","LA","LV","LB","LS","LR","LY","LT","LU","MO","MK","MG","MW","MY","MV","MT","MR","MU","MX","MD","MN","MA","MZ","MM","NA","NP","NZ","NI","NG","KP","NO","OM","PK","PA","PG","PY","PE","PH","PL","CV","PT","QA","RO","RU","RW","SH","ST","SA","CS","SC","SL","SG","SK","SI","SB","SO","WS","ZA","KR","ES","LK","SD","SR","SZ","SE","CH","SY","TW","BD","TZ","TH","TO","TT","TN","TR","T1","TM","UG","UA","UY","AE","UZ","VU","VE","VN","YE","ZM","ZW");
+			 * var rate = new Array("43","71.646","1","80.1673","1.78","3.047","447","1.79","1.31996","10.614241","4588","1","0.37696","1.99","518.71","518.54","2149.75","31.116868","1.96","0.9975","44.77","7.95","1.5811","5.41712","2.0855","0.54786","1.5839","1.5478","981","4055","1.1168","0.82","94.5","514.5","8.0114","2377","391.7","425","507.25","5.7724","1","0.4554","22.531","5.9013","174.7","32.05","1.699869","2.67","5.752","1","13.5","12.389","8.6896","0.79151","0.62688","1.73913","4.586340","5.059836","27.95","1.8099","1.508663","9100","0.55469","262.843305","7.57","4455","190","39.9","18.895","7.7536","208.24","74.01","44.88","8770","1469.2","0.607501","9137","4.476","1493.57478","65.04","113.83","0.7074","124.27","71","40.9004","0.29201","9855","0.5506","1501","6.15","54","1.3175","2.7325","31.116868","8.0061","48.86","2165","135.42","3.6245","12.62","0.34021","268","30.7","11.052","12.99","1192","8.7465","26700","6.42","6.0269","71.9","1.5706","17.11","127.25","143.05","6.1365","0.38496","59.95","1","3.09119","5700","3.303","51.65","3.0582","87.75","154.645199","3.6399","29766","27.2501","541.5","0.55469","6910","3.7505","68.33","5.1975","2350","1.5808","29.527","189.56","7.5188","1430","2.82486","5.9975","942.7","128.344670","102.7","223.5","2.71","6.15","7.3483","1.2386","51.91","31.9","68.25","1210","37.52","2.0202","6.2631","1.3158","1.3215","1345000","5200","1830","5","23.85","3.6728","1220.94","109.3","2144.6","15940","195.7","3040","101195");
+			 * ....
+			 *
+			 */
+
+			try {
+
+				url = "http://www.gocurrency.com/v2/gocurrcalcS.php?id=39";
+
+		    	output = new Table(new String[] {"currency","country","rate"});
+
+		    	// invoke source
+				BufferedReader in = new BufferedReader(new InputStreamReader((new URL(url)).openStream()));
+				String line;
+				String[] currencies = null;
+		    	String[] countries = null;
+		    	String[] rates = null;
+		    	String s1 = "var currency = new Array(";
+				String s2 = "var country = new Array(";
+				String s3 = "var rate = new Array(";
+				while ((line=in.readLine()) != null) {
+		    		line = line.trim();
+		    		if (line.startsWith(s1)) {
+		    			currencies = line.substring(s1.length(),line.indexOf(");")).split(",");
+		    		}
+		    		else if (line.startsWith(s2)) {
+		    			countries = line.substring(s2.length(),line.indexOf(");")).split(",");
+		    		}
+		    		else if (line.startsWith(s3)) {
+		    			rates = line.substring(s3.length(),line.indexOf(");")).split(",");
+		    		}
+		    		if (currencies!=null && countries!=null && rates!=null) {
+		    			for (int i=0; i<currencies.length; i++) {
+							ArrayList<String> tuple = new ArrayList<String>();
+							tuple.add(currencies[i].replaceAll("\"",""));
+							tuple.add(countries[i].replaceAll("\"",""));
+							tuple.add(rates[i].replaceAll("\"",""));
+							output.insertDistinct(tuple);
+						}
+		    			break;
+		    		}
+				}
+
+		    	return output;
+
+			}
+			catch (Exception e) {
+				return null;
+	    	}
+
+		}
+		else {
+			System.err.println("Error: No method called " + endpoint[1] + " in wrapper: " + this.getClass().getName());
+			System.err.println("Please update source definition and restart system .... exiting");
+    		System.exit(9);
+    	}
+
+    	return output;
+
+	}
+
+
+	public void testWrapper() {
+		GoCurrency r = new GoCurrency();
+		String[] endpoint;
+		ArrayList<String> input;
+
+		// test 0:
+		endpoint = new String[2];
+		endpoint[1] = "GetRates";
+		input = new ArrayList<String>();
+		r.invoke(endpoint,input).print();
+
+	}
+
+}

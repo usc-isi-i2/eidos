@@ -1,0 +1,43 @@
+9
+
+dir
+27
+svn+ssh://ambite@blackcat.isi.edu/home/loom/svn-repository/ii/SourceInduction/tags/carman-orig/old
+svn+ssh://ambite@blackcat.isi.edu/home/loom/svn-repository/ii/SourceInduction
+
+
+
+2008-07-02T00:10:03.270970Z
+2
+tar
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+aebed2ca-fe50-0410-a0d3-9f58803aaa1c
+
+problems
+dir
+
+wrappers
+dir
+
+reformulation
+dir
+
+code
+dir
+
+xquery
+dir
+

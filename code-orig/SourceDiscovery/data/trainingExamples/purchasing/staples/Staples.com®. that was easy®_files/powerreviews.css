@@ -1,0 +1,298 @@
+div.reviewssnippet {
+
+	float: left;
+	clear: both;
+	padding: 0 !important;
+	font-size: 8pt;
+	width: 200px;
+
+}
+div.reviewssnippet div.prSnippetTitle, 
+div.reviewssnippet div.prSnippetRatingUnclickable,
+div.reviewssnippet div.prSnippetNumberOfRatingsText {
+
+	display: inline;
+	float: left;
+	padding: 0;
+	margin: 0;
+	border: 0;
+
+}
+
+div.reviewssnippet div.prSnippetEngine div {
+
+	padding: 0;
+
+}
+
+
+
+div.reviewssnippet div.prSnippetWriteReview,
+div.reviewssnippet div.prSnippetReadReviews {
+	display: none;
+}
+
+div.reviewssnippet div.prSnippetTitle, 
+div.reviewssnippet div.prSnippetNumberOfRatingsText {
+	color: #666;
+}
+
+div.reviewssnippet div.prSnippetTitle {
+	font-weight: bold;
+}
+
+div.reviewssnippet div.prSnippetRatingUnclickable {
+	width: 100%;
+
+}
+
+div.reviewssnippet div.prStarsSmall {
+	background-image: url(/sbd/img/cre/reviews/stars_small.gif) !important;
+	height:12px;
+	line-height:12px;
+	width:61px;
+	margin-top: 2px;	
+}
+
+div.reviewsprodmod {
+	float: left;
+	clear: both;
+	margin-left:6px;
+	padding: 0 !important;
+	font-size:10px;
+	width: 96px;
+}
+
+* html div.reviewsprodmod {
+	margin-left:2px;
+}
+
+div.reviewsprodmod div.prSnippetTitle, 
+div.reviewsprodmod div.prSnippetRatingUnclickable,
+div.reviewsprodmod div.prSnippetNumberOfRatingsText {
+	display: inline;
+	float: left;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+div.reviewsprodmod div.prSnippetNumberOfRatingsText {
+	margin-left:-.5em
+}
+
+div.reviewsprodmod div.prSnippetEngine div {
+	padding: 0;
+}
+
+div.reviewsprodmod div.prSnippetWriteReview,
+div.reviewsprodmod div.prSnippetReadReviews {
+	display: none;
+}
+
+div.reviewsprodmod div.prSnippetTitle, 
+div.reviewsprodmod div.prSnippetNumberOfRatingsText {
+	color: #666;
+}
+
+div.reviewsprodmod div.prSnippetRatingUnclickable {
+	width: 100%;
+}
+
+div.reviewsprodmod div.prStarsSmall {
+	background-image: url(/sbd/img/cre/reviews/stars_small.gif) !important;
+	height:12px;
+	line-height:12px;
+	width:70px;
+	margin-top: 2px;	
+}
+
+
+
+div#yesreviewssnippet div.prSnippetTitle, 
+div#yesreviewssnippet div.prSnippetRatingUnclickable,
+div#yesreviewssnippet div.prSnippetWriteReview, 
+div#yesreviewssnippet div.prSnippetReadReviews,
+div#yesreviewssnippet div.prSnippetNumberOfRatingsText {
+	display: inline;
+	float: left;
+	clear: both;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+div#yesreviewssnippet div.prSnippetEngine div {
+	padding: 0;
+}
+
+div#yesreviewssnippet div.prSnippetWriteReview,
+div#yesreviewssnippet div.prSnippetReadReviews {
+	background:url(/sbd/img/ico/dotarrow.gif) no-repeat 0 5px;
+	padding:0 10px 0 10px !important; 
+	width: 160px;
+}
+
+div#yesreviewssnippet div.prSnippetWriteReview a,
+div#yesreviewssnippet div.prSnippetReadReviews a {
+	color: #005EC2;
+}
+
+div#yesreviewssnippet div.prSnippetTitle, 
+div#yesreviewssnippet div.prSnippetNumberOfRatingsText {
+	color: #666;
+	margin-top: 2px;
+	width: 160px;
+}
+
+div#yesreviewssnippet div.prSnippetRatingUnclickable {
+	margin-top: 2px;
+}
+
+div#yesreviewssnippet div.prStarsSmall {
+	background-image: url(/sbd/img/cre/reviews/stars_medium.gif) !important;
+	line-height:11px;
+	width:74px;
+}
+
+div#prReviewEngineDiv {
+	width: 100% !important;
+}
+
+div#prReviewSummary, div.prSummaryHeader, div#prHeader, div#prReviewSummary, div.prSummaryBody, div.prSummaryRating, div.prSummaryWriteReview, div.prReviewSort {
+	background: #EEEEB5 !important;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+div#prHeader, div#prReviewSummary, div.prSummaryRating, div#prContents {
+	width: 100% !important;
+}
+
+div.prSummaryHeader {
+	margin: 10px 5px 8px 5px;
+	width: 530px;
+}
+
+div.prSummaryBody, div.prReviewSort {
+	padding: 5px 5px 8px 5px;
+	width: 530px;
+}
+
+span.prSummaryPrintableViewLink {
+	right:0;
+}
+
+div.prSummaryRating {
+	padding-bottom: 10px;
+	margin-bottom: 4px;
+	border-bottom: 1px solid #9A9981;
+}
+
+span.prSummaryTitle {
+	text-transform: none;
+	font-size: larger;
+}
+
+div.prSummaryRating {
+	font-weight: normal;
+	font-size: 1em;
+}
+
+div.prSummaryRating div.prStars {
+	background-image: url(/sbd/img/cre/reviews/stars.gif) !important;
+	height:18px;
+	line-height:18px;
+	width:90px;
+}
+
+div.prReviewRating div.prStarsSmall {
+	background-image: url(/sbd/img/cre/reviews/stars_small.gif) !important;
+	height:12px;
+	line-height:12px;
+	width:61px;
+	margin-top: 2px;
+}
+
+div.prAttributeGroup {
+	padding-bottom: 4px;
+	width: 530px !important;
+}
+div.attributeGroup {
+	width: 530px !important;
+}
+span.prReviewHelpfulText, span.prReviewReportIssue {
+	font-style: normal;
+}
+
+div.prPagination, div.prReviewWrap {
+	border: 0;
+	margin: 0;
+	padding: 5px 5px 8px 5px;
+	width: 530px;
+}
+
+div.bottom, div.prReviewWrap {
+	border-top: 1px solid #7B7B7B;
+}
+
+div.prReviewRating, div.prReviewAuthor, div.prReviewPoints, div.prReviewTools, div.errorDiv {
+	width: 530px;
+	overflow: hidden;
+	clear: both;
+}
+/* fixing line-height to better accomodate the badges, since we're showing them and all */
+div.prReviewAuthor { line-height:20px }
+
+div.errorDiv {
+	padding-left:0 !important;
+}
+
+div.prReviewTools {
+	margin:0;
+	padding:0;
+}
+
+div.prReviewValue, div.prReviewKey, div.prSummaryKey, div.prSummaryValue {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	clear: none;
+	float:left;
+	text-align: none;
+	vertical-align: none;
+	width: auto;
+	display: inline;
+}
+
+div.prReviewKey, div.prSummaryKey {
+	margin-right: 10px;
+}
+
+div.prReviewSort {
+	text-transform: none;
+}
+
+.prSummaryAverageRatingDecimal { /* 4.2 stars */
+    display:block;
+	color:#c00;
+}
+
+.prSummaryBottomLineConsensus { /* 85% of respondents would recommend this to a friend. */
+    display:block;
+	width:100%;
+	background-color:#ffc;
+	line-height:20px;
+}
+
+div#reviewssnippet {
+	float: left;
+	clear: both;
+	padding-left: 10px;
+	font-size: 8pt;
+	width: 100%;
+}
+div#reviewssnippet, div#reviewssnippet, div#yesreviewssnippet, li#powerreviewtab, div#powerreviewdisplay {
+	display: none;
+}

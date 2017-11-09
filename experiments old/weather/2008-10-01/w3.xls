@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Version>11.9999</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10005</WindowHeight>
+  <WindowWidth>10005</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Table1">
+  <Table ss:ExpandedColumnCount="7" ss:ExpandedRowCount="14" x:FullColumns="1"
+   x:FullRows="1">
+   <Column ss:Width="31.5"/>
+   <Column ss:Width="47.25"/>
+   <Column ss:Width="121.5"/>
+   <Column ss:Width="384"/>
+   <Column ss:Width="52.5"/>
+   <Column ss:Width="236.25"/>
+   <Column ss:Width="57.75"/>
+   <Row>
+    <Cell><Data ss:Type="String">query</Data></Cell>
+    <Cell><Data ss:Type="String">column58</Data></Cell>
+    <Cell><Data ss:Type="String">column414</Data></Cell>
+    <Cell><Data ss:Type="String">column527</Data></Cell>
+    <Cell><Data ss:Type="String">column605</Data></Cell>
+    <Cell><Data ss:Type="String">column2202</Data></Cell>
+    <Cell><Data ss:Type="String">column2516</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">20502</Data></Cell>
+    <Cell><Data ss:Type="String">51%</Data></Cell>
+    <Cell><Data ss:Type="String">Clear</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+    <Cell><Data ss:Type="String">231 ft</Data></Cell>
+    <Cell><Data ss:Type="String">My House in Bush Hill, Alexandria, VA</Data></Cell>
+    <Cell><Data ss:Type="String">ENE</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">33040</Data></Cell>
+    <Cell><Data ss:Type="String">78%</Data></Cell>
+    <Cell><Data ss:Type="String">Chance of a Thunderstorm</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;span class=&quot;nobr&quot;&gt;&lt;span class=&quot;b&quot;&gt;79&lt;/span&gt;&amp;nbsp;&amp;#176;F&lt;/span&gt;   /   &lt;span</Data></Cell>
+    <Cell><Data ss:Type="String">10 ft</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">90292</Data></Cell>
+    <Cell><Data ss:Type="String">100%</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+    <Cell><Data ss:Type="String">36 ft</Data></Cell>
+    <Cell><Data ss:Type="String">Hawthorne &amp; Silver Spur, Rancho Palos Verdes, CA</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">36130</Data></Cell>
+    <Cell><Data ss:Type="String">53%</Data></Cell>
+    <Cell><Data ss:Type="String">Clear</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;span class=&quot;nobr&quot;&gt;&lt;span class=&quot;b&quot;&gt;79&lt;/span&gt;&amp;nbsp;&amp;#176;F&lt;/span&gt;   /   &lt;span</Data></Cell>
+    <Cell><Data ss:Type="String">0 ft</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">85007</Data></Cell>
+    <Cell><Data ss:Type="String">29%</Data></Cell>
+    <Cell><Data ss:Type="String">Clear</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+    <Cell><Data ss:Type="String">1049 ft</Data></Cell>
+    <Cell><Data ss:Type="String">Coldwater Ridge, Avondale, AZ</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">06106</Data></Cell>
+    <Cell><Data ss:Type="String">59%</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;span class=&quot;nobr&quot;&gt;&lt;span class=&quot;b&quot;&gt;79&lt;/span&gt;&amp;nbsp;&amp;#176;F&lt;/span&gt;   /   &lt;span</Data></Cell>
+    <Cell><Data ss:Type="String">68 ft</Data></Cell>
+    <Cell><Data ss:Type="String">APRSWXNET Wolcott CT , Wolcott, CT</Data></Cell>
+    <Cell><Data ss:Type="String">SE</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">32399</Data></Cell>
+    <Cell><Data ss:Type="String">27%</Data></Cell>
+    <Cell><Data ss:Type="String">Clear</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;span class=&quot;nobr&quot;&gt;&lt;span class=&quot;b&quot;&gt;79&lt;/span&gt;&amp;nbsp;&amp;#176;F&lt;/span&gt;   /   &lt;span</Data></Cell>
+    <Cell><Data ss:Type="String">144 ft</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">46208</Data></Cell>
+    <Cell><Data ss:Type="String">25%</Data></Cell>
+    <Cell><Data ss:Type="String">Clear</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;span class=&quot;nobr&quot;&gt;&lt;span class=&quot;b&quot;&gt;79&lt;/span&gt;&amp;nbsp;&amp;#176;F&lt;/span&gt;   /   &lt;span</Data></Cell>
+    <Cell><Data ss:Type="String">723 ft</Data></Cell>
+    <Cell><Data ss:Type="String">Cartersburg, Plainfield, IN</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">50319</Data></Cell>
+    <Cell><Data ss:Type="String">68%</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;span class=&quot;nobr&quot;&gt;&lt;span class=&quot;b&quot;&gt;79&lt;/span&gt;&amp;nbsp;&amp;#176;F&lt;/span&gt;   /   &lt;span</Data></Cell>
+    <Cell><Data ss:Type="String">822 ft</Data></Cell>
+    <Cell><Data ss:Type="String">IEM Adel / ADM MS , Adel, IA</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">66612</Data></Cell>
+    <Cell><Data ss:Type="String">64%</Data></Cell>
+    <Cell><Data ss:Type="String">Partly Cloudy</Data></Cell>
+    <Cell><Data ss:Type="String">&lt;span class=&quot;nobr&quot;&gt;&lt;span class=&quot;b&quot;&gt;79&lt;/span&gt;&amp;nbsp;&amp;#176;F&lt;/span&gt;   /   &lt;span</Data></Cell>
+    <Cell><Data ss:Type="String">920 ft</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+    <Cell><Data ss:Type="String">NULL</Data></Cell>
+   </Row>
+   <Row ss:Index="13">
+    <Cell><Data ss:Type="String">http://www.wunderground.com/</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">weather3</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>13</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

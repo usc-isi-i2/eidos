@@ -1,0 +1,95 @@
+package reformulation;
+
+import java.util.ArrayList;
+import java.util.Vector;
+
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+import domain.Domain;
+import domain.Predicate;
+import domain.Clause;
+import domain.Term;
+
+
+
+public class Reformulator {
+
+	static String filename = "reformulation/problem.txt";
+	static String executable = "reformulation/reformulate.exe";
+	
+	// same as above but uses clause instead of conjunctiveQuery
+	public static ArrayList<Clause> reformulate(Domain d, Clause c) {
+		
+		ArrayList<Clause> reformulations = new ArrayList<Clause>();
+		
+		// check domain to reformulate has a body, if not just return it as the reformulation
+		if (c.preds.size() == 1) {
+			reformulations.add(c);
+			return reformulations;
+		}
+		
+		try {
+			
+			// GENERATE INPUT FILE:
+			
+			FileOutputStream file = new FileOutputStream(filename);
+			PrintStream stream = new PrintStream(file);
+			
+        	// write clause to string and replace "don't care" variables with numbers
+			String s = c.toString();
+			int varCount = 0;
+        	while (s.indexOf("_") != -1) {
+        		s = s.replaceFirst("_","Z" + varCount++);
+        	}
+        	stream.println(s);
+			
+        	// write sources to file
+        	int sourceCount = 0;
+			for (Predicate p: d.sources) {
+	            stream.println(p.definition.toString().replaceFirst(p.name, "s" + sourceCount++));
+	        }
+	        for (Predicate p: d.comparisons) {
+	        	stream.println("s" + sourceCount++ + "(A,B) :- " + p.name + "(A,B)");
+		    }
+	        
+            stream.close();
+            file.close();
+            
+            // EXECUTE:
+            
+            Process process = Runtime.getRuntime().exec(new String[] {executable,filename});
+            
+            // PARSE RESULTS:
+            
+            BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+            while ((line = br.readLine()) != null) {
+            	
+            	// fix head
+            	line = line.trim().replaceFirst("q'",c.preds.firstElement().name);
+            	// fix source names
+            	sourceCount = 0;
+    			for (Predicate p: d.sources) {
+    	            line = line.replaceAll("s" + sourceCount++, p.name);
+    	        }
+    	        for (Predicate p: d.comparisons) {
+    	        	line = line.replaceAll("s" + sourceCount++, p.name);
+    		    }
+    	        // parse and store the reformulation
+            	reformulations.add(d.parseClause(line));
+            }
+            
+		}
+        catch (Exception e) {
+            System.err.println ("Exception in Query Reformulator:");
+            e.printStackTrace();
+        }
+        
+        return reformulations;
+	}
+	
+}
+

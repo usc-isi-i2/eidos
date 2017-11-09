@@ -1,0 +1,500 @@
+Summary
+
+false positive: 17, 28, 39, 41, 68, 72, 73, 79
+
+false negative: 12, 21, 4, 70
+
+true positive: 
+- 14,
+p = 9 /12 = 75%
+r = 9 /22 = 41%
+- 45
+p = 2 /3 = 66%
+r = 2 / 15 = 13%
+
+  to evaluate in detail: 25, 49, 56, 6, 76, 83, 86, 88, 9, 96
+  dismal results: 30, 59, 61
+
+true negative: 19, 2, 22, 31, 36, 47, 51, 53, 55, 60, 65, 80, 90, 94
+
+
+
+
+         true  false
+positive   15    8     23
+negative   14    4     18
+           29   12     41
+
+29/41 = 71% overall success
+
+15 / 23 = 65%
+
+
+Problems: 
+- weather34 crashed, msql error
+- weather38 chrashed domain error PR-WindSpeedInMPH
+- weather67 chrashed domain error PR-WindSpeedInMPH
+
+
+
+Following http://www2.cs.uregina.ca/~dbd/cs831/notes/confusion_matrix/confusion_matrix.html and drawing the confusion matrix:
+
+
+                 predicted
+                 negative    positive
+actual negative     14 (a)       8 (b)
+       positive      4 (c)      15 (d)
+
+- The accuracy (AC) is the proportion of the total number of predictions that were correct. It is determined using the equation:
+
+AC = a + d / a + b + c + d = (14 + 15) / 41 = 71%
+
+- The recall or true positive rate (TP) is the proportion of positive cases that were correctly identified, as calculated using the equation:
+
+TP = d / c + d = 15 / 19 = 79%
+
+- The false positive rate (FP) is the proportion of negatives cases that were incorrectly classified as positive, as calculated using the equation:
+
+FP = b / a + b = 8 / 22 = 36%
+
+- The true negative rate (TN) is defined as the proportion of negatives cases that were classified correctly, as calculated using the equation:
+
+TN = a / a + b = 14 / 22 = 64%
+
+- Finally, precision (P) is the proportion of the predicted positive cases that were correct, as calculated using the equation:
+
+P = d / b + d = 15 / 23 = 65%
+
+
+F-measure = 2 P TP / P + TP = 2 65 79 / (65 + 79) = 71
+
+***** WITHOUT VARIABLE REPETITION
+
+* http://www.weather.com/index.html
+  results: http://www.weather.com/weather/local/20502?lswe=20502&lwsa=WeatherLocalUndeclared&from=searchbox_localwx
+
+weather12($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather12($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+results page included current sky and temperature,
+UV Index:  	 	0 Low
+Wind: 			From S at 9 mph
+Humidity: 		56%
+Pressure: 		30.55 in.
+Dew Point: 		19°F
+Visibility: 		10.0 miles
+
+high low sky for  Tonight, Tomorrow, Tomorrow Night
+
+failure
+
+false negative
+
+
+* http://www.nhc.noaa.gov/
+
+weather14($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+
+'20502', '38.89', '38.89', '3', '3:50 pm EST Dec 23, 2008', '3:50', '50', '10', '10pm', 'Wintry Mix Chance for Measurable Precipitation 80%', 'Wintry Mix Chance for Measurable Precipitation 80%', '30', '30&deg;F', '52', '52&deg;F', 'Likely', '43', '43&deg;F', '48', '48&deg;F', 'Cloudy', '29', '29&deg;F', '47', '47&deg;F', '40', '40&deg;F', '53', '53&deg;F', 'Chance Rain Chance for Measurable Precipitation 40%', 'Chance Rain Chance for Measurable Precipitation 40%', '46', '46&deg;F', '32', '32.', 'NULL', '48', '48.', 'NULL', '31', '31.', 'NULL', '46', '46.', 'Baltimore, MD/Washington, D.C.'
+
+weather14($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- 
+
+wunderground_weather14(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+'20502', 'Washington District of Columbia', '', '33.4 °F', 'Overcast', '58%', '6.0 mph', 'South', '', '10.0 miles', '43° F', '52° F', 'Rain', '29° F', '47° F', 'Partly Cloudy', '40° F', '47° F', 'Chance of Rain', '45° F', '52° F', 'Chance of Rain', '31° F', '54° F', 'Chance of Rain'
+
+See w14-01.xls
+
+p = 9 /12 = 75%
+r = 9 /22 = 41%
+
+
+* http://www.intellicast.com/
+
+weather17($PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather17($_,PR_WindSpeed1,PR_Zip2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather17(PR_Zip2,_,_,_,_,_,PR_WindSpeed1,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+false positive, bad form invocation, no data to be extracted from output page
+
+* http://www.noaa.gov/
+
+weather19($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather19($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+success, wrong form, nothing to extract
+
+true negative
+
+* http://www.accuweather.com/index.asp?partner=accuweather
+
+weather2($PR_Zip,PR_WindSpeedInMPH,PR_Zip)
+
+weather2($_,_,_).
+
+success, wrong form
+
+true negative
+
+
+* http://www.weather.com/weather/my/signup
+
+weather21($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather21($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+failure
+same output as weather12
+
+* http://www.weather.com/weather/my/signup
+
+weather22($PR_Zip,PR_PlaceAbbr,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather22($_,_,PR_Zip2,_,_,_,_,_,PR_WindSpeed8,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather22(PR_Zip2,_,_,_,_,_,PR_WindSpeed8,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+success, nothing to extractr, wrong form
+
+
+* http://www.nhc.noaa.gov/index.shtml 
+
+weather25($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather25($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather25(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+XXX
+
+
+* http://www.intellicast.com/Default.aspx
+
+weather28($PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH)
+
+weather28($_,_,PR_Zip2,PR_WindSpeed3)	:- wunderground_weather28(PR_Zip2,_,_,_,_,_,PR_WindSpeed3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+failure, bad form invocation, no data to be extracted from output page
+
+
+* http://www.accuweather.com/index.asp?zipcode=&partner=accuweather
+
+weather30($PR_Zip,PR_PlaceAbbr,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH)
+
+weather30($PR_Zip0,_,PR_WindSpeed2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather30(PR_Zip0,_,_,_,_,_,PR_WindSpeed2,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+failure, 
+true positive, dismal model
+
+
+* http://www.accuweather.com/index.asp?zipcode=&partner=accuweather
+
+weather31($PR_Zip,PR_WindSpeedInMPH,PR_Zip)
+
+weather31($_,_,_).
+
+success, wrong form
+
+
+* http://weather.cnn.com/weather/forecast.jsp
+
+weather36($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather36($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+data not visible, unlearnable
+true negative
+
+
+* http://www.weatherbase.com/
+
+weather39($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather39($_,_,_,PR_WindSpeed3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Zip21)	:- wunderground_weather39(PR_Zip21,_,_,_,_,_,PR_WindSpeed3,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+p = 1 / 2 = 50%
+r = 1 / 1 = 100% 
+
+only returned zip, no other weather data in page
+
+failure
+false positive
+
+
+* http://www.weather.com/
+
+weather4($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather4($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+failure
+same output as weather12 and weather21
+false negative
+
+
+* http://www.hpc.ncep.noaa.gov/
+
+weather41($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather41($_,PR_Zip1,_,_,_,PR_WindSpeed5,_,_)	:- wunderground_weather41(PR_Zip1,_,_,_,_,_,PR_WindSpeed5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+p = 1 / 2 = 50%
+r = 1 / 1 = 100% 
+
+only returned zip, no other weather data in page
+false positive
+
+
+* http://www.forecastadvisor.com/
+
+weather45,($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather45($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky18,_,_,_,_,PR_Sky23,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather45,(PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_Sky18,_,_,_,_,_,_,_,_,PR_Sky23,_,_,_).
+
+p = 2 /3 = 66%
+r = 2 / 15 = 13%
+
+
+* http://weather.yahoo.com/
+
+weather47($PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip)
+
+weather47($_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+success, wrong form, just general, search not weather
+true negative
+
+* http://weather.unisys.com/
+
+weather49($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempF,PR_TempF,PR_Humidity,PR_WindDir,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky)
+
+weather49($_,_,PR_Zip2,_,_,_,_,_,_,PR_TempF9,_,PR_TempC11,_,PR_TempF13,PR_TempF14,PR_Humidity15,_,PR_TempF17,_,_,_,_,PR_Sky22,_,PR_Sky24,_,_,_,_,_,_,_,_,_,_,PR_Sky35,PR_Sky36,_,_,_,_,_,_,_,_,_)	:- wunderground_weather49(PR_Zip2,_,_,PR_TempF9,_,PR_Humidity15,_,_,_,_,PR_TempF14,PR_TempF17,PR_Sky24,_,_,PR_Sky22,_,_,PR_Sky35,_,_,PR_Sky36,PR_TempF13,_,_), ConvertC2F(PR_TempC11,PR_TempF9).
+
+See w49-01.html
+
+precision = 7 / 11 = 0.64
+recall = 7 / 24 =	0.29
+
+
+
+
+
+* http://www.spc.noaa.gov/
+
+weather51($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather51($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+success, wrong form, not weather
+
+
+* http://www.ecmwf.int/
+
+weather53($PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather53($_,_,_,_,_).
+
+success, wrong form, not weather
+true negative
+
+* http://www.stormtracker.noaa.gov/
+
+weather55($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather55($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+success, wrong form, not weather
+true negative
+
+* http://www.stormtracker.noaa.gov/
+
+weather56($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather56($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather56(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+
+XXX
+
+
+* http://www.accuweather.com/index.asp
+
+weather59($PR_Zip,PR_PlaceAbbr,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH)
+
+weather59($PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather59(PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+P = 1 /2 = 50% 
+R = 1 / 9 = 11%
+
+
+* http://www.nws.noaa.gov/
+
+weather6($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather6($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather6(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF22,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF12,_,_).
+
+XXX
+
+
+* http://www.accuweather.com/index.asp
+
+weather60($PR_Zip,PR_WindSpeedInMPH,PR_Zip)
+
+weather60($_,_,_).
+
+success, wrong form, not weather
+true negative
+
+
+* http://www.accuweather.com/index.asp
+
+weather61($PR_Zip,PR_PlaceAbbr,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH)
+
+weather61($PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather61(PR_Zip0,_,_,_,_,_,PR_WindSpeed6,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+P = 1 /2 = 50% 
+R = 1 / 9 = 11%
+
+
+* http://www.usatoday.com/weather/default.htm
+
+weather65($PR_Zip,PR_WindSpeedInMPH)
+
+weather65($_,_).
+
+success, wrong form, not weather
+
+
+* http://www.nrlmry.navy.mil/tc_pages/tc_home.html
+
+weather68($PR_Zip,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindDir)
+
+weather68($PR_Zip0,_,_,_,_,_,PR_Humidity6,_,_,PR_WindSpeed9,_,_,_,_,_)	:- wunderground_weather68(PR_Zip0,_,_,_,_,PR_Humidity6,PR_WindSpeed9,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+failure, false positive
+
+
+* http://www.weather.com/?from=globalnav
+
+weather70($PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_PlaceAbbr,PR_Zip,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_Humidity,PR_Pressure,PR_TempF,PR_VisibilityInMi,PR_Zip,PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_Humidity,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather70($_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+failure
+false negative
+
+* http://espanol.weather.com/
+
+weather72($PR_Zip,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC)
+
+weather72($PR_Zip0,PR_WindSpeed1,_,_,PR_TempC4,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather72(PR_Zip0,_,_,_,_,_,PR_WindSpeed1,_,_,_,_,_,_,_,PR_TempF14,_,_,_,_,_,_,_,_,_,_), ConvertC2F(PR_TempC4,PR_TempF14).
+
+failure, false positive
+
+
+* http://espanol.weather.com/
+
+weather73($PR_Zip,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempC)
+
+weather73($PR_Zip0,_,_,_,_,_,PR_TempC6,PR_WindSpeed7,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather73(PR_Zip0,_,_,_,_,_,PR_WindSpeed7,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_TempF20,_,_,_,_), ConvertC2F(PR_TempC6,PR_TempF20).
+
+failure, false positive
+
+
+* http://www.nhc.noaa.gov/aboutrss.shtml
+
+weather76($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather76($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather76(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+XXX
+
+
+* http://www.wrh.noaa.gov/sew/
+
+weather79($PR_Zip,PR_Zip,PR_Zip,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindDir,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip)
+
+weather79($_,PR_Zip1,_,_,PR_WindSpeed4,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather79(PR_Zip1,_,_,_,_,_,PR_WindSpeed4,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_).
+
+
+wrong form, not weather
+false positive
+
+* http://www.wrh.noaa.gov/sew/
+
+weather80($PR_Zip,PR_WindSpeedInMPH)
+
+weather80($_,_).
+
+success, nothing to extract
+true negative
+
+
+* http://www.weather.gov/radar_tab.php
+
+weather83($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather83($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather83(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+XXX
+
+
+* http://weather.unisys.com/index.html
+
+weather86($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Zip,PR_Zip,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempC,PR_WindSpeedInMPH,PR_TempF,PR_TempF,PR_Humidity,PR_WindDir,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky,PR_Sky)
+
+weather86($_,_,PR_Zip2,_,_,_,_,PR_Sky7,_,PR_TempF9,_,PR_TempC11,_,PR_TempF13,PR_TempF14,PR_Humidity15,_,PR_TempF17,_,_,_,_,PR_Sky22,_,PR_Sky24,_,_,_,_,_,_,_,_,_,_,PR_Sky35,PR_Sky36,_,_,_,_,_,_,_,_,_)	:- wunderground_weather86(PR_Zip2,_,_,PR_TempF9,_,PR_Humidity15,_,_,_,_,PR_TempF14,PR_TempF17,PR_Sky24,_,_,PR_Sky22,PR_TempF16,_,PR_Sky7,_,_,PR_Sky35,PR_TempF13,_,PR_Sky36), ConvertC2F(PR_TempC11,PR_TempF16).
+
+XXX
+
+
+* http://www.rap.ucar.edu/weather/
+
+weather88($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather88($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather88(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+XXX
+
+
+* http://www.weather.gov/
+
+weather9($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather9($PR_Zip0,_,_,_,_,_,_,_,_,_,_,_,PR_TempF12,_,PR_TempF14,_,_,PR_TempF17,_,PR_TempF19,_,_,PR_TempF22,_,PR_TempF24,_,PR_TempF26,_,PR_TempF28,PR_Sky29,PR_Sky30,_,PR_TempF32,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather9(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF17,PR_TempF14,PR_Sky29,PR_TempF12,PR_TempF19,_,PR_TempF26,PR_TempF24,_,PR_TempF32,PR_TempF28,PR_Sky30,PR_TempF22,_,_).
+
+XXX
+
+
+* http://www.nco.ncep.noaa.gov/pmb/nwprod/analysis/
+
+weather90($PR_Zip,PR_Zip,PR_Zip,PR_WindSpeedInMPH,PR_Zip,PR_Zip)
+
+weather90($_,_,_,_,_,_).
+
+success, wrong form, not weather
+
+
+* http://www.eurometeo.com/italian/home
+
+weather94($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH)
+
+weather94($_,_,_,_).
+
+success, italian weather site, no data to extract for 20502
+
+
+* http://www.weather.gov/climate/
+
+weather96($PR_Zip,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_TempF,PR_Sky,PR_Sky,PR_WindSpeedInMPH,PR_TempF,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_Sky,PR_WindSpeedInMPH,PR_WindSpeedInMPH,PR_PlaceAbbr)
+
+weather96($PR_Zip0,_,_,_,_,_,_,_,_,_,_,PR_TempF11,_,PR_TempF13,_,_,PR_TempF16,_,PR_TempF18,_,_,PR_TempF21,_,PR_TempF23,_,PR_TempF25,_,PR_TempF27,PR_Sky28,PR_Sky29,_,PR_TempF31,_,_,_,_,_,_,_,_,_,_,_,_)	:- wunderground_weather96(PR_Zip0,_,_,_,_,_,_,_,_,_,PR_TempF16,PR_TempF13,PR_Sky28,PR_TempF11,PR_TempF18,_,PR_TempF25,PR_TempF23,_,PR_TempF31,PR_TempF27,PR_Sky29,PR_TempF21,_,_).
+
+XXX

@@ -1,0 +1,136 @@
+time,location,temperature,tempinf,sky,windspeed,windspeedinmph,winddir,visibility,visibilityinmi,zipin
+1:51 PM,"Linden, New Jersey",88 F,88,Partly Cloudy,12mph,12mph,SE,7.00 mi,7,7036
+11:35 AM,"North Bend, Oregon",55 F,55,Partly Cloudy,9mph,?,W,10.00 mi,10,97459
+2:35 PM,"Gadsden, Alabama",86 F,86,Partly Cloudy,9mph,?,WSW,10.00 mi,10,35903
+2:54 PM,"Boston, Massachusetts",61 F,61,Partly Cloudy,9mph,?,E,10.00 mi,10,2120
+11:56 AM,"Salt Lake City, Utah",45 F,45,Light Rain,9mph,?,E,9.00 mi,9,84102
+2:54 PM,"Salem, Virginia",90 F,90,Partly Cloudy,8mph,8mph / 13kph,SW,10.00 mi,10,24153
+2:53 PM,"Manchester, Connecticut",83 F,83,Fair,13mph,13mph / 21kph,SSE,9.00 mi,9,6040
+12:15 PM,"Coeur d' Alene, Idaho",57 F,57,Fair,3mph,3mph / 5kph,WNW,10.00 mi,10,83814
+2:51 PM,"Washington, D.C.",88 F,88,Partly Cloudy,13mph,13mph / 21kph,S,8.00 mi,8,20007
+1:56 PM,"Evanston, Illinois",86 F,86,Partly Cloudy,22mph,22mph / 35kph,W,10.00 mi,10,60201
+11:55 AM,"Milton, Washington",55 F,55,Mostly Cloudy,9mph,?,NW,7.00 mi,7,98354
+6:53 AM,"Kailua, Hawaii",78 F,78,Fair,7mph,7mph / 11kph,S,10.00 mi,10,96734
+1:53 PM,"Merna, Nebraska",83 F,83,Fair,21mph,21mph / 34kph,SSE,10.00 mi,10,68856
+1:53 PM,"Jackson, Mississippi",73 F,73,Light Rain,0mph,0mph / 0kph,CALM,6.00 mi,6,39212
+3:40 PM,"Liberty, Kentucky",91 F,91,Partly Cloudy,0mph,0mph / 0kph,CALM,10.00 mi,10,42539
+2:15 PM,"Opelika, Alabama",81 F,81,Thunder,5mph,5mph / 8kph,ESE,10.00 mi,10,36801
+12:53 PM,"Houston, Texas",90 F,90,Mostly Cloudy,9mph,?,SSE,10.00 mi,10,77041
+1:54 PM,"Shawnee Mission, Kansas",85 F,85,Partly Cloudy,14mph,14mph / 23kph,S,10.00 mi,10,66216
+2:54 PM,"Palmyra, New York",84 F,84,Mostly Cloudy,17mph,17mph / 27kph,SW,7.00 mi,7,14522
+2:51 PM,"Arlington, Virginia",88 F,88,Partly Cloudy,13mph,13mph / 21kph,S,8.00 mi,8,22204
+3:00 PM,"Miami Beach, Florida",79 F,79,Rain,5mph,5mph / 8kph,SE,10.00 mi,10,33160
+2:45 PM,"Middle River, Maryland",84 F,84,Haze,12mph,12mph,SE,5.00 mi,5,21220
+1:53 PM,"Nashville, Tennessee",84 F,84,Thunder,5mph,5mph / 8kph,E,10.00 mi,10,37201
+2:51 PM,"Charlotte, North Carolina",88 F,88,Haze,6mph,6mph / 10kph,SW,6.00 mi,6,28202
+2:15 PM,"Alexandria, Louisiana",90 F,90,Partly Cloudy,6mph,6mph / 10kph,SSE,10.00 mi,10,71302
+11:50 AM,"Benton City, Washington",65 F,65,Cloudy,8mph,8mph / 13kph,N,Unlimited,,99320
+11:56 AM,"Dayton, Nevada",59 F,59,Partly Cloudy,17mph,17mph / 27kph,WNW,10.00 mi,10,89403
+1:23 PM,"Evanston, Wyoming",41 F,41,Cloudy,18mph,18mph / 29kph,WNW,10.00 mi,10,82930
+1:53 PM,"Southaven, Mississippi",74 F,74,Cloudy,10mph,10mph / 16kph,E,10.00 mi,10,38671
+2:54 PM,"Greenwood, Delaware",89 F,89,Fair,8mph,8mph / 13kph,SSW,10.00 mi,10,19950
+2:53 PM,"Plantsville, Connecticut",80 F,80,Fair,13mph,13mph / 21kph,SSW,7.00 mi,7,6479
+10:55 AM,"Tucson, Arizona",87 F,87,Fair,12mph,12mph,S,10.00 mi,10,85741
+12:32 PM,"Cottonwood Falls, Kansas",81 F,81,Mostly Cloudy,13mph,13mph / 21kph,SSE,10.00 mi,10,66845
+12:55 PM,"Whitefish, Montana",54 F,54,Mostly Cloudy,3mph,3mph / 5kph,VAR,10.00 mi,10,59937
+3:20 PM,"Chauncey, Georgia",91 F,91,Fair,7mph,7mph / 11kph,SSE,10.00 mi,10,31011
+2:15 PM,"Rushmore, Minnesota",84 F,84,Fair,15mph,15mph / 24kph,SW,10.00 mi,10,56168
+1:53 PM,"Dallas, Texas",91 F,91,Mostly Cloudy,13mph,13mph / 21kph,SSW,10.00 mi,10,75204
+11:53 AM,"Redmond, Washington",57 F,57,Mostly Cloudy,5mph,5mph / 8kph,N,10.00 mi,10,98052
+2:51 PM,"Atlanta, Georgia",87 F,87,Partly Cloudy,8mph,8mph / 13kph,SE,8.00 mi,8,30302
+11:56 AM,"Flagstaff, Arizona",65 F,65,Fair,20mph,20mph / 32kph,SW,10.00 mi,10,86001
+2:30 PM,"Fremont, Nebraska",88 F,88,Partly Cloudy,13mph,13mph / 21kph,S,10.00 mi,10,68025
+12:53 PM,"Linden, Tennessee",73 F,73,Light Rain,10mph,10mph / 16kph,WNW,10.00 mi,10,37096
+1:55 PM,"Milton, Florida",75 F,75,Mostly Cloudy,0mph,0mph / 0kph,CALM,7.00 mi,7,32570
+1:54 PM,"Laurel, Delaware",88 F,88,Partly Cloudy,9mph,?,S,8.00 mi,8,19956
+12:35 PM,"La Fontaine, Indiana",82 F,82,Fair,7mph,7mph / 11kph,W,10.00 mi,10,46940
+N/:A AM,"Rapid City, South Dakota",N/A F,N/A,(N/AC),N/Akph<br>&#149;&nbsp;Visibility:  mi<br>&#149;&nbsp;Dewpoint: N/A,N/Akph,N/A,mi,,57702
+11:59 AM,"Stanley, North Dakota",68 F,68,Mostly Cloudy,3mph,3mph / 5kph,NE,7.00 mi,7,58784
+1:53 PM,"Guthrie, Oklahoma",88 F,88,Fair,10mph,10mph / 16kph,SSW,6.21 mi,,73044
+1:52 PM,"Bismarck, North Dakota",79 F,79,Fair,20mph,20mph / 32kph,ESE,10.00 mi,10,58501
+1:53 PM,"Saint Louis, Missouri",73 F,73,Light Rain with Thunder,6mph,6mph / 10kph,NNE,10.00 mi,10,63138
+11:16 AM,"Petersburg, Alaska",61 F,61,Fair,N/A,N/A,,10.00 mi,10,99833
+10:53 AM,"Columbia, South Carolina",83 F,83,Fair,3mph,3mph / 5kph,VAR,9.00 mi,9,29201
+2:55 PM,"Fraser, Michigan",84 F,84,Partly Cloudy,14mph,14mph / 23kph,W,Unlimited,,48026
+1:54 PM,"Troy, Missouri",76 F,76,Cloudy,6mph,6mph / 10kph,ESE,10.00 mi,10,63379
+2:56 PM,"Hubert, North Carolina",86 F,86,Partly Cloudy,13mph,13mph / 21kph,S,7.00 mi,7,28539
+8:53 AM,"Honolulu, Hawaii",83 F,83,Partly Cloudy,12mph,12mph,E,10.00 mi,10,96801
+2:54 PM,"Great Barrington, Massachusetts",83 F,83,Partly Cloudy,18mph,18mph / 29kph,S,9.00 mi,9,1230
+12:53 PM,"Sturtevant, Wisconsin",83 F,83,Partly Cloudy,14mph,14mph / 23kph,W,10.00 mi,10,53177
+2:51 PM,"Yarmouth, Maine",50 F,50,Fog,7mph,7mph / 11kph,ENE,0.50 mi,,4096
+1:51 PM,"Florissant, Missouri",75 F,75,Cloudy,0mph,0mph / 0kph,CALM,10.00 mi,10,63033
+2:53 PM,"Manchester, New Hampshire",62 F,62,Cloudy,7mph,7mph / 11kph,ESE,7.00 mi,7,3101
+11:47 AM,"Los Angeles, California",72 F,72,Partly Cloudy,7mph,7mph / 11kph,VAR,10.00 mi,10,90001
+2:15 PM,"Denham Springs, Louisiana",79 F,79,Mostly Cloudy,12mph,12mph,NE,10.00 mi,10,70726
+1:54 PM,"Fairfield, Connecticut",65 F,65,Haze,15mph,15mph / 24kph,E,4.00 mi,4,6824
+1:52 PM,"Milwaukee, Wisconsin",84 F,84,Partly Cloudy,17mph,17mph / 27kph,W,10.00 mi,10,53228
+3:15 PM,"Belleview, Florida",88 F,88,Partly Cloudy,5mph,5mph / 8kph,ENE,10.00 mi,10,34420
+11:53 AM,"Winner, South Dakota",82 F,82,Fair,20mph,20mph / 32kph,S,10.00 mi,10,57580
+11:51 AM,"Laughlin, Nevada",86 F,86,Sunny,18mph,18mph / 29kph,SSW,Unlimited,,89029
+1:53 PM,"Dover Foxcroft, Maine",55 F,55,Cloudy,13mph,13mph / 21kph,S,10.00 mi,10,4426
+1:53 PM,"Mount Prospect, Illinois",88 F,88,Partly Cloudy,15mph,15mph / 24kph,W,10.00 mi,10,60056
+11:54 AM,"Quincy, Illinois",84 F,84,Fair,14mph,14mph / 23kph,WSW,10.00 mi,10,62301
+2:53 PM,"Tampa, Florida",88 F,88,Mostly Cloudy,6mph,6mph / 10kph,VAR,10.00 mi,10,33602
+11:53 AM,"Tinley Park, Illinois",83 F,83,Mostly Cloudy,14mph,14mph / 23kph,WSW,10.00 mi,10,60477
+1:52 PM,"Milwaukee, Wisconsin",84 F,84,Partly Cloudy,17mph,17mph / 27kph,W,10.00 mi,10,53202
+12:50 PM,"Glenwood, New Mexico",90 F,90,Fair,8mph,8mph / 13kph,SW,10.00 mi,10,88039
+1:55 PM,"Duluth, Minnesota",68 F,68,Partly Cloudy,17mph,17mph / 27kph,WNW,10.00 mi,10,55803
+2:53 PM,"Hillsborough, New Jersey",89 F,89,Partly Cloudy,8mph,8mph / 13kph,SSW,8.00 mi,8,8844
+3:51 PM,"Warner, New Hampshire",63 F,63,Cloudy,7mph,7mph / 11kph,S,10.00 mi,10,3278
+2:46 PM,"Mena, Arkansas",88 F,88,Fair,3mph,3mph / 5kph,S,10.00 mi,10,71953
+10:53 AM,"Tacoma, Washington",57 F,57,Partly Cloudy,8mph,8mph / 13kph,W,10.00 mi,10,98466
+12:53 PM,"Garden Valley, Idaho",59 F,59,Fair,9mph,?,NW,10.00 mi,10,83622
+12:51 PM,"Victoria, Texas",89 F,89,Fair,16mph,16mph / 26kph,SSE,10.00 mi,10,77904
+12:32 PM,"Emporia, Kansas",81 F,81,Mostly Cloudy,13mph,13mph / 21kph,SSE,10.00 mi,10,66801
+2:54 PM,"Madison, Mississippi",77 F,77,Cloudy,6mph,6mph / 10kph,S,10.00 mi,10,39110
+2:35 PM,"Waupaca, Wisconsin",79 F,79,Fair,16mph,16mph / 26kph,W,10.00 mi,10,54981
+1:55 PM,"Indianapolis, Indiana",85 F,85,Partly Cloudy,8mph,8mph / 13kph,WSW,10.00 mi,10,46201
+1:53 PM,"Louisville, Kentucky",90 F,90,Partly Cloudy,12mph,12mph,W,10.00 mi,10,40207
+12:53 PM,"Boise, Idaho",59 F,59,Fair,9mph,?,NW,10.00 mi,10,83702
+2:53 PM,"Detroit, Michigan",84 F,84,Partly Cloudy,20mph,20mph / 32kph,W,10.00 mi,10,48202
+12:53 PM,"Longmont, Colorado",81 F,81,Partly Cloudy,12mph,12mph,W,Unlimited,,80501
+3:40 PM,"Pacolet, South Carolina",90 F,90,Fair,7mph,7mph / 11kph,SSE,10.00 mi,10,29372
+2:54 PM,"Waynesville, North Carolina",83 F,83,Partly Cloudy,10mph,10mph / 16kph,SSW,10.00 mi,10,28785
+2:45 PM,"Dardanelle, Arkansas",91 F,91,Thunder in the Vicinity,8mph,8mph / 13kph,SE,10.00 mi,10,72834
+1:53 PM,"Saint Louis, Missouri",73 F,73,Light Rain with Thunder,6mph,6mph / 10kph,NNE,10.00 mi,10,63101
+2:54 PM,"Cambridge, Massachusetts",61 F,61,Partly Cloudy,9mph,?,E,10.00 mi,10,2138
+11:53 AM,"Bowling Green, Ohio",79 F,79,Fair,15mph,15mph / 24kph,W,10.00 mi,10,43402
+3:51 PM,"Columbus, Ohio",88 F,88,Partly Cloudy,16mph,16mph / 26kph,WSW,10.00 mi,10,43085
+3:35 PM,"Winsted, Connecticut",75 F,75,Fair,12mph,12mph,S,10.00 mi,10,6098
+2:51 PM,"Bethesda, Maryland",88 F,88,Partly Cloudy,13mph,13mph / 21kph,S,8.00 mi,8,20814
+1:35 PM,"Clovis, New Mexico",84 F,84,Fair,20mph,20mph / 32kph,S,10.00 mi,10,88101
+1:15 PM,"Orem, Utah",52 F,52,Fair,21mph,21mph / 34kph,NW,10.00 mi,10,84057
+1:53 PM,"Memphis, Tennessee",74 F,74,Cloudy,10mph,10mph / 16kph,E,10.00 mi,10,38117
+3:51 PM,"Cresskill, New Jersey",89 F,89,Fair,14mph,14mph / 23kph,S,10.00 mi,10,7626
+2:54 PM,"Boston, Massachusetts",61 F,61,Partly Cloudy,9mph,?,E,10.00 mi,10,2101
+1:53 PM,"Edgewood, New Mexico",82 F,82,Fair,20mph,20mph / 32kph,WSW,10.00 mi,10,87015
+2:53 PM,"Fishers, Indiana",85 F,85,Fair,10mph,10mph / 16kph,W,10.00 mi,10,46038
+3:51 PM,"Charlotte, North Carolina",86 F,86,Mostly Cloudy,6mph,6mph / 10kph,S,7.00 mi,7,28277
+9:53 AM,"Anchorage, Alaska",54 F,54,Mostly Cloudy,6mph,6mph / 10kph,WNW,10.00 mi,10,99504
+2:53 PM,"Travelers Rest, South Carolina",88 F,88,Partly Cloudy,10mph,10mph / 16kph,SSE,9.00 mi,9,29690
+3:26 PM,"Morgantown, West Virginia",66 F,66,Light Rain with Thunder,9mph,?,SE,6.00 mi,6,26508
+11:56 AM,"Dallas, Oregon",55 F,55,Mostly Cloudy,12mph,12mph,S,10.00 mi,10,97338
+3:55 PM,"Johnston, Rhode Island",73 F,73,Fair,7mph,7mph / 11kph,S,7.00 mi,7,2919
+3:53 PM,"Newtown, Pennsylvania",90 F,90,Fair,8mph,8mph / 13kph,S,8.00 mi,8,18940
+3:51 PM,"New York, New York",83 F,83,Fair,8mph,8mph / 13kph,SSW,10.00 mi,10,10001
+3:35 PM,"Kinde, Michigan",79 F,79,Partly Cloudy,23mph,23mph / 37kph,WSW,10.00 mi,10,48445
+3:54 PM,"Winchester, Kentucky",89 F,89,Partly Cloudy,9mph,?,W,10.00 mi,10,40391
+2:55 PM,"Indianapolis, Indiana",87 F,87,Partly Cloudy,14mph,14mph / 23kph,W,10.00 mi,10,46260
+2:53 PM,"Jonesboro, Arkansas",91 F,91,Partly Cloudy,14mph,14mph / 23kph,SSE,10.00 mi,10,72401
+12:53 PM,"Montrose, Colorado",78 F,78,Fair,18mph,18mph / 29kph,WSW,10.00 mi,10,81401
+8:56 AM,"Kaneohe, Hawaii",80 F,80,Mostly Cloudy,9mph,?,E,7.00 mi,7,96744
+3:55 PM,"Laconia, New Hampshire",57 F,57,Cloudy,9mph,?,ENE,9.00 mi,9,3246
+2:15 PM,"Walker, Louisiana",79 F,79,Mostly Cloudy,12mph,12mph,NE,10.00 mi,10,70785
+2:35 PM,"Ankeny, Iowa",86 F,86,Fair,13mph,13mph / 21kph,SW,10.00 mi,10,50021
+3:56 PM,"Dayton, Ohio",86 F,86,Fair,15mph,15mph / 24kph,SW,10.00 mi,10,45429
+3:51 PM,"Edgewater, New Jersey",83 F,83,Fair,8mph,8mph / 13kph,SSW,10.00 mi,10,7020
+2:54 PM,"Holden, West Virginia",85 F,85,Partly Cloudy,0mph,0mph / 0kph,CALM,9.00 mi,9,25625
+3:54 PM,"Stowe, Vermont",75 F,75,Fair,8mph,8mph / 13kph,SW,9.00 mi,9,5672
+2:52 PM,"Milwaukee, Wisconsin",85 F,85,Partly Cloudy,20mph,20mph / 32kph,W,10.00 mi,10,53215
+2:15 PM,"Marinette, Wisconsin",77 F,77,Partly Cloudy,12mph,12mph,WNW,8.00 mi,8,54143
+2:51 PM,"Cumberland Center, Maine",50 F,50,Fog,7mph,7mph / 11kph,ENE,0.50 mi,,4021
+2:55 PM,"Springfield, Massachusetts",82 F,82,Haze,12mph,12mph,S,6.00 mi,6,1101
+3:54 PM,"Buffalo, New York",78 F,78,Partly Cloudy,20mph,20mph / 32kph,WSW,10.00 mi,10,14204
+11:56 AM,"Mesa, Arizona",86 F,86,Sunny,10mph,10mph / 16kph,S,Unlimited,,85206
+3:43 PM,"Exton, Pennsylvania",88 F,88,Partly Cloudy,6mph,6mph / 10kph,VAR,9.00 mi,9,19341
+3:51 PM,"Newark, New Jersey",88 F,88,Mostly Cloudy,14mph,14mph / 23kph,SSE,10.00 mi,10,7102

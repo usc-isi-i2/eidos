@@ -1,0 +1,40 @@
+geospatial137($PR_Address,PR_Street,PR_Street,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Latitude,PR_Longitude,PR_Longitude,PR_Latitude,PR_Latitude,PR_LonDMS,PR_LonDMS,PR_Latitude,PR_Latitude,PR_Address)
+
+geospatial137($PR_Address0,PR_Street1,_,PR_Latitude3,_,PR_Longitude5,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,_,_,PR_Latitude3,PR_Longitude5).
+
+
+geospatial139($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude)
+
+geospatial139($PR_Address0,_,PR_StateAbbr2,_,PR_Zip4,PR_Street5,_,PR_Latitude7,PR_Longitude8)	:- USGeocoder(PR_Address0,PR_Street5,_,PR_StateAbbr2,PR_Zip4,PR_Latitude7,PR_Longitude8).
+
+
+geospatial140($PR_Address,PR_Address,PR_Address,PR_Address,PR_UTM,PR_Address)
+
+geospatial140($_,_,_,_,_,_).
+
+
+geospatial152($PR_Address,PR_Street,PR_StateAbbr,PR_Address,PR_Address,PR_Address,PR_Address)
+
+geospatial152($PR_Address0,PR_Street1,PR_StateAbbr2,_,_,_,_)	:- USGeocoder(PR_Address0,PR_Street1,_,PR_StateAbbr2,_,_,_).
+
+
+geospatial154($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+
+geospatial154($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+
+
+geospatial157($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+
+geospatial157($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+
+
+geospatial158($PR_Address,PR_Address,PR_Street,PR_Address,PR_StateAbbr,PR_Address,PR_Address,PR_Address)
+
+geospatial158($PR_Address0,_,PR_Street2,_,PR_StateAbbr4,_,_,_)	:- USGeocoder(PR_Address0,PR_Street2,_,PR_StateAbbr4,_,_,_).
+
+
+geospatial159($PR_Address,PR_Address,PR_Address,PR_Zip,PR_Address)
+
+geospatial159($PR_Address0,_,_,PR_Zip3,_)	:- USGeocoder(PR_Address0,_,_,_,PR_Zip3,_,_).
+
+

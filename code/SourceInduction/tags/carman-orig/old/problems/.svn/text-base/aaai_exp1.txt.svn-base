@@ -1,0 +1,99 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+
+## Semantic Types: 
+type zipcode	  [varchar(10)]  {uscensusbureau.zipnov99.zipcode}
+type latitude	  [varchar(13)] {numeric: -90.0, +90.0, 0.05}
+type longitude	  [varchar(13)]  {numeric: -180.0, +180.0, 0.05}
+type miles		  [varchar(30)]  {numeric: 0.0, 24901.55 , 2%}
+type kilometres	  [varchar(30)]  {numeric: 0.0, 40075.16 , 2%}
+type poBox		  [varchar(30)]
+type streetnumber [varchar(10)] 
+type street		  [varchar(80)] 
+type streetAddr	  [varchar(100)] 
+type apartment	  [varchar(10)] 
+type city		  [varchar(50)]  {uscensusbureau.zipnov99.postofficename}
+type stateName	  [varchar(30)]  {miscellaneous.usstates.name}
+type stateAbbr	  [varchar(2)]   {miscellaneous.usstates.code}
+type countryName  [varchar(100)] {miscellaneous.countries.name}
+type countryAbbr  [varchar(2)]   {miscellaneous.countries.code2}
+type areacode	  [varchar(3)] 
+type timezone	  [varchar(5)] 
+type celsius	  [varchar(13)]  {numeric: -50.0, +100.0, 3%}
+type fahrenheit	  [varchar(13)]  {numeric: -100.0, +200.0, 3%}
+type sky		  [varchar(100)] 
+type dewpoint	  [varchar(30)]
+type humidity	  [varchar(30)]
+type wind		  [varchar(30)]
+type pressure	  [varchar(30)]
+type time		  [varchar(80)]
+type date		  [varchar(80)]
+type dayofweek	  [varchar(10)]
+type url		  [varchar(80)]
+type hotel	  	  [varchar(80)]  
+type company 	  [varchar(80)]  {miscellaneous.companies.name; equality: JaroWinkler > 0.85}
+type ticker		  [varchar(6)]   {miscellaneous.companies.ticker}
+type price		  [varchar(30)]  {finance.quotes.Last}
+type priceRange	  [varchar(65)] 
+type count		  [varchar(30)]
+type percentage	  [varchar(30)]
+type ratio		  [varchar(30)]
+type floors		  [varchar(30)]
+type phoneNumber  [varchar(20)]
+type unknown	  [varchar(80)]
+
+## Domain Relations: 
+relation centroid(zipcode,latitude,longitude)
+relation distance(latitude,longitude,latitude,longitude,kilometres)
+relation convert(kilometres,miles)
+relation address(streetnumber,street,apartment,zipcode)
+relation municipality(city,stateAbbr,zipcode)
+relation phoneprefix(zipcode,areacode)
+relation timezone(stateAbbr,timezone)
+relation convertTemp(celsius,fahrenheit)
+relation listing(company,ticker)
+relation currentTime(date,time)
+relation trade(date,time,ticker,price)
+relation market(date,ticker,price:close,price:open,price:max,price:min,count:volume)
+relation add($price,$price,price)
+relation forecast(latitude,longitude,date,fahrenheit,fahrenheit,sky)
+relation weekday(date,dayofweek)
+relation northAmerica(countryAbbr)
+relation country(countryName,countryAbbr)
+relation conditions(latitude,longitude,time,fahrenheit,sky,dewpoint,humidity,wind,pressure)
+
+## Comparison Predicates: 
+comparison <($miles,$miles)
+comparison <($kilometres,$kilometres)
+comparison <($celsius,$celsius)
+comparison <($fahrenheit,$fahrenheit)
+comparison <($price,$price)
+
+## Sources: 
+source GetCentroid($zip,lat,long) 	 				:- centroid(zip,lat,long). 	  				{invocation.wrappers.Ragnarok; getCentroid }
+source GetDistance($lt1,$ln1,$lt2,$ln2,dist)		:- distance(lt1,ln1,lt2,ln2,dist).  		{invocation.wrappers.Ragnarok; getDistance}
+source Convert2Miles($distK,distM)					:- convert(distK,distM).  					{invocation.wrappers.Ragnarok; convertK2M}
+source GetCityState($zip,city,state) 				:- municipality(city,state,zip). 			{invocation.wrappers.Ragnarok; query; SELECT t0.zipcode, t0.postofficename, t1.state_abbrev FROM uscensusbureau.zipnov99 t0, miscellaneous.statecodes t1 WHERE (t0.fips_state = t1.fips_code) AND (t0.zipcode=$input0)}
+source GetFahrenheit($tempC,tempF)	 				:- convertTemp(tempC,tempF).  	  			{invocation.wrappers.Ragnarok; convertC2F}
+source GetCompanyName($symbol,name)	 				:- listing(name,symbol). 		  			{invocation.wrappers.Ragnarok; query; SELECT t0.ticker, t0.name FROM miscellaneous.companies t0 WHERE (t0.ticker=$input0)}
+source GetCurrentTime(date,time)	 				:- currentTime(date,time) 		  			{invocation.wrappers.Ragnarok; currentTime }
+source GetTimeZone($state,timezone) 				:- timezone(state,timezone).  				{invocation.wrappers.Ragnarok; query; SELECT t0.state_abbrev,t1.commonAbbr FROM miscellaneous.statecodes t0, miscellaneous.timezones t1 WHERE (t0.state_name = t1.region) AND (t0.state_abbrev=$input0)}
+source YahooWeather($z,cty,st,ctry,dy,dt,hi,lo,sky)	:- municipality(cty,st,z),northAmerica(ctry),centroid(z,lt,ln),forecast(lt,ln,dt,hi,lo,sky),weekday(dt,dy). 			{invocation.wrappers.YahooWeather; forecastrss2}
+source GetZipcode($city,$state,zip)	 				:- municipality(city,state,zip). 			{invocation.wrappers.Ragnarok; query; SELECT t0.postofficename, t1.state_abbrev, t0.zipcode FROM uscensusbureau.zipnov99 t0, miscellaneous.statecodes t1 WHERE (t0.fips_state = t1.fips_code) AND (t0.postofficename=$input0) AND (t1.state_abbrev=$input1)}
+source YahooFinance($tkr,ls,dt,tm,chg,op,mx,mn,vol)	:- trade(dt,tm,tkr,ls),market(dt,tkr,cl,op,mx,mn,vol),add(cl,chg,ls). 													{invocation.wrappers.YahooFinance; GetQuote}
+source WeatherFeed($ct,$st,fh,cl,sky,dew,hum,wnd,pr,lt,ln,tm) :- municipality(ct,st,z),centroid(z,lt,ln),conditions(lt,ln,tm,fh,sky,dew,hum,wnd,pr),convertTemp(cl,fh). 	{invocation.wrappers.BoyGenius; WeatherFeed}
+source GetCountryName($abbrev,name)				 	:- country(name,abbrev).					{invocation.wrappers.Ragnarok; query; SELECT code2,name FROM miscellaneous.countries WHERE (code2=$input0)}
+#source GetDistanceBetweenZipCodes($X0,$X1,X2)		:- GetCentroid(X0,Y1,Y2),GetCentroid(X1,Y4,Y5),GetDistance(Y1,Y2,Y4,Y5,Y10),Convert2Miles(Y10,X2). 						{invocation.wrappers.Codebump; GetDistanceBetweenZipCodes}
+
+## Target Predicate: 
+target GetInfoByZip($zipcode,city,stateAbbr,areacode,timezone) 							{invocation.wrappers.USZip; GetInfoByZip}
+target GetInfoByState($stateAbbr,city,zipcode,areacode,timezone) 							{invocation.wrappers.USZip; GetInfoByState}
+target GetDistanceBetweenZipCodes($zipcode,$zipcode,miles) 								{invocation.wrappers.Codebump; GetDistanceBetweenZipCodes}
+target GetZipCodesWithin($zipcode,$miles,zipcode,miles) 									{invocation.wrappers.Codebump; GetZipCodesWithin}
+target WeatherChannel($city,stateAbbr,countryName,latitude,longitude,timezone,dayofweek,date,fahrenheit,fahrenheit,time,time,sky,wind,humidity) {invocation.wrappers.WeatherChannel; TwoDayForecast}
+target GetShortQuote($ticker,price,date,time,price,price,price,price,count,company) 		{invocation.wrappers.WebServiceX; GetShortQuote}
+target GetQuote($ticker,price,date,time,price,price,price,price,count,price,price,percentage,priceRange,price,ratio,company) {invocation.wrappers.WebServiceX; GetQuote}
+target TrafficByZipAndRadius($zipcode,$miles,unknown:Type,unknown:Title,latitude,longitude,unknown:Severity,date:report,date:update,date:end) {invocation.wrappers.YahooTraffic; TrafficByZipAndRadius}
+target CurrentConditions($city,stateAbbr,countryName,latitude,longitude,time,time,timezone,time,fahrenheit,sky,pressure,wind,humidity,dewpoint) {invocation.wrappers.WeatherChannel; CurrentConditions}
+##############################################################

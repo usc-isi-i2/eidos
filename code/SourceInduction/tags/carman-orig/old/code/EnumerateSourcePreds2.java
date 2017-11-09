@@ -1,0 +1,207 @@
+package induction;
+
+import java.util.Vector;
+
+import domain.*;
+
+
+/*
+ * FOIL like generation of candidates
+ * 
+ * searches over space of source predicates
+ * all candidates produced are:
+ *   => reduced (well, sort of!)
+ *   => executable
+ *   => varLevel < maxVarLevel 
+ *   => distinct (at least for each invocation)
+ *   
+ *   
+ *  NOTE: search does not produce any candidates in which
+ *  two output variables are equated (unless they are both
+ *  equated to an input)  
+ *   
+ *   
+ *   
+ */
+
+public class EnumerateSourcePreds2 extends Generator {
+
+	public boolean debug = true;//false;
+	
+	public EnumerateSourcePreds2(Domain domain) {
+		super(domain);
+	}
+
+	
+	public EnumerateSourcePreds2(Domain domain,
+			  					 int maxClauseLength,
+			  					 int maxPredRepitition,
+			  					 int maxVarLevel,
+			  					 int maxConstantCount) {
+		super(domain, maxClauseLength, maxPredRepitition, maxVarLevel, maxConstantCount);
+	}
+
+	public Clause firstClause(Domain d) {
+		return new Clause(new Vector<Predicate>(), new Vector<Term[]>());
+	}
+	
+
+	public Vector<Clause> expandNode(Clause node) {
+		
+		if (node.preds.size() <= maxClauseLength) {
+			// add a new predicate & filter the clauses 
+			Vector<Clause> distinctClauses = new Vector<Clause>();
+			for (Clause clause: addNewLiteral(node)) {
+				if (!distinctClauses.contains(clause)) {
+					distinctClauses.add(clause);
+				}
+			}
+			
+			if (debug) {
+				System.out.println(" > Generated "+distinctClauses.size()+" distinct candidates.\n");
+			}
+			
+			return distinctClauses;
+		}	
+		
+		return new Vector<Clause>();
+	}
+	
+	
+	private Vector<Clause> addNewLiteral(Clause node) {
+		
+		Vector<Clause> extendedClauses = new Vector<Clause>();
+		
+		if (node.preds.isEmpty()) {
+			// add head literal
+			Predicate target = domain.target;
+			Clause emptyClause = node.copy();
+			emptyClause.preds.add(target);
+			emptyClause.terms.add(new Term[target.arity]);
+			extendedClauses.add(emptyClause);
+			// get specialisations of the head literal
+			Vector<Clause> possibleClauses = addPredicate(node,target);
+			// remove candidates where output variables have been equated (not very efficient implementation!)
+			for (int i=0; i<possibleClauses.size(); i++) {
+				Term[] termArray = possibleClauses.elementAt(i).terms.elementAt(0);
+				for (int j=0; j<termArray.length; j++) {
+					if (!target.bindings[j] && termArray[j]!=null && !termArray[j].isConstant) {
+						if (!target.bindings[termArray[j].pos]) {
+							possibleClauses.remove(i);
+							i--;
+							break;
+						}
+					}
+				}
+			}
+			extendedClauses.addAll(possibleClauses);
+		}
+		else {
+			// cycle over source predicates
+			for (Predicate pred: domain.sources) {
+				if (node.occurs(pred) < maxPredRepitition) {
+					extendedClauses.addAll(addPredicate(node,pred));
+				}
+			}
+			// and comparison predicates 
+			for (Predicate pred: domain.comparisons) {
+				if (node.occurs(pred) < maxPredRepitition) {
+					extendedClauses.addAll(addPredicate(node,pred));
+				}	
+			}
+			
+		}
+		return extendedClauses;
+	
+	}
+
+	
+	private Vector<Clause> addPredicate(Clause node, Predicate pred) {
+		
+		Clause copyOfClause = node.copy();
+		copyOfClause.preds.add(pred);
+		copyOfClause.terms.add(new Term[pred.arity]);
+		return specialiseLastLiteral(copyOfClause,0);
+		
+	}
+
+	
+	private Vector<Clause> specialiseLastLiteral(Clause node, int fromPosition) {
+		
+		Vector<Clause> specialisedClauses = new Vector<Clause>();
+		
+		Predicate pred1 = node.preds.lastElement();
+		Term[] termArray1 = node.terms.lastElement();
+		
+		// cycle over variables in the last literal:
+		for (int pos=fromPosition; pos<pred1.arity; pos++) {
+			
+			// check variable is not already equated to previous variable
+			if (termArray1[pos] == null) {
+				
+				SemanticType type = pred1.types[pos];
+				
+				// equate with a previous variable
+				for (int i=0; i<node.terms.size(); i++) {
+					
+					Predicate pred2 = node.preds.elementAt(i);
+					Term[] termArray2 = node.terms.elementAt(i);
+					
+					int iterations = pred2.arity;
+					if (i==node.terms.size()-1) {
+						iterations = pos;
+					}
+					
+					for (int j=0; j<iterations; j++) {
+						if (type == pred2.types[j] && (termArray2[j] == null || termArray2[j].isConstant)) {
+							Clause copyOfClause = node.copy();
+							copyOfClause.terms.lastElement()[pos] = new Term(i,j);
+							
+							if (copyOfClause.makesSense() && !copyOfClause.isSymmetric()) {
+								// check if last literal is specific enough
+								if (!copyOfClause.isReducable() && copyOfClause.isExecutable() && copyOfClause.maxLevel()<=maxVarLevel) {
+									specialisedClauses.add(copyOfClause);
+								}
+								// call method recursively
+								specialisedClauses.addAll(specialiseLastLiteral(copyOfClause,pos+1));
+							}
+						}	
+					}
+					
+				}
+				// or add a new constant
+				if (node.countConstants()<this.maxConstantCount && termArray1[pos]==null) {
+					Clause copyOfClause = node.copy();
+					copyOfClause.terms.lastElement()[pos] = new Term(null);
+					if (copyOfClause.makesSense() && !copyOfClause.isSymmetric()) {
+						// check if last literal is specific enough
+						if (!copyOfClause.isReducable() && copyOfClause.isExecutable() && copyOfClause.maxLevel()<=maxVarLevel) {
+							specialisedClauses.add(copyOfClause);
+						}
+						// call method recursively
+						specialisedClauses.addAll(specialiseLastLiteral(copyOfClause,pos+1));
+					}
+				}
+			}
+		}
+		
+		return specialisedClauses;
+		
+	}
+
+	
+	public static void testGenerator(Domain domain, int iterations, boolean debug) {
+		Vector<Clause> queue = new Vector<Clause>();
+		Generator g = new EnumerateSourcePreds2(domain,4,2,5,0);
+		queue.add(g.firstClause(domain));
+		for (int i=0; i<iterations && queue.size()>0; i++) {
+			for (Clause c: g.expandNode(queue.remove(0))) {
+				if (debug) {System.out.println(c.toStringDebug()); }
+				else {System.out.println(c.toString());}
+				queue.add(c);
+			}
+			System.out.println();
+		}
+	}
+	
+}	

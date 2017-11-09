@@ -1,0 +1,108 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+type Zip	        [varchar(200)]	{examples.zipcode5digit.val} # complete list: {uscensusbureau.zipnov99.zipcode}
+type TempF		[varchar(100)]  {numeric: -100.0, +150.0, 3%}
+type TempC		[varchar(100)]  {numeric: -50.0, +70.0, 3%}
+type Humidity		[varchar(100)]  {numeric: 0.0, 100.0, 15%}
+type WindDirection		[varchar(100)]  {examples.wind_direction.val}
+type VisFeet		[varchar(100)]
+type VisMiles		[varchar(100)]
+type PressureInches  	[varchar(100)]  {numeric: 26.0, 30.99, 0.02}
+type Sky			[varchar(100)]
+type PressureMb		[varchar(100)]	{numeric: 900.0, 1100, 1.0}
+
+## Domain Relations: 
+
+relation weather(Zip,TempF:high,TempF:low,TempF:highnextday,Humidity,Sky,PressureInches,WindDirection,VisFeet)
+
+# relation convertDistMFt(distanceM,distanceFt)
+relation convertDistMFt(VisMiles,VisFeet)
+
+relation convertTemp(TempC,TempF)
+
+## Sources: 
+
+# function ConvertM2Ft($distM,distFt)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertM2Ft}
+
+function ConvertC2F($tempC,tempF)	 			:- convertTemp(tempC,tempF).  	  							{wrappers.Ragnarok; convertC2F}
+
+function ConvertFt2M($distFt,distM)				:- convertDistMFt(distM,distFt).  							{wrappers.Ragnarok; convertFt2M}
+
+source weather1($Zip,Humidity,TempF:high,TempF:low,TempF:highnextday,Sky,VisFeet,PressureInches,WindDirection) :- weather(Zip,TempF:high,TempF:low,TempF:highnextday,Humidity,Sky,PressureInches,WindDirection,VisFeet).												{wrappers.DBService; http://www.wunderground.com/}
+
+
+## Target Predicate: 
+
+target weather2($Zip,Sky,TempF,TempC,Humidity,WindDirection,TempF) 					{wrappers.DBService; http://weather.unisys.com/}
+
+
+######################################################################
+#
+# EXPERIMENTS
+# 
+
+# 2008-10-03 20:41:09
+
+
+# # Analysis: 
+
+# weather2($Zip,Sky,TempF:high,TempC,_,_,_)	:- weather(Zip,TempF:high,_,_,_,Sky,_,_,_), convertTemp(TempC,TempF:high).
+
+# # ground truth: 
+# weather2($Zip, Sky, TempF:current, TempC:current, Humidity, WindDirection, TempF/PressureMb)
+
+# # learned:
+# weather2($Zip,Sky,TempF:high,TempC,_,_,_)	:- weather(Zip,TempF:high,_,_,_,Sky,_,_,_), convertTemp(TempC,TempF:high).
+
+# # correct: 2/4
+# # debatable: learns TempF:high instead of
+# #            TempF:current, but that as close as possible
+# #            since it there is no current temperature. 
+# #            It correcly learns the tempreature conversion
+# # missing: 3
+# # incorrect: 1?
+
+
+
+# timestmp = 1223091615856
+# target = weather2($Zip,Sky,TempF,TempC,Humidity,WindDirection,TempF)
+# definition = weather2($0,1,2,3,_,_,_)	:- weather1(0,_,2,_,_,1,_,_,_), ConvertC2F(3,2).
+# unfolding = weather2($0,1,2,3,_,_,_)	:- weather(0,2,_,_,_,1,_,_,_), convertTemp(3,2).
+# score = 4.30545712260808E-6
+# normalisedScore = -3.31181382052747
+# candidates = 31
+# totalCandidates = 64
+# accesses = 143
+# totalAccesses = 149
+# time = 12
+# totalTime = 24
+# timeout = 300
+# maxClauseLength = 7
+# maxPredRepitition = 2
+# maxVarLevel = 5
+# noVarRepetition = true
+# heuristic = random
+
+### 2008-10-09 14:50:45
+#
+# timestmp = 1223588837184
+# target = weather2($Zip,Sky,TempF,TempC,Humidity,WindDirection,TempF)
+# definition = weather2($Zip0,Sky1,TempF2,TempC3,_,_,_)	:- weather1(Zip0,_,TempF2,_,TempF4,Sky1,_,_,_), ConvertC2F(TempC3,TempF4).
+# unfolding = weather2($Zip0,Sky1,TempF2,TempC3,_,_,_)	:- weather(Zip0,TempF2,_,TempF3,_,Sky1,_,_,_), convertTemp(TempC3,TempF3).
+# score = 4.30545712260808E-6
+# normalisedScore = -3.31181382052747
+# candidates = 32
+# totalCandidates = 64
+# accesses = 143
+# totalAccesses = 149
+# time = 14
+# totalTime = 26
+# timeout = 300
+# maxClauseLength = 7
+# maxPredRepitition = 2
+# maxVarLevel = 5
+# noVarRepetition = true
+# heuristic = random

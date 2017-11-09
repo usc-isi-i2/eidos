@@ -1,0 +1,5 @@
+- weather
+- flight status
+- geocode
+- hotels
+- white pages

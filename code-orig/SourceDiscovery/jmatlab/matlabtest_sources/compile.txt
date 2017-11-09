@@ -1,0 +1,6 @@
+compilation requires the jpl_toolbox for Matlab with he procedure "garchpq", see
+http://www.spatial-econometrics.com
+
+compile command:
+
+mcc  -B cpplib:matlabtest garchpq_java.m darraytest.m inttest.m numtest.m sarraytest.m stringtest.m graphtest.m

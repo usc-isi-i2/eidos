@@ -1,0 +1,26 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Uses Codebump ZipCodeLookup Service at:
+##  http://www.codebump.com/services/ZipCodeLookup.asmx
+
+## Semantic Types: 
+type zipcode	[varchar(9)]  {db1.zipcodes.zipcode}
+type latitude	[varchar(11)] {numeric: -90.0, +90.0, 0.05}
+type longitude	[varchar(11)] {numeric: -180.0, +180.0, 0.05}
+type miles		[varchar(30)] {numeric: 0.0, 24901.55 , 1.0}
+
+## Domain Predicates: 
+relation centroid(zipcode,latitude,longitude)
+relation distance(latitude,longitude,latitude,longitude,miles)
+
+## Comparison Predicates: 
+comparison <($miles,$miles)
+
+## Sources: 
+source GetDistanceBetweenZipCodes($zip1,$zip2,dist) :- centroid(zip1,lat1,long1), centroid(zip2,lat2,long2), distance(lat1,long1,lat2,long2,dist). {invocation.wrappers.Codebump; GetDistanceBetweenZipCodes}
+
+## Target Predicate: 
+target GetZipCodesWithin($zipcode,$miles,zipcode,miles) {invocation.wrappers.Codebump; GetZipCodesWithin}
+
+##############################################################

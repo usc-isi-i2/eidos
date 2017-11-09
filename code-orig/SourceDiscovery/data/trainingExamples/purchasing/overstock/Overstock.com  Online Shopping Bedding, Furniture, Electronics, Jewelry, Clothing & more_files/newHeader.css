@@ -1,0 +1,224 @@
+/* Header */
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 5px;
+	padding: 0px;
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+}
+#header {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 2px;
+}
+
+#header a {
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.clearHead {
+	clear: both;
+	border: none;
+	color: #FFF;
+}
+
+#header ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+
+/* Bar 1 - Logo & Tools */
+
+#bar1Logo {
+	text-align: center;
+	margin-bottom: 5px !important;
+	margin-bottom: 0px;
+}
+
+#bar1Logo  .bar1 {
+	width:  760px;
+	margin: 0 auto;
+}
+
+#bar1Logo .logo {
+	float: left;
+	width: 215px;
+	height: 40px;
+	text-align: left;
+}
+
+#bar1Logo .middle {
+	float: left;
+	text-align: center;
+	width: 315px;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+#bar1Logo .middle a {
+	font-size: 14px;
+	color: #000;
+	text-decoration: none;
+}
+
+#bar1Logo .middle a:hover {
+	text-decoration: underline;
+}
+
+#bar1Logo .tools {
+	float: right;
+	width: 215px;
+	height: 40px;
+}
+
+#bar1Logo .toolsRow1 {
+	height: 15px;
+	font-size: 11px;
+	color: #505050;
+	text-align: right;
+	margin-bottom: 7px;
+}
+#bar1Logo .toolsRow1 img {
+	position: relative;
+	top: 1;
+}
+#bar1Logo .toolsRow1 a {
+	font-size: 11px;
+	color: #505050;
+	text-decoration: none;
+	padding: 0px 2px 1px 2px;
+}
+#bar1Logo .toolsRow1 a:hover{
+	text-decoration: underline;
+}
+#bar1Logo .toolsRow2 {
+	height: 15px;
+	font-size: 11px;
+	color: #505050;
+	text-align: right;
+}
+#bar1Logo .toolsRow2 a {
+	font-size: 11px;
+	color: #5986B3;
+}
+
+/* Bar 2 Tabs */
+
+#bar2Tabs {
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 0px !important;
+	margin-bottom: -3px;
+}
+
+#bar2Tabs .tabBox{
+	width: 523px;
+	list-style-type: none;
+	margin: 0px auto;
+	padding: 0px;
+	height: 22px;
+}
+
+#bar2Tabs .tab {
+	margin-right: 5px;
+	width: 100px;
+	float: left;
+}
+
+/* Bar 3 Menu tabs */
+
+#bar3Menu {
+	background-color: #F5F4F2;
+	height: 30px;
+	text-align: center;
+}
+
+#bar3Menu .menu {
+	margin: 0 auto;
+	width: 753px;
+	height: 30px !important;
+}
+
+#bar3Menu .menu div {
+	float: left;
+}
+
+#bar3Menu .tabBorder {
+	width: 1px;
+}
+
+/* Bar 4 Menu tabs */
+
+#bar4Search {
+	height: 36px;
+	background-color: #96171A;
+	text-align: center;
+	margin-top: 1px !important;
+	margin-top: -3px;
+}
+
+#bar4Search .barBox {
+	width: 750px;
+	margin: 0 auto;
+}
+
+#bar4Search .searchBox {
+	padding: 0px;
+	width: 515px;
+	text-align: left;
+	float: left;
+}
+
+#bar4Search .searchBox div {
+	float: left;
+}
+
+#bar4Search .bar4SearchSelect {
+	margin-top: 7px;
+	margin-left: 10px;
+	color: #000 !important;
+}
+#bar4Search .bar4SearchInput {
+	margin-top: 7px !important;
+	margin-top: 6px;
+	margin-left: 10px !important;
+	margin-left: 5px;
+}
+
+#bar4Search .bar4SearchInput  input{
+	width: 200px;
+	color: #000 !important;
+}
+
+#bar4Search .bar4SearchSubmit {
+	margin-top: 9px;
+	margin-left: 10px;
+}
+
+#bar4Search .checkOut {
+	width: 235px;
+	text-align: right;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	vertical-align: middle;
+	padding-top: 0px !important;
+	padding-top: 7px;
+	padding-right: 0px !important;
+	padding-right: 0px;
+}
+
+#bar4Search .checkOut a {
+	color: #FFF;
+}
+
+#bar4Search .checkOut img {
+	position: relative;
+	top: 4px;
+}

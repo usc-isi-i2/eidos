@@ -1,0 +1,39 @@
+##############################################################
+## PROBLEM DOMAIN DESCRIPTION: 
+
+## Types: 
+
+
+type PR_Latitude        [varchar(200)]  {numeric: -90.0, +90.0, 0.01}
+type PR_Longitude       [varchar(200)]  {numeric: -180.0, +180.0, 0.01}
+type PR_LatDMS          [varchar(200)]	{examples.latitudedms.val}
+type PR_LonDMS          [varchar(200)]	{examples.longitudedms.val}
+
+type PR_UTM             [varchar(200)]
+
+type PR_Address	        [varchar(200)]	{examples.address.val; equality: JaroWinkler > 0.85}
+type PR_Street	        [varchar(200)]	{examples.street.val; equality: JaroWinkler > 0.85}
+type PR_City	        [varchar(200)]	{examples.city.val[occurs]}
+type PR_StateAbbr      [varchar(200)]  {examples.usstates.code}
+type PR_State	        [varchar(200)]	{examples.usstates.name[occurs]}
+type PR_Zip	        [varchar(200)]	{examples.zipcode.val} # complete list: {uscensusbureau.zipnov99.zipcode}
+type PR_Country	        [varchar(200)]  {examples.country.val}
+type PR_Country_Abbr    [varchar(200)]  {examples.countryAbbr.val}
+		       
+type PR_CityStateZip    [varchar(200)]  {examples.city_state_zip.val; equality: JaroWinkler > 0.85}
+type PR_CityState       [varchar(200)]
+
+
+## Domain Relations: 
+
+relation Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude)
+
+## Sources: 
+
+source USGeocoder($PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_Zip,PR_Latitude,PR_Longitude)			:- Address(PR_Address,PR_Street,PR_City,PR_StateAbbr,PR_State,PR_Zip,PR_Country_Abbr,PR_Country,PR_Latitude,PR_Longitude).												{wrappers.USGeocoder; address}
+
+
+## Target Predicate: 
+
+
+target geospatial49($PR_Address,PR_Street,PR_StateAbbr,PR_StateAbbr,PR_Zip,PR_Street,PR_StateAbbr,PR_Latitude,PR_Longitude) {wrappers.DBService; http://geocoder.ca/; null; PR-Address}

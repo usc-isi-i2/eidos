@@ -1,0 +1,9 @@
+# run this command in the same directory as Tester.class:
+
+java -classpath ".;./jdbcDrivers/msbase.jar;./jdbcDrivers/mssqlserver.jar;./jdbcDrivers/msutil.jar;./jdbcDrivers/mysql-connector-java-3.1.11-bin.jar;./matt/secondstring-20040722.jar" Tester
+
+# to edit the problem file go to: 
+
+./problems/aaai_exp2.txt
+
+# to change the problem filename, edit Tester.java and recompile

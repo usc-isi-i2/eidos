@@ -1,0 +1,166 @@
+body {
+	background:white;
+	color:black;
+	font-family:verdana, arial, sans-serif;
+	font-size:8pt}
+h1, h2, h3, h4, h5, h6, p {margin:0; padding:0; line-height:200%}
+h1 {font-size:14pt}
+h2 {font-size:12pt}
+h3 {font-size:10pt}
+h4 {font-size:8pt}
+h5 {font-size:7pt}
+h6 {font-size:6pt}
+p {font-size:8pt; line-height:150%}
+
+table {border-collapse:collapse}
+
+dl {}
+dt {font-weight:bold}
+dd {margin-left:0; margin-bottom:8px}
+
+ol.alpha  {list-style-type:upper-alpha}
+
+ul.none {list-style:none}
+
+address {font-style:normal}
+
+p {margin-bottom:8px}
+
+.note, .note p, #copyright p, #copyright h4 {font-size:7pt}
+a {color:#000; text-decoration:none}
+a img, img {border:0}
+b {font-weight:bold}
+/*i {display:block}*/ /*  was good for off-setting alerts and such but we were too liberal w/ it's use */
+
+hr {display:none}
+
+hr.signature {display:block; margin-top:30px}
+
+div {float:none}
+
+th, td {
+	border:thin solid #999;
+	padding:.25em;
+	text-align:left;
+	vertical-align:top;
+	font-size:8pt}
+
+td.center, th.center {text-align:center}
+td.right, th.right {text-align:right}
+
+.center {text-align:center}
+
+
+/* math story */
+.pricenew * { background:none; border:none}
+.pricenew dl.theprice dt, .pricenew dl.bmsm dt, .pricenew dl.pr0m0 dt { 
+	text-indent:-9999px;
+	height:0; 
+	line-height:0
+	}
+	
+/* FORMS */	
+input.text1, input.text2, input.text3, input.text4, input.text5, input.text6, input.text7, input.text8, 
+textarea {width:98%; border:0; border-bottom:thin solid #000} 
+	
+td i, td .special, td .alert {margin:.25em; border:thin solid #000; background:#ccc}
+
+/* DO NOT PRINT header and footer elements, nav elements, buttons, some cats, skus, specials */
+#twts, #cart, #chead, ul#nav, #oldbrowsers, .cfoot, #intl, #emsg,
+.n02, .n04, .n17, .n29 .back, 
+a.d01:link, a.d01:visited, a.d01:hover,
+a.d02:link, a.d02:visited, a.d02:hover,
+a.d03:link, a.d03:visited, a.d03:hover,
+a.d04:link, a.d04:visited, a.d04:hover,
+a.d05:link, a.d05:visited, a.d05:hover,
+a.d06:link, a.d06:visited, a.d06:hover,
+.t03, .m08, .ad1g,
+.moredetails, .btn1, .btn2, .f08 img, .ad4e,
+.print h5, 
+#debug {display:none}
+
+/* fill a wrappers */
+.a000, .a001, .a002, .a003, .a004, .a005, .a006, .a007, .a017, .a008, .a009, .a0001, .a0101, .a0201,
+.a100, .a110, .a120, .a122,
+.a200, .a210, .a220, .a222,
+.a300, .a310, .a320, .a322,
+.a400, .a409, .a410, .a420, .a422,
+.a500, .a509, .a510, .a520, .a522,
+.a600, .a610, .a620, .a622,
+.a700, .a710,
+.a800,
+.a900,
+.a1000,
+.a1100, .a1110, .a1120,	.a1122,
+.a1200, 
+.a1300, .a1310, .a1320, .a1322, 
+h2.h03, 
+.n29, .m16, .n18 li.selected, .k29 {background:#999; color:#fff; text-indent:.50em}
+.a000 {background:white}
+.n18 li.selected {line-height:200%; font-size:8pt; font-weight:bold}
+
+/* borders on b wrappers*/
+.b000, .b001, .b002, .b003, .b004, .b005, .b006, .b007, .b017, .b008, .b009, .b0001, .b0101, .b0201,
+.b101, .b102, .b103, .b104, .b111, .b112, .b113, .b115, .b121, .b122,
+.b201, .b202, .b203, .b204, .b211, .b212, .b213, .b215, .b221, .b222,
+.b301, .b302, .b303, .b304, .b311, .b312, .b313, .b315, .b321, .b322, .b324,
+.b401, .b402, .b403, .b404, .b411, .b412, .b413, .b424, .b415, .b421, .b422, .b424,
+.b501, .b502, .b503, .b504, .b511, .b512, .b513, .b515, .b521, .b522,
+.b601, .b602, .b603, .b604, .b611, .b612, .b613, .b615, .b621, .b622,
+.b701, .b702, .b703, .b704, .b711, .b712, .b713, .b715, .b721, .b722,
+.b921, .b922, 
+.b1001,
+.b1101, .b1112, .b1122,
+.b1201, .b1212, .b1222,
+.b1301, .b1302, .b1303, .b1304, .b1311, .b1312, .b1313, .b1315, .b1321, .b1322, 
+.b100, .b200, .b300, .b400, .b500, .b600, .b700, .b800, .b900, .b1000, .b1100, .b1000, 
+.n12, #copyright {border:thin solid #999; padding:.50em}
+
+#subfooter p {font-weight:bold}
+
+/* product modules */
+.p01, .p03, .p05, .p06, .p09, .n17 {border:thin solid #999; padding:.25em}
+.p02 a {font-weight:normal}
+.m16 {font-weight:bold}
+.n18 ul {margin:0; padding:0}
+.n18 li {display:none}
+.n18 li.selected {display:inline}
+
+/* other */
+#popclose { display:none }
+.k29 a { display:none } /* hide back to top links on FAQs and such */
+
+/* used for printable coupon page ONLY */
+.r088 .c02 {float:left}
+.r088 h1.h01, #noprint {display:none}
+.r088 .b001 {border:0}
+.r088 .k88 {padding:3pt}
+.k88 .content {width:220pt; height:240pt; border:2pt dashed #000; border-top:0; padding:10pt}
+.k88 h1, .k88 h2, .k88 h4 {line-height:100%}
+.k88 h1 {font-size:8pt; padding:4pt; background:#000; color:#fff; border:2pt solid #000}
+.k88 h2 {color:#c00}
+.k88 h2, .k88 h4, .k88 .sku, .k88 .expires {padding:2pt 0}
+.k88 .info, .k88 .image {width:110pt; height:80pt; float:left}
+.k88 .expires {width:220pt; padding:6pt 0}
+.k88 .image img {width:90pt; height:90pt}
+.k88 .barcode, .k88 .sku, .k88 .couponcode {width:100pt; float:left; padding:3pt 0}
+.k88 .barcode {text-align:center}
+.k88 .expires, .k88 .instructions, .k88 .sku {font-size:7pt; color:#666}
+.k88 .instructions {float:left; padding:4pt; width:100pt; border:1pt solid #888}
+.k88 .logo {width:70pt; float:left; padding:0 10pt}
+.poplogo#coupons {display: none}
+
+/* inkdrop specific */
+#dropprintlabel .c03.center img,
+#dropprintlabel .g01 {
+	page-break-before:always;
+}
+
+/* EZ Rebates updates  - same as screen */
+dl.ordersubreb dt { font-weight:normal }
+dl.ordersubreb dt, dl.ordersubreb dd { line-height:150% }
+dl.ordersubreb dd { border-bottom:1px #999 dashed; padding:8px 0 }
+dl.ordersubreb dd.last { border:0; padding-bottom:0}
+/* EZ Rebates updates - print specific */
+dl.ordersubreb.mailreb dt, span.ezscrnonly { display:none }
+p.b424 { border:0; padding:0}

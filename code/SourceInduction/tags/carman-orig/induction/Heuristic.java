@@ -1,0 +1,301 @@
+package induction;
+
+import java.util.ArrayList;
+import java.util.Random;
+
+import domain.*;
+
+
+/*
+ * Lookahead heuristic calculation
+ * - searches space for complete (or as close to complete as possible) definitions
+ *   
+ */
+
+public class Heuristic {
+	
+	String heuristic;
+	Domain domain;
+	int maxClauseLength;
+	int maxPredRepitition;
+
+	private boolean debug = true;
+	
+	public Heuristic(String heuristic,
+					 Domain domain,
+					 int maxClauseLength,
+					 int maxPredRepitition) {
+		
+		this.heuristic 	= heuristic;
+		this.domain 	= domain;
+		this.maxClauseLength = maxClauseLength;
+		this.maxPredRepitition = maxPredRepitition;
+	}
+	
+	public ArrayList<Predicate> orderedPreds(Clause node) {
+		if (debug) {System.out.println(this.getClass()+": Ordering predicates according to heuristic: "+heuristic);}
+		if (heuristic.equalsIgnoreCase("random")) {
+			return randomOrdering(node);
+		}	
+		else if (heuristic.equalsIgnoreCase("simple")) {
+			return simpleOrdering(node);
+		}
+		else if (heuristic.equalsIgnoreCase("lookahead")) {
+			return lookaheadOrdering(node);
+		}
+		//else if (heuristic.equalsIgnoreCase("combined")) {
+		//	return combinedOrdering(node);
+		//}
+		else {
+			System.err.println("Error in "+this.getClass()+": Unknown heuristic: "+heuristic);
+			System.err.println("Possible heuristics are: {'random', 'simple', 'lookahead'}");
+			System.exit(9);
+			return null;
+		}
+	}
+	
+	///////////////////////////////////////////////////////////////////////////////
+	// PRIVATE METHODS:
+	
+	private ArrayList<Predicate> randomOrdering(Clause c) {
+		// make a list of the types available in the clause c
+		ArrayList<SemanticType> availableTypes = getAvailableTypes(c);
+		// cycle over source and comparison predicates
+		ArrayList<Predicate> potentialPreds = new ArrayList<Predicate>();
+		for (Predicate p: plus(domain.sources,domain.comparisons)) {
+			if (c.count(p) < maxPredRepitition && contains(availableTypes,p.inputSignature())) {
+				potentialPreds.add(p);
+			}
+		}
+		return randomize(potentialPreds);
+	}
+	
+	private ArrayList<Predicate> simpleOrdering(Clause c) {
+
+		// no lookahead!!!
+		ArrayList<SemanticType> availableTypes = getAvailableTypes(c);
+		ArrayList<SemanticType> missingTypes   = getMissingTypes(c);
+		
+		ArrayList<Predicate> potentialPreds = new ArrayList<Predicate>();
+		ArrayList<Integer> scores = new ArrayList<Integer>();
+		// cycle over source and comparison predicates
+		for (Predicate p: plus(domain.sources,domain.comparisons)) {
+			if (c.count(p) < maxPredRepitition && contains(availableTypes,p.inputSignature())) {
+				potentialPreds.add(p);
+				scores.add(count(p.types,missingTypes));
+			}
+		}
+		
+		// sort the preds from highest to lowest
+		return sort(potentialPreds,scores,true);
+		
+	}
+
+	private ArrayList<Predicate> lookaheadOrdering(Clause c) {
+		
+		// first order approximation only!
+		
+		// copy list of preds from body of clause
+		ArrayList<Predicate> predsInClause = new ArrayList<Predicate>();
+		for (int i=1; i<c.preds.size(); i++) {predsInClause.add(c.preds.get(i)); }
+		
+		ArrayList<SemanticType> availableTypes = getAvailableTypes(c);
+		ArrayList<SemanticType> missingTypes   = getMissingTypes(c);
+
+		int limit = maxClauseLength-c.length()+1;
+
+		ArrayList<Predicate> potentialPreds = new ArrayList<Predicate>();
+		ArrayList<Integer> scores = new ArrayList<Integer>();
+		// cycle over source and comparison predicates
+		for (Predicate p: plus(domain.sources,domain.comparisons)) {
+			if (count(predsInClause,p) < maxPredRepitition && contains(availableTypes,p.inputSignature())) {
+				// see if predicate produces all of the missing types 
+				if (contains(p.types,missingTypes)) {
+					potentialPreds.add(p);
+					scores.add(0);
+					limit = 1;
+				}
+				else {
+					int score = lookahead(predsInClause,availableTypes,missingTypes,p,limit);
+					potentialPreds.add(p);
+					scores.add(score);
+					if (limit > score) { limit = score + 1; }
+				}
+			}
+		}
+		// sort lowest to highest
+		return sort(potentialPreds,scores,false);
+		
+	}
+	
+	private int lookahead(ArrayList<Predicate> predsInClause,
+						  ArrayList<SemanticType> availableTypes, 
+						  ArrayList<SemanticType> missingTypes,
+						  Predicate pred, 
+						  int limit) {
+
+		//if (debug) {String s = ""; for (Predicate p: predsInClause) {s+=p.name+",";} System.out.println(this.getClass().getName()+"#lookahead(["+s+"],...,"+pred.name+","+limit+")");}
+		
+		// first order approximation only - doesn't perform complete search!
+
+		// add new predicate
+		predsInClause.add(pred);
+		// add new types:
+		for (SemanticType s: pred.types) { availableTypes.add(s); } 
+		// remove any types produced by the new predicate
+		ArrayList<SemanticType> deleted = new ArrayList<SemanticType>();
+		for (SemanticType s: pred.types) { 
+			if (missingTypes.remove(s)) { 
+				deleted.add(s); 
+			} 
+		}
+						
+		// find shortest path (if exists) that produces all outputs
+		int lowest = limit;
+		for (Predicate p: plus(domain.sources,domain.comparisons)) {
+			if (count(predsInClause,p) < maxPredRepitition && contains(availableTypes,p.inputSignature())) {
+				// see if pr produces all of the missing types 
+				if (contains(p.types,missingTypes)) {
+					lowest = 1;
+					break;
+				}
+				if (limit > 2) {
+					int score = 1 + lookahead(predsInClause,availableTypes,missingTypes,p,lowest-1);
+					if (score < lowest) {
+						lowest = score;
+					}	
+				}	
+			}
+		}
+		
+		// remove new predicate
+		predsInClause.remove(predsInClause.size()-1);
+		// remove new types from end of list:
+		availableTypes.subList(availableTypes.size()-pred.arity,availableTypes.size()).clear();
+		// replace deleted missing types:
+		missingTypes.addAll(deleted);
+		
+		return lowest;
+	}
+	
+	private ArrayList<Predicate> sort(ArrayList<Predicate> preds, ArrayList<Integer> scores, boolean descending) {
+		// if (descending) then sort from highest to lowest:
+		for (int i=0; i<scores.size(); i++) {
+			Predicate p = preds.get(i);
+			int s = scores.get(i);
+			for (int j=0; j<i; j++) {
+				if (descending == (s > scores.get(j))) {
+					preds.remove(i);
+					scores.remove(i);
+					preds.add(j,p);
+					scores.add(j,s);
+					break;
+				}
+			}
+		}
+		
+		System.out.println("** ORDERING PREDICATES BY SCORE: ");
+		for (int i=0; i<preds.size(); i++) {
+			System.out.println(" "+scores.get(i)+": "+preds.get(i));
+		}
+		
+		return preds;
+	}
+	
+	private ArrayList<Predicate> randomize(ArrayList<Predicate> a) {
+		ArrayList<Predicate> b = new ArrayList<Predicate>();
+		while (!a.isEmpty()) {
+			b.add(a.remove((new Random()).nextInt(a.size())));
+		}
+		return b;
+	}
+
+	// NOT VERY EFFICIENT - NEED BETTER IMPLEMENTATION:
+	private boolean contains(ArrayList<SemanticType> a, ArrayList<SemanticType> b) {
+		// see if a contains all the elements of b (note: there may be repetition in both sets)
+		// copy a into c:
+		ArrayList<SemanticType> c = new ArrayList<SemanticType>();
+		for (SemanticType t: a) { c.add(t); }
+		// check if c contains a
+		for (SemanticType t: b) {
+			if (!c.remove(t)) {
+				return false;
+			}
+		}
+		return true;
+	}
+	private boolean contains(SemanticType[] a, ArrayList<SemanticType> b) {
+		// see if a contains all the elements of b (note: there may be repetition in both sets)
+		// copy a into c:
+		ArrayList<SemanticType> c = new ArrayList<SemanticType>();
+		for (SemanticType t: a) { c.add(t); }
+		// check if c contains a
+		for (SemanticType t: b) {
+			if (!c.remove(t)) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	private int count(SemanticType[] a, ArrayList<SemanticType> b) {
+		int count = 0;
+		ArrayList<SemanticType> c = new ArrayList<SemanticType>();
+		for (SemanticType t: b) { c.add(t); }
+		for (SemanticType t: a) {
+			if (c.remove(t)) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	private int count(ArrayList<Predicate> a, Predicate b) {
+		int count = 0;
+		for (Predicate p: a) {
+			if (p == b) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	private ArrayList<Predicate> plus(ArrayList<Predicate> a, ArrayList<Predicate> b) {
+		ArrayList<Predicate> c = new ArrayList<Predicate>();
+		c.addAll(a);
+		c.addAll(b);
+		return c;
+	}
+	
+	private ArrayList<SemanticType> getAvailableTypes(Clause c) {
+		// create list of available types (record duplicates)
+		ArrayList<SemanticType> types = new ArrayList<SemanticType>();
+		for (int i=0; i<c.preds.size(); i++) {
+			Predicate pr = c.preds.get(i);
+			Term[] termArray = c.terms.get(i);
+			for (int j=0; j<pr.arity; j++) {
+				if (termArray[j] == null) {
+					types.add(pr.types[j]);
+				}
+			}
+		}
+		return types;	
+	}
+	
+	private ArrayList<SemanticType> getMissingTypes(Clause c) {
+		// create list of missing types (record duplicates)
+		ArrayList<SemanticType> types   = new ArrayList<SemanticType>();
+		boolean[] appears = c.varsInBody();
+		for (int i=0; i<appears.length; i++) {
+			if (!appears[i]) {
+				SemanticType s = c.head().types[i];
+				// only add type if there is at least one source that produces or inputs it
+				if (domain.producibleTypes().contains(s)) {
+					types.add(s);
+				}
+			}
+		}
+		return types;	
+	}
+
+}	

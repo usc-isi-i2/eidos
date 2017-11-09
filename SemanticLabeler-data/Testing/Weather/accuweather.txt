@@ -1,0 +1,367 @@
+5:54 PM	"Salt Lake City, UT"	69°	69	mostly sunny	9 mph	9	NNE	10 mi	10	84102
+7:54 PM	"Salem, VA"	84°	84	mostly sunny	10 mph	10	SW	10 mi	10	24153
+7:54 PM	"Manchester, CT"	87°	87	mostly sunny	8 mph	8	S	10 mi	10	06040
+NULL	"Adrian, MN"	66°	66	mostly sunny	13 mph	13	SSW	10 mi	10	56110
+NULL	"Coeur D'alene, ID"	64°	64	mostly sunny	13 mph	13	S	10 mi	10	83814
+NULL	"Washington, DC"	86°	86	partly sunny	14 mph	14	SW	10 mi	10	20007
+6:54 PM	"Evanston, IL"	87°	87	mostly sunny	10 mph	10	WSW	10 mi	10	60201
+NULL	"Milton, WA"	64°	64	mostly sunny	13 mph	13	SW	10 mi	10	98354
+1:55 PM	"Kailua, HI"	87°	87	partly cloudy	12 mph	12	ENE	10 mi	10	96734
+NULL	"Merna, NE"	66°	66	rain	19 mph	19	WNW	10 mi	10	68856
+NULL	"Plantsville, CT"	84°	84	sunny	13 mph	13	SSW	9 mi	9	06479
+4:58 PM	"Tucson, AZ"	96°	96	sunny	0 mph	0	CLM	10 mi	10	85741
+NULL	"Cottonwood Falls, KS"	81°	81	sunny	15 mph	15	WSW	10 mi	10	66845
+5:58 PM	"Whitefish, MT"	64°	64	partly sunny	10 mph	10	SSW	10 mi	10	59937
+7:58 PM	"Chauncey, GA"	86°	86	mostly cloudy	3 mph	3	SE	9 mi	9	31011
+NULL	"Rushmore, MN"	66°	66	mostly sunny	13 mph	13	SSW	10 mi	10	56168
+NULL	"Dallas, TX"	91°	91	mostly sunny	21 mph	21	SSE	10 mi	10	75204
+4:59 PM	"Redmond, WA"	65°	65	mostly sunny	8 mph	8	SSW	10 mi	10	98052
+NULL	"Atlanta, GA"	85°	85	mostly sunny	7 mph	7	W	10 mi	10	30302
+4:59 PM	"Flagstaff, AZ"	76°	76	mostly sunny	7 mph	7	N	10 mi	10	86001
+NULL	"Warner, NH"	81°	81	sunny	0 mph	0	CLM	7 mi	7	03278
+7:05 PM	"Mena, AR"	83°	83	partly cloudy	6 mph	6	S	10 mi	10	71953
+NULL	"Tacoma, WA"	64°	64	mostly sunny	13 mph	13	SW	10 mi	10	98466
+NULL	"Lawrenceville, GA"	85°	85	clear	5 mph	5	N	9 mi	9	30044
+6:05 PM	"Garden Valley, ID"	62°	62	partly cloudy	6 mph	6	NNW	10 mi	10	83622
+NULL	"Victoria, TX"	88°	88	mostly sunny	16 mph	16	SE	10 mi	10	77904
+7:06 PM	"Emporia, KS"	81°	81	mostly sunny	12 mph	12	WSW	10 mi	10	66801
+6:06 PM	"Madison, MS"	89°	89	mostly sunny	5 mph	5	S	9 mi	9	39110
+NULL	"Lester, IA"	70°	70	rain	9 mph	9	S	1 mi	1	51242
+NULL	"Waupaca, WI"	70°	70	cloudy	12 mph	12	ENE	10 mi	10	54981
+6:55 PM	"Jackson, MS"	89°	89	mostly sunny	5 mph	5	N	10 mi	10	39212
+6:55 PM	"Rock Rapids, IA"	73°	73	rain	10 mph	10	S	8 mi	8	51246
+NULL	"Liberty, KY"	86°	86	mostly sunny	5 mph	5	SW	9 mi	9	42539
+NULL	"Opelika, AL"	88°	88	mostly sunny	5 mph	5	WNW	10 mi	10	36801
+NULL	"Houston, TX"	89°	89	mostly sunny	14 mph	14	SSE	10 mi	10	77041
+NULL	"Rapid City, SD"	60°	60	cloudy	26 mph	26	NNW	10 mi	10	57701
+NULL	"Shawnee, KS"	81°	81	sunny	16 mph	16	SW	10 mi	10	66216
+7:56 PM	"Palmyra, NY"	76°	76	rain	5 mph	5	WSW	3 mi	3	14522
+NULL	"Arlington, VA"	86°	86	partly sunny	14 mph	14	SW	10 mi	10	22204
+NULL	"North Miami Beach, FL"	84°	84	mostly sunny	13 mph	13	ENE	10 mi	10	33160
+NULL	"Middle River, MD"	84°	84	thunderstorm	7 mph	7	ESE	7 mi	7	21220
+6:57 PM	"Nashville, TN"	89°	89	mostly sunny	7 mph	7	SSW	10 mi	10	37201
+NULL	"Charlotte, NC"	84°	84	partly sunny	7 mph	7	S	10 mi	10	28202
+NULL	"Alexandria, LA"	91°	91	sunny	7 mph	7	SSE	10 mi	10	71302
+4:57 PM	"Benton City, WA"	81°	81	sunny	18 mph	18	SW	10 mi	10	99320
+NULL	"Dayton, NV"	83°	83	mostly sunny	5 mph	5	ESE	13 mi	13	89403
+6:57 PM	"Oklahoma City, OK"	83°	83	mostly sunny	12 mph	12	N	10 mi	10	73116
+NULL	"Evanston, WY"	59°	59	sunny	11 mph	11	W	10 mi	10	82930
+NULL	"Southaven, MS"	90°	90	mostly sunny	9 mph	9	SSE	10 mi	10	38671
+NULL	"Greenwood, DE"	85°	85	mostly sunny	13 mph	13	SW	10 mi	10	19950
+NULL	"Fremont, NE"	68°	68	cloudy	17 mph	17	SSW	10 mi	10	68025
+6:59 PM	"Linden, TN"	88°	88	mostly sunny	7 mph	7	S	10 mi	10	37096
+NULL	"Milton, FL"	87°	87	mostly sunny	9 mph	9	SSW	7 mi	7	32570
+7:00 PM	"Laurel, DE"	85°	85	mostly sunny	13 mph	13	SW	10 mi	10	19956
+7:00 PM	"Hyde Park, VT"	80°	80	partly sunny	0 mph	0	CLM	7 mi	7	05655
+6:00 PM	"La Fontaine, IN"	83°	83	partly cloudy	9 mph	9	SW	9 mi	9	46940
+NULL	"Rapid City, SD"	60°	60	cloudy	26 mph	26	NNW	10 mi	10	57702
+6:00 PM	"Stanley, ND"	62°	62	cloudy	11 mph	11	NE	7 mi	7	58784
+NULL	"Guthrie, OK"	87°	87	mostly sunny	7 mph	7	N	10 mi	10	73044
+NULL	"Bismarck, ND"	62°	62	light rain	8 mph	8	N	10 mi	10	58501
+6:01 PM	"Saint Louis, MO"	76°	76	mostly cloudy	30 mph	30	NW	10 mi	10	63138
+NULL	"Petersburg, AK"	59°	59	partly sunny	6 mph	6	NNE	10 mi	10	99833
+7:01 PM	"Columbia, SC"	87°	87	mostly sunny	6 mph	6	SSW	10 mi	10	29201
+NULL	"Bellevue, NE"	73°	73	cloudy	11 mph	11	SW	10 mi	10	68005
+7:01 PM	"Fraser, MI"	79°	79	mostly sunny	13 mph	13	W	10 mi	10	48026
+NULL	"Troy, MO"	77°	77	rain	10 mph	10	ESE	9 mi	9	63379
+7:01 PM	"Hubert, NC"	79°	79	mostly sunny	12 mph	12	SSW	10 mi	10	28539
+1:02 PM	"Honolulu, HI"	81°	81	mostly sunny	12 mph	12	ENE	7 mi	7	96801
+NULL	"Great Barrington, MA"	83°	83	sunny	5 mph	5	SW	7 mi	7	01230
+NULL	"Sturtevant, WI"	78°	78	mostly sunny	17 mph	17	SE	7 mi	7	53177
+NULL	"Yarmouth, ME"	81°	81	mostly cloudy	0 mph	0	CLM	7 mi	7	04096
+6:02 PM	"Florissant, MO"	76°	76	mostly cloudy	30 mph	30	NW	10 mi	10	63033
+7:02 PM	"Manchester, NH"	78°	78	partly sunny	9 mph	9	S	9 mi	9	03101
+NULL	"Los Angeles, CA"	74°	74	sunny	8 mph	8	WSW	9 mi	9	90001
+NULL	"Denham Springs, LA"	91°	91	mostly sunny	8 mph	8	S	10 mi	10	70726
+NULL	"Fairfield, CT"	81°	81	sunny	13 mph	13	SSW	10 mi	10	06824
+NULL	"Milwaukee, WI"	76°	76	mostly sunny	8 mph	8	SSE	6 mi	6	53228
+NULL	"Belleview, FL"	77°	77	mostly sunny	8 mph	8	N	10 mi	10	34420
+NULL	"Winner, SD"	58°	58	light rain	20 mph	20	NW	8 mi	8	57580
+NULL	"Laughlin, NV"	107°	107	sunny	9 mph	9	NNW	10 mi	10	89029
+7:03 PM	"Dover Foxcroft, ME"	82°	82	cloudy	6 mph	6	NNW	10 mi	10	04426
+6:04 PM	"Mount Prospect, IL"	89°	89	sunny	10 mph	10	WSW	10 mi	10	60056
+NULL	"Tampa, FL"	88°	88	mostly sunny	9 mph	9	NNW	10 mi	10	33602
+NULL	"Quincy, IL"	77°	77	partly cloudy	9 mph	9	SSW	10 mi	10	62301
+6:04 PM	"Tinley Park, IL"	87°	87	mostly sunny	11 mph	11	SW	10 mi	10	60477
+NULL	"Milwaukee, WI"	76°	76	mostly sunny	8 mph	8	SSE	6 mi	6	53202
+NULL	"Glenwood, NM"	69°	69	mostly sunny	8 mph	8	WNW	10 mi	10	88039
+NULL	"Duluth, MN"	59°	59	cloudy	15 mph	15	E	10 mi	10	55803
+NULL	"Utica, MI"	73°	73	mostly cloudy	13 mph	13	W	7 mi	7	48317
+NULL	"Hillsborough, NJ"	87°	87	partly sunny	0 mph	0	CLM	9 mi	9	08844
+1:11 PM	"Houston, TX"	94°	94	partly sunny	6 mph	6	N	10 mi	10	77041
+NULL	"Rapid City, SD"	74°	74	sunny	23 mph	23	NNW	10 mi	10	57701
+1:11 PM	"Shawnee, KS"	71°	71	thunderstorm	3 mph	3	SSW	5 mi	5	66216
+2:11 PM	"Palmyra, NY"	84°	84	mostly sunny	4 mph	4	SW	7 mi	7	14522
+2:12 PM	"North Miami Beach, FL"	87°	87	mostly cloudy	10 mph	10	SE	10 mi	10	33160
+NULL	"Arlington, VA"	85°	85	mostly sunny	6 mph	6	E	6 mi	6	22204
+NULL	"Middle River, MD"	84°	84	haze	7 mph	7	SE	5 mi	5	21220
+1:12 PM	"Nashville, TN"	91°	91	haze	6 mph	6	N	5 mi	5	37201
+NULL	"Charlotte, NC"	88°	88	mostly sunny	6 mph	6	N	9 mi	9	28202
+1:12 PM	"Alexandria, LA"	96°	96	mostly sunny	5 mph	5	N	6 mi	6	71302
+NULL	"Indianapolis, IN"	82°	82	partly sunny	12 mph	12	S	10 mi	10	46201
+NULL	"Louisville, KY"	85°	85	sunny	7 mph	7	N	6 mi	6	40207
+NULL	"Boise, ID"	77°	77	sunny	10 mph	10	N	10 mi	10	83702
+NULL	"Detroit, MI"	79°	79	sunny	9 mph	9	WNW	10 mi	10	48202
+NULL	"Longmont, CO"	72°	72	partly cloudy	11 mph	11	NNE	10 mi	10	80501
+NULL	"Pacolet, SC"	82°	82	mostly sunny	7 mph	7	SW	2 mi	2	29372
+NULL	"Waynesville, NC"	70°	70	mostly sunny	8 mph	8	W	15 mi	15	28785
+NULL	"Dardanelle, AR"	87°	87	sunny	5 mph	5	N	10 mi	10	72834
+7:07 PM	"Saint Louis, MO"	71°	71	thundershower	24 mph	24	SW	7 mi	7	63101
+8:07 PM	"Cambridge, MA"	83°	83	partly cloudy	10 mph	10	S	6 mi	6	02138
+NULL	"Bowling Green, OH"	80°	80	rain	13 mph	13	WSW	9 mi	9	43402
+NULL	"Columbus, OH"	81°	81	mostly sunny	14 mph	14	SW	9 mi	9	43085
+NULL	"Winsted, CT"	81°	81	partly cloudy	6 mph	6	SSW	15 mi	15	06098
+8:08 PM	"Bethesda, MD"	78°	78	rain	9 mph	9	WSW	7 mi	7	20814
+NULL	"Clovis, NM"	89°	89	mostly sunny	13 mph	13	W	8 mi	8	88101
+6:08 PM	"Orem, UT"	70°	70	sunny	5 mph	5	NNW	10 mi	10	84057
+NULL	"Memphis, TN"	87°	87	sunny	8 mph	8	SSE	10 mi	10	38117
+NULL	"Cresskill, NJ"	87°	87	clear	8 mph	8	WSW	10 mi	10	07626
+8:09 PM	"Boston, MA"	83°	83	partly cloudy	10 mph	10	S	6 mi	6	02101
+NULL	"Edgewood, NM"	78°	78	mostly sunny	13 mph	13	W	12 mi	12	87015
+NULL	"Fishers, IN"	82°	82	mostly sunny	8 mph	8	SW	10 mi	10	46038
+NULL	"Charlotte, NC"	82°	82	mostly clear	7 mph	7	S	10 mi	10	28277
+NULL	"Anchorage, AK"	60°	60	partly cloudy	8 mph	8	NW	10 mi	10	99504
+NULL	"Travelers Rest, SC"	83°	83	sunny	8 mph	8	W	15 mi	15	29690
+NULL	"Morgantown, WV"	79°	79	partly cloudy	6 mph	6	W	9 mi	9	26508
+NULL	"Dallas, OR"	68°	68	partly cloudy	7 mph	7	N	10 mi	10	97338
+8:10 PM	"Johnston, RI"	81°	81	clear	7 mph	7	SW	8 mi	8	02919
+8:10 PM	"Newtown, PA"	86°	86	clear	12 mph	12	SW	10 mi	10	18940
+NULL	"New York, NY"	85°	85	clear	3 mph	3	N	10 mi	10	10001
+NULL	"Kinde, MI"	68°	68	mist	7 mph	7	NNW	2 mi	2	48445
+NULL	"Winchester, KY"	82°	82	mostly sunny	5 mph	5	SW	10 mi	10	40391
+8:10 PM	"Indianapolis, IN"	82°	82	mostly sunny	8 mph	8	SW	10 mi	10	46260
+7:10 PM	"Jonesboro, AR"	90°	90	sunny	15 mph	15	SSW	10 mi	10	72401
+6:11 PM	"Montrose, CO"	72°	72	sunny	8 mph	8	NNW	10 mi	10	81401
+NULL	"Kaneohe, HI"	87°	87	partly cloudy	12 mph	12	ENE	10 mi	10	96744
+NULL	"Laconia, NH"	79°	79	clear	0 mph	0	CLM	6 mi	6	03246
+NULL	"Conifer, CO"	60°	60	mostly sunny	10 mph	10	NW	10 mi	10	80433
+7:12 PM	"Ankeny, IA"	77°	77	partly sunny	10 mph	10	S	10 mi	10	50021
+NULL	"Walker, LA"	87°	87	sunny	8 mph	8	S	10 mi	10	70785
+8:12 PM	"Edgewater, NJ"	87°	87	clear	8 mph	8	WSW	10 mi	10	07020
+NULL	"Garden Valley, ID"	70°	70	sunny	3 mph	3	NE	10 mi	10	83622
+NULL	"Victoria, TX"	92°	92	rain	8 mph	8	SSW	11 mi	11	77904
+1:22 PM	"Madison, MS"	91°	91	partly cloudy	3 mph	3	E	9 mi	9	39110
+NULL	"Emporia, KS"	89°	89	sunny	13 mph	13	ESE	10 mi	10	66801
+NULL	"Waupaca, WI"	79°	79	sunny	17 mph	17	WSW	10 mi	10	54981
+1:23 PM	"Lester, IA"	73°	73	cloudy	19 mph	19	W	10 mi	10	51242
+NULL	"Louisville, KY"	92°	92	haze	9 mph	9	WNW	5 mi	5	40207
+1:23 PM	"Indianapolis, IN"	89°	89	mostly sunny	9 mph	9	WSW	7 mi	7	46201
+NULL	"Boise, ID"	78°	78	sunny	0 mph	0	CLM	10 mi	10	83702
+NULL	"Detroit, MI"	71°	71	light rain	9 mph	9	SSE	8 mi	8	48202
+NULL	"Dayton, OH"	80°	80	sunny	13 mph	13	SW	9 mi	9	45429
+NULL	"Holden, WV"	81°	81	partly cloudy	4 mph	4	SW	15 mi	15	25625
+NULL	"Stowe, VT"	77°	77	haze	0 mph	0	CLM	5 mi	5	05672
+NULL	"Marinette, WI"	70°	70	cloudy	0 mph	0	CLM	2 mi	2	54143
+8:13 PM	"Springfield, MA"	85°	85	partly cloudy	7 mph	7	SSW	9 mi	9	01101
+NULL	"Milwaukee, WI"	75°	75	mostly sunny	9 mph	9	SSE	6 mi	6	53215
+NULL	"Buffalo, NY"	72°	72	rain	15 mph	15	SW	2 mi	2	14204
+NULL	"Cumberland Center, ME"	82°	82	clear	5 mph	5	SSW	9 mi	9	04021
+NULL	"Baltimore, MD"	82°	82	thundershower	6 mph	6	SSW	8 mi	8	21230
+NULL	"Mesa, AZ"	99°	99	sunny	9 mph	9	SSW	40 mi	40	85206
+8:14 PM	"Exton, PA"	78°	78	rain	9 mph	9	SSW	10 mi	10	19341
+NULL	"Newark, NJ"	89°	89	mostly clear	10 mph	10	W	10 mi	10	07102
+NULL	"Marina Del Rey, CA"	66°	66	cloudy	8 mph	8	SSW	10 mi	10	90292
+NULL	"Gadsden, AL"	88°	88	sunny	3 mph	3	S	10 mi	10	35903
+NULL	"Linden, NJ"	82°	82	mostly cloudy	8 mph	8	E	8 mi	8	07036
+2:08 PM	"Boston, MA"	77°	77	partly sunny	8 mph	8	SE	10 mi	10	02120
+NULL	"Salt Lake City, UT"	75°	75	mostly sunny	5 mph	5	N	10 mi	10	84102
+2:09 PM	"Manchester, CT"	79°	79	partly sunny	5 mph	5	SSE	10 mi	10	06040
+NULL	"Salem, VA"	86°	86	mostly cloudy	7 mph	7	NW	7 mi	7	24153
+1:09 PM	"Adrian, MN"	72°	72	partly sunny	23 mph	23	W	10 mi	10	56110
+11:10 AM	"Coeur D'alene, ID"	73°	73	sunny	10 mph	10	SSE	10 mi	10	83814
+NULL	"Evanston, IL"	87°	87	mostly sunny	13 mph	13	W	10 mi	10	60201
+NULL	"Washington, DC"	85°	85	mostly sunny	6 mph	6	E	6 mi	6	20007
+NULL	"Milton, WA"	65°	65	partly sunny	6 mph	6	SSW	10 mi	10	98354
+8:10 AM	"Kailua, HI"	79°	79	sunny	9 mph	9	ENE	10 mi	10	96734
+NULL	"Jackson, MS"	89°	89	partly sunny	7 mph	7	ENE	10 mi	10	39212
+NULL	"Merna, NE"	80°	80	mostly sunny	8 mph	8	SE	10 mi	10	68856
+NULL	"Rock Rapids, IA"	73°	73	cloudy	19 mph	19	W	10 mi	10	51246
+NULL	"Liberty, KY"	90°	90	partly cloudy	5 mph	5	WSW	8 mi	8	42539
+NULL	"Opelika, AL"	84°	84	mostly sunny	7 mph	7	SSW	10 mi	10	36801
+12:31 PM	"Los Angeles, CA"	67°	67	sunny	10 mph	10	SW	10 mi	10	90034
+3:45 PM	"Arlington, VA"	88°	88	mostly sunny	13 mph	13	S	8 mi	8	22204
+2:46 PM	"Alexandria, LA"	90°	90	thunderstorm	6 mph	6	SSW	10 mi	10	71302
+12:46 PM	"Dayton, NV"	58°	58	partly cloudy	9 mph	9	SSW	12 mi	12	89403
+2:46 PM	"Nashville, TN"	84°	84	thunderstorm	5 mph	5	E	10 mi	10	37201
+2:46 PM	"Oklahoma City, OK"	86°	86	mostly sunny	14 mph	14	SSW	10 mi	10	73116
+12:46 PM	"Benton City, WA"	63°	63	mostly sunny	7 mph	7	WNW	10 mi	10	99320
+2:47 PM	"Southaven, MS"	70°	70	partly sunny	9 mph	9	SE	10 mi	10	38671
+3:47 PM	"Greenwood, DE"	89°	89	sunny	8 mph	8	SSW	10 mi	10	19950
+1:47 PM	"Evanston, WY"	51°	51	rain	15 mph	15	WSW	7 mi	7	82930
+2:47 PM	"Cottonwood Falls, KS"	87°	87	partly cloudy	11 mph	11	SSE	10 mi	10	66845
+3:47 PM	"Liberty, KY"	89°	89	partly cloudy	2 mph	2	WSW	15 mi	15	42539
+12:48 PM	"Tucson, AZ"	87°	87	sunny	8 mph	8	W	10 mi	10	85741
+2:48 PM	"Dallas, TX"	89°	89	mostly sunny	10 mph	10	S	10 mi	10	75204
+3:48 PM	"Atlanta, GA"	87°	87	mostly sunny	8 mph	8	SE	8 mi	8	30302
+12:48 PM	"Flagstaff, AZ"	65°	65	mostly sunny	20 mph	20	SW	10 mi	10	86001
+2:49 PM	"Fremont, NE"	88°	88	sunny	15 mph	15	SSW	10 mi	10	68025
+3:49 PM	"Laurel, DE"	89°	89	sunny	8 mph	8	SSW	10 mi	10	19956
+2:49 PM	"Milton, FL"	75°	75	partly sunny	0 mph	0	CLM	7 mi	7	32570
+3:49 PM	"Hyde Park, VT"	71°	71	partly sunny	5 mph	5	N	6 mi	6	05655
+2:50 PM	"Guthrie, OK"	88°	88	sunny	10 mph	10	SSW	10 mi	10	73044
+2:50 PM	"Bismarck, ND"	79°	79	sunny	20 mph	20	ESE	10 mi	10	58501
+2:50 PM	"Saint Louis, MO"	75°	75	mostly cloudy	0 mph	0	CLM	10 mi	10	63138
+2:51 PM	"Stanley, ND"	69°	69	partly cloudy	12 mph	12	E	9 mi	9	58784
+11:51 AM	"Petersburg, AK"	61°	61	sunny	3 mph	3	SE	10 mi	10	99833
+2:51 PM	"Bellevue, NE"	86°	86	mostly sunny	17 mph	17	S	7 mi	7	68005
+3:51 PM	"Hubert, NC"	85°	85	partly cloudy	8 mph	8	S	7 mi	7	28539
+9:51 AM	"Honolulu, HI"	80°	80	partly sunny	9 mph	9	E	7 mi	7	96801
+2:52 PM	"Sturtevant, WI"	84°	84	mostly sunny	26 mph	26	W	10 mi	10	53177
+2:52 PM	"Florissant, MO"	75°	75	mostly cloudy	0 mph	0	CLM	10 mi	10	63033
+3:52 PM	"Manchester, NH"	62°	62	cloudy	7 mph	7	ESE	7 mi	7	03101
+2:52 PM	"Denham Springs, LA"	77°	77	cloudy	6 mph	6	SSE	8 mi	8	70726
+3:53 PM	"Fairfield, CT"	65°	65	haze	15 mph	15	E	4 mi	4	06824
+12:53 PM	"Los Angeles, CA"	72°	72	mostly sunny	7 mph	7	N	10 mi	10	90001
+2:53 PM	"Winner, SD"	86°	86	sunny	16 mph	16	SSE	10 mi	10	57580
+3:53 PM	"Dover Foxcroft, ME"	51°	51	cloudy	9 mph	9	SSE	8 mi	8	04426
+12:53 PM	"Laughlin, NV"	90°	90	sunny	15 mph	15	SW	10 mi	10	89029
+2:54 PM	"Mount Prospect, IL"	88°	88	mostly sunny	15 mph	15	W	10 mi	10	60056
+2:54 PM	"Quincy, IL"	82°	82	partly cloudy	9 mph	9	SW	10 mi	10	62301
+3:54 PM	"Tampa, FL"	88°	88	mostly cloudy	6 mph	6	N	10 mi	10	33602
+2:54 PM	"Milwaukee, WI"	84°	84	mostly sunny	17 mph	17	W	10 mi	10	53202
+2:54 PM	"Tinley Park, IL"	84°	84	mostly sunny	15 mph	15	W	10 mi	10	60477
+2:54 PM	"Duluth, MN"	68°	68	mostly sunny	17 mph	17	WNW	10 mi	10	55803
+3:54 PM	"Utica, MI"	84°	84	mostly sunny	14 mph	14	W	12 mi	12	48317
+12:55 PM	"Tacoma, WA"	56°	56	mostly sunny	6 mph	6	WNW	10 mi	10	98466
+2:55 PM	"Mena, AR"	85°	85	rain	4 mph	4	SW	10 mi	10	71953
+3:56 PM	"Lawrenceville, GA"	87°	87	haze	3 mph	3	N	3 mi	3	30044
+2:56 PM	"Lester, IA"	83°	83	sunny	9 mph	9	SSW	10 mi	10	51242
+2:56 PM	"Waupaca, WI"	77°	77	mostly sunny	14 mph	14	W	10 mi	10	54981
+1:57 PM	"Boise, ID"	59°	59	mostly sunny	9 mph	9	NW	10 mi	10	83702
+2:57 PM	"Indianapolis, IN"	85°	85	mostly sunny	8 mph	8	WSW	10 mi	10	46201
+3:57 PM	"Detroit, MI"	84°	84	mostly sunny	20 mph	20	W	10 mi	10	48202
+2:58 PM	"Saint Louis, MO"	75°	75	mostly cloudy	0 mph	0	CLM	10 mi	10	63101
+2:58 PM	"Dardanelle, AR"	89°	89	rain	6 mph	6	S	10 mi	10	72834
+3:58 PM	"Waynesville, NC"	80°	80	rain	5 mph	5	N	10 mi	10	28785
+3:58 PM	"Cambridge, MA"	61°	61	mostly sunny	9 mph	9	E	10 mi	10	02138
+3:58 PM	"Bethesda, MD"	88°	88	mostly sunny	13 mph	13	S	8 mi	8	20814
+3:58 PM	"Winsted, CT"	82°	82	fog	9 mph	9	S	9 mi	9	06098
+2:59 PM	"Memphis, TN"	70°	70	partly sunny	9 mph	9	SE	10 mi	10	38117
+1:59 PM	"Orem, UT"	52°	52	partly sunny	18 mph	18	WNW	10 mi	10	84057
+2:59 PM	"Fishers, IN"	84°	84	sunny	7 mph	7	W	10 mi	10	46038
+1:00 PM	"Edgewood, NM"	75°	75	sunny	15 mph	15	SW	10 mi	10	87015
+3:00 PM	"Travelers Rest, SC"	87°	87	rain	5 mph	5	SSW	9 mi	9	29690
+3:02 PM	"Winchester, KY"	89°	89	partly cloudy	6 mph	6	W	10 mi	10	40391
+1:02 PM	"Montrose, CO"	78°	78	mostly sunny	18 mph	18	WSW	10 mi	10	81401
+2:02 PM	"Ankeny, IA"	84°	84	mostly sunny	13 mph	13	S	10 mi	10	50021
+2:02 PM	"Walker, LA"	77°	77	cloudy	6 mph	6	SSE	8 mi	8	70785
+3:03 PM	"Holden, WV"	89°	89	rain	5 mph	5	NW	10 mi	10	25625
+3:03 PM	"Marinette, WI"	77°	77	mostly sunny	15 mph	15	W	7 mi	7	54143
+3:04 PM	"Stowe, VT"	71°	71	partly sunny	5 mph	5	N	6 mi	6	05672
+3:04 PM	"Cumberland Center, ME"	50°	50	foggy	7 mph	7	ENE	1 mi	1	04021
+12:04 PM	"Mesa, AZ"	86°	86	sunny	10 mph	10	S	30 mi	30	85206
+4:04 PM	"Baltimore, MD"	88°	88	haze	13 mph	13	S	5 mi	5	21230
+3:05 PM	"Exton, PA"	82°	82	partly cloudy	10 mph	10	SSE	9 mi	9	19341
+4:05 PM	"Newark, NJ"	88°	88	partly sunny	14 mph	14	SSE	10 mi	10	07102
+7:53 PM	"Linden, NJ"	90°	90	mostly sunny	10 mph	10	W	10 mi	10	07036
+NULL	"North Bend, OR"	63°	63	cloudy	22 mph	22	N	10 mi	10	97459
+NULL	"Gadsden, AL"	88°	88	sunny	0 mph	0	CLM	10 mi	10	35903
+NULL	"Boston, MA"	82°	82	cloudy	5 mph	5	E	6 mi	6	02120
+NULL	"Benton City, WA"	82°	82	sunny	5 mph	5	N	10 mi	10	99320
+NULL	"Dayton, NV"	79°	79	sunny	1 mph	1	NNE	11 mi	11	89403
+NULL	"Evanston, WY"	67°	67	sunny	4 mph	4	S	10 mi	10	82930
+1:13 PM	"Oklahoma City, OK"	94°	94	sunny	14 mph	14	SSW	10 mi	10	73116
+1:13 PM	"Southaven, MS"	92°	92	partly cloudy	4 mph	4	WNW	9 mi	9	38671
+NULL	"Greenwood, DE"	82°	82	sunny	6 mph	6	E	7 mi	7	19950
+NULL	"Plantsville, CT"	82°	82	mostly cloudy	3 mph	3	N	10 mi	10	06479
+11:14 AM	"Tucson, AZ"	99°	99	sunny	7 mph	7	W	10 mi	10	85741
+NULL	"Cottonwood Falls, KS"	90°	90	partly cloudy	11 mph	11	ENE	10 mi	10	66845
+12:14 PM	"Whitefish, MT"	66°	66	mostly sunny	7 mph	7	N	10 mi	10	59937
+2:14 PM	"Chauncey, GA"	87°	87	mostly cloudy	3 mph	3	WSW	9 mi	9	31011
+1:14 PM	"Rushmore, MN"	72°	72	partly sunny	23 mph	23	W	10 mi	10	56168
+NULL	"Dallas, TX"	96°	96	mostly sunny	12 mph	12	S	10 mi	10	75204
+NULL	"Redmond, WA"	66°	66	cloudy	3 mph	3	N	10 mi	10	98052
+NULL	"Atlanta, GA"	87°	87	mostly sunny	8 mph	8	WNW	8 mi	8	30302
+NULL	"Flagstaff, AZ"	80°	80	sunny	9 mph	9	SSE	10 mi	10	86001
+1:15 PM	"Fremont, NE"	81°	81	sunny	13 mph	13	W	10 mi	10	68025
+NULL	"Linden, TN"	90°	90	partly cloudy	3 mph	3	WSW	8 mi	8	37096
+NULL	"Milton, FL"	83°	83	rain	8 mph	8	SSW	6 mi	6	32570
+2:15 PM	"Laurel, DE"	82°	82	sunny	6 mph	6	E	7 mi	7	19956
+NULL	"Hyde Park, VT"	84°	84	mostly sunny	3 mph	3	N	10 mi	10	05655
+NULL	"La Fontaine, IN"	80°	80	rain	7 mph	7	SSW	6 mi	6	46940
+12:16 PM	"Rapid City, SD"	74°	74	sunny	23 mph	23	NNW	10 mi	10	57702
+1:16 PM	"Stanley, ND"	66°	66	partly cloudy	16 mph	16	NNW	9 mi	9	58784
+NULL	"Guthrie, OK"	96°	96	sunny	14 mph	14	SSW	10 mi	10	73044
+1:16 PM	"Bismarck, ND"	67°	67	mostly sunny	15 mph	15	NW	10 mi	10	58501
+NULL	"Saint Louis, MO"	93°	93	mostly sunny	5 mph	5	N	10 mi	10	63138
+NULL	"Petersburg, AK"	55°	55	partly sunny	3 mph	3	NE	10 mi	10	99833
+2:17 PM	"Columbia, SC"	88°	88	mostly cloudy	6 mph	6	SW	10 mi	10	29201
+NULL	"Bellevue, NE"	82°	82	mostly sunny	6 mph	6	N	7 mi	7	68005
+NULL	"Fraser, MI"	71°	71	light rain	9 mph	9	SSE	8 mi	8	48026
+1:17 PM	"Troy, MO"	90°	90	partly cloudy	7 mph	7	W	9 mi	9	63379
+NULL	"Hubert, NC"	86°	86	mostly cloudy	3 mph	3	SW	8 mi	8	28539
+NULL	"Honolulu, HI"	78°	78	mostly sunny	9 mph	9	E	7 mi	7	96801
+NULL	"Great Barrington, MA"	80°	80	partly sunny	3 mph	3	N	9 mi	9	01230
+NULL	"Sturtevant, WI"	86°	86	sunny	15 mph	15	W	10 mi	10	53177
+NULL	"Yarmouth, ME"	60°	60	light fog	12 mph	12	SSE	3 mi	3	04096
+1:18 PM	"Florissant, MO"	93°	93	mostly sunny	5 mph	5	N	10 mi	10	63033
+NULL	"Manchester, NH"	82°	82	haze	5 mph	5	N	5 mi	5	03101
+NULL	"Los Angeles, CA"	68°	68	haze	3 mph	3	N	3 mi	3	90001
+NULL	"Denham Springs, LA"	90°	90	partly cloudy	4 mph	4	WNW	10 mi	10	70726
+2:19 PM	"Fairfield, CT"	76°	76	sunny	5 mph	5	SSW	6 mi	6	06824
+NULL	"Milwaukee, WI"	84°	84	partly cloudy	13 mph	13	WSW	10 mi	10	53228
+2:19 PM	"Belleview, FL"	79°	79	mostly sunny	0 mph	0	CLM	10 mi	10	34420
+NULL	"Laughlin, NV"	101°	101	sunny	0 mph	0	CLM	10 mi	10	89029
+NULL	"Winner, SD"	71°	71	partly sunny	17 mph	17	WNW	10 mi	10	57580
+NULL	"Dover Foxcroft, ME"	69°	69	cloudy	5 mph	5	NNE	7 mi	7	04426
+NULL	"Mount Prospect, IL"	87°	87	sunny	15 mph	15	W	10 mi	10	60056
+NULL	"Quincy, IL"	85°	85	rain	9 mph	9	WSW	10 mi	10	62301
+NULL	"Tampa, FL"	83°	83	rain	12 mph	12	W	4 mi	4	33602
+NULL	"Tinley Park, IL"	88°	88	sunny	12 mph	12	W	10 mi	10	60477
+NULL	"Milwaukee, WI"	85°	85	partly cloudy	14 mph	14	WSW	16 mi	16	53202
+12:20 PM	"Glenwood, NM"	84°	84	sunny	5 mph	5	N	10 mi	10	88039
+NULL	"Duluth, MN"	62°	62	cloudy	21 mph	21	WSW	10 mi	10	55803
+NULL	"Utica, MI"	73°	73	thundershower	3 mph	3	N	5 mi	5	48317
+2:21 PM	"Hillsborough, NJ"	83°	83	mostly sunny	0 mph	0	CLM	10 mi	10	08844
+NULL	"Warner, NH"	81°	81	mostly sunny	8 mph	8	NNE	6 mi	6	03278
+NULL	"Mena, AR"	97°	97	partly cloudy	2 mph	2	WSW	8 mi	8	71953
+NULL	"Tacoma, WA"	59°	59	light fog	6 mph	6	SSE	2 mi	2	98466
+2:21 PM	"Lawrenceville, GA"	87°	87	partly sunny	5 mph	5	N	6 mi	6	30044
+NULL	"Longmont, CO"	73°	73	mostly sunny	4 mph	4	NNE	10 mi	10	80501
+NULL	"Waynesville, NC"	79°	79	partly cloudy	5 mph	5	N	8 mi	8	28785
+NULL	"Pacolet, SC"	87°	87	partly cloudy	2 mph	2	N	9 mi	9	29372
+NULL	"Dardanelle, AR"	95°	95	haze	6 mph	6	SSW	5 mi	5	72834
+1:24 PM	"Saint Louis, MO"	93°	93	mostly sunny	5 mph	5	N	10 mi	10	63101
+NULL	"Bowling Green, OH"	73°	73	rain	9 mph	9	NE	5 mi	5	43402
+NULL	"Cambridge, MA"	77°	77	partly sunny	8 mph	8	SE	10 mi	10	02138
+2:25 PM	"Winsted, CT"	79°	79	mostly cloudy	4 mph	4	E	9 mi	9	06098
+NULL	"Columbus, OH"	72°	72	thunderstorm	9 mph	9	NNE	4 mi	4	43085
+NULL	"Bethesda, MD"	85°	85	mostly sunny	6 mph	6	E	6 mi	6	20814
+12:25 PM	"Clovis, NM"	86°	86	mostly sunny	10 mph	10	SSE	7 mi	7	88101
+NULL	"Orem, UT"	72°	72	sunny	6 mph	6	W	10 mi	10	84057
+NULL	"Memphis, TN"	91°	91	mostly sunny	0 mph	0	CLM	8 mi	8	38117
+NULL	"Cresskill, NJ"	82°	82	cloudy	5 mph	5	ENE	14 mi	14	07626
+NULL	"Boston, MA"	77°	77	partly sunny	8 mph	8	SE	10 mi	10	02101
+NULL	"Edgewood, NM"	84°	84	mostly sunny	6 mph	6	NW	8 mi	8	87015
+NULL	"Fishers, IN"	86°	86	sunny	12 mph	12	W	7 mi	7	46038
+2:26 PM	"Charlotte, NC"	88°	88	mostly sunny	6 mph	6	N	9 mi	9	28277
+NULL	"Anchorage, AK"	60°	60	rain	5 mph	5	WNW	10 mi	10	99504
+NULL	"Travelers Rest, SC"	87°	87	partly cloudy	2 mph	2	N	9 mi	9	29690
+NULL	"Dallas, OR"	73°	73	mostly sunny	3 mph	3	N	10 mi	10	97338
+NULL	"Morgantown, WV"	83°	83	partly cloudy	3 mph	3	NW	8 mi	8	26508
+2:27 PM	"Newtown, PA"	83°	83	mostly cloudy	5 mph	5	NNE	10 mi	10	18940
+NULL	"Johnston, RI"	73°	73	cloudy	3 mph	3	S	7 mi	7	02919
+NULL	"New York, NY"	81°	81	mostly cloudy	6 mph	6	ENE	15 mi	15	10001
+NULL	"Kinde, MI"	79°	79	mist	9 mph	9	S	10 mi	10	48445
+NULL	"Winchester, KY"	89°	89	partly cloudy	5 mph	5	W	7 mi	7	40391
+NULL	"Indianapolis, IN"	86°	86	sunny	12 mph	12	W	7 mi	7	46260
+1:28 PM	"Jonesboro, AR"	95°	95	mostly sunny	6 mph	6	SSW	9 mi	9	72401
+12:28 PM	"Montrose, CO"	80°	80	mostly sunny	8 mph	8	NNW	10 mi	10	81401
+NULL	"Kaneohe, HI"	79°	79	sunny	9 mph	9	ENE	10 mi	10	96744
+12:29 PM	"Conifer, CO"	68°	68	mostly sunny	9 mph	9	S	10 mi	10	80433
+NULL	"Laconia, NH"	81°	81	mostly sunny	8 mph	8	NNE	6 mi	6	03246
+NULL	"Walker, LA"	90°	90	partly cloudy	4 mph	4	WNW	10 mi	10	70785
+NULL	"Ankeny, IA"	79°	79	sunny	15 mph	15	NW	10 mi	10	50021
+NULL	"Dayton, OH"	70°	70	thundershower	12 mph	12	ENE	6 mi	6	45429
+2:29 PM	"Edgewater, NJ"	80°	80	mostly cloudy	6 mph	6	ENE	15 mi	15	07020
+NULL	"Holden, WV"	88°	88	partly cloudy	1 mph	1	WSW	8 mi	8	25625
+2:30 PM	"Stowe, VT"	84°	84	mostly sunny	3 mph	3	N	10 mi	10	05672
+1:30 PM	"Milwaukee, WI"	84°	84	partly cloudy	13 mph	13	WSW	10 mi	10	53215
+2:30 PM	"Marinette, WI"	79°	79	sunny	14 mph	14	SW	10 mi	10	54143
+NULL	"Cumberland Center, ME"	60°	60	light fog	17 mph	17	E	3 mi	3	04021
+NULL	"Springfield, MA"	79°	79	cloudy	6 mph	6	S	10 mi	10	01101
+2:30 PM	"Buffalo, NY"	88°	88	mostly sunny	12 mph	12	WSW	10 mi	10	14204
+NULL	"Mesa, AZ"	99°	99	partly cloudy	4 mph	4	N	10 mi	10	85206
+NULL	"Baltimore, MD"	85°	85	mostly sunny	0 mph	0	CLM	6 mi	6	21230
+2:31 PM	"Exton, PA"	82°	82	partly cloudy	4 mph	4	E	14 mi	14	19341
+NULL	"Newark, NJ"	82°	82	mostly cloudy	8 mph	8	E	8 mi	8	07102

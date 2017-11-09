@@ -1,0 +1,80 @@
+
+GEOSPATIAL:
+ An improvement better.
+ 2 additional examples found (mapquest with lat/lon input & mapmyrun with address input)
+
+URL: geocoder.us
+Inputs:
+    address : CT-Address
+Domain Outputs:
+    column 16 : PR-Longitude:16.0
+    column 49 : CT-Address:16.777779
+    column 2 : CT-Street:20.147867
+    column 3 : CT-CityState:4.80467
+    column 7 : PR-Latitude:54.0
+
+URL: www.geocoder.us
+Inputs:
+    address : CT-Address
+Domain Outputs:
+    column 16 : PR-Longitude:16.0
+    column 49 : CT-Address:16.777779
+    column 2 : CT-Street:20.147867
+    column 3 : CT-CityState:4.80467
+    column 7 : PR-Latitude:54.0
+
+URL: www.mapquest.com
+Inputs:
+    longitude : PR-Longitude
+    latitude : PR-Latitude
+Domain Outputs:
+    column 1 : CT-Street:9.192432
+    column 2 : PR-Latitude:88.0
+    column 39 : PR-City:1.0
+    column 22 : PR-Longitude:16.0
+    column 43 : CT-Address:1.5333333
+    column 40 : CT-CityState:3.4591625
+
+URL: www.ontok.com
+Inputs:
+    addr : CT-Address
+Domain Outputs:
+    column 1 : CT-Address:16.777779
+    column 2 : PR-City:3.0
+    column 3 : CT-Street:4.604084
+    column 5 : CT-CityStateZip:5.8922706
+    column 27 : PR-Longitude:95.333336
+    column 28 : PR-Latitude:88.0
+
+URL: www.mapmyrun.com
+Inputs:
+    txtLocation : CT-Address
+Domain Outputs:
+    column 0 : PR-StateName:5.0
+    column 2 : CT-Address:3.3686678
+    column 3 : CT-Street:3.184518
+    column 4 : CT-CityState:3.380394
+    column 31 : PR-Latitude:18.0
+    column 44 : PR-Longitude:10.666667
+
+URL: geocoder.ca
+Inputs:
+    locate : CT-Address
+Domain Outputs:
+    column 0 : CT-Address:6.809524
+    column 1 : CT-Street:4.230298
+    column 19 : PR-Latitude:88.0
+    column 4 : CT-CityState:10.414009
+    column 5 : PR-City:6.0
+    column 23 : PR-Longitude:10.666667
+
+URL: terraserver.microsoft.com
+Inputs:
+    PgSrh:NavLon : PR-Longitude
+    PgSrh:NavLat : PR-Latitude
+Domain Outputs:
+    column 5 : PR-Longitude:173.33333
+    column 6 : PR-Latitude:162.0
+    column 13 : PR-City:13.333333
+    column 28 : CT-CityState:12.0
+    column 14 : CT-Street:1.8778785

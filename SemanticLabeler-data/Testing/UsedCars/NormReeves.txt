@@ -1,0 +1,118 @@
+1997	acura	2.2cl premium	2 dr coupe	black	"82,781"	"11,927"	2.2 liter 4 cyl.	19uya1254vl008950	yes
+1998	acura	2.5tl	4 dr sedan	silver	"60,913"	"14,976"	2.5 liter 5 cyl.	jh4ua265xwc007394	yes
+2001	acura	3.2cl	2 dr coupe	red	"76,674"	"19,934"	3.2 liter 6 cyl.	19uya42741a003823	yes
+2000	acura	3.2tl	4 dr sedan	white	"41,421"	"19,595"	3.2 liter v-6	19uua5668ya054953	yes
+2000	acura	integra gs	2 dr hatchback	silver	"36,866"	"16,895"	1.8 liter 4 cyl.	jh4dc4368ys014324	yes
+1996	acura	integra ls	4 dr sedan	purple	"62,723"	"9,595"	1.8 liter 4 cyl. dohc	jh4db7553ts011459	yes
+2002	buick	century custom	4 dr sedan	white	"31,838"	"11,966"	3.1 liter 6 cyl.	2g4ws52j421210353	yes
+1998	chevrolet	astro	mini van	orange	"83,604"	"8,903"	4.3 liter v-6	1gndm19w0wb180216	yes
+2001	chevrolet	camaro	2 dr coupe	blue	"22,249"	"13,975"	3.8 liter 6 cyl.	2g1fp22k412109568	yes
+2003	chevrolet	impala	4 dr sedan	blue	"27,738"	"13,938"	3.4 liter 6 cyl.	2g1wf52e539119759	yes
+2000	lincoln	ls	4 dr sedan	silver	"30,553"	"22,401"	3.9 liter v-8	1lnhm87a7yy904909	yes
+2000	lincoln	navigator	suv 2wd	silver	"39,182"	"26,901"	5.4 liter v-8	5lmeu27axylj37468	yes
+1999	lincoln	navigator	suv 4wd	red	"41,291"	"23,907"	5.4 liter 8 cyl.	5lmpu28axxlj33653	yes
+2003	lincoln	town car executive	4 dr sedan	black	"22,425"	"27,906"	4.6 liter 8 cyl. sohc	1lnhm81w13y624822	yes
+2002	mazda	626	4 dr sedan	silver	"28,065"	"12,450"	2.0 liter 4 cyl.	1yvgf22c325291030	yes
+1999	mazda	millenia s	4 dr sedan	white	"58,828"	"14,975"	2.3 liter v-6	jm1ta2224x1501644	yes
+2000	mazda	protege	4 dr sedan	gold	"37,464"	"8,995"	1.6 liter 4 cyl.	jm1bj2220y0210156	yes
+1999	mercury	cougar	2 dr coupe	red	"43,000"	"9,903"	2.5 liter 6 cyl.	1zwft61l3x5634065	yes
+2003	mercury	mountaineer	stock  r28312	silver	NULL	NULL	4.0 liter 6 cyl. sohc	4m2zu66k83uj09580	yes
+2002	mercury	mountaineer	suv awd	black	"51,473"	"20,903"	4.6 liter 8 cyl.	4m2zu86w22zj10689	yes
+2003	chevrolet	impala	4 dr sedan	beige	"25,714"	"13,998"	3.4 liter 6 cyl.	2g1wf52e639108866	yes
+2000	chevrolet	impala	4 dr sedan	silver	"31,759"	"12,904"	3.8 liter v-6	2g1wh55k7y9110306	yes
+2001	chevrolet	malibu	4 dr sedan	gold	"42,114"	"10,776"	3.1 liter 6 cyl.	1g1nd52j31m650831	yes
+2002	chevrolet	prizm	4 dr sedan	white	"38,798"	"10,965"	1.8 liter 4 cyl.	1y1sk52822z405130	yes
+1998	chevrolet	s-10	extended pickup truck	pewter	"61,113"	"10,995"	2.2 liter 4 cyl.	1gccs1946w8218831	yes
+2003	chevrolet	venture	extended mini van	silver	"29,293"	"15,925"	3.4 liter 6 cyl.	1gndx03e93d102907	yes
+2002	chrysler	pt cruiser classic	4 dr wagon	gray	"27,080"	"13,975"	2.4 liter 4 cyl.	3c4fy48b82t368268	yes
+2002	chrysler	voyager	stock  28286	white	"12,911"	"15,903"	3.3 liter 6 cyl.	1c4gj25392b714565	yes
+2001	dodge	dakota	club cab pickup truck	silver	"56,730"	"13,595"	3.9 liter 6 cyl.	1b7gl22x01s165564	yes
+2000	dodge	durango slt	suv 4wd	black	"49,821"	"16,995"	5.9 liter v-8	1b4hs28zxyf103914	yes
+2000	dodge	intrepid	4 dr sedan	beige	"46,128"	"10,902"	2.7 liter v-6 dohc	2b3hd46r1yh226416	yes
+2002	dodge	intrepid se	4 dr sedan	white	"31,412"	"12,977"	2.7 liter 6 cyl.	2b3hd46r42h201145	yes
+2002	dodge	intrepid se	4 dr sedan	beige	"34,564"	"13,702"	2.7 liter 6 cyl.	2b3hd46r62h188849	yes
+1998	dodge	ram 1500	extended pickup truck	red	"56,810"	"13,906"	5.9 liter v-8	3b7hc12zxwg113874	yes
+2003	ford	escape xls	stock  r56504	black	"17,953"	"17,903"	3.0 liter 6 cyl. dohc	1fmyu02153kc15696	yes
+2003	ford	escape xls	stock  r56503	black	"15,403"	"19,201"	3.0 liter 6 cyl. dohc	1fmyu02143kc15737	yes
+2001	ford	escape xls	stock  56412	beige	"39,491"	"13,908"	3.0 liter 6 cyl.	1fmyu01171ka74208	yes
+2002	ford	escape xlt	stock  56667	silver	"26,839"	"19,904"	3.0 liter 6 cyl.	1fmcu04172ka16199	yes
+2001	ford	excursion limited	suv 4wd	white	"45,756"	"31,906"	7.3 liter 8 cyl.	1fmsu43fx1ec27250	yes
+2000	ford	excursion limited	stock  56651	burgundy	"43,225"	"25,907"	6.8 liter 10 cyl.	1fmnu42s8yed46193	yes
+2002	ford	mustang	stock  r56198	blue	"24,502"	"17,903"	3.8 liter 6 cyl.	1fafp44472f205833	yes
+2002	ford	mustang	stock  r56303	blue	"27,788"	"17,908"	3.8 liter 6 cyl.	1fafp44432f205828	yes
+2002	ford	mustang	stock  r56337	red	"25,207"	"18,904"	3.8 liter 6 cyl.	1fafp44432f227408	yes
+2001	ford	mustang	stock  56587	white	"31,655"	"16,903"	3.8 liter 6 cyl.	1fafp44481f229203	yes
+2001	ford	mustang	stock  56490	silver	"15,581"	"17,903"	3.8 liter 6 cyl.	1fafp44491f161929	yes
+1999	ford	mustang	2 dr coupe	white	"58,893"	"10,409"	3.8 liter v-6	1fafp4043xf129878	yes
+2002	ford	mustang gt	stock  r56293	red	"15,745"	"21,908"	4.6 liter 8 cyl.	1fafp45xx2f227107	yes
+2000	ford	mustang gt	2 dr coupe	white	"43,349"	"16,403"	4.6 liter v-8	1fafp42x2yf289968	yes
+2002	ford	ranger	pickup truck	black	"20,251"	"9,903"	2.3 liter 4 cyl.	1ftyr10d32pa45462	yes
+2002	ford	ranger	pickup truck	silver	"19,934"	"13,907"	3.0 liter 6 cyl.	1ftyr14v52pb54668	yes
+2002	ford	ranger	super cab pickup	red	"26,000"	"17,904"	4.0 liter 6 cyl.	1ftzr45e42pa45221	yes
+2001	ford	ranger	pickup truck	red	"27,445"	"7,903"	2.5 liter 4 cyl.	1ftyr10c71pa17380	yes
+2001	ford	ranger	super cab pickup	white	"59,223"	"11,902"	4.0 liter 6 cyl.	1ftyr14e81pb40553	yes
+2001	ford	ranger	super cab pickup	white	"24,374"	"14,901"	4.0 liter 6 cyl.	1ftyr14e31pa52428	yes
+2000	ford	ranger	super cab truck	black	"42,388"	"13,906"	3.0 liter v-6	1ftyr14vxypb69238	yes
+2000	ford	ranger xlt	pickup truck	white	"35,877"	"10,975"	3.0 liter v-6	1ftyr10v5ypa72907	yes
+2000	ford	ranger xlt	stock  56673	white	"56,567"	"15,903"	4.0 liter v-6	1ftzr15x1ypa65953	yes
+2002	ford	taurus se	4 dr sedan	silver	"28,871"	"9,907"	3.0 liter 6 cyl.	1fafp53u52g185759	yes
+2002	ford	taurus se	4 dr sedan	silver	"27,672"	"11,902"	3.0 liter 6 cyl.	1fafp53u72g221676	yes
+2002	ford	taurus se	4 dr sedan	silver	"28,150"	"11,908"	3.0 liter 6 cyl.	1fafp53u62a148786	yes
+2000	ford	expedition	suv 4wd	green	"61,219"	"17,938"	4.6 liter v-8	1fmru1662yla01301	yes
+1999	ford	expedition	suv 4wd	blue	"76,029"	"16,933"	4.6 liter v-8	1fmru1863xla93241	yes
+2003	ford	expedition xlt	stock  56492	gray	"29,634"	"26,901"	4.6 liter 8 cyl. sohc	1fmru15w93la42356	yes
+2003	ford	expedition xlt	stock  r56581	white	"20,442"	"27,901"	4.6 liter 8 cyl. sohc	1fmru15w83lb50080	yes
+2003	ford	expedition xlt	stock  r56506	silver	"19,176"	"27,903"	4.6 liter 8 cyl. sohc	1fmru15w13lb75239	yes
+2003	ford	expedition xlt	stock  r56521	pewter	"18,074"	"27,903"	4.6 liter 8 cyl. sohc	1fmru15wx3lb58973	yes
+2003	ford	expedition xlt	stock  r56487	silver	"17,888"	"27,904"	4.6 liter 8 cyl. sohc	1fmru15wx3lb26430	yes
+2003	ford	expedition xlt	stock  r56582	silver	"18,752"	"27,904"	4.6 liter 8 cyl. sohc	1fmru15wx3lb50078	yes
+2003	ford	expedition xlt	stock  r56583	bronze	"17,100"	"27,906"	4.6 liter 8 cyl. sohc	1fmru15w63lb50076	yes
+2003	ford	expedition xlt	stock  r56579	silver	"18,489"	"27,906"	4.6 liter 8 cyl. sohc	1fmru15w73lb60163	yes
+2000	lincoln	ls	4 dr sedan	silver	"30,553"	"22,401"	3.9 liter v-8	1lnhm87a7yy904909	yes
+2000	lincoln	navigator	suv 2wd	silver	"39,182"	"26,901"	5.4 liter v-8	5lmeu27axylj37468	yes
+1999	lincoln	navigator	suv 4wd	red	"41,291"	"23,907"	5.4 liter 8 cyl.	5lmpu28axxlj33653	yes
+2003	lincoln	town car executive	4 dr sedan	black	"22,425"	"27,906"	4.6 liter 8 cyl. sohc	1lnhm81w13y624822	yes
+2002	mazda	626	4 dr sedan	silver	"28,065"	"12,450"	2.0 liter 4 cyl.	1yvgf22c325291030	yes
+1999	mazda	millenia s	4 dr sedan	white	"58,828"	"14,975"	2.3 liter v-6	jm1ta2224x1501644	yes
+2000	mazda	protege	4 dr sedan	gold	"37,464"	"8,995"	1.6 liter 4 cyl.	jm1bj2220y0210156	yes
+1999	mercury	cougar	2 dr coupe	red	"43,000"	"9,903"	2.5 liter 6 cyl.	1zwft61l3x5634065	yes
+2003	mercury	mountaineer	stock  r28312	silver	NULL	NULL	4.0 liter 6 cyl. sohc	4m2zu66k83uj09580	yes
+2002	mercury	mountaineer	suv awd	black	"51,473"	"20,903"	4.6 liter 8 cyl.	4m2zu86w22zj10689	yes
+1993	honda	civic	2 dr coupe	purple	"112,969"	"7,995"	1.5 liter 4 cyl.	1hgej2249pl035855	yes
+2002	honda	civic dx	4 dr sedan	white	"13,361"	"12,938"	1.7 liter 4 cyl.	2hges15172h548276	yes
+2000	honda	civic dx	4 dr sedan	beige	"31,281"	"10,987"	1.6 liter 4 cyl.	2hgej6523yh548664	yes
+1998	honda	civic dx	2 dr hatchback	purple	"55,494"	"8,601"	1.6 liter 4 cyl.	2hgej6448wh105944	yes
+1998	honda	civic dx	2 dr coupe	white	"60,163"	"9,833"	1.6 liter 4 cyl.	1hgej6225wl104948	yes
+2002	honda	civic ex	4 dr sedan	silver	"16,057"	"14,995"	1.7 liter 4 cyl.	2hges25722h557252	yes
+2002	honda	civic ex	4 dr sedan	maroon	"6,986"	"15,753"	1.7 liter 4 cyl.	2hges25702h520748	yes
+2002	honda	civic ex	2 dr coupe	silver	"26,652"	"15,888"	1.7 liter 4 cyl.	1hgem21962l000428	yes
+2002	honda	civic ex	2 dr coupe	silver	"24,711"	"15,995"	1.7 liter 4 cyl.	1hgem22972l041066	yes
+2000	lincoln	ls	4 dr sedan	silver	"30,553"	"22,401"	3.9 liter v-8	1lnhm87a7yy904909	yes
+2000	lincoln	navigator	suv 2wd	silver	"39,182"	"26,901"	5.4 liter v-8	5lmeu27axylj37468	yes
+1999	lincoln	navigator	suv 4wd	red	"41,291"	"23,907"	5.4 liter 8 cyl.	5lmpu28axxlj33653	yes
+2003	lincoln	town car executive	4 dr sedan	black	"22,425"	"27,906"	4.6 liter 8 cyl. sohc	1lnhm81w13y624822	yes
+2002	mazda	626	4 dr sedan	silver	"28,065"	"12,450"	2.0 liter 4 cyl.	1yvgf22c325291030	yes
+1999	mazda	millenia s	4 dr sedan	white	"58,828"	"14,975"	2.3 liter v-6	jm1ta2224x1501644	yes
+2000	mazda	protege	4 dr sedan	gold	"37,464"	"8,995"	1.6 liter 4 cyl.	jm1bj2220y0210156	yes
+1999	mercury	cougar	2 dr coupe	red	"43,000"	"9,903"	2.5 liter 6 cyl.	1zwft61l3x5634065	yes
+2002	mercury	mountaineer	suv awd	black	"51,473"	"20,903"	4.6 liter 8 cyl.	4m2zu86w22zj10689	yes
+2000	ford	explorer xlt	stock  56232	gold	"24,697"	"18,201"	4.0 liter v-6	1fmzu63e9yzc11805	yes
+2003	ford	explorer xlt 4x4	stock  r56657	white	"22,202"	"25,902"	4.0 liter 6 cyl. sohc	1fmzu73k63za50480	yes
+2003	ford	f-150	stock  56509	white	"3,662"	"25,903"	4.6 liter 8 cyl. sohc	1ftrw07633kb69082	yes
+2002	ford	f-150	super cab pickup	silver	"34,824"	"17,902"	4.2 liter 6 cyl.	1ftrx17272na30389	yes
+2002	ford	f-150	super cab pickup	silver	"13,355"	"18,907"	4.2 liter 6 cyl.	1ftrx17232nb68852	yes
+2001	ford	f-150	pickup truck	white	"28,888"	"15,902"	4.2 liter 6 cyl.	1ftzf17251kf80192	yes
+2001	ford	f-150	super cab pickup	silver	"36,443"	"17,902"	4.2 liter 6 cyl.	1ftrx17211nb66922	yes
+150	null	f-150 supercrew	crew cab	silver	"23,738"	"22,904"	4.6 liter 8 cyl.	1ftrw07672ka59151	yes
+150	null	f-150 supercrew	pickup truck	blue	"135,511"	"15,903"	5.4 liter 8 cyl.	1ftrw07l61ke28425	yes
+2000	ford	f-350	super cab pickup	white	"51,665"	"22,907"	6.8 liter 10 cyl.	1ftwx32s3yea69169	yes
+2003	chevrolet	impala	4 dr sedan	beige	"25,714"	"13,998"	3.4 liter 6 cyl.	2g1wf52e639108866	yes
+2000	chevrolet	impala	4 dr sedan	silver	"31,759"	"12,904"	3.8 liter v-6	2g1wh55k7y9110306	yes
+2001	chevrolet	malibu	4 dr sedan	gold	"42,114"	"10,776"	3.1 liter 6 cyl.	1g1nd52j31m650831	yes
+2002	chevrolet	prizm	4 dr sedan	white	"38,798"	"10,965"	1.8 liter 4 cyl.	1y1sk52822z405130	yes
+1998	chevrolet	s-10	extended pickup truck	pewter	"61,113"	"10,995"	2.2 liter 4 cyl.	1gccs1946w8218831	yes
+2003	chevrolet	venture	extended mini van	silver	"29,293"	"15,925"	3.4 liter 6 cyl.	1gndx03e93d102907	yes
+2002	chrysler	pt cruiser classic	4 dr wagon	gray	"27,080"	"13,975"	2.4 liter 4 cyl.	3c4fy48b82t368268	yes
+2002	chrysler	voyager	stock  28286	white	"12,911"	"15,903"	3.3 liter 6 cyl.	1c4gj25392b714565	yes
+2001	dodge	dakota	club cab pickup truck	silver	"56,730"	"13,595"	3.9 liter 6 cyl.	1b7gl22x01s165564	yes
+2000	dodge	durango slt	suv 4wd	black	"49,821"	"16,995"	5.9 liter v-8	1b4hs28zxyf103914	yes

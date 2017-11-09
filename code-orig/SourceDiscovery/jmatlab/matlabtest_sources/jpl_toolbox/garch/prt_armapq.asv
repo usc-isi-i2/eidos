@@ -1,0 +1,64 @@
+function prt_garchpq(results,fid)
+fprintf(fid,'\n');
+fprintf(fid,'ARMA (p,q) Results\n');
+fprintf(fid,'********************************************************\n');
+fprintf(fid,'AR   Order-p              =   %9.4f \n', results.ar);
+fprintf(fid,'MA   Order-q              =   %9.4f \n', results.ma);
+fprintf(fid,'Log Likelihood            =   %9.4f \n', results.likelihood);
+fprintf(fid,'********************************************************\n');
+
+fprintf(fid,'Parameter \t    Estimate  \tS.E.  \t   T-Stats \t  Robust T-Stats \n');
+ar=results.ar;ma=results.ma;
+se=diag(results.stderrors);
+tstat=(results.parameters')./(diag(results.stderrors).^0.5);
+rtstat=(results.parameters')./(diag(results.robustSE).^0.5);
+
+if results.wconst==1
+    fprintf(fid,'Constant \t     %9.4f \t %9.4f \t %9.4f  \t %9.4f \n', results.parameters(1,1),se(1,1),tstat(1,1),rtstat(1,1));
+    if isempty(results.x)==1
+        for i=2:ar+1
+            fprintf(fid,'AR%2d \t %9.4f \t %9.4f \t %9.4f  \t %9.4f \n',i-1, results.parameters(1,i),se(i,1),tstat(i,1),rtstat(i,1));
+        end
+        for i=ar+2:ar+ma+1
+            fprintf(fid,'Beta %2d \t %9.4f \t %9.4f \t %9.4f  \t %9.4f \n',i-ar-1, results.parameters(1,i),se(i,1),tstat(i,1),rtstat(i,1));
+        end
+    else
+        for i=2:ar+1
+            fprintf(fid,'AR%2d \t %9.4f \t %9.4f \t %9.4f  \t %9.4f \n',i-1, results.parameters(1,i),se(i,1),tstat(i,1),rtstat(i,1));
+        end
+        x=results.x;
+        s1=size(x);
+        s=s1(1,2);
+        for i=ar+2:ar+s+1
+            fprintf(fid,'XParam %2d \t %9.4f \t %9.4f \t %9.4f  \t %9.4f \n',i-ar-1, results.parameters(1,i),se(i,1),tstat(i,1),rtstat(i,1));
+        end        
+        for i=ar+s+2:ar+as+ma+1
+            fprintf(fid,'MA %2d \t %9.4f \t %9.4f \t %9.4f  \t %9.4f \n',i-ar-s-1, results.parameters(1,i),se(i,1),tstat(i,1),rtstat(i,1));
+        end 
+    end
+else
+    if isempty(results.x)==1
+        for i=1:ar
+            fprintf(fid,'AR%2d \t %9.4f \t %9.4f \t %9.4f  \t %9.4f \n',i, results.parameters(1,i),se(i,1),tstat(i,1),rtstat(i,1));
+        end
+        for i=ar+1:ar+ma
+            fprintf(fid,'Beta %2d \t %9.4f \t %9.4f \t %9.4f  \t %9.4f \n',i-ar, results.parameters(1,i),se(i,1),tstat(i,1),rtstat(i,1));
+        end
+    else
+        for i=1:ar
+            fprintf(fid,'AR%2d \t %9.4f \t %9.4f \t %9.4f  \t %9.4f \n',i, results.parameters(1,i),se(i,1),tstat(i,1),rtstat(i,1));
+        end
+        x=results.x;
+        s1=size(x);
+        s=s1(1,2);
+        for i=ar+1:ar+s
+            fprintf(fid,'XParam %2d \t %9.4f \t %9.4f \t %9.4f  \t %9.4f \n',i-ar, results.parameters(1,i),se(i,1),tstat(i,1),rtstat(i,1));
+        end        
+        for i=ar+s+1:ar+as+ma
+            fprintf(fid,'MA %2d \t %9.4f \t %9.4f \t %9.4f  \t %9.4f \n',i-ar-s, results.parameters(1,i),se(i,1),tstat(i,1),rtstat(i,1));
+        end 
+    end
+end
+
+fprintf(fid,'********************************************************\n');
+ 

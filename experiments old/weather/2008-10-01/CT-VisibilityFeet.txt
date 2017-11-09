@@ -1,0 +1,26 @@
+SELECT tablename,argumentname FROM sourceschema where semantictype = 'CT-VisibilityFeet';
+
+"tablename","argumentname"
+"weather3","column605"
+"weather4","column606"
+"weather5","column612"
+"weather6","column611"
+
+
+select column605 from weather3 union 
+select column606 from weather4 union 
+select column612 from weather5 union 
+select column611 from weather6
+
+
+"column605"
+"231 ft"
+"10 ft"
+"36 ft"
+"0 ft"
+"1049 ft"
+"68 ft"
+"144 ft"
+"723 ft"
+"822 ft"
+"920 ft"

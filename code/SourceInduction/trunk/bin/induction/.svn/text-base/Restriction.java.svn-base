@@ -1,0 +1,21 @@
+package induction;
+
+import domain.*;
+
+public class Restriction {
+	public Clause previousClause = null; 
+	public Clause updatedClause = null; 
+	public Term variable = null;
+	public int position;
+	public Term variable2 = null;
+	
+	public Clause updateClause() {
+		if (updatedClause == null) {
+			updatedClause = previousClause.copy();
+			updatedClause.terms.lastElement()[position] = variable;
+			
+			variable2 = new Term(previousClause.length(),position);
+		}
+		return updatedClause;
+	}
+}

@@ -1,0 +1,46 @@
+.uslPhotoUploadContainer {}
+
+.uslPhotoUpload { height:190px; width:334px; font-family:arial,helvetica,Sans-Serif; font-size:12px; }
+
+.uslPUOutMessage { padding: 0px 0px 0px 0px; margin: 10px 7px 0px 7px; width:320px; height:44px; } 
+.uslPUOutMessage a:hover { color:#00529B; }
+.uslPUOutMessage a:visited  { color:#00529B; }
+.uslPUOutMessage a:link  { color:#00529B; }
+
+.uslPUUploadInputs { padding: 0px 0px 0px 0px;}
+#uslPUUploadForm { text-indent:0px; text-align:left; padding: 0px 0px 0px 0px; margin: 10px 7px 0px 7px; width:320px; height:44px; }
+#uslPUUploadFile { width:320px; height:22px; margin: 0px 0px 0px 0px; font-family:arial,helvetica,Sans-Serif; font-size:12px;  }
+.uslPUUploadSubmitArea { width:320px; height:22px; margin: 0px 0px 0px 0px; text-align:left; vertical-align:bottom; }
+#uslPUUploadSubmit { width:66px; height:22px; text-align:center; margin: 0px 0px 0px 0px; font-family:arial,helvetica,Sans-Serif; font-size:12px; }
+.uslPUUploadError { color:Red; margin-left:10px; vertical-align:bottom; }
+
+.uslPUEntice { text-indent:0px; padding: 0px 0px 0px 0px; margin: 12px 7px 0px 7px; width:320px; height:86px;  }
+.uslPUEnticeImage { float:right; margin:0px 0px 0px 0px; text-align:right; width:156px; height:86px; } 
+#uslPUEnticeImage { } 
+.uslPUEnticeMsg { float:left; width:156px; height:86px; margin:0px 0px 0px 0px; text-align:left; overflow:hidden;  }
+.uslPUEntice a { color:blue; line-height:30px; }
+
+.uslPUDetailsTop { text-indent:0px; padding: 0px 0px 0px 0px; margin: 12px 7px 0px 7px; width:320px; height:86px;}
+div.uslPUUploadImage { float:right; margin:0px 0px 0px 0px; padding: 0px 0px 0px 0px; width:156px; height:86px; overflow:hidden; }
+#puUserImage{ float:right; }
+.uslPUDetailTopInputs { float:left; width:156px; height:86px; margin:0px 0px 0px 0px; text-align:left; overflow:hidden;  }
+.uslPUDetailLabelTitle { margin: 0px 0px 4px 0px; padding: 0px 0px 0px 0px; font-weight:bold; font-size:12px; } 
+.uslPUDetailRequired { color:red; font-size:8px; vertical-align:baseline; } 
+#uslPUTitle { width:146px; font-family:arial,helvetica,Sans-Serif; font-size:12px; }
+* html #uslPUTitle { width: 150px; }
+.uslPUDetailLabelTags { margin: 5px 0px 4px 0px; padding: 0px 0px 0px 0px; font-weight:bold; font-size:12px; } 
+#uslPUTags { width:146px; font-family:arial,helvetica,Sans-Serif; font-size:12px; }
+* html #uslPUTags { width: 150px; }
+.uslPUDetailsBottom { width:320px; height:94px; overflow:hidden; margin: 0px 7px 0px 7px; }
+.uslPUDetailLabelDesc { margin: 0px 0px 4px 0px; padding: 0px 0px 0px 0px; font-weight:bold; font-size:12px; } 
+.uslPUDesc { width:315px; height:46px; }
+#uslPUDesc { width:315px; height:46px; font-family:arial,helvetica,Sans-Serif; font-size:12px;}
+.uslPUDetailsSubmitArea { width:320px; height:22px; margin: 4px 0px 0px 0px; text-align:left; vertical-align:bottom; }
+#uslPUDetailsSubmit { width:66px; height:22px; text-align:center; margin: 0px 0px 0px 0px; font-family:arial,helvetica,Sans-Serif; font-size:12px; }
+.uslPUDetailsError { color:Red; margin-left:10px; vertical-align:bottom; }
+
+.uslPUConfirmTop { text-indent:0px; padding: 0px 0px 0px 0px; margin: 12px 7px 0px 7px; width:320px; height:86px;}
+.uslPUConfirmMsg { float:left; width:156px; height:86px; margin:0px 0px 0px 0px; text-align:left; overflow:hidden;  }
+.uslPUUploadAnother { padding: 0px 0px 0px 0px; margin: 10px 7px 0px 7px; width:320px; height:44px; } 
+
+

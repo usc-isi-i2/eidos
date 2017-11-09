@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ROOT SYSTEM "o6_sourceid.dtd">
+<ROOT xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <row>
+      <field name="id">1</field>
+      <field name="domain">weather</field>
+      <field name="url">http://www.wunderground.com/</field>
+      <field name="formname">wxsearch</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</field>
+      <field name="tablename">weather1</field>
+      <field name="lastupdate">2008-10-31 15:48:24</field>
+    </row>
+    <row>
+      <field name="id">2</field>
+      <field name="domain">weather</field>
+      <field name="url">http://www.wunderground.com/</field>
+      <field name="formname">search</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://www.wunderground.com/cgi-bin/findweather/getForecast</field>
+      <field name="tablename">weather2</field>
+      <field name="lastupdate">2008-10-31 15:57:32</field>
+    </row>
+    <row>
+      <field name="id">3</field>
+      <field name="domain">weather</field>
+      <field name="url">http://www.wunderground.com/</field>
+      <field name="formname">null</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</field>
+      <field name="tablename">weather3</field>
+      <field name="lastupdate">2008-10-31 16:06:55</field>
+    </row>
+    <row>
+      <field name="id">4</field>
+      <field name="domain">weather</field>
+      <field name="url">http://uk.weather.com/</field>
+      <field name="formname">homeSearch</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://uk.weather.com</field>
+      <field name="tablename">weather4</field>
+      <field name="lastupdate">2008-10-31 16:27:52</field>
+    </row>
+    <row>
+      <field name="id">5</field>
+      <field name="domain">weather</field>
+      <field name="url">http://www.wunderground.com/tropical/</field>
+      <field name="formname">wxsearch</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</field>
+      <field name="tablename">weather5</field>
+      <field name="lastupdate">2008-10-31 16:47:25</field>
+    </row>
+    <row>
+      <field name="id">6</field>
+      <field name="domain">weather</field>
+      <field name="url">http://www.wunderground.com/tropical/</field>
+      <field name="formname">null</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</field>
+      <field name="tablename">weather6</field>
+      <field name="lastupdate">2008-10-31 16:56:26</field>
+    </row>
+    <row>
+      <field name="id">7</field>
+      <field name="domain">weather</field>
+      <field name="url">http://weather.unisys.com/</field>
+      <field name="formname">Forecast</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://weather.unisys.com/forecast.pl</field>
+      <field name="tablename">weather7</field>
+      <field name="lastupdate">2008-10-31 17:04:48</field>
+    </row>
+    <row>
+      <field name="id">8</field>
+      <field name="domain">weather</field>
+      <field name="url">http://www.wunderground.com/radar/map.asp</field>
+      <field name="formname">wxsearch</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</field>
+      <field name="tablename">weather8</field>
+      <field name="lastupdate">2008-10-31 17:26:05</field>
+    </row>
+    <row>
+      <field name="id">9</field>
+      <field name="domain">weather</field>
+      <field name="url">http://www.wunderground.com/radar/map.asp</field>
+      <field name="formname">null</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://www.wunderground.com/cgi-bin/findweather/hdfForecast</field>
+      <field name="tablename">weather9</field>
+      <field name="lastupdate">2008-10-31 17:34:58</field>
+    </row>
+    <row>
+      <field name="id">10</field>
+      <field name="domain">weather</field>
+      <field name="url">http://espanol.weather.com/</field>
+      <field name="formname">homeSearch</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://espanol.weather.com</field>
+      <field name="tablename">weather10</field>
+      <field name="lastupdate">2008-10-31 17:39:27</field>
+    </row>
+    <row>
+      <field name="id">11</field>
+      <field name="domain">weather</field>
+      <field name="url">http://weather.unisys.com/index.html</field>
+      <field name="formname">Forecast</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://weather.unisys.com/forecast.pl</field>
+      <field name="tablename">weather11</field>
+      <field name="lastupdate">2008-10-31 17:45:33</field>
+    </row>
+    <row>
+      <field name="id">12</field>
+      <field name="domain">weather</field>
+      <field name="url">http://www.wunderground.com/</field>
+      <field name="formname">JLA</field>
+      <field name="formmethod">METHOD_GET</field>
+      <field name="formurl">http://www.wunderground.com/</field>
+      <field name="tablename">wunderground</field>
+      <field name="lastupdate">2008-10-31 15:15:00</field>
+    </row>
+</ROOT>

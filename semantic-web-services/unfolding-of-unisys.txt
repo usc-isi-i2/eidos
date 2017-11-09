@@ -1,0 +1,160 @@
+weather75( $PR_Zip, PR_Zip, PR_Zip, PR_WindSpeedInMPH,
+           PR_WindSpeedInMPH, PR_Zip, PR_Zip, PR_WindSpeedInMPH,
+           PR_TempF, PR_WindSpeedInMPH, PR_TempC, PR_TempF, PR_TempF,
+           PR_Humidity, PR_WindDir, PR_TempF, PR_WindSpeedInMPH,
+           PR_WindSpeedInMPH, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_Sky, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_Sky, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_Sky, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_Sky, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_Sky, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_Sky, PR_WindSpeedInMPH, PR_Sky,
+           PR_WindSpeedInMPH, PR_Sky, PR_WindSpeedInMPH)
+
+weather75($_,PR_Zip1,_,_,_,_,_,_,PR_TempF8,_,_,PR_TempF11,PR_TempF12,PR_Humidity13,_,PR_TempF15,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky48,_,_,_,PR_Sky52,_,_,_,PR_Sky56,_,_,_,_,_,_,_,_,_,_,_)	:- 
+   wunderground(PR_Zip1,_,_,PR_TempF15,_,PR_Humidity13,_,_,_,_,_,_,_,PR_TempF12,PR_TempF11,PR_Sky48,_,_,PR_Sky52,_,_,PR_Sky56,_,PR_TempF8,_).
+
+weather75($_,PR_Zip1,_,_,_,_,_,_,PR_TempF8,_,_,PR_TempF11,PR_TempF12,PR_Humidity13,_,PR_TempF15,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky48,_,_,_,PR_Sky52,_,_,_,PR_Sky56,_,_,_,_,_,_,_,_,_,_,_)	:- 
+
+ weatherForecast("@o1"),
+ hasForecastDay("@o1","current"),
+ hasZIP("@o1",PR_Zip1),
+ hasCityState("@o1",PR_CityState6),
+ hasDate("@o1",PR_Date8),
+ hasTimeWZone("@o1",PR_TimeWZone10),
+ hasCurrentTemperatureFarenheit("@o1",PR_TempF15),
+ hasHumidity("@o1",PR_Humidity13),
+
+ weatherForecast("@o2"),
+ hasForecastDay("@o2","current+1"),
+ hasZIP("@o2",PR_Zip1),
+ hasCityState("@o2",PR_CityState6),
+ hasDate("@o2",PR_Date8),
+ hasTimeWZone("@o2",PR_TimeWZone10),
+
+ weatherForecast("@o3"),
+ hasForecastDay("@o3","current+2"),
+ hasZIP("@o3",PR_Zip1),
+ hasCityState("@o3",PR_CityState6),
+ hasDate("@o3",PR_Date8),
+ hasTimeWZone("@o3",PR_TimeWZone10),
+ hasLowTemperatureFarenheit("@o3",PR_TempF12),
+ hasHighTemperatureFarenheit("@o3",PR_TempF11),
+ hasSkyConditions("@o3",PR_Sky48),
+
+ weatherForecast("@o4"),
+ hasForecastDay("@o4","current+3"),
+ hasZIP("@o4",PR_Zip1),
+ hasCityState("@o4",PR_CityState6),
+ hasDate("@o4",PR_Date8),
+ hasTimeWZone("@o4",PR_TimeWZone10),
+ hasSkyConditions("@o4",PR_Sky52),
+
+ weatherForecast("@o5"),
+ hasForecastDay("@o5","current+4"),
+ hasZIP("@o5",PR_Zip1),
+ hasCityState("@o5",PR_CityState6),
+ hasDate("@o5",PR_Date8),
+ hasTimeWZone("@o5",PR_TimeWZone10),
+ hasSkyConditions("@o5",PR_Sky56),
+
+ weatherForecast("@o6"),
+ hasForecastDay("@o6","current+4"),
+ hasZIP("@o6",PR_Zip1),
+ hasCityState("@o6",PR_CityState6),
+ hasDate("@o6",PR_Date8),
+ hasTimeWZone("@o6",PR_TimeWZone10),
+ hasHighTemperatureFarenheit("@o6",PR_TempF8),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% Rahul
+
+weather75($_,PR_Zip1,_,_,_,_,_,_,PR_TempF8,_,_,PR_TempF11,PR_TempF12,PR_Humidity13,_,PR_TempF15,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,PR_Sky48,_,_,_,PR_Sky52,_,_,_,PR_Sky56,_,_,_,_,_,_,_,_,_,_,_)                :-
+
+weatherForecast("@o1"),
+hasForecastDay("@o1","current"),
+hasZIP("@o1",PR_Zip1),
+hasCityState("@o1",PR_CityState6),
+hasDate("@o1",PR_Date8),
+hasTimeWZone("@o1",PR_TimeWZone10),
+hasCurrentTemperatureFarenheit("@o1",PR_TempF15),
+hasSkyConditions("@o1",_),
+hasHumidity("@o1",PR_Humidity13),
+hasPressure("@o1",_),
+hasWindSpeed("@o1","@ws1"),
+WindSpeed("@ws1"),
+hasWindSpeedInMPH("@ws1",_),
+hasWindDir("@ws1",_),
+hasVisibilityInMi("@o1",_),
+ 
+weatherForecast("@o2"),
+hasForecastDay("@o2","current+1"),
+hasZIP("@o2",PR_Zip1),
+hasCityState("@o2",PR_CityState6),
+hasDate("@o2",PR_Date8),
+hasTimeWZone("@o2",PR_TimeWZone10),
+hasLowTemperatureFarenheit("@o2",_),
+hasHighTemperatureFarenheit("@o2",_),
+hasSkyConditions("@o2",_),
+weatherForecast("@o2"),
+
+hasForecastDay("@o3","current+2"),
+hasZIP("@o3",PR_Zip1),
+hasCityState("@o3",PR_CityState6),
+hasDate("@o3",PR_Date8),
+hasTimeWZone("@o3",PR_TimeWZone10),
+hasLowTemperatureFarenheit("@o3",PR_TempF12),
+hasHighTemperatureFarenheit("@o3",PR_TempF11),
+hasSkyConditions("@o3",PR_Sky48),
+
+weatherForecast("@o3"),
+hasForecastDay("@o4","current+3"),
+hasZIP("@o4",PR_Zip1),
+hasCityState("@o4",PR_CityState6),
+hasDate("@o4",PR_Date8),
+hasTimeWZone("@o4",PR_TimeWZone10),
+hasLowTemperatureFarenheit("@o4",_),
+hasHighTemperatureFarenheit("@o4",_),
+hasSkyConditions("@o4",PR_Sky52),
+
+weatherForecast("@o5"),
+hasForecastDay("@o5","current+4"),
+hasZIP("@o5",PR_Zip1),
+hasCityState("@o5",PR_CityState6),
+hasDate("@o5",PR_Date8),
+hasTimeWZone("@o5",PR_TimeWZone10),
+hasLowTemperatureFarenheit("@o5",_),
+hasHighTemperatureFarenheit("@o5",_),
+hasSkyConditions("@o5",PR_Sky56),
+
+weatherForecast("@o6"),
+hasForecastDay("@o6","current+4"),
+hasZIP("@o6",PR_Zip1),
+hasCityState("@o6",PR_CityState6),
+hasDate("@o6",PR_Date8),
+hasTimeWZone("@o6",PR_TimeWZone10),
+hasLowTemperatureFarenheit("@o6",_),
+hasHighTemperatureFarenheit("@o6",PR_TempF8),
+hasSkyConditions("@o6",_).

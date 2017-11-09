@@ -1,0 +1,588 @@
+0:PR-Day	1:PR-MonthNumber	2:PR-Year	3:PR-Day	4:PR-MonthNumber	5:PR-Year	6:PR-City	7:PR-HotelName	8:CT-Street:PR-StreetNumber	8:CT-Street:PR-StreetNumberDirection	8:CT-Street:PR-StreetName	8:CT-Street:PR-StreetType	8:CT-Street:PR-StreetDirection	9:PR-City	10:PR-State-Abbr	11:PR-ZipCode5Digit	12:PR-Price	13:PR-HotelAmenity	14:PR-HotelURL
+10	8	2007	12	8	2007	Los Angeles	Comfort Inn & Suites Hollywood	2010	N	Highland	Avenue	NULL	Hollywood	CA	90068	149.95	Family Rooms	www.comfortInn.com
+5	5	2007	10	5	2007	Chicago	Comfort Inn & Suites Hollywood	2010	N	Highland	Avenue	NULL	Hollywood	CA	90068	149.95	Swimming pool	www.comfortInn.com
+25	3	2007	27	3	2007	Seattle	Comfort Inn & Suites Hollywood	2010	N	Highland	Avenue	NULL	Hollywood	CA	90068	149.95	Non-smoking rooms	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Inn & Suites Hollywood	2010	N	Highland	Avenue	NULL	Hollywood	CA	90068	149.95	Room service	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Inn & Suites Hollywood	2010	N	Highland	Avenue	NULL	Hollywood	CA	90068	149.95	Wheelchair accessible	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Inn & Suites Hollywood	2010	N	Highland	Avenue	NULL	Hollywood	CA	90068	149.95	Data port	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Inn & Suites Hollywood	2010	N	Highland	Avenue	NULL	Hollywood	CA	90068	149.95	Swimming pool	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Inn & Suites Hollywood	2010	N	Highland	Avenue	NULL	Hollywood	CA	90068	149.95	Meeting rooms,	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Days Inn Hollywood near Universal Studios	NULL	NULL	NULL	NULL	NULL	Hollywood	CA	90028	99.95	Family Rooms	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Days Inn Hollywood near Universal Studios	NULL	NULL	NULL	NULL	NULL	Hollywood	CA	90028	99.95	Wheelchair accessible	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Days Inn Hollywood near Universal Studios	NULL	NULL	NULL	NULL	NULL	Hollywood	CA	90028	99.95	Room service	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Days Inn Hollywood near Universal Studios	NULL	NULL	NULL	NULL	NULL	Hollywood	CA	90028	99.95	Non-smoking rooms	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Days Inn Hollywood near Universal Studios	NULL	NULL	NULL	NULL	NULL	Hollywood	CA	90028	99.95	Wheelchair accessible	www.comfortInn.com
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Universal Studios	4222	NULL	Vineland	Avenue	NULL	North Hollywood	CA	91602	113.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Universal Studios	4222	NULL	Vineland	Avenue	NULL	North Hollywood	CA	91602	113.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Universal Studios	4222	NULL	Vineland	Avenue	NULL	North Hollywood	CA	91602	113.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Universal Studios	4222	NULL	Vineland	Avenue	NULL	North Hollywood	CA	91602	113.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Universal Studios	4222	NULL	Vineland	Avenue	NULL	North Hollywood	CA	91602	113.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Universal Studios	4222	NULL	Vineland	Avenue	NULL	North Hollywood	CA	91602	113.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Universal Studios	4222	NULL	Vineland	Avenue	NULL	North Hollywood	CA	91602	113.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Universal Studios	4222	NULL	Vineland	Avenue	NULL	North Hollywood	CA	91602	113.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Universal Studios	4222	NULL	Vineland	Avenue	NULL	North Hollywood	CA	91602	113.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles Airport	5711	West	Century	Boulevard	NULL	Los Angeles	CA	90045	89.10	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Woodland Hills & Towers	6360	NULL	Canoga	Avenue	NULL	Woodland Hills	CA	91367	99.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Burbank Airport & Convention Center	2500	NULL	Hollywood	Way	NULL	Burbank	CA	91505	139.02	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles North/Glendale	100	West	Glenoaks	Boulevard	NULL	Glendale	CA	91202	129.27	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Luxury	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	All Suites	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Le Parc Suites Hotel A Summit Hotel	733	North West	Knoll	Drive	NULL	West Hollywood	CA	90069	215.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Beverly Hilton	9876	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90210	195.12	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Pasadena	168	South	Los Robles	Avenue	NULL	Pasadena	CA	91101	139.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Express Universal City	3241	NULL	Cahuenga	Boulevard	NULL	Los Angeles	CA	90068	129.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Express Universal City	3241	NULL	Cahuenga	Boulevard	NULL	Los Angeles	CA	90068	129.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Express Universal City	3241	NULL	Cahuenga	Boulevard	NULL	Los Angeles	CA	90068	129.00	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Express Universal City	3241	NULL	Cahuenga	Boulevard	NULL	Los Angeles	CA	90068	129.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Express Universal City	3241	NULL	Cahuenga	Boulevard	NULL	Los Angeles	CA	90068	129.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Holiday Inn Express Universal City	3241	NULL	Cahuenga	Boulevard	NULL	Los Angeles	CA	90068	129.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Hollywood Hills Hotel	6141	NULL	Franklin	Avenue	NULL	Hollywood	CA	90028	111.26	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Hollywood Hills Hotel	6141	NULL	Franklin	Avenue	NULL	Hollywood	CA	90028	111.26	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Hollywood Hills Hotel	6141	NULL	Franklin	Avenue	NULL	Hollywood	CA	90028	111.26	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Hollywood Hills Hotel	6141	NULL	Franklin	Avenue	NULL	Hollywood	CA	90028	111.26	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Hollywood Hills Hotel	6141	NULL	Franklin	Avenue	NULL	Hollywood	CA	90028	111.26	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Hollywood Hills Hotel	6141	NULL	Franklin	Avenue	NULL	Hollywood	CA	90028	111.26	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Hollywood Hills Hotel	6141	NULL	Franklin	Avenue	NULL	Hollywood	CA	90028	111.26	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Hollywood Hills Hotel	6141	NULL	Franklin	Avenue	NULL	Hollywood	CA	90028	111.26	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Hollywood Hills Hotel	6141	NULL	Franklin	Avenue	NULL	Hollywood	CA	90028	111.26	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Beverly Pavilion	9360	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90212	137.50	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Beverly Pavilion	9360	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90212	137.50	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Beverly Pavilion	9360	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90212	137.50	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Beverly Pavilion	9360	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90212	137.50	Luxury	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Beverly Pavilion	9360	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90212	137.50	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Beverly Pavilion	9360	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90212	137.50	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Beverly Pavilion	9360	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90212	137.50	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Beverly Pavilion	9360	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90212	137.50	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Beverly Pavilion	9360	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90212	137.50	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Beverly Pavilion	9360	NULL	Wilshire	Boulevard	NULL	Beverly Hills	CA	90212	137.50	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Checkers Los Angeles	535	South	Grand	Avenue	NULL	Los Angeles	CA	90071	129.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Los Angeles/Universal City	555	NULL	Universal Hollywood	Drive	NULL	Universal City	CA	91608	12194.99	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Chicago	65	East	Harrison	NULL	NULL	Chicago	IL	60605	110.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Chicago	65	East	Harrison	NULL	NULL	Chicago	IL	60605	110.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Chicago	65	East	Harrison	NULL	NULL	Chicago	IL	60605	110.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Chicago	65	East	Harrison	NULL	NULL	Chicago	IL	60605	110.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Chicago	65	East	Harrison	NULL	NULL	Chicago	IL	60605	110.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Chicago	65	East	Harrison	NULL	NULL	Chicago	IL	60605	110.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Downtown	720	North	La Salle	Street	NULL	Chicago	IL	60610	119.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Downtown	720	North	La Salle	Street	NULL	Chicago	IL	60610	119.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Downtown	720	North	La Salle	Street	NULL	Chicago	IL	60610	119.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Downtown	720	North	La Salle	Street	NULL	Chicago	IL	60610	119.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Downtown	720	North	La Salle	Street	NULL	Chicago	IL	60610	119.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Downtown	720	North	La Salle	Street	NULL	Chicago	IL	60610	119.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Congress Plaza Hotel	520	South	Michigan	Avenue	NULL	Chicago	IL	60605	129.00	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Congress Plaza Hotel	520	South	Michigan	Avenue	NULL	Chicago	IL	60605	129.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Congress Plaza Hotel	520	South	Michigan	Avenue	NULL	Chicago	IL	60605	129.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Congress Plaza Hotel	520	South	Michigan	Avenue	NULL	Chicago	IL	60605	129.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Congress Plaza Hotel	520	South	Michigan	Avenue	NULL	Chicago	IL	60605	129.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Congress Plaza Hotel	520	South	Michigan	Avenue	NULL	Chicago	IL	60605	129.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Congress Plaza Hotel	520	South	Michigan	Avenue	NULL	Chicago	IL	60605	129.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Congress Plaza Hotel	520	South	Michigan	Avenue	NULL	Chicago	IL	60605	129.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago O'hare Airport	NULL	NULL	NULL	NULL	NULL	Chicago	IL	60666	139.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Mccormick Place	2233	NULL	Martin Luther King	Drive	NULL	Chicago	IL	60616	149.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chicago Essex Inn	800	South	Michigan	Avenue	NULL	Chicago	IL	60605	79.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chicago Essex Inn	800	South	Michigan	Avenue	NULL	Chicago	IL	60605	79.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chicago Essex Inn	800	South	Michigan	Avenue	NULL	Chicago	IL	60605	79.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chicago Essex Inn	800	South	Michigan	Avenue	NULL	Chicago	IL	60605	79.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chicago Essex Inn	800	South	Michigan	Avenue	NULL	Chicago	IL	60605	79.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chicago Essex Inn	800	South	Michigan	Avenue	NULL	Chicago	IL	60605	79.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chicago Essex Inn	800	South	Michigan	Avenue	NULL	Chicago	IL	60605	79.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Palmer House Hilton	17	East	Monroe	Street	NULL	Chicago	IL	60603	142.68	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Game room	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Chicago	720	South	Michigan	Avenue	NULL	Chicago	IL	60605	159.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	W Chicago City Center	172	West	Adams At	Lasalle	NULL	Chicago	IL	60603	179.00	Luxury	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Grant Park Hotel	1100	South	Michigan	Avenue	NULL	Chicago	IL	60605	87.94	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Grant Park Hotel	1100	South	Michigan	Avenue	NULL	Chicago	IL	60605	87.94	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Grant Park Hotel	1100	South	Michigan	Avenue	NULL	Chicago	IL	60605	87.94	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Grant Park Hotel	1100	South	Michigan	Avenue	NULL	Chicago	IL	60605	87.94	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Grant Park Hotel	1100	South	Michigan	Avenue	NULL	Chicago	IL	60605	87.94	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Grant Park Hotel	1100	South	Michigan	Avenue	NULL	Chicago	IL	60605	87.94	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Grant Park Hotel	1100	South	Michigan	Avenue	NULL	Chicago	IL	60605	87.94	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Grant Park Hotel	1100	South	Michigan	Avenue	NULL	Chicago	IL	60605	87.94	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Grant Park Hotel	1100	South	Michigan	Avenue	NULL	Chicago	IL	60605	87.94	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western River North Hotel	125	West	Ohio	Street	NULL	Chicago	IL	60610	119.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western River North Hotel	125	West	Ohio	Street	NULL	Chicago	IL	60610	119.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western River North Hotel	125	West	Ohio	Street	NULL	Chicago	IL	60610	119.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western River North Hotel	125	West	Ohio	Street	NULL	Chicago	IL	60610	119.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western River North Hotel	125	West	Ohio	Street	NULL	Chicago	IL	60610	119.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western River North Hotel	125	West	Ohio	Street	NULL	Chicago	IL	60610	119.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western River North Hotel	125	West	Ohio	Street	NULL	Chicago	IL	60610	119.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western River North Hotel	125	West	Ohio	Street	NULL	Chicago	IL	60610	119.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western River North Hotel	125	West	Ohio	Street	NULL	Chicago	IL	60610	119.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel and Suites-Downtown Chicago	160	East	Huron	Street	NULL	Chicago	IL	60611	148.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Garden Inn Chicago Downtown/Magnificent Mile	10	East	Grand	Avenue	NULL	Chicago	IL	60611	329.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hard Rock Hotel Chicago	230	North	Michigan	Avenue	NULL	Chicago	IL	60601	179.02	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hard Rock Hotel Chicago	230	North	Michigan	Avenue	NULL	Chicago	IL	60601	179.02	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hard Rock Hotel Chicago	230	North	Michigan	Avenue	NULL	Chicago	IL	60601	179.02	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hard Rock Hotel Chicago	230	North	Michigan	Avenue	NULL	Chicago	IL	60601	179.02	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hard Rock Hotel Chicago	230	North	Michigan	Avenue	NULL	Chicago	IL	60601	179.02	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hard Rock Hotel Chicago	230	North	Michigan	Avenue	NULL	Chicago	IL	60601	179.02	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hard Rock Hotel Chicago	230	North	Michigan	Avenue	NULL	Chicago	IL	60601	179.02	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hard Rock Hotel Chicago	230	North	Michigan	Avenue	NULL	Chicago	IL	60601	179.02	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hard Rock Hotel Chicago	230	North	Michigan	Avenue	NULL	Chicago	IL	60601	179.02	Luxury	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn of Chicago	162	East	Ohio	Street	NULL	Chicago	IL	60611	129.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn of Chicago	162	East	Ohio	Street	NULL	Chicago	IL	60611	129.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn of Chicago	162	East	Ohio	Street	NULL	Chicago	IL	60611	129.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn of Chicago	162	East	Ohio	Street	NULL	Chicago	IL	60611	129.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn of Chicago	162	East	Ohio	Street	NULL	Chicago	IL	60611	129.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn of Chicago	162	East	Ohio	Street	NULL	Chicago	IL	60611	129.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn of Chicago	162	East	Ohio	Street	NULL	Chicago	IL	60611	129.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn of Chicago	162	East	Ohio	Street	NULL	Chicago	IL	60611	129.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston/Dedham	25	NULL	Allied	Drive	NULL	Dedham	MA	02026	89.26	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	All Suites	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Roundhouse Suites	891	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	119.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Midtown Hotel	220	NULL	Huntington	Avenue	NULL	Boston	MA	02115	99.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Midtown Hotel	220	NULL	Huntington	Avenue	NULL	Boston	MA	02115	99.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Midtown Hotel	220	NULL	Huntington	Avenue	NULL	Boston	MA	02115	99.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Midtown Hotel	220	NULL	Huntington	Avenue	NULL	Boston	MA	02115	99.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Midtown Hotel	220	NULL	Huntington	Avenue	NULL	Boston	MA	02115	99.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Midtown Hotel	220	NULL	Huntington	Avenue	NULL	Boston	MA	02115	99.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Midtown Hotel	220	NULL	Huntington	Avenue	NULL	Boston	MA	02115	99.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Midtown Hotel	220	NULL	Huntington	Avenue	NULL	Boston	MA	02115	99.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Midtown Hotel	220	NULL	Huntington	Avenue	NULL	Boston	MA	02115	99.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Midtown Hotel	220	NULL	Huntington	Avenue	NULL	Boston	MA	02115	99.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Fenway Park	1271	NULL	Huntington	Avenue	NULL	Boston	MA	02215	135.00	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Fenway Park	1271	NULL	Huntington	Avenue	NULL	Boston	MA	02215	135.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Fenway Park	1271	NULL	Huntington	Avenue	NULL	Boston	MA	02215	135.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Fenway Park	1271	NULL	Huntington	Avenue	NULL	Boston	MA	02215	135.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Fenway Park	1271	NULL	Huntington	Avenue	NULL	Boston	MA	02215	135.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Howard Johnson Fenway Park	1271	NULL	Huntington	Avenue	NULL	Boston	MA	02215	135.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Logan Airport	85	NULL	Terminal	Road	NULL	Boston	MA	02128	119.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Omni Parker House	60	NULL	School	Street	NULL	Boston	MA	02108	159.00	Luxury	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Doubletree Club Hotel Boston Bayside	240	NULL	Mount Vernon	Street	NULL	Boston	MA	02125	109.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hyatt Regency Cambridge	575	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	139.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Game room	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Game room	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Boston Back Bay	40	NULL	Dalton	Street	NULL	Boston	MA	02115	139.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Colonnade Hotel	120	NULL	Huntington	Avenue	NULL	Boston	MA	02116	199.01	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Colonnade Hotel	120	NULL	Huntington	Avenue	NULL	Boston	MA	02116	199.01	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Colonnade Hotel	120	NULL	Huntington	Avenue	NULL	Boston	MA	02116	199.01	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Colonnade Hotel	120	NULL	Huntington	Avenue	NULL	Boston	MA	02116	199.01	Luxury	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Colonnade Hotel	120	NULL	Huntington	Avenue	NULL	Boston	MA	02116	199.01	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Colonnade Hotel	120	NULL	Huntington	Avenue	NULL	Boston	MA	02116	199.01	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Colonnade Hotel	120	NULL	Huntington	Avenue	NULL	Boston	MA	02116	199.01	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Colonnade Hotel	120	NULL	Huntington	Avenue	NULL	Boston	MA	02116	199.01	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Colonnade Hotel	120	NULL	Huntington	Avenue	NULL	Boston	MA	02116	199.01	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Colonnade Hotel	120	NULL	Huntington	Avenue	NULL	Boston	MA	02116	199.01	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chandler Inn Hotel	26	NULL	Chandler	Street	NULL	Boston	MA	02116	132.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chandler Inn Hotel	26	NULL	Chandler	Street	NULL	Boston	MA	02116	132.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chandler Inn Hotel	26	NULL	Chandler	Street	NULL	Boston	MA	02116	132.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chandler Inn Hotel	26	NULL	Chandler	Street	NULL	Boston	MA	02116	132.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chandler Inn Hotel	26	NULL	Chandler	Street	NULL	Boston	MA	02116	132.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chandler Inn Hotel	26	NULL	Chandler	Street	NULL	Boston	MA	02116	132.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Chandler Inn Hotel	26	NULL	Chandler	Street	NULL	Boston	MA	02116	132.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hampton Inn and Suites Boston Crosstown Center	811	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	129.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hampton Inn and Suites Boston Crosstown Center	811	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	129.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hampton Inn and Suites Boston Crosstown Center	811	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	129.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hampton Inn and Suites Boston Crosstown Center	811	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	129.00	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hampton Inn and Suites Boston Crosstown Center	811	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	129.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hampton Inn and Suites Boston Crosstown Center	811	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	129.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hampton Inn and Suites Boston Crosstown Center	811	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	129.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hampton Inn and Suites Boston Crosstown Center	811	NULL	Massachusetts	Avenue	NULL	Boston	MA	02118	129.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn at Longwood Medical	342	NULL	Longwood	Avenue	NULL	Boston	MA	02115	155.21	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn at Longwood Medical	342	NULL	Longwood	Avenue	NULL	Boston	MA	02115	155.21	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn at Longwood Medical	342	NULL	Longwood	Avenue	NULL	Boston	MA	02115	155.21	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn at Longwood Medical	342	NULL	Longwood	Avenue	NULL	Boston	MA	02115	155.21	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn at Longwood Medical	342	NULL	Longwood	Avenue	NULL	Boston	MA	02115	155.21	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn at Longwood Medical	342	NULL	Longwood	Avenue	NULL	Boston	MA	02115	155.21	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn at Longwood Medical	342	NULL	Longwood	Avenue	NULL	Boston	MA	02115	155.21	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn at Longwood Medical	342	NULL	Longwood	Avenue	NULL	Boston	MA	02115	155.21	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn at Longwood Medical	342	NULL	Longwood	Avenue	NULL	Boston	MA	02115	155.21	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Inn at Longwood Medical	342	NULL	Longwood	Avenue	NULL	Boston	MA	02115	155.21	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Copley Square Hotel	47	NULL	Huntington	Avenue	NULL	Boston	MA	02116	255.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Copley Square Hotel	47	NULL	Huntington	Avenue	NULL	Boston	MA	02116	255.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Copley Square Hotel	47	NULL	Huntington	Avenue	NULL	Boston	MA	02116	255.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Copley Square Hotel	47	NULL	Huntington	Avenue	NULL	Boston	MA	02116	255.00	All Suites	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Copley Square Hotel	47	NULL	Huntington	Avenue	NULL	Boston	MA	02116	255.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Copley Square Hotel	47	NULL	Huntington	Avenue	NULL	Boston	MA	02116	255.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Copley Square Hotel	47	NULL	Huntington	Avenue	NULL	Boston	MA	02116	255.00	Luxury	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Copley Square Hotel	47	NULL	Huntington	Avenue	NULL	Boston	MA	02116	255.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Copley Square Hotel	47	NULL	Huntington	Avenue	NULL	Boston	MA	02116	255.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Copley Square Hotel	47	NULL	Huntington	Avenue	NULL	Boston	MA	02116	255.00	Resort	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel Cambridge	777	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	109.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel Cambridge	777	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	109.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel Cambridge	777	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	109.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel Cambridge	777	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	109.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel Cambridge	777	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	109.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel Cambridge	777	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	109.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel Cambridge	777	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	109.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel Cambridge	777	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	109.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel Cambridge	777	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	109.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Radisson Hotel Cambridge	777	NULL	Memorial	Drive	NULL	Cambridge	MA	02139	109.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Seattle Space Needle	200	NULL	6th	Avenue	North	Seattle	WA	98109	59.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Seattle Space Needle	200	NULL	6th	Avenue	North	Seattle	WA	98109	59.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Seattle Space Needle	200	NULL	6th	Avenue	North	Seattle	WA	98109	59.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Seattle Space Needle	200	NULL	6th	Avenue	North	Seattle	WA	98109	59.00	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Seattle Space Needle	200	NULL	6th	Avenue	North	Seattle	WA	98109	59.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Seattle Space Needle	200	NULL	6th	Avenue	North	Seattle	WA	98109	59.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Travelodge Seattle Space Needle	200	NULL	6th	Avenue	North	Seattle	WA	98109	59.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Loyal Inn	2301	NULL	Eight	Avenue	NULL	Seattle	WA	98121	139.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Loyal Inn	2301	NULL	Eight	Avenue	NULL	Seattle	WA	98121	139.00	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Loyal Inn	2301	NULL	Eight	Avenue	NULL	Seattle	WA	98121	139.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Loyal Inn	2301	NULL	Eight	Avenue	NULL	Seattle	WA	98121	139.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Loyal Inn	2301	NULL	Eight	Avenue	NULL	Seattle	WA	98121	139.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Loyal Inn	2301	NULL	Eight	Avenue	NULL	Seattle	WA	98121	139.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Loyal Inn	2301	NULL	Eight	Avenue	NULL	Seattle	WA	98121	139.00	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Loyal Inn	2301	NULL	Eight	Avenue	NULL	Seattle	WA	98121	139.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Loyal Inn	2301	NULL	Eight	Avenue	NULL	Seattle	WA	98121	139.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	La Quinta Inn & Suites Seattle Downtown	2224	NULL	Eight	Avenue	NULL	Seattle	WA	98121	91.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Executive Inn	200	NULL	Taylor	NULL	North	Seattle	WA	98109	99.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Executive Inn	200	NULL	Taylor	NULL	North	Seattle	WA	98109	99.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Executive Inn	200	NULL	Taylor	NULL	North	Seattle	WA	98109	99.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Executive Inn	200	NULL	Taylor	NULL	North	Seattle	WA	98109	99.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Executive Inn	200	NULL	Taylor	NULL	North	Seattle	WA	98109	99.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Executive Inn	200	NULL	Taylor	NULL	North	Seattle	WA	98109	99.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Executive Inn	200	NULL	Taylor	NULL	North	Seattle	WA	98109	99.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Executive Inn	200	NULL	Taylor	NULL	North	Seattle	WA	98109	99.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Executive Inn	200	NULL	Taylor	NULL	North	Seattle	WA	98109	99.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Best Western Executive Inn	200	NULL	Taylor	NULL	North	Seattle	WA	98109	99.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Suites Downtown Seattle Center	601	NULL	Roy	Street	NULL	Seattle	WA	98109	89.10	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Suites Downtown Seattle Center	601	NULL	Roy	Street	NULL	Seattle	WA	98109	89.10	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Suites Downtown Seattle Center	601	NULL	Roy	Street	NULL	Seattle	WA	98109	89.10	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Suites Downtown Seattle Center	601	NULL	Roy	Street	NULL	Seattle	WA	98109	89.10	All Suites	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Suites Downtown Seattle Center	601	NULL	Roy	Street	NULL	Seattle	WA	98109	89.10	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Suites Downtown Seattle Center	601	NULL	Roy	Street	NULL	Seattle	WA	98109	89.10	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Suites Downtown Seattle Center	601	NULL	Roy	Street	NULL	Seattle	WA	98109	89.10	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Suites Downtown Seattle Center	601	NULL	Roy	Street	NULL	Seattle	WA	98109	89.10	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Suites Downtown Seattle Center	601	NULL	Roy	Street	NULL	Seattle	WA	98109	89.10	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Comfort Suites Downtown Seattle Center	601	NULL	Roy	Street	NULL	Seattle	WA	98109	89.10	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Roosevelt Hotel A Coast Hotel	1531	NULL	7	Avenue	NULL	Seattle	WA	98101	109.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Room service	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Quality Inn And Suites Seattle	225	NULL	Aurora	Avenue	North	Seattle	WA	98109	99.99	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Warwick Seattle Hotel	401	NULL	Lenora	Street	NULL	Seattle	WA	98121	129.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Golf	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	First Class Hotel	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Swimming pool	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	Hilton Seattle Airport and Conference Center	17620	NULL	International	Boulevard	NULL	Seattle	WA	98188	119.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Pets accepted	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Restaurant	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Data port	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Family Rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Wheelchair accessible	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Meeting rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Dry cleaning/laundry	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Fitness center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Business center	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	Non-smoking rooms	NULL
+NULL	NULL	NULL	NULL	NULL	NULL	NULL	The Paramount Hotel A Coast Hotel	724	NULL	Pine	Street	NULL	Seattle	WA	98101	139.00	First Class Hotel	NULL
+	NULL																	

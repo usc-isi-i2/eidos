@@ -1,0 +1,64 @@
+SELECT tablename,argumentname FROM sourceschema where semantictype = 'PR-WindDirection';
+"tablename","argumentname"
+"weather3","column2516"
+"weather4","column1683"
+"weather5","column2591"
+"weather6","column2709"
+"weather7","column25"
+"weather8","column91"
+
+
+select column2516 from weather3
+union
+select column1683 from weather4
+union
+select column2591 from weather5
+union
+select column2709 from weather6
+union
+select column25 from weather7
+union
+select column91 from weather8
+
+"ENE"
+"NULL"
+"SE"
+"West"
+"East"
+"SSE"
+"SW"
+"ESE"
+"NE"
+"NE at 14 knt"
+"E at 6 knt"
+"SSW at 5 knt"
+"ESE at 12 knt"
+"calm"
+"NNE at 7 knt"
+"NE at 10 knt"
+"N at 4 knt"
+"S at 16 knt"
+"S at 12 knt"
+"EDT"
+"PDT"
+"CDT"
+"MST"
+
+CREATE TABLE  `examples`.`wind_direction` (
+  `val` varchar(100) NOT NULL default '',
+  PRIMARY KEY  (`val`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+insert into `examples`.`wind_direction` (
+select column2516 from wrapcache_oct.weather3 
+union 
+select column1683 from wrapcache_oct.weather4 
+union 
+select column2591 from wrapcache_oct.weather5 
+union 
+select column2709 from wrapcache_oct.weather6 
+union 
+select column25 from wrapcache_oct.weather7 
+union 
+select column91 from wrapcache_oct.weather8
+)

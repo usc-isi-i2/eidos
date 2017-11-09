@@ -1,0 +1,260 @@
+package induction;
+
+import java.util.ArrayList;
+
+import relational.DBConnection;
+import domain.Clause;
+import domain.Domain;
+import domain.Predicate;
+import evaluation.*;
+
+public class Searcher_beta {
+	
+	
+	private Domain domain;
+	
+	public Searcher_beta(Domain d) {
+		this.domain = d;
+	}
+	
+	
+	// new search maintains the table being evaluated as it moves forward in the search -- far more efficient!!!!
+	public void search(DBConnection db,
+			   Enumerator en,
+			   EvaluatorImpl_beta ev,
+			   boolean reloadTarget,
+			   boolean reloadSources,
+			   long timeout, 
+			   int maxIterations,
+			   boolean debug) {
+
+		long time = 0;
+		int  count = 0;
+		int  count1 = 0;
+		long accessCount1 = 0;
+
+		ArrayList<Clause> queue = new ArrayList<Clause>();
+		ArrayList<Double> scores = new ArrayList<Double>();
+
+		if (reloadSources) {
+			ev.dbCon.resetTables(ev.dbName,en.domain.sources); 
+		}
+		if (reloadTarget) { 
+			ev.dbCon.resetTable(ev.dbName,en.domain.target);
+			// try to populate the target table:
+			if (!ev.populateTargetTable(en.domain.target,20)) {
+				System.out.println("System unable to successfully invoke target predicate using examples available");
+				System.out.println("... now attempting to generate examples by invoking other sources");
+				if (!ev.searchForValidTargetInputs(en.domain.target,en.domain.sources,20)) {
+					System.out.println("System was unable to successfully invoke target predicate: "+domain.target);
+					return;
+				}
+			}
+			// check for any constants in the target table - don't need to search for them!!!!!
+			String[] constants = ev.checkForConstants(en.domain.target,10);
+			//boolean foundOne = false;
+			for (int i=0; i<constants.length; i++) {
+				if (constants[i]!=null) {
+					String s=""; for (int j=0;j<30;j++) {s+="*";} System.out.println(s); 
+					System.out.println("Target attribute: "+en.domain.target.types[i].name+i+" seems to be a constant value: '"+constants[i]+"'");
+			//		foundOne = true;
+				}
+			}
+			//if (foundOne) {System.exit(9);}
+		}
+
+		Clause bestOverall = en.firstClause();
+		double bestOverallScore = 0.00;
+
+		queue.add(bestOverall);
+		scores.add(bestOverallScore);
+
+		ArrayList<Clause> tested = new ArrayList<Clause>();
+
+		Timer timer = new Timer(timeout);
+
+
+		for (int i=0; i<maxIterations && queue.size()>0 && timer.timeLeft(); i++) {
+			
+			sort(queue,scores);
+			
+			Clause previousNode = queue.remove(0);
+			double previousScore = scores.remove(0);
+			
+			if (debug) { System.out.printf("\nExpanding: %.10f: %s\n\n", previousScore, previousNode.toString());}
+			
+			for (Clause c: en.expand(previousNode)) {
+				
+				count++;
+				if (!timer.timeLeft()) { break; }
+				
+				if (!tested.contains(c)) {
+					
+					Evaluation e = ev.evaluate(c);
+					
+					double score = e.score;
+					tested.add(c);
+					
+					queue.add(c);
+					scores.add(score);
+					
+					System.out.printf("%.3f: %s\n",Math.log10(score),c.toStringI());
+					
+				//	if (score > 0.8 * previousScore) {
+						
+						boolean foundBetter = true;
+						
+						while (foundBetter) {
+							
+							if (!timer.timeLeft()) { break; }
+							
+							foundBetter = false;
+							
+							for (Restriction r: en.constrain2(c)) {
+								
+								Clause c1 = r.updatedClause;
+								
+								count++;
+								if (!timer.timeLeft()) { break; }
+								
+								if (!tested.contains(c1)) {
+								
+									Evaluation e1 = ev.evaluateRestriction(e,r);
+									double score1 = e1.score;
+									tested.add(c1);
+									
+									queue.add(c1);
+									scores.add(score1);
+									
+									System.out.printf("%.3f: %s\n",Math.log10(score1),c1.toStringI());
+									if (score1 > score) {
+										c = c1;
+										score = score1;
+										e = e1;
+										foundBetter = true;
+									}
+									
+								}
+								
+							}
+						}
+						
+				//	}
+					if (score > bestOverallScore) { 
+						bestOverallScore = score; 
+						bestOverall = c; 
+						time = timer.timeInMillis(); 
+						count1 = count;
+						accessCount1 = ev.dispatcher.sourceAccesses;
+					}
+				}
+			}
+			
+		}
+
+		String[] params = new String[] {"timestmp",
+										"target",
+										"definition",
+										"unfolding",
+										"score",
+										"normalisedScore",
+										"candidates",
+										"totalCandidates",
+										"accesses",
+										"totalAccesses",
+										"time",
+										"totalTime",
+										"timeout",
+										"maxClauseLength",
+										"maxPredRepitition",
+										"maxVarLevel",
+										"noVarRepetition",
+										"heuristic"};
+		int[] lengths   = new int[]    {15,200,2000,5000,45,45,10,10,10,10,15,15,15,10,10,10,10,100};
+		String[] values = new String[] {""+timer.start,
+										en.domain.target.toString(),
+										bestOverall.toStringI(),
+										bestOverall.unfold().toStringI(),
+										""+bestOverallScore,
+										""+Math.log(bestOverallScore * bestOverall.missingDomains(ev.dbCon)),
+										""+count1,
+										""+count,
+										""+accessCount1,
+										""+ev.dispatcher.sourceAccesses,
+										""+time / 1000,
+										""+timer.timeInMillis() / 1000,
+										""+timeout,
+										""+en.maxClauseLength,
+										""+en.maxPredRepitition,
+										""+en.maxVarLevel,
+										""+en.noVarRepetition,
+										""+en.heuristic};
+
+		System.out.println("\n************************************************************************");
+		for (int i=0; i<params.length; i++) { System.out.println(params[i]+" = "+values[i]); }
+		System.out.println("************************************************************************");
+
+		String dbName = "induction.runs";
+		String filename = en.domain.filename;
+		if (filename!=null) {
+			dbName = "induction." + filename.substring(filename.lastIndexOf("/")+1,filename.lastIndexOf("."));
+			String[] cols = new String[params.length]; for (int i=0; i<params.length; i++) { cols[i] = "`"+params[i]+"` varchar("+lengths[i]+")"; }
+			db.createTableIfNotExists(dbName,cols,"`"+params[0]+"`");
+		}
+		db.insert(dbName,values);
+
+		
+	}       
+
+
+	public void searchAll(DBConnection db, 
+			  Enumerator en, 
+			  EvaluatorImpl_beta ev, 
+			  boolean reload, 
+			  long timeout, 
+			  int maxIterations,
+			  boolean debug) {
+		
+		boolean reloadSources = reload;
+		for (Predicate p: domain.targets) {
+			domain.target = p;
+			search(db,en,ev,reload,reloadSources,timeout,maxIterations,debug);
+			reloadSources = false;
+		}
+	}
+
+	//////////////////////////////////////////////////////////////////////////
+	// private classes and methods
+	
+	private class Timer {
+		long start;
+		long timeout;
+		Timer(long timeout) {
+			this.timeout = timeout;
+			start = System.currentTimeMillis();
+		}
+		public long timeInMillis() {
+			return (System.currentTimeMillis() - start);
+		}
+		public boolean timeLeft() {
+			return (System.currentTimeMillis() - start < timeout * 1000);
+		}
+	}
+	
+	private void sort(ArrayList<Clause> queue, ArrayList<Double> scores) {
+		for (int i=0; i<scores.size(); i++) {
+			Clause c = queue.get(i);
+			Double s = scores.get(i);
+			for (int j=0; j<i; j++) {
+				if (s > scores.get(j)) {
+					queue.remove(i);
+					scores.remove(i);
+					queue.add(j,c);
+					scores.add(j,s);
+					break;
+				}
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,235 @@
+﻿/*--page style--*/
+body{background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/warmBG.gif") repeat;}
+div#container{}
+#message2OlderBrowser{display:none;}/*--message to older browser--*/
+.clear{clear:both;margin:0;padding:0;}
+
+/*--header area--*/
+#headerArea{}
+#headerArea .biggerFontSizeTemplate{font-size:100%;}
+#headerArea .biggestFontSizeTemplate{font-size:80%;}
+#headerArea .headerArea{width:100%;}
+#logo{}
+#haInfoBar{height:23px;width:475px;color:#fff;font-size:1.2em;}
+#haInfoBar a{color:#fff;}
+#haInfoBar span{vertical-align:middle;}
+#haInfoBar .loginName{margin-left:5px;}
+#haInfoBarCart{width:250px;text-align:right;background:#33425a;}
+#haInfoBarCart .item{margin-left:3px;vertical-align:top;position:relative;top:3px;}
+#haInfoBarCart .toLeft{float:left;margin:0;padding:0;}
+#haInfoBarCart .toRight{float:right;}
+#haInfoBarCart #shoppingCart{border-left:1px solid #ffffff;}
+#haInfoBarLeft{width:2px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/topIframeLeft.gif") no-repeat;}
+#haInfoBarCenter{width:200px;background:#33425a;white-space:nowrap;}
+#haInfoBarMyAccount{width:92px;background:#33425a;text-align:center;vertical-align:middle;}
+#haInfoBarMyAccount img{border-left:1px solid #ffffff;vertical-align:middle;}
+#haInfoBarRight{width:3px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/topIframeRight.gif") no-repeat;}
+
+#haQuickSearch{width:100%;}
+#haQuickSearchLeft{width:6px;height:60px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/n_topNavLeft.gif") no-repeat;}
+#haQuickSearchLabel{width:58px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/n_topNavLabelA.gif") no-repeat;}
+#haQuickSearchTextbox{width:195px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/n_topNavbg.gif");}
+#haQuickSearchTextbox input{padding: 1px 0px; width:175px; margin-top:3px;}
+#haQuickSearchSubmit{width:35px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/n_topNavGo.gif");}
+#haQuickSearchInfoTab{vertical-align:middle;}
+#haQuickSearchBottom{background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/n_topNavbg.gif");}
+#haQuickSearchAD{width:150px;text-align:right;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/n_topNavbg.gif");}
+#haQuickSearchRight{width:4px;height:37px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/topNavRight.gif");}
+#bigFontWarring{color:red;}
+
+#stripeHeaderArea{background:#8e96a4;border-top:1px solid #fff;border-bottom:2px solid #fff;height:7px;min-width:984px;}
+
+/*--new layout update [tab store dropdown menu]--*/
+#haTabStoreMenu{padding:0;margin:0;background:#33425A;height:23px;font-size:1.2em;}
+#haTabStoreMenu .biggerFontSizeTemplate{font-size:75%;}
+#haTabStoreMenu .biggestFontSizeTemplate{font-size:60%;}
+#haTabStoreMenu img{position:relative;z-index:500;}
+#haTabStoreMenu td:hover ul{display:block;}
+#haTabStoreMenu iframe{display:none;position:absolute;margin-left:-2px;background:transparent;}
+#haTabStoreMenu ul{display:none;position:absolute;margin:22px 0 0 -2px;padding:0;font-size:1.1em;list-style:none;z-index:10;}		
+#haTabStoreMenu ul li{width:160px;padding:0 2px;background:#fff;border-left:1px solid #33425a;border-right:1px solid #33425a;}
+#haTabStoreMenu ul li a{width:auto;display:block;padding:2px;border:1px solid #fff;}
+#haTabStoreMenu ul li a:link{color:#000;text-decoration:none;}
+#haTabStoreMenu ul li a:visited{color:#000;text-decoration:none;}
+#haTabStoreMenu ul li a:hover{color:#000;text-decoration:none;background:#d1d2d3;border:1px solid #aaa;}
+#haTabStoreMenu ul li a:active{color:#000;}
+#haTabStoreMenu ul li.first{background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/none.gif");height:2px;overflow:hidden;border:0;}
+#haTabStoreMenu ul li.last{padding-bottom:2px;border-bottom:1px solid #33425a;}
+#haTabStoreMenu ul#haTabStoreSubMenu1,#haTabStoreMenu ul#haTabStoreSubMenu1 iframe{margin-left:0;}
+/*--new layout update [tab store dropdown menu]--*/
+
+/*--body area--*/
+#bodyArea{background:#fff;}
+#bodyArea .bodyArea{border-left:1px solid #526380;border-right:1px solid #526380;width:100%;}
+.sidebarBox{margin:0 0 2px 0;border-left:1px solid #526380;border-bottom:1px solid #526380;}
+.sidebarBox dt{padding:6px 0 6px 6px;font-size:1.2em;font-weight:bold;color:#dadada;background:#33425a;font-family:Arial;text-transform:uppercase;}
+.sidebarBox dd.content{background:#eeeff0;padding:3px 5px;font-size:1.2em;}
+.sidebarBox dd.footer{display:block;background:#dcddde;padding:5px;font-size:1.2em;}
+
+.helpImage{margin:1px 2px;}
+
+/*--body left area--*/
+.bodyLeftArea{min-width:160px;max-width:160px;width:160px;}
+#bodyLeftArea{width:160px;}
+
+/*--center area--*/
+#bodyCenterArea{padding:0 2px;background:#fff;}
+#stripeBodyCenterArea{min-width:698px;height:0;}
+#stripeBodyCenterArea .stripeImage{width:698px;}
+#stripeBodyCenterArea1{min-width:818px;height:0;}
+#stripeBodyCenterArea1 .stripeImage{width:818px;}
+#stripeBodyCenterArea2{min-width:858px;height:0;}
+#stripeBodyCenterArea2 .stripeImage{width:858px;}
+#stripeBodyCenterArea3{min-width:978px;height:0;}
+#stripeBodyCenterArea3 .stripeImage{width:978px;}
+
+#bcaBreadcrumbTop,#bcaBreadcrumbBottom{padding:5px;margin:0 0 5px 0;}
+#bcaBreadcrumbTop dd,#bcaBreadcrumbBottom dd{display:inline;font-size:1.2em;}
+#bcaBreadcrumbTop dd.egg,#bcaBreadcrumbBottom dd.egg{vertical-align:bottom;}
+#bcaBreadcrumbTop dl{margin:0;}
+
+.contentPageTitle{clear:both;color:#dadada;background:#526380;padding:2px 0;}
+.contentPageTitle h5{padding:3px;font-size:1.2em;text-transform:uppercase;margin:0;}
+.centerTitleBar {clear:both;color:#dadada;margin:3px 0 0 1px;background:#526380;font-size:1.1em;text-align:left;}
+.centerTitleBar h5{padding:3px;font-size:1.2em;text-transform:uppercase;margin:0;}
+.centerTitleBar h4{margin:0;padding:5px;color:#fff;background:#8E96A4;font-size:1.45em;text-transform:uppercase;}
+
+.greyScan{margin-top:2px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/greyScanBG2.gif");line-height:1.3em;font-weight:bold;border-bottom:solid 1px #818588;padding-top:3px;}
+.centerArea20{padding:20px 0 0 0;}
+.centerArea10{padding:10px 0 0 0;}
+
+/*--body right area--*/
+.bodyRightArea{min-width:120px;max-width:120px;width:120px;}
+.bodyRightArea .biggerFontSizeTemplate{font-size:85%;}
+.bodyRightArea .biggestFontSizeTemplate{font-size:70%;}
+#bodyRightArea{width:120px;}
+
+#braProductReview dd.content{font-size:1.4em;font-weight:bold;}
+#braPopularBrands dd{padding:3px 0;text-align:center;}
+#braRecentlyViewd ul{list-style:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/listStyle.gif");margin:0;padding:0 0 0 15px;}
+#braRecentlyViewd ul p{color:#951616;font-size:1.1em;font-weight:bold;margin:0;}
+#braRecentlyViewd .content{margin-bottom:1px;}
+
+#braYouTellUs div{padding:8px 0;}
+#braYouTellUs #poll{margin:0;padding:0;}
+#braYouTellUs #poll dl,dd{margin:0;padding:0;}
+#braYouTellUs #poll .clear{clear:both;padding-top:4px;}
+#braYouTellUs #poll .radio{float:left;padding-top:1px;}
+#braYouTellUs #poll .radio input {width:11px;height:11px;}
+#braYouTellUs #poll .title{float:left;width:88px;padding:0 0 0 2px; margin:0;}
+
+#braYouTellUs textarea{font-size:1.2em;padding:0px;margin:0px;width:106px;}
+#braYouTellUs .vote{clear:both;padding:10px 0 5px 0;}
+#braYouTellUs p,#braYouTellUs input{margin:0;}
+
+/*--footer area--*/
+#footerArea{background:#fff;margin:1px 0 0 0;font-size:1.2em;}
+#footerArea .footerArea{width:100%;}
+
+.footerDivider{border-right:1px solid #fff;}
+.footerText{text-align:left;color:#dadada;margin:10px 0 0 10px;}
+.footerText img{margin:2px;}
+.footerText a:link{color:#fff;text-decoration:none;border-bottom:1px solid #95a0aa;}
+.footerText a:visited{color:#fff;text-decoration:none;}
+.footerText a:hover{color:#dadada;text-decoration:none;border-bottom:1px solid #f90;}
+.footerText a:active{color:#fff;}
+.footerText ul{padding-left:20px;list-style-image:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/listStylew.gif");margin:0;}
+.footerText li{margin:3px 0;margin:0;line-height:1.3em;}
+.footerText p,.footerText input{margin:0;}
+.footerText .mt{margin-top:3px;}
+.footerAwards img{margin:0 10px;}
+
+table.eggXpert {width:650px;}
+table.eggXpert #eggxpertText {padding-left:25px;text-align:left;}
+#footerCorner img{width:6px;}
+#footerCorner .left{width:6px;height:19px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/footer_corner_left.gif") no-repeat;}
+#footerCorner .center{width:100%;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/footer_comb_bg.gif") repeat-x scroll 0%;}
+#footerCorner .right{width:6px;height:19px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/footer_corner_right.gif") no-repeat;}
+
+#awardsCorner img{width:7px;}
+#awardsCorner .left{width:6px;height:10px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/awardsDownLeft.gif") no-repeat;}
+#awardsCorner .center{width:100%;background:#fff;}
+#awardsCorner .right{width:6px;height:10px;background:url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/awardsDownRight.gif") no-repeat;}
+
+.stripeFooterArea{background:#8e96a4;border-top:1px solid #fff;border-bottom:1px solid #fff;height:5px;min-width:984px;}
+
+#disclaimer{text-align:center;padding:5px 0 8px 0;}
+
+/*--banner styles--*/
+#bannerAdTop, #bannerAdBottom{position:relative;text-align:center;clear:both;}
+#bannerAdRight,#bannerAdLeft{padding:0;margin:0;}
+#bannerAdRight dd img{padding:0;border:1px solid #526380;border-right:0 solid #fff;margin-bottom:2px;}
+#bannerAdLeft img{border:1px solid #526380;margin:0 0 2px 2px;width:156px;}
+#bannerPromotion{padding:5px 0;margin:0;background:#fff url("http://images10.newegg.com/Ggewen/Themes/2005/Nest/blueBG.gif") repeat-x;}
+#bannerPromotion h2{margin:0;padding:2px 0 2px 12px;font-size:1.6em;font-weight:bold;text-transform:uppercase;}
+#bannerPromotion h2 a{margin:0;padding:0;}
+#bannerPromotion img{float:left;margin-left:8px;}
+
+/*--nav page styles--*/
+.totalDeals{font-size:1.1em;font-weight:bold;margin:0;padding:0;}
+.pagination {display:inline;padding:2px 0;}
+.pagination ul {display:inline;margin:0;padding:2px 0;list-style:none;}
+.pagination ul li {display:inline;padding:1px;margin:0 2px 0 1px;background:#f90;border-right:1px solid #222;border-bottom:2px solid #222;border-left:1px solid #dadada;border-top:1px solid #dadada;}
+.pagination a:active {background:#fff;margin:0;border:0;}
+.pagination ul li.currentPage{background:#fff;}
+
+/*--normal search area--*/
+.searchKeywords {margin:9px 9px 0 9px;font-size:1.1em;}
+.searchKeywords input{margin:3px 0;padding:0;border:1px solid #7f9db9;}
+.searchKeywords input.advsearch {width:95%;padding:1px;}
+
+.searchButton{margin:12px;text-align:right;}
+
+/*--normal table--*/
+.listHead td{padding:3px;background:#818488; color:#fff; font-weight:bold; line-height:1.3em;}
+.listHead .tdBorderRight{border-right: 1px solid #FFF;}
+
+.listRowOdd, .listRowOdd td{padding:2px;border-bottom:1px solid #fff;background:#f2f2f2;vertical-align:top;border-right: 1px solid #FFF;}
+.listRowEven, .listRowEven td{padding:2px;border-bottom:1px solid #fff;background:#E8E8E8;vertical-align:top;border-right: 1px solid #FFF;} 
+.listRowOdd,.listRowEven{width:auto;}
+
+.listRowOdd .borderRight0,.listRowEven .borderRight0{border-right:0;}
+
+a.btnOn:link,
+a.btnOn:visited,
+a.btnOn:hover,
+a.btnDown:link,
+a.btnDown:visited,
+a.btnDown:hover{display:inline;font-size:1.2em;font-weight:bold;padding:2px;background:#234786;line-height:1.2em;height:16px;color:#fff;}
+
+a.btnOn:link,
+a.btnOn:visited,
+a.btnOn:hover{border-right:2px solid #003;border-bottom:2px solid #003;border-left:2px solid #78859F;border-top:2px solid #78859F;}
+
+a.btnDown:link,
+a.btnDown:visited,
+a.btnDown:hover{border-right:2px solid #78859F;border-bottom:2px solid #78859F;border-left:2px solid #003;border-top:2px solid #003;}
+a.white:link, 
+a.white:visited,
+a.white:hover{color:#fff;}
+
+a.red:link, 
+a.red:visited, 
+a.white:visited{color:#951616;}
+
+a.crtOn:link,
+a.crtOn:visited,
+a.crtOn:hover,
+a.crtOn:focus{font-size:1.2em;font-weight:bold;padding:3px 6px;border:2px outset #FAB955;line-height:2em;background:#F26B1F;color:#FFF;}
+a.crtOn:active,
+a.crtDown{font-size:1.2em;font-weight:bold;padding:3px 6px;border:2px inset #FAB955;line-height:2em;background:#DC5A23;color:#DDD;}
+a.crtDown{color:#fff !important;}
+
+a.noLine:link,a.noLine:visited,a.noLine:hover{border:0px;}
+
+/*--AutoFilledKeywords--*/
+#autofilledview{border:1px solid #7F9DB9;clear:both;text-align:left;position:absolute;width:218px;background:#fff;margin:-1px 0px 0px 0px;z-index:1000;display:none;}
+#autofilledview .line{clear:both;height:19px;color:#777;cursor:default;}
+#autofilledview .line .keywords{float:left;padding:3px 2px;}
+#autofilledview .line .count{float:right;padding:3px;font-size:1em;}
+
+.errMsgInfo{font-size:1.2em;margin:20px 0 0 20px;}
+.errMsgInfo dt{font-weight:bold;font-size:1.2em;text-transform:uppercase;}
+.errMsgInfo dd{margin:0 0 15px 14px;}	
+
+

@@ -1,0 +1,554 @@
+package domain;
+
+
+import java.util.Hashtable;
+import java.util.Vector;
+import java.util.ArrayList;
+
+
+public class Clause {
+	
+	// clause definition 
+	public Vector<Predicate> preds;
+	public Vector<Term[]> 	 terms;
+	
+	// labels used to denote variables
+	public Vector<String[]>	 labels;
+	
+	public Clause() {
+		preds  = new Vector<Predicate>();
+		terms  = new Vector<Term[]>();
+		labels = new Vector<String[]>();
+	}
+	
+	public Predicate head() {
+		return preds.firstElement();
+	}
+	
+	public Predicate lastPred() {
+		return preds.lastElement();
+	}
+	
+	public int length() {
+		// length of body of clause 
+		//  -> head with no body has length 0
+		return preds.size() - 1;
+	}
+	
+	public int count(Predicate p) {
+		// count occurrences of predicate p
+		int count = 0;
+		for (Predicate p1: preds) {
+			if (p1 == p) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	public Clause copy() {
+		// method for cloning
+		Clause c = new Clause();
+		for (Predicate pred: preds) {
+			c.preds.add(pred);
+		}
+		for (Term[] termArray: terms) {
+			c.terms.add(Term.copyArray(termArray));
+		}
+		return c;
+	}
+
+	public boolean isReducable() {
+		// check if last literal is logically redundant (could be removed from clause without changing meaning)
+		Predicate pred1 = preds.lastElement();
+		Term[]    vars1 = terms.lastElement();
+		for (int i=1; i<preds.size()-1; i++) {
+			Predicate pred2 = preds.elementAt(i);
+			Term[]    vars2 = terms.elementAt(i);
+			if (pred1 == pred2 && subsumes(vars1,vars2,i)) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	private boolean subsumes(Term[] vars1, Term[] vars2, int index) {
+		for (int i=0; i<vars1.length; i++) {
+			Term t1 = vars1[i];
+			Term t2 = vars2[i];
+			if (t1!=null) {
+				// note this is not a complete containment check!!!!!!!!
+				//  wouldn't catch something like: q(A) :- a(A,B,B,B),a(A,_,C,C)
+				//   but will catch simpler contained expressions 
+				//    and will suffice until I implement a proper containment check
+				if (t2!=null && ((t1.lit==index && t1.pos==i) || (t1.lit==t2.lit && t1.pos==t2.pos) || (t1.lit==preds.size()-1 && t2.lit==index && t1.pos==t2.pos))) {
+					//continue
+				} else { 
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
+	public boolean isSymmetric() {
+		// check if (exact copy of) last literal occurs elsewhere in clause
+		Predicate pred1 = preds.lastElement();
+		Term[] termArray1 = terms.lastElement();
+		for (int i=1; i<preds.size()-1; i++) {
+			Predicate pred2 = preds.elementAt(i);
+			Term[] termArray2 = terms.elementAt(i);
+			if (pred1 == pred2) {
+				boolean matchingLiteral = true;
+				for (int j=0; j<pred1.arity; j++) {
+					Term t1 = termArray1[j];
+					Term t2 = termArray2[j];
+					if ((t1==null && t2==null) || 
+						(t1!=null && ((t1.lit==i && t1.pos==j) || (t2!=null && t1.lit==t2.lit && t1.pos==t2.pos)))) {
+						//continue
+					} else {
+						matchingLiteral = false;
+						break;
+					}
+				}
+				if (matchingLiteral) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	
+	public boolean[] varsInBody() {
+		// find which distinguished vars appear in body (or are equated to other head vars or constants)
+		boolean[] found = new boolean[terms.firstElement().length];
+		// check head for constants and equated variables:
+		Term[] head = terms.firstElement();
+		for (int i=0; i<head.length; i++) {
+			found[i] = (head[i] != null);
+		}
+		// check body
+		for (Term[] termArray: terms) {
+			for (Term t: termArray) {
+				if (t != null && !t.isConstant && t.lit==0) {
+					found[t.pos] = true;
+				}
+			}
+		}
+		return found;
+	}
+
+	public int maxLevel() {
+		// find maximum level of domain (and check it is connected/reduced)
+		int length = terms.size();
+		if (length == 1) { return 0; }
+		int[] level = new int[length];
+		for (int i=1; i<length; i++) {
+			level[i] = length;
+		}
+		boolean finished = false;
+		while (!finished) {
+			finished = true;
+			for (int i=length-1; i>0; i--) {
+				Term[] t = terms.elementAt(i);
+				for (int j=0; j<t.length; j++) {
+					if (t[j] != null && !t[j].isConstant) {
+						int lit = t[j].lit;
+						if (lit==0 && level[i] != 0) {
+							level[i] = 0;
+							finished = false;
+						}
+						else if (level[i] > level[lit]+1) {
+							level[i] = level[lit]+1;
+							finished = false;
+						}
+						else if (level[lit] > level[i] + 1) {
+							level[lit] = level[i]+1;
+							finished = false;
+						}	
+					}	
+				}
+			}
+		}
+		//find max value to return:
+		int max = 0;
+		for (int i=1; i<length; i++) {
+			if (level[i] > max) {
+				max = level[i];
+			}
+		}
+		return max + 1; 
+	}
+
+	public int[] firstOccurs(int headVar) {
+		for (int i=1; i<preds.size(); i++) {
+			Predicate pred = preds.elementAt(i);
+			Term[] termArray = terms.elementAt(i);
+			for (int j=0; j<pred.arity; j++) {
+				Term term = termArray[j];
+				if (term != null && !term.isConstant && term.lit == 0 && term.pos == headVar) {
+					//if (headVar == 5) {	System.out.println(toStringDebug()); System.out.println(" clause.firstOccurs("+headVar+") returning ["+i+","+j+"]"); }
+					return new int[] {i,j};
+				}
+			}
+		}
+		return null;
+	}
+	
+	public ArrayList<Integer> clauseInputs() {
+		ArrayList<Integer> clauseInputs = new ArrayList<Integer>();
+		for (int i=0; i<head().arity; i++) {
+			int[] location = firstOccurs(i);
+			if (location != null && preds.elementAt(location[0]).bindings[location[1]]) {
+				clauseInputs.add(i);
+			}
+		}
+		return clauseInputs;
+	}
+	
+	public boolean equals(Object o) {
+		if (!o.getClass().equals(Clause.class)) {
+			return false;
+		}
+		Clause n = (Clause) o;
+		if (!n.preds.equals(preds)) {
+			return false;
+		}
+		for (int i=0; i<terms.size(); i++) {
+			Term[] termArray1 = terms.elementAt(i);
+			Term[] termArray2 = n.terms.elementAt(i);
+			for (int j=0; j<termArray1.length; j++) {
+				Term term1 = termArray1[j];
+				Term term2 = termArray2[j];
+				if (term1!=null) {
+					if (!term1.equals(term2)) {
+						return false;
+					}
+				}
+				else if (term2!=null) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	
+	public String toString() {
+		// pretty printing
+		return toString(false);
+	}
+	
+	public String toString(boolean showBindings) {
+		int cCount = 0;
+		Hashtable<String,String> termName = new Hashtable<String,String>();
+		// first pass generates symbol table (names for variables and constants)
+		for (int i=0; i<terms.size(); i++) {
+			for (int j=0; j<terms.elementAt(i).length; j++) {
+				Term t = terms.elementAt(i)[j];
+				if (t != null) {
+					if (t.isConstant) {
+						if (t.val == null) {
+							// new constant name 
+							termName.put( i+","+j , "\"#c" + cCount++ + "\"");
+						}
+						else {
+							termName.put( i+","+j , "\"" + t.val + "\"");
+						}
+					}
+					else {
+						String key = t.lit + "," + t.pos;
+						if (termName.get(key) == null) {
+							// new variable name
+							String val;
+							if (t.lit == 0) {
+								val = "X" + t.pos;
+							}
+							else {
+								int index = 0;
+								for (int k=1; k<t.lit; k++) {
+									index += terms.elementAt(k).length;
+								}
+								val = "Y" + (index + t.pos);
+							}
+							termName.put( key , val );
+						}
+						termName.put( i+","+j , termName.get(key) );
+					}
+				}
+			}
+		}
+		// second pass generates string
+		String query = "";
+		for (int i=0; i<terms.size(); i++) {
+			if (i==1) {	query += "\t:- ";	}
+			if (i>1) { query += ", "; }
+			Predicate pred = preds.elementAt(i);
+			query += pred.name + "(";
+			for (int j=0; j<terms.elementAt(i).length; j++) {
+				if (j!=0) { query += ","; }
+				if (showBindings && i==0 && pred.bindings[j]) {
+					query += "$";
+				}
+				String name = termName.get(i+","+j);
+				if (name != null) {
+					query += name;
+				}
+				else {
+					query += "_";
+				}
+			}
+			query += ")";
+		}
+		query += ".";
+		return query;
+	}
+	
+	public String toStringDebug() {
+		String query = "";
+		for (int i=0; i<terms.size(); i++) {
+			Predicate pred = preds.elementAt(i);
+			Term[] termArray = terms.elementAt(i);
+			if (i==1) {	query += " :- ";	}
+			if (i>1) { query += ", "; }
+			query += pred.name + "(";
+			for (int j=0; j<pred.arity; j++) {
+				Term term = termArray[j];
+				if (j!=0) { query += ","; }
+				if (term != null) {
+					query += term.toString();
+				}
+				else {
+					query += "_";
+				}
+			}
+			query += ")";
+		}
+		query += ".";
+		return query;
+	}
+	
+	public String toStringI() {
+		if (!labels.isEmpty()) {
+			String query = "";
+			for (int i=0; i<labels.size(); i++) {
+				if (i==1) {	query += "\t:- ";	}
+				if (i>1) { query += ", "; }
+				Predicate pred = preds.elementAt(i);
+				String[]  vars = labels.elementAt(i);
+				query += pred.name + "(";
+				for (int j=0; j<vars.length; j++) {
+					if (j>0) { query += ","; }
+					if (i==0 && pred.bindings[j]) {
+						query += "$";
+					}
+					query += vars[j];
+				}
+				query += ")";
+			}
+			query += ".";
+			return query;
+		}
+		else {
+			return toStringIntuitiveNames(true);
+		}
+	}
+	
+	public String toStringIntuitiveNames(boolean showBindings) {
+		int cCount = 0;
+		Hashtable<String,String> termName = new Hashtable<String,String>();
+		// first pass generates symbol table (names for variables and constants)
+		for (int i=0; i<terms.size(); i++) {
+			for (int j=0; j<terms.elementAt(i).length; j++) {
+				Term t = terms.elementAt(i)[j];
+				if (t != null) {
+					if (t.isConstant) {
+						if (t.val == null) {
+							// new constant name 
+							termName.put( i+","+j , "\"#c" + cCount++ + "\"");
+						}
+						else {
+							termName.put( i+","+j , "\"" + t.val + "\"");
+						}
+					}
+					else {
+						String key = t.lit + "," + t.pos;
+						if (termName.get(key) == null) {
+							// new variable name
+							String val;
+							if (t.lit == 0) {
+								val = head().types[t.pos].name.substring(0,3) + t.pos;
+							}
+							else {
+								int index = 0;
+								for (int k=1; k<t.lit; k++) {
+									index += terms.elementAt(k).length;
+								}
+								val = preds.get(t.lit).types[t.pos].name.substring(0,3) + (index + t.pos);
+							}
+							termName.put( key , val );
+						}
+						termName.put( i+","+j , termName.get(key) );
+					}
+				}
+			}
+		}
+		// second pass generates string
+		String query = "";
+		for (int i=0; i<terms.size(); i++) {
+			if (i==1) {	query += "\t:- ";	}
+			if (i>1) { query += ", "; }
+			Predicate pred = preds.elementAt(i);
+			query += pred.name + "(";
+			for (int j=0; j<terms.elementAt(i).length; j++) {
+				if (j!=0) { query += ","; }
+				if (showBindings && i==0 && pred.bindings[j]) {
+					query += "$";
+				}
+				String name = termName.get(i+","+j);
+				if (name != null) {
+					query += name;
+				}
+				else {
+					query += "_";
+				}
+			}
+			query += ")";
+		}
+		query += ".";
+		return query;
+	}
+	
+	
+	public Clause unfold() {
+		
+		Clause c = this;
+		Clause c1 = new Clause();
+		
+		// copy head
+		Predicate pred = c.preds.firstElement();
+		c1.preds.add(pred);
+		c1.terms.add(c.terms.firstElement());
+		
+		// local data structures
+		Vector<int[]> firstLit = new Vector<int[]>();
+		Vector<int[]> firstPos = new Vector<int[]>();
+		Vector<Integer> offset = new Vector<Integer>();
+		int[] appearsLit = new int[pred.arity];
+		int[] appearsPos = new int[pred.arity];
+		
+		offset.add(0);
+		for (int j=0; j<pred.arity; j++) {
+			appearsLit[j] = 0;
+			appearsPos[j] = j;
+		}
+		firstLit.add(appearsLit);
+		firstPos.add(appearsPos);
+		
+		// unfold body
+		for (int i=1; i<c.preds.size(); i++) {
+			
+			pred = c.preds.elementAt(i);
+			Term[] headTermArray = c.terms.elementAt(i);
+			
+			offset.add(c1.preds.size()-1);
+			appearsLit = new int[pred.arity];
+			appearsPos = new int[pred.arity];
+			firstLit.add(appearsLit);
+			firstPos.add(appearsPos);
+			
+			if (pred.category == Predicate.SOURCE || pred.category == Predicate.FUNCTION) {
+				// unfold source predicate
+				Clause def = pred.definition;
+				
+				boolean[] foundDistVar = new boolean[pred.arity];
+				
+				for (int j=1; j<def.preds.size(); j++) {
+					Term[] bodyTermArray = def.terms.elementAt(j);
+					Term[] newTermArray = new Term[bodyTermArray.length];
+					
+					for (int k=0; k<bodyTermArray.length; k++) {
+						Term term_k = bodyTermArray[k];
+						
+						if (term_k != null) {
+							if (term_k.isConstant) {
+								newTermArray[k] = term_k.copy();
+							}
+							else if (term_k.lit > 0) { // existential variable
+								newTermArray[k] = new Term(offset.lastElement() + term_k.lit, term_k.pos);
+							}
+							else { // distinguished variable
+								int headPos = term_k.pos;
+								Term headTerm = headTermArray[headPos];
+								
+								boolean firstAppearance;
+								if (firstAppearance = !foundDistVar[headPos]) {
+									foundDistVar[headPos] = true;
+									appearsLit[headPos] = j;
+									appearsPos[headPos] = k;
+								}
+																
+								if (headTerm == null) {
+									if (!firstAppearance) {
+										newTermArray[k] = new Term(offset.lastElement() + appearsLit[headPos], appearsPos[headPos]); 
+									}
+								}
+								else if (headTerm.isConstant) {
+									if (firstAppearance) {
+										newTermArray[k] = headTerm.copy();
+									}
+									else {
+										newTermArray[k] = new Term(offset.lastElement() + appearsLit[headPos], appearsPos[headPos]); 
+									}
+								}
+								else { // term refers to previous variable
+									int l = headTerm.lit;
+									int p = headTerm.pos;
+									newTermArray[k] = new Term(offset.elementAt(l) + firstLit.elementAt(l)[p], firstPos.elementAt(l)[p]);
+								}
+							}
+						}
+					}
+					c1.preds.add(def.preds.elementAt(j));
+					c1.terms.add(newTermArray);
+				}
+			}
+			else { // comparison predicate 
+				
+				Term[] newTermArray = new Term[pred.arity];
+				for (int j=0; j<pred.arity; j++) {
+					appearsLit[j] = 0;
+					appearsPos[j] = j;
+					Term term_j = headTermArray[j];
+					if (term_j != null) {
+						if (term_j.isConstant) {
+							newTermArray[j] = term_j.copy();
+						}
+						else {
+							int l = term_j.lit;
+							int p = term_j.pos;
+							newTermArray[j] = new Term(offset.elementAt(l) + firstLit.elementAt(l)[p], firstPos.elementAt(l)[p]);
+						}
+					}
+				}
+				c1.preds.add(pred);
+				c1.terms.add(newTermArray);
+			}
+			
+		}
+		return c1;
+	}
+	
+	public double missingDomains(relational.DBConnection dbCon) {
+		// calculate size of domains of missing output values 
+		double penalty = 1.0;
+		Predicate headPred = preds.firstElement();
+		boolean[] varsInBody = varsInBody();
+		for (int i=0; i<headPred.arity; i++) {
+			if (!headPred.bindings[i] && !varsInBody[i]) {
+				penalty *= headPred.types[i].cardinality(dbCon);
+			}
+		}
+		return penalty;
+	}
+
+}

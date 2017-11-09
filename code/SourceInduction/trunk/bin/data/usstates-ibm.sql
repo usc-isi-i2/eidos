@@ -1,0 +1,61 @@
+CONNECT TO METAD;
+CREATE TABLE METAD.USSTATES2 ( 
+       CODE VARCHAR (2)  NOT NULL , 
+       NAME VARCHAR (100) , 
+       REGION VARCHAR (10)  , 
+       CONSTRAINT CC1207104394609 PRIMARY KEY ( CODE)  ) ;
+
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Alabama', 'AL', 'south');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Alaska', 'AK', 'north');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Arizona', 'AZ', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Arkansas', 'AR', 'south');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('California', 'CA', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Colorado', 'CO', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Connecticut', 'CT', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Delaware', 'DE', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('District of Columbia', 'DC', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Florida', 'FL', 'south');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Georgia', 'GA', 'south');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Hawaii', 'HI', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Idaho', 'ID', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Illinois', 'IL', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Indiana', 'IN', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Iowa', 'IO', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Kansas', 'KS', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Kentucky', 'KY', 'south');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Louisiana', 'LA', 'south');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Maine', 'ME', 'north');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Maryland', 'MD', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Massachusetts', 'MA', 'north');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Michigan', 'MI', 'north');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Minnesota', 'MN', 'north');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Mississippi', 'MS', 'south');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Missouri', 'MO', 'south');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Montana', 'MT', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Nebraska', 'NE', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Nevada', 'NV', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('New Hampshire', 'NH', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('New Jersey', 'NJ', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('New Mexico', 'NM', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('New York', 'NY', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('North Carolina', 'NC', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('North Dakota', 'ND', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Ohio', 'OH', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Oklahoma', 'OK', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Oregon', 'OR', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Pennsylvania', 'PA', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Rhode Island', 'RI', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('South Carolina', 'SC', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('South Dakota', 'SD', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Tennessee', 'TN', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Texas', 'TX', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Utah', 'UT', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Vermont', 'VT', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Virginia', 'VA', 'east');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Washington', 'WA', 'west');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('West Virginia', 'WV', 'south');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Wisconsin', 'WI', 'midwest');
+INSERT INTO METAD.USSTATES2 (name, code, region)  VALUES('Wyoming', 'WY', 'west'); 
+
+CONNECT RESET;
+

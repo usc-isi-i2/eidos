@@ -1,0 +1,53 @@
+package relational;
+
+public enum Operator {
+
+	eq, neq, lt, gte, gt, lte;
+	
+	public static Operator parse(String s) {
+		if (s.equals("=") ||s.equals("==")) return eq; 
+		if (s.equals("!=")||s.equals("<>")) return neq; 
+		if (s.equals("<"))  return lt; 
+		if (s.equals(">"))  return gt; 
+		if (s.equals("<=")) return lte; 
+		if (s.equals(">=")) return gte; 
+		System.err.println("Error in Operator.java: unknown operator: "+s); System.exit(9); return eq;
+	}
+	
+	public Operator invert() {
+		switch (this) {
+			case eq:  return neq;
+			case neq: return eq;
+			case lt:  return gte;
+			case gte: return lt;
+			case gt:  return lte;
+			case lte: return gt;
+		}
+		return eq;
+	}
+	
+	public boolean eval(double val1, double val2) {
+		switch (this) {
+			case eq:  return (val1 == val2);
+			case neq: return (val1 != val2);
+			case lt:  return (val1 <  val2);
+			case gte: return (val1 >= val2);
+			case gt:  return (val1 >  val2);
+			case lte: return (val1 <= val2);
+		}	
+		return false;
+	}
+	
+	public String toString() {
+		switch (this) {
+		case eq:  return "=";
+		case neq: return "!=";
+		case lt:  return "<";
+		case gte: return ">=";
+		case gt:  return ">";
+		case lte: return "<=";
+	}	
+	return "?";
+	}
+	
+}

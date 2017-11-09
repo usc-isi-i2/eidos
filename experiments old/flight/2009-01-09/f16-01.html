@@ -1,0 +1,2309 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+			
+				<title>(TRS) Dei Legionari Airport Departures & Arrivals</title>
+				<meta name="keywords" content="TRS departures, TRS arrivals, Dei Legionari Airport departures, Dei Legionari Airport arrivals">
+			
+			
+			<meta name="description" content="Track flight status, flight departures, flight arrivals, airport delays and other flight and airport information in real time">
+
+					
+	<script type="text/javascript">
+		var prefix = "ROS_";
+	</script>
+		<link rel='stylesheet' type='text/css' href='/go/NewCommon/MainStyle.css'>
+		<link rel='stylesheet' type='text/css' href='/go/NewCommon/layoutstyle.css'>
+		<link rel='stylesheet' type='text/css' href='../Widgets/Widget.css'>		
+		<script type='text/javascript' src='/go/NewCommon/lib/x/x_all_non_drag.js'></script>
+		<script type='text/javascript' src="/go/NewCommon/DateFunctions.js"></script>
+		<script type='text/javascript' src='/go/NewCommon/JavascriptFunctions.js'></script>
+		<script type="text/javascript">
+			var onloadListeners = new Array();
+			addOurOnLoadListeners = function(listener)
+			{
+				onloadListeners[onloadListeners.length] = listener;
+			}
+			
+			ourLoad = function()
+			{
+				for (var i = 0; i < onloadListeners.length; i++)
+				{
+					var func = onloadListeners[i];
+					func.call();
+				}
+			}
+			doOurLoad = function()
+			{
+				ourLoad();
+			}
+
+		</script>
+		<script type='text/javascript' src='/go/NewCommon/layout.js'></script>
+		
+						<script type="text/javascript">
+				if (-1 != xUA.indexOf('firefox'))
+					document.write("<link rel='stylesheet' type='text/css' href='../NewCommon/FlightTableListing-Firefox.css'>");
+				else
+					document.write("<link rel='stylesheet' type='text/css' href='../NewCommon/FlightTableListing.css'>");
+			</script>
+
+			<script src="../NewCommon/lib/yui/build/yahoo/yahoo-min.js"></script>
+			<script src="../NewCommon/lib/yui/build/dom/dom-min.js"></script>
+			<script src="../NewCommon/lib/yui/build/event/event-min.js"></script>
+			<script type="text/javascript" src="../NewCommon/lib/yui/build/calendar/calendar-min.js"></script>
+			<link type="text/css" rel="stylesheet" href="../NewCommon/lib/yui/build/calendar/assets/calendar.css">
+			<style>
+div.popupCalendar
+{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: absolute;   
+	z-index: 101;
+	overflow: auto;
+	color: black;
+ 	font-family: Arial, Verdana, sans-serif;
+	font-size: 9pt;
+  background: #FFFFFF;
+}
+
+div.popupCalendar div 
+{
+	cursor: default;
+	padding: 0px 0px;
+}
+
+iframe.popupCalendar 
+{
+	position: absolute;   
+	z-index: 100;
+}
+</style>
+
+<script language="JavaScript">
+// container
+// text field,
+// button
+// date format to use
+function PopupCalendar(containerId, fieldId, buttonId, dateFormat, minDate, maxDate, popUp) 
+{
+	var me = 
+	{
+		//Constructor
+		init : function(containerId, fieldId, buttonId) 
+		{
+			this.popUp = popUp;
+			this.ignoreClick = false;
+			this.textbox = YAHOO.util.Dom.get(fieldId);
+			this.buttonId = buttonId;
+			this.dateFormat = dateFormat;
+			if (null == this.dateFormat)
+				dateFormat = "MM/dd/yyyy";
+
+			this.container = document.createElement("div");
+			this.container.style.visibility = "hidden";	
+//			if (xIE4Up)
+//				this.container.style.width = this.textbox.offsetWidth;
+			this.container.id = containerId;
+			this.container.className = "popupCalendar";
+			this.container.style.left = this.getLeft() + "px";
+			this.container.style.top = (this.getTop() + this.textbox.offsetHeight) + "px";
+
+			this.iframe = null;
+			if (xIE4Up)
+			{
+				this.iframe = document.createElement("iframe");
+//				this.iframe.src = "/go/NewCommon/blank.html";		
+				this.iframe.className = "popupCalendar";
+				this.iframe.style.visibility = this.container.style.visibility;		
+				this.iframe.style.width = this.container.style.width;		
+				this.iframe.style.left = this.container.style.left;		
+				this.iframe.style.top = this.container.style.top;
+				document.body.appendChild(this.iframe);		
+			}
+
+			document.body.appendChild(this.container);
+
+			this.calendar = new YAHOO.widget.Calendar(this.id, this.container.id,
+																								{mindate: minDate, 
+																								 maxdate: maxDate,
+																								 hide_blank_weeks: true}
+																								);
+			var temp = this;
+			this.calendar.selectEvent.subscribe(temp.onSelect , this.calendar, true);  
+//			this.calendar.onSelect = function() {temp.onSelect( )};
+
+			this.calendar.render();
+
+//			YAHOO.util.Event.addListener(this.textbox.id, 'focus', function() {temp.showCal();});
+			YAHOO.util.Event.addListener(this.textbox.id, 'blur', function() {temp.hideCal();});
+			YAHOO.util.Event.addListener(this.buttonId, 'focus', function() {temp.showCal();});
+			YAHOO.util.Event.addListener(this.buttonId, 'blur', function() {temp.hideCal();});
+			YAHOO.util.Event.addListener(this.container.id , 'mouseover', function() {temp.overCal();});
+			YAHOO.util.Event.addListener(this.container.id, 'mouseout', function() {temp.outCal();});
+			YAHOO.util.Event.addListener(document.body, 'click', temp.bodyClick);
+		},
+
+		showCal : function() 
+		{
+			me.ignoreClick = true;
+			if (me.textbox.value != null && me.textbox.value.length > 0) 
+			{
+				me.selectingValue = true;
+				var dateValue = me.textbox.value;
+				var parsedDate = getDateFromFormat(dateValue, dateFormat);
+				if (null != parsedDate)
+				{
+					me.calendar.select(formatDate(parsedDate, 'MM/dd/yyyy'));
+					var selectedDates = me.calendar.getSelectedDates();   
+					if (selectedDates.length > 0) 
+					{   
+						var firstDate = selectedDates[0];   
+						me.calendar.cfg.setProperty("pagedate", (firstDate.getMonth()+1) + "/" + firstDate.getFullYear());   
+					} 
+				}
+				me.selectingValue = false;
+			} 
+			
+			me.calendar.render();
+
+			me.container.style.left = me.getLeft() + "px";
+
+			if (me.popUp)
+				me.container.style.top = (me.getTop() - me.container.offsetHeight) + "px";
+			else
+				me.container.style.top = (me.getTop() + me.textbox.offsetHeight) + "px";
+			me.container.style.visibility = "visible";
+					
+			if (null != me.iframe)
+			{
+				me.iframe.style.width = me.container.style.width;
+				me.iframe.style.left = me.container.style.left;
+				me.iframe.style.top = me.container.style.top;
+				me.iframe.style.visibility = me.container.style.visibility;
+				me.iframe.style.width = me.container.offsetWidth;
+				me.iframe.style.height = me.container.offsetHeight;
+			}
+		},
+
+		overCal : function() 
+		{
+			me.over_cal = true;
+			me.textbox.focus( );
+		},
+
+		outCal : function() 
+		{
+			me.over_cal = false;
+		},
+
+		onSelect : function(type, args, obj) 
+		{
+			if (me.selectingValue)
+				return;
+			var selected = args[0];   
+			var selDate = this.toDate(selected[0]); 
+//			var selDate = this.calendar.getSelectedDates()[0];
+			me.textbox.value = formatDate(selDate, dateFormat);
+			me.over_cal = false;
+			me.hideCal( );
+		},
+
+		hideCal : function() 
+		{
+			if (!me.over_cal) 
+			{
+				me.container.style.visibility = "hidden";;
+				if (null != me.iframe)
+					me.iframe.style.visibility = "hidden";;
+			}
+		},
+        
+		getLeft : function ()
+		{
+			var oNode = me.textbox;
+			var iLeft = 0;
+				
+			while ((null != oNode) && (oNode.tagName != "BODY"))
+			{
+				iLeft += oNode.offsetLeft;
+				oNode = oNode.offsetParent;
+			}
+				
+			return iLeft;
+		},
+
+		getTop : function ()
+		{
+			var oNode = me.textbox;
+			var iTop = 0;
+				
+			while((null != oNode) && (oNode.tagName != "BODY"))
+			{
+				iTop += oNode.offsetTop;
+				oNode = oNode.offsetParent;
+			}
+				
+			return iTop;
+		},
+		
+		bodyClick : function ()
+		{
+			if (me.ignoreClick)
+				me.ignoreClick = false;
+			else if (me.container.style.visibility == "visible")
+			{
+				me.hideCal( );
+			}
+		}
+	};
+
+	me.init(containerId, fieldId, buttonId, dateFormat);
+	return me;
+}
+</script>
+			<script language="JavaScript" type="text/javascript" src="../NewCommon/DateControl.js"></script>			
+
+			<script type="text/javascript">
+				function changeImages(button, state)
+				{
+					var src = button.src;
+					src = src.replace('_on.gif','');
+					src = src.replace('_off.gif','');
+					if (state == 1) // over
+					  button.src = src + '_on.gif';
+					else 
+					  button.src = src + '_off.gif';
+				}
+				
+				function selectNext()
+				{
+					xGetElementById('flightStatusByAirportForm_queryNext').value = true;
+					xGetElementById('flightStatusByAirportForm').submit();
+				}
+				
+				function selectPrevious()
+				{
+					xGetElementById('flightStatusByAirportForm_queryPrevious').value = true;
+					xGetElementById('flightStatusByAirportForm').submit();
+				}
+				
+				function selectTime(control)
+				{
+					xGetElementById('flightStatusByAirportForm_queryTime').value = control.options[control.selectedIndex].value;
+					xGetElementById('flightStatusByAirportForm').submit();
+				}
+
+				function selectSort(control)
+				{
+					xGetElementById('flightStatusByAirportForm_sortField').value = control.options[control.selectedIndex].value;
+					xGetElementById('flightStatusByAirportForm').submit();
+				}
+			</script>
+
+			
+			
+			<script type="text/javascript">
+				prefix = "FlightStatus_";
+			</script>
+			
+
+
+
+<script type='text/javascript' src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+<script type='text/javascript'>
+  GS_googleAddAdSenseService("ca-pub-8281740535083873");
+  GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+	var googleAdTest = "off";
+	var userCountry = "US";
+	var flightStatsURL = "www.flightstats.com";
+	var googleKeyWords = "TRS, Dei Legionari Airport, Trieste, frequent flyer, business travel, travel";
+	var altUrl = "http://" + flightStatsURL + "/go/ReplacementAds/replaceAd.do?adServer=Google&countryCode=" + userCountry; 
+	GA_googleAddAdSensePageAttr("google_color_link", "1833FF");
+	GA_googleAddAdSensePageAttr("google_ad_region", "test");
+
+	
+		    GA_googleAddAttr("airport", "TRS");
+	
+		    GA_googleAddAttr("airCountry", "IT");
+	
+		    GA_googleAddAttr("arrCountry", "IT");
+	
+		    GA_googleAddAttr("arrAirport", "TRS");
+				
+				var top728x90GoogleAdChannel = "5788149013+9908792090+8285193773+3610317267";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "top_728x90");
+				GA_googleAddAdSenseSlotAttr(prefix + "top_728x90", "google_ad_channel", top728x90GoogleAdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "top_728x90", "google_alternate_ad_url", altUrl + "&adSize=728x90");
+				if (googleKeyWords && (googleKeyWords != ''))
+				{
+					GA_googleAddAdSenseSlotAttr(prefix + "top_728x90", "google_kw", googleKeyWords);
+					GA_googleAddAdSenseSlotAttr(prefix + "top_728x90", "google_kw_type", "broad");
+				}
+				
+				var topRight300x250AdChannel = "5788149013+9908792090+0874867488";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "top_right_300x250");
+				GA_googleAddAdSenseSlotAttr(prefix + "top_right_300x250", "google_ad_channel", topRight300x250AdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "top_right_300x250", "google_alternate_ad_url", altUrl + "&adSize=300x250");
+				if (googleKeyWords && (googleKeyWords != ''))
+				{
+					GA_googleAddAdSenseSlotAttr(prefix + "top_right_300x250", "google_kw", googleKeyWords);
+					GA_googleAddAdSenseSlotAttr(prefix + "top_right_300x250", "google_kw_type", "broad");
+				}
+				
+				var second300x250AdChannel = "5788149013+9908792090+8730803874";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "second_300x250");
+				GA_googleAddAdSenseSlotAttr(prefix + "second_300x250", "google_ad_channel", second300x250AdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "second_300x250", "google_alternate_ad_url", altUrl + "&adSize=300x250");
+				
+				var topRight160x600GoogleAdChannel = "5788149013+9908792090+7022709619";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "top_right_160x600");
+				GA_googleAddAdSenseSlotAttr(prefix + "top_right_160x600", "google_ad_channel", topRight160x600GoogleAdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "top_right_160x600", "google_alternate_ad_url", altUrl + "&adSize=160x600");
+				if (googleKeyWords && (googleKeyWords != ''))
+				{
+					GA_googleAddAdSenseSlotAttr(prefix + "top_right_160x600", "google_kw", googleKeyWords);
+					GA_googleAddAdSenseSlotAttr(prefix + "top_right_160x600", "google_kw_type", "broad");
+				}
+				
+				var bottom728x90AdChannel = "5788149013+9908792090+6529040748";
+				GA_googleAddSlot("ca-pub-8281740535083873", prefix + "bottom_728x90");
+				GA_googleAddAdSenseSlotAttr(prefix + "bottom_728x90", "google_ad_channel", bottom728x90AdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "bottom_728x90",  "google_alternate_ad_url", altUrl + "&adSize=728x90");
+				
+				var top468x60AdChannel = "5788149013+9908792090+3371409277";
+			  GA_googleAddSlot("ca-pub-8281740535083873", prefix + "top_468x60");
+				GA_googleAddAdSenseSlotAttr(prefix + "top_468x60", "google_ad_channel", top468x60AdChannel);
+				GA_googleAddAdSenseSlotAttr(prefix + "top_468x60", "google_alternate_ad_url", altUrl + "&adSize=468x60");
+			
+</script>
+<script type='text/javascript'>
+  GA_googleFetchAds();
+</script>
+		</head>
+		<body>
+			<div id="subheaderBlock">
+				<div id="subheaderImage"></div>
+				<div id="subheaderLabel">
+					<h1>
+						
+							TRS
+						
+						Airport
+						
+						
+							Arrivals
+						
+					</h1>
+				</div>
+			</div>
+		
+			
+
+			
+				<div id="resultsBlock">
+					<hr class="grayHR">
+					<table width="100%">
+						<tr>
+							<td width="674" valign="top">
+								<div class="uiComponent674">
+									<h2>
+										Dei Legionari Airport
+										
+										
+											Arrivals
+																			
+									</h2>
+									<div class="uiComponentBody">
+										<table width="100%">
+											<tr>
+												<td width="450">
+													<table width="100%">
+														<tr>
+															<td width="100" class="label">
+																Date:
+															</td>
+															<td width="10">&nbsp;</td>
+															<td width="340">
+																Fri Jan 09, 2009													
+															</td>
+														</tr>
+														<tr>
+															<td class="label">
+																Time Period:
+															</td>
+															<td>&nbsp;</td>
+															<td>
+																
+																		12:00PM - 12:00AM
+																
+															</td>
+														</tr>
+														<tr>
+															<td valign="top"  class="label">
+																
+																
+																	Arrival Airport:
+																									
+															</td>
+															<td>&nbsp;</td>
+															<td>
+																(<a href="/go/Airport/airportDetails.do?airportCode=TRS">TRS</a>)
+																Dei Legionari Airport
+															</td>
+														</tr>
+														<tr>
+															<td class="label">
+																
+																
+																	Arrival City:
+																									
+															</td>
+															<td>&nbsp;</td>
+															<td>
+																Trieste,
+																
+																<a href="/go/TravelPlanning/countryInformation.do?countryCode=IT">IT</a>
+															</td>										
+														</tr>
+														
+													</table>
+												</td>
+												<td width="184" valign="top">
+													<a href="/go/Airport/delays.do?airportCode=TRS&airportQueryDate=">Delays</a><br />
+													
+																									
+														<a href="/go/PublishedFares/publishedFaresByAirport.do?airportCode=TRS"/>Published Fares</a><br />									
+														<a href="/go/Airport/airportScorecard.do?airportCode=TRS&airportQueryDate=">Performance Scorecard</a><br />
+													
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>																	
+
+	            	
+									<div class="adArea674x60">
+										<table width="100%"
+											<tr>
+												<td width="468">
+															<script language="JavaScript">
+			GA_googleFillSlot(prefix + "top_468x60");
+		</script>										
+												</td>
+												<td width="10">
+												</td>
+												<td width="196">
+													<div style="position:relative;">
+														<a href="/go/AirportTracker/airportTracker.do?airportCode=TRS"><img src="../images/PageSponsorship/Ad_fs_196x60_airport_tracker.gif"/></a>
+														<div style="position:absolute; top:40px; left:110px; color:#FFFFFF;">
+															<a style="color:#FFFFFF; text-decoration:none; font-family: Tahoma, Arial, Verdana, sans-serif; font-size: 9pt;" href="/go/AirportTracker/airportTracker.do?airportCode=TRS">Track TRS</a>
+														</div>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</div>
+	            	
+	            	
+
+								
+			
+								
+									<div class="uiComponent674">
+										<h2>
+											TRS
+											
+											
+												Arrivals:
+											
+											Fri Jan 09, 2009													
+											
+													12:00PM - 12:00AM
+											
+										</h2>
+										<div class="uiComponentBody">
+											<form name="flightStatusByAirportForm" method="post" action="/go/FlightStatus/flightStatusByAirport.do;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" style="padding:0; margin:0;" id="flightStatusByAirportForm">
+												<input type="hidden" name="airportCode" value="TRS">
+												<input type="hidden" name="airportQueryDate" value="2009-01-09">
+												<input type="hidden" name="airportQueryTime" value="12" id="flightStatusByAirportForm_queryTime">
+												<input type="hidden" name="airportQueryType" value="1">
+												<input type="hidden" name="queryNext" value="false" id="flightStatusByAirportForm_queryNext">
+												<input type="hidden" name="queryPrevious" value="false" id="flightStatusByAirportForm_queryPrevious">
+												<input type="hidden" name="sortField" value="5" id="flightStatusByAirportForm_sortField">
+												<table>
+													<tr>
+														<td style="width:333px;">
+															<table style="width:100%">
+																<tr>
+																	<td width="180" class="label">
+																		
+																		
+																			Choose Origin 
+																		
+																	</td>
+																	<td width="10">&nbsp;</td>
+																	<td width="143" class="label">
+																		<input type="radio" name="codeshareDisplay" value="0" checked="checked"> Show Codeshares 
+																	</td>
+																</tr>			
+																<tr>
+																	<td>
+																		<select name="airportToFilter" size="1" id="airportToFilter" style="width:175px;"><option value="-- All Airports --">-- All Airports --</option>
+<option value="(GOA) Genoa, IT">(GOA) Genoa, IT</option>
+<option value="(STN) London, EN, GB">(STN) London, EN, GB</option>
+<option value="(MXP) Milan, IT">(MXP) Milan, IT</option>
+<option value="(MUC) Munich, DE">(MUC) Munich, DE</option>
+<option value="(NAP) Naples, IT">(NAP) Naples, IT</option>
+<option value="(CDG) Paris, FR">(CDG) Paris, FR</option>
+<option value="(FCO) Rome, IT">(FCO) Rome, IT</option>
+<option value="(TIA) Tirana, AL">(TIA) Tirana, AL</option></select>
+																	</td>
+																	<td>&nbsp;</td>
+																	<td class="label">
+																		<input type="radio" name="codeshareDisplay" value="1"> Hide Codeshares
+																	</td>
+																</tr>			
+																<tr><td colspan="4" style="line-height:4px;font-size:4px;">&nbsp;</td></tr>
+																<tr>
+																	<td class="label">
+																		Choose Airline
+																	</td>
+																	<td>&nbsp;</td>
+																	<td>
+																		<a href="http://en.wikipedia.org/wiki/Codeshare_agreement">&nbsp;What is a Codeshare?</a>
+																	</td>
+																</tr>			
+																<tr>
+																	<td>
+																		<select name="airlineToFilter" size="1" id="airportToFilter" style="width:175px;"><option value="-- All Airlines --">-- All Airlines --</option>
+<option value="(A3) Aegean Airlines">(A3) Aegean Airlines</option>
+<option value="(A6) Air Alps Aviation">(A6) Air Alps Aviation</option>
+<option value="(BT) Air Baltic">(BT) Air Baltic</option>
+<option value="(EN) Air Dolomiti">(EN) Air Dolomiti</option>
+<option value="(AF) Air France">(AF) Air France</option>
+<option value="(KM) Air Malta">(KM) Air Malta</option>
+<option value="(AP) Air One">(AP) Air One</option>
+<option value="(DO) Air Vallee">(DO) Air Vallee</option>
+<option value="(AZ) Alitalia">(AZ) Alitalia</option>
+<option value="(LZ) Belle Air">(LZ) Belle Air</option>
+<option value="(DB) Brit Air">(DB) Brit Air</option>
+<option value="(CO) Continental Airlines">(CO) Continental Airlines</option>
+<option value="(ET) Ethiopian Airlines">(ET) Ethiopian Airlines</option>
+<option value="(KL) KLM">(KL) KLM</option>
+<option value="(LH) Lufthansa">(LH) Lufthansa</option>
+<option value="(FR) Ryanair">(FR) Ryanair</option>
+<option value="(TP) TAP-Air Portugal">(TP) TAP-Air Portugal</option>
+<option value="(UA) United Airlines">(UA) United Airlines</option></select>
+																	</td>
+																	<td>&nbsp;</td>
+																	<td align="right">
+																		&nbsp;
+																	</td>
+																</tr>			
+																<tr><td colspan="4" style="line-height:4px;font-size:4px;">&nbsp;</td></tr>
+																<tr>
+																	<td>
+																		&nbsp;
+																	</td>
+																	<td>&nbsp;</td>
+																	<td align="right">
+																		<input type="image" name="" src="../images/Buttons/Btn_en_update_off.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;" id="submitButton" title="Click to apply criteria">
+																	</td>
+																</tr>			
+															</table>
+														</td>
+														<td style="width:15px;">&nbsp;</td>
+														<td class="verticalDottedLine"></td>
+														<td style="width:16px;">&nbsp;</td>
+														<td style="width:290px;">
+															<div class="legendFlightStatus"></div>
+															<div class="threePixelBreak"></div>
+															<span style="font-size:8pt;">For details, click on Airport Code, Flight Number or Flight Rating</td>
+														</td>
+													</tr>
+												</table>
+											</form>
+										</div>
+									</div>
+
+									<div class="uiComponent674">
+										<div class="uiComponentBody" style="padding-top:9px;padding-bottom:8px;border-bottom:0px;">
+											<table style="width:100%;">
+												<tr>
+													<td style="width:292px;">
+														<table>
+															<tr>
+																<td vertical-align="top">
+																	
+																		<input type="image" name="" src="../images/Buttons/Btn_en_prev_off.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" onclick="selectPrevious(); return true;" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;" title="Click to display the previous time period" alt="Click to display the previous time period">
+																	
+																	
+																	&nbsp;
+																</td>
+																<td vertical-align="top">
+																	<select name="airportQueryTime" size="1" onchange="selectTime(this); return true;" style="width:135px;"><option value="0">12:00AM - 12:00PM</option>
+<option value="12" selected="selected">12:00PM - 12:00AM</option></select>
+																</td>
+																<td vertical-align="top">
+																	&nbsp;
+																	
+																	
+																		<input type="image" name="" src="../images/Buttons/Btn_en_next_disabled.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" title="No more flights on this day" alt="No more flights on this day">
+																	
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td style="width:352px;" align="right">
+														<table>
+															<tr>
+																<td class="label">Sort By</td>
+																<td>&nbsp</td>
+																<td>
+																	<select name="sortField" size="1" onchange="selectSort(this); return true;" style="width:175px;"><option value="8">Origin City</option>
+<option value="9">Origin Airport</option>
+<option value="1">Flight</option>
+<option value="12">On-time Rating</option>
+<option value="2">Airline</option>
+<option value="5" selected="selected">Scheduled Arrival</option>
+<option value="6">Actual Arrival</option>
+<option value="14">Terminal &amp; Gate</option>
+<option value="7">Status</option>
+<option value="15">Equipment</option></select>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								
+									<table class="tableListingTable" style="text-align:center; width:674px;">
+										<tr>
+											
+											
+												<th class="tableListingHeaderNoBottomBorder">&nbsp;</th>
+												<th class="tableListingHeaderNoBottomBorder">&nbsp;</th>
+												<th class="tableListingHeaderNoBottomBorder">On-time</th>
+												<th class="tableListingHeaderNoBottomBorder">&nbsp;</th>
+												<th colspan="2" class="tableListingHeaderNoBottomBorder">Arrival</th>
+											
+											<th class="tableListingHeaderNoBottomBorder">Term</th>
+											<th class="tableListingHeaderNoBottomBorder">&nbsp;</th>
+											<th class="tableListingHeaderNoBottomBorder">&nbsp;</th>
+											<th class="tableListingHeaderNoBottomBorderRightBorder">&nbsp;</th>
+										</tr>
+										<tr>
+											
+											
+												<th class="tableListingHeaderNoTopBorder" width="120">Origin</th>
+												<th class="tableListingHeaderNoTopBorder" width="73">
+													Flight
+												</th>
+												<th class="tableListingHeaderNoTopBorder" width="54">
+													Rating
+												</th>
+												<th class="tableListingHeaderNoTopBorder" width="118">
+													Carrier
+												</th>
+												<th class="tableListingHeaderNoTopNoRightBorder" width="55">
+													Scheduled
+												</th>
+												<th class="tableListingHeaderBottomBorder" width="64"> 
+													Actual
+												</th>
+											
+											<th class="tableListingHeaderNoTopBorder" width="42">Gate</th>
+											<th class="tableListingHeaderNoTopBorder" width="60">
+												Status
+											</th>
+											<th class="tableListingHeaderNoTopBorder" width="40">Equip.</th>
+											<th class="tableListingHeaderNoTopBorderRightBorder" width="40">Track</th>
+										</tr>
+										<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=CDG">CDG</a> Paris</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149034469&airlineCode=DB&flightNumber=5981">DB 5981</a></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=DB&flightNumber=5981&departureAirportCode=CDG&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -50px;"></div></a></td>
+<td>Brit Air</td>
+<td nowrap>
+12:25 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+12:35 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+CRJ
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=CDG">CDG</a> Paris</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149034469&airlineCode=AF&flightNumber=5981">AF 5981</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=AF&flightNumber=5981&departureAirportCode=CDG&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -50px;"></div></a></td>
+<td>Air France</td>
+<td nowrap>
+12:25 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+12:35 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+CRJ
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=CDG">CDG</a> Paris</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149034469&airlineCode=AZ&flightNumber=7403">AZ 7403</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=AZ&flightNumber=7403&departureAirportCode=CDG&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -50px;"></div></a></td>
+<td>Alitalia</td>
+<td nowrap>
+12:25 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+12:35 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+CRJ
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=NAP">NAP</a> Naples</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149212015&airlineCode=AP&flightNumber=2120">AP 2120</a></td>
+<td></td>
+<td>Air One</td>
+<td nowrap>
+1:40 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+1:40 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=STN">STN</a> London</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148992640&airlineCode=FR&flightNumber=168">FR 168</a></td>
+<td></td>
+<td>Ryanair</td>
+<td nowrap>
+2:20 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+2:55 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan45">&nbsp;</span>
+35 min
+</td>
+<td>
+738
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=MUC">MUC</a> Munich</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148990464&airlineCode=EN&flightNumber=4002">EN 4002</a></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=EN&flightNumber=4002&departureAirportCode=MUC&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -90px;"></div></a></td>
+<td>Air Dolomiti</td>
+<td nowrap>
+2:25 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+2:12 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+AT5
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=MUC">MUC</a> Munich</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148990464&airlineCode=LH&flightNumber=4002">LH 4002</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=LH&flightNumber=4002&departureAirportCode=MUC&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -90px;"></div></a></td>
+<td>Lufthansa</td>
+<td nowrap>
+2:25 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+2:12 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+AT5
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=MUC">MUC</a> Munich</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148990464&airlineCode=UA&flightNumber=9291">UA 9291</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=UA&flightNumber=9291&departureAirportCode=MUC&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -90px;"></div></a></td>
+<td>United Airlines</td>
+<td nowrap>
+2:25 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+2:12 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+AT5
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=MXP">MXP</a> Milan</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149214567&airlineCode=A6&flightNumber=803">A6 803</a></td>
+<td></td>
+<td>Air Alps Aviation</td>
+<td nowrap>
+3:50 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+3:50 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=CDG">CDG</a> Paris</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149034525&airlineCode=DB&flightNumber=5983">DB 5983</a></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=DB&flightNumber=5983&departureAirportCode=CDG&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -50px;"></div></a></td>
+<td>Brit Air</td>
+<td nowrap>
+5:20 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+5:20 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+CRJ
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=CDG">CDG</a> Paris</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149034525&airlineCode=AF&flightNumber=5983">AF 5983</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=AF&flightNumber=5983&departureAirportCode=CDG&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -50px;"></div></a></td>
+<td>Air France</td>
+<td nowrap>
+5:20 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+5:20 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+CRJ
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=CDG">CDG</a> Paris</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149034525&airlineCode=AZ&flightNumber=7405">AZ 7405</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=AZ&flightNumber=7405&departureAirportCode=CDG&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -50px;"></div></a></td>
+<td>Alitalia</td>
+<td nowrap>
+5:20 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+5:20 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+CRJ
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149217144&airlineCode=LH&flightNumber=2848">LH 2848</a></td>
+<td></td>
+<td>Lufthansa</td>
+<td nowrap>
+5:50 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+5:53 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+En Route
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=LH&flightNumber=2848&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148990655&airlineCode=ET&flightNumber=1001">ET 1001</a></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=ET&flightNumber=1001&departureAirportCode=FCO&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -20px;"></div></a></td>
+<td>Ethiopian Airlines</td>
+<td nowrap>
+5:50 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+</td>
+<td>
+</td>
+<td nowrap>
+En Route
+<br />
+</td>
+<td>
+CR9
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=ET&flightNumber=1001&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=148990655&airlineCode=ET&flightNumber=1001"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149217147&airlineCode=TP&flightNumber=7238">TP 7238</a></td>
+<td></td>
+<td>TAP-Air Portugal</td>
+<td nowrap>
+5:50 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+5:53 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+En Route
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=TP&flightNumber=7238&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=149217147&airlineCode=TP&flightNumber=7238"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149217143&airlineCode=AP&flightNumber=2126">AP 2126</a></td>
+<td></td>
+<td>Air One</td>
+<td nowrap>
+5:50 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+5:50 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=MUC">MUC</a> Munich</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149298667&airlineCode=LH&flightNumber=4004">LH 4004</a></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=LH&flightNumber=4004&departureAirportCode=MUC&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -70px;"></div></a></td>
+<td>Lufthansa</td>
+<td nowrap>
+6:45 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+6:45 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+Unknown
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=TIA">TIA</a> Tirana</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149005668&airlineCode=LZ&flightNumber=151">LZ 151</a> <a style="text-decoration:none;" alt="See special notes about this flight" title="See special notes about this flight" href="/go/FlightStatus/flightStatusByFlight.do?id=149005668&airlineCode=LZ&flightNumber=151"><span class="iconFlightHistoryNotes">&nbsp;</span></a></td>
+<td></td>
+<td>Belle Air</td>
+<td nowrap>
+7:40 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+7:50 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+143
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=MXP">MXP</a> Milan</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149299315&airlineCode=A6&flightNumber=807">A6 807</a></td>
+<td></td>
+<td>Air Alps Aviation</td>
+<td nowrap>
+9:10 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+8:55 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149217174&airlineCode=TP&flightNumber=7242">TP 7242</a></td>
+<td></td>
+<td>TAP-Air Portugal</td>
+<td nowrap>
+9:50 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+9:58 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+Scheduled
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=TP&flightNumber=7242&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=149217174&airlineCode=TP&flightNumber=7242"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149217166&airlineCode=AP&flightNumber=2122">AP 2122</a></td>
+<td></td>
+<td>Air One</td>
+<td nowrap>
+9:50 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+9:50 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149217169&airlineCode=LH&flightNumber=2914">LH 2914</a></td>
+<td></td>
+<td>Lufthansa</td>
+<td nowrap>
+9:50 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+9:58 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+Scheduled
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=LH&flightNumber=2914&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=CDG">CDG</a> Paris</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149034824&airlineCode=DB&flightNumber=5985">DB 5985</a></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=DB&flightNumber=5985&departureAirportCode=CDG&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -40px;"></div></a></td>
+<td>Brit Air</td>
+<td nowrap>
+10:05 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+10:05 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+En Route
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+CRJ
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=DB&flightNumber=5985&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=149034824&airlineCode=DB&flightNumber=5985"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=CDG">CDG</a> Paris</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149034824&airlineCode=AF&flightNumber=5985">AF 5985</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=AF&flightNumber=5985&departureAirportCode=CDG&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -40px;"></div></a></td>
+<td>Air France</td>
+<td nowrap>
+10:05 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+10:05 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+En Route
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+CRJ
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=AF&flightNumber=5985&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=149034824&airlineCode=AF&flightNumber=5985"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=CDG">CDG</a> Paris</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149034824&airlineCode=AZ&flightNumber=7407">AZ 7407</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=AZ&flightNumber=7407&departureAirportCode=CDG&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -40px;"></div></a></td>
+<td>Alitalia</td>
+<td nowrap>
+10:05 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+10:05 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+En Route
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+CRJ
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=AZ&flightNumber=7407&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=149034824&airlineCode=AZ&flightNumber=7407"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=MUC">MUC</a> Munich</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148990403&airlineCode=EN&flightNumber=4006">EN 4006</a></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=EN&flightNumber=4006&departureAirportCode=MUC&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -50px;"></div></a></td>
+<td>Air Dolomiti</td>
+<td nowrap>
+10:15 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+10:00 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+AT7
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=MUC">MUC</a> Munich</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148990403&airlineCode=LH&flightNumber=4006">LH 4006</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=LH&flightNumber=4006&departureAirportCode=MUC&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -50px;"></div></a></td>
+<td>Lufthansa</td>
+<td nowrap>
+10:15 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+10:00 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+AT7
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=MUC">MUC</a> Munich</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148990403&airlineCode=UA&flightNumber=9283">UA 9283</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=UA&flightNumber=9283&departureAirportCode=MUC&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -50px;"></div></a></td>
+<td>United Airlines</td>
+<td nowrap>
+10:15 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+10:00 PM
+</td>
+<td>
+</td>
+<td nowrap>
+Landed
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+AT7
+</td>
+<td class="rightCol">
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148980007&airlineCode=AZ&flightNumber=1363">AZ 1363</a></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=AZ&flightNumber=1363&departureAirportCode=FCO&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -0px;"></div></a></td>
+<td>Alitalia</td>
+<td nowrap>
+10:40 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+10:24 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+En Route
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+M80
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=AZ&flightNumber=1363&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=148980007&airlineCode=AZ&flightNumber=1363"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148980007&airlineCode=AF&flightNumber=9900">AF 9900</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=AF&flightNumber=9900&departureAirportCode=FCO&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -0px;"></div></a></td>
+<td>Air France</td>
+<td nowrap>
+10:40 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+10:24 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+En Route
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+M80
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=AF&flightNumber=9900&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=148980007&airlineCode=AF&flightNumber=9900"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=148980007&airlineCode=KL&flightNumber=3571">KL 3571</a><span class="codeshareIndicator">^</span></td>
+<td><a style="text-decoration:none;" title="On-Time Performance, Click for Details" href="/go/FlightRating/flightRatingByFlight.do?airlineCode=KL&flightNumber=3571&departureAirportCode=FCO&arrivalAirportCode=TRS"><div class="starRating50x9" style="cursor:pointer; background-position: -0px -0px;"></div></a></td>
+<td>KLM</td>
+<td nowrap>
+10:40 PM
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+10:24 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+En Route
+<br />
+<span class="iconDelayLessThan15">&nbsp;</span> On-time
+</td>
+<td>
+M80
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=KL&flightNumber=3571&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=148980007&airlineCode=KL&flightNumber=3571"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149217168&airlineCode=A3&flightNumber=2122">A3 2122</a></td>
+<td></td>
+<td>Aegean Airlines</td>
+<td nowrap>
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+9:58 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+Scheduled
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=A3&flightNumber=2122&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=149217168&airlineCode=A3&flightNumber=2122"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149217146&airlineCode=BT&flightNumber=5626">BT 5626</a></td>
+<td></td>
+<td>Air Baltic</td>
+<td nowrap>
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+5:53 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+En Route
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=BT&flightNumber=5626&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=149217146&airlineCode=BT&flightNumber=5626"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+<tr>
+<td><a href="/go/Airport/airportDetails.do?airportCode=FCO">FCO</a> Rome</td>
+<td nowrap>
+<a href="/go/FlightStatus/flightStatusByFlight.do?id=149217167&airlineCode=KM&flightNumber=2246">KM 2246</a></td>
+<td></td>
+<td>Air Malta</td>
+<td nowrap>
+</td>
+<td class="tableListingTableNoRightBorder" nowrap>
+9:58 PM
+~
+</td>
+<td>
+</td>
+<td nowrap>
+Scheduled
+<br />
+</td>
+<td>
+</td>
+<td class="rightCol">
+<a href="/go/FlightMonitor/flightRuleCreate.do?airline=KM&flightNumber=2246&departureDate=2009-01-09"><img src="../images/FlightAlertIcons/Icon_flight_alert_sm_off.gif" title="Setup a flight alert" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+<a href="/go/FlightTracker/flightTracker.do?id=149217167&airlineCode=KM&flightNumber=2246"><img src="../images/FlightTrackerIcons/Icon_flight_tracker_sm_off.gif" title="Track flight in real time" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"></a>
+</td>
+</tr>
+
+									</table>
+									<div class="uiComponent674">
+										<div class="uiComponentBody" style="padding-top:9px;padding-bottom:8px;">
+											<table style="width:100%;">
+												<tr>
+													<td style="width:292px;">
+														<table>
+															<tr>
+																<td vertical-align="top">
+																	
+																		<input type="image" name="" src="../images/Buttons/Btn_en_prev_off.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" onclick="selectPrevious(); return true;" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;" title="Click to display the previous time period" alt="Click to display the previous time period">
+																	
+																	
+																	&nbsp;
+																</td>
+																<td vertical-align="top">
+																	<select name="airportQueryTime" size="1" onchange="selectTime(this); return true;" style="width:135px;"><option value="0">12:00AM - 12:00PM</option>
+<option value="12" selected="selected">12:00PM - 12:00AM</option></select>
+																</td>
+																<td vertical-align="top">
+																	&nbsp;
+																	
+																	
+																		<input type="image" name="" src="../images/Buttons/Btn_en_next_disabled.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" title="No more flights on this day" alt="No more flights on this day">
+																	
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td style="width:352px;" align="right">
+														<table>
+															<tr>
+																<td class="label">Sort By</td>
+																<td>&nbsp</td>
+																<td>
+																	<select name="sortField" size="1" onchange="selectSort(this); return true;" style="width:175px;"><option value="8">Origin City</option>
+<option value="9">Origin Airport</option>
+<option value="1">Flight</option>
+<option value="12">On-time Rating</option>
+<option value="2">Airline</option>
+<option value="5" selected="selected">Scheduled Arrival</option>
+<option value="6">Actual Arrival</option>
+<option value="14">Terminal &amp; Gate</option>
+<option value="7">Status</option>
+<option value="15">Equipment</option></select>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								
+								
+								
+									
+										<br/>
+										<div class="uiComponent674">
+											<h2>
+												Picking up a Passenger?
+											</h2>
+											<div class="uiComponentBody">
+												
+													
+												
+												<p>
+													<strong>Stay Informed on the Road</strong> - Sign up for <a href="/go/FlightMonitor/flightRuleCreate.do">Flight Alerts</a> to be sent straight to your mobile phone. 
+													Or check the latest information using <a href="http://mobile.flightstats.com">FlightStats Mobile</a>.
+												</p>
+											</div>
+										</div>
+																		
+								
+							</td>
+							<td width="10">
+								&nbsp;
+							</td>
+							<td width="300"  valign="top" align="center">
+										<script language="JavaScript">
+			GA_googleFillSlot(prefix + "top_right_160x600");
+		</script>
+								
+									<br/><br/>
+									
+									
+										
+										
+											
+										
+									
+								
+								
+									<br /><br />
+											<script language="JavaScript">
+			GA_googleFillSlot(prefix + "second_300x250");
+		</script>
+									
+								
+							</td>
+						</tr>
+					</table>
+
+					<br/>
+							<script language="JavaScript">
+			GA_googleFillSlot(prefix + "bottom_728x90");
+		</script>
+				</div>
+			
+
+						<div id="applicationBlock">
+				<div id="appInputBlock">
+							
+
+		<script type="text/javascript">
+			var flightStatusWidgetTabPanelGroup1;
+			var fsDefaultDateFormat = "yyyy-MM-dd";
+			var fsByFlightDepartureDateControl = null;
+			var fsByFlightDepartureDateCalendar = null;
+			
+			flightStatusWidgetLoad = function()
+			{
+			  var fsTextbox1 = new AutoSuggestControl(document.getElementById("fsAirline"), new RemoteAirlineSuggestions(), null, null, 2, 20, 233, document.getElementById("fsTabPanelGroup"), 10);
+			  var fsTextbox2 = new AutoSuggestControl(document.getElementById("fsDepartureAirport"), new RemoteAirportSuggestions(), null, null, 2, 20, 233, document.getElementById("fsTabPanelGroup"), 10);
+			  var fsTextbox3 = new AutoSuggestControl(document.getElementById("fsArrivalAirport"), new RemoteAirportSuggestions(), null, null, 2, 60, 233, document.getElementById("fsTabPanelGroup"), 10);
+			  var fsTextbox4 = new AutoSuggestControl(document.getElementById("fsAirport"), new RemoteAirportSuggestions(), null, null, 2, 18, 233, document.getElementById("fsTabPanelGroup"), 10);
+			  var fsTextbox5 = new AutoSuggestControl(document.getElementById("fsAirportAirline"), new RemoteAirlineSuggestions(), null, null, 2, 90, 233, document.getElementById("fsTabPanelGroup"), 10);
+
+				fsByFlightDepartureDateControl = new DateControl(document.getElementById("fsByFlightDepartureDateTextField"), document.getElementById("fsByFlight_dateError"), fsDefaultDateFormat, getDateFormats(), "Invalid date");
+				if (null == fsByFlightDepartureDateControl.getDate())
+					fsByFlightDepartureDateControl.setDate(new Date());
+
+				var maxDate = new Date();
+				maxDate.setDate(maxDate.getDate() + 2);
+				var maxDateString = formatDate(maxDate, 'MM/dd/yyyy');
+			
+					fsByFlightDepartureDateCalendar = new PopupCalendar("fsByFlightDepartureDateCalContainerId", "fsByFlightDepartureDateTextField", null, fsDefaultDateFormat, "1/1/2005", maxDateString, false);
+
+				//                                     xTabPanelGroup(w, h, th, tgId, tpgId, clsTP, clsTG, clsTD, clsTS, posTabs, tabBorderHeight, panelBorderWidth, selectedTab)
+			  flightStatusWidgetTabPanelGroup1 = new xTabPanelGroup(244, 153, 22, "fsTabGroup", "fsTabPanelGroup", "widgetTabPanel", "widgetTabGroup", "widgetTabDefault", "widgetTabSelected", false, 0, 0, 1, false);
+
+//				form = xGetElementById("widgetFlightStatusByFlightForm");
+//				setDefaultDates(form.flightQueryDate, 1, 1, "NNN-dd-yyyy");
+				form = xGetElementById("widgetFlightStatusByRouteForm");
+				setDefaultDates(form.routeQueryDate, 1, 1, "NNN-dd-yyyy");
+				form = xGetElementById("widgetFlightStatusByAirportForm");
+				setDefaultDates(form.airportQueryDate, 1, 1, "NNN-dd-yyyy");
+			}
+
+			flightStatusWidgetUnLoad = function()
+			{
+			  if (flightStatusWidgetTabPanelGroup1)
+			  	flightStatusWidgetTabPanelGroup1.onUnload();
+			}
+
+			// We need to load here instead of after the widget load because of some weird crash IE was having with the Yahoo calendar
+			addOurOnLoadListeners(flightStatusWidgetLoad);
+			xAddEventListener(window, "unload", flightStatusWidgetUnLoad, false);
+		</script>
+
+		<div class="widget">
+			<div class="widgetIcon" style="background-position: -112px -48px;"></div>
+			<div class="widgetLabel">Flight Status</div>
+			<a href="http://www.flightstats.com" target="_self"><div class="widgetPoweredBy"></div></a>
+			<div id="fsTabGroup" class="widgetTabGroup">
+				<table height="25" border=0 cellpadding=0 cellspacing=0  bgcolor="#EDECEA">
+					<tr>
+						<td width="63" class="widgetTabDefault">By Flight</td>
+				    <td width="63" class="widgetTabDefault">By Airport</td>
+						<td width="63" class="widgetTabDefault">By Route</td>
+				  </tr>
+				</table>
+			</div>
+			<div id="fsTabPanelGroup" class="widgetTabPanelGroup">
+			  <div id="tpg11" class="widgetTabPanel">
+			  	<form name="flightStatusByFlightForm" method="get" action="/go/FlightStatus/flightStatusByFlight.do;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" id="widgetFlightStatusByFlightForm" target="_self">
+						
+						<div class="fsByFlight_airlineLabel">
+							Airline
+						</div>
+						
+						<div class="fsByFlight_airline">
+							
+							
+								<input type="text" name="airline" value="Enter an airline name or code" id="fsAirline" style="width:229px;" class="content">
+							
+						</div>
+		        <div class="fsByFlight_flightLabel">
+		        	Flight
+		        </div>
+						
+						
+		        <div class="fsByFlight_flightNumber">
+		        	<input type="text" name="flightNumber" maxlength="4" value="" onkeypress="return submitenter(this,event)" style="width:40px;" class="content">
+		        </div>
+		        <div class="fsByFlight_dateLabel">
+				    	Departure Date
+				    </div>
+				    
+		        <div class="fsByFlight_date">
+							<input type="text" name="departureDate" maxlength="11" value="" onkeypress="return submitenter(this,event)" id="fsByFlightDepartureDateTextField" style="width:133px;" class="content" title="yyyy-MM-dd">&nbsp;<a href="javascript: void (0);"  onclick="fsByFlightDepartureDateCalendar.showCal()"><img src="/go/NewCommon/Ads/AirportParkingReservations/img/ico_calendar.gif" title="Click to Select Date" width="16" height="13" border="0" alt=""></a>
+						</div>
+						
+					  <div class="submit">
+					  	<input type="image" name="" src="../Widgets/images/Btn_en_widget_search_off.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;" title="Search Flights">
+					  </div>
+					</form>
+			  </div>
+
+			  <div id="tpg12" class="widgetTabPanel">
+			    <form name="flightStatusByAirportForm" method="get" action="/go/FlightStatus/flightStatusByAirport.do;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" id="widgetFlightStatusByAirportForm" target="_self">
+						
+						<div class="fsByAirport_airportLabel">
+							Airport
+						</div>
+						
+						<div class="fsByAirport_airport">
+							
+								<input type="text" name="airport" value="(TRS) Dei Legionari Airport, Trieste, IT" id="fsAirport" style="width:229px;" class="content">
+							
+							
+						</div>
+		        <div class="fsByAirport_dateLabel">
+				    	Date
+				    </div>
+		        <div class="fsByAirport_date">
+							
+								<select name="airportQueryDate" size="1" id="airportQueryDate" style="width:100px;" class="content"><option value="2009-01-08">Jan-08-2009</option>
+<option value="2009-01-09" selected="selected">Jan-09-2009</option>
+<option value="2009-01-10">Jan-10-2009</option></select>
+							
+							
+						</div>
+		        <div class="fsByAirport_timePeriodLabel">
+				    	Time Period
+				    </div>
+				    <div class="fsByAirport_timePeriod">
+							<select name="airportQueryTime" size="1" style="width:130px;" class="content"><option value="-1">Current Time Period</option>
+								<option value="0">Mid - 6am</option>
+								<option value="6">6am - Noon</option>
+								<option value="12" selected="selected">Noon - 6pm</option>
+								<option value="18">6pm - Mid</option></select>
+						</div>
+						<div class="fsByAirport_airlineLabel">
+							Airline (Optional)
+						</div>
+						
+						<div class="fsByAirport_airline">
+							<input type="text" name="airlineToFilter" value="" id="fsAirportAirline" style="width:229px;" class="content">
+						</div>
+						<div class="fsByAirport_queryTypeDepartures">
+							<input type="radio" name="airportQueryType" value="0"> Departures
+						</div>
+						<div class="fsByAirport_queryTypeArrivals">
+							<input type="radio" name="airportQueryType" value="1" checked="checked"> Arrivals
+						</div>
+					  <div class="submit">
+					  	<input type="image" name="" src="../Widgets/images/Btn_en_widget_search_off.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;" title="Search Flights">
+					  </div>
+					</form>
+				</div>
+
+			  <div id="tpg13" class="widgetTabPanel">
+			  	<form name="flightStatusByRouteForm" method="get" action="/go/FlightStatus/flightStatusByRoute.do;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" id="widgetFlightStatusByRouteForm" target="_self">
+						
+						<div class="fsByRoute_departureAirportLabel">
+							Departure
+						</div>
+						
+						<div class="fsByRoute_departureAirport">
+							
+							
+								<input type="text" name="departure" value="Enter an airport name or code" id="fsDepartureAirport" style="width:229px;" class="content">
+							
+						</div>
+						<div class="fsByRoute_arrivalAirportLabel">
+							Arrival
+						</div>
+						
+						<div class="fsByRoute_arrivalAirport">
+							
+							
+								<input type="text" name="arrival" value="Enter an airport name or code" id="fsArrivalAirport" style="width:229px;" class="content">
+							
+						</div>
+		        <div class="fsByRoute_dateLabel">
+				    	Departure Date
+				    </div>
+				    
+		        <div class="fsByRoute_date">
+							
+							
+								<select name="departureDate" size="1" id="routeQueryDate" style="width:100px;" class="content"><option value="2006-01-08">Tue January 8, 2006</option>
+							    <option value="2006-01-09">Wed January 9, 2006</option>
+							    <option value="2006-01-10">Thu January 10, 2006</option></select>
+							
+						</div>
+					  <div class="submit">
+					  	<input type="image" name="" src="../Widgets/images/Btn_en_widget_search_off.gif;jsessionid=E54585F58530EF08D5642940BBB91394.ned:8012" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;" title="Search Flights">
+					  </div>
+					</form>
+			  </div>
+
+			</div>
+		</div>
+				</div>
+				<div id="moreAppsBlock">
+										<div id="moreAppsPhotoBlock">
+						<table>
+							<tr>
+								<td valign="top">
+									<script language="JavaScript">
+	index = Math.floor(Math.random() * 107);
+	if (0 == index)
+		index = 1;
+	if (index < 10)
+		imgSrc = "<img src='/go/images/AirportPhotos/airport_photo_00" + index + ".gif'/>";
+	else if (index < 100)
+		imgSrc = "<img src='/go/images/AirportPhotos/airport_photo_0" + index + ".gif'/>";
+	else
+		imgSrc = "<img src='/go/images/AirportPhotos/airport_photo_" + index + ".gif'/>";
+	document.write(imgSrc);
+</script>
+
+								</td>
+								<td valign="top">
+									<table style="background-image: url(../images/gfx_common_elements.gif); background-position: -550px -250px; width:185px; height:75px;">
+										<tr>
+											<td style="font-size:8pt; font-weight:bold; color:#000000; padding-top:12px; padding-left: 30px;">
+												Did You Know?
+											</td>
+										</tr>
+										<tr>
+											<td style="width: 100%; height: 2px;"><img src="../images/spacer.gif"></td>
+										</tr>
+										<tr>
+											<td valign="top" style="font-size:8pt; color:#000000; height: 76px; padding-left: 7px; padding-right: 5px;">
+											
+												You can reserve <a href="/go/Airport/airportParking.do">Airport Parking</a> spaces at many airports in the US, Canada and England.
+											
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+
+					<div id="moreAppsContentBlock">
+						<strong>Related Applications</strong>
+						<div class="orangeLine360"></div>
+						<div class="twoPixelBreak"></div>
+						<table width="100%">
+							<tr>
+								<td width="50%">
+									<a href="/go/FlightTracker/trackFlight.do">Real-time Flight Tracker</a><br/>
+									<a href="/go/AirportTracker/trackAirport.do">Airport Flight Tracker</a><br/>
+									<a href="/go/FlightRating/flightRatingByRoute.do">On-time Performance Ratings</a><br/>
+								</td>
+								<td width="50%">
+									<a href="/go/FlightMonitor/flightRules.do">Flight Alerts</a><br/>
+									<a href="/go/FlightAvailability/flightAvailabilityByRoute.do">Flight Availability</a><br/>
+								</td>
+							</tr>
+						</table>
+						<div class="tenPixelBreak"></div>
+						<table width="100%">
+							<tr>
+								<td width="50%">
+									<strong>Get This Widget</strong>
+								</td>
+								<td width="50%">
+									<strong>Personal Tools</strong>
+								</td>
+							</tr>
+						</table>
+						<div class="orangeLine360"></div>
+						<div class="twoPixelBreak"></div>
+						<table width="100%">
+							<tr>
+								<td width="50%">
+									<a href="https://www.flightstats.com/developers/bin/view/Syndication/downloads_gallery">For Your Website</a><br/>
+									<a href="/go/Syndication/widgets.do">For iGoogle or Windows Live!</a><br/>
+								</td>
+								<td width="50%">
+									<a href="/go/Syndication/widgets.do">Other FlightStats Widgets</a><br/>
+									<a href="/go/Syndication/widgets.do">Toolbar Buttons</a><br/>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="topRightBlockAdSense">
+						<script language="JavaScript">
+			GA_googleFillSlot(prefix + "top_right_300x250");
+		</script>
+			</div>
+			<div id="topRightBlockResults">
+			</div>
+
+			<link rel='stylesheet' type='text/css' href='../NewCommon/MainMenus.css'>
+<link rel='stylesheet' type='text/css' href='../NewCommon/RegionsDropdown.css'>
+<div style="position: absolute; top: 0px; width: 994px; background-color: #fff; border-bottom: 4px solid #cecece; z-index: 2000;">	
+	<!-- Header Logo and Top Margin Ad -->
+	<div style="width: 100%; height: 100px;">
+		<table style="width: 100%; height: 100%; border: 0px solid;">
+			<tr>
+				<td style="width: 262px; height: 100%; padding-right: 4px;" valign="top">
+					<a href="/go/Home/home.do">
+						<div style="width: 262px; height: 90px; background-image: url(../images/gfx_header_footer.gif); background-position: -0px -250px;"></div>
+					</a>
+				</td>
+				<td style="width: 728px; height: 90px; padding-top: 5px; padding-bottom: 5px;">
+					<div style="width: 728px; height: 90px; background-color: #cecece;">
+						
+								<script language="JavaScript">
+			GA_googleFillSlot(prefix + "top_728x90");
+		</script>
+						
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<!-- Navigation Area -->
+	<div style="width: 100%; height: 29px; background-image: url(../images/gfx_header_footer.gif); background-position: -0px -100px; z-index: 100;">
+		<div style="position: absolute; width: 700px; height: 29px; z-index: 100;">
+			<div style="position: absolute; height: 29px; padding-left: 14px; z-index: 100;">
+				<ul class="fsmenu">
+					<li class="top"><a href="javascript:;" class="top_link"><span class="down">Flights</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="flights">
+							<li><a href="/go/FlightStatus/flightStatusByFlight.do">Flight Status</a></li>
+							<li><a href="/go/FlightTracker/trackFlight.do">Flight Tracker</a></li>
+							<li><a href="/go/FlightAvailability/flightAvailabilityByRoute.do">Flight Availability</a></li>
+							<li><a href="/go/FlightRating/flightRatingByRoute.do">Flight Rating</a></li>
+							<li><a href="/go/FlightMonitor/flightRuleCreate.do">Flight Alert</a></li>
+							<li><a href="/go/FlightMonitor/flightRules.do">My Flight Alerts</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+					<li class="top"><a href="javascript:;" class="top_link"><span class="down">Airports</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="airports">
+							<li><a href="/go/Airport/airportDetails.do">Airport Information</a></li>
+							<li><a href="/go/Airport/delays.do">Delays By Airport</a></li>
+							<li><a href="/go/Airport/currentAirportDelays.do">FAA Airport Delays</a></li>
+							<li><a href="/go/AirportTracker/trackAirport.do">Airport Tracker</a></li>
+							<li><a href="/go/Airport/airportChatter.do">Airport Chatter</a></li>
+							<li><a href="/go/Airport/airportUserRatingsByAirport.do">Airport User Ratings</a></li>
+							<li><a href="/go/Airport/airportScorecard.do">Airport Scorecard</a></li>
+							<li><a href="/go/Airport/securityWaitTimes.do">Security Wait Times</a></li>
+							<li><a href="/go/Airport/airportParking.do">Airport Parking</a></li>
+							<li><a href="/go/Airport/airportTrafficConditions.do">Traffic Conditions</a></li>
+							<li><a href="/go/Airport/weather.do">Weather</a></li>
+							<li><a href="/go/Airport/airportsOfTheWorld.do">Airports of the World</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+				   	</li>
+				    <li class="top"><a href="javascript:;" class="top_link"><span class="down">Airlines</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="airlines">
+							<li><a href="/go/Airline/airlineDetails.do">Airline Information</a></li>
+							<li><a href="/go/Airline/airlineScorecard.do">Airline Scorecard</a></li>
+							<li><a href="/go/Airline/airlinesOfTheWorld.do">Airlines of the World</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+				    <li class="top"><a href="javascript:;" class="top_link"><span class="down">Travel Planning</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="travel">
+							<li><a href="/go/FlightAvailability/flightAvailabilityByRoute.do">Flight Availability</a></li>
+							<li><a href="/go/TravelPlanning/travelDeals.do">Travel Deals</a></li>
+							<li><a href="/go/FrequentFlyer/frequentFlyerByRoute.do">Frequent Flyer</a></li>
+							<li><a href="/go/PublishedFares/publishedFaresByRoute.do">Published Fares</a></li>
+							<li><a href="/go/TravelPlanning/countryInformation.do">Country Information</a></li>
+							<li><a href="/go/TravelPlanning/travelWarnings.do">Travel Warnings</a></li>
+							<li><a href="/go/TravelPlanning/travelAdvisories.do">Travel Advisories</a></li>
+							<li><a href="/go/TravelPlanning/consularInformationSheet.do">Consular Information Sheets</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+					<li class="top"><a href="javascript:;" class="top_link"><span class="down">Downloads</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="downloads">
+							<li><a href="/go/Syndication/widgets.do">Personal Tools</a></li>
+							<li><a href="/developers/bin/view/Syndication/">For Your Website</a></li>
+							<li><a href="/developers/bin/view/Main/">For Developers</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+					<li class="top"><a href="javascript:;" class="top_link"><span class="down">Community</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="community">
+							<li><a href="/go/Forum/forumViewCategory.do?">Forums</a></li>
+							<li><a href="/go/Forum/forumViewForum.do?forumNntpName=support">Support</a></li>
+							<li><a href="/go/Links/displayCategory.do">Travel Directory</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+					
+					<li class="top_right"><a href="javascript:;" class="top_link"><span class="down">About</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+						<!--[if lte IE 6]><table><tr><td><![endif]-->
+						<ul class="about">
+							<li><a href="/go/About/company.do">Company</a></li>
+							<li><a href="/go/Home/spotlight.do">News</a></li>
+							<li><a href="/go/About/businessSolutions.do">Business Solutions</a></li>
+							<li><a href="/go/About/advertise-with-us.do">Advertise With Us</a></li>
+							<li><a href="/go/About/requestInfo.do">Request Info</a></li>
+							<li><a href="/go/About/contact.do">Contact Us</a></li>
+						</ul>
+						<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+					</li>
+				</ul>			
+			</div>
+		</div>
+		<div style="position: absolute; left: 700px; height: 28px;">
+			<div style="height: 28px; border: 0px solid;">
+				<!-- Google CSE Search Box Begins -->
+				<form action="http://www.flightstats.com/go/Search/FlightStatusSearchEngine.do" id="cse-search-box">
+				  <div>
+				    <input type="hidden" name="cx" value="009381639728882060958:9zd2amlzqha" />
+				    <input type="hidden" name="cof" value="FORID:9" />
+				    <input type="hidden" name="ie" value="UTF-8" />
+				    <div style="position: absolute; left: 5px; width: 180px; padding-right: 14px; top: 4px;">
+							<input id="headerGoogleCustomSearchBox" type="text" size="23" name="q"/>
+						</div>
+				  </div>
+					<div style="position: absolute; left: 200px; width: 70; float: right; padding-right: 25px; top: 4px;">
+						<input id="headerGoogleCustomSearchButton" title="Search Site" type="image" name="sa" src="../images/Buttons/Btn_en_search_bar_off.gif" onmouseover="changeImages(this, 1); return true;" onmouseout="changeImages(this, 0); return true;"/>
+					</div>
+				</form>
+				<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&lang=en"></script>
+				<!-- Google CSE Search Box Ends -->
+				<script type="text/javascript">
+					var headerGoogleCustomSearchBoxElement = document.getElementById('headerGoogleCustomSearchBox');
+					headerGoogleCustomSearchBoxElement.style.border = '1px solid #cecece';
+				</script>
+			</div>
+		</div>
+	</div>
+	<div style="width: 100%; height: 16px; background: #ececec;">
+		<div style="height: 16px; padding-right: 25px;" align="right">
+			<table style="height: 100%;">
+				<tr>
+					<td valign="middle"><a class="header_footer_link_solid" href="/go/Syndication/widgets.do">Downloads</a></td>
+					<td style="height: 9px; padding-top: 3px; padding-bottom: 3px;">
+						<div style="width: 14px; height: 9px; background-image: url(../images/gfx_header_footer.gif); background-position: -240px -140px;"><img src="../images/spacer.gif"/></div>
+					</td>
+					<td valign="middle"><a class="header_footer_link_solid" href="/developers">Developer Center</a></td>
+					<td style="height: 9px; padding-top: 3px; padding-bottom: 3px;">
+						<div style="width: 14px; height: 9px; background-image: url(../images/gfx_header_footer.gif); background-position: -240px -140px;"><img src="../images/spacer.gif"/></div>
+					</td>
+					<td valign="middle"><a class="header_footer_link_solid" href="/go/Forum/forumViewCategory.do">Forums</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div style="width: 100%; height: 20px;">
+		<div style="position: absolute; padding-left: 25px; height: 20px; z-index: 0;">
+			<table style="height: 100%; border: 0px solid;"><tr>
+				<td style="font-size: 8pt;" valign="middle"><a href="/go">FlightStats Home</a> > <a href="/go/FlightStatus/flightStatusByRoute.do">Flight Status</a> > <a href="/go/FlightStatus/flightStatusByAirport.do?airportCode=TRS&airportQueryDate=null&airportQueryTimePeriod=null&airportQueryType=1">TRS</a></td>
+			</tr></table>
+		</div>
+		<div style="height: 20px; padding-top: 0px; padding-bottom: 0px; padding-right: 25px;" align="right">
+			<table style="height: 100%;">
+				<tr>
+					<td valign="middle" style="padding-left: 6px; padding-right: 7px; border-right: 0px solid #b3b3b3; font-size: 8pt;">
+						<font color="#1d2030">Welcome
+							
+								Guest</font> - <a class="header_link" href="/go/Login/login.do">Login</a>
+							
+					</td>
+					<td style="height: 16px; padding-top: 2px; padding-bottom: 2px;"><table><tr><td style="height: 16px; border-left: 1px solid #b3b3b3;"></td></tr></table></td>
+					<td valign="middle" style="padding-left: 7px; padding-right: 7px;"><a class="header_link" href="/go/Account/accountEditProfile.do">My Account</a></td>
+					<td style="height: 16px; padding-top: 2px; padding-bottom: 2px;"><table><tr><td style="height: 16px; border-left: 1px solid #b3b3b3;"></td></tr></table></td>
+					<td valign="middle" style="font-size: 8pt; padding-left: 7px; padding-right: 0px;">REGIONAL SITES:</td>
+					<td valign="middle" style="font-size: 8pt; padding-right: 0px; padding-top: 2px; width: 30px;" align="right">
+						<div style="width: 25px; z-index: 1;" align="left">
+							<div style="z-index: 1;">
+								<ul class="regionsdropdown">
+									<li class="top"><a href="javascript:;" class="top_link"><span class="down">
+										<div>
+											<img src="../images/spacer.gif" style="width: 16px; height: 11px; background-image: url(../images/gfx_common_elements.gif); background-position: -0px -200px;"/>
+											<div style="position: absolute; padding-left: 2px; padding-top: 2px; padding-bottom: 4px; width: 8px; height: 8px; left: 16px; top: 0px;"><img src="../images/spacer.gif" style="width: 10px; height: 10px; background-image: url(../images/gfx_common_elements.gif); background-position: -800px -220px;"/></div>
+										</div>
+										</span><!--[if gte IE 7]><!--></a><!--<![endif]-->
+										<!--[if lte IE 6]><table><tr><td><![endif]-->
+										<ul class="regions">
+											<li><a href="/go">
+												<div>
+													<img src="../images/spacer.gif" style="width: 16px; height: 11px; background-image: url(../images/gfx_common_elements.gif); background-position: -0px -200px;"/>&nbsp;United States
+												</div>
+											</a></li>
+											<li><a href="http://www.flightstats.co.uk">
+												<div>
+													<img src="../images/spacer.gif" style="width: 16px; height: 11px; background-image: url(../images/gfx_common_elements.gif); background-position: -20px -200px;"/>&nbsp;United Kingdom
+												</div>
+											</a></li>
+										</ul>
+										<!--[if lte IE 6]></td></tr></table></a><![endif]-->
+									</li>
+								</ul>
+							</div>
+						</div>
+					</td>
+					<!-- td valign="middle"><a href="http://www.addthis.com/bookmark.php" onclick="addthis_url   = location.href; addthis_title = document.title; return addthis_click(this);" target="_blank"><img src="http://s9.addthis.com/addthis16.gif" width="16" height="16" border="0" alt="Bookmark and Share" /></a> <script type="text/javascript">var addthis_pub = 'FlightStats';</script><script type="text/javascript" src="http://s9.addthis.com/js/widget.php?v=10"></script></td-->
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>	
+					<div id="footer">
+				<div style="width: 994px; height: 4px; background: #cecece;"><img src="../images/spacer.gif"/></div>
+	<div style="width: 994px; height: 112px; padding-left: 0px; background-color: #fff;">
+		<table>
+			<tr>
+				<td>
+					<div style="width: 199px; height: 70px; background-image: url(../images/gfx_header_footer.gif); background-position: -300px -250px;">
+				</td>
+				<td style="padding-top: 31px; padding-bottom: 4px;">
+					<table>
+						<tr>
+							<td>
+								<table style="border: 0px solid;"><tr>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/Syndication/widgets.do">Downloads</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/Downloads/mobile.do">FlightStats Mobile</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/Syndication/widgets.do#RSS">RSS Feeds</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="http://www.flightstats.com/developers/bin/view/Syndication/link_to_us ">Link to Us</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/contact.do">Contact</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/company.do">About</a></td>
+								</tr></table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table style="border: 0px solid;"><tr>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/advertise-with-us.do">Advertise With Us</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/termsOfUse.do">Terms of Use</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/privacyPolicy.do">Privacy</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/sitemap.do">Sitemap</a></td>
+									<td style="height: 17px; width: 17px; background-image: url(../images/gfx_common_elements.gif); background-position: -180px -220px;"></td>
+									<td style="height: 17px;" valign="top"><a class="header_footer_link_solid" href="/go/About/copyright.do">Copyright</a></td>
+								</tr></table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding-left: 25px;" colspan="2"><div style="border-top: 1px solid #cecece;"></div></td>
+			</tr>
+			<tr>
+				<td>
+					<div style="width: 184px; height: 41px; background-image: url(../images/gfx_header_footer.gif); background-position: -300px -320px;">
+				</td>
+			</tr>
+		</table>
+	</div>
+
+		</div>
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">
+_qacct="p-22S-T-z5RimQg";quantserve();</script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-22S-T-z5RimQg.gif" style="display: none" height="1" width="1" alt="Quantcast"/></noscript>
+<!-- End Quantcast tag -->
+<script type="text/javascript">
+doOurLoad();
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write("\<script src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'>\<\/script>" );
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-382334-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+	
+		</body>
+	</html>

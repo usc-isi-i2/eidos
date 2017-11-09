@@ -1,0 +1,86 @@
+United Airlines	115	"Hartford/Springf, CT (BDL)"	9:13am	Jul 14	9:13am	"Chicago-Ohare, IL (ORD)"	Not Available	Jul 14	10:11am	10	C15
+United Airlines	115	"Hartford/Springf, CT (BDL)"	9:13am	Jul 14	9:13am	"Chicago-Ohare, IL (ORD)"	Not Available	Jul 14	10:11am	10	C15
+United Airlines	1487	"Las Vegas, NV (LAS)"	1:45pm	Jul 14	Contact Airline	"Los Angeles, CA (LAX)"	2:54pm	Jul 14	Contact Airline	Not provided by airline	Not provided by airline
+United Airlines	989	"San Francisco, CA (SFO)"	2:10pm	Jul 14	2:10pm	"Los Angeles, CA (LAX)"	Not Available	Jul 14	3:10pm	2	71B
+United Airlines	458	"Denver, CO (DEN)"	10:18am	Jul 14	10:18am	"Miami, FL (MIA)"	Not Available	Jul 14	3:56pm	CHK	F15
+United Airlines	19	"New York-Kennedy, NY (JFK)"	12:00noon	Jul 14	12:00noon	"Los Angeles, CA (LAX)"	Not Available	Jul 14	2:03pm	1	76
+United Airlines	935	"London Heathrow, UK (LHR)"	11:47am	Jul 14	11:47am	"Los Angeles, CA (LAX)"	Not Available	Jul 14	2:40pm	CHK	77
+United Airlines	1487	"Las Vegas, NV (LAS)"	1:45pm	Jul 14	Contact Airline	"Los Angeles, CA (LAX)"	2:54pm	Jul 14	Contact Airline	Not provided by airline	Not provided by airline
+United Airlines	288	"Minneapolis/St Paul, MN (MSP)"	10:42am	Jul 14	10:42am	"Chicago-Ohare, IL (ORD)"	Not Available	Jul 14	11:48am	5	C28
+United Airlines	107	"Manchester, NH (MHT)"	7:00am	Jul 14	7:00am	"Chicago-Ohare, IL (ORD)"	Not Available	Jul 14	8:10am	10	B3
+United Airlines	1170	"Oakland, CA (OAK)"	8:25am	Jul 14	8:25am	"Denver, CO (DEN)"	Not Available	Jul 14	11:39am	10	B22
+United Airlines	888	"Beijing, China (PEK)"	12:32pm	Jul 14	12:32pm	"San Francisco, CA (SFO)"	Not Available	Jul 14	8:09am	CHK	97
+United Airlines	458	"Denver, CO (DEN)"	10:18am	Jul 14	10:18am	"Miami, FL (MIA)"	Not Available	Jul 14	3:56pm	CHK	F15
+United Airlines	231	"Houston Bush, TX (IAH)"	11:42am	Jul 14	11:42am	"Denver, CO (DEN)"	Not Available	Jul 14	12:50pm	10	B35
+United Airlines	1170	"Oakland, CA (OAK)"	8:25am	Jul 14	8:25am	"Denver, CO (DEN)"	Not Available	Jul 14	11:39am	10	B22
+United Airlines	495	"Seattle/Tacoma, WA (SEA)"	1:33pm	Jul 14	1:33pm	"Los Angeles, CA (LAX)"	Not Available	Jul 14	3:51pm*	2	70B
+United Airlines	1170	"Oakland, CA (OAK)"	8:25am	Jul 14	8:25am	"Denver, CO (DEN)"	Not Available	Jul 14	11:39am	10	B22
+United Airlines	935	"London Heathrow, UK (LHR)"	11:47am	Jul 14	11:47am	"Los Angeles, CA (LAX)"	Not Available	Jul 14	2:40pm	CHK	77
+United Airlines	231	"Houston Bush, TX (IAH)"	11:42am	Jul 14	11:42am	"Denver, CO (DEN)"	Not Available	Jul 14	12:50pm	10	B35
+United Airlines	989	"San Francisco, CA (SFO)"	2:10pm	Jul 14	2:10pm	"Los Angeles, CA (LAX)"	Not Available	Jul 14	3:10pm	2	71B
+United Airlines	288	"Minneapolis/St Paul, MN (MSP)"	10:42am	Jul 14	10:42am	"Chicago-Ohare, IL (ORD)"	Not Available	Jul 14	11:48am	5	C28
+United Airlines	19	"New York-Kennedy, NY (JFK)"	12:00noon	Jul 14	12:00noon	"Los Angeles, CA (LAX)"	Not Available	Jul 14	2:03pm	1	76
+United Airlines	1170	"Oakland, CA (OAK)"	8:25am	Jul 14	8:25am	"Denver, CO (DEN)"	Not Available	Jul 14	11:39am	10	B22
+United Airlines	107	"Manchester, NH (MHT)"	7:00am	Jul 14	7:00am	"Chicago-Ohare, IL (ORD)"	Not Available	Jul 14	8:10am	10	B3
+United Airlines	193	"Boston, MA (BOS)"	9:59am	Jul 14	9:59am	Washington DC-Dulles (IAD)	Not Available	Jul 14	11:13am	4	C23
+United Airlines	495	"Seattle/Tacoma, WA (SEA)"	1:33pm	Jul 14	1:33pm	"Los Angeles, CA (LAX)"	Not Available	Jul 14	3:51pm*	2	70B
+United Airlines	193	"Boston, MA (BOS)"	9:59am	Jul 14	9:59am	Washington DC-Dulles (IAD)	Not Available	Jul 14	11:13am	4	C23
+United Airlines	458	"Denver, CO (DEN)"	10:18am	Jul 14	10:18am	"Miami, FL (MIA)"	Not Available	Jul 14	3:56pm	CHK	F15
+United Airlines	888	"Beijing, China (PEK)"	12:32pm	Jul 14	12:32pm	"San Francisco, CA (SFO)"	Not Available	Jul 14	8:09am	CHK	97
+United Airlines	791	"Seattle/Tacoma, WA (SEA)"	6:34pm	Jun 13	Not Available	"San Francisco, CA (SFO)"	Not Available	Jun 13	8:39pm*	CHK	71
+United Airlines	993	"Seattle/Tacoma, WA (SEA)"	11:55am	Jun 13	11:55am	"San Francisco, CA (SFO)"	Not Available	Jun 13	1:44pm	2	73A
+Northwest Airlines	1125	"Buffalo, NY (BUF)"	1:00pm	Jun 13	12:58pm	"Detroit, MI (DTW)"	2:12pm	Jun 13	2:03pm	Not provided by airline	A19
+American Airlines	3999	"Chicago-Ohare, IL (ORD)"	11:52am	Jun 13	11:49am	"Nashville, TN (BNA)"	1:15pm	Jun 13	1:11pm	1	C12
+Alaska Airlines	558	"Seattle/Tacoma, WA (SEA)"	9:15pm	Jun 13	Not Available	"San Diego, CA (SAN)"	11:56pm	Jun 13	11:50pm*	Not provided by airline	Not provided by airline
+Northwest Airlines	1119	"Buffalo, NY (BUF)"	5:02pm	Jun 13	5:25pm	"Detroit, MI (DTW)"	6:14pm	Jun 13	6:29pm	Not provided by airline	A21
+Alaska Airlines	884	"Fairbanks Intl, AK (FAI)"	8:30am	Jun 13	8:33am	"Anchorage, AK (ANC)"	9:29am	Jun 13	9:36am	Not provided by airline	Not provided by airline
+Alaska Airlines	104	"Fairbanks Intl, AK (FAI)"	6:00am	Jun 13	5:56am	"Anchorage, AK (ANC)"	6:58am	Jun 13	7:00am	Not provided by airline	Not provided by airline
+Alaska Airlines	146	"Barrow, AK (BRW)"	7:49pm	Jun 13	Not Available	"Fairbanks Intl, AK (FAI)"	9:06pm	Jun 13	Not Available	Not provided by airline	Not provided by airline
+Alaska Airlines	202	"Seattle/Tacoma, WA (SEA)"	8:32am	Jun 13	8:45am	"San Francisco, CA (SFO)"	10:46am	Jun 13	10:45am	Not provided by airline	Not provided by airline
+Alaska Airlines	102	"Fairbanks Intl, AK (FAI)"	10:44am	Jun 13	10:57am	"Anchorage, AK (ANC)"	11:44am	Jun 13	12:04pm	Not provided by airline	Not provided by airline
+United Airlines	198	"Seattle/Tacoma, WA (SEA)"	6:11am	Jun 13	6:11am	"San Francisco, CA (SFO)"	Not Available	Jun 13	7:55am	CHK	75
+Alaska Airlines	144	"Barrow, AK (BRW)"	10:01am	Jun 13	10:16am	"Fairbanks Intl, AK (FAI)"	11:20am	Jun 13	11:37am	Not provided by airline	Not provided by airline
+Alaska Airlines	104	"Fairbanks Intl, AK (FAI)"	6:00am	Jun 13	5:56am	"Anchorage, AK (ANC)"	6:58am	Jun 13	7:00am	Not provided by airline	Not provided by airline
+Northwest Airlines	1125	"Buffalo, NY (BUF)"	1:00pm	Jun 13	12:58pm	"Detroit, MI (DTW)"	2:12pm	Jun 13	2:03pm	Not provided by airline	A19
+United Airlines	1237	"Seattle/Tacoma, WA (SEA)"	1:43pm	Jun 13	1:43pm	"San Francisco, CA (SFO)"	Not Available	Jun 13	3:32pm	3	71
+Alaska Airlines	2475	"Portland, OR (PDX)"	9:30pm	Jun 13	Not Available	"San Francisco, CA (SFO)"	11:15pm	Jun 13	Not Available	Not provided by airline	Not provided by airline
+American Airlines	4316	"Miami, FL (MIA)"	11:52am	Jun 13	11:52am	"Nashville, TN (BNA)"	1:05pm	Jun 13	1:06pm	Not provided by airline	C10
+Alaska Airlines	580	"Seattle/Tacoma, WA (SEA)"	11:28am	Jun 13	11:32am	"San Diego, CA (SAN)"	2:09pm	Jun 13	2:06pm	Not provided by airline	Not provided by airline
+Alaska Airlines	884	"Fairbanks Intl, AK (FAI)"	8:30am	Jun 13	8:33am	"Anchorage, AK (ANC)"	9:29am	Jun 13	9:36am	Not provided by airline	Not provided by airline
+Alaska Airlines	550	"Seattle/Tacoma, WA (SEA)"	7:25am	Jun 13	7:49am	"San Diego, CA (SAN)"	10:09am	Jun 13	10:34am	Not provided by airline	Not provided by airline
+Alaska Airlines	822	"Fairbanks Intl, AK (FAI)"	2:44pm	Jun 13	2:48pm	"Anchorage, AK (ANC)"	3:43pm	Jun 13	3:47pm*	Not provided by airline	Not provided by airline
+Northwest Airlines	1123	"Buffalo, NY (BUF)"	3:19pm	Jun 13	3:24pm	"Detroit, MI (DTW)"	4:27pm	Jun 13	4:29pm	Not provided by airline	A67
+Alaska Airlines	104	"Fairbanks Intl, AK (FAI)"	6:00am	Jun 13	5:56am	"Anchorage, AK (ANC)"	6:58am	Jun 13	7:00am	Not provided by airline	Not provided by airline
+Alaska Airlines	884	"Fairbanks Intl, AK (FAI)"	8:30am	Jun 13	8:33am	"Anchorage, AK (ANC)"	9:29am	Jun 13	9:36am	Not provided by airline	Not provided by airline
+Alaska Airlines	316	"Seattle/Tacoma, WA (SEA)"	1:16pm	Jun 13	1:29pm	"San Francisco, CA (SFO)"	3:26pm	Jun 13	3:34pm	Not provided by airline	Not provided by airline
+Alaska Airlines	144	"Barrow, AK (BRW)"	10:01am	Jun 13	10:16am	"Fairbanks Intl, AK (FAI)"	11:20am	Jun 13	11:37am	Not provided by airline	Not provided by airline
+Northwest Airlines	1129	"Buffalo, NY (BUF)"	9:40am	Jun 13	9:34am	"Detroit, MI (DTW)"	10:52am	Jun 13	10:44am	Not provided by airline	A19
+American Airlines	1033	"Nashville, TN (BNA)"	6:49am	Jun 13	6:47am	"Miami, FL (MIA)"	9:55am	Jun 13	9:47am	21	D47
+Northwest Airlines	1119	"Buffalo, NY (BUF)"	5:02pm	Jun 13	5:25pm	"Detroit, MI (DTW)"	6:14pm	Jun 13	6:29pm	Not provided by airline	A21
+Alaska Airlines	116	"Fairbanks Intl, AK (FAI)"	6:30am	Jun 13	6:17am	"Seattle/Tacoma, WA (SEA)"	11:07am	Jun 13	11:05am	Not provided by airline	Not provided by airline
+Alaska Airlines	140	"Fairbanks Intl, AK (FAI)"	8:45pm	Jun 13	Not Available	"Anchorage, AK (ANC)"	9:36pm	Jun 13	Not Available	Not provided by airline	Not provided by airline
+Alaska Airlines	562	"Seattle/Tacoma, WA (SEA)"	7:42pm	Jun 13	Not Available	"San Diego, CA (SAN)"	10:27pm	Jun 13	10:20pm*	Not provided by airline	Not provided by airline
+Alaska Airlines	884	"Fairbanks Intl, AK (FAI)"	8:30am	Jun 13	8:33am	"Anchorage, AK (ANC)"	9:29am	Jun 13	9:36am	Not provided by airline	Not provided by airline
+Alaska Airlines	498	"Seattle/Tacoma, WA (SEA)"	5:55pm	Jun 13	Not Available	"San Francisco, CA (SFO)"	8:02pm	Jun 13	7:58pm*	Not provided by airline	Not provided by airline
+United Airlines	156	"Seattle/Tacoma, WA (SEA)"	3:31pm	Jun 13	3:31pm	"San Francisco, CA (SFO)"	Not Available	Jun 13	5:23pm*	3	85
+Alaska Airlines	112	"Fairbanks Intl, AK (FAI)"	7:35pm	Jun 13	7:47pm*	"Anchorage, AK (ANC)"	8:34pm	Jun 13	8:46pm*	Not provided by airline	Not provided by airline
+United Airlines	156	"Seattle/Tacoma, WA (SEA)"	3:31pm	Jun 13	3:31pm	"San Francisco, CA (SFO)"	Not Available	Jun 13	5:23pm*	3	85
+Northwest Airlines	1980	"Buffalo, NY (BUF)"	6:56am	Jun 13	6:52am	"Detroit, MI (DTW)"	8:09am	Jun 13	8:03am	Not provided by airline	A29
+Alaska Airlines	1290	"Los Angeles, CA (LAX)"	7:35pm	Jun 13	Not Available	"San Francisco, CA (SFO)"	8:47pm	Jun 13	Not Available	Not provided by airline	Not provided by airline
+Northwest Airlines	4149	"Seattle/Tacoma, WA (SEA)"	8:40pm	Jun 13	Not Available	"San Francisco, CA (SFO)"	10:51pm	Jun 13	10:49pm*	Not provided by airline	Not provided by airline
+American Airlines	493	"Miami, FL (MIA)"	10:05am	Jun 13	9:59am	"Dallas/Ft Worth, TX (DFW)"	12:04pm	Jun 13	12:22pm	A28	A24/A
+Northwest Airlines	1129	"Buffalo, NY (BUF)"	9:40am	Jun 13	9:34am	"Detroit, MI (DTW)"	10:52am	Jun 13	10:44am	Not provided by airline	A19
+Northwest Airlines	1980	"Buffalo, NY (BUF)"	6:56am	Jun 13	6:52am	"Detroit, MI (DTW)"	8:09am	Jun 13	8:03am	Not provided by airline	A29
+Alaska Airlines	498	"Seattle/Tacoma, WA (SEA)"	5:55pm	Jun 13	Not Available	"San Francisco, CA (SFO)"	8:02pm	Jun 13	7:58pm*	Not provided by airline	Not provided by airline
+Alaska Airlines	453	"Los Angeles, CA (LAX)"	6:15pm	Jun 13	7:33pm*	"Portland, OR (PDX)"	8:26pm	Jun 13	9:41pm*	Not provided by airline	Not provided by airline
+United Airlines	198	"Seattle/Tacoma, WA (SEA)"	6:11am	Jun 13	6:11am	"San Francisco, CA (SFO)"	Not Available	Jun 13	7:55am	CHK	75
+United Airlines	993	"Seattle/Tacoma, WA (SEA)"	11:55am	Jun 13	11:55am	"San Francisco, CA (SFO)"	Not Available	Jun 13	1:44pm	2	73A
+Alaska Airlines	596	"Seattle/Tacoma, WA (SEA)"	8:40pm	Jun 13	Not Available	"San Francisco, CA (SFO)"	10:51pm	Jun 13	10:43pm*	Not provided by airline	Not provided by airline
+Northwest Airlines	1121	"Buffalo, NY (BUF)"	7:08pm	Jun 13	7:01pm	"Detroit, MI (DTW)"	8:14pm	Jun 13	8:04pm*	Not provided by airline	A11
+United Airlines	239	"Seattle/Tacoma, WA (SEA)"	7:00pm	Jun 13	Not Available	"San Francisco, CA (SFO)"	8:57pm	Jun 13	Not Available	CHK	82
+Alaska Airlines	884	"Fairbanks Intl, AK (FAI)"	8:30am	Jun 13	8:33am	"Anchorage, AK (ANC)"	9:29am	Jun 13	9:36am	Not provided by airline	Not provided by airline
+United Airlines	239	"Seattle/Tacoma, WA (SEA)"	7:00pm	Jun 13	Contact Airline	"San Francisco, CA (SFO)"	8:57pm	Jun 13	Contact Airline	Not provided by airline	Not provided by airline
+Alaska Airlines	816	"Seattle/Tacoma, WA (SEA)"	6:10am	Jun 13	6:07am	"San Francisco, CA (SFO)"	8:17am	Jun 13	8:18am	Not provided by airline	Not provided by airline
+Alaska Airlines	520	"Seattle/Tacoma, WA (SEA)"	9:21am	Jun 13	9:15am	"San Diego, CA (SAN)"	12:02pm	Jun 13	11:51am	Not provided by airline	Not provided by airline
+United Airlines	729	"Seattle/Tacoma, WA (SEA)"	10:15am	Jun 13	10:15am	"San Francisco, CA (SFO)"	Not Available	Jun 13	12:04pm	2	71
+Alaska Airlines	202	"Seattle/Tacoma, WA (SEA)"	8:32am	Jun 13	8:45am	"San Francisco, CA (SFO)"	10:46am	Jun 13	10:45am	Not provided by airline	Not provided by airline
